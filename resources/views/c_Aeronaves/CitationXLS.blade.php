@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Citation XLS
+$seo = [
+    'title' => 'Citation XLS | Jet Ejecutivo de Gran Capacidad',
+    'description' => 'Citation XLS: 9 pasajeros, 815 km/h y 3,890 km. Cabina amplia y velocidad de crucero rápida para eficiencia máxima.',
+    'keywords' => 'citation xls perú, cessna xls, jet rápido, avión ejecutivo amplio',
+    'og_image' => asset('img/aeronaves/aviones/CitationXLS.webp'),
+    'canonical' => url('/aeronaves/CitationXLS'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Citation';
     $h1_1_2 = 'XLS';

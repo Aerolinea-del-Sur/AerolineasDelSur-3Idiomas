@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Challenger 350
+$seo = [
+    'title' => 'Challenger 350 | Jet Ejecutivo de Largo Alcance',
+    'description' => 'Challenger 350: 12 pasajeros, 850 km/h y 6,100 km de alcance. Tecnología de vanguardia y máximo confort transcontinental.',
+    'keywords' => 'challenger 350 perú, jet largo alcance, bombardier 350, avión ejecutivo premium',
+    'og_image' => asset('img/aeronaves/aviones/Challenger350.webp'),
+    'canonical' => url('/aeronaves/Challenger350'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Challenger';
     $h1_1_2 = '350';

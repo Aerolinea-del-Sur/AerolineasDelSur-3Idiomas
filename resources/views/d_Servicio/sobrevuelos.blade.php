@@ -1,4 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Sobrevuelos page
+$seo = [
+    'title' => 'Sobrevuelos Turísticos en Perú | Tours Aéreos sobre Cusco y Valle Sagrado',
+    'description' => 'Descubre Perú desde las alturas con nuestros sobrevuelos turísticos. Vinicunca, Valle Sagrado, Machu Picchu y más destinos espectaculares en tours aéreos exclusivos desde Cusco.',
+    'keywords' => 'sobrevuelos cusco, tour aéreo valle sagrado, sobrevuelo vinicunca, montaña 7 colores helicóptero, machu picchu helicóptero, tours aéreos perú',
+    'og_image' => asset('img/sobrevuelos-cusco.jpg'),
+    'canonical' => url('/sobrevuelos'),
+];
+@endphp
+
 @section('content')
 <?php
     $h1_1_1 = 'Descubre el Mundo';

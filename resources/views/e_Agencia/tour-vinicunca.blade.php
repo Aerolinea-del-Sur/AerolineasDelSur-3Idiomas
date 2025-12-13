@@ -1,4 +1,15 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Tour Vinicunca
+$seo = [
+    'title' => 'Tour Vinicunca Montaña 7 Colores | Excursión desde Cusco',
+    'description' => 'Tour a Vinicunca, la famos a Montaña de 7 Colores en Cusco. Excursión de 1 día con guía experto, transporte y alimentación incluida desde Cusco.',
+    'keywords' => 'tour vinicunca, montaña 7 colores, rainbow mountain peru, excursión cusco vinicunca, tour rainbow mountain',
+    'og_image' => asset('img/tours/vinicunca-7-colores.jpg'),
+    'canonical' => url('/tour-vinicunca'),
+];
+@endphp
 @section('content')
 
 <?php

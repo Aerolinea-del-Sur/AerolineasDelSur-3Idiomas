@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for HondaJet
+$seo = [
+    'title' => 'HondaJet | Jet Ligero de Lujo y Tecnología',
+    'description' => 'HondaJet: jet ligero de 6 pasajeros con diseño innovador y 722 km/h de velocidad. Eficiencia y tecnología japonesa para vuelos ejecutivos.',
+    'keywords' => 'hondajet perú, jet ligero ejecutivo, avión honda, vuelo privado eficiente',
+    'og_image' => asset('img/aeronaves/aviones/HondaJet.webp'),
+    'canonical' => url('/aeronaves/HondaJet'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Honda';
     $h1_1_2 = 'Jet';

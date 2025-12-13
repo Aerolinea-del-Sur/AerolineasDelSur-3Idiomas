@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Gulfstream GIV
+$seo = [
+    'title' => 'Gulfstream GIV | Jet de Largo Alcance Premium',
+    'description' => 'Gulfstream GIV: jet de alto rendimiento de 6 pasajeros y 782 km/h. Perfecto para vuelos ejecutivos de larga distancia con máximo confort.',
+    'keywords' => 'gulfstream giv perú, jet largo alcance, avión ejecutivo internacional, gulfstream cusco',
+    'og_image' => asset('img/aeronaves/aviones/GulfstreamGiv.webp'),
+    'canonical' => url('/aeronaves/GulfstreamGIV'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Gulfstream';
     $h1_1_2 = 'G IV';

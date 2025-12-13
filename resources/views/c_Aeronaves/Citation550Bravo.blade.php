@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Citation 550 Bravo
+$seo = [
+    'title' => 'Citation 550 Bravo | Jet Ejecutivo Cessna',
+    'description' => 'Citation 550 Bravo: jet de 7 pasajeros, 740 km/h y 3,520 km. Fiabilidad y economía Cessna para vuelos ejecutivos regionales.',
+    'keywords' => 'citation 550 bravo perú, cessna bravo, jet ejecutivo cessna, vuelo regional eficiente',
+    'og_image' => asset('img/aeronaves/aviones/Citation550-Bravo.webp'),
+    'canonical' => url('/aeronaves/Citation550Bravo'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Citation';
     $h1_1_2 = '550 Bravo';

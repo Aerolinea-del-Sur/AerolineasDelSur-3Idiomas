@@ -1,13 +1,25 @@
-@extends('a_EncabezadoFooter.princi')
+@extends ('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Inicio page
+$seo = [
+    'title' => 'Aerolínea del Sur | Vuelos Privados y Charter en Perú',
+    'description' => 'Servicios aéreos premium en Perú: vuelos charter personalizados, helicópteros, transporte médico certificado y carga especializada. Seguridad garantizada desde Cusco.',
+    'keywords' => 'vuelos privados perú, charter cusco, helicóptero cusco, transporte aéreo médico perú, carga aérea, sobrevuelos valle sagrado',
+    'og_image' => asset('img/portada-aerolinea.jpg'),
+    'canonical' => url('/'),
+];
+@endphp
+
 @section('content')
 <?php 
     // <!-- presentacion -->
 
     //h1 - p
-    $h1_1 = 'TÚ ELIGES EL DESTINO';
+    $h1_1 = 'Vuelos Privados en Perú a Tu Medida';
     $h1_2 = '';
 
-    $p1_1 = 'Nosotros nos encargamos de la experiencia';
+    $p1_1 = 'Conectamos el Perú con vuelos seguros, cómodos y personalizados';
     
     // <!-- Tours Section -->
     
@@ -32,10 +44,9 @@
             $h3_4 = 'Ambulancia Médica';
             $p_4 = 'Transporte aéreo médico especializado para pacientes, evacuaciones y traslado de órganos, con aeronaves equipadas y personal médico calificado.';
 
-    //<!-- Por qué elegirnos Section -->
     //h1 - p
-    $h1_4 = '¿Por qué elegirnos?';
-    $p_5 = 'Vuelos privados personalizados, ideales para negocios, instituciones, deportes o familias que buscan flexibilidad y exclusividad.';
+    $h1_4 = '¿Por qué elegir Aerolínea del Sur?';
+    $p_5 = 'Operamos vuelos privados diseñados para empresas, instituciones y familias que valoran la flexibilidad, puntualidad y servicio personalizado.';
     //h3 - p
             $h3_5 = 'Seguridad Garantizada';
             $p_6 = 'Contamos con los más altos estándares de seguridad internacional y una flota moderna con mantenimiento riguroso. Tu tranquilidad es nuestra prioridad número uno.';
@@ -52,7 +63,7 @@
                 $span_6 = '✓ Flexibilidad total';
             //h3 - p
             $h3_7 = 'Tradición y Confianza';
-            $p_8 = 'Honramos la tradición del buen trato y construimos confianza con hechos y seguridad. Cada vuelo es una promesa cumplida de excelencia y tranquilidad.';
+            $p_8 = 'Más de 20 años de experiencia en aviación peruana respaldan cada vuelo. Nuestro compromiso es ofrecer seguridad certificada, puntualidad y un servicio que honra la tradición del buen trato.';
                 //span
                 $span_7 = '✓ Equipo Profesional'; 
                 $span_8 = '✓ Seguridad Asegurada';
@@ -98,7 +109,7 @@
             $p_18 = 'Conectamos cada rincón del Perú, desde la costa hasta la Amazonía, y las principales capitales de Sudamérica. Diseñamos vuelos chárter a medida que se adaptan a tu agenda, garantizando acceso directo a destinos exclusivos de negocios o placer.';
             
             $h3_9 = '¿Cómo puedo hacer una reserva?';
-            $p_19 = 'Puedes hacer tu reserva a través de nuestro sitio web, llamando a nuestro centro de atención al cliente o visitando una de nuestras oficinas. También puedes enviarnos un correo a contacto@aerolineadelsur.com.pe para obtener ayuda personalizada.';
+            $p_19 = 'Realiza tu reserva a través de nuestro sitio web, por teléfono al +51 932 475 995, o vía correo electrónico a contacto@aerolineadelsur.com.pe. Nuestro equipo te brindará atención personalizada 24/7.';
             
             $h3_10 = '¿Cuál es la política de equipaje?';
             $p_20 = 'Aerolinea del Sur permite un máximo de 23 kg de equipaje por pasajero. Este estándar es esencial para mantener la operatividad y eficiencia de nuestros vuelos privados.';
@@ -107,10 +118,10 @@
             $p_21 = 'Cumplimos con todos los estándares internacionales de seguridad aérea. Nuestras aeronaves reciben mantenimiento regular certificado, nuestros pilotos tienen entrenamiento continuo, y seguimos protocolos estrictos de seguridad en tierra y vuelo.';
 
             $h3_12 = '¿Ofrecen programas de viajero frecuente?';
-            $p_22 = 'Sí, nuestro programa Cielos del Sur ofrece beneficios exclusivos como acumulación de millas, upgrades gratuitos, acceso a salas VIP, y prioridad en check-in. Únete gratis y comienza a disfrutar de privilegios desde tu primer vuelo';
+            $p_22 = 'Sí. Nuestro programa Cielos del Sur ofrece beneficios exclusivos: acumulación de millas, upgrades gratuitos, acceso a salas VIP y prioridad en check-in. Únete sin costo y disfruta de privilegios desde tu primer vuelo.';
     // h1_8  - h2_3 - h3_13 - h4_7 p_24
-    $h2_2 = '¿No encontraste lo que buscabas?';
-    $p_23 = 'Nuestro equipo está aquí para ayudarte';
+    $h2_2 = '¿Necesitas más información?';
+    $p_23 = 'Nuestro equipo está disponible para ayudarte';
 ?>
     <!-- presentacion -->
     <link rel="stylesheet" href="{{ asset('public/css/paginas/inicio.css') }}">

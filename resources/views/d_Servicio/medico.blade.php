@@ -1,8 +1,20 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Medico page
+$seo = [
+    'title' => 'Transporte Aéreo Médico en Perú | Ambulancia Aérea Certificada',
+    'description' => 'Servicio aeromédico especializado en Perú. Evacuaciones médicas, traslado de pacientes y transporte de órganos con aeronaves equipadas las 24 horas.',
+    'keywords' => 'ambulancia aérea perú, transporte médico aéreo, evacuación médica cusco, traslado aéreo pacientes, servicio aeromédico',
+    'og_image' => asset('img/servicio-aeromedico.jpg'),
+    'canonical' => url('/aeromedico'),
+];
+@endphp
+
 @section('content')
 <?php
-    $h1_page = 'Aero Medico';
-    $breadcrumb = 'home/aero-medico';
+    $h1_page = 'Transporte Aéreo Médico Certificado';
+    $breadcrumb = 'Inicio / Servicios / Aeromédico';
     $h2_form = 'Reserva de Helicóptero';
 ?>
 

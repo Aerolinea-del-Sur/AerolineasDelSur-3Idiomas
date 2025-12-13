@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Challenger 650
+$seo = [
+    'title' => 'Challenger 650 | Jet Ejecutivo de Máxima Capacidad',
+    'description' => 'Challenger 650: el más grande de la serie con 16 pasajeros, 850 km/h y 5,206 km. Cabina ultra espaciosa y confort premium.',
+    'keywords' => 'challenger 650 perú, jet gran capacidad, bombardier 650, avión 16 pasajeros',
+    'og_image' => asset('img/aeronaves/aviones/Challenger650.webp'),
+    'canonical' => url('/aeronaves/Challenger650'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Challenger';
     $h1_1_2 = '650';

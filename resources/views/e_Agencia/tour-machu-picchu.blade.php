@@ -1,4 +1,15 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Tour Machu Picchu
+$seo = [
+    'title' => 'Tour Machu Picchu | Excursión 1 Día desde Cusco',
+    'description' => 'Tour a Machu Picchu en 1 día desde Cusco. Incluye tren, bus, entradas, guía certificado y almuerzo. Descubre la maravilla del mundo con expertos locales.',
+    'keywords' => 'tour machu picchu, excursión machu picchu 1 dia, tour cusco machu picchu, viaje machu picchu',
+    'og_image' => asset('img/tours/machu-picchu.jpg'),
+    'canonical' => url('/tour-machu-picchu'),
+];
+@endphp
 @section('content')
 
 <?php

@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Mi-8 MTV-1
+$seo = [
+    'title' => 'Helicóptero Mi-8 MTV- 1 | Transporte Multifunción',
+    'description' => 'Mi-8 MTV-1: helicóptero versátil con capacidad de 24 pasajeros. Perfecto para transporte, rescate y operaciones especiales en Perú.',
+    'keywords' => 'mi-8 mtv-1 perú, helicóptero mi8, transporte aéreo pesado, rescate helicóptero perú',
+    'og_image' => asset('img/aeronaves/aviones/Mi8-mtv1.webp'),
+    'canonical' => url('/aeronaves/Mi8-mtv1'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Mi 8';
     $h1_1_2 = 'MTV 1';

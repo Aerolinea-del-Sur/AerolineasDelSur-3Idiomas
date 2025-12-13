@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Phenom 100
+$seo = [
+    'title' => 'Embraer Phenom 100 | Jet Ejecutivo Ligero',
+    'description' => 'Phenom 100: jet ejecutivo de 7 pasajeros con 839 km/h y 3,650 km de autonomía. Compacto, eficiente y perfecto para vuelos regionales.',
+    'keywords' => 'phenom 100 perú, embraer phenom, jet ligero, vuelo ejecutivo regional',
+    'og_image' => asset('img/aeronaves/aviones/Phenom100.webp'),
+    'canonical' => url('/aeronaves/Phenom100'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Phenom';
     $h1_1_2 = '100';

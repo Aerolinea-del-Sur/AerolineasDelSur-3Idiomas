@@ -1,4 +1,15 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Sobrevuelo Valle Maras
+$seo = [
+    'title' => 'Sobrevuelo Valle Sagrado y Maras | Tour Aéreo Cusco',
+    'description' => 'Sobrevuelo en helicóptero por el Valle Sagrado, Salineras de Maras y Moray. Vista panorámica única de los tesoros arqueológicos incas desde el aire.',
+    'keywords' => 'sobrevuelo valle sagrado, tour aéreo maras, helicóptero cusco valle sagrado, sobrevuelo moray',
+    'og_image' => asset('img/tours/sobrevuelo-valle-maras.jpg'),
+    'canonical' => url('/sobrevuelo-valle-maras'),
+];
+@endphp
 @section('content')
 
 <?php

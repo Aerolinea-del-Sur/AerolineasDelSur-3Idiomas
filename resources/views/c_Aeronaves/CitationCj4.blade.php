@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Citation CJ4
+$seo = [
+    'title' => 'Citation CJ4 | Jet Ligero de Alto Rendimiento',
+    'description' => 'Citation CJ4: jet ligero de 9 pasajeros, 835 km/h y 4,010 km. Rendimiento excepcional y tecnología Garmin de última generación.',
+    'keywords' => 'citation cj4 perú, cessna cj4, jet ligero, vuelo ejecutivo tecnología',
+    'og_image' => asset('img/aeronaves/aviones/CitationCj4.webp'),
+    'canonical' => url('/aeronaves/CitationCj4'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Citation';
     $h1_1_2 = 'Cj4';

@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Citation Hemisphere
+$seo = [
+    'title' => 'Citation Hemisphere | Jet Ejecutivo de Nueva Generación',
+    'description' => 'Citation Hemisphere: 19 pasajeros, 1050 km/h y 8,300 km. El más grande y avanzado de la familia Citation.',
+    'keywords' => 'citation hemisphere perú, cessna hemisphere, jet gran alcance, avión ejecutivo lujo',
+    'og_image' => asset('img/aeronaves/aviones/CitationHemisPhere.webp'),
+    'canonical' => url('/aeronaves/CitationHemisPhere'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Citation';
     $h1_1_2 = 'HemisPhere';

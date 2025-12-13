@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Mi-17
+$seo = [
+    'title' => 'Helicóptero Mi-17 | Transporte de Carga y Pasajeros en Perú',
+    'description' => 'Mi-17: helicóptero soviético de 24 pasajeros y gran capacidad de carga. Ideal para operaciones en zonas remotas y montañosas de Perú.',
+    'keywords' => 'mi-17 perú, helicóptero cargo perú, transporte montaña, mi17 cusco',
+    'og_image' => asset('img/aeronaves/aviones/mi17-5.webp'),
+    'canonical' => url('/aeronaves/mi-17'),
+];
+@endphp
+
 <?php
 $h1_1_1 = 'Challenger';
 $h1_1_2 = '300';

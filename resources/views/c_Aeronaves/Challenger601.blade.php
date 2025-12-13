@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Challenger 601
+$seo = [
+    'title' => 'Challenger 601 | Jet de Negocios de Gran Alcance',
+    'description' => 'Challenger 601: 12 pasajeros y 7,620 km de autonomía. Ideal para vuelos intercontinentales de negocios con máxima eficiencia.',
+    'keywords' => 'challenger 601 perú, jet intercontinental, bombardier 601, vuelo negocios largo alcance',
+    'og_image' => asset('img/aeronaves/aviones/Challenger601.webp'),
+    'canonical' => url('/aeronaves/Challenger601'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Challenger';
     $h1_1_2 = '601';

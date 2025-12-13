@@ -1,8 +1,20 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Carga page
+$seo = [
+    'title' => 'Transporte Aéreo de Carga en Perú | Envíos Urgentes Certificados',
+    'description' => 'Carga aérea certificada en Perú. Transporte de mercancía urgente, perecibles, carga pesada y peligrosa con trazabilidad completa y entregas garantizadas.',
+    'keywords' => 'carga aérea perú, transporte urgente aéreo, envío helicóptero, carga pesada perú, logística aérea cusco',
+    'og_image' => asset('img/carga-aerea-peru.jpg'),
+    'canonical' => url('/carga'),
+];
+@endphp
+
 @section('content')
 <?php
-    $h1_page = 'Carga';
-    $breadcrumb = 'home/Carga';
+    $h1_page = 'Transporte Aéreo de Carga Especializada';
+    $breadcrumb = 'Inicio / Servicios / Carga Aérea';
     $h2_form = 'Reserva de aeronave';
 ?>
 

@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Citation Latitude
+$seo = [
+    'title' => 'Citation Latitude | Jet Mediano Premium',
+    'description' => 'Citation Latitude: 9 pasajeros, 826 km/h y 5,278 km. Cabina más espaciosa de su clase con tecnología Garmin G5000.',
+    'keywords' => 'citation latitude perú, cessna latitude, jet mediano premium, avión tecnología avanzada',
+    'og_image' => asset('img/aeronaves/aviones/CitationLatitude.webp'),
+    'canonical' => url('/aeronaves/CitationLatitude'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Citation';
     $h1_1_2 = 'Latitude';

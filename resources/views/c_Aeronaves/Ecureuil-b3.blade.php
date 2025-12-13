@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Ecureuil B3
+$seo = [
+    'title' => 'Eurocopter Ecureuil B3 | Helicóptero Ligero Alta Montaña',
+    'description' => 'Ecureuil B3: helicóptero ligero de 5 pasajeros optimizado para operaciones en alta altitud. Ideal para turismo y acceso a zonas remotas.',
+    'keywords' => 'ecureuil b3 perú, helicóptero alta montaña, eurocopter cusco, sobrevuelos cusco',
+    'og_image' => asset('img/aeronaves/aviones/Ecureuil-b3.webp'),
+    'canonical' => url('/aeronaves/Ecureuil-b3'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Ecureuil';
     $h1_1_2 = 'B3';

@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Gulfstream G100
+$seo = [
+    'title' => 'Gulfstream G100 | Jet Ejecutivo de Lujo en Perú',
+    'description' => 'Gulfstream G100: jet ejecutivo de 14 pasajeros con velocidad de 935 km/h. Máxima comodidad y rendimiento para vuelos de negocios internacionales.',
+    'keywords' => 'gulfstream g100 perú, jet ejecutivo lujo, vuelo privado internacional, avión corporativo',
+    'og_image' => asset('img/aeronaves/aviones/Gulfstream-G100.webp'),
+    'canonical' => url('/aeronaves/GulfstreamG100'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Gulfstream';
     $h1_1_2 = 'G100';

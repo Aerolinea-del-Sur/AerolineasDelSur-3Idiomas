@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Beechcraft 1900D
+$seo = [
+    'title' => 'Beechcraft 1900D | Avión Regional de Pasajeros',
+    'description' => 'Beechcraft 1900D: avión regional de 19 pasajeros. Ideal para rutas cortas y operaciones comerciales en Perú con pistas cortas.',
+    'keywords' => 'beechcraft 1900d perú, avión regional, vuelos comerciales regionales, transporte pasajeros perú',
+    'og_image' => asset('img/aeronaves/aviones/Beechcraft1900D.webp'),
+    'canonical' => url('/aeronaves/beechcraft-1900d'),
+];
+@endphp
+
 <?php
 $h1_1_1 = 'Beechcraft';
 $h1_1_2 = '1900D';

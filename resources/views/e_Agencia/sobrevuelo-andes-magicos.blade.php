@@ -1,4 +1,15 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Sobrevuelo Andes Mágicos
+$seo = [
+    'title' => 'Sobrevuelo Andes Mágicos | Tour Aéreo Cordillera Cusco',
+    'description' => 'Sobrevuelo panorámico por los Andes Mágicos de Cusco. Vistas espectaculares de nevados, lagunas y montañas sagradas en helicóptero privado.',
+    'keywords' => 'sobrevuelo andes cusco, tour aéreo cordillera, helicóptero montañas cusco, sobrevuelo panorámico andes',
+    'og_image' => asset('img/tours/sobrevuelo-andes-magicos.jpg'),
+    'canonical' => url('/sobrevuelo-andes-magicos'),
+];
+@endphp
 @section('content')
 <?php
     $h1_1 = 'Tour Aéreo de Lujo<br>Andes Mágicos';

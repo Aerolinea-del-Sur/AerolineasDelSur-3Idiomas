@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Citation Encore
+$seo = [
+    'title' => 'Citation Encore | Jet Ejecutivo Mediano Cessna',
+    'description' => 'Citation Encore: 8 pasajeros, 796 km/h y 3,441 km de alcance. Cabina espaciosa y rendimiento confiable para viajes de negocios.',
+    'keywords' => 'citation encore perú, cessna encore, jet mediano, vuelo corporativo confiable',
+    'og_image' => asset('img/aeronaves/aviones/CitationEncore.webp'),
+    'canonical' => url('/aeronaves/CitationEncore'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Citation';
     $h1_1_2 = 'Encore';

@@ -1,4 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Blog Post - Aventura Cusco
+$seo = [
+    'title' => 'Aventura en Cusco: Guía Completa de Actividades | Blog',
+    'description' => 'Descubre las mejores aventuras en Cusco: trekking, vuelos panorámicos, tours arqueológicos y más. Guía completa para tu viaje a Cusco.',
+    'keywords' => 'aventura cusco, trekking cusco, actividades cusco, guía turismo cusco',
+    'og_image' => asset('img/blog/cusco-aventura.jpg'),
+    'canonical' => url('/blog/consejos/aventura-cusco'),
+];
+@endphp
+
 @section('content')
 
 <!-- Schema.org JSON-LD -->

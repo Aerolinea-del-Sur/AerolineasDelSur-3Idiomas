@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Challenger 604
+$seo = [
+    'title' => 'Challenger 604 | Jet Ejecutivo Intercontinental',
+    'description' => 'Challenger 604: jet de 12 pasajeros, 870 km/h y 7,991 km de alcance. Cabina lujosa para vuelos transoceánicos de negocios.',
+    'keywords' => 'challenger 604 perú, jet transoceánico, bombardier 604, avión lujo internacional',
+    'og_image' => asset('img/aeronaves/aviones/Challenger604.webp'),
+    'canonical' => url('/aeronaves/Challenger604'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Challenger';
     $h1_1_2 = '604';

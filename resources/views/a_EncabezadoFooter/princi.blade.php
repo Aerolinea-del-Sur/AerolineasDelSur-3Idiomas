@@ -1,13 +1,53 @@
+```html
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <!-- BUSQUEDA GOOGLE -->
-            <title>aerolineas del sur</title>
+        @php
+            // SEO Configuration - Can be overridden by individual pages
+            $seo = $seo ?? [
+                'title' => 'Aerolínea del Sur | Vuelos Privados y Charter en Perú',
+                'description' => 'Servicios aéreos premium en Perú: vuelos charter, helicópteros, transporte médico certificado y carga especializada. Seguridad garantizada desde Cusco.',
+                'keywords' => 'vuelos privados perú, charter cusco, helicóptero cusco, transporte aéreo médico, carga aérea perú',
+                'og_image' => asset('img/logo.svg'),
+                'canonical' => url()->current(),
+                'author' => 'Aerolínea del Sur'
+            ];
+        @endphp
+        
+        <!-- SEO Essentials -->
+            <title>{{ $seo['title'] }}</title>
             <meta charset="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="description" content="" />
-            <meta name="keywords" content="" />
-            <meta name="author" content="" />
+            <meta name="description" content="{{ $seo['description'] }}" />
+            <meta name="keywords" content="{{ $seo['keywords'] }}" />
+            <meta name="author" content="{{ $seo['author'] }}" />
+            <link rel="canonical" href="{{ $seo['canonical'] }}" />
+            
+        <!-- Open Graph (Facebook, LinkedIn) -->
+            <meta property="og:title" content="{{ $seo['title'] }}">
+            <meta property="og:description" content="{{ $seo['description'] }}">
+            <meta property="og:image" content="{{ $seo['og_image'] }}">
+            <meta property="og:url" content="{{ $seo['canonical'] }}">
+            <meta property="og:type" content="website">
+            <meta property="og:site_name" content="Aerolínea del Sur">
+            <meta property="og:locale" content="es_PE">
+            
+        <!-- Twitter Card -->
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="{{ $seo['title'] }}">
+            <meta name="twitter:description" content="{{ $seo['description'] }}">
+            <meta name="twitter:image" content="{{ $seo['og_image'] }}">
+            
+        <!-- favicon -->
+            <link rel="icon" type="image/x-icon" href="/favicon.ico">
+            <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/apple-touch-icon.png') }}">
+            <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+            <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon-32x32.png') }}">
+            <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon-16x16.png') }}">
+            <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('favicon.ico') }}">
+            <link rel="manifest" href="{{ asset('img/service/favicon_io/site.webmanifest') }}">
+            <meta name="theme-color" content="#C9A227">
         <!-- CONEXION A TIPOGRAFIAS -->
             <!-- CONEXION A TIPOGRAFIAS -->
             <!-- Preconnect para CDNs (mejora velocidad de carga) -->
@@ -35,22 +75,6 @@
             <link rel="stylesheet" href="/css/princi.css">
             <link rel="stylesheet" href="/js/princi.js">-->
         
-        <!-- METAETIQUETAS -->
-            <!-- Open Graph (FACEBOOK) -->
-            <meta property="og:title" content="Aerolineas del Sur - Viajes VIP">
-            <meta property="og:description" content="Descubre experiencias únicas y personalizadas.">
-            <meta property="og:image" content="https://tusitio.com/imagenes/og-image.jpg"><!-- Fala -->
-            <meta property="og:url" content="https://russellexperienceperutravel.com"><!-- Fala -->
-            <meta property="og:type" content="website"><!-- Fala -->
-            <meta property="og:site_name" content="Russell Experience">
-            <meta property="og:locale" content="es_PE">
-            <meta property="og:locale:alternate" content="en_US">
-            <meta property="og:locale:alternate" content="fr_FR">
-            
-        <!-- favicon -->
-            <link rel="icon" type="image/x-icon" href="/favicon.ico">
-            <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/apple-touch-icon.png') }}">
-            <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
             <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
             <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon-32x32.png') }}">
             <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon-16x16.png') }}">

@@ -1,16 +1,28 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Nosotros page
+$seo = [
+    'title' => 'Sobre Nosotros | Aerolínea del Sur - Aviación Peruana de Confianza',
+    'description' => 'Aerolínea peruana fundada en 2024 con capital 100% nacional. Misión, visión y valores enfocados en seguridad, excelencia e innovación en servicios aéreos.',
+    'keywords' => 'aerolínea peruana, aviación cusco, empresa aérea perú, vuelos seguros perú, historia aerolínea del sur',
+    'og_image' => asset('img/nosotros-aerolinea-sur.jpg'),
+    'canonical' => url('/nosotros'),
+];
+@endphp
+
 @section('content')
     <?php
         $h1_1 = 'Nosotros';
         $p_1 = 'Conozca nuestra historia y valores';
 
-            $h2_1 = 'Nuestra Misión';
-            $p_2 = 'Nuestra misión es proporcionar productos y servicios excepcionales que superen las expectativas de nuestros clientes. Nos esforzamos por innovar constantemente, manteniendo los más altos estándares de calidad y excelencia en todo lo que hacemos.';
-            $p_3 = 'Estamos comprometidos con la creación de valor para nuestros clientes, empleados y comunidades donde operamos, mientras mantenemos un enfoque sostenible y responsable en nuestras operaciones.';
+        $h2_1 = 'Nuestra Misión';
+        $p_2 = 'Conectar el Perú mediante servicios aéreos seguros y personalizados que superen las expectativas de nuestros clientes.';
+        $p_3 = 'Operamos con los más altos estándares de calidad, innovación constante y compromiso con las comunidades donde trabajamos.';
 
             $h2_2 = 'Nuestra Visión';
-            $p_4 = 'Inspirar y conectar a las personas a través de experiencias aéreas únicas, brindando servicios con los más altos estándares de seguridad, calidad e innovación. Nuestro compromiso es superar las expectativas de cada cliente, mostrando lo mejor del Perú y Sudamérica desde el cielo, con hospitalidad, excelencia y un enfoque responsable con las comunidades y el entorno.';
-            $p_5 = 'Ser la aerolínea líder del Perú y Latinoamérica, reconocida a nivel nacional e internacional por ofrecer experiencias aéreas exclusivas y personalizadas que permitan a nuestros pasajeros descubrir los destinos más espectaculares, con seguridad, confort e innovación.';
+            $p_4 = 'Ser la aerolínea líder en Perú y Latinoamérica, reconocida por ofrecer experiencias aéreas exclusivas y seguras.';
+            $p_5 = 'Permitimos a nuestros pasajeros descubrir destinos espectaculares con innovación, confort y servicio personalizado de clase mundial.';
 
             $h2_3 = 'Nuestro Propósito';
             $p_6 = 'Ser la aerolínea líder del Perú y Latinoamérica, reconocida a nivel nacional e internacional por ofrecer experiencias aéreas exclusivas y personalizadas que permitan a nuestros pasajeros descubrir los destinos más espectaculares, con seguridad, confort e innovación.';
@@ -43,7 +55,7 @@
 
                 $h3_8 = '2025';
                     $h4_2 = 'Primeras rutas exclusivas';
-                    $p_16 = 'Se inauguran los primeros vuelos turísticos y charter sobre el Valle Sagrado de los Incas y Cusco, ofreciendo experiencias memorables que conectan a los viajeros con el patrimonio natural y cultural del país desde una perspectiva única.';
+                    $p_16 = 'Inauguramos nuestras primeras rutas sobre el Valle Sagrado y Cusco. Conectamos a viajeros con el patrimonio cultural peruano desde una perspectiva aérea única y memorable.';
                 
                 $h3_9 = 'Hoy';
                     $h4_3 = 'Mirando al futuro';

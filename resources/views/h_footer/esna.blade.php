@@ -1,4 +1,15 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for ESNA
+$seo = [
+    'title' => 'Registro ESNA | Información Fiscal Aerolínea del Sur',
+    'description' => 'Información de registro ESNA y datos fiscales de Aerolínea del Sur. Transparencia y cumplimiento normativo en Perú.',
+    'keywords' => 'registro esna perú, datos fiscales aerolínea, información tributaria',
+    'og_image' => asset('img/logo.svg'),
+    'canonical' => url('/esna'),
+];
+@endphp
 @section('content')
 <link rel="stylesheet" href="{{ asset('public/css/footer/esna.css') }}">
 

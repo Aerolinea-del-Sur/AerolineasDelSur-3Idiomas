@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Challenger 605
+$seo = [
+    'title' => 'Challenger 605 | Jet de Negocios Global',
+    'description' => 'Challenger 605: 12 pasajeros y 7,408 km. Tecnología fly-by-wire y cabina silenciosa para viajes ejecutivos de lujo.',
+    'keywords' => 'challenger 605 perú, jet global, bombardier 605, vuelo ejecutivo transoceánico',
+    'og_image' => asset('img/aeronaves/aviones/Challenger605.webp'),
+    'canonical' => url('/aeronaves/Challenger605'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Challenger';
     $h1_1_2 = '605';

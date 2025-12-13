@@ -1,4 +1,15 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Terms and Conditions
+$seo = [
+    'title' => 'Términos y Condiciones | Aerolínea del Sur',
+    'description' => 'Términos y condiciones de uso de servicios de Aerolínea del Sur. Normas, políticas de cancelación y responsabilidades.',
+    'keywords' => 'términos condiciones aerolínea, política cancelación, condiciones uso',
+    'og_image' => asset('img/logo.svg'),
+    'canonical' => url('/terminos-condiciones'),
+];
+@endphp
 @section('content')
 <link rel="stylesheet" href="{{ asset('public/css/footer/terminos.css') }}">
 

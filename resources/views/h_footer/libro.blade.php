@@ -1,4 +1,15 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Libro de Reclamaciones
+$seo = [
+    'title' => 'Libro de Reclamaciones | Aerolínea del Sur',
+    'description' => 'Presenta tu reclamo o sugerencia en nuestro Libro de Reclamaciones virtual. Tu opinión nos ayuda a mejorar nuestros servicios de aviación.',
+    'keywords' => 'libro reclamaciones perú, reclamos aerolínea, quejas servicios aéreos',
+    'og_image' => asset('img/logo.svg'),
+    'canonical' => url('/libro-reclamaciones'),
+];
+@endphp
 @section('content')
     <link rel="stylesheet" href="{{ asset('public/css/footer/libro.css') }}">
 <!-- Agregar jsPDF desde CDN -->

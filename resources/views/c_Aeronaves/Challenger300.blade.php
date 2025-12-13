@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Challenger 300
+$seo = [
+    'title' => 'Bombardier Challenger 300 | Jet Ejecutivo Super Mediano',
+    'description' => 'Challenger 300: jet super mediano de 10 pasajeros, 870 km/h y 6,297 km de autonomía. Cabina amplia y tecnología avanzada.',
+    'keywords' => 'challenger 300 perú, bombardier 300, jet super mediano, vuelo ejecutivo internacional',
+    'og_image' => asset('img/aeronaves/aviones/Challenger300.webp'),
+    'canonical' => url('/aeronaves/Challenger300'),
+];
+@endphp
+
 <?php
 $h1_1_1 = 'Challenger';
 $h1_1_2 = '300';

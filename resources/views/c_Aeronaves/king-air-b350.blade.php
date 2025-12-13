@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for King Air B350
+$seo = [
+    'title' => 'King Air B350 | Avión Turbohélice Ejecutivo',
+    'description' => 'Beechcraft King Air B350: turbohélice premium de 8 pasajeros con 870 km/h de velocidad. Perfecto para vuelos ejecutivos y charter en Perú.',
+    'keywords' => 'king air b350, beechcraft 350 perú, avión turbohélice charter, vuelo ejecutivo cusco',
+    'og_image' => asset('img/aeronaves/aviones/AirKingB350.webp'),
+    'canonical' => url('/aeronaves/king-air-b350'),
+];
+@endphp
+
 <?php
 $h1_1_1 = 'King Air';
 $h1_1_2 = 'B350';

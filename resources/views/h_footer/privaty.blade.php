@@ -1,4 +1,15 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Privacy Policy
+$seo = [
+    'title' => 'Política de Privacidad | Aerolínea del Sur',
+    'description' => 'Política de privacidad y protección de datos personales de Aerolínea del Sur. Conoce cómo protegemos tu información.',
+    'keywords' => 'política privacidad perú, protección datos, privacidad aerolínea',
+    'og_image' => asset('img/logo.svg'),
+    'canonical' => url('/politica-privacidad'),
+];
+@endphp
 @section('content')
 <link rel="stylesheet" href="{{ asset('public/css/footer/privaty.css') }}">
 <div class="privacy-container">

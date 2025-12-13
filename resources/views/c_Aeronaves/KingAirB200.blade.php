@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for King Air B200
+$seo = [
+    'title' => 'Beechcraft King Air B200 | Avión Ejecutivo en Perú',
+    'description' => 'King Air B200: avión turbohélice ejecutivo de  10 pasajeros. Ideal para vuelos corporativos, transporte médico y operaciones regionales en Perú.',
+    'keywords' => 'king air b200 perú, beechcraft b200 cusco, avión ejecutivo turbohélice, vuelos corporativos perú',
+    'og_image' => asset('img/aeronaves/aviones/Air-King-B200.webp'),
+    'canonical' => url('/aeronaves/KingAirB200'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'KING AIR';
     $h1_1_2 = 'B200';

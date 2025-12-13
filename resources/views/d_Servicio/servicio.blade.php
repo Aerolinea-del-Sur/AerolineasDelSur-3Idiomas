@@ -1,8 +1,20 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Servicio page
+$seo = [
+    'title' => 'Servicios de Aviación en Perú | Vuelos, Helicópteros, Médico y Carga',
+    'description' => 'Servicios completos de aviación en Perú: vuelos chárter, helicópteros, sobrevuelos turísticos, transporte aeromédico y carga aérea especializada desde Cusco.',
+    'keywords' => 'servicios aviación perú, vuelos charter cusco, transporte aéreo perú, servicios helicóptero, aviación ejecutiva',
+    'og_image' => asset('img/servicios-aviacion.jpg'),
+    'canonical' => url('/servicio'),
+];
+@endphp
+
 @section('content')
 <?php
-    $h1_1 = 'Nuestros Servicios';
-    $p_1 = 'Ofrecemos una amplia gama de servicios de aviación para satisfacer todas sus necesidades';
+    $h1_1 = 'Servicios de Aviación en Perú';
+    $p_1 = 'Soluciones aéreas completas y personalizadas para todas sus necesidades';
 
             $h3_1 = 'Vuelos Chárter';
             $p_2 = 'Vuelos privados adaptados a las necesidades de tiempo, destino y protocolo. Ideales para negocios, deportes, giras, instituciones y también para familias o particulares que buscan una alternativa a las aerolíneas comerciales.';

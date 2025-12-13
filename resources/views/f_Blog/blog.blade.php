@@ -1,4 +1,15 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Blog
+$seo = [
+    'title' => 'Blog de Aviación | Consejos y Guías de Vuelos en Perú',
+    'description' => 'Blog de Aerolínea del Sur con artículos sobre aviación, consejos de viaje, guías turísticas y novedades de vuelos privados en Perú.',
+    'keywords' => 'blog aviación perú, consejos viaje cusco, guía turística perú, blog vuelos privados',
+    'og_image' => asset('img/blog/aviation-peru.jpg'),
+    'canonical' => url('/blog'),
+];
+@endphp
 @section('content')
 <?php
     $h1_1_1 = 'Explora el';

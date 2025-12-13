@@ -1,4 +1,15 @@
 @extends('a_EncabezadoFooter.princi')
+
+@php
+// Custom SEO for Contact page
+$seo = [
+    'title' => 'Contacto | Aerolínea del Sur - Vuelos Privados en Perú',
+    'description' => 'Contáctanos para reservar tu vuelo privado en Perú. Oficinas en Cusco, atención 24/7. Tel: +51 944 055 408. Presupuestos personalizados sin compromiso.',
+    'keywords' => 'contacto aerolínea del sur, reservar vuelo privado perú, cotización vuelo charter, oficina cusco',
+    'og_image' => asset('img/contacto/oficina-cusco.jpg'),
+    'canonical' => url('/contacto'),
+];
+@endphp
 @section('content')
 <?php
     // Variables de contenido

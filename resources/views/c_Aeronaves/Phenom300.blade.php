@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Phenom 300
+$seo = [
+    'title' => 'Embraer Phenom 300 | Jet Ejecutivo Mediano Premium',
+    'description' => 'Phenom 300: jet ejecutivo de 10 pasajeros, 870 km/h y 5,741 km de alcance. Líder en su categoría por rendimiento y confort.',
+    'keywords' => 'phenom 300 perú, embraer 300, jet ejecutivo mediano, vuelo privado largo alcance',
+    'og_image' => asset('img/aeronaves/aviones/Phenom300.webp'),
+    'canonical' => url('/aeronaves/Phenom300'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Phenom';
     $h1_1_2 = '300';

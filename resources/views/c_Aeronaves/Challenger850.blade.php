@@ -1,5 +1,16 @@
 @extends('a_EncabezadoFooter.princi')
 
+@php
+// Custom SEO for Challenger 850
+$seo = [
+    'title' => 'Challenger 850 | Jet Ejecutivo de Alto Rendimiento',
+    'description' => 'Challenger 850: 7 pasajeros, 740 km/h y 3,520 km de autonomía. Cabina amplia convertible para configuraciones VIP personalizadas.',
+    'keywords' => 'challenger 850 perú, jet vip, bombardier 850, avión ejecutivo personalizable',
+    'og_image' => asset('img/aeronaves/aviones/Challenger850.webp'),
+    'canonical' => url('/aeronaves/Challenger850'),
+];
+@endphp
+
 <?php
     $h1_1_1 = 'Challenger';
     $h1_1_2 = '850';
