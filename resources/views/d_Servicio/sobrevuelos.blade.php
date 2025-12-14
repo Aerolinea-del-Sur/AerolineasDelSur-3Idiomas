@@ -490,6 +490,24 @@ $seo = [
             if(slides[slideIndex]) slides[slideIndex].classList.add('active');
             if(dots[slideIndex]) dots[slideIndex].classList.add('active');
         }
+
+        // Auto-slide functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousels = document.querySelectorAll('.carousel-container');
+            
+            carousels.forEach(carousel => {
+                const tourIndex = carousel.id.replace('carousel-', '');
+                
+                // Set interval for each carousel
+                setInterval(() => {
+                    // Only change slide if not hovering over the card
+                    // This prevents the slide from changing while user is looking at it
+                    if (!carousel.closest('.tour-card').matches(':hover')) {
+                        moveSlide(tourIndex, 1);
+                    }
+                }, 3500); // 3.5 seconds
+            });
+        });
     </script>
     
     <!-- Control de audio para Video de Vimeo -->
