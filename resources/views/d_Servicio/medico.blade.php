@@ -31,41 +31,38 @@ $seo = [
         <h1 class="heli-title"><?= $h1_page ?></h1>
         
         
-        <form class="medic-form" id="servicioForm" method="post" action="{{ route('vuelos.send') }}">
+        <form class="heli-form horizontal" id="servicioForm" method="post" action="{{ route('vuelos.send') }}">
         @csrf
             <input type="hidden" name="tipo_servicio" value="aeromedico">
             
-            <div class="medic-form-head">
-                <h2 class="medic-section-title"><?= $h2_form ?></h2>
-                <p class="medic-subtitle">Complete el formulario para solicitar información médica</p>
+            <div class="heli-form-head">
+                <h2 class="heli-section-title"><?= $h2_form ?></h2>
+                <p style="color: #ccc; font-size: 14px; margin-top: 8px;">Complete el formulario para emergencias médicas</p>
             </div>
 
-            <div class="medic-form-fields">
-                <div class="medic-field">
-                    <label class="medic-label">Nombres y Apellidos *</label>
-                    <input class="medic-input" type="text" id="nombres_apellidos" name="nombres_apellidos" placeholder="Ingrese su nombre completo" required>
+            <div class="heli-form-personal">
+                <div class="heli-field">
+                    <input class="heli-input" type="text" id="nombres_apellidos" name="nombres_apellidos" placeholder="Nombres y Apellidos *" required>
                 </div>
-                <div class="medic-field">
-                    <label class="medic-label">Correo electrónico *</label>
-                    <input class="medic-input" type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                <div class="heli-field">
+                    <input class="heli-input" type="email" id="correo" name="correo" placeholder="Correo electrónico *" required>
                 </div>
-                <div class="medic-field">
-                    <label class="medic-label">Teléfono *</label>
-                    <input class="medic-input" type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999" required pattern="[0-9+\s-]{7,20}">
+                <div class="heli-field">
+                    <input class="heli-input" type="tel" id="telefono" name="telefono" placeholder="Teléfono *" required pattern="[0-9+\s-]{7,20}">
                 </div>
             </div>
             
-            <div class="medic-actions">
-                <button type="button" class="medic-btn btn-call" onclick="llamarDirecto()">
-                    <i class="fas fa-phone"></i> Llamar ahora: +51 932 475 995
+            <div class="heli-actions">
+                <button type="button" class="heli-btn btn-call-urgent" onclick="llamarDirecto()">
+                    <i class="fas fa-phone"></i> Llamar: +51 932 475 995
                 </button>
-                <button type="button" class="medic-btn btn-whatsapp" onclick="enviarWhatsApp('aeromedico')">
-                    <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+                <button type="button" class="heli-btn btn-whatsapp" onclick="enviarWhatsApp('aeromedico')">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
                 </button>
-                <button type="button" class="medic-btn btn-outlook-medic" onclick="enviarOutlook('aeromedico')">
+                <button type="button" class="heli-btn btn-outlook" onclick="enviarOutlook('aeromedico')">
                     <i class="far fa-envelope"></i> Outlook
                 </button>
-                <button type="button" class="medic-btn btn-gmail-medic" onclick="enviarGmail('aeromedico')">
+                <button type="button" class="heli-btn btn-gmail" onclick="enviarGmail('aeromedico')">
                     <i class="far fa-envelope"></i> Gmail
                 </button>
             </div>
