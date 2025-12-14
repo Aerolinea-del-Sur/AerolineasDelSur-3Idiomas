@@ -776,65 +776,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // 2. Manejo de Pasajeros (Dropdown y Contadores)
-    const passengerInput = document.getElementById('passengerInput_header');
-    const passengerDropdown = document.getElementById('passengerDropdown_header');
-    const passengerDisplay = form.querySelector('.js-passenger-display');
-    const confirmBtn = document.getElementById('confirmPassengers_header');
-    
-    // Toggle dropdown
-    passengerInput.addEventListener('click', (e) => {
-        e.stopPropagation();
-        passengerDropdown.style.display = passengerDropdown.style.display === 'block' ? 'none' : 'block';
-    });
-
-    // Cerrar al confirmar o hacer clic fuera
-    confirmBtn.addEventListener('click', () => passengerDropdown.style.display = 'none');
-    document.addEventListener('click', (e) => {
-        if (!passengerInput.contains(e.target) && !passengerDropdown.contains(e.target)) {
-            passengerDropdown.style.display = 'none';
-        }
-    });
-
-    // Lógica de botones +/-
-    const counters = form.querySelectorAll('.counter');
-    counters.forEach(counter => {
-        const btnMinus = counter.querySelector('.btn-minus');
-        const btnPlus = counter.querySelector('.btn-plus');
-        const countSpan = counter.querySelector('.count');
-        const type = countSpan.dataset.type; // 'adultos' o 'jovenes'
-
-        btnPlus.addEventListener('click', () => updateCount(type, 1));
-        btnMinus.addEventListener('click', () => updateCount(type, -1));
-    });
-
-    function updateCount(type, change) {
-        const countSpan = form.querySelector(`.count[data-type="${type}"]`);
-        const hiddenInput = form.querySelector(`.js-${type}`);
-        let currentValue = parseInt(countSpan.textContent);
-        let newValue = currentValue + change;
-
-        // Validaciones (Mínimo 1 adulto, Mínimo 0 jóvenes)
-        if (type === 'adultos' && newValue < 1) return;
-        if (type === 'jovenes' && newValue < 0) return;
-
-        // Actualizar UI y Hidden Inputs
-        countSpan.textContent = newValue;
-        hiddenInput.value = newValue;
-
-        updateTotalPassengers();
-    }
-
-    function updateTotalPassengers() {
-        const adultos = parseInt(form.querySelector('.js-adultos').value);
-        const jovenes = parseInt(form.querySelector('.js-jovenes').value);
-        const total = adultos + jovenes;
-
-        // Actualizar input total y texto visible
-        form.querySelector('.js-pasajeros').value = total;
-        passengerDisplay.textContent = total + (total === 1 ? ' pasajero' : ' pasajeros');
-    }
-
     // 3. Manejo de Comentarios (Checkbox)
     const checkComments = document.getElementById('show_comments_header');
     const commentsField = document.getElementById('comentarios-field_header');
