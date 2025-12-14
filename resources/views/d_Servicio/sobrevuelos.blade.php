@@ -205,10 +205,10 @@ $seo = [
                         'title' => 'Choquequirao',
                         'description' => 'Descubre la majestuosa "Cuna de Oro" y hermana sagrada de Machu Picchu, una joya arqueológica oculta entre los Andes.',
                         'images' => [
-                            'https://upload.wikimedia.org/wikipedia/commons/3/3d/Choquequirao_Cusco.jpg',
-                            'https://www.peru.travel/Contenido/Atractivo/Imagen/en/189/1.1/Principal/choquequirao.jpg',
-                            'https://media.istockphoto.com/id/513536648/es/foto/choquequirao-ruinas-incas-en-per%C3%BA.jpg?s=612x612&w=0&k=20&c=Kk7C-u1u9Ww_g_yZz_X_X_X_X_X_X_X_X_X_X',
-                            'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Choquequirao_ruins.jpg/1200px-Choquequirao_ruins.jpg'
+                            '/public/img/tours/andes-magicos-1.jpg',
+                            '/public/img/tours/andes-magicos-2.jpg',
+                            '/public/img/tours/andes-magicos-3.jpg',
+                            '/public/img/tours/andes-magicos-4.jpg'
                         ],
                         'duration' => '1h 45m',
                         'pax' => 'Hasta 4 personas',
