@@ -100,6 +100,71 @@ $seo = [
                 transform: translateY(-6px) !important;
                 box-shadow: 0 12px 24px rgba(212,175,55,0.2) !important;
             }
+            
+            /* Estilos para Blog */
+            .article-card {
+                border: 2px solid rgba(212,175,55,0.2) !important;
+                transition: all 0.4s ease !important;
+            }
+            .article-card:hover {
+                border-color: var(--gold-primary) !important;
+                transform: translateY(-8px) !important;
+                box-shadow: 0 16px 32px rgba(212,175,55,0.2) !important;
+            }
+            .article-title {
+                color: var(--gold-primary) !important;
+            }
+            .article-link {
+                color: var(--gold-primary) !important;
+                transition: all 0.3s ease;
+            }
+            .article-link:hover {
+                color: var(--gold-hover) !important;
+                transform: translateX(4px);
+            }
+            .article-meta span {
+                color: rgba(212,175,55,0.8) !important;
+            }
+            
+            /* Estilos para FAQ */
+            .faq-item {
+                border: 2px solid rgba(212,175,55,0.25) !important;
+                transition: all 0.3s ease !important;
+                background: rgba(0,0,0,0.3) !important;
+            }
+            .faq-item:hover {
+                border-color: rgba(212,175,55,0.5) !important;
+                background: rgba(0,0,0,0.4) !important;
+            }
+            .faq-item.active {
+                border-color: var(--gold-primary) !important;
+                background: rgba(212,175,55,0.08) !important;
+                box-shadow: 0 4px 16px rgba(212,175,55,0.15) !important;
+            }
+            .faq-question {
+                color: #fff !important;
+                transition: all 0.3s ease;
+            }
+            .faq-item.active .faq-question {
+                color: var(--gold-primary) !important;
+            }
+            .faq-icon {
+                color: var(--gold-primary) !important;
+                background: rgba(212,175,55,0.15) !important;
+                border: 1px solid rgba(212,175,55,0.3) !important;
+                transition: all 0.3s ease;
+            }
+            .faq-item.active .faq-icon {
+                background: var(--gold-primary) !important;
+                color: #000 !important;
+                transform: rotate(45deg);
+            }
+            .faq-answer {
+                border-top: 1px solid rgba(212,175,55,0.2) !important;
+            }
+            .faq-header h1 {
+                color: var(--gold-primary) !important;
+            }
         </style>
 
         <form class="heli-form horizontal" id="servicioForm" method="post" action="{{ route('vuelos.send') }}">
