@@ -15,9 +15,9 @@ $seo = [
 <?php
     $h1_1_1 = 'Descubre el Mundo';
     $h1_1_2 = 'Desde las Alturas';
-    $p_1 = 'Explora destinos únicos con nuestros tours aéreos premium y vive experiencias inolvidables';
+    $p_1 = 'Explora destinos únicos con nuestros sobrevuelos y vive experiencias inolvidables';
 
-        $h2_1 = 'Nuestros Tours de Sobrevuelos';
+        $h2_1 = 'Nuestros Sobrevuelos';
         $p_2 = 'Descubre los lugares más espectaculares del Perú desde una perspectiva única';
 
         $h2_2 = 'Andes Mágicos';
@@ -32,7 +32,7 @@ $seo = [
         $h2_5 = 'Montaña de Siete Colores';
         $p_6 = 'Descubre la montaña arcoíris Vinicunca en una excursión por Cusco, una de las maravillas naturales más impresionantes del Perú.';
 
-        $h2_6 = 'Vinicunca Elite Experience';
+        $h2_6 = 'Vinicunca';
         $p_7 = 'Visitamos Vinicunca, Palcoyo, Ausangate, Valle Rojo y Cuatro Lagunas en una experiencia exclusiva desde las alturas.';
 
         $h2_7 = 'Machu Picchu';
@@ -205,10 +205,10 @@ $seo = [
                         'title' => 'Choquequirao',
                         'description' => 'Descubre la majestuosa "Cuna de Oro" y hermana sagrada de Machu Picchu, una joya arqueológica oculta entre los Andes.',
                         'images' => [
-                            '/public/img/tours/andes-magicos-1.jpg',
-                            '/public/img/tours/andes-magicos-2.jpg',
-                            '/public/img/tours/andes-magicos-3.jpg',
-                            '/public/img/tours/andes-magicos-4.jpg'
+                            '/public/img/sobrevuelos/choquequirao-1.webp',
+                            '/public/img/sobrevuelos/choquequirao-2.webp',
+                            '/public/img/sobrevuelos/choquequirao-3.webp',
+                            '/public/img/sobrevuelos/choquequirao-4.webp'
                         ],
                         'duration' => '1h 45m',
                         'pax' => 'Hasta 4 personas',
@@ -222,10 +222,10 @@ $seo = [
                         'title' => 'Lago Titicaca',
                         'description' => 'Contempla la inmensidad del lago navegable más alto del mundo y sus islas flotantes desde una perspectiva celestial.',
                         'images' => [
-                            '/public/img/tours/andes-magicos-1.jpg',
-                            '/public/img/tours/andes-magicos-2.jpg',
-                            '/public/img/tours/andes-magicos-3.jpg',
-                            '/public/img/tours/andes-magicos-4.jpg'
+                            '/public/img/sobrevuelos/titicaca-lake-1.webp',
+                            '/public/img/sobrevuelos/titicaca-lake-2.webp',
+                            '/public/img/sobrevuelos/titicaca-lake-3.webp',
+                            '/public/img/sobrevuelos/titicaca-lake-4.webp'
                         ],
                         'duration' => '2h',
                         'pax' => 'Hasta 6 personas',
@@ -239,10 +239,10 @@ $seo = [
                         'title' => 'Líneas de Nazca',
                         'description' => 'Descifra los misterios de las antiguas figuras geoglíficas que solo revelan su verdadera forma desde el cielo.',
                         'images' => [
-                            '/public/img/tours/andes-magicos-1.jpg',
-                            '/public/img/tours/andes-magicos-2.jpg',
-                            '/public/img/tours/andes-magicos-3.jpg',
-                            '/public/img/tours/andes-magicos-4.jpg'
+                            '/public/img/sobrevuelos/nazca-lines-1.webp',
+                            '/public/img/sobrevuelos/nazca-lines-2.webp',
+                            '/public/img/sobrevuelos/nazca-lines-3.webp',
+                            '/public/img/sobrevuelos/nazca-lines-4.webp'
                         ],
                         'duration' => '1h 15m',
                         'pax' => 'Hasta 4 personas',
@@ -252,23 +252,24 @@ $seo = [
                         'extra_text' => 'Patrimonio Mundial',
                         'url' => '/agencia/nazca'
                     ],
-                    [
-                        'title' => 'Salar de Uyuni',
-                        'description' => 'Vuela sobre el espejo natural más grande del planeta, donde el cielo y la tierra se funden en el horizonte.',
-                        'images' => [
-                            '/public/img/tours/andes-magicos-1.jpg',
-                            '/public/img/tours/andes-magicos-2.jpg',
-                            '/public/img/tours/andes-magicos-3.jpg',
-                            '/public/img/tours/andes-magicos-4.jpg'
-                        ],
-                        'duration' => '3h',
-                        'pax' => 'Hasta 6 personas',
-                        'location' => 'Uyuni, Bolivia',
-                        'badge' => 'Sobrevuelo',
-                        'extra_icon' => 'fas fa-globe',
-                        'extra_text' => 'Maravilla Infinita',
-                        'url' => '/agencia/uyuni'
-                    ],
+                    //[
+                    //    'title' => 'Salar de Uyuni',
+                    //    'description' => 'Vuela sobre el espejo natural más grande del planeta, donde el cielo y la tierra se funden en el horizonte.',
+                    //    'images' => [
+                    //        '/public/img/tours/andes-magicos-1.jpg',
+                    //        '/public/img/tours/andes-magicos-2.jpg',
+                    //        '/public/img/tours/andes-magicos-3.jpg',
+                    //        '/public/img/tours/andes-magicos-4.jpg'
+                    //    ],
+                    //    'duration' => '3h',
+                    //    'pax' => 'Hasta 6 personas',
+                    //    'location' => 'Uyuni, Bolivia',
+                    //    'badge' => 'Sobrevuelo',
+                    //    'extra_icon' => 'fas fa-globe',
+                    //    'extra_text' => 'Maravilla Infinita',
+                    //    'url' => '/agencia/uyuni'
+                    //],
+
                     // Tours Existentes
                     [
                         'title' => $h2_2, // Andes Mágicos
@@ -305,13 +306,13 @@ $seo = [
                         'url' => '/agencia/valle-maras'
                     ],
                     [
-                        'title' => $h2_6, // Vinicunca Elite Experience
+                        'title' => $h2_6, // Vinicunca
                         'description' => $p_7,
                         'images' => [
-                            'https://images.pexels.com/photos/6921111/pexels-photo-6921111.jpeg',
-                            'https://www.peru.travel/Contenido/Atractivo/Imagen/es/189/1.1/Principal/montana-siete-colores.jpg',
-                            'https://media.istockphoto.com/id/1169566378/es/foto/vista-a%C3%A9rea-de-la-monta%C3%B1a-arcoiris-vinicunca.jpg?s=612x612&w=0&k=20&c=X_X_X_X_X_X_X_X_X_X_X_X_X',
-                            'https://upload.wikimedia.org/wikipedia/commons/1/1a/Vinicunca_Rainbow_Mountain.jpg'
+                            '/public/img/sobrevuelos/vinicunca-mountain-1.webp',
+                            '/public/img/sobrevuelos/vinicunca-mountain-2.webp',
+                            '/public/img/sobrevuelos/vinicunca-mountain-3.webp',
+                            '/public/img/sobrevuelos/vinicunca-mountain-4.webp'
                         ],
                         'duration' => '1 horas',
                         'pax' => 'Hasta 6 personas',
