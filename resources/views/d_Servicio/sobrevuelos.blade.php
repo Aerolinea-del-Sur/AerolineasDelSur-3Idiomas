@@ -55,6 +55,93 @@ $seo = [
                 $p_13 = 'Cusco, Perú';        
 ?>
 
+    <style>
+        /* Estilos del Carrusel */
+        .tour-image {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .carousel-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .carousel-slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .carousel-slide.active {
+            display: block;
+        }
+        
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .tour-card:hover .carousel-slide img {
+            transform: scale(1.1);
+        }
+        
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .tour-image:hover .carousel-btn {
+            opacity: 1;
+        }
+        
+        .prev-btn {
+            left: 10px;
+        }
+        
+        .next-btn {
+            right: 10px;
+        }
+        
+        .carousel-dots {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 5px;
+            z-index: 2;
+        }
+        
+        .dot {
+            width: 8px;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .dot.active {
+            background: white;
+        }
+    </style>
     <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/Agencia.css') }}">
     <!-- Hero Section -->
     <section class="hero">
@@ -111,120 +198,190 @@ $seo = [
             </div>
             
             <div class="tours-grid">
-                <!-- Tour 01: Andes Mágicos -->
+                <?php
+                $tours = [
+                    // Nuevos Tours
+                    [
+                        'title' => 'Choquequirao',
+                        'description' => 'Descubre la majestuosa "Cuna de Oro" y hermana sagrada de Machu Picchu, una joya arqueológica oculta entre los Andes.',
+                        'images' => [
+                            'https://upload.wikimedia.org/wikipedia/commons/3/3d/Choquequirao_Cusco.jpg',
+                            'https://www.peru.travel/Contenido/Atractivo/Imagen/en/189/1.1/Principal/choquequirao.jpg',
+                            'https://media.istockphoto.com/id/513536648/es/foto/choquequirao-ruinas-incas-en-per%C3%BA.jpg?s=612x612&w=0&k=20&c=Kk7C-u1u9Ww_g_yZz_X_X_X_X_X_X_X_X_X_X',
+                            'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Choquequirao_ruins.jpg/1200px-Choquequirao_ruins.jpg'
+                        ],
+                        'duration' => '1h 45m',
+                        'pax' => 'Hasta 4 personas',
+                        'location' => 'Cusco, Perú',
+                        'badge' => 'Sobrevuelo',
+                        'extra_icon' => 'fas fa-mountain',
+                        'extra_text' => 'Aventura Arqueológica',
+                        'url' => '/agencia/choquequirao'
+                    ],
+                    [
+                        'title' => 'Lago Titicaca',
+                        'description' => 'Contempla la inmensidad del lago navegable más alto del mundo y sus islas flotantes desde una perspectiva celestial.',
+                        'images' => [
+                            'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Titicaca_Lake_-_Uros.jpg/1200px-Titicaca_Lake_-_Uros.jpg',
+                            'https://www.peru.travel/Contenido/Atractivo/Imagen/es/133/1.1/Principal/lago-titicaca.jpg',
+                            'https://media.istockphoto.com/id/509536738/es/foto/isla-taquile-en-el-lago-titicaca-per%C3%BA.jpg?s=612x612&w=0&k=20&c=X_X_X_X_X_X_X_X_X_X_X_X_X',
+                            'https://upload.wikimedia.org/wikipedia/commons/a/a2/Lake_Titicaca_from_Isla_del_Sol.jpg'
+                        ],
+                        'duration' => '2h',
+                        'pax' => 'Hasta 6 personas',
+                        'location' => 'Puno, Perú',
+                        'badge' => 'Sobrevuelo',
+                        'extra_icon' => 'fas fa-water',
+                        'extra_text' => 'Maravilla Natural',
+                        'url' => '/agencia/titicaca'
+                    ],
+                    [
+                        'title' => 'Líneas de Nazca',
+                        'description' => 'Descifra los misterios de las antiguas figuras geoglíficas que solo revelan su verdadera forma desde el cielo.',
+                        'images' => [
+                            'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Nazca_Lines_-_Hummingbird.jpg/1200px-Nazca_Lines_-_Hummingbird.jpg',
+                            'https://www.peru.travel/Contenido/Atractivo/Imagen/es/37/1.1/Principal/lineas-de-nasca.jpg',
+                            'https://media.istockphoto.com/id/1146665853/es/foto/vista-a%C3%A9rea-de-las-l%C3%ADneas-de-nazca-en-per%C3%BA.jpg?s=612x612&w=0&k=20&c=X_X_X_X_X_X_X_X_X_X_X_X_X',
+                            'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Nazca_monkey.jpg/800px-Nazca_monkey.jpg'
+                        ],
+                        'duration' => '1h 15m',
+                        'pax' => 'Hasta 4 personas',
+                        'location' => 'Ica, Perú',
+                        'badge' => 'Sobrevuelo',
+                        'extra_icon' => 'fas fa-eye',
+                        'extra_text' => 'Patrimonio Mundial',
+                        'url' => '/agencia/nazca'
+                    ],
+                    [
+                        'title' => 'Salar de Uyuni',
+                        'description' => 'Vuela sobre el espejo natural más grande del planeta, donde el cielo y la tierra se funden en el horizonte.',
+                        'images' => [
+                            'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Salar_de_Uyuni%2C_Bolivia.jpg/1200px-Salar_de_Uyuni%2C_Bolivia.jpg',
+                            'https://www.boliviamia.net/Images/Tours/uyuni-salt-flats-tour-3-days.jpg',
+                            'https://media.istockphoto.com/id/499696238/es/foto/salar-de-uyuni-bolivia.jpg?s=612x612&w=0&k=20&c=X_X_X_X_X_X_X_X_X_X_X_X_X',
+                            'https://upload.wikimedia.org/wikipedia/commons/e/e0/Salar_de_Uyuni_pile_of_salt.jpg'
+                        ],
+                        'duration' => '3h',
+                        'pax' => 'Hasta 6 personas',
+                        'location' => 'Uyuni, Bolivia',
+                        'badge' => 'Sobrevuelo',
+                        'extra_icon' => 'fas fa-globe',
+                        'extra_text' => 'Maravilla Infinita',
+                        'url' => '/agencia/uyuni'
+                    ],
+                    // Tours Existentes
+                    [
+                        'title' => $h2_2, // Andes Mágicos
+                        'description' => $p_3,
+                        'images' => [
+                            'https://upload.wikimedia.org/wikipedia/commons/d/dd/Ausangate.jpg',
+                            'https://www.peru.travel/Contenido/Atractivo/Imagen/es/189/1.1/Principal/montana-siete-colores.jpg',
+                            'https://media.istockphoto.com/id/1136437406/es/foto/monta%C3%B1a-arcoiris-en-los-andes-per%C3%BA.jpg?s=612x612&w=0&k=20&c=X_X_X_X_X_X_X_X_X_X_X_X_X',
+                            'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Rainbow_Mountain_Peru.jpg/1200px-Rainbow_Mountain_Peru.jpg'
+                        ],
+                        'duration' => '1 horas',
+                        'pax' => 'Hasta 4 personas',
+                        'location' => 'Cusco, Perú',
+                        'badge' => 'Sobrevuelo',
+                        'extra_icon' => 'fas fa-star',
+                        'extra_text' => 'Experiencia única',
+                        'url' => '/agencia/andes-magicos'
+                    ],
+                    [
+                        'title' => $h2_4, // Valle Maras
+                        'description' => $p_5,
+                        'images' => [
+                            'https://upload.wikimedia.org/wikipedia/commons/4/4f/Moray_-_Qechuyoq.JPG',
+                            'https://www.peru.travel/Contenido/Atractivo/Imagen/es/21/1.1/Principal/salineras-maras.jpg',
+                            'https://media.istockphoto.com/id/534066914/es/foto/salineras-de-maras-per%C3%BA.jpg?s=612x612&w=0&k=20&c=X_X_X_X_X_X_X_X_X_X_X_X_X',
+                            'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Salinas_de_Maras%2C_Per%C3%BA%2C_2015-07-31%2C_DD_38.JPG/1200px-Salinas_de_Maras%2C_Per%C3%BA%2C_2015-07-31%2C_DD_38.JPG'
+                        ],
+                        'duration' => '1 horas',
+                        'pax' => 'Hasta 6 personas',
+                        'location' => 'Cusco, Perú',
+                        'badge' => 'Sobrevuelo',
+                        'extra_icon' => 'fas fa-water',
+                        'extra_text' => 'Incluye lagunas',
+                        'url' => '/agencia/valle-maras'
+                    ],
+                    [
+                        'title' => $h2_6, // Vinicunca Elite Experience
+                        'description' => $p_7,
+                        'images' => [
+                            'https://images.pexels.com/photos/6921111/pexels-photo-6921111.jpeg',
+                            'https://www.peru.travel/Contenido/Atractivo/Imagen/es/189/1.1/Principal/montana-siete-colores.jpg',
+                            'https://media.istockphoto.com/id/1169566378/es/foto/vista-a%C3%A9rea-de-la-monta%C3%B1a-arcoiris-vinicunca.jpg?s=612x612&w=0&k=20&c=X_X_X_X_X_X_X_X_X_X_X_X_X',
+                            'https://upload.wikimedia.org/wikipedia/commons/1/1a/Vinicunca_Rainbow_Mountain.jpg'
+                        ],
+                        'duration' => '1 horas',
+                        'pax' => 'Hasta 6 personas',
+                        'location' => 'Cusco, Perú',
+                        'badge' => 'Sobrevuelo',
+                        'extra_icon' => 'fas fa-crown',
+                        'extra_text' => 'Experiencia elite',
+                        'url' => '/agencia/vinicunca-elite'
+                    ]
+                ];
+
+                foreach ($tours as $index => $tour): 
+                ?>
                 <article class="tour-card" data-category="sobrevuelo" itemscope itemtype="https://schema.org/TouristAttraction">
                     <div class="tour-image">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Ausangate.jpg" 
-                            alt="Sobrevuelo Montaña de 7 Colores en los Andes Peruanos" 
-                            itemprop="image">
+                        <div class="carousel-container" id="carousel-<?= $index ?>">
+                            <?php foreach ($tour['images'] as $imgIndex => $imgSrc): ?>
+                            <div class="carousel-slide <?= $imgIndex === 0 ? 'active' : '' ?>">
+                                <img src="<?= $imgSrc ?>" 
+                                    alt="<?= $tour['title'] ?> - Imagen <?= $imgIndex + 1 ?>" 
+                                    itemprop="image">
+                            </div>
+                            <?php endforeach; ?>
+                            
+                            <button class="carousel-btn prev-btn" onclick="moveSlide(<?= $index ?>, -1, event)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next-btn" onclick="moveSlide(<?= $index ?>, 1, event)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            
+                            <div class="carousel-dots">
+                                <?php foreach ($tour['images'] as $imgIndex => $imgSrc): ?>
+                                <span class="dot <?= $imgIndex === 0 ? 'active' : '' ?>" onclick="setSlide(<?= $index ?>, <?= $imgIndex ?>, event)"></span>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                        
                         <div class="tour-overlay">
-                            <div class="tour-badge sobrevuelo" itemprop="additionalType">Sobrevuelo</div>
+                            <div class="tour-badge <?= strtolower($tour['badge']) ?>" itemprop="additionalType"><?= $tour['badge'] ?></div>
                         </div>
                     </div>
                     <div class="tour-content">
-                        <h2 class="tour-title" itemprop="name"><?= $h2_2 ?></h2>
-                        <p class="tour-description" itemprop="description"><?= $p_3 ?></p>
+                        <h2 class="tour-title" itemprop="name"><?= $tour['title'] ?></h2>
+                        <p class="tour-description" itemprop="description"><?= $tour['description'] ?></p>
                         <div class="tour-details">
-                            <div class="detail" itemprop="duration" content="PT1H30M">
+                            <div class="detail" itemprop="duration">
                                 <i class="fas fa-clock"></i>
-                                <span>1 horas</span>
+                                <span><?= $tour['duration'] ?></span>
                             </div>
-                            <div class="detail" itemprop="audience" content="Grupo pequeño">
+                            <div class="detail" itemprop="audience">
                                 <i class="fas fa-users"></i>
-                                <span>Hasta 4 personas</span>
+                                <span><?= $tour['pax'] ?></span>
                             </div>
                             <div class="detail" itemprop="location" itemscope itemtype="https://schema.org/Place">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <span itemprop="address">Cusco, Perú</span>
+                                <span itemprop="address"><?= $tour['location'] ?></span>
                             </div>
                             <div class="detail">
-                                <i class="fas fa-star"></i>
-                                <span>Experiencia única</span>
+                                <i class="<?= $tour['extra_icon'] ?>"></i>
+                                <span><?= $tour['extra_text'] ?></span>
                             </div>
                         </div>
-                        <a href="/agencia/andes-magicos" class="tour-btn" itemprop="url" title="Reservar Sobrevuelo Andes Mágicos">
+                        <a href="<?= $tour['url'] ?>" class="tour-btn" itemprop="url" title="Reservar <?= $tour['title'] ?>">
                             <span>Conoce más</span>
                             <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </article>
-                
-                <!-- Tour 03: Valle Maras -->
-                <article class="tour-card" data-category="sobrevuelo" itemscope itemtype="https://schema.org/TouristAttraction">
-                    <div class="tour-image">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Moray_-_Qechuyoq.JPG" 
-                            alt="Sobrevuelo Valle de Maras y Salineras en Cusco" 
-                            itemprop="image">
-                        <div class="tour-overlay">
-                            <div class="tour-badge sobrevuelo" itemprop="additionalType">Sobrevuelo</div>
-                        </div>
-                    </div>
-                    <div class="tour-content">
-                        <h2 class="tour-title" itemprop="name"><?= $h2_4 ?></h2>
-                        <p class="tour-description" itemprop="description"><?= $p_5 ?></p>
-                        <div class="tour-details">
-                            <div class="detail" itemprop="duration" content="PT2H30M">
-                                <i class="fas fa-clock"></i>
-                                <span>1 horas</span>
-                            </div>
-                            <div class="detail" itemprop="audience" content="Grupo mediano">
-                                <i class="fas fa-users"></i>
-                                <span>Hasta 6 personas</span>
-                            </div>
-                            <div class="detail" itemprop="location" itemscope itemtype="https://schema.org/Place">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span itemprop="address">Cusco, Perú</span>
-                            </div>
-                            <div class="detail">
-                                <i class="fas fa-water"></i>
-                                <span>Incluye lagunas</span>
-                            </div>
-                        </div>
-                        <a href="/agencia/valle-maras" class="tour-btn" itemprop="url" title="Reservar Sobrevuelo Valle Maras">
-                            <span>Conoce más</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </article>
-                
-                <!-- Tour 05: Vinicunca Elite Experience -->
-                <article class="tour-card" data-category="sobrevuelo" itemscope itemtype="https://schema.org/TouristAttraction">
-                    <div class="tour-image">
-                        <img src="https://images.pexels.com/photos/6921111/pexels-photo-6921111.jpeg" 
-                            alt="Sobrevuelo Vinicunca, Palcoyo y Ausangate en Cusco" 
-                            itemprop="image">
-                        <div class="tour-overlay">
-                            <div class="tour-badge sobrevuelo" itemprop="additionalType">Sobrevuelo</div>
-                        </div>
-                    </div>
-                    <div class="tour-content">
-                        <h2 class="tour-title" itemprop="name"><?= $h2_6 ?></h2>
-                        <p class="tour-description" itemprop="description"><?= $p_7 ?></p>
-                        <div class="tour-details">
-                            <div class="detail" itemprop="duration" content="PT2H30M">
-                                <i class="fas fa-clock"></i>
-                                <span>1 horas</span>
-                            </div>
-                            <div class="detail" itemprop="audience" content="Grupo mediano">
-                                <i class="fas fa-users"></i>
-                                <span>Hasta 6 personas</span>
-                            </div>
-                            <div class="detail" itemprop="location" itemscope itemtype="https://schema.org/Place">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span itemprop="address">Cusco, Perú</span>
-                            </div>
-                            <div class="detail">
-                                <i class="fas fa-crown"></i>
-                                <span>Experiencia elite</span>
-                            </div>
-                        </div>
-                        <a href="/agencia/vinicunca-elite" class="tour-btn" itemprop="url" title="Reservar Vinicunca Elite Experience">
-                            <span>Conoce más</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </article>
-                
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
@@ -290,6 +447,49 @@ $seo = [
                 }
             });
         });
+
+        // Carousel Logic
+        function moveSlide(tourIndex, step, event) {
+            if(event) event.preventDefault();
+            const container = document.getElementById('carousel-' + tourIndex);
+            if (!container) return;
+            
+            const slides = container.querySelectorAll('.carousel-slide');
+            const dots = container.querySelectorAll('.dot');
+            
+            let activeIndex = 0;
+            slides.forEach((slide, index) => {
+                if (slide.classList.contains('active')) {
+                    activeIndex = index;
+                }
+                slide.classList.remove('active');
+                if(dots[index]) dots[index].classList.remove('active');
+            });
+            
+            let newIndex = activeIndex + step;
+            if (newIndex >= slides.length) newIndex = 0;
+            if (newIndex < 0) newIndex = slides.length - 1;
+            
+            slides[newIndex].classList.add('active');
+            if(dots[newIndex]) dots[newIndex].classList.add('active');
+        }
+
+        function setSlide(tourIndex, slideIndex, event) {
+            if(event) event.preventDefault();
+            const container = document.getElementById('carousel-' + tourIndex);
+            if (!container) return;
+
+            const slides = container.querySelectorAll('.carousel-slide');
+            const dots = container.querySelectorAll('.dot');
+            
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if(dots[index]) dots[index].classList.remove('active');
+            });
+            
+            if(slides[slideIndex]) slides[slideIndex].classList.add('active');
+            if(dots[slideIndex]) dots[slideIndex].classList.add('active');
+        }
     </script>
     
     <!-- Control de audio para Video de Vimeo -->
