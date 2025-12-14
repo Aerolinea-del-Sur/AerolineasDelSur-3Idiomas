@@ -271,30 +271,44 @@ $seo = [
                     //],
 
                     // Tours Existentes
+                    //[
+                    //    'title' => $h2_2, // Andes Mágicos
+                    //    'description' => $p_3,
+                    //    'images' => [
+                    //        'https://upload.wikimedia.org/wikipedia/commons/d/dd/Ausangate.jpg',
+                    //        'https://www.peru.travel/Contenido/Atractivo/Imagen/es/189/1.1/Principal/montana-siete-colores.jpg',
+                    //        'https://media.istockphoto.com/id/1136437406/es/foto/monta%C3%B1a-arcoiris-en-los-andes-per%C3%BA.jpg?s=612x612&w=0&k=20&c=X_X_X_X_X_X_X_X_X_X_X_X_X',
+                    //        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Rainbow_Mountain_Peru.jpg/1200px-Rainbow_Mountain_Peru.jpg'
+                    //    ],
+                    //    'duration' => '1 horas',
+                    //    'pax' => 'Hasta 4 personas',
+                    //    'location' => 'Cusco, Perú',
+                    //    'badge' => 'Sobrevuelo',
+                    //    'extra_icon' => 'fas fa-star',
+                    //    'extra_text' => 'Experiencia única',
+                    //    'url' => '/agencia/andes-magicos'
+                    //],
                     [
-                        'title' => $h2_2, // Andes Mágicos
-                        'description' => $p_3,
-                        'images' => [
-                            'https://upload.wikimedia.org/wikipedia/commons/d/dd/Ausangate.jpg',
-                            'https://www.peru.travel/Contenido/Atractivo/Imagen/es/189/1.1/Principal/montana-siete-colores.jpg',
-                            'https://media.istockphoto.com/id/1136437406/es/foto/monta%C3%B1a-arcoiris-en-los-andes-per%C3%BA.jpg?s=612x612&w=0&k=20&c=X_X_X_X_X_X_X_X_X_X_X_X_X',
-                            'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Rainbow_Mountain_Peru.jpg/1200px-Rainbow_Mountain_Peru.jpg'
-                        ],
-                        'duration' => '1 horas',
-                        'pax' => 'Hasta 4 personas',
-                        'location' => 'Cusco, Perú',
-                        'badge' => 'Sobrevuelo',
-                        'extra_icon' => 'fas fa-star',
-                        'extra_text' => 'Experiencia única',
-                        'url' => '/agencia/andes-magicos'
-                    ],
-                    [
-                        'title' => $h2_4, // Valle Maras
+                        'title' => $h2_4, // Valle Sagrado
                         'description' => $p_5,
                         'images' => [
-                            'https://upload.wikimedia.org/wikipedia/commons/4/4f/Moray_-_Qechuyoq.JPG',
-                            'https://www.peru.travel/Contenido/Atractivo/Imagen/es/21/1.1/Principal/salineras-maras.jpg',
-                            'https://media.istockphoto.com/id/534066914/es/foto/salineras-de-maras-per%C3%BA.jpg?s=612x612&w=0&k=20&c=X_X_X_X_X_X_X_X_X_X_X_X_X',
+                            '/public/img/sobrevuelos/sacred-valley-1.webp',
+                            '/public/img/sobrevuelos/sacred-valley-2.webp',
+                            '/public/img/sobrevuelos/sacred-valley-3.webp',
+                            '/public/img/sobrevuelos/sacred-valley-4.webp'
+                        ],
+                        'duration' => '1 horas',
+                        'pax' => 'Hasta 6 personas',
+                        'location' => 'Cusco, Perú',
+                        'badge' => 'Sobrevuelo',
+                        'extra_icon' => 'fas fa-water',
+                        'extra_text' => 'Incluye lagunas',
+                        'url' => '/agencia/valle-maras'
+                    ],
+                    [
+                        'title' => $h2_6, // Vinicunca
+                        'description' => $p_7,
+                        'images' => [
                             'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Salinas_de_Maras%2C_Per%C3%BA%2C_2015-07-31%2C_DD_38.JPG/1200px-Salinas_de_Maras%2C_Per%C3%BA%2C_2015-07-31%2C_DD_38.JPG'
                         ],
                         'duration' => '1 horas',
