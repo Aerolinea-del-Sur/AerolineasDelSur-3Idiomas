@@ -275,7 +275,7 @@ $seo = [
             </a>
 
             <a href="/aeronaves/Mi17" class="aircraft-card" style="text-decoration: none; color: inherit;">
-                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/helicopteros/Mi-17.webp') }}')">
+                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/mi17-5.webp') }}')">
                     <div class="aircraft-overlay">
                         <div class="aircraft-details">
                             <p>Capacidad: 24 pax</p>
