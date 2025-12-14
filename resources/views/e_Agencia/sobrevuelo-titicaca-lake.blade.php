@@ -106,7 +106,7 @@ $seo = [
         <div class="tour-meta">
             <div class="meta-item">
                 <i class="fas fa-clock"></i>
-                <span>1 día</span>
+                <span>1 hora y 40 minutos</span>
             </div>
             <div class="meta-item">
                 <i class="fas fa-users"></i>
@@ -412,7 +412,7 @@ $seo = [
                 </div>
                 <div class="form-group">
                     <label for="tourName">Nombre del Tour *</label>
-                    <input type="text" id="tourName" name="tourName" value="Vuelo Panorámico sobre Machu Picchu" required readonly>
+                    <input type="text" id="tourName" name="tourName" value="Sobrevuelo Lago Titicaca" required readonly>
                 </div>
                 <div class="form-group">
                     <label for="passengers">Número de Pasajeros *</label>
