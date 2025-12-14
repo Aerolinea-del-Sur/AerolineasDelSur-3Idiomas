@@ -45,7 +45,9 @@
             <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon-32x32.png') }}">
             <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon-16x16.png') }}">
             <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('favicon.ico') }}">
-            <link rel="manifest" href="{{ asset('img/service/favicon_io/site.webmanifest') }}">
+            <!-- favicon - reconocimiento de site.webmanifest -->
+            <link rel="manifest" href="{{ asset('site.webmanifest') }}">
+            <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
             <meta name="theme-color" content="#C9A227">
         <!-- CONEXION A TIPOGRAFIAS -->
             <!-- CONEXION A TIPOGRAFIAS -->
@@ -78,7 +80,7 @@
             <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon-32x32.png') }}">
             <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon-16x16.png') }}">
             <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('favicon.ico') }}">
-            <link rel="manifest" href="{{ asset('img/service/favicon_io/site.webmanifest') }}">
+            <link rel="manifest" href="{{ asset('site.webmanifest') }}">
             <meta name="theme-color" content="#C9A227">
         <!-- Twitter Card 
             <meta name="twitter:card" content="summary_large_image">
