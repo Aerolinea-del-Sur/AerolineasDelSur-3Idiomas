@@ -756,35 +756,10 @@ $seo = [
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('.heli-form');
     
+    
     // --- LÓGICA DE INTERFAZ (UI) ---
-
-    // 1. Manejo de Tipo de Viaje (Mostrar/Ocultar Retorno)
-    const radioButtons = form.querySelectorAll('input[name="tipo_viaje"]');
-    const retornoField = form.querySelector('.js-retorno-field');
-    const retornoInput = document.getElementById('fecha_retorno_header');
-
-    radioButtons.forEach(radio => {
-        radio.addEventListener('change', function() {
-            if (this.value === 'ida_vuelta') {
-                retornoField.style.display = 'block';
-                retornoInput.setAttribute('required', 'required');
-            } else {
-                retornoField.style.display = 'none';
-                retornoInput.removeAttribute('required');
-                retornoInput.value = ''; // Limpiar valor
-            }
-        });
-    });
-
-    // 3. Manejo de Comentarios (Checkbox)
-    const checkComments = document.getElementById('show_comments_header');
-    const commentsField = document.getElementById('comentarios-field_header');
-
-    checkComments.addEventListener('change', function() {
-        commentsField.style.display = this.checked ? 'block' : 'none';
-    });
-
-
+    // Formulario simple sin funcionalidad compleja adicional
+    
     // --- LÓGICA DE ENVÍO (AJAX) ---
 
     form.addEventListener('submit', function(e) {
@@ -802,9 +777,6 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.disabled = true;
 
         const formData = new FormData(this);
-
-        // Asegurarse de tener la URL correcta (si action="#" está vacío, usa la ruta definida en blade)
-        // Puedes poner: action="{{ route('vuelos.send') }}" en el HTML o definirlo aquí:
         const url = this.action && this.action !== window.location.href ? this.action : '/enviar-vuelo'; 
 
         fetch(url, {
@@ -819,17 +791,9 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                // Éxito: Usar SweetAlert o un alert simple
                 alert(data.message); 
                 form.reset();
-                // Resetear contadores visuales
-                document.querySelector('.count[data-type="adultos"]').textContent = '1';
-                document.querySelector('.count[data-type="jovenes"]').textContent = '0';
-                updateTotalPassengers();
-                // Resetear visualización de retorno
-                retornoField.style.display = 'block'; 
             } else {
-                // Error de validación o servidor
                 if (data.errors) {
                     displayValidationErrors(data.errors);
                 } else {
@@ -849,15 +813,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function displayValidationErrors(errors) {
         for (const field in errors) {
-            // Mapeo de campos a IDs del HTML si los nombres no coinciden exactamente
-            // En tu caso los 'name' coinciden bien, pero por si acaso:
-            let inputId = '';
-            if (field === 'desde') inputId = 'desde_header';
-            if (field === 'hacia') inputId = 'hacia_header';
-            if (field === 'fecha_ida') inputId = 'fecha_ida_header';
-            if (field === 'fecha_retorno') inputId = 'fecha_retorno_header';
-            if (field === 'tipo_a') inputId = 'tipo_a_header';
+            let inputId = field;
             
+            // Buscar el input correspondiente
             const input = document.getElementById(inputId) || document.querySelector(`[name="${field}"]`);
             
             if (input) {
