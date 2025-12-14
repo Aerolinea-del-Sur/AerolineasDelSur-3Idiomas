@@ -291,5 +291,34 @@ $seo = [
             });
         });
     </script>
-<script src="/video/Mi-Video-Agencia.mp4"></script>
+    
+    <!-- Control de audio para Video de Vimeo -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const iframe = document.querySelector('.bg-video iframe');
+            const audioToggle = document.getElementById('audioToggle');
+            let isMuted = false;
+            
+            if (iframe && audioToggle) {
+                const player = new Vimeo.Player(iframe);
+                
+                // Control de audio
+                audioToggle.addEventListener('click', function() {
+                    if (isMuted) {
+                        player.setVolume(0.5); // Volumen al 50%
+                        audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+                        isMuted = false;
+                    } else {
+                        player.setVolume(0);
+                        audioToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                        isMuted = true;
+                    }
+                });
+                
+                // Iniciar con volumen medio
+                player.setVolume(0.5);
+            }
+        });
+    </script>
 @endsection

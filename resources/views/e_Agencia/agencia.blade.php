@@ -61,7 +61,7 @@ $seo = [
         <div class="hero-background">
             <!-- Video de fondo de Vimeo con audio -->
             <div class="bg-video">
-                <video width="100%" height="100%" autoplay muted loop playsinline style="object-fit: cover;">
+                <video width="100%" height="100%" autoplay loop playsinline style="object-fit: cover;" id="heroVideo">
                     <source src="{{ asset('/public/video/agencia-portada.mp4') }}" type="video/mp4">
                 </video>
             </div>
@@ -454,28 +454,28 @@ $seo = [
 <script src="https://player.vimeo.com/api/player.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const iframe = document.querySelector('.bg-video iframe');
+        const video = document.querySelector('.bg-video video');
         const audioToggle = document.getElementById('audioToggle');
         let isMuted = false;
         
-        if (iframe) {
-            const player = new Vimeo.Player(iframe);
+        if (video) {
+            // Quitar el atributo muted para que el video tenga sonido
+            video.muted = false;
+            video.volume = 0.5; // Volumen inicial al 50%
             
             // Control de audio
             audioToggle.addEventListener('click', function() {
                 if (isMuted) {
-                    player.setVolume(0.7); // Volumen al 70%
+                    video.muted = false;
+                    video.volume = 0.5; // Volumen al 50%
                     audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
                     isMuted = false;
                 } else {
-                    player.setVolume(0);
+                    video.muted = true;
                     audioToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
                     isMuted = true;
                 }
             });
-            
-            // Iniciar con volumen bajo
-            player.setVolume(0.5);
         }
     });
 </script>
