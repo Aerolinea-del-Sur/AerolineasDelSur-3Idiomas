@@ -1,4 +1,14 @@
 @extends('a_EncabezadoFooter.princi')
+@php
+// Custom SEO for Agencia page
+$seo = [
+    'title' => 'Tours Aéreos en Cusco | Sobrevuelos y Tours Tradicionales en Perú',
+    'description' => 'Descubre  Perú con nuestros tours aéreos exclusivos: sobrevuelos a Vinicunca, Valle Sagrado, Machu Picchu y tours tradicionales en Cusco. Experiencias inolvidables desde las alturas.',
+    'keywords' => 'tours aéreos cusco, sobrevuelo machu picchu, tour vinicunca, valle sagrado sobrevuelo, agencia tours cusco, tours tradicionales perú',
+    'og_image' => asset('img/tours-aereos-cusco.jpg'),
+    'canonical' => url('/agencia'),
+];
+@endphp
 @section('content')
 <?php
     $h1_1_1 = 'Visita el Mundo';
