@@ -50,11 +50,15 @@
             <!-- Video de fondo de Vimeo con audio -->
             <div class="bg-video">
                 <iframe 
-                    src="https://player.vimeo.com/video/1117325379?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&muted=0&background=1&controls=0" 
+                    src="{{ asset('/public/video/agencia-portada.mp4') }}" 
+                    type="video/mp4"
                     frameborder="0" 
                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
                     referrerpolicy="strict-origin-when-cross-origin" 
                     title="Mi video Agencia">
+                    <video width="100%" height="100%" autoplay muted loop playsinline style="object-fit: cover;">
+                    
+                </video>
                 </iframe>
             </div>
             <div class="hero-overlay"></div>
