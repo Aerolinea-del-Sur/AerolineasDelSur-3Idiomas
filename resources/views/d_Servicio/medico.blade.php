@@ -275,6 +275,25 @@ $seo = [
     </div>
 </header>
 
+<!-- Aviso de Contacto Exclusivo -->
+<section style="background:rgba(0,0,0,0.8); padding:40px 20px;">
+    <div style="max-width:700px; margin:0 auto; padding:25px; background:linear-gradient(135deg, rgba(234,67,53,0.2), rgba(0,0,0,0.4)); border-radius:12px; border:2px solid rgba(234,67,53,0.6); text-align:center;">
+        <h3 style="color:#EA4335; margin-bottom:15px; font-size:20px;">⚕️ Servicio de Emergencia 24/7</h3>
+        <p style="color:#fff; font-size:16px; line-height:1.7; margin-bottom:20px;">
+            Por la naturaleza crítica de nuestro servicio aeromédico, <strong style="color:#EA4335;">las reservas se realizan ÚNICAMENTE por llamada telefónica y correo electrónico</strong> para garantizar comunicación inmediata y coordinación de emergencias.
+        </p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:15px; margin-top:20px;">
+            <div style="background:rgba(234,67,53,0.3); padding:15px; border-radius:8px;">
+                <p style="color:#EA4335; font-weight:600; margin-bottom:5px;">📞 Llamada Directa</p>
+                <p style="color:#fff; font-size:14px;">Atención inmediata</p>
+            </div>
+            <div style="background:rgba(234,67,53,0.3); padding:15px; border-radius:8px;">
+                <p style="color:#EA4335; font-weight:600; margin-bottom:5px;">✉️ Correo Electrónico</p>
+                <p style="color:#fff; font-size:14px;">Confirmación oficial</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <section class="heli-fleet-section">

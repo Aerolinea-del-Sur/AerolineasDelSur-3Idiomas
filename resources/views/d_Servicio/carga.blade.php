@@ -204,8 +204,12 @@ $seo = [
     <div class="cargo-container">
         <h2 class="heli-section-title">Servicios de Carga Especializada</h2>
         <p class="cargo-desc" style="margin-bottom: 22px;">
-            Operamos carga aérea con procedimientos de seguridad certificados, trazabilidad completa y equipos especializados. 
-            Gestionamos desde envíos internos de alta prioridad hasta operaciones externas internacionales con coordinación aduanera.
+            Operamos <strong style="color:#D4AF37;">helicóptero para carga externa en gasiferías</strong> y transporte médico a lugares remotos. 
+            Nuestra flota incluye <strong style="color:#D4AF37;">Mi-8 MTV1 y Antonov AN-32B</strong> para carga interna y externa: 
+            <span style="background:rgba(212,175,55,0.2); padding:3px 8px; border-radius:4px; margin:0 4px;">perecible</span>
+            <span style="background:rgba(212,175,55,0.2); padding:3px 8px; border-radius:4px; margin:0 4px;">médica</span>
+            <span style="background:rgba(212,175,55,0.2); padding:3px 8px; border-radius:4px; margin:0 4px;">valorada</span>
+            <span style="background:rgba(212,175,55,0.2); padding:3px 8px; border-radius:4px; margin:0 4px;">no perecible</span>
         </p>
         <div class="cargo-grid">
             <div class="cargo-card">
