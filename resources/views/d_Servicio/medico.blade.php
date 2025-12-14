@@ -59,7 +59,7 @@ $seo = [
     
     .medical-container {
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 60 auto;
         padding: 60px 20px;
         position: relative;
         z-index: 2;
