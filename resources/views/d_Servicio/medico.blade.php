@@ -18,161 +18,361 @@ $seo = [
     $h2_form = 'Reserva de Helicóptero';
 ?>
 
-<link rel="stylesheet" href="{{ asset('css/paginas/aeronaves/aeronaves.css') }}">
+<!-- Medical White Theme Styles -->
+<style>
+   :root {
+        --medical-white: #FFFFFF;
+        --medical-gold: #D4AF37;
+        --medical-black: #1a1a1a;
+        --medical-green: #10b981;
+        --medical-gray: #4a5568;
+        --medical-light-gray: #f7fafc;
+        --medical-red: #dc2626;
+    }
+    
+    .medical-header {
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        min-height: 70vh;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .medical-header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--medical-gold) 0%, var(--medical-green) 100%);
+    }
+    
+    .medical-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 20px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .medical-breadcrumb {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        background: rgba(212,175,55,0.1);
+        border: 1px solid var(--medical-gold);
+        border-radius: 20px;
+        color: var(--medical-gold);
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    
+    .medical-title {
+        font-size: 42px;
+        font-weight: 700;
+        color: var(--medical-black);
+        margin: 0 0 12px 0;
+        line-height: 1.2;
+    }
+    
+    .medical-subtitle {
+        font-size: 18px;
+        color: var(--medical-gray);
+        margin: 0 0 40px 0;
+    }
+    
+    .medical-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        margin-top: 40px;
+    }
+    
+    /* Form Card */
+    .medical-form-card {
+        background: var(--medical-white);
+        padding: 32px;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+       border: 2px solid var(--medical-gold);
+    }
+    
+    .form-header {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    
+    .form-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--medical-black);
+        margin: 0 0 8px 0;
+    }
+    
+    .form-desc {
+        font-size: 14px;
+        color: var(--medical-gray);
+        margin: 0;
+    }
+    
+    .form-inputs {
+        display: grid;
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .medical-input-field {
+        width: 100%;
+        padding: 14px 16px;
+        border: 2px solid #e2e8f0;
+        border-radius: 10px;
+        background: var(--medical-white);
+        color: var(--medical-black);
+        font-size: 15px;
+        transition: all 0.3s;
+    }
+    
+    .medical-input-field:focus {
+        outline: none;
+        border-color: var(--medical-gold);
+        box-shadow: 0 0 0 4px rgba(212,175,55,0.1);
+    }
+    
+    .form-buttons {
+        display: grid;
+        gap: 12px;
+    }
+    
+    .medical-button {
+        padding: 14px 24px;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .btn-emergency {
+        background: var(--medical-red);
+        color: white;
+        box-shadow: 0 4px 12px rgba(220,38,38,0.3);
+    }
+    
+    .btn-emergency:hover {
+        background: #b91c1c;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(220,38,38,0.4);
+    }
+    
+    .btn-success {
+        background: var(--medical-green);
+        color: white;
+    }
+    
+    .btn-success:hover {
+        background: #059669;
+        transform: translateY(-2px);
+    }
+    
+    .btn-secondary {
+        background: #f1f5f9;
+        color: var(--medical-gray);
+        border: 1px solid #e2e8f0;
+    }
+    
+    .btn-secondary:hover {
+        background: var(--medical-gold);
+        color: white;
+        border-color: var(--medical-gold);
+    }
+    
+    /* Emergency Info Card */
+    .emergency-card {
+        background: linear-gradient(135deg, #d1fae5 0%, #ecfdf5 100%);
+        padding: 32px;
+        border-radius: 16px;
+        border: 2px solid var(--medical-green);
+        box-shadow: 0 8px 24px rgba(16,185,129,0.15);
+    }
+    
+    .emergency-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--medical-green);
+        margin: 0 0 24px 0;
+    }
+    
+    .emergency-icon {
+        width: 48px;
+        height: 48px;
+        background: var(--medical-green);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+    }
+    
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+        background: white;
+        border-radius: 12px;
+        margin-bottom: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    
+    .contact-icon {
+        width: 48px;
+        height: 48px;
+        background: linear-gradient(135deg, var(--medical-green) 0%, #059669 100%);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+        flex-shrink: 0;
+    }
+    
+    .contact-label {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--medical-gray);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .contact-value {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--medical-black);
+    }
+    
+    .emergency-note {
+        background: white;
+        padding: 16px;
+        border-radius: 10px;
+        border-left: 4px solid var(--medical-gold);
+        margin-top: 16px;
+    }
+    
+    .emergency-note p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.6;
+        color: var(--medical-gray);
+    }
+    
+    @media (max-width: 992px) {
+        .medical-grid {
+            grid-template-columns: 1fr;
+        }
+        .medical-title {
+            font-size: 32px;
+        }
+    }
+</style>
 
-<header class="heli-header">
-    <div class="heli-bg"></div>
-    <div class="heli-dark"></div>
-    <div class="heli-content">
-        <div class="heli-badge">
+<header class="medical-header">
+    <div class="medical-container">
+        <div class="medical-breadcrumb">
             <i class="fas fa-helicopter"></i>
             <span><?= $breadcrumb ?></span>
         </div>
-        <h1 class="heli-title"><?= $h1_page ?></h1>
         
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1000px;margin:40px auto 0;align-items:start;">
-            <!-- Formulario Compacto Vertical -->
-            <form class="medical-form-compact" id="servicioForm" method="post" action="{{ route('vuelos.send') }}">
-            @csrf
-                <input type="hidden" name="tipo_servicio" value="aeromedico">
-                
-                <div style="margin-bottom:16px;">
-                    <h2 style="color:#fff;font-size:20px;margin:0 0 6px 0;font-weight:600;">Solicitar Servicio</h2>
-                    <p style="color:#ccc;font-size:13px;margin:0;">Complete para emergencias médicas</p>
-                </div>
-
-                <div style="display:grid;gap:10px;">
-                    <input class="medical-input" type="text" id="nombres_apellidos" name="nombres_apellidos" placeholder="Nombre completo *" required>
-                    <input class="medical-input" type="email" id="correo" name="correo" placeholder="Correo electrónico *" required>
-                    <input class="medical-input" type="tel" id="telefono" name="telefono" placeholder="Teléfono *" required pattern="[0-9+\s-]{7,20}">
+        <h1 class="medical-title"><?= $h1_page ?></h1>
+        <p class="medical-subtitle">Evacuaciones médicas y traslado de pacientes con equipos certificados</p>
+        
+        <div class="medical-grid">
+            <!-- Form Card -->
+            <div class="medical-form-card">
+                <div class="form-header">
+                    <h2 class="form-title">Solicitar Servicio</h2>
+                    <p class="form-desc">Complete para emergencias médicas 24/7</p>
                 </div>
                 
-                <div style="display:grid;gap:8px;margin-top:16px;">
-                    <button type="button" class="medical-btn btn-urgent" onclick="llamarDirecto()">
-                        <i class="fas fa-phone-alt"></i> Llamar Ahora: +51 932 475 995
-                    </button>
-                    <button type="button" class="medical-btn btn-whatsapp" onclick="enviarWhatsApp('aeromedico')">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </button>
-                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-                        <button type="button" class="medical-btn btn-email" onclick="enviarOutlook('aeromedico')">
-                            <i class="far fa-envelope"></i> Outlook
+                <form id="servicioForm" method="post" action="{{ route('vuelos.send') }}">
+                @csrf
+                    <input type="hidden" name="tipo_servicio" value="aeromedico">
+                    
+                    <div class="form-inputs">
+                        <input class="medical-input-field" type="text" name="nombres_apellidos" placeholder="Nombre completo *" required>
+                        <input class="medical-input-field" type="email" name="correo" placeholder="Correo electrónico *" required>
+                        <input class="medical-input-field" type="tel" name="telefono" placeholder="Teléfono *" required pattern="[0-9+\s-]{7,20}">
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="button" class="medical-button btn-emergency" onclick="llamarDirecto()">
+                            <i class="fas fa-phone-alt"></i> Llamar: +51 932 475 995
                         </button>
-                        <button type="button" class="medical-btn btn-email" onclick="enviarGmail('aeromedico')">
-                            <i class="far fa-envelope"></i> Gmail
+                        <button type="button" class="medical-button btn-success" onclick="enviarWhatsApp('aeromedico')">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
                         </button>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+                            <button type="button" class="medical-button btn-secondary" onclick="enviarOutlook('aeromedico')">
+                                <i class="far fa-envelope"></i> Outlook
+                            </button>
+                            <button type="button" class="medical-button btn-secondary" onclick="enviarGmail('aeromedico')">
+                                <i class="far fa-envelope"></i> Gmail
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Emergency Info Card -->
+            <div class="emergency-card">
+                <div class="emergency-title">
+                    <div class="emergency-icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    Servicio 24/7
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <div class="contact-label">Línea Directa</div>
+                        <div class="contact-value">+51 932 475 995</div>
                     </div>
                 </div>
-            </form>
-
-            <!-- Información de Emergencia -->
-            <div style="background:linear-gradient(135deg,rgba(211,47,47,0.15),rgba(0,0,0,0.3));padding:20px;border-radius:12px;border:2px solid rgba(211,47,47,0.4);">
-                <h3 style="color:#EA4335;margin:0 0 16px 0;font-size:18px;font-weight:600;">
-                    <i class="fas fa-ambulance"></i> Servicio 24/7
-                </h3>
-                <div style="display:grid;gap:12px;">
-                    <div style="display:flex;align-items:center;gap:12px;">
-                        <div style="width:40px;height:40px;background:rgba(211,47,47,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;">
-                            <i class="fas fa-phone" style="color:#EA4335;font-size:18px;"></i>
-                        </div>
-                        <div>
-                            <div style="color:#EA4335;font-size:13px;font-weight:600;">Línea Directa</div>
-                            <div style="color:#fff;font-size:16px;font-weight:700;">+51 932 475 995</div>
-                        </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
                     </div>
-                    <div style="display:flex;align-items:center;gap:12px;">
-                        <div style="width:40px;height:40px;background:rgba(211,47,47,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;">
-                            <i class="fas fa-envelope" style="color:#EA4335;font-size:18px;"></i>
-                        </div>
-                        <div>
-                            <div style="color:#EA4335;font-size:13px;font-weight:600;">Email</div>
-                            <div style="color:#fff;font-size:14px;">contacto@aerolineadelsur.com.pe</div>
-                        </div>
+                    <div>
+                        <div class="contact-label">Email</div>
+                        <div class="contact-value" style="font-size:15px">contacto@aerolineadelsur.com.pe</div>
                     </div>
-                    <div style="background:rgba(234,67,53,0.1);padding:12px;border-radius:8px;margin-top:8px;">
-                        <p style="color:#fff;font-size:12px;line-height:1.6;margin:0;">
-                            <i class="fas fa-info-circle" style="color:#EA4335;"></i> 
-                            Atención inmediata para evacuaciones médicas, traslado de pacientes y emergencias en zonas remotas.
-                        </p>
-                    </div>
+                </div>
+                
+                <div class="emergency-note">
+                    <p>
+                        <i class="fas fa-info-circle" style="color:var(--medical-gold);margin-right:8px"></i>
+                        <strong>Atención inmediata</strong> para evacuaciones médicas, traslado de pacientes y emergencias en zonas remotas.
+                    </p>
                 </div>
             </div>
         </div>
-        
-        <style>
-            .medical-form-compact{
-                background:rgba(18,18,18,0.8);
-                padding:20px;
-                border-radius:12px;
-                border:1px solid rgba(212,175,55,0.3);
-            }
-            .medical-input{
-                width:100%;
-                padding:10px 14px;
-                border:1px solid rgba(212,175,55,0.3);
-                border-radius:8px;
-                background:rgba(0,0,0,0.4);
-                color:#fff;
-                font-size:14px;
-                transition:all 0.3s;
-            }
-            .medical-input:focus{
-                outline:none;
-                border-color:#D4AF37;
-                background:rgba(0,0,0,0.6);
-                box-shadow:0 0 0 3px rgba(212,175,55,0.1);
-            }
-            .medical-input::placeholder{color:#999;}
-            .medical-btn{
-                padding:12px 20px;
-                border:none;
-                border-radius:8px;
-                font-size:14px;
-                font-weight:600;
-                cursor:pointer;
-                transition:all 0.3s;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                gap:8px;
-            }
-            .btn-urgent{
-                background:#d32f2f;
-                color:#fff;
-                font-size:15px;
-            }
-            .btn-urgent:hover{
-                background:#c62828;
-                transform:translateY(-2px);
-                box-shadow:0 6px 16px rgba(211,47,47,0.4);
-            }
-            .btn-whatsapp{
-                background:#25D366;
-                color:#fff;
-            }
-            .btn-whatsapp:hover{
-                background:#20BA5A;
-                transform:translateY(-2px);
-            }
-            .btn-email{
-                background:rgba(212,175,55,0.15);
-                color:#D4AF37;
-                border:1px solid rgba(212,175,55,0.3);
-                font-size:13px;
-                padding:10px 16px;
-            }
-            .btn-email:hover{
-                background:rgba(212,175,55,0.25);
-                border-color:#D4AF37;
-            }
-            
-            @media (max-width:992px){
-                .heli-content > div[style*="grid-template-columns"] {
-                    grid-template-columns:1fr !important;
-                    gap:16px !important;
-                }
-            }
-        </style>
+    </div>
+</header>
         
         <style>
             /* Tema médico - Fondo blanco con acentos médicos */
@@ -617,7 +817,7 @@ $seo = [
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('.medical-form-compact');
+    const form = document.querySelector('#servicioForm');
     
     // Verificar que el formulario existe
     if (!form) {
@@ -635,7 +835,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Limpiar errores previos
         document.querySelectorAll('.error-message').forEach(el => el.remove());
-        document.querySelectorAll('.medical-input').forEach(el => el.style.borderColor = '');
+        document.querySelectorAll('.medical-input-field').forEach(el => el.style.borderColor = '');
 
         // Estado de carga
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Procesando...';
