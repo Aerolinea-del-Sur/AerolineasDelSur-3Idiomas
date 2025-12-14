@@ -59,7 +59,7 @@ $seo = [
     
     .medical-container {
         max-width: 1200px;
-        margin: 60 auto;
+        margin: 100px;
         padding: 60px 20px;
         position: relative;
         z-index: 2;
@@ -299,13 +299,15 @@ $seo = [
 
 <header class="medical-header">
     <div class="medical-container">
-        <div class="medical-breadcrumb">
-            <i class="fas fa-helicopter"></i>
-            <span><?= $breadcrumb ?></span>
+        <div style="text-align:center;">
+            <div class="medical-breadcrumb" style="display:inline-flex;">
+                <i class="fas fa-helicopter"></i>
+                <span><?= $breadcrumb ?></span>
+            </div>
         </div>
         
-        <h1 class="medical-title"><?= $h1_page ?></h1>
-        <p class="medical-subtitle">Evacuaciones médicas y traslado de pacientes con equipos certificados</p>
+        <h1 class="medical-title" style="text-align:center;"><?= $h1_page ?></h1>
+        <p class="medical-subtitle" style="text-align:center;">Evacuaciones médicas y traslado de pacientes con equipos certificados</p>
         
         <div class="medical-grid">
             <!-- Form Card -->
