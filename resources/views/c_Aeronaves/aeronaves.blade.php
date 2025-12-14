@@ -452,7 +452,7 @@ $seo = [
                         </div>
                         <div class="view-details-btn">Ver más información</div>
                     </div>
-                </a>-->
+                </a>
                 
                 <!-- Challenger 605 -->
                 <a href="/aeronaves/Challenger605" class="aircraft-card" style="text-decoration: none; color: inherit;">
@@ -472,7 +472,7 @@ $seo = [
                         </div>
                         <div class="view-details-btn">Ver más información</div>
                     </div>
-                </a>-->
+                </a>
                 
                 <!-- Challenger 650 -->
                 <a href="/aeronaves/Challenger650" class="aircraft-card" style="text-decoration: none; color: inherit;">
@@ -492,7 +492,7 @@ $seo = [
                         </div>
                         <div class="view-details-btn">Ver más información</div>
                     </div>
-                </a>-->
+                </a>
                 <!-- Challenger 850 -->
                 <a href="/aeronaves/Challenger850" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('public/img/aeronaves/aviones/Challenger850.webp')">
