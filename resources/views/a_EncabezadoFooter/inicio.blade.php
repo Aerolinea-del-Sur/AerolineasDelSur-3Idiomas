@@ -16,11 +16,11 @@ $seo = [
     // <!-- presentacion -->
 
     //h1 - p
-    $h1_1 = 'Tú eliges el destino, nosotros nos encargamos de la experiencia';
+    $h1_1 = 'Tú eliges el destino, ';
     $h1_2 = '';
 
-    $p1_1 = 'Conectamos el Perú con vuelos seguros, cómodos y personalizados';
-    
+    $p1_1 = 'nosotros nos encargamos de la experiencia';
+    //Anterior texto: Conectamos el Perú con vuelos seguros, cómodos y personalizados
     // <!-- Tours Section -->
     
     //h1 - p
