@@ -17,7 +17,7 @@ $seo = [
 
     //h1 - p
     $h1_1 = 'Tú eliges el destino, ';
-    $h1_2 = '';
+    $h1_2 = 'nosotros nos encargamos de la experiencia';
 
     $p1_1 = 'nosotros nos encargamos de la experiencia';
     //Anterior texto: Conectamos el Perú con vuelos seguros, cómodos y personalizados
