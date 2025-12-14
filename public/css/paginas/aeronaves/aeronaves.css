@@ -10,7 +10,7 @@
 /* Formulario */
 .heli-form{position:relative;z-index:2;background:rgba(255,255,255,.08);border:1px solid #e5e7eb;border-radius:16px;padding:18px;backdrop-filter:brightness(0.3);width:100%;max-width:1250px;margin:18px auto 0;box-shadow:0 14px 32px rgba(0,0,0,.35);overflow:visible;box-sizing:border-box}
 .heli-form-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px}
-.heli-section-title{font-size:1.6rem;color:#ffffff;margin:0 0 18px 0}
+.heli-section-title{font-size:1.6rem;color:#ffffff;margin:30px 0 18px 0}
 .heli-form-top{display:grid;grid-template-columns:repeat(2,minmax(220px,1fr));gap:14px;margin-bottom:8px}
 .heli-form.expanded .heli-form-top{grid-template-columns:repeat(4,minmax(220px,1fr))}
 .heli-form.collapsed .collapsible{display:none} 
