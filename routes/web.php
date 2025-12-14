@@ -230,6 +230,11 @@ Route::get('/agencia/titicaca-lake', function () {
     return view('e_Agencia.sobrevuelo-titicaca-lake');
 })->name('sobrevuelo-titicaca-lake'); 
 
+// Página de choquequirao
+Route::get('/agencia/choquequirao', function () {
+    return view('e_Agencia.sobrevuelo-choquequirao');
+})->name('sobrevuelo-choquequirao'); 
+
 // Página de valle-maras
 Route::get('/agencia/valle-maras', function () {
     return view('e_Agencia.sobrevuelo-valle-maras');
