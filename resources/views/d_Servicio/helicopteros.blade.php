@@ -4,7 +4,7 @@
 // Custom SEO for Helicopteros page
 $seo = [
     'title' => 'Servicio de Helicóptero en Cusco y Perú | Aerolínea del Sur',
-    'description' => 'Transporte en helicóptero para turismo, carga y acceso a zonas remotas en Perú. Sobrevuelos panorámicos y traslados ejecutivos desde Cusco.',
+    'description' => 'Servicio de helicóptero en Perú: vuelos ejecutivos, carga externa, aeromédico y servicios para minería, gasiferías y petroliferas. Cobertura en mar, costa, sierra y selva.',
     'keywords' => 'helicóptero cusco, sobrevuelo valle sagrado, transporte helicóptero perú, tour helicóptero machu picchu, vuelos panorámicos cusco',
     'og_image' => asset('img/helicoptero-cusco.jpg'),
     'canonical' => url('/helicopteros'),

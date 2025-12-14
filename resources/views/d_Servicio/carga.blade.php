@@ -4,7 +4,7 @@
 // Custom SEO for Carga page
 $seo = [
     'title' => 'Transporte Aéreo de Carga en Perú | Envíos Urgentes Certificados',
-    'description' => 'Carga aérea certificada en Perú. Transporte de mercancía urgente, perecibles, carga pesada y peligrosa con trazabilidad completa y entregas garantizadas.',
+    'description' => 'Carga aérea en Perú: helicóptero para carga externa gasiferías y transporte médico. Mi-8 MTV1 y Antonov AN-32B para carga interna/externa perecible, médica y valorada.',
     'keywords' => 'carga aérea perú, transporte urgente aéreo, envío helicóptero, carga pesada perú, logística aérea cusco',
     'og_image' => asset('img/carga-aerea-peru.jpg'),
     'canonical' => url('/carga'),

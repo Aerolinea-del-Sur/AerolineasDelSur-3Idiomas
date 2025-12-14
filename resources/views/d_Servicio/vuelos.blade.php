@@ -4,7 +4,7 @@
 // Custom SEO for Vuelos page
 $seo = [
     'title' => 'Vuelos Charter Privados en Perú | Aerolínea del Sur',
-    'description' => 'Vuelos charter privados personalizados en Perú. Flota moderna, pilotos certificados y servicio exclusivo para negocios, eventos y viajes familiares desde Cusco.',
+    'description' => 'Vuelos charter privados nacionales e internacionales en Perú. Flota moderna, pilotos certificados y servicio exclusivo para negocios, eventos y viajes familiares.',
     'keywords' => 'vuelos charter perú, vuelos privados cusco, alquiler avión privado perú, charter ejecutivo, vuelos negocios cusco',
     'og_image' => asset('img/vuelos-privados-peru.jpg'),
     'canonical' => url('/vuelos'),
