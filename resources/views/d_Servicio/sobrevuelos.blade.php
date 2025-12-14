@@ -222,10 +222,10 @@ $seo = [
                         'title' => 'Lago Titicaca',
                         'description' => 'Contempla la inmensidad del lago navegable más alto del mundo y sus islas flotantes desde una perspectiva celestial.',
                         'images' => [
-                            'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Titicaca_Lake_-_Uros.jpg/1200px-Titicaca_Lake_-_Uros.jpg',
-                            'https://www.peru.travel/Contenido/Atractivo/Imagen/es/133/1.1/Principal/lago-titicaca.jpg',
-                            'https://media.istockphoto.com/id/509536738/es/foto/isla-taquile-en-el-lago-titicaca-per%C3%BA.jpg?s=612x612&w=0&k=20&c=X_X_X_X_X_X_X_X_X_X_X_X_X',
-                            'https://upload.wikimedia.org/wikipedia/commons/a/a2/Lake_Titicaca_from_Isla_del_Sol.jpg'
+                            '/public/img/tours/andes-magicos-1.jpg',
+                            '/public/img/tours/andes-magicos-2.jpg',
+                            '/public/img/tours/andes-magicos-3.jpg',
+                            '/public/img/tours/andes-magicos-4.jpg'
                         ],
                         'duration' => '2h',
                         'pax' => 'Hasta 6 personas',
@@ -239,10 +239,10 @@ $seo = [
                         'title' => 'Líneas de Nazca',
                         'description' => 'Descifra los misterios de las antiguas figuras geoglíficas que solo revelan su verdadera forma desde el cielo.',
                         'images' => [
-                            'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Nazca_Lines_-_Hummingbird.jpg/1200px-Nazca_Lines_-_Hummingbird.jpg',
-                            'https://www.peru.travel/Contenido/Atractivo/Imagen/es/37/1.1/Principal/lineas-de-nasca.jpg',
-                            'https://media.istockphoto.com/id/1146665853/es/foto/vista-a%C3%A9rea-de-las-l%C3%ADneas-de-nazca-en-per%C3%BA.jpg?s=612x612&w=0&k=20&c=X_X_X_X_X_X_X_X_X_X_X_X_X',
-                            'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Nazca_monkey.jpg/800px-Nazca_monkey.jpg'
+                            '/public/img/tours/andes-magicos-1.jpg',
+                            '/public/img/tours/andes-magicos-2.jpg',
+                            '/public/img/tours/andes-magicos-3.jpg',
+                            '/public/img/tours/andes-magicos-4.jpg'
                         ],
                         'duration' => '1h 15m',
                         'pax' => 'Hasta 4 personas',
@@ -256,10 +256,10 @@ $seo = [
                         'title' => 'Salar de Uyuni',
                         'description' => 'Vuela sobre el espejo natural más grande del planeta, donde el cielo y la tierra se funden en el horizonte.',
                         'images' => [
-                            'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Salar_de_Uyuni%2C_Bolivia.jpg/1200px-Salar_de_Uyuni%2C_Bolivia.jpg',
-                            'https://www.boliviamia.net/Images/Tours/uyuni-salt-flats-tour-3-days.jpg',
-                            'https://media.istockphoto.com/id/499696238/es/foto/salar-de-uyuni-bolivia.jpg?s=612x612&w=0&k=20&c=X_X_X_X_X_X_X_X_X_X_X_X_X',
-                            'https://upload.wikimedia.org/wikipedia/commons/e/e0/Salar_de_Uyuni_pile_of_salt.jpg'
+                            '/public/img/tours/andes-magicos-1.jpg',
+                            '/public/img/tours/andes-magicos-2.jpg',
+                            '/public/img/tours/andes-magicos-3.jpg',
+                            '/public/img/tours/andes-magicos-4.jpg'
                         ],
                         'duration' => '3h',
                         'pax' => 'Hasta 6 personas',
