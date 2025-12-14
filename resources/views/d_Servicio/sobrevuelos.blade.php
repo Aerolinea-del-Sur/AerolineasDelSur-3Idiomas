@@ -292,31 +292,4 @@ $seo = [
         });
     </script>
 <script src="/video/Mi-Video-Agencia.mp4"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const iframe = document.querySelector('.bg-video iframe');
-        const audioToggle = document.getElementById('audioToggle');
-        let isMuted = false;
-        
-        if (iframe) {
-            const player = new Vimeo.Player(iframe);
-            
-            // Control de audio
-            audioToggle.addEventListener('click', function() {
-                if (isMuted) {
-                    player.setVolume(0.7); // Volumen al 70%
-                    audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
-                    isMuted = false;
-                } else {
-                    player.setVolume(0);
-                    audioToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
-                    isMuted = true;
-                }
-            });
-            
-            // Iniciar con volumen bajo
-            player.setVolume(0.5);
-        }
-    });
-</script>
 @endsection
