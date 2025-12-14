@@ -21,7 +21,7 @@ $seo = [
 <link rel="stylesheet" href="{{ asset('css/paginas/aeronaves/aeronaves.css') }}">
 
 <header class="heli-header">
-    <div class="heli-bg" style="background:url('{{ asset('img/service/servicio-carga.webp') }}') center/cover no-repeat fixed"></div>
+    <div class="heli-bg"></div>
     <div class="heli-dark"></div>
     <div class="heli-content">
         <div class="heli-badge">
