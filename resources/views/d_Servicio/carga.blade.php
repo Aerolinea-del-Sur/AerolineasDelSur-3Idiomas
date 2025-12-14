@@ -395,7 +395,7 @@ $seo = [
         <!-- Servicios Detallados -->
         <div class="cargo-grid">
             <div class="cargo-card">
-                <div class="bg" style="background-image:url('{{ asset('public/img/service/servicio-carga.webp') }}'); background-size:cover; background-position:center;"></div>
+                <div class="bg"></div>
                 <div class="overlay"></div>
                 <div class="content">
                     <div class="cargo-title">🇵🇪 Carga Interna Nacional</div>
@@ -422,7 +422,7 @@ $seo = [
             </div>
 
             <div class="cargo-card">
-                <div class="bg" style="background-image:url('{{ asset('public/img/service/servicio-carga-helicoptero.webp') }}'); background-size:cover; background-position:center;"></div>
+                <div class="bg" background-size:cover; background-position:center;"></div>
                 <div class="overlay"></div>
                 <div class="content">
                     <div class="cargo-title">🌎 Carga Externa Internacional</div>
