@@ -702,7 +702,7 @@ $seo = [
             <div class="faq-item">
                 <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq1">
                     <span class="faq-text"><?= $h3_8 ?></span>
-                    <span class="faq-icon">+</span>
+                    <span>+</span>
                 </div>
                 <div class="faq-answer" id="faq1">
                     <p class="p"><?= $p_18 ?></p>
@@ -712,7 +712,7 @@ $seo = [
             <div class="faq-item">
                 <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq2">
                     <span class="faq-text"><?= $h3_9 ?></span>
-                    <span class="faq-icon">+</span>
+                    <span>+</span>
                 </div>
                 <div class="faq-answer" id="faq2">
                     <p class="p"><?= $p_19 ?></p>
@@ -722,7 +722,7 @@ $seo = [
             <div class="faq-item">
                 <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq3">
                     <span class="faq-text"><?= $h3_10 ?></span>
-                    <span class="faq-icon">+</span>
+                    <span>+</span>
                 </div>
                 <div class="faq-answer" id="faq3">
                     <p class="p"><?= $p_20 ?></p>
@@ -732,7 +732,7 @@ $seo = [
             <div class="faq-item">
                 <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq4">
                     <span class="faq-text"><?= $h3_11 ?></span>
-                    <span class="faq-icon">+</span>
+                    <span>+</span>
                 </div>
                 <div class="faq-answer" id="faq4">
                     <p class="p"><?= $p_21 ?></p>
@@ -742,7 +742,7 @@ $seo = [
             <div class="faq-item">
                 <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq5">
                     <span class="faq-text"><?= $h3_12 ?></span>
-                    <span class="faq-icon">+</span>
+                    <span>+</span>
                 </div>
                 <div class="faq-answer" id="faq5">
                     <p class="p"><?= $p_22 ?></p>
