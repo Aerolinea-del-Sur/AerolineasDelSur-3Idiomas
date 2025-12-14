@@ -30,63 +30,147 @@ $seo = [
         </div>
         <h1 class="heli-title"><?= $h1_page ?></h1>
         
-        
-        <form class="heli-form compact-medical" id="servicioForm" method="post" action="{{ route('vuelos.send') }}">
-        @csrf
-            <input type="hidden" name="tipo_servicio" value="aeromedico">
-            
-            <div class="heli-form-head" style="margin-bottom:12px;">
-                <h2 class="heli-section-title" style="font-size:18px;margin:0 0 4px 0;"><?= $h2_form ?></h2>
-                <p style="color: #ccc; font-size: 12px; margin:0;">Emergencias médicas 24/7</p>
-            </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1000px;margin:40px auto 0;align-items:start;">
+            <!-- Formulario Compacto Vertical -->
+            <form class="medical-form-compact" id="servicioForm" method="post" action="{{ route('vuelos.send') }}">
+            @csrf
+                <input type="hidden" name="tipo_servicio" value="aeromedico">
+                
+                <div style="margin-bottom:16px;">
+                    <h2 style="color:#fff;font-size:20px;margin:0 0 6px 0;font-weight:600;">Solicitar Servicio</h2>
+                    <p style="color:#ccc;font-size:13px;margin:0;">Complete para emergencias médicas</p>
+                </div>
 
-            <div class="heli-form-personal" style="gap:8px;margin-top:10px;">
-                <div class="heli-field">
-                    <input class="heli-input-small" type="text" id="nombres_apellidos" name="nombres_apellidos" placeholder="Nombre *" required>
+                <div style="display:grid;gap:10px;">
+                    <input class="medical-input" type="text" id="nombres_apellidos" name="nombres_apellidos" placeholder="Nombre completo *" required>
+                    <input class="medical-input" type="email" id="correo" name="correo" placeholder="Correo electrónico *" required>
+                    <input class="medical-input" type="tel" id="telefono" name="telefono" placeholder="Teléfono *" required pattern="[0-9+\s-]{7,20}">
                 </div>
-                <div class="heli-field">
-                    <input class="heli-input-small" type="email" id="correo" name="correo" placeholder="Email *" required>
+                
+                <div style="display:grid;gap:8px;margin-top:16px;">
+                    <button type="button" class="medical-btn btn-urgent" onclick="llamarDirecto()">
+                        <i class="fas fa-phone-alt"></i> Llamar Ahora: +51 932 475 995
+                    </button>
+                    <button type="button" class="medical-btn btn-whatsapp" onclick="enviarWhatsApp('aeromedico')">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </button>
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+                        <button type="button" class="medical-btn btn-email" onclick="enviarOutlook('aeromedico')">
+                            <i class="far fa-envelope"></i> Outlook
+                        </button>
+                        <button type="button" class="medical-btn btn-email" onclick="enviarGmail('aeromedico')">
+                            <i class="far fa-envelope"></i> Gmail
+                        </button>
+                    </div>
                 </div>
-                <div class="heli-field">
-                    <input class="heli-input-small" type="tel" id="telefono" name="telefono" placeholder="Teléfono *" required pattern="[0-9+\s-]{7,20}">
+            </form>
+
+            <!-- Información de Emergencia -->
+            <div style="background:linear-gradient(135deg,rgba(211,47,47,0.15),rgba(0,0,0,0.3));padding:20px;border-radius:12px;border:2px solid rgba(211,47,47,0.4);">
+                <h3 style="color:#EA4335;margin:0 0 16px 0;font-size:18px;font-weight:600;">
+                    <i class="fas fa-ambulance"></i> Servicio 24/7
+                </h3>
+                <div style="display:grid;gap:12px;">
+                    <div style="display:flex;align-items:center;gap:12px;">
+                        <div style="width:40px;height:40px;background:rgba(211,47,47,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;">
+                            <i class="fas fa-phone" style="color:#EA4335;font-size:18px;"></i>
+                        </div>
+                        <div>
+                            <div style="color:#EA4335;font-size:13px;font-weight:600;">Línea Directa</div>
+                            <div style="color:#fff;font-size:16px;font-weight:700;">+51 932 475 995</div>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:12px;">
+                        <div style="width:40px;height:40px;background:rgba(211,47,47,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;">
+                            <i class="fas fa-envelope" style="color:#EA4335;font-size:18px;"></i>
+                        </div>
+                        <div>
+                            <div style="color:#EA4335;font-size:13px;font-weight:600;">Email</div>
+                            <div style="color:#fff;font-size:14px;">contacto@aerolineadelsur.com.pe</div>
+                        </div>
+                    </div>
+                    <div style="background:rgba(234,67,53,0.1);padding:12px;border-radius:8px;margin-top:8px;">
+                        <p style="color:#fff;font-size:12px;line-height:1.6;margin:0;">
+                            <i class="fas fa-info-circle" style="color:#EA4335;"></i> 
+                            Atención inmediata para evacuaciones médicas, traslado de pacientes y emergencias en zonas remotas.
+                        </p>
+                    </div>
                 </div>
             </div>
-            
-            <div class="heli-actions" style="gap:8px;margin-top:12px;">
-                <button type="button" class="heli-btn-small btn-call-urgent" onclick="llamarDirecto()">
-                    <i class="fas fa-phone"></i> +51 932 475 995
-                </button>
-                <button type="button" class="heli-btn-small btn-whatsapp" onclick="enviarWhatsApp('aeromedico')">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </button>
-                <button type="button" class="heli-btn-small btn-outlook" onclick="enviarOutlook('aeromedico')">
-                    <i class="far fa-envelope"></i> Outlook
-                </button>
-                <button type="button" class="heli-btn-small btn-gmail" onclick="enviarGmail('aeromedico')">
-                    <i class="far fa-envelope"></i> Gmail
-                </button>
-            </div>
-        </form>
+        </div>
         
         <style>
-            .heli-form.compact-medical{padding:16px;border-radius:10px;background:rgba(18,18,18,0.7);max-width:900px;margin:0 auto;}
-            .heli-input-small{width:100%;padding:8px 12px;border:1px solid rgba(212,175,55,0.3);border-radius:6px;background:rgba(0,0,0,0.3);color:#fff;font-size:13px}
-            .heli-input-small:focus{outline:none;border-color:var(--accent);background:rgba(0,0,0,0.5)}
-            .heli-input-small::placeholder{color:#999;font-size:12px;}
-            .heli-btn-small{padding:10px 18px;border:none;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.3s ease;display:inline-flex;align-items:center;gap:6px;white-space:nowrap;}
-            .btn-call-urgent{background:#d32f2f;color:#fff}
-            .btn-call-urgent:hover{background:#c62828;transform:translateY(-2px);box-shadow:0 4px 12px rgba(211,47,47,0.3);}
-            .btn-whatsapp{background:#25D366;color:#fff}
-            .btn-whatsapp:hover{background:#20BA5A;transform:translateY(-2px)}
-            .btn-outlook{background:#0078D4;color:#fff}
-            .btn-outlook:hover{background:#106EBE;transform:translateY(-2px)}
-            .btn-gmail{background:#EA4335;color:#fff}
-            .btn-gmail:hover{background:#CC3828;transform:translateY(-2px)}
+            .medical-form-compact{
+                background:rgba(18,18,18,0.8);
+                padding:20px;
+                border-radius:12px;
+                border:1px solid rgba(212,175,55,0.3);
+            }
+            .medical-input{
+                width:100%;
+                padding:10px 14px;
+                border:1px solid rgba(212,175,55,0.3);
+                border-radius:8px;
+                background:rgba(0,0,0,0.4);
+                color:#fff;
+                font-size:14px;
+                transition:all 0.3s;
+            }
+            .medical-input:focus{
+                outline:none;
+                border-color:#D4AF37;
+                background:rgba(0,0,0,0.6);
+                box-shadow:0 0 0 3px rgba(212,175,55,0.1);
+            }
+            .medical-input::placeholder{color:#999;}
+            .medical-btn{
+                padding:12px 20px;
+                border:none;
+                border-radius:8px;
+                font-size:14px;
+                font-weight:600;
+                cursor:pointer;
+                transition:all 0.3s;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                gap:8px;
+            }
+            .btn-urgent{
+                background:#d32f2f;
+                color:#fff;
+                font-size:15px;
+            }
+            .btn-urgent:hover{
+                background:#c62828;
+                transform:translateY(-2px);
+                box-shadow:0 6px 16px rgba(211,47,47,0.4);
+            }
+            .btn-whatsapp{
+                background:#25D366;
+                color:#fff;
+            }
+            .btn-whatsapp:hover{
+                background:#20BA5A;
+                transform:translateY(-2px);
+            }
+            .btn-email{
+                background:rgba(212,175,55,0.15);
+                color:#D4AF37;
+                border:1px solid rgba(212,175,55,0.3);
+                font-size:13px;
+                padding:10px 16px;
+            }
+            .btn-email:hover{
+                background:rgba(212,175,55,0.25);
+                border-color:#D4AF37;
+            }
             
             @media (max-width:992px){
-                .heli-form.compact-medical .heli-form-personal{grid-template-columns:1fr;gap:6px;}
-                .heli-form.compact-medical .heli-actions{flex-direction:column;gap:6px;}
-                .heli-btn-small{width:100%;justify-content:center;}
+                .heli-content > div[style*="grid-template-columns"] {
+                    grid-template-columns:1fr !important;
+                    gap:16px !important;
+                }
             }
         </style>
         
