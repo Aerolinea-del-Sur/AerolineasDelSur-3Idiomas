@@ -309,20 +309,6 @@ $seo = [
                         'title' => $h2_6, // Vinicunca
                         'description' => $p_7,
                         'images' => [
-                            'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Salinas_de_Maras%2C_Per%C3%BA%2C_2015-07-31%2C_DD_38.JPG/1200px-Salinas_de_Maras%2C_Per%C3%BA%2C_2015-07-31%2C_DD_38.JPG'
-                        ],
-                        'duration' => '1 horas',
-                        'pax' => 'Hasta 6 personas',
-                        'location' => 'Cusco, Perú',
-                        'badge' => 'Sobrevuelo',
-                        'extra_icon' => 'fas fa-water',
-                        'extra_text' => 'Incluye lagunas',
-                        'url' => '/agencia/valle-maras'
-                    ],
-                    [
-                        'title' => $h2_6, // Vinicunca
-                        'description' => $p_7,
-                        'images' => [
                             '/public/img/sobrevuelos/vinicunca-mountain-1.webp',
                             '/public/img/sobrevuelos/vinicunca-mountain-2.webp',
                             '/public/img/sobrevuelos/vinicunca-mountain-3.webp',
