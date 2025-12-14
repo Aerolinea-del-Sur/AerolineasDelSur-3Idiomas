@@ -326,37 +326,6 @@ $seo = [
   @media (max-width: 992px) { .cargo-gallery-grid { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 640px) { .cargo-gallery-grid { grid-template-columns: 1fr; } }
 </style>
-<section class="cargo-gallery">
-  <div class="cargo-container">
-    <h2 class="heli-section-title">Galería Operativa</h2>
-    <div class="cargo-gallery-grid">
-      <figure class="gallery-item">
-        <img loading="lazy" src="{{ asset('img/servicios/Servicios-1.webp') }}" alt="Carga urgente puerta a puerta">
-        <figcaption class="gallery-caption"><strong>Carga Urgente</strong> — tiempos garantizados y seguimiento en tiempo real.</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img loading="lazy" src="{{ asset('img/service/servicio-carga-helicoptero.webp') }}" alt="Operación de carga en helicóptero">
-        <figcaption class="gallery-caption"><strong>Helicóptero</strong> — acceso a zonas remotas y respuesta rápida.</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img loading="lazy" src="{{ asset('img/servicios/Servicios-2.webp') }}" alt="Cadena de frío para carga perecible">
-        <figcaption class="gallery-caption"><strong>Perecible</strong> — cadena de frío y rutas directas.</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img loading="lazy" src="{{ asset('img/servicios/Servicios-3.webp') }}" alt="Carga de proyecto sobredimensionada">
-        <figcaption class="gallery-caption"><strong>Proyecto</strong> — carga sobredimensionada y coordinación multimodal.</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img loading="lazy" src="{{ asset('img/servicios/Servicios-4.webp') }}" alt="Custodia de carga valiosa">
-        <figcaption class="gallery-caption"><strong>Valiosa</strong> — custodia especializada y acceso restringido.</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img loading="lazy" src="{{ asset('img/servicios/Servicios-5.webp') }}" alt="Exportación e importación con asistencia documental">
-        <figcaption class="gallery-caption"><strong>Internacional</strong> — aduanas y trazabilidad puerta a puerta.</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
 <section class="heli-fleet-section">
     <div class="heli-container">
         <h2 class="heli-section-title">Nuestras Aeronaves</h2>
