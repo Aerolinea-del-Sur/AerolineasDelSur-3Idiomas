@@ -30,7 +30,78 @@ $seo = [
         </div>
         <h1 class="heli-title"><?= $h1_page ?></h1>
         
-        
+        <style>
+            /* Uniformidad de colores dorados en toda la página */
+            :root { 
+                --gold-primary: #D4AF37; 
+                --gold-hover: #C5A028;
+                --gold-light: rgba(212,175,55,0.15);
+            }
+            
+            /* Mejorar cards de servicios */
+            .cargo-card {
+                border: 2px solid rgba(212,175,55,0.25) !important;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            }
+            .cargo-card:hover {
+                border-color: var(--gold-primary) !important;
+                box-shadow: 0 20px 40px rgba(212,175,55,0.15), 0 0 0 1px var(--gold-primary) !important;
+                transform: translateY(-10px) !important;
+            }
+            
+            /* Mejorar variants */
+            .cargo-variant {
+                border: 1px solid rgba(212,175,55,0.3) !important;
+                backdrop-filter: blur(10px);
+            }
+            .cargo-variant:hover {
+                border-color: var(--gold-primary) !important;
+                box-shadow: 0 4px 12px rgba(212,175,55,0.2);
+            }
+            
+            /* Chips uniformes */
+            .chip {
+                background: rgba(212,175,55,0.18) !important;
+                border: 1px solid rgba(212,175,55,0.35) !important;
+                transition: all 0.25s ease !important;
+            }
+            .chip:hover {
+                background: rgba(212,175,55,0.3) !important;
+                border-color: var(--gold-primary) !important;
+                transform: scale(1.05);
+            }
+            
+            /* Títulos dorados consistentes */
+            .cargo-title {
+                color: var(--gold-primary) !important;
+                text-shadow: 0 2px 10px rgba(212,175,55,0.3);
+            }
+            .cargo-variant h4 {
+                color: var(--gold-primary) !important;
+            }
+            
+            /* Hover en tipos de carga */
+            div[style*="background:rgba(212,175,55,0.05)"] {
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+            div[style*="background:rgba(212,175,55,0.05)"]:hover {
+                background: rgba(212,175,55,0.12) !important;
+                border-color: var(--gold-primary) !important;
+                transform: translateY(-4px);
+                box-shadow: 0 6px 16px rgba(212,175,55,0.15);
+            }
+            
+            /* Aeronaves cards hover */
+            .aircraft-card {
+                transition: all 0.3s ease !important;
+            }
+            .aircraft-card:hover {
+                transform: translateY(-6px) !important;
+                box-shadow: 0 12px 24px rgba(212,175,55,0.2) !important;
+            }
+        </style>
+
         <form class="heli-form horizontal" id="servicioForm" method="post" action="{{ route('vuelos.send') }}">
         @csrf
             <input type="hidden" name="tipo_servicio" value="carga">
