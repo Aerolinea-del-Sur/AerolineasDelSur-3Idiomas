@@ -179,6 +179,29 @@ $seo = [
     </div>
 </header>
 
+<!-- Alcance del Servicioijo -->
+<section class="heli-fleet-section" style="padding-top:40px;">
+    <div class="heli-container">
+        <h2 class="heli-section-title">Alcance de Nuestros Vuelos Charter</h2>
+        <div style="max-width:900px; margin:0 auto; text-align:center; margin-bottom:30px;">
+            <p style="font-size:18px; color:#ccc; line-height:1.8;">
+                Operamos <strong style="color:#D4AF37;">vuelos charter privados nacionales e internacionales</strong> con cobertura completa en todo el territorio peruano y conexiones a destinos internacionales en América Latina y el mundo.
+            </p>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px; margin-top:30px;">
+                <div style="background:rgba(212,175,55,0.1); padding:20px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
+                    <h4 style="color:#D4AF37; margin-bottom:10px;">✈️ Vuelos Nacionales</h4>
+                    <p style="color:#ccc; font-size:15px;">Conexiones a todas las ciudades principales del Perú</p>
+                </div>
+                <div style="background:rgba(212,175,55,0.1); padding:20px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
+                    <h4 style="color:#D4AF37; margin-bottom:10px;">🌎 Vuelos Internacionales</h4>
+                    <p style="color:#ccc; font-size:15px;">Destinos en América Latina y conexiones globales</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 <section class="heli-fleet-section">
     <div class="heli-container">

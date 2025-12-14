@@ -179,6 +179,57 @@ $seo = [
     </div>
 </header>
 
+<!-- Servicios y Cobertura de Helicópteros -->
+<section class="heli-fleet-section" style="padding-top:40px;">
+    <div class="heli-container">
+        <h2 class="heli-section-title">Nuestros Servicios de Helicóptero</h2>
+        <div style="max-width:1000px; margin:0 auto;">
+            <p style="font-size:18px; color:#ccc; line-height:1.8; text-align:center; margin-bottom:40px;">
+                Operamos servicios especializados con <strong style="color:#D4AF37;">cobertura integral en mar, costa, sierra y selva</strong> del Perú
+            </p>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:20px; margin-bottom:40px;">
+                <div style="background:rgba(212,175,55,0.1); padding:25px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
+                    <h4 style="color:#D4AF37; margin-bottom:12px; font-size:18px;">🚁 Vuelos Ejecutivos</h4>
+                    <p style="color:#ccc; font-size:14px;">Traslados VIP y ejecutivos para empresas</p>
+                </div>
+                <div style="background:rgba(212,175,55,0.1); padding:25px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
+                    <h4 style="color:#D4AF37; margin-bottom:12px; font-size:18px;">📦 Carga Externa</h4>
+                    <p style="color:#ccc; font-size:14px;">Transporte de carga pesada y equipo industrial</p>
+                </div>
+                <div style="background:rgba(212,175,55,0.1); padding:25px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
+                    <h4 style="color:#D4AF37; margin-bottom:12px; font-size:18px;">⛑️ Aeromédico</h4>
+                    <p style="color:#ccc; font-size:14px;">Evacuaciones médicas y rescates</p>
+                </div>
+                <div style="background:rgba(212,175,55,0.1); padding:25px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
+                    <h4 style="color:#D4AF37; margin-bottom:12px; font-size:18px;">⚙️ Minería y Energía</h4>
+                    <p style="color:#ccc; font-size:14px;">Servicios para minería, gasiferías y petroliferas</p>
+                </div>
+            </div>
+            <div style="background:linear-gradient(135deg, rgba(212,175,55,0.15), rgba(0,0,0,0.3)); padding:30px; border-radius:12px; border:1px solid rgba(212,175,55,0.4);">
+                <h3 style="color:#D4AF37; margin-bottom:15px; text-align:center;">Cobertura Geográfica Completa</h3>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:15px; text-align:center;">
+                    <div style="padding:15px;">
+                        <span style="font-size:28px;">🌊</span>
+                        <p style="color:#fff; font-weight:500; margin-top:8px;">Mar</p>
+                    </div>
+                    <div style="padding:15px;">
+                        <span style="font-size:28px;">🏖️</span>
+                        <p style="color:#fff; font-weight:500; margin-top:8px;">Costa</p>
+                    </div>
+                    <div style="padding:15px;">
+                        <span style="font-size:28px;">⛰️</span>
+                        <p style="color:#fff; font-weight:500; margin-top:8px;">Sierra</p>
+                    </div>
+                    <div style="padding:15px;">
+                        <span style="font-size:28px;">🌴</span>
+                        <p style="color:#fff; font-weight:500; margin-top:8px;">Selva</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 <section class="heli-fleet-section">
