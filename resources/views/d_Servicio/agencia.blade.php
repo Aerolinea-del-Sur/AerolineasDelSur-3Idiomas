@@ -50,7 +50,6 @@
             <!-- Video de fondo de Vimeo con audio -->
             <div class="bg-video">
                 <video width="100%" height="100%" autoplay muted loop playsinline style="object-fit: cover;">
-                    <source src="{{ asset('/public/video/agencia-portada.mp4') }}" type="video/mp4">
                 </video>
             </div>
             <div class="hero-overlay"></div>
@@ -275,31 +274,28 @@
     });
 </script>
 
-<script src="https://player.vimeo.com/api/player.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const iframe = document.querySelector('.bg-video iframe');
+        const video = document.querySelector('.bg-video video');
         const audioToggle = document.getElementById('audioToggle');
-        let isMuted = false;
         
-        if (iframe) {
-            const player = new Vimeo.Player(iframe);
-            
+        if (video && audioToggle) {
+            // Inicializar estado del icono basado en el estado del video
+            updateAudioIcon();
+
             // Control de audio
             audioToggle.addEventListener('click', function() {
-                if (isMuted) {
-                    player.setVolume(0.7); // Volumen al 70%
-                    audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
-                    isMuted = false;
-                } else {
-                    player.setVolume(0);
-                    audioToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
-                    isMuted = true;
-                }
+                video.muted = !video.muted;
+                updateAudioIcon();
             });
-            
-            // Iniciar con volumen bajo
-            player.setVolume(0.5);
+
+            function updateAudioIcon() {
+                if (video.muted) {
+                    audioToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                } else {
+                    audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+                }
+            }
         }
     });
 </script>
