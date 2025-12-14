@@ -20,7 +20,17 @@ $seo = [
 
 <!-- Medical White Theme Styles -->
 <style>
-   :root {
+    /* Global White Background */
+    body {
+        background: #FFFFFF !important;
+    }
+    
+    /* Override any dark backgrounds from imported CSS */
+    section {
+        background: #FFFFFF !important;
+    }
+    
+    :root {
         --medical-white: #FFFFFF;
         --medical-gold: #D4AF37;
         --medical-black: #1a1a1a;
@@ -578,30 +588,39 @@ $seo = [
     </div>
 </header>
 
-<!-- Aviso de Contacto Exclusivo -->
-<section style="background:rgba(0,0,0,0.8); padding:40px 20px;">
-    <div style="max-width:700px; margin:0 auto; padding:25px; background:linear-gradient(135deg, rgba(234,67,53,0.2), rgba(0,0,0,0.4)); border-radius:12px; border:2px solid rgba(234,67,53,0.6); text-align:center;">
-        <h3 style="color:#EA4335; margin-bottom:15px; font-size:20px;">⚕️ Servicio de Emergencia 24/7</h3>
-        <p style="color:#fff; font-size:16px; line-height:1.7; margin-bottom:20px;">
-            Por la naturaleza crítica de nuestro servicio aeromédico, <strong style="color:#EA4335;">las reservas se realizan ÚNICAMENTE por llamada telefónica y correo electrónico</strong> para garantizar comunicación inmediata y coordinación de emergencias.
+<!-- Emergency Service Notice -->
+<section style="background:#f7fafc; padding:60px 20px;">
+    <div style="max-width:800px; margin:0 auto; padding:32px; background:#FFFFFF; border-radius:16px; border:2px solid var(--medical-gold); box-shadow:0 8px 24px rgba(0,0,0,0.08); text-align:center;">
+        <div style="width:64px; height:64px; background:linear-gradient(135deg, var(--medical-red) 0%, #b91c1c 100%); border-radius:16px; display:flex; align-items:center; justify-content:center; margin:0 auto 24px;">
+            <i class="fas fa-heartbeat" style="color:#fff; font-size:32px;"></i>
+        </div>
+        <h3 style="color:var(--medical-black); margin-bottom:16px; font-size:26px; font-weight:700;">Servicio de Emergencia 24/7</h3>
+        <p style="color:var(--medical-gray); font-size:17px; line-height:1.8; margin-bottom:24px;">
+            Por la naturaleza crítica de nuestro servicio aeromédico, <strong style="color:var(--medical-red);">las reservas se realizan ÚNICAMENTE por llamada telefónica y correo electrónico</strong> para garantizar comunicación inmediata y coordinación de emergencias.
         </p>
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:15px; margin-top:20px;">
-            <div style="background:rgba(234,67,53,0.3); padding:15px; border-radius:8px;">
-                <p style="color:#EA4335; font-weight:600; margin-bottom:5px;">📞 Llamada Directa</p>
-                <p style="color:#fff; font-size:14px;">Atención inmediata</p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px; margin-top:28px;">
+            <div style="background:linear-gradient(135deg, #fee2e2 0%, #fef2f2 100%); padding:20px; border-radius:12px; border:2px solid var(--medical-red);">
+                <div style="font-size:32px; margin-bottom:8px;">📞</div>
+                <p style="color:var(--medical-red); font-weight:700; margin-bottom:6px; font-size:16px;">Llamada Directa</p>
+                <p style="color:var(--medical-gray); font-size:14px; margin:0;">Atención inmediata</p>
             </div>
-            <div style="background:rgba(234,67,53,0.3); padding:15px; border-radius:8px;">
-                <p style="color:#EA4335; font-weight:600; margin-bottom:5px;">✉️ Correo Electrónico</p>
-                <p style="color:#fff; font-size:14px;">Confirmación oficial</p>
+            <div style="background:linear-gradient(135deg, #fef3c7 0%, #fefce8 100%); padding:20px; border-radius:12px; border:2px solid var(--medical-gold);">
+                <div style="font-size:32px; margin-bottom:8px;">✉️</div>
+                <p style="color:var(--medical-gold); font-weight:700; margin-bottom:6px; font-size:16px;">Correo Electrónico</p>
+                <p style="color:var(--medical-gray); font-size:14px; margin:0;">Confirmación oficial</p>
             </div>
         </div>
     </div>
 </section>
 
 
-<section class="heli-fleet-section">
-    <div class="heli-container">
-        <h2 class="heli-section-title">Nuestras Aeronaves</h2>
+<!-- Aircraft Fleet Section -->
+<section style="background:#FFFFFF; padding:80px 20px;">
+    <div style="max-width:1200px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:48px;">
+            <h2 style="color:var(--medical-black); font-size:36px; font-weight:700; margin:0 0 16px 0;">Nuestras Aeronaves Médicas</h2>
+            <p style="color:var(--medical-gray); font-size:18px; margin:0;">Flota especializada para traslados aeromédicos</p>
+        </div>
         <div class="fleet-grid">
             <a href="/aeronaves/Mi8-mtv1" class="aircraft-card" style="text-decoration: none; color: inherit;">
                 <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/Mi8-mtv1.webp') }}')">
@@ -754,11 +773,97 @@ $seo = [
     $p_22 = 'Sí, nuestro programa Cielos del Sur ofrece beneficios exclusivos como acumulación de millas, upgrades gratuitos, acceso a salas VIP, y prioridad en check-in. Únete gratis y comienza a disfrutar de privilegios desde tu primer vuelo';
 ?>
 
-<section class="heli-faq-section faq-section">
-    <div class="heli-container faq-container">
-        <div class="faq-header">
-            <h1><?= $h1_7 ?></h1>
-            <p class="p"><?= $p_17 ?></p>
+<!-- FAQ Section White Theme -->
+<section style="background:#f7fafc; padding:80px 20px;">
+    <div style="max-width:900px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:48px;">
+        
+        <style>
+            /* FAQ Items White Theme */
+            .faq-grid {
+                display: grid;
+                gap: 16px;
+            }
+            
+            .faq-item {
+                background: #FFFFFF;
+                border: 2px solid #e2e8f0;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: all 0.3s ease;
+            }
+            
+            .faq-item:hover {
+                border-color: var(--medical-gold);
+                box-shadow: 0 4px 16px rgba(212,175,55,0.1);
+            }
+            
+            .faq-item.active {
+                border-color: var(--medical-gold);
+                background: linear-gradient(135deg, #fef3c7 0%, #ffffff 100%);
+            }
+            
+            .faq-question {
+                padding: 20px 24px;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+                transition: all 0.3s ease;
+            }
+            
+            .faq-text {
+                color: var(--medical-black);
+                font-size: 17px;
+                font-weight: 600;
+                flex: 1;
+            }
+            
+            .faq-item.active .faq-text {
+                color: var(--medical-gold);
+            }
+            
+            .faq-icon {
+                width: 32px;
+                height: 32px;
+                background: linear-gradient(135deg, var(--medical-gold) 0%, #C5A028 100%);
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                font-weight: 700;
+                transition: all 0.3s ease;
+                flex-shrink: 0;
+            }
+            
+            .faq-item.active .faq-icon {
+                transform: rotate(45deg);
+                background: linear-gradient(135deg, var(--medical-green) 0%, #059669 100%);
+            }
+            
+            .faq-answer {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.4s ease;
+            }
+            
+            .faq-item.active .faq-answer {
+                max-height: 500px;
+            }
+            
+            .faq-answer p {
+                padding: 0 24px 24px;
+                color: var(--medical-gray);
+                font-size: 15px;
+                line-height: 1.8;
+                margin: 0;
+            }
+        </style>
+    <h2 style="color:var(--medical-black); font-size:36px; font-weight:700; margin:0 0 16px 0;"><?= $h1_7 ?></h2>
+            <p style="color:var(--medical-gray); font-size:18px; margin:0;"><?= $p_17 ?></p>
         </div>
 
         <div class="faq-grid">
