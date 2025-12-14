@@ -16,7 +16,7 @@ $seo = [
     // <!-- presentacion -->
 
     //h1 - p
-    $h1_1 = 'Vuelos Privados en Perú a Tu Medida';
+    $h1_1 = 'Tú eliges el destino, nosotros nos encargamos de la experiencia';
     $h1_2 = '';
 
     $p1_1 = 'Conectamos el Perú con vuelos seguros, cómodos y personalizados';
@@ -32,17 +32,17 @@ $seo = [
         $h2_1 = 'Servicios Destacados';
 
             //h3 - p
-            $h3_1 = 'Helicóptero';
-            $p_1 = 'Transporte en helicóptero rápido, flexible y seguro, ideal para personas, cargas valiosas, rescates y acceso a zonas de difícil alcance.';
+            $h3_1 = 'Vuelos Chárter';
+            $p_1 = 'Vuelos privados personalizados, ideales para negocios, instituciones, deportes o familias que buscan flexibilidad y exclusividad.';
             //h3 - p
-            $h3_2 = 'Vuelos Chárter';
-            $p_2 = 'Vuelos privados personalizados, ideales para negocios, instituciones, deportes o familias que buscan flexibilidad y exclusividad.';
+            $h3_2 = 'Helicóptero';
+            $p_2 = 'Transporte en helicóptero rápido, flexible y seguro, ideal para personas, cargas valiosas, rescates y acceso a zonas de difícil alcance.';
             //h3 - p
-            $h3_3 = 'Carga';
-            $p_3 = 'Vuelos chárter de carga, desde jets ligeros hasta aviones de gran capacidad, garantizando entregas urgentes y de gran volumen en tiempo récord.';
+            $h3_3 = 'Ambulancia Médica';
+            $p_3 = 'Transporte aéreo médico especializado para pacientes, evacuaciones y traslado de órganos, con aeronaves equipadas y personal médico calificado.';
             //h3 - p
-            $h3_4 = 'Ambulancia Médica';
-            $p_4 = 'Transporte aéreo médico especializado para pacientes, evacuaciones y traslado de órganos, con aeronaves equipadas y personal médico calificado.';
+            $h3_4 = 'Carga';
+            $p_4 = 'Vuelos chárter de carga, desde jets ligeros hasta aviones de gran capacidad, garantizando entregas urgentes y de gran volumen en tiempo récord.';
 
     //h1 - p
     $h1_4 = '¿Por qué elegir Aerolínea del Sur?';
