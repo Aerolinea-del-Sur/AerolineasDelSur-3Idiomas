@@ -619,26 +619,7 @@ $seo = [
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('.heli-form');
     
-    // --- LÓGICA DE INTERFAZ (UI) ---
-
-    // 1. Manejo de Tipo de Viaje (Mostrar/Ocultar Retorno)
-    const radioButtons = form.querySelectorAll('input[name="tipo_viaje"]');
-    const retornoField = form.querySelector('.js-retorno-field');
-    const retornoInput = document.getElementById('fecha_retorno_header');
-
-    radioButtons.forEach(radio => {
-        radio.addEventListener('change', function() {
-            if (this.value === 'ida_vuelta') {
-                retornoField.style.display = 'block';
-                retornoInput.setAttribute('required', 'required');
-            } else {
-                retornoField.style.display = 'none';
-                retornoInput.removeAttribute('required');
-                retornoInput.value = ''; // Limpiar valor
-            }
-        });
-    });
-
+    
     // --- LÓGICA DE ENVÍO (AJAX) ---
 
     form.addEventListener('submit', function(e) {
