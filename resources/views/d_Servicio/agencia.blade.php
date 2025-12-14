@@ -49,7 +49,7 @@
         <div class="hero-background">
             <!-- Video de fondo de Vimeo con audio -->
             <div class="bg-video">
-                <video width="100%" height="100%" autoplay muted loop playsinline style="object-fit: cover;">
+                <video width="100%" height="100%" autoplay loop playsinline style="object-fit: cover;">
                     <source src="{{ asset('/public/video/agencia-portada.mp4') }}" type="video/mp4">
                 </video>
             </div>
