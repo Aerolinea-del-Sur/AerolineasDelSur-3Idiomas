@@ -31,42 +31,64 @@ $seo = [
         <h1 class="heli-title"><?= $h1_page ?></h1>
         
         
-        <form class="heli-form horizontal" id="servicioForm" method="post" action="{{ route('vuelos.send') }}">
+        <form class="heli-form compact-medical" id="servicioForm" method="post" action="{{ route('vuelos.send') }}">
         @csrf
             <input type="hidden" name="tipo_servicio" value="aeromedico">
             
-            <div class="heli-form-head">
-                <h2 class="heli-section-title"><?= $h2_form ?></h2>
-                <p style="color: #ccc; font-size: 14px; margin-top: 8px;">Complete el formulario para emergencias médicas</p>
+            <div class="heli-form-head" style="margin-bottom:12px;">
+                <h2 class="heli-section-title" style="font-size:18px;margin:0 0 4px 0;"><?= $h2_form ?></h2>
+                <p style="color: #ccc; font-size: 12px; margin:0;">Emergencias médicas 24/7</p>
             </div>
 
-            <div class="heli-form-personal">
+            <div class="heli-form-personal" style="gap:8px;margin-top:10px;">
                 <div class="heli-field">
-                    <input class="heli-input" type="text" id="nombres_apellidos" name="nombres_apellidos" placeholder="Nombres y Apellidos *" required>
+                    <input class="heli-input-small" type="text" id="nombres_apellidos" name="nombres_apellidos" placeholder="Nombre *" required>
                 </div>
                 <div class="heli-field">
-                    <input class="heli-input" type="email" id="correo" name="correo" placeholder="Correo electrónico *" required>
+                    <input class="heli-input-small" type="email" id="correo" name="correo" placeholder="Email *" required>
                 </div>
                 <div class="heli-field">
-                    <input class="heli-input" type="tel" id="telefono" name="telefono" placeholder="Teléfono *" required pattern="[0-9+\s-]{7,20}">
+                    <input class="heli-input-small" type="tel" id="telefono" name="telefono" placeholder="Teléfono *" required pattern="[0-9+\s-]{7,20}">
                 </div>
             </div>
             
-            <div class="heli-actions">
-                <button type="button" class="heli-btn btn-call-urgent" onclick="llamarDirecto()">
-                    <i class="fas fa-phone"></i> Llamar: +51 932 475 995
+            <div class="heli-actions" style="gap:8px;margin-top:12px;">
+                <button type="button" class="heli-btn-small btn-call-urgent" onclick="llamarDirecto()">
+                    <i class="fas fa-phone"></i> +51 932 475 995
                 </button>
-                <button type="button" class="heli-btn btn-whatsapp" onclick="enviarWhatsApp('aeromedico')">
+                <button type="button" class="heli-btn-small btn-whatsapp" onclick="enviarWhatsApp('aeromedico')">
                     <i class="fab fa-whatsapp"></i> WhatsApp
                 </button>
-                <button type="button" class="heli-btn btn-outlook" onclick="enviarOutlook('aeromedico')">
+                <button type="button" class="heli-btn-small btn-outlook" onclick="enviarOutlook('aeromedico')">
                     <i class="far fa-envelope"></i> Outlook
                 </button>
-                <button type="button" class="heli-btn btn-gmail" onclick="enviarGmail('aeromedico')">
+                <button type="button" class="heli-btn-small btn-gmail" onclick="enviarGmail('aeromedico')">
                     <i class="far fa-envelope"></i> Gmail
                 </button>
             </div>
         </form>
+        
+        <style>
+            .heli-form.compact-medical{padding:16px;border-radius:10px;background:rgba(18,18,18,0.7);max-width:900px;margin:0 auto;}
+            .heli-input-small{width:100%;padding:8px 12px;border:1px solid rgba(212,175,55,0.3);border-radius:6px;background:rgba(0,0,0,0.3);color:#fff;font-size:13px}
+            .heli-input-small:focus{outline:none;border-color:var(--accent);background:rgba(0,0,0,0.5)}
+            .heli-input-small::placeholder{color:#999;font-size:12px;}
+            .heli-btn-small{padding:10px 18px;border:none;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.3s ease;display:inline-flex;align-items:center;gap:6px;white-space:nowrap;}
+            .btn-call-urgent{background:#d32f2f;color:#fff}
+            .btn-call-urgent:hover{background:#c62828;transform:translateY(-2px);box-shadow:0 4px 12px rgba(211,47,47,0.3);}
+            .btn-whatsapp{background:#25D366;color:#fff}
+            .btn-whatsapp:hover{background:#20BA5A;transform:translateY(-2px)}
+            .btn-outlook{background:#0078D4;color:#fff}
+            .btn-outlook:hover{background:#106EBE;transform:translateY(-2px)}
+            .btn-gmail{background:#EA4335;color:#fff}
+            .btn-gmail:hover{background:#CC3828;transform:translateY(-2px)}
+            
+            @media (max-width:992px){
+                .heli-form.compact-medical .heli-form-personal{grid-template-columns:1fr;gap:6px;}
+                .heli-form.compact-medical .heli-actions{flex-direction:column;gap:6px;}
+                .heli-btn-small{width:100%;justify-content:center;}
+            }
+        </style>
         
         <style>
             /* Tema médico - Fondo blanco con acentos médicos */
