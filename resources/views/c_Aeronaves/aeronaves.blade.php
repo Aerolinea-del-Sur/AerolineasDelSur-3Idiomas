@@ -353,7 +353,7 @@ $seo = [
                     </div>
                 </a>
                 <!-- Fila 3 -->
-                <!-- Jet Phenom 300 
+                <!-- Jet Phenom 300 -->
                 <a href="/aeronaves/Phenom300" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('public/img/aeronaves/aviones/Phenom300.webp')">
                         <div class="aircraft-overlay">
@@ -371,9 +371,9 @@ $seo = [
                         </div>
                         <div class="view-details-btn">Ver más información</div>
                     </div>
-                </a>-->
+                </a>
                 
-                <!-- Challenger 300 
+                <!-- Challenger 300 -->
                 <a href="/aeronaves/Challenger300" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('public/img/aeronaves/aviones/Challenger300.webp')">
                         <div class="aircraft-overlay">
@@ -391,9 +391,9 @@ $seo = [
                         </div>
                         <div class="view-details-btn">Ver más información</div>
                     </div>
-                </a>-->
+                </a>
                 
-                <!-- Challenger 350 
+                <!-- Challenger 350 -->
                 <a href="/aeronaves/Challenger350" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('public/img/aeronaves/aviones/Challenger350.webp')">
                         <div class="aircraft-overlay">
@@ -411,9 +411,9 @@ $seo = [
                         </div>
                         <div class="view-details-btn">Ver más información</div>
                     </div>
-                </a>-->
+                </a>
                 
-                <!-- Challenger 601 
+                <!-- Challenger 601 -->
                 <a href="/aeronaves/Challenger601" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('public/img/aeronaves/aviones/Challenger601.webp')">
                         <div class="aircraft-overlay">
@@ -431,10 +431,10 @@ $seo = [
                         </div>
                         <div class="view-details-btn">Ver más información</div>
                     </div>
-                </a>-->
+                </a>
                 
                 <!-- Fila 4 -->
-                <!-- Challenger 604 
+                <!-- Challenger 604 -->
                 <a href="/aeronaves/Challenger604" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('public/img/aeronaves/aviones/Challenger604.webp')">
                         <div class="aircraft-overlay">
@@ -454,7 +454,7 @@ $seo = [
                     </div>
                 </a>-->
                 
-                <!-- Challenger 605 
+                <!-- Challenger 605 -->
                 <a href="/aeronaves/Challenger605" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('public/img/aeronaves/aviones/Challenger605.webp')">
                         <div class="aircraft-overlay">
@@ -474,7 +474,7 @@ $seo = [
                     </div>
                 </a>-->
                 
-                <!-- Challenger 650 
+                <!-- Challenger 650 -->
                 <a href="/aeronaves/Challenger650" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('public/img/aeronaves/aviones/Challenger650.webp')">
                         <div class="aircraft-overlay">
@@ -493,7 +493,7 @@ $seo = [
                         <div class="view-details-btn">Ver más información</div>
                     </div>
                 </a>-->
-                <!-- Challenger 850 
+                <!-- Challenger 850 -->
                 <a href="/aeronaves/Challenger850" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('public/img/aeronaves/aviones/Challenger850.webp')">
                         <div class="aircraft-overlay">
@@ -511,7 +511,7 @@ $seo = [
                         </div>
                         <div class="view-details-btn">Ver más información</div>
                     </div>
-                </a>-->
+                </a>
                 <!-- Fila 5 -->
                 <!-- Citation 550 Bravo -->
                 <a href="/aeronaves/Citation550Bravo" class="aircraft-card" style="text-decoration: none; color: inherit;">
