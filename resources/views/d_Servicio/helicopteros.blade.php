@@ -274,121 +274,25 @@ $seo = [
                 </div>
             </a>
 
-            <a href="/aeronaves/KingAirB200" class="aircraft-card" style="text-decoration: none; color: inherit;">
-                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/Air-King-B200.webp') }}')">
+            <a href="/aeronaves/Mi17" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/helicopteros/Mi-17.webp') }}')">
                     <div class="aircraft-overlay">
                         <div class="aircraft-details">
-                            <p>Capacidad: 8 pax</p>
-                            <p>Velocidad: 870 km/h</p>
-                            <p>Peso Max: 11,181 kg</p>
+                            <p>Capacidad: 24 pax</p>
+                            <p>Velocidad: 250 km/h</p>
+                            <p>Carga: 4,000 kg</p>
                         </div>
                     </div>
                 </div>
                 <div class="aircraft-info">
-                    <h3 class="aircraft-name">King Air B200</h3>
+                    <h3 class="aircraft-name">Helicóptero Mi-17</h3>
                     <div class="aircraft-types">
                         <span class="aircraft-type transport">Transporte</span>
+                        <span class="aircraft-type cargo">Carga</span>
                     </div>
                     <div class="view-details-btn">Ver más información</div>
                 </div>
             </a>
-
-            <a href="/aeronaves/KingAirB350" class="aircraft-card" style="text-decoration: none; color: inherit;">
-                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/AirKingB350.webp') }}')">
-                    <div class="aircraft-overlay">
-                        <div class="aircraft-details">
-                            <p>Capacidad: 8 pax</p>
-                            <p>Velocidad: 870 km/h</p>
-                            <p>Peso Max: 11,181 kg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aircraft-info">
-                    <h3 class="aircraft-name">King Air B350</h3>
-                    <div class="aircraft-types">
-                        <span class="aircraft-type transport">Transporte</span>
-                    </div>
-                    <div class="view-details-btn">Ver más información</div>
-                </div>
-            </a>
-
-            <a href="/aeronaves/Beechcraft1900D" class="aircraft-card" style="text-decoration: none; color: inherit;">
-                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/Beechcraft1900D.webp') }}')">
-                    <div class="aircraft-overlay">
-                        <div class="aircraft-details">
-                            <p>Capacidad: 8 pax</p>
-                            <p>Velocidad: 870 km/h</p>
-                            <p>Peso Max: 11,181 kg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aircraft-info">
-                    <h3 class="aircraft-name">Beechcraft 1900D</h3>
-                    <div class="aircraft-types">
-                        <span class="aircraft-type transport">Transporte</span>
-                    </div>
-                    <div class="view-details-btn">Ver más información</div>
-                </div>
-            </a>
-
-            <a href="/aeronaves/HondaJet" class="aircraft-card" style="text-decoration: none; color: inherit;">
-                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/HondaJet.webp') }}')">
-                    <div class="aircraft-overlay">
-                        <div class="aircraft-details">
-                            <p>Capacidad: 6 pax</p>
-                            <p>Velocidad: 722 km/h</p>
-                            <p>Peso Max: 4,800 kg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aircraft-info">
-                    <h3 class="aircraft-name">Honda Jet</h3>
-                    <div class="aircraft-types">
-                        <span class="aircraft-type transport">Transporte</span>
-                    </div>
-                    <div class="view-details-btn">Ver más información</div>
-                </div>
-            </a>
-
-            <a href="/aeronaves/Phenom100" class="aircraft-card" style="text-decoration: none; color: inherit;">
-                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/Phenom100.webp') }}')">
-                    <div class="aircraft-overlay">
-                        <div class="aircraft-details">
-                            <p>Capacidad: 7 pax</p>
-                            <p>Velocidad: 839 km/h</p>
-                            <p>Autonomía: 3,650 km</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aircraft-info">
-                    <h3 class="aircraft-name">Jet Phenom 100</h3>
-                    <div class="aircraft-types">
-                        <span class="aircraft-type transport">Transporte</span>
-                    </div>
-                    <div class="view-details-btn">Ver más información</div>
-                </div>
-            </a>
-
-            <a href="/aeronaves/GulfstreamG100" class="aircraft-card" style="text-decoration: none; color: inherit;">
-                <div class="aircraft-image" style="background-image: url('{{ asset('public/img/aeronaves/aviones/Gulfstream-G100.webp') }}')">
-                    <div class="aircraft-overlay">
-                        <div class="aircraft-details">
-                            <p>Capacidad: 14 pax</p>
-                            <p>Velocidad: 935 km/h</p>
-                            <p>Peso Max: 33,838kg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aircraft-info">
-                    <h3 class="aircraft-name">Jet Gulfstream G100</h3>
-                    <div class="aircraft-types">
-                        <span class="aircraft-type transport">Transporte</span>
-                    </div>
-                    <div class="view-details-btn">Ver más información</div>
-                </div>
-            </a>
-        </div>
-    </div>
 </section>
 
 <section class="heli-blogs-section">
