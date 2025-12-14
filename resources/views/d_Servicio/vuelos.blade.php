@@ -183,123 +183,284 @@ $seo = [
 <section class="heli-fleet-section">
     <div class="heli-container">
         <h2 class="heli-section-title">Nuestras Aeronaves</h2>
-        <div class="fleet-grid">
-            <a href="/aeronaves/KingAirB200" class="aircraft-card" style="text-decoration: none; color: inherit;">
-                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/Air-King-B200.webp') }}')">
-                    <div class="aircraft-overlay">
-                        <div class="aircraft-details">
-                            <p>Capacidad: 8 pax</p>
-                            <p>Velocidad: 870 km/h</p>
-                            <p>Peso Max: 11,181 kg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aircraft-info">
-                    <h3 class="aircraft-name">King Air B200</h3>
-                    <div class="aircraft-types">
-                        <span class="aircraft-type transport">Transporte</span>
-                    </div>
-                    <div class="view-details-btn">Ver más información</div>
-                </div>
-            </a>
+        
+        <?php
+        $aeronaves = [
+            [
+                'name' => 'King Air B200',
+                'url' => '/aeronaves/KingAirB200',
+                'img' => 'Air-King-B200.webp',
+                'capacidad' => '8 pax',
+                'velocidad' => '870 km/h',
+                'peso' => '11,181 kg'
+            ],
+            [
+                'name' => 'King Air B350',
+                'url' => '/aeronaves/KingAirB350',
+                'img' => 'AirKingB350.webp',
+                'capacidad' => '8 pax',
+                'velocidad' => '870 km/h',
+                'peso' => '11,181 kg'
+            ],
+            [
+                'name' => 'Beechcraft 1900D',
+                'url' => '/aeronaves/Beechcraft1900D',
+                'img' => 'Beechcraft1900D.webp',
+                'capacidad' => '19 pax',
+                'velocidad' => '870 km/h',
+                'peso' => '17,120 kg'
+            ],
+            [
+                'name' => 'Honda Jet',
+                'url' => '/aeronaves/HondaJet',
+                'img' => 'HondaJet.webp',
+                'capacidad' => '6 pax',
+                'velocidad' => '722 km/h',
+                'peso' => '4,800 kg'
+            ],
+            [
+                'name' => 'Jet Phenom 100',
+                'url' => '/aeronaves/Phenom100',
+                'img' => 'Phenom100.webp',
+                'capacidad' => '7 pax',
+                'velocidad' => '839 km/h',
+                'peso' => '4,750 kg'
+            ],
+            [
+                'name' => 'Jet Gulfstream G100',
+                'url' => '/aeronaves/GulfstreamG100',
+                'img' => 'Gulfstream-G100.webp',
+                'capacidad' => '9 pax',
+                'velocidad' => '870 km/h',
+                'peso' => '11,000 kg'
+            ],
+            // Nuevas aeronaves
+            [
+                'name' => 'Jet Gulfstream GIV',
+                'url' => '/aeronaves/GulfstreamGiv',
+                'img' => 'GulfstreamGiv.webp',
+                'capacidad' => '14 pax',
+                'velocidad' => '935 km/h',
+                'peso' => '33,000 kg'
+            ],
+            [
+                'name' => 'Jet Phenom 300',
+                'url' => '/aeronaves/Phenom300',
+                'img' => 'Phenom300.webp',
+                'capacidad' => '8 pax',
+                'velocidad' => '839 km/h',
+                'peso' => '8,000 kg'
+            ],
+            [
+                'name' => 'Jet Challenger 300',
+                'url' => '/aeronaves/Challenger300',
+                'img' => 'Challenger300.webp',
+                'capacidad' => '9 pax',
+                'velocidad' => '870 km/h',
+                'peso' => '17,000 kg'
+            ],
+            [
+                'name' => 'Jet Challenger 350',
+                'url' => '/aeronaves/Challenger350',
+                'img' => 'Challenger350.webp',
+                'capacidad' => '9 pax',
+                'velocidad' => '870 km/h',
+                'peso' => '18,000 kg'
+            ],
+            [
+                'name' => 'Jet Challenger 601',
+                'url' => '/aeronaves/Challenger601',
+                'img' => 'Challenger601.webp',
+                'capacidad' => '12 pax',
+                'velocidad' => '850 km/h',
+                'peso' => '19,000 kg'
+            ],
+            [
+                'name' => 'Jet Challenger 604',
+                'url' => '/aeronaves/Challenger604',
+                'img' => 'Challenger604.webp',
+                'capacidad' => '12 pax',
+                'velocidad' => '870 km/h',
+                'peso' => '21,000 kg'
+            ],
+            [
+                'name' => 'Jet Challenger 605',
+                'url' => '/aeronaves/Challenger605',
+                'img' => 'Challenger605.webp',
+                'capacidad' => '12 pax',
+                'velocidad' => '870 km/h',
+                'peso' => '21,000 kg'
+            ],
+            [
+                'name' => 'Jet Challenger 650',
+                'url' => '/aeronaves/Challenger650',
+                'img' => 'Challenger650.webp',
+                'capacidad' => '12 pax',
+                'velocidad' => '870 km/h',
+                'peso' => '21,000 kg'
+            ],
+            [
+                'name' => 'Jet Challenger 850',
+                'url' => '/aeronaves/Challenger850',
+                'img' => 'Challenger850.webp',
+                'capacidad' => '14 pax',
+                'velocidad' => '850 km/h',
+                'peso' => '24,000 kg'
+            ],
+            [
+                'name' => 'Jet Citation 550 Bravo',
+                'url' => '/aeronaves/Citation550Bravo',
+                'img' => 'Citation550-Bravo.webp',
+                'capacidad' => '7 pax',
+                'velocidad' => '740 km/h',
+                'peso' => '6,000 kg'
+            ],
+            [
+                'name' => 'Jet Citation Cj4',
+                'url' => '/aeronaves/CitationCj4',
+                'img' => 'CitationCj4.webp',
+                'capacidad' => '8 pax',
+                'velocidad' => '835 km/h',
+                'peso' => '7,000 kg'
+            ],
+            [
+                'name' => 'Jet Citation Encore',
+                'url' => '/aeronaves/CitationEncore',
+                'img' => 'CitationEncore.webp',
+                'capacidad' => '7 pax',
+                'velocidad' => '790 km/h',
+                'peso' => '7,000 kg'
+            ],
+            [
+                'name' => 'Jet Citation XLS',
+                'url' => '/aeronaves/CitationXLS',
+                'img' => 'CitationXLS.webp',
+                'capacidad' => '9 pax',
+                'velocidad' => '800 km/h',
+                'peso' => '9,000 kg'
+            ],
+            [
+                'name' => 'Jet Citation HemisPhere',
+                'url' => '/aeronaves/CitationHemisPhere',
+                'img' => 'CitationHemisPhere.webp',
+                'capacidad' => '12 pax',
+                'velocidad' => '900 km/h',
+                'peso' => '15,000 kg'
+            ],
+            [
+                'name' => 'Jet Citation Latitude',
+                'url' => '/aeronaves/CitationLatitude',
+                'img' => 'CitationLatitude.webp',
+                'capacidad' => '9 pax',
+                'velocidad' => '826 km/h',
+                'peso' => '13,000 kg'
+            ],
+        ];
+        ?>
 
-            <a href="/aeronaves/KingAirB350" class="aircraft-card" style="text-decoration: none; color: inherit;">
-                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/AirKingB350.webp') }}')">
+        <div class="fleet-grid" id="fleetGrid">
+            <?php foreach($aeronaves as $avion): ?>
+            <a href="<?= $avion['url'] ?>" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/' . $avion['img']) }}')">
                     <div class="aircraft-overlay">
                         <div class="aircraft-details">
-                            <p>Capacidad: 8 pax</p>
-                            <p>Velocidad: 870 km/h</p>
-                            <p>Peso Max: 11,181 kg</p>
+                            <p>Capacidad: <?= $avion['capacidad'] ?></p>
+                            <p>Velocidad: <?= $avion['velocidad'] ?></p>
+                            <p>Peso Max: <?= $avion['peso'] ?></p>
                         </div>
                     </div>
                 </div>
                 <div class="aircraft-info">
-                    <h3 class="aircraft-name">King Air B350</h3>
+                    <h3 class="aircraft-name"><?= $avion['name'] ?></h3>
                     <div class="aircraft-types">
                         <span class="aircraft-type transport">Transporte</span>
                     </div>
                     <div class="view-details-btn">Ver más información</div>
                 </div>
             </a>
-
-            <a href="/aeronaves/Beechcraft1900D" class="aircraft-card" style="text-decoration: none; color: inherit;">
-                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/Beechcraft1900D.webp') }}')">
-                    <div class="aircraft-overlay">
-                        <div class="aircraft-details">
-                            <p>Capacidad: 8 pax</p>
-                            <p>Velocidad: 870 km/h</p>
-                            <p>Peso Max: 11,181 kg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aircraft-info">
-                    <h3 class="aircraft-name">Beechcraft 1900D</h3>
-                    <div class="aircraft-types">
-                        <span class="aircraft-type transport">Transporte</span>
-                    </div>
-                    <div class="view-details-btn">Ver más información</div>
-                </div>
-            </a>
-
-            <a href="/aeronaves/HondaJet" class="aircraft-card" style="text-decoration: none; color: inherit;">
-                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/HondaJet.webp') }}')">
-                    <div class="aircraft-overlay">
-                        <div class="aircraft-details">
-                            <p>Capacidad: 6 pax</p>
-                            <p>Velocidad: 722 km/h</p>
-                            <p>Peso Max: 4,800 kg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aircraft-info">
-                    <h3 class="aircraft-name">Honda Jet</h3>
-                    <div class="aircraft-types">
-                        <span class="aircraft-type transport">Transporte</span>
-                    </div>
-                    <div class="view-details-btn">Ver más información</div>
-                </div>
-            </a>
-
-            <a href="/aeronaves/Phenom100" class="aircraft-card" style="text-decoration: none; color: inherit;">
-                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/Phenom100.webp') }}')">
-                    <div class="aircraft-overlay">
-                        <div class="aircraft-details">
-                            <p>Capacidad: 7 pax</p>
-                            <p>Velocidad: 839 km/h</p>
-                            <p>Autonomía: 3,650 km</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aircraft-info">
-                    <h3 class="aircraft-name">Jet Phenom 100</h3>
-                    <div class="aircraft-types">
-                        <span class="aircraft-type transport">Transporte</span>
-                    </div>
-                    <div class="view-details-btn">Ver más información</div>
-                </div>
-            </a>
-
-            <a href="/aeronaves/GulfstreamG100" class="aircraft-card" style="text-decoration: none; color: inherit;">
-                <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/Gulfstream-G100.webp') }}')">
-                    <div class="aircraft-overlay">
-                        <div class="aircraft-details">
-                            <p>Capacidad: 14 pax</p>
-                            <p>Velocidad: 935 km/h</p>
-                            <p>Peso Max: 33,838kg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aircraft-info">
-                    <h3 class="aircraft-name">Jet Gulfstream G100</h3>
-                    <div class="aircraft-types">
-                        <span class="aircraft-type transport">Transporte</span>
-                    </div>
-                    <div class="view-details-btn">Ver más información</div>
-                </div>
-            </a>
+            <?php endforeach; ?>
+        </div>
+        
+        <div class="pagination-container" style="margin-top: 40px; display: flex; justify-content: center; gap: 10px;">
+            <!-- Paginación se generará con JS -->
         </div>
     </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const itemsPerPage = 8;
+    const grid = document.getElementById('fleetGrid');
+    const cards = grid.querySelectorAll('.aircraft-card');
+    const paginationContainer = document.querySelector('.pagination-container');
+    const totalPages = Math.ceil(cards.length / itemsPerPage);
+    
+    // Función para mostrar la página específica
+    function showPage(page) {
+        const start = (page - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+        
+        cards.forEach((card, index) => {
+            if (index >= start && index < end) {
+                card.style.display = 'flex'; // Usar flex para mantener el estilo
+                // Pequeña animación de entrada
+                card.style.opacity = '0';
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transition = 'opacity 0.5s ease';
+                }, 50);
+            } else {
+                card.style.display = 'none';
+            }
+        });
+        
+        updatePaginationButtons(page);
+    }
+    
+    // Generar botones de paginación
+    function createPagination() {
+        paginationContainer.innerHTML = '';
+        
+        for (let i = 1; i <= totalPages; i++) {
+            const btn = document.createElement('button');
+            btn.innerText = i;
+            btn.classList.add('pagination-btn');
+            btn.style.cssText = `
+                padding: 10px 15px;
+                border: 1px solid #D4AF37;
+                background: rgba(0,0,0,0.5);
+                color: #fff;
+                cursor: pointer;
+                border-radius: 5px;
+                font-weight: bold;
+                transition: all 0.3s ease;
+            `;
+            
+            btn.addEventListener('click', () => showPage(i));
+            paginationContainer.appendChild(btn);
+        }
+    }
+    
+    function updatePaginationButtons(activePage) {
+        const buttons = paginationContainer.querySelectorAll('button');
+        buttons.forEach((btn, index) => {
+            if (index + 1 === activePage) {
+                btn.style.background = '#D4AF37';
+                btn.style.color = '#000';
+            } else {
+                btn.style.background = 'rgba(0,0,0,0.5)';
+                btn.style.color = '#fff';
+            }
+        });
+    }
+    
+    // Inicializar
+    if (cards.length > 0) {
+        createPagination();
+        showPage(1);
+    }
+});
+</script>
 
 <section class="heli-blogs-section">
     <div class="heli-container">
