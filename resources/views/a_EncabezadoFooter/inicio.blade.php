@@ -308,7 +308,9 @@ $seo = [
 
                 <!-- Testimonio 1 -->
                 <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
-                    <meta itemprop="itemReviewed" content="Aerolínea del Sur">
+                    <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness">
+                        <meta itemprop="name" content="Aerolínea del Sur">
+                    </div>
                     <div class="testimonio-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                         <meta itemprop="ratingValue" content="5">
@@ -334,7 +336,9 @@ $seo = [
 
                 <!-- Testimonio 2 -->
                 <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
-                    <meta itemprop="itemReviewed" content="Aerolínea del Sur">
+                    <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness">
+                        <meta itemprop="name" content="Aerolínea del Sur">
+                    </div>
                     <div class="testimonio-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                         <meta itemprop="ratingValue" content="5">
@@ -360,7 +364,9 @@ $seo = [
 
                 <!-- Testimonio 3 -->
                 <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
-                    <meta itemprop="itemReviewed" content="Aerolínea del Sur">
+                    <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness">
+                        <meta itemprop="name" content="Aerolínea del Sur">
+                    </div>
                     <div class="testimonio-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                         <meta itemprop="ratingValue" content="5">
@@ -386,7 +392,9 @@ $seo = [
 
                 <!-- Testimonio 4 -->
                 <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
-                    <meta itemprop="itemReviewed" content="Aerolínea del Sur">
+                    <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness">
+                        <meta itemprop="name" content="Aerolínea del Sur">
+                    </div>
                     <div class="testimonio-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                         <meta itemprop="ratingValue" content="5">
@@ -412,7 +420,9 @@ $seo = [
 
                 <!-- Testimonio 5 -->
                 <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
-                    <meta itemprop="itemReviewed" content="Aerolínea del Sur">
+                    <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness">
+                        <meta itemprop="name" content="Aerolínea del Sur">
+                    </div>
                     <div class="testimonio-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                         <meta itemprop="ratingValue" content="5">
@@ -438,7 +448,9 @@ $seo = [
 
                 <!-- Testimonio 6 -->
                 <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
-                    <meta itemprop="itemReviewed" content="Aerolínea del Sur">
+                    <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness">
+                        <meta itemprop="name" content="Aerolínea del Sur">
+                    </div>
                     <div class="testimonio-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                         <meta itemprop="ratingValue" content="5">
