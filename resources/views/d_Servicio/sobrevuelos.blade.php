@@ -233,7 +233,7 @@ $seo = [
                         'badge' => 'Sobrevuelo',
                         'extra_icon' => 'fas fa-water',
                         'extra_text' => 'Maravilla Natural',
-                        'url' => '/agencia/titicaca'
+                        'url' => '/agencia/titicaca-lake'
                     ],
                     [
                         'title' => 'Líneas de Nazca',
