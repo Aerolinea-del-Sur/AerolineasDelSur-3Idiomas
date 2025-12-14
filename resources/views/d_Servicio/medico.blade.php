@@ -617,8 +617,13 @@ $seo = [
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('.heli-form');
+    const form = document.querySelector('.medical-form-compact');
     
+    // Verificar que el formulario existe
+    if (!form) {
+        console.error('Formulario médico no encontrado');
+        return;
+    }
     
     // --- LÓGICA DE ENVÍO (AJAX) ---
 
