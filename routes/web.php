@@ -253,7 +253,7 @@ Route::get('/agencia/vinicunca', function () {
 
 // tour
 Route::get('/tour', function () {
-    return view('tour.tour');
+    return view('tour.tours');
 })->name('tour'); 
 
 //---------------------------------- BLOG ---------------------------------------------------//
