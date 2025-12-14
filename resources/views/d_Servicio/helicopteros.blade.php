@@ -232,7 +232,7 @@ $seo = [
 
 
 
-<section class="heli-fleet-section">
+<section class="heli-fleet-section" style="margin-top: 8px;">
     <div class="heli-container">
         <h2 class="heli-section-title">Nuestras Aeronaves</h2>
         <div class="fleet-grid">
