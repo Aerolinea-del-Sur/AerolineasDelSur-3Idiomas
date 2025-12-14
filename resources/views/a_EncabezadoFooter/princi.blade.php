@@ -82,8 +82,8 @@
             <meta name="theme-color" content="#C9A227">
         <!-- Twitter Card 
             <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:title" content="Russell Experience - Turismo Sostenible en Perú">
-            <meta name="twitter:description" content="Descubre experiencias únicas y personalizadas en Perú con Russell Experience.">
+            <meta name="twitter:title" content="Aerolínea del Sur - Vuelos Privados en Perú">
+            <meta name="twitter:description" content="Descubre experiencias únicas de aviación privada en Perú con Aerolínea del Sur.">
             <meta name="twitter:image" content="https://tusitio.com/imagenes/twitter-image.jpg">
             /* Datos estructurados (JSON-LD)*/
             <script type="application/ld+json">

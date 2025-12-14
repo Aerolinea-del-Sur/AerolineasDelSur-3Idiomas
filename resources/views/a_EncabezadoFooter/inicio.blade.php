@@ -308,6 +308,7 @@ $seo = [
 
                 <!-- Testimonio 1 -->
                 <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
+                    <meta itemprop="itemReviewed" content="Aerolínea del Sur">
                     <div class="testimonio-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                         <meta itemprop="ratingValue" content="5">
@@ -318,7 +319,7 @@ $seo = [
                         <div class="author-avatar">
                             <img 
                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23c9a227'/%3E%3Ctext x='30' y='38' text-anchor='middle' fill='white' font-size='24' font-weight='bold'%3EMA%3C/text%3E%3C/svg%3E" 
-                                alt="Avatar de María Alejandra, cliente de Russell Experience"
+                                alt="Avatar de María Alejandra, cliente de Aerolínea del Sur"
                                 title="Testimonio de María Alejandra"
                                 itemprop="image"
                                 loading="lazy"
@@ -333,6 +334,7 @@ $seo = [
 
                 <!-- Testimonio 2 -->
                 <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
+                    <meta itemprop="itemReviewed" content="Aerolínea del Sur">
                     <div class="testimonio-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                         <meta itemprop="ratingValue" content="5">
@@ -343,7 +345,7 @@ $seo = [
                         <div class="author-avatar">
                             <img 
                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23800020'/%3E%3Ctext x='30' y='38' text-anchor='middle' fill='white' font-size='24' font-weight='bold'%3ECR%3C/text%3E%3C/svg%3E" 
-                                alt="Avatar de Carlos Rodríguez, cliente de Russell Experience"
+                                alt="Avatar de Carlos Rodríguez, cliente de Aerolínea del Sur"
                                 title="Testimonio de Carlos Rodríguez"
                                 itemprop="image"
                                 loading="lazy"
@@ -358,6 +360,7 @@ $seo = [
 
                 <!-- Testimonio 3 -->
                 <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
+                    <meta itemprop="itemReviewed" content="Aerolínea del Sur">
                     <div class="testimonio-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                         <meta itemprop="ratingValue" content="5">
@@ -368,7 +371,7 @@ $seo = [
                         <div class="author-avatar">
                             <img 
                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23c9a227'/%3E%3Ctext x='30' y='38' text-anchor='middle' fill='white' font-size='24' font-weight='bold'%3EAM%3C/text%3E%3C/svg%3E" 
-                                alt="Avatar de Ana Martínez, cliente de Russell Experience"
+                                alt="Avatar de Ana Martínez, cliente de Aerolínea del Sur"
                                 title="Testimonio de Ana Martínez"
                                 itemprop="image"
                                 loading="lazy"
@@ -383,6 +386,7 @@ $seo = [
 
                 <!-- Testimonio 4 -->
                 <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
+                    <meta itemprop="itemReviewed" content="Aerolínea del Sur">
                     <div class="testimonio-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                         <meta itemprop="ratingValue" content="5">
@@ -393,7 +397,7 @@ $seo = [
                         <div class="author-avatar">
                             <img 
                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23800020'/%3E%3Ctext x='30' y='38' text-anchor='middle' fill='white' font-size='24' font-weight='bold'%3EJL%3C/text%3E%3C/svg%3E" 
-                                alt="Avatar de Jorge López, cliente de Russell Experience"
+                                alt="Avatar de Jorge López, cliente de Aerolínea del Sur"
                                 title="Testimonio de Jorge López"
                                 itemprop="image"
                                 loading="lazy"
@@ -408,6 +412,7 @@ $seo = [
 
                 <!-- Testimonio 5 -->
                 <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
+                    <meta itemprop="itemReviewed" content="Aerolínea del Sur">
                     <div class="testimonio-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                         <meta itemprop="ratingValue" content="5">
@@ -418,7 +423,7 @@ $seo = [
                         <div class="author-avatar">
                             <img 
                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23c9a227'/%3E%3Ctext x='30' y='38' text-anchor='middle' fill='white' font-size='24' font-weight='bold'%3ELS%3C/text%3E%3C/svg%3E" 
-                                alt="Avatar de Lucía Silva, cliente de Russell Experience"
+                                alt="Avatar de Lucía Silva, cliente de Aerolínea del Sur"
                                 title="Testimonio de Lucía Silva"
                                 itemprop="image"
                                 loading="lazy"
@@ -433,6 +438,7 @@ $seo = [
 
                 <!-- Testimonio 6 -->
                 <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
+                    <meta itemprop="itemReviewed" content="Aerolínea del Sur">
                     <div class="testimonio-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
                         <meta itemprop="ratingValue" content="5">
@@ -443,7 +449,7 @@ $seo = [
                         <div class="author-avatar">
                             <img 
                                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23800020'/%3E%3Ctext x='30' y='38' text-anchor='middle' fill='white' font-size='24' font-weight='bold'%3ERH%3C/text%3E%3C/svg%3E" 
-                                alt="Avatar de Roberto Herrera, cliente de Russell Experience"
+                                alt="Avatar de Roberto Herrera, cliente de Aerolínea del Sur"
                                 title="Testimonio de Roberto Herrera"
                                 itemprop="image"
                                 loading="lazy"
@@ -459,7 +465,7 @@ $seo = [
             </div>
 
             <div class="testimonios-stats" itemscope itemtype="https://schema.org/AggregateRating">
-                <meta itemprop="itemReviewed" content="Russell Experience">
+                <meta itemprop="itemReviewed" content="Aerolínea del Sur">
                 <div class="stat-item">
                     <div class="stat-number" itemprop="ratingValue">4.9</div>
                     <div class="stat-label">Calificación promedio</div>
@@ -484,7 +490,7 @@ $seo = [
     {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Russell Experience",
+    "name": "Aerolínea del Sur",
     "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
