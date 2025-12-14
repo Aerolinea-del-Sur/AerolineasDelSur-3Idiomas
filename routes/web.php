@@ -251,11 +251,6 @@ Route::get('/agencia/vinicunca', function () {
 })->name('tour-vinicunca'); 
 
 
-// tour
-Route::get('/tour', function () {
-    return view('tour.tours');
-})->name('tour'); 
-
 //---------------------------------- BLOG ---------------------------------------------------//
 // Página de blog
 Route::get('/blog/Aventura-Cusco', function () {
