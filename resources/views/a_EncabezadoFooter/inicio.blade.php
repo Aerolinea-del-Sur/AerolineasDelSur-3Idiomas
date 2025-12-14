@@ -310,6 +310,7 @@ $seo = [
                 <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
                     <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness">
                         <meta itemprop="name" content="Aerolínea del Sur">
+                        <meta itemprop="address" content="Cusco, Perú">
                     </div>
                     <div class="testimonio-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
                         <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
@@ -477,7 +478,10 @@ $seo = [
             </div>
 
             <div class="testimonios-stats" itemscope itemtype="https://schema.org/AggregateRating">
-                <meta itemprop="itemReviewed" content="Aerolínea del Sur">
+                <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness">
+                    <meta itemprop="name" content="Aerolínea del Sur">
+                    <meta itemprop="address" content="Cusco, Perú">
+                </div>
                 <div class="stat-item">
                     <div class="stat-number" itemprop="ratingValue">4.9</div>
                     <div class="stat-label">Calificación promedio</div>
