@@ -203,52 +203,82 @@ $seo = [
 <section class="cargo-section">
     <div class="cargo-container">
         <h2 class="heli-section-title">Servicios de Carga Especializada</h2>
-        <p class="cargo-desc" style="margin-bottom: 22px;">
+        <p class="cargo-desc" style="margin-bottom: 30px; text-align:center; max-width:900px; margin-left:auto; margin-right:auto;">
             Operamos <strong style="color:#D4AF37;">helicóptero para carga externa en gasiferías</strong> y transporte médico a lugares remotos. 
-            Nuestra flota incluye <strong style="color:#D4AF37;"></strong> para carga interna y externa: 
-            <span style="background:rgba(212,175,55,0.2); padding:3px 8px; border-radius:4px; margin:0 4px;">perecible</span>
-            <span style="background:rgba(212,175,55,0.2); padding:3px 8px; border-radius:4px; margin:0 4px;">médica</span>
-            <span style="background:rgba(212,175,55,0.2); padding:3px 8px; border-radius:4px; margin:0 4px;">valorada</span>
-            <span style="background:rgba(212,175,55,0.2); padding:3px 8px; border-radius:4px; margin:0 4px;">no perecible</span>
+            Nuestra flota especializada maneja carga interna y externa en múltiples categorías.
         </p>
+        
+        <!-- Aeronaves Especializadas -->
+        <div style="background:linear-gradient(135deg, rgba(212,175,55,0.1), rgba(0,0,0,0.2)); padding:25px; border-radius:12px; margin-bottom:40px; border:1px solid rgba(212,175,55,0.3);">
+            <h3 style="color:#D4AF37; text-align:center; margin-bottom:20px; font-size:22px;">🚁 Aeronaves para Carga Pesada</h3>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px;">
+                <div style="background:rgba(0,0,0,0.4); padding:20px; border-radius:8px; border:1px solid rgba(212,175,55,0.2);">
+                    <h4 style="color:#D4AF37; margin-bottom:10px; font-size:18px;">Mi-8 MTV1</h4>
+                    <p style="color:#ccc; font-size:14px; line-height:1.6;">Helicóptero de transporte pesado ideal para carga externa e interna en zonas de difícil acceso</p>
+                    <div style="margin-top:15px; display:flex; gap:8px; flex-wrap:wrap;">
+                        <span style="background:rgba(212,175,55,0.2); padding:4px 10px; border-radius:4px; font-size:12px; color:#fff;">Carga Externa</span>
+                        <span style="background:rgba(212,175,55,0.2); padding:4px 10px; border-radius:4px; font-size:12px; color:#fff;">4000kg</span>
+                    </div>
+                </div>
+                <div style="background:rgba(0,0,0,0.4); padding:20px; border-radius:8px; border:1px solid rgba(212,175,55,0.2);">
+                    <h4 style="color:#D4AF37; margin-bottom:10px; font-size:18px;">Antonov AN-32B</h4>
+                    <p style="color:#ccc; font-size:14px; line-height:1.6;">Avión de carga militar certificado para operaciones civiles de alto tonelaje</p>
+                    <div style="margin-top:15px; display:flex; gap:8px; flex-wrap:wrap;">
+                        <span style="background:rgba(212,175,55,0.2); padding:4px 10px; border-radius:4px; font-size:12px; color:#fff;">Carga Interna</span>
+                        <span style="background:rgba(212,175,55,0.2); padding:4px 10px; border-radius:4px; font-size:12px; color:#fff;">6700kg</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tipos de Carga -->
+        <h3 style="color:#fff; text-align:center; margin-bottom:30px; font-size:20px;">Tipos de Carga que Manejamos</h3>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:20px; margin-bottom:50px;">
+            <div style="background:rgba(212,175,55,0.05); padding:25px 20px; border-radius:10px; border:1px solid rgba(212,175,55,0.25); text-align:center; transition:all 0.3s;">
+                <div style="font-size:40px; margin-bottom:15px;">❄️</div>
+                <h4 style="color:#D4AF37; margin-bottom:10px; font-size:16px; font-weight:600;">Perecible</h4>
+                <p style="color:#aaa; font-size:13px; line-height:1.5;">Cadena de frío garantizada y transporte rápido</p>
+            </div>
+            <div style="background:rgba(212,175,55,0.05); padding:25px 20px; border-radius:10px; border:1px solid rgba(212,175,55,0.25); text-align:center; transition:all 0.3s;">
+                <div style="font-size:40px; margin-bottom:15px;">⚕️</div>
+                <h4 style="color:#D4AF37; margin-bottom:10px; font-size:16px; font-weight:600;">Médica</h4>
+                <p style="color:#aaa; font-size:13px; line-height:1.5;">Equipo médico, medicamentos y órganos</p>
+            </div>
+            <div style="background:rgba(212,175,55,0.05); padding:25px 20px; border-radius:10px; border:1px solid rgba(212,175,55,0.25); text-align:center; transition:all 0.3s;">
+                <div style="font-size:40px; margin-bottom:15px;">💎</div>
+                <h4 style="color:#D4AF37; margin-bottom:10px; font-size:16px; font-weight:600;">Valorada</h4>
+                <p style="color:#aaa; font-size:13px; line-height:1.5;">Custodia especializada y monitoreo 24/7</p>
+            </div>
+            <div style="background:rgba(212,175,55,0.05); padding:25px 20px; border-radius:10px; border:1px solid rgba(212,175,55,0.25); text-align:center; transition:all 0.3s;">
+                <div style="font-size:40px; margin-bottom:15px;">📦</div>
+                <h4 style="color:#D4AF37; margin-bottom:10px; font-size:16px; font-weight:600;">No Perecible</h4>
+                <p style="color:#aaa; font-size:13px; line-height:1.5;">Carga general y equipos industriales</p>
+            </div>
+        </div>
+
+        <!-- Servicios Detallados -->
         <div class="cargo-grid">
             <div class="cargo-card">
-                <div class="bg" style="background-image:url('{{ asset('img/service/servicio-carga.webp') }}')"></div>
+                <div class="bg" style="background-image:url('{{ asset('public/img/service/servicio-carga.webp') }}'); background-size:cover; background-position:center;"></div>
                 <div class="overlay"></div>
                 <div class="content">
-                    <div class="cargo-title">Carga Interna</div>
-                    <p class="cargo-desc">Movilización dentro del territorio nacional con rutas optimizadas y tiempos garantizados. Ideal para empresas, instituciones y operaciones críticas.</p>
+                    <div class="cargo-title">🇵🇪 Carga Interna Nacional</div>
+                    <p class="cargo-desc">Movilización dentro del territorio nacional con rutas optimizadas y tiempos garantizados.</p>
                     <div class="cargo-variants">
                         <div class="cargo-variant">
-                            <h4>Urgente</h4>
+                            <h4>⚡ Urgente</h4>
                             <p>Respuesta rápida 24/7, priorización de pista y cadena directa sin transbordos.</p>
                             <div class="cargo-meta">
                                 <span class="chip">SLA garantizado</span>
-                                <span class="chip">Seguimiento en tiempo real</span>
+                                <span class="chip">Tracking en vivo</span>
                             </div>
                         </div>
                         <div class="cargo-variant">
-                            <h4>Pesada</h4>
-                            <p>Equipos industriales y carga sobredimensionada con aeronaves de mayor capacidad y grúas de apoyo.</p>
+                            <h4>🏗️ Pesada</h4>
+                            <p>Equipos industriales y carga sobredimensionada con aeronaves de mayor capacidad.</p>
                             <div class="cargo-meta">
                                 <span class="chip">Estiba reforzada</span>
                                 <span class="chip">Plan de seguridad</span>
-                            </div>
-                        </div>
-                        <div class="cargo-variant">
-                            <h4>Perecible</h4>
-                            <p>Cadena de frío y tiempos de exposición mínimos. Procedimientos de embarque acelerados.</p>
-                            <div class="cargo-meta">
-                                <span class="chip">Control de temperatura</span>
-                                <span class="chip">Rutas directas</span>
-                            </div>
-                        </div>
-                        <div class="cargo-variant">
-                            <h4>Valiosa</h4>
-                            <p>Custodia especializada y protocolos de acceso restringido con monitoreo continuo.</p>
-                            <div class="cargo-meta">
-                                <span class="chip">Custodia</span>
-                                <span class="chip">Monitoreo 24/7</span>
                             </div>
                         </div>
                     </div>
@@ -256,14 +286,14 @@ $seo = [
             </div>
 
             <div class="cargo-card">
-                <div class="bg" style="background-image:url('{{ asset('img/service/servicio-carga-helicoptero.webp') }}')"></div>
+                <div class="bg" style="background-image:url('{{ asset('public/img/service/servicio-carga-helicoptero.webp') }}'); background-size:cover; background-position:center;"></div>
                 <div class="overlay"></div>
                 <div class="content">
-                    <div class="cargo-title">Carga Externa</div>
-                    <p class="cargo-desc">Operaciones internacionales con coordinación aduanera y normativa ICAO/IATA. Ideal para exportaciones, proyectos y ayuda humanitaria.</p>
+                    <div class="cargo-title">🌎 Carga Externa Internacional</div>
+                    <p class="cargo-desc">Operaciones internacionales con coordinación aduanera y normativa ICAO/IATA completa.</p>
                     <div class="cargo-variants">
                         <div class="cargo-variant">
-                            <h4>Peligrosa (DGR)</h4>
+                            <h4>⚠️ Peligrosa (DGR)</h4>
                             <p>Manejo conforme IATA DGR con embalaje homologado y documentación específica.</p>
                             <div class="cargo-meta">
                                 <span class="chip">Clasificación UN</span>
@@ -271,27 +301,11 @@ $seo = [
                             </div>
                         </div>
                         <div class="cargo-variant">
-                            <h4>Proyecto</h4>
-                            <p>Logística integral para obras y energía. Coordinación multimodal y ventanas de obra.</p>
+                            <h4>🚁 Helicóptero Externa</h4>
+                            <p>Carga externa para gasiferías, minería y operaciones en zonas remotas sin pista.</p>
                             <div class="cargo-meta">
-                                <span class="chip">Multimodal</span>
-                                <span class="chip">Ventanas programadas</span>
-                            </div>
-                        </div>
-                        <div class="cargo-variant">
-                            <h4>Humanitaria</h4>
-                            <p>Respuesta rápida para desastres y emergencias. Priorización de carga crítica.</p>
-                            <div class="cargo-meta">
-                                <span class="chip">Fast-track</span>
-                                <span class="chip">Coordinación autoridades</span>
-                            </div>
-                        </div>
-                        <div class="cargo-variant">
-                            <h4>Estandar Internacional</h4>
-                            <p>Exportación e importación con asistencia documental y trazabilidad puerta a puerta.</p>
-                            <div class="cargo-meta">
-                                <span class="chip">Aduanas</span>
-                                <span class="chip">Puerta a puerta</span>
+                                <span class="chip">Eslinga certificada</span>
+                                <span class="chip">Zonas remotas</span>
                             </div>
                         </div>
                     </div>
