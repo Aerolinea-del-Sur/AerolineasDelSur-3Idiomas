@@ -202,8 +202,6 @@ $seo = [
                                 '</video>'
                             );
                         }
-
-                    // En móvil: solo muestra el gradiente de fondo (sin video)
                 </script>
             </div>
         </div>

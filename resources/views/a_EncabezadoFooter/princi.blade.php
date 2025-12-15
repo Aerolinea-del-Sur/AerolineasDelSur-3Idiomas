@@ -424,7 +424,7 @@
                 <!-- Barra superior móvil -->
                 <div class="mobile-top-bar">
                     <a href="/" class="mobile-logo" aria-label="Inicio">
-                        <img src="{{ asset('img/logo.webp') }}" alt="Logo">
+                        <img src="{{ asset('img/logo.webp') }}" alt="Logo" width="68" height="67" loading="lazy">
                     </a>
                     <button class="hamburger-btn" aria-label="Abrir menú" onclick="toggleMenu()">
                         <span></span>
@@ -451,7 +451,7 @@
                             </ul>
 
                             <a href="{{ url('/') }}" class="logo-center" aria-label="Inicio">
-                                <img src="{{ asset('img/logo.webp') }}" alt="Logo">
+                                <img src="{{ asset('img/logo.webp') }}" alt="Logo" width="68" height="67" loading="eager">
                             </a>
 
                             <ul class="nav-menu">
@@ -493,7 +493,7 @@
                                         </svg>
                                     </a>
                                     <a href="https://www.tripadvisor.com/Attraction_Review-g294314-d33262541-Reviews-Aerolinea_Del_Sur-Cusco_Cusco_Region.html" target="_blank" rel="nofollow noopener" class="social-link" aria-label="TripAdvisor">
-                                        <img src="{{ asset('img/tripadvisor.png') }}" alt="TripAdvisor" class="tripadvisor-icon">
+                                        <img src="{{ asset('img/tripadvisor.png') }}" alt="TripAdvisor" class="tripadvisor-icon" width="23" height="14" loading="lazy">
                                     </a>
                                 </div>
                             </div>
@@ -682,7 +682,7 @@
             </svg>
         </a>
         <a href="https://www.tripadvisor.com/Attraction_Review-g294314-d33262541-Reviews-Aerolinea_Del_Sur-Cusco_Cusco_Region.html" target="_blank" class="social-btn-minimal tripadvisor" title="TripAdvisor" itemprop="sameAs">
-            <img src="{{ asset('img/tripadvisor.png') }}" alt="TripAdvisor" class="tripadvisor-icon">
+            <img src="{{ asset('img/tripadvisor.png') }}" alt="TripAdvisor" class="tripadvisor-icon" width="23" height="14" loading="lazy">
         </a>
     </div>
 </div>
