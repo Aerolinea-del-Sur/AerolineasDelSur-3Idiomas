@@ -242,7 +242,7 @@ $seo = [
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="contact-info">
-                            <h4><?= $h4_1 ?></h4>
+                            <h3><?= $h4_1 ?></h3>
                             <p><?= $p_11 ?></p>
                         </div>
                     </div>
@@ -251,7 +251,7 @@ $seo = [
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-info">
-                            <h4><?= $h4_2 ?></h4>
+                            <h3><?= $h4_2 ?></h3>
                             <p><?= $p_12 ?></p>
                         </div>
                     </div>
@@ -260,7 +260,7 @@ $seo = [
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-info">
-                            <h4><?= $h4_3 ?></h4>
+                            <h3><?= $h4_3 ?></h3>
                             <p><?= $p_13 ?></p>
                         </div>
                     </div>

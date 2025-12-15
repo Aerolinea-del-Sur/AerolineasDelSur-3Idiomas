@@ -773,7 +773,7 @@ $seo = [
 <section class="heli-faq-section faq-section">
     <div class="heli-container faq-container">
         <div class="faq-header">
-            <h2 style="font-size:28px; font-weight:700; margin-bottom:20px;"><?= $h1_7 ?></h2>
+            <h3 style="font-size:28px; font-weight:700; margin-bottom:20px;"><?= $h1_7 ?></h3>
             <p class="p"><?= $p_17 ?></p>
         </div>
 
