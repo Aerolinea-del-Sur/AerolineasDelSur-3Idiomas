@@ -364,7 +364,7 @@
                                             <i class="fas fa-map-marker-alt contact-icon"></i>
                                             <div class="contact-details">
                                                 <span class="contact-label">Ubicación</span>
-                                                <span class="contact-value">Centro Comercial San Andrés<br>Oficina 314, Tercer Piso<br>Cusco, Perú</span>
+                                                <span class="contact-value">Av Pachacuteq N° 313 - Wanchaq<br>Cusco, Perú</span>
                                             </div>
                                         </div>
                                     </div>
