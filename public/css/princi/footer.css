@@ -87,8 +87,8 @@
 /* ===== FOOTER LINKS GRID ===== */
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
 }
 
 .footer-column {
@@ -142,6 +142,65 @@
 
 .footer-link:hover::after {
     width: 100%;
+}
+
+/* ===== PROFESSIONAL CONTACT SECTION ===== */
+.footer-contact-column {
+    border-left: 1px solid rgba(201, 162, 39, 0.2);
+    padding-left: 32px;
+}
+
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    color: var(--accent);
+    font-size: 20px;
+    width: 24px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-label {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contact-value {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.contact-link {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: var(--transition);
+    position: relative;
+}
+
+.contact-link:hover {
+    color: var(--accent);
+    transform: translateX(2px);
 }
 
 /* ===== NEWSLETTER SECTION ===== */

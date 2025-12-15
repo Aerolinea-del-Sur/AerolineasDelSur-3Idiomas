@@ -221,7 +221,7 @@
             }
         </style>
     </head>
-    
+
     <body>
         <!-- Encabezado (Header de base.html integrado) -->
             <header class="header">
@@ -334,25 +334,39 @@
                                         <li><a href="/terminos-condiciones" class="footer-link">Términos y Condiciones</a></li>
                                     </ul>
                                 </div>
-                                <!-- Información de contacto -->
-                                <div class="footer-tagline">
-                                    <div class="contact-item">
-                                        <strong>RUC:</strong> 20612563234
-                                    </div>
-                                    <div class="contact-item">
-                                        <strong>Celular:</strong> +51 932 475 995
-                                    </div>
-                                    <div class="contact-item">
-                                        <strong>Email:</strong> contacto@aerolineadelsur.com.pe
-                                    </div>
-                                    <div class="contact-item">
-                                        <strong>Email:</strong> paul.olivares@aerolineadelsur.com.pe
-                                    </div>
-                                    <div class="contact-item">
-                                        <strong>Dirección:</strong> Centro Comercial San Andrés oficina nro 314 tercer piso
-                                    </div>
-                                    <div class="contact-item">
-                                        <strong>Ciudad:</strong> Cusco
+                                
+                                <!-- Professional Contact Section -->
+                                <div class="footer-column footer-contact-column">
+                                    <h3 class="footer-title">Contacto</h3>
+                                    <div class="footer-contact-info">
+                                        <div class="contact-info-item">
+                                            <i class="fas fa-building contact-icon"></i>
+                                            <div class="contact-details">
+                                                <span class="contact-label">RUC</span>
+                                                <span class="contact-value">20612563234</span>
+                                            </div>
+                                        </div>
+                                        <div class="contact-info-item">
+                                            <i class="fas fa-phone contact-icon"></i>
+                                            <div class="contact-details">
+                                                <span class="contact-label">Celular</span>
+                                                <a href="tel:+51932475995" class="contact-value contact-link">+51 932 475 995</a>
+                                            </div>
+                                        </div>
+                                        <div class="contact-info-item">
+                                            <i class="fas fa-envelope contact-icon"></i>
+                                            <div class="contact-details">
+                                                <span class="contact-label">Email</span>
+                                                <a href="mailto:contacto@aerolineadelsur.com.pe" class="contact-value contact-link">contacto@aerolineadelsur.com.pe</a>
+                                            </div>
+                                        </div>
+                                        <div class="contact-info-item">
+                                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                                            <div class="contact-details">
+                                                <span class="contact-label">Ubicación</span>
+                                                <span class="contact-value">Centro Comercial San Andrés<br>Oficina 314, Tercer Piso<br>Cusco, Perú</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
