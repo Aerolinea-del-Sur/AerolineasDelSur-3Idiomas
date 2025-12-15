@@ -880,101 +880,86 @@ $seo = [
             </div>
         </div>
     </section>
-    <script>
-        // Footer accordion for mobile devices
-        document.addEventListener('DOMContentLoaded', function() {
-            const footerTitles = document.querySelectorAll('.footer-title');
-            
-            footerTitles.forEach(title => {
-                title.addEventListener('click', function() {
-                    // Solo activar en dispositivos móviles
-                    if (window.innerWidth <= 480) {
-                        const column = this.parentElement;
-                        column.classList.toggle('active');
-                    }
-                });
-            });
+<script>
+document.addEventListener('DOMContentLoaded', function () {
 
-            // Reiniciar acordeón en cambio de tamaño
-            window.addEventListener('resize', function() {
-                if (window.innerWidth > 480) {
-                    const activeColumns = document.querySelectorAll('.footer-column.active');
-                    activeColumns.forEach(column => {
-                        column.classList.remove('active');
-                    });
-                }
-            });
-        });
+    /* ================= FOOTER ACCORDION ================= */
+    const footerTitles = document.querySelectorAll('.footer-title');
 
-        // FAQ functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const faqItems = document.querySelectorAll('.faq-item');
-            
-            faqItems.forEach(item => {
-                const question = item.querySelector('.faq-question');
-                
-                question.addEventListener('click', function() {
-                    const isActive = item.classList.contains('active');
-                    
-                    // Close all other FAQ items
-                    faqItems.forEach(otherItem => {
-                        if (otherItem !== item) {
-                            otherItem.classList.remove('active');
-                        }
-                    });
-                    
-                    // Toggle current item
-                    if (isActive) {
-                        item.classList.remove('active');
-                    } else {
-                        item.classList.add('active');
-                    }
-                });
-            });
-
-            // Handle hash navigation for FAQ items
-            function handleHashNavigation() {
-                const hash = window.location.hash;
-                if (hash && hash.startsWith('#faq-')) {
-                    const faqIndex = parseInt(hash.replace('#faq-', '')) - 1;
-                    if (faqIndex >= 0 && faqIndex < faqItems.length) {
-                        faqItems[faqIndex].classList.add('active');
-                        faqItems[faqIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }
-                }
+    footerTitles.forEach(title => {
+        title.addEventListener('click', function () {
+            if (window.innerWidth <= 480) {
+                this.parentElement.classList.toggle('active');
             }
-
-            // Handle hash navigation on page load and hash change
-            handleHashNavigation();
-            window.addEventListener('hashchange', handleHashNavigation);
-
-            // Contact button analytics (optional)
-            const contactButtons = document.querySelectorAll('.contact-btn');
-            contactButtons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    const buttonType = this.classList.contains('whatsapp-btn') ? 'WhatsApp' : 'Phone';
-                    // Add analytics tracking here if needed
-                });
-            });
-
-            // Smooth scroll animation for FAQ section
-            const faqSection = document.querySelector('.faq-section');
-            if (faqSection) {
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.style.opacity = '1';
-                            entry.target.style.transform = 'translateY(0)';
-                        }
-                    });
-                }, { threshold: 0.1 });
-
-                faqSection.style.opacity = '0';
-                faqSection.style.transform = 'translateY(20px)';
-                faqSection.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(faqSection);
         });
+    });
+
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 480) {
+            document.querySelectorAll('.footer-column.active')
+                .forEach(col => col.classList.remove('active'));
+        }
+    });
+
+    /* ================= FAQ ================= */
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        item.querySelector('.faq-question')
+            .addEventListener('click', function () {
+
+                const isActive = item.classList.contains('active');
+
+                faqItems.forEach(i => i.classList.remove('active'));
+                if (!isActive) item.classList.add('active');
+            });
+    });
+
+    /* ================= HASH FAQ ================= */
+    function handleHashNavigation() {
+        const hash = window.location.hash;
+        if (hash.startsWith('#faq-')) {
+            const index = parseInt(hash.replace('#faq-', '')) - 1;
+            if (faqItems[index]) {
+                faqItems[index].classList.add('active');
+                faqItems[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+    }
+
+    handleHashNavigation();
+    window.addEventListener('hashchange', handleHashNavigation);
+
+    /* ================= CONTACT BUTTONS ================= */
+    document.querySelectorAll('.contact-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const type = this.classList.contains('whatsapp-btn') ? 'WhatsApp' : 'Phone';
+            // analytics
+        });
+    });
+
+    /* ================= FAQ ANIMATION ================= */
+    const faqSection = document.querySelector('.faq-section');
+    if (faqSection) {
+        faqSection.style.opacity = '0';
+        faqSection.style.transform = 'translateY(20px)';
+        faqSection.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        observer.observe(faqSection);
+    }
+
+});
 </script>
+
 
 <script>
     // Slider de Certificaciones - Versión Simple
