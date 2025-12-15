@@ -20,13 +20,13 @@ $seo = [
 
 <!-- Medical White Theme Styles -->
 <style>
-    /* Global White Background */
-    body {
+    /* Global White Background - Only for medical page */
+    .medical-page-content {
         background: #FFFFFF !important;
     }
     
-    /* Override any dark backgrounds from imported CSS */
-    section {
+    /* Medical page sections only */
+    .medical-page-content section {
         background: #FFFFFF !important;
     }
     
@@ -298,6 +298,7 @@ $seo = [
     }
 </style>
 
+<div class="medical-page-content">
 <header class="medical-header">
     <div class="medical-container">
         <div style="text-align:center;">
@@ -1239,4 +1240,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
+</div><!-- End medical-page-content -->
+
 @endsection
