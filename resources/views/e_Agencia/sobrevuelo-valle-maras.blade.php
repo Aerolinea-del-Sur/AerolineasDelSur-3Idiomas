@@ -86,7 +86,7 @@ $seo = [
 <!-- Sección Hero -->
 <section class="tour-hero">
     <div class="hero-background">
-        <img src="https://images.pexels.com/photos/6921111/pexels-photo-6921111.jpeg" alt="Machu Picchu desde el aire">
+        <img src="{{ asset('img/sobrevuelos/sacred-valley-1.webp') }}" alt="Valle Sagrado desde el aire">
         <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
@@ -152,7 +152,7 @@ $seo = [
                 <div class="image-carousel">
                     <div class="carousel-container" id="carouselContainer">
                         <div class="carousel-slide active">
-                            <img src="/public/img/tours/valle-sagrado-maras-1.jpg" alt="Vista aérea de Machu Picchu">
+                            <img src="/public/img/tours/valle-sagrado-maras-1.jpg" alt="Vista aérea del Valle Sagrado">
                         </div> 
                         <div class="carousel-slide">
                             <img src="/public/img/tours/valle-sagrado-maras-2.jpg" alt="Valle Sagrado desde el aire">
@@ -401,7 +401,7 @@ $seo = [
                 </div>
                 <div class="form-group">
                     <label for="tourName">Nombre del Tour *</label>
-                    <input type="text" id="tourName" name="tourName" value="Vuelo Panorámico sobre Machu Picchu" required readonly>
+                    <input type="text" id="tourName" name="tourName" value="Vuelo Panorámico sobre el Valle Sagrado" required readonly>
                 </div>
                 <div class="form-group">
                     <label for="passengers">Número de Pasajeros *</label>
