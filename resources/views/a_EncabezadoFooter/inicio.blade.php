@@ -196,12 +196,16 @@ $seo = [
                     // Detectar si es dispositivo móvil
                     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
                     
-                    if (!isMobile) {
-                        // Solo en desktop: cargar video
-                        document.write('<video autoplay muted loop playsinline class="hero-video" poster="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1920 1080\'%3E%3Crect fill=\'%231c1c1c\' width=\'1920\' height=\'1080\'/%3E%3C/svg%3E">');
-                        document.write('<source src="{{ asset(\'/public/video/portada-home.mp4\') }}" type="video/mp4">');
-                        document.write('</video>');
+                    <script>
+                    if (typeof isMobile !== 'undefined' && !isMobile) {
+                        document.write(
+                            '<video autoplay muted loop playsinline class="hero-video" poster="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1920 1080\'%3E%3Crect fill=\'%231c1c1c\' width=\'1920\' height=\'1080\'/%3E%3C/svg%3E">' +
+                            '<source src="{{ asset("video/portada-home.mp4") }}" type="video/mp4">' +
+                            '</video>'
+                        );
                     }
+                    </script>
+
                     // En móvil: solo muestra el gradiente de fondo (sin video)
                 </script>
             </div>
