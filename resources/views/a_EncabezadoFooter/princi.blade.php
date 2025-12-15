@@ -57,6 +57,13 @@
             <link rel="preconnect" href="https://cdn.jsdelivr.net">
             <link rel="preconnect" href="https://cdnjs.cloudflare.com">
             
+            <!-- Preload de fuentes críticas (WOFF2 para mejor rendimiento) -->
+            <!-- Preload de Playfair Display (fuente principal de títulos) -->
+            <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2" crossorigin>
+            
+            <!-- Preload de Space Grotesk (fuente principal de cuerpo) -->
+            <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUXskPMBBSSJLm2E.woff2" crossorigin>
+            
             <!-- Precarga de recursos críticos -->
             <!-- Images -->
             <link rel="preload" as="image" href="{{ asset('img/vder.svg') }}">
@@ -68,17 +75,19 @@
             <link rel="preload" as="style" href="{{ asset('css/princi/header.css') }}">
             <link rel="preload" as="style" href="{{ asset('css/princi/footer.css') }}">
             
-            <!-- Carga asíncrona de fuentes (no bloqueante) -->
+            <!-- Carga asíncrona de fuentes (no bloqueante) con font-display: swap -->
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+            
+            <!-- Material Symbols - Carga asíncrona (no bloqueante) -->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" media="print" onload="this.media='all'">
             
             <!-- Fallback para navegadores sin JavaScript -->
             <noscript>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-            </noscript>
-                <!-- Iconos -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />   
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">
+            </noscript>   
         <!-- CONEXION A ESTILOS 
             <link rel="stylesheet" href="/css/princi.css">
             <link rel="stylesheet" href="/js/princi.js">-->
