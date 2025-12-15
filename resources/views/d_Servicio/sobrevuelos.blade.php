@@ -147,15 +147,18 @@ $seo = [
     <section class="hero">
         <div class="hero-background">
             
-            <!-- Video de fondo de Vimeo con audio -->
+            <!-- Video de fondo HTML5 con audio -->
             <div class="bg-video">
-                <iframe 
-                    src="{{ asset('/public/video/portada-sobrevuelo.mp4') }}" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    title="Mi video Agencia">
-                </iframe>
+                <video 
+                    id="heroVideo"
+                    class="hero-video-bg"
+                    autoplay 
+                    loop 
+                    playsinline
+                    muted>
+                    <source src="{{ asset('/public/video/portada-sobrevuelo.mp4') }}" type="video/mp4">
+                    Tu navegador no soporta el elemento video.
+                </video>
             </div>
             <div class="hero-overlay"></div>
         </div>
@@ -512,32 +515,29 @@ $seo = [
         });
     </script>
     
-    <!-- Control de audio para Video de Vimeo -->
-    <script src="https://player.vimeo.com/api/player.js"></script>
+    <!-- Control de audio para Video HTML5 -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const iframe = document.querySelector('.bg-video iframe');
+            const video = document.getElementById('heroVideo');
             const audioToggle = document.getElementById('audioToggle');
-            let isMuted = false;
             
-            if (iframe && audioToggle) {
-                const player = new Vimeo.Player(iframe);
-                
+            if (video && audioToggle) {
                 // Control de audio
                 audioToggle.addEventListener('click', function() {
-                    if (isMuted) {
-                        player.setVolume(0.5); // Volumen al 50%
-                        audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
-                        isMuted = false;
-                    } else {
-                        player.setVolume(0);
+                    video.muted = !video.muted;
+                    
+                    // Actualizar icono
+                    if (video.muted) {
                         audioToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
-                        isMuted = true;
+                    } else {
+                        audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
                     }
                 });
                 
-                // Iniciar con volumen medio
-                player.setVolume(0.5);
+                // Asegurar que el video se reproduzca
+                video.play().catch(error => {
+                    console.log('Error al reproducir video:', error);
+                });
             }
         });
     </script>
