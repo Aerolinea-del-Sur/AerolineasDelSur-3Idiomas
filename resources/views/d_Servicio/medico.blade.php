@@ -235,7 +235,7 @@ $seo = [
         font-size: 24px;
     }
     
-    .contact-item {
+    .contact-item1 {
         display: flex;
         align-items: center;
         gap: 16px;
@@ -357,7 +357,7 @@ $seo = [
                     Servicio 24/7
                 </div>
                 
-                <div class="contact-item">
+                <div class="contact-item1">
                     <div class="contact-icon">
                         <i class="fas fa-phone"></i>
                     </div>
@@ -367,7 +367,7 @@ $seo = [
                     </div>
                 </div>
                 
-                <div class="contact-item">
+                <div class="contact-item1">
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
