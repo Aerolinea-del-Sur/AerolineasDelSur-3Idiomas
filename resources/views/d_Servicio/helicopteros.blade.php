@@ -205,27 +205,6 @@ $seo = [
                     <p style="color:#ccc; font-size:14px;">Servicios para minería, gasiferías y petroliferas</p>
                 </div>
             </div>
-            <div style="background:linear-gradient(135deg, rgba(212,175,55,0.15), rgba(0,0,0,0.3)); padding:30px; border-radius:12px; border:1px solid rgba(212,175,55,0.4);">
-                <h3 style="color:#D4AF37; margin-bottom:15px; text-align:center;">Cobertura Geográfica Completa</h3>
-                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:15px; text-align:center;">
-                    <div style="padding:15px;">
-                        <span style="font-size:28px;">🌊</span>
-                        <p style="color:#fff; font-weight:500; margin-top:8px;">Mar</p>
-                    </div>
-                    <div style="padding:15px;">
-                        <span style="font-size:28px;">🏖️</span>
-                        <p style="color:#fff; font-weight:500; margin-top:8px;">Costa</p>
-                    </div>
-                    <div style="padding:15px;">
-                        <span style="font-size:28px;">⛰️</span>
-                        <p style="color:#fff; font-weight:500; margin-top:8px;">Sierra</p>
-                    </div>
-                    <div style="padding:15px;">
-                        <span style="font-size:28px;">🌴</span>
-                        <p style="color:#fff; font-weight:500; margin-top:8px;">Selva</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
