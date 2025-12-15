@@ -42,7 +42,7 @@ $seo = [
     
     .medical-header {
         background: 
-            linear-gradient(135deg, rgba(255, 255, 255, 0.45) 0%, rgba(240, 249, 255, 0.35) 100%),
+            linear-gradient(135deg, rgba(26, 26, 26, 0.60) 0%, rgba(0, 0, 0, 0.55) 100%),
             url('{{ asset("img/service/medical-jet-bg.jpg") }}') center/cover no-repeat;
         min-height: 70vh;
         position: relative;
@@ -134,46 +134,46 @@ $seo = [
         background: rgba(255, 255, 255, 0.55);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
-        padding: 32px;
+        padding: 24px;
         border-radius: 16px;
         box-shadow: 0 8px 32px rgba(0,0,0,0.12);
         border: 2px solid rgba(212, 175, 55, 0.4);
-        max-width: 500px;
+        max-width: 400px;
         width: 100%;
     }
     
     .form-header {
         text-align: center;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
     
     .form-title {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
         color: var(--medical-black);
-        margin: 0 0 8px 0;
+        margin: 0 0 6px 0;
     }
     
     .form-desc {
-        font-size: 14px;
+        font-size: 13px;
         color: var(--medical-gray);
         margin: 0;
     }
     
     .form-inputs {
         display: grid;
-        gap: 16px;
-        margin-bottom: 20px;
+        gap: 12px;
+        margin-bottom: 16px;
     }
     
     .medical-input-field {
         width: 100%;
-        padding: 14px 16px;
+        padding: 12px 14px;
         border: 2px solid #e2e8f0;
         border-radius: 10px;
         background: var(--medical-white);
         color: var(--medical-black);
-        font-size: 15px;
+        font-size: 14px;
         transition: all 0.3s;
     }
     
@@ -185,21 +185,21 @@ $seo = [
     
     .form-buttons {
         display: grid;
-        gap: 12px;
+        gap: 10px;
     }
     
     .medical-button {
-        padding: 14px 24px;
+        padding: 12px 20px;
         border: none;
         border-radius: 10px;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 600;
         cursor: pointer;
         transition: all 0.3s;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 8px;
     }
     
     .btn-emergency {
@@ -370,14 +370,12 @@ $seo = [
                         <button type="button" class="medical-button btn-success" onclick="enviarWhatsApp('aeromedico')">
                             <i class="fab fa-whatsapp"></i> WhatsApp
                         </button>
-                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-                            <button type="button" class="medical-button btn-secondary" onclick="enviarOutlook('aeromedico')">
-                                <i class="far fa-envelope"></i> Outlook
-                            </button>
-                            <button type="button" class="medical-button btn-secondary" onclick="enviarGmail('aeromedico')">
-                                <i class="far fa-envelope"></i> Gmail
-                            </button>
-                        </div>
+                        <button type="button" class="medical-button btn-secondary" onclick="enviarOutlook('aeromedico')">
+                            <i class="far fa-envelope"></i> Outlook
+                        </button>
+                        <button type="button" class="medical-button btn-secondary" onclick="enviarGmail('aeromedico')">
+                            <i class="far fa-envelope"></i> Gmail
+                        </button>
                     </div>
                 </form>
             </div>
