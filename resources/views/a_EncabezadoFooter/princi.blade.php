@@ -64,9 +64,6 @@
             <!-- Preload de Space Grotesk (fuente principal de cuerpo) -->
             <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUXskPMBBSSJLm2E.woff2" crossorigin>
             
-            <!-- Preload de Font Awesome (rompe cadena de dependencias crítica) -->
-            <link rel="preload" as="font" type="font/woff2" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" crossorigin>
-            
             <!-- Precarga de recursos críticos -->
             <!-- Images -->
             <link rel="preload" as="image" href="{{ asset('img/vder.svg') }}">
