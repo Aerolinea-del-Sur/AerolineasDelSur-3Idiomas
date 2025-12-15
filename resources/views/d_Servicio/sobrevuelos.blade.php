@@ -154,8 +154,7 @@ $seo = [
                     class="hero-video-bg"
                     autoplay 
                     loop 
-                    playsinline
-                    muted>
+                    playsinline>
                     <source src="{{ asset('/public/video/portada-sobrevuelo.mp4') }}" type="video/mp4">
                     Tu navegador no soporta el elemento video.
                 </video>
@@ -522,7 +521,23 @@ $seo = [
             const audioToggle = document.getElementById('audioToggle');
             
             if (video && audioToggle) {
-                // Control de audio
+                // Intentar reproducir con sonido
+                video.muted = false;
+                video.volume = 0.5; // Volumen al 50%
+                
+                video.play().then(() => {
+                    // Éxito: el video se reproduce con sonido
+                    audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+                }).catch(error => {
+                    // Fallo: navegador bloqueó autoplay con sonido
+                    // Intentar reproducir muted
+                    console.log('Autoplay con audio bloqueado, reproduciendo sin sonido:', error);
+                    video.muted = true;
+                    audioToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                    video.play();
+                });
+                
+                // Control de audio con botón
                 audioToggle.addEventListener('click', function() {
                     video.muted = !video.muted;
                     
@@ -532,11 +547,6 @@ $seo = [
                     } else {
                         audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
                     }
-                });
-                
-                // Asegurar que el video se reproduzca
-                video.play().catch(error => {
-                    console.log('Error al reproducir video:', error);
                 });
             }
         });
