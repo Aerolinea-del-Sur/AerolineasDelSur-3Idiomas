@@ -58,10 +58,15 @@
             <link rel="preconnect" href="https://cdnjs.cloudflare.com">
             
             <!-- Precarga de recursos críticos -->
+            <!-- Images -->
             <link rel="preload" as="image" href="{{ asset('img/vder.svg') }}">
             <link rel="preload" as="image" href="{{ asset('img/vizq.svg') }}">
-            <!-- Critical Logo Preload -->
             <link rel="preload" as="image" href="{{ asset('img/logo.svg') }}" type="image/svg+xml">
+            
+            <!-- Critical CSS -->
+            <link rel="preload" as="style" href="{{ asset('css/general.css') }}">
+            <link rel="preload" as="style" href="{{ asset('css/princi/header.css') }}">
+            <link rel="preload" as="style" href="{{ asset('css/princi/footer.css') }}">
             
             <!-- Carga asíncrona de fuentes (no bloqueante) -->
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
@@ -222,6 +227,161 @@
                 .header-wrapper > .aero-btn:last-child { order: 4; }
             }
         </style>
+        
+        <!-- Schema.org Structured Data (JSON-LD) for SEO -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://www.aerolineadelsur.com/#organization",
+                    "name": "Aerolínea del Sur E.I.R.L",
+                    "legalName": "Aerolínea del Sur E.I.R.L",
+                    "url": "https://www.aerolineadelsur.com",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "{{ asset('img/logo.svg') }}",
+                        "width": 200,
+                        "height": 200
+                    },
+                    "description": "Servicios aéreos premium en Perú: vuelos charter, helicópteros, transporte médico certificado y carga especializada desde Cusco.",
+                    "email": "contacto@aerolineadelsur.com.pe",
+                    "telephone": "+51932475995",
+                    "taxID": "20612563234",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Av Pachacuteq N° 313 - Wanchaq",
+                        "addressLocality": "Cusco",
+                        "addressRegion": "Cusco",
+                        "postalCode": "08000",
+                        "addressCountry": "PE"
+                    },
+                    "contactPoint": [
+                        {
+                            "@type": "ContactPoint",
+                            "telephone": "+51932475995",
+                            "contactType": "Customer Service",
+                            "areaServed": "PE",
+                            "availableLanguage": ["es", "en"]
+                        },
+                        {
+                            "@type": "ContactPoint",
+                            "telephone": "+51932475995",
+                            "contactType": "Emergency",
+                            "areaServed": "PE",
+                            "availableLanguage": ["es"],
+                            "description": "Servicio aeromédico 24/7"
+                        }
+                    ],
+                    "sameAs": [
+                        "https://www.facebook.com/profile.php?id=61575792015865",
+                        "https://www.instagram.com/aerolineadelsur/",
+                        "https://www.tiktok.com/@aerolineadelsur",
+                        "https://www.tripadvisor.com/Attraction_Review-g294314-d33262541-Reviews-Aerolinea_Del_Sur-Cusco_Cusco_Region.html"
+                    ]
+                },
+                {
+                    "@type": "LocalBusiness",
+                    "@id": "https://www.aerolineadelsur.com/#business",
+                    "name": "Aerolínea del Sur",
+                    "image": "{{ asset('img/logo.svg') }}",
+                    "priceRange": "$$$$",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Av Pachacuteq N° 313 - Wanchaq",
+                        "addressLocality": "Cusco",
+                        "addressRegion": "Cusco",
+                        "postalCode": "08000",
+                        "addressCountry": "PE"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": -13.5247,
+                        "longitude": -71.9675
+                    },
+                    "url": "https://www.aerolineadelsur.com",
+                    "telephone": "+51932475995",
+                    "email": "contacto@aerolineadelsur.com.pe",
+                    "openingHoursSpecification": {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday",
+                            "Sunday"
+                        ],
+                        "opens": "00:00",
+                        "closes": "23:59"
+                    }
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://www.aerolineadelsur.com/vuelos#service",
+                    "serviceType": "Vuelos Charter Privados",
+                    "provider": {
+                        "@id": "https://www.aerolineadelsur.com/#organization"
+                    },
+                    "areaServed": {
+                        "@type": "Country",
+                        "name": "Perú"
+                    },
+                    "description": "Vuelos charter privados personalizados para negocios, turismo y traslados ejecutivos en Perú.",
+                    "url": "https://www.aerolineadelsur.com/vuelos"
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://www.aerolineadelsur.com/helicopteros#service",
+                    "serviceType": "Servicio de Helicópteros",
+                    "provider": {
+                        "@id": "https://www.aerolineadelsur.com/#organization"
+                    },
+                    "areaServed": {
+                        "@type": "Country",
+                        "name": "Perú"
+                    },
+                    "description": "Transporte aéreo en helicóptero para zonas remotas, rescate y operaciones especiales.",
+                    "url": "https://www.aerolineadelsur.com/helicopteros"
+                },
+                {
+                    "@type": "MedicalBusiness",
+                    "@id": "https://www.aerolineadelsur.com/aeromedico#service",
+                    "name": "Servicio Aeromédico Aerolínea del Sur",
+                    "serviceType": "Transporte Aeromédico",
+                    "provider": {
+                        "@id": "https://www.aerolineadelsur.com/#organization"
+                    },
+                    "areaServed": {
+                        "@type": "Country",
+                        "name": "Perú"
+                    },
+                    "description": "Servicio aeromédico 24/7 para evacuaciones médicas, traslado de pacientes críticos y emergencias.",
+                    "url": "https://www.aerolineadelsur.com/aeromedico",
+                    "availableService": {
+                        "@type": "MedicalProcedure",
+                        "name": "Evacuación Médica Aérea"
+                    }
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://www.aerolineadelsur.com/carga#service",
+                    "serviceType": "Carga Aérea Especializada",
+                    "provider": {
+                        "@id": "https://www.aerolineadelsur.com/#organization"
+                    },
+                    "areaServed": {
+                        "@type": "Country",
+                        "name": "Perú"
+                    },
+                    "description": "Transporte de carga aérea especializada con entregas urgentes y grandes volúmenes.",
+                    "url": "https://www.aerolineadelsur.com/carga"
+                }
+            ]
+        }
+        </script>
     </head>
 
     <body>
