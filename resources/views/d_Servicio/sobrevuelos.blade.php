@@ -147,16 +147,10 @@ $seo = [
     <section class="hero">
         <div class="hero-background">
             
-            <!-- Video de fondo HTML5 con audio -->
+            <!-- Video de fondo de Vimeo con audio -->
             <div class="bg-video">
-                <video 
-                    id="heroVideo"
-                    class="hero-video-bg"
-                    autoplay 
-                    loop 
-                    playsinline>
+                <video width="100%" height="100%" autoplay loop playsinline style="object-fit: cover;">
                     <source src="{{ asset('/public/video/portada-sobrevuelo.mp4') }}" type="video/mp4">
-                    Tu navegador no soporta el elemento video.
                 </video>
             </div>
             <div class="hero-overlay"></div>
@@ -514,41 +508,29 @@ $seo = [
         });
     </script>
     
-    <!-- Control de audio para Video HTML5 -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const video = document.getElementById('heroVideo');
-            const audioToggle = document.getElementById('audioToggle');
-            
-            if (video && audioToggle) {
-                // Intentar reproducir con sonido
-                video.muted = false;
-                video.volume = 0.5; // Volumen al 50%
-                
-                video.play().then(() => {
-                    // Éxito: el video se reproduce con sonido
-                    audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
-                }).catch(error => {
-                    // Fallo: navegador bloqueó autoplay con sonido
-                    // Intentar reproducir muted
-                    console.log('Autoplay con audio bloqueado, reproduciendo sin sonido:', error);
-                    video.muted = true;
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.querySelector('.bg-video video');
+        const audioToggle = document.getElementById('audioToggle');
+        
+        if (video && audioToggle) {
+            // Inicializar estado del icono basado en el estado del video
+            updateAudioIcon();
+
+            // Control de audio
+            audioToggle.addEventListener('click', function() {
+                video.muted = !video.muted;
+                updateAudioIcon();
+            });
+
+            function updateAudioIcon() {
+                if (video.muted) {
                     audioToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
-                    video.play();
-                });
-                
-                // Control de audio con botón
-                audioToggle.addEventListener('click', function() {
-                    video.muted = !video.muted;
-                    
-                    // Actualizar icono
-                    if (video.muted) {
-                        audioToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
-                    } else {
-                        audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
-                    }
-                });
+                } else {
+                    audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+                }
             }
-        });
-    </script>
+        }
+    });
+</script>
 @endsection
