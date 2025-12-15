@@ -42,7 +42,7 @@ $seo = [
     
     .medical-header {
         background: 
-            linear-gradient(135deg, rgba(26, 26, 26, 0.60) 0%, rgba(0, 0, 0, 0.55) 100%),
+            linear-gradient(180deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.50) 50%, rgba(0, 0, 0, 0) 100%),
             url('{{ asset("img/service/medical-jet-bg.jpg") }}') center/cover no-repeat;
         min-height: 70vh;
         position: relative;
@@ -129,16 +129,16 @@ $seo = [
         margin-top: 40px;
     }
     
-    /* Form Card - Glassmorphism */
+    /* Form Card - Glassmorphism Horizontal */
     .medical-form-card {
         background: rgba(255, 255, 255, 0.55);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
-        padding: 24px;
+        padding: 24px 32px;
         border-radius: 16px;
         box-shadow: 0 8px 32px rgba(0,0,0,0.12);
         border: 2px solid rgba(212, 175, 55, 0.4);
-        max-width: 400px;
+        max-width: 750px;
         width: 100%;
     }
     
@@ -162,6 +162,7 @@ $seo = [
     
     .form-inputs {
         display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 12px;
         margin-bottom: 16px;
     }
@@ -185,6 +186,7 @@ $seo = [
     
     .form-buttons {
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
     
