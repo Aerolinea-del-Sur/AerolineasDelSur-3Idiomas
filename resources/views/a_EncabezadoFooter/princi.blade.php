@@ -28,6 +28,12 @@
             <meta property="og:image" content="{{ $seo['og_image'] }}">
             <meta property="og:url" content="{{ $seo['canonical'] }}">
             <meta property="og:type" content="website">
+            
+        <!-- Hreflang Tags (SEO Multi-idioma) -->
+            <link rel="alternate" hreflang="es" href="{{ url('es' . request()->getPathInfo()) }}" />
+            <link rel="alternate" hreflang="en" href="{{ url('en' . request()->getPathInfo()) }}" />
+            <link rel="alternate" hreflang="pt" href="{{ url('pt' . request()->getPathInfo()) }}" />
+            <link rel="alternate" hreflang="x-default" href="{{ url('es' . request()->getPathInfo()) }}" />
             <meta property="og:site_name" content="Aerolínea del Sur">
             <meta property="og:locale" content="es_PE">
             
@@ -436,30 +442,37 @@
                     </button>
                     <div class="header-wrapper">
                         <!-- Botón izquierdo estilo aerodinámico -->
-                        <a href="/nosotros" class="aero-btn btn-left">NOSOTROS</a>
+                        <a href="{{ url(app()->getLocale() . '/nosotros') }}" class="aero-btn btn-left">{{ strtoupper(__('common.nav.about')) }}</a>
 
                         <!-- Barra central con menú y logo -->
                         <div class="main-nav-container">
                             <ul class="nav-menu">
-                                <li><a href="/vuelos" onclick="toggleMenu()">VUELOS</a></li>
-                                <li><a href="/sobrevuelos" onclick="toggleMenu()">SOBREVUELOS</a></li>
-                                <li><a href="/helicopteros" onclick="toggleMenu()">HELICOPTERO</a></li>
+                                <li><a href="{{ url(app()->getLocale() . '/vuelos') }}" onclick="toggleMenu()">{{ strtoupper(__('common.nav.flights')) }}</a></li>
+                                <li><a href="{{ url(app()->getLocale() . '/sobrevuelos') }}" onclick="toggleMenu()">{{ strtoupper(__('common.nav.overflights')) }}</a></li>
+                                <li><a href="{{ url(app()->getLocale() . '/helicopteros') }}" onclick="toggleMenu()">{{ strtoupper(__('common.nav.helicopter')) }}</a></li>
                             </ul>
 
-                            <a href="{{ url('/') }}" class="logo-center" aria-label="Inicio">
+                            <a href="{{ url(app()->getLocale()) }}" class="logo-center" aria-label="{{ __('common.nav.home') }}">
                                 <!-- Logo desktop -->
                                 <img src="{{ asset('img/logo.webp') }}" alt="Logo" width="68" height="67">
                             </a>
 
                             <ul class="nav-menu">
-                                <li><a href="/aeromedico" onclick="toggleMenu()">AERO MEDICO</a></li>
-                                <li><a href="/carga" onclick="toggleMenu()">CARGA</a></li>
-                                <li><a href="/agencia" onclick="toggleMenu()">AGENCIA</a></li>
+                                <li><a href="{{ url(app()->getLocale() . '/aeromedico') }}" onclick="toggleMenu()">{{ strtoupper(__('common.nav.aeromedical')) }}</a></li>
+                                <li><a href="{{ url(app()->getLocale() . '/carga') }}" onclick="toggleMenu()">{{ strtoupper(__('common.nav.cargo')) }}</a></li>
+                                <li><a href="{{ url(app()->getLocale() . '/agencia') }}" onclick="toggleMenu()">{{ strtoupper(__('common.nav.agency')) }}</a></li>
                             </ul>
                         </div>
 
+                        <!-- Selector de idioma -->
+                        <div class="language-selector" style="display: flex; gap: 8px; align-items: center; margin-left: 20px;">
+                            <a href="{{ url('es' . request()->getPathInfo()) }}" class="lang-btn {{ app()->getLocale() == 'es' ? 'active' : '' }}" style="padding: 6px 12px; border-radius: 4px; text-decoration: none; color: #fff; background: {{ app()->getLocale() == 'es' ? '#c9a227' : 'transparent' }}; border: 1px solid #c9a227;">ES</a>
+                            <a href="{{ url('en' . request()->getPathInfo()) }}" class="lang-btn {{ app()->getLocale() == 'en' ? 'active' : '' }}" style="padding: 6px 12px; border-radius: 4px; text-decoration: none; color: #fff; background: {{ app()->getLocale() == 'en' ? '#c9a227' : 'transparent' }}; border: 1px solid #c9a227;">EN</a>
+                            <a href="{{ url('pt' . request()->getPathInfo()) }}" class="lang-btn {{ app()->getLocale() == 'pt' ? 'active' : '' }}" style="padding: 6px 12px; border-radius: 4px; text-decoration: none; color: #fff; background: {{ app()->getLocale() == 'pt' ? '#c9a227' : 'transparent' }}; border: 1px solid #c9a227;">PT</a>
+                        </div>
+
                         <!-- Botón derecho estilo aerodinámico -->
-                        <a href="/blog" class="aero-btn btn-right">BLOG</a>
+                        <a href="{{ url(app()->getLocale() . '/blog') }}" class="aero-btn btn-right">BLOG</a>
                     </div>
                 </div>
             </header>
@@ -472,7 +485,7 @@
                         <div class="footer-main">
                             <div class="footer-brand">
                                 <div class="footer-logo">AEROLINEA DEL SUR E.I.R.L</div>
-                                <p class="footer-tagline">Tu aerolínea de confianza para volar por el sur del Perú con seguridad y comodidad.</p>
+                                <p class="footer-tagline">{{ __('common.footer.tagline', ['default' => 'Tu aerolínea de confianza para volar por el sur del Perú con seguridad y comodidad.']) }}</p>
                                 <div class="footer-social">
                                     <a href="https://www.facebook.com/profile.php?id=61575792015865" target="_blank" rel="nofollow noopener" class="social-link" aria-label="Facebook">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -498,23 +511,23 @@
                             <div class="footer-links">
 
                                 <div class="footer-column">
-                                    <h3 class="footer-title">Acerca de</h3>
+                                    <h3 class="footer-title">{{ __('common.footer.company') }}</h3>
                                     <ul class="footer-list">
-                                        <li><a href="/nosotros" class="footer-link">Nosotros</a></li>
-                                        <li><a href="/aeronaves" class="footer-link">Aeronaves</a></li>
-                                        <li><a href="/agencia" class="footer-link">Agencia</a></li>
-                                        <li><a href="/blog" class="footer-link">Blog</a></li>
+                                        <li><a href="{{ url(app()->getLocale() . '/nosotros') }}" class="footer-link">{{ __('common.nav.about') }}</a></li>
+                                        <li><a href="{{ url(app()->getLocale() . '/aeronaves') }}" class="footer-link">{{ __('common.footer.aircraft', ['default' => 'Aeronaves']) }}</a></li>
+                                        <li><a href="{{ url(app()->getLocale() . '/agencia') }}" class="footer-link">{{ __('common.nav.agency') }}</a></li>
+                                        <li><a href="{{ url(app()->getLocale() . '/blog') }}" class="footer-link">Blog</a></li>
                                     </ul>
                                 </div>
 
                                 <div class="footer-column">
-                                    <h3 class="footer-title">Nuestros Servicios</h3>
+                                    <h3 class="footer-title">{{ __('common.footer.services') }}</h3>
                                     <ul class="footer-list">
-                                        <li><a href="/vuelos" class="footer-link">Vuelos Chárter</a></li>
-                                        <li><a href="/agencia" class="footer-link">Sobrevuelos</a></li>
-                                        <li><a href="/helicopteros" class="footer-link">Helicópteros</a></li>
-                                        <li><a href="/aeromedico" class="footer-link">Servicio Aeromédico</a></li>
-                                        <li><a href="/carga" class="footer-link">Carga Aérea</a></li>
+                                        <li><a href="{{ url(app()->getLocale() . '/vuelos') }}" class="footer-link">{{ __('common.footer.charter_flights', ['default' => 'Vuelos Chárter']) }}</a></li>
+                                        <li><a href="{{ url(app()->getLocale() . '/agencia') }}" class="footer-link">{{ __('common.nav.overflights') }}</a></li>
+                                        <li><a href="{{ url(app()->getLocale() . '/helicopteros') }}" class="footer-link">{{ __('common.nav.helicopter') }}</a></li>
+                                        <li><a href="{{ url(app()->getLocale() . '/aeromedico') }}" class="footer-link">{{ __('common.nav.aeromedical') }}</a></li>
+                                        <li><a href="{{ url(app()->getLocale() . '/carga') }}" class="footer-link">{{ __('common.nav.cargo') }}</a></li>
                                     </ul>
                                 </div>
 

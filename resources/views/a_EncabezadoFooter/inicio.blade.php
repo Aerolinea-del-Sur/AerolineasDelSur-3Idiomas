@@ -3,101 +3,91 @@
 @php
 // Custom SEO for Inicio page
 $seo = [
-    'title' => 'Aerolínea del Sur | Vuelos Privados y Charter en Perú',
-    'description' => 'Servicios aéreos premium en Perú: vuelos charter personalizados, helicópteros, transporte médico certificado y carga especializada. Seguridad garantizada desde Cusco.',
+    'title' => __('home.seo.title', ['default' => 'Aerolínea del Sur | Vuelos Privados y Charter en Perú']),
+    'description' => __('home.hero.subtitle'),
     'keywords' => 'vuelos privados perú, charter cusco, helicóptero cusco, transporte aéreo médico perú, carga aérea, sobrevuelos valle sagrado',
     'og_image' => asset('img/portada-home.mp4'),
-    'canonical' => url('/'),
+    'canonical' => url(app()->getLocale()),
 ];
 @endphp
 
 @section('content')
 <?php 
-    // <!-- presentacion -->
-
-    //h1 - p
-    $h1_1 = 'Tú eliges el destino';
-    $h1_2 = '';
-
-    $p1_1 = 'Nosotros nos encargamos de la experiencia de viaje';
-    //Anterior texto: Conectamos el Perú con vuelos seguros, cómodos y personalizados
-    // <!-- Tours Section -->
+    // Hero Section
+    $h1_1 = __('home.hero.title_1');
+    $h1_2 = __('home.hero.title_2');
+    $p1_1 = __('home.hero.subtitle');
     
-    //h1 - p
-    $h1_3 = 'Descubre Nuestros Servicios';
-    $p1_2 = 'Embárcate en una aventura inolvidable con nuestros servicios cuidadosamente diseñados.';
+    // Services Section
+    $h1_3 = __('home.services.title');
+    $p1_2 = __('home.services.subtitle');
     
-    // <!-- titulo de acordeon -->
-        //h2
-        $h2_1 = 'Servicios Destacados';
-
-            //h3 - p
-            $h3_1 = 'Vuelos Chárter';
-            $p_1 = 'Vuelos privados personalizados, ideales para negocios, instituciones, deportes o familias que buscan flexibilidad y exclusividad.';
-            //h3 - p
-            $h3_2 = 'Helicóptero';
-            $p_2 = 'Transporte en helicóptero rápido, flexible y seguro, ideal para personas, cargas valiosas, rescates y acceso a zonas de difícil alcance.';
-            //h3 - p
-            $h3_3 = 'Ambulancia Médica';
-            $p_3 = 'Transporte aéreo médico especializado para pacientes, evacuaciones y traslado de órganos, con aeronaves equipadas y personal médico calificado.';
-            //h3 - p
-            $h3_4 = 'Carga';
-            $p_4 = 'Vuelos chárter de carga, desde jets ligeros hasta aviones de gran capacidad, garantizando entregas urgentes y de gran volumen en tiempo récord.';
-
-    //h1 - p
-    $h1_4 = '¿Por qué elegir Aerolínea del Sur?';
-    $p_5 = 'Operamos vuelos privados diseñados para empresas, instituciones y familias que valoran la flexibilidad, puntualidad y servicio personalizado.';
-    //h3 - p
-            $h3_5 = 'Seguridad Garantizada';
-            $p_6 = 'Contamos con los más altos estándares de seguridad internacional y una flota moderna con mantenimiento riguroso. Tu tranquilidad es nuestra prioridad número uno.';
-                //span
-                $span_1 = '✓ Certificación IATA';
-                $span_2 = '✓ Flota renovada';
-                $span_3 = '✓ Pilotos certificados';
-            //h3 - p
-            $h3_6 = 'Experiencia Personalizada';
-            $p_7 = 'Ofrecemos un servicio personalizado que se adapta a tus necesidades específicas. Desde la reserva hasta el destino, cada detalle está pensado para ti.';
-                //span
-                $span_4 = '✓ Atención 24/7';
-                $span_5 = '✓ Servicio premium';
-                $span_6 = '✓ Flexibilidad total';
-            //h3 - p
-            $h3_7 = 'Tradición y Confianza';
-            $p_8 = 'Más de 20 años de experiencia en aviación peruana respaldan cada vuelo. Nuestro compromiso es ofrecer seguridad certificada, puntualidad y un servicio que honra la tradición del buen trato.';
-                //span
-                $span_7 = '✓ Equipo Profesional'; 
-                $span_8 = '✓ Seguridad Asegurada';
-                $span_9 = '✓ Estándares Internacionales';
-    // <!-- Testimonios Section -->
-    $h1_5 = 'Lo que dicen nuestros pasajeros';
-    $p_9 = 'Experiencias reales de viajeros que han confiado en nosotros para sus aventuras por los cielos del sur.';
+    // Featured Services
+    $h2_1 = __('home.services.featured_title', ['default' => 'Servicios Destacados']);
     
-                    //p h4 span
-                    $p_10 = 'Una experiencia increíble desde el primer momento. El servicio fue excepcional y la atención al detalle impresionante. Definitivamente volaré con ellos nuevamente.';
-                    $h4_1 = 'María Alejandra González';
-                    $span_10 = 'Empresaria - Lima, Perú';
+    $h3_1 = __('home.services.charter.name');
+    $p_1 = __('home.services.charter.desc');
+    
+    $h3_2 = __('home.services.helicopter.name');
+    $p_2 = __('home.services.helicopter.desc');
+    
+    $h3_3 = __('home.services.medical.name');
+    $p_3 = __('home.services.medical.desc');
+    
+    $h3_4 = __('home.services.cargo.name');
+    $p_4 = __('home.services.cargo.desc');
+    
+    // Why Choose Us
+    $h1_4 = __('home.why.title', ['default' => '¿Por qué elegir Aerolínea del Sur?']);
+    $p_5 = __('home.why.subtitle', ['default' => 'Operamos vuelos privados diseñados para empresas, instituciones y familias que valoran la flexibilidad, puntualidad y servicio personalizado.']);
+    
+    $h3_5 = __('home.why.safety.title', ['default' => 'Seguridad Garantizada']);
+    $p_6 = __('home.why.safety.desc', ['default' => 'Contamos con los más altos estándares de seguridad internacional y una flota moderna con mantenimiento riguroso. Tu tranquilidad es nuestra prioridad número uno.']);
+    $span_1 = __('home.why.safety.cert1', ['default' => '✓ Certificación IATA']);
+    $span_2 = __('home.why.safety.cert2', ['default' => '✓ Flota renovada']);
+    $span_3 = __('home.why.safety.cert3', ['default' => '✓ Pilotos certificados']);
+    
+    $h3_6 = __('home.why.personalized.title', ['default' => 'Experiencia Personalizada']);
+    $p_7 = __('home.why.personalized.desc', ['default' => 'Ofrecemos un servicio personalizado que se adapta a tus necesidades específicas. Desde la reserva hasta el destino, cada detalle está pensado para ti.']);
+    $span_4 = __('home.why.personalized.feat1', ['default' => '✓ Atención 24/7']);
+    $span_5 = __('home.why.personalized.feat2', ['default' => '✓ Servicio premium']);
+    $span_6 = __('home.why.personalized.feat3', ['default' => '✓ Flexibilidad total']);
+    
+    $h3_7 = __('home.why.tradition.title', ['default' => 'Tradición y Confianza']);
+    $p_8 = __('home.why.tradition.desc', ['default' => 'Más de 20 años de experiencia en aviación peruana respaldan cada vuelo. Nuestro compromiso es ofrecer seguridad certificada, puntualidad y un servicio que honra la tradición del buen trato.']);
+    $span_7 = __('home.why.tradition.feat1', ['default' => '✓ Equipo Profesional']); 
+    $span_8 = __('home.why.tradition.feat2', ['default' => '✓ Seguridad Asegurada']);
+    $span_9 = __('home.why.tradition.feat3', ['default' => '✓ Estándares Internacionales']);
+    
+    // Testimonials
+    $h1_5 = __('home.testimonials.title', ['default' => 'Lo que dicen nuestros pasajeros']);
+    $p_9 = __('home.testimonials.subtitle', ['default' => 'Experiencias reales de viajeros que han confiado en nosotros para sus aventuras por los cielos del sur.']);
+    
+    $p_10 = __('home.testimonials.test1.text', ['default' => 'Una experiencia increíble desde el primer momento. El servicio fue excepcional y la atención al detalle impresionante. Definitivamente volaré con ellos nuevamente.']);
+    $h4_1 = 'María Alejandra González';
+    $span_10 = 'Empresaria - Lima, Perú';
 
-                    $p_11 = 'Profesionalismo y seguridad en cada vuelo. La puntualidad y comodidad superaron mis expectativas. Recomiendo totalmente sus servicios.';
-                    $h4_2 = 'Carlos Rodríguez';
-                    $span_11 = 'Arquitecto - Bogotá, Colombia';
+    $p_11 = __('home.testimonials.test2.text', ['default' => 'Profesionalismo y seguridad en cada vuelo. La puntualidad y comodidad superaron mis expectativas. Recomiendo totalmente sus servicios.']);
+    $h4_2 = 'Carlos Rodríguez';
+    $span_11 = 'Arquitecto - Bogotá, Colombia';
 
-                    $p_12 = 'El mejor servicio de aviación que he experimentado. Desde la reserva hasta el aterrizaje, todo fue perfecto. Un equipo verdaderamente profesional.';
-                    $h4_3 = 'Ana Martínez';
-                    $span_12 = 'Doctora - Quito, Ecuador';
+    $p_12 = __('home.testimonials.test3.text', ['default' => 'El mejor servicio de aviación que he experimentado. Desde la reserva hasta el aterrizaje, todo fue perfecto. Un equipo verdaderamente profesional.']);
+    $h4_3 = 'Ana Martínez';
+    $span_12 = 'Doctora - Quito, Ecuador';
 
-                    $p_13 = 'Excelente atención y vuelos cómodos. La tripulación siempre amable y dispuesta a ayudar. Una experiencia de lujo a precio justo.';
-                    $h4_4 = 'Jorge López';
-                    $span_13 = 'Ingeniero - Santiago, Chile';
+    $p_13 = __('home.testimonials.test4.text', ['default' => 'Excelente atención y vuelos cómodos. La tripulación siempre amable y dispuesta a ayudar. Una experiencia de lujo a precio justo.']);
+    $h4_4 = 'Jorge López';
+    $span_13 = 'Ingeniero - Santiago, Chile';
 
-                    $p_14 = 'Seguridad y confianza en cada vuelo. Me siento tranquila sabiendo que estoy en buenas manos. El servicio personalizado hace la diferencia.';
-                    $h4_5 = 'Lucía Silva';
-                    $span_14 = 'Abogada - Caracas, Venezuela';
+    $p_14 = __('home.testimonials.test5.text', ['default' => 'Seguridad y confianza en cada vuelo. Me siento tranquila sabiendo que estoy en buenas manos. El servicio personalizado hace la diferencia.']);
+    $h4_5 = 'Lucía Silva';
+    $span_14 = 'Abogada - Caracas, Venezuela';
 
-                    $p_15 = 'Una aerolínea que realmente se preocupa por sus pasajeros. Vuelos puntuales, servicio excepcional y precios competitivos. Altamente recomendado.';
-                    $h4_6 = 'Roberto Herrera';
-                    $span_15 = 'Consultor - Buenos Aires, Argentina';
+    $p_15 = __('home.testimonials.test6.text', ['default' => 'Una aerolínea que realmente se preocupa por sus pasajeros. Vuelos puntuales, servicio excepcional y precios competitivos. Altamente recomendado.']);
+    $h4_6 = 'Roberto Herrera';
+    $span_15 = 'Consultor - Buenos Aires, Argentina';
 
-    // <!-- Certificaciones Section -->
+    // Certifications
     $h1_6 = 'Certificaciones Premium';
     $p_16 = 'Excelencia certificada en cada vuelo. Nuestros estándares de calidad y seguridad están respaldados por las más prestigiosas organizaciones internacionales de aviación.';
     
