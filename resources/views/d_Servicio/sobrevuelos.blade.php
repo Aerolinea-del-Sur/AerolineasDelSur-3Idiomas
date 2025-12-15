@@ -26,7 +26,7 @@ $seo = [
         $h2_3 = 'Tesoros del Cusco';
         $p_4 = 'Descubre Valle Sagrado y Machu Picchu en un tour exclusivo por los principales atractivos del Cusco.';
 
-        $h2_4 = 'Valle Maras';
+        $h2_4 = 'Valle Sagrado';
         $p_5 = 'Descubre Sacsayhuamán, Tambomachay, Pisac, Valle Sagrado, Maras y Laguna de Huaypo desde las alturas.';
 
         $h2_5 = 'Montaña de Siete Colores';
@@ -210,7 +210,7 @@ $seo = [
                             '/public/img/sobrevuelos/choquequirao-3.webp',
                             '/public/img/sobrevuelos/choquequirao-4.webp'
                         ],
-                        'duration' => '1h 45m',
+                        'duration' => '1h',
                         'pax' => 'Hasta 4 personas',
                         'location' => 'Cusco, Perú',
                         'badge' => 'Sobrevuelo',
@@ -227,7 +227,7 @@ $seo = [
                             '/public/img/sobrevuelos/titicaca-lake-3.webp',
                             '/public/img/sobrevuelos/titicaca-lake-4.webp'
                         ],
-                        'duration' => '2h',
+                        'duration' => '1h 40m',
                         'pax' => 'Hasta 6 personas',
                         'location' => 'Puno, Perú',
                         'badge' => 'Sobrevuelo',
@@ -244,7 +244,7 @@ $seo = [
                             '/public/img/sobrevuelos/nazca-lines-3.webp',
                             '/public/img/sobrevuelos/nazca-lines-4.webp'
                         ],
-                        'duration' => '1h 15m',
+                        'duration' => '1h 20m',
                         'pax' => 'Hasta 4 personas',
                         'location' => 'Ica, Perú',
                         'badge' => 'Sobrevuelo',
@@ -297,7 +297,7 @@ $seo = [
                             '/public/img/sobrevuelos/sacred-valley-3.webp',
                             '/public/img/sobrevuelos/sacred-valley-4.webp'
                         ],
-                        'duration' => '1 horas',
+                        'duration' => '1h',
                         'pax' => 'Hasta 6 personas',
                         'location' => 'Cusco, Perú',
                         'badge' => 'Sobrevuelo',
@@ -314,7 +314,7 @@ $seo = [
                             '/public/img/sobrevuelos/vinicunca-mountain-3.webp',
                             '/public/img/sobrevuelos/vinicunca-mountain-4.webp'
                         ],
-                        'duration' => '1 horas',
+                        'duration' => '1h',
                         'pax' => 'Hasta 6 personas',
                         'location' => 'Cusco, Perú',
                         'badge' => 'Sobrevuelo',

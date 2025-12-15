@@ -26,7 +26,7 @@ $seo = [
                 $p_4 = 'Ninguna';
 
                 $h4_3 = 'Duración';
-                $p_5 = '1 día';
+                $p_5 = '1 hora';
 
             $h3_1 = 'Galería de Imágenes';
 
@@ -69,7 +69,7 @@ $seo = [
         $h2_5 = 'Otros Tours Recomendados';
 
                 $h4_14 = 'Líneas de Nazca';
-                $p_17 = 'Descubre los misteriosos geoglifos desde el aire en este tour de día completo.';
+                $p_17 = 'Descubre los misteriosos geoglifos desde el aire en este tour de 1 hora.';
 
                 $h4_15 = 'Vuelo Amazónico';
                 $p_18 = 'Explora la selva peruana desde las alturas y observa la biodiversidad única.';
@@ -101,7 +101,7 @@ $seo = [
         <div class="tour-meta">
             <div class="meta-item">
                 <i class="fas fa-clock"></i>
-                <span>1 día</span>
+                <span>1 hora</span>
             </div>
             <div class="meta-item">
                 <i class="fas fa-users"></i>
@@ -213,7 +213,7 @@ $seo = [
                 <div class="stats-grid">
                     <div class="stat-item">
                         <div class="stat-number">1</div>
-                        <div class="stat-label">Día</div>
+                        <div class="stat-label">hora</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">1</div>
