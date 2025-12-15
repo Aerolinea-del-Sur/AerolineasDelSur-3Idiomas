@@ -1,32 +1,32 @@
 @extends('a_EncabezadoFooter.princi')
 
 @php
-// Custom SEO for Sobrevuelo Valle Maras
+// Custom SEO for Sobrevuelo Líneas de Nazca
 $seo = [
-    'title' => 'Sobrevuelo Valle Sagrado y Maras | Tour Aéreo Cusco',
-    'description' => 'Sobrevuelo en helicóptero por el Valle Sagrado, Salineras de Maras y Moray. Vista panorámica única de los tesoros arqueológicos incas desde el aire.',
-    'keywords' => 'sobrevuelo valle sagrado, tour aéreo maras, helicóptero cusco valle sagrado, sobrevuelo moray',
-    'og_image' => asset('img/tours/sobrevuelo-valle-maras.jpg'),
-    'canonical' => url(app()->getLocale() . '/sobrevuelo-valle-maras'),
+    'title' => 'Sobrevuelo Líneas de Nazca | Tour Aéreo Cusco',
+    'description' => 'Sobrevuelo privado desde Cusco a las Líneas de Nazca. Vuelo panorámico sobre los Andes y tour arqueológico.',
+    'keywords' => 'sobrevuelo lineas de nazca, tour aéreo cusco nazca, vuelo privado nazca, maria reiche',
+    'og_image' => asset('img/sobrevuelos/nazca-lines-1.webp'),
+    'canonical' => url('/sobrevuelo-nazca-lines'),
 ];
 @endphp
 @section('content')
 
 <?php
-    $h1_1 = 'Valle Sagrado y Maras';
-    $p_1 = 'Descubre Sacsayhuamán, Tambomachay, Pisac, Valle Sagrado, Maras y Laguna de Huaypo.';
+    $h1_1 = 'Líneas de Nazca';
+    $p_1 = 'Un viaje aéreo exclusivo desde Cusco para descubrir los enigmáticos geoglifos del desierto peruano.';
 
-        $h2_1 = 'Detalles del Tour';
-        $p_2 = 'Aerolínea del Sur se complace en presentar una experiencia aérea inigualable: un sobrevuelo escénico en avioneta, ideal para quienes desean descubrir desde el cielo algunos de los sitios arqueológicos y paisajes más emblemáticos del corazón del Valle Sagrado de los Incas, sin necesidad de desplazamientos largos por tierra.';
+        $h2_1 = 'Detalles del Sobrevuelo';
+        $p_2 = 'Esta experiencia única combina un espectacular vuelo panorámico sobre los Andes con el misterio arqueológico de las Líneas de Nazca. Partiendo desde Cusco en un avión privado, cruzará la cordillera hasta llegar a la costa desértica, donde sobrevolará las famosas figuras trazadas en la tierra: el Colibrí, el Mono, la Araña y muchas más, visibles solo desde el cielo. El tour incluye una inmersión cultural con la visita al legado de María Reiche.';
 
                 $h4_1 = 'Grupo Máximo';
-                $p_3 = '6 personas';
+                $p_3 = '12 personas';
 
                 $h4_2 = 'Edad Mínima';
-                $p_4 = 'Ninguna';
+                $p_4 = '3 años';
 
                 $h4_3 = 'Duración';
-                $p_5 = '1 hora';
+                $p_5 = '1 hora y 20 minutos';
 
             $h3_1 = 'Galería de Imágenes';
 
@@ -34,30 +34,42 @@ $seo = [
 
             $h3_2 = 'Aspectos Destacados';
 
-                $h4_4 = 'Vinicunca';
-                $p_6 = 'Conoceras la Montaña de 7 Colores, un lugar colorido con paisajes impresionantes.';
+                $h4_4 = 'Geoglifos Milenarios';
+                $p_6 = 'Observe las gigantescas figuras de animales y formas geométricas trazadas por la antigua cultura Nazca.';
 
-                $h4_5 = 'Fotografía Paisajes';
-                $p_7 = 'Captura tomas espectaculares de los pueblos, paisajes y costrucciones milenarias.';
+                $h4_5 = 'Vuelo Transandino';
+                $p_7 = 'Disfrute de la transición visual desde los picos nevados de los Andes hasta el vasto desierto costero.';
 
-                $h4_6 = 'Historia y vistas';
-                $p_8 = 'El guía te narrará la historia del lugar mientras recorres el sendero hasta la montaña.';
+                $h4_6 = 'Legado de María Reiche';
+                $p_8 = 'Conozca la historia de la matemática que dedicó su vida a estudiar y proteger estas misteriosas líneas.';
 
             $h3_3 = 'Estadísticas del Tour';
         
         $h2_3 = 'Itinerario Detallado';
 
-                $h4_7 = '1. El complejo arqueológico de Sacsayhuamán';
+                $h4_7 = 'Horario de salida flexible';
+                $p_9 = 'Entre las 7:00 y 8:30 a. m., según su preferencia y las condiciones climáticas. Iniciamos con el recojo desde su hotel.';
 
-                $h4_8 = '2. Las fuentes ceremoniales de Tambomachay';
+                $h4_8 = 'Traslado privado al Aeropuerto';
+                $p_10 = 'Nuestro equipo lo recogerá en su hotel en un vehículo privado y confortable, equipado con todas las comodidades para su trayecto hacia el aeropuerto de Cusco.';
 
-                $h4_9 = '3. Las andenerías circulares y terrazas de Pisac';
+                $h4_9 = 'Vuelo panorámico sobre los Andes';
+                $p_11 = 'Embarque en su avión ligero privado para un vuelo inolvidable hacia Nazca (aprox. 1 hora y 20 minutos). Disfrute de impresionantes vistas de la cordillera que dan paso al desierto costero.';
 
-                $h4_10 = '4. Los fértiles campos del Valle Sagrado de los Incas';
+                $h4_10 = 'Llegada al Aeródromo María Reiche';
+                $p_12 = 'A su llegada a Nazca, recibirá asistencia en tierra y se preparará para vivir la icónica experiencia del sobrevuelo.';
 
-                $h4_11 = '5. Las misteriosas Salineras de Maras';
+                $h4_11 = 'Sobrevuelo de las Líneas de Nazca';
+                $p_13 = 'Vuelo de 30 minutos en aeronave especializada para admirar los enigmáticos geoglifos: figuras de animales, plantas y diseños geométricos, una maravilla arqueológica visible solo desde el cielo.';
 
-                $h4_12 = '6. la hermosa laguna de Huaypo, rodeada de campos agrícolas y montañas';
+                $h4_12 = 'Visita al Museo María Reiche';
+                $p_14 = 'Descubra la vida y obra de María Reiche, la matemática y arqueóloga alemana que dedicó su vida al estudio y conservación de las Líneas de Nazca.';
+
+                $h4_12_extra1 = 'Almuerzo en Nazca';
+                $p_14_extra1 = 'Disfrute de una exquisita comida peruana en un restaurante local antes de su vuelo de regreso.';
+
+                $h4_12_extra2 = 'Vuelo de retorno';
+                $p_14_extra2 = 'Vuelo privado de retorno a Cusco (aprox. 1h 20m). Opción adicional: Retorno a Lima (aprox. 1h) previa coordinación.';
 
         $h2_4 = 'Inclusiones del Tour';
 
@@ -68,14 +80,14 @@ $seo = [
 
         $h2_5 = 'Otros Tours Recomendados';
 
-                $h4_14 = 'Líneas de Nazca';
-                $p_17 = 'Descubre los misteriosos geoglifos desde el aire en este tour de 1 hora.';
+                $h4_14 = 'Lago Titicaca';
+                $p_17 = 'Sobrevuela el lago navegable más alto del mundo y sus islas flotantes.';
 
                 $h4_15 = 'Vuelo Amazónico';
                 $p_18 = 'Explora la selva peruana desde las alturas y observa la biodiversidad única.';
 
-                $h4_16 = 'Costa Peruana';
-                $p_19 = 'Sobrevuela la hermosa costa del Pacífico y las islas Ballestas.';
+                $h4_16 = 'Choquequirao';
+                $p_19 = 'Descubre la hermana sagrada de Machu Picchu en un vuelo exclusivo.';
 
             $h3_6 = 'Reserva tu Tour';
 
@@ -86,7 +98,7 @@ $seo = [
 <!-- Sección Hero -->
 <section class="tour-hero">
     <div class="hero-background">
-        <img src="{{ asset('img/sobrevuelos/sacred-valley-1.webp') }}" alt="Valle Sagrado desde el aire">
+        <img src="{{ asset('img/sobrevuelos/nazca-lines-1.webp') }}" alt="Líneas de Nazca desde el aire">
         <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
@@ -97,15 +109,14 @@ $seo = [
         <h1 class="tour-title"><?= $h1_1 ?></h1>
         <p class="tour-subtitle"><?= $p_1 ?></p>
 
-
         <div class="tour-meta">
             <div class="meta-item">
                 <i class="fas fa-clock"></i>
-                <span>1 hora</span>
+                <span>1 hora y 20 minutos</span>
             </div>
             <div class="meta-item">
                 <i class="fas fa-users"></i>
-                <span>Hasta 6 personas</span>
+                <span>Hasta 12 personas</span>
             </div>
             <div class="meta-item">
                 <i class="fas fa-star"></i>
@@ -152,16 +163,16 @@ $seo = [
                 <div class="image-carousel">
                     <div class="carousel-container" id="carouselContainer">
                         <div class="carousel-slide active">
-                            <img src="/public/img/tours/valle-sagrado-maras-1.jpg" alt="Vista aérea del Valle Sagrado">
+                            <img src="{{ asset('img/sobrevuelos/nazca-lines-1.webp') }}" alt="Líneas de Nazca">
                         </div> 
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-2.jpg" alt="Valle Sagrado desde el aire">
+                            <img src="{{ asset('img/sobrevuelos/nazca-lines-2.webp') }}" alt="Geoglifos Nazca">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-3.jpg" alt="Montañas andinas">
+                            <img src="{{ asset('img/sobrevuelos/nazca-lines-3.webp') }}" alt="Sobrevuelo Nazca">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-4.jpg" alt="Río Urubamba">
+                            <img src="{{ asset('img/sobrevuelos/nazca-lines-4.webp') }}" alt="Avioneta Nazca">
                         </div>
                     </div>
                     <button class="carousel-btn prev" onclick="moveSlide(-1)">
@@ -213,14 +224,14 @@ $seo = [
                 <div class="stats-grid">
                     <div class="stat-item">
                         <div class="stat-number">1</div>
-                        <div class="stat-label">hora</div>
+                        <div class="stat-label">hora y 20 minutos</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">1</div>
-                        <div class="stat-label">Lugar Turistico</div>
+                        <div class="stat-label">Lugares Clave</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">10</div>
+                        <div class="stat-number">600</div>
                         <div class="stat-label">Km recorridos</div>
                     </div>
                     <div class="stat-item">
@@ -242,36 +253,56 @@ $seo = [
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_7 ?></h4>
+                    <p><?= $p_9 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_8 ?></h4>
+                    <p><?= $p_10 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_9 ?></h4>
+                    <p><?= $p_11 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_10 ?></h4>
+                    <p><?= $p_12 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_11 ?></h4>
+                    <p><?= $p_13 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_12 ?></h4>
+                    <p><?= $p_14 ?></p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4><?= $h4_12_extra1 ?></h4>
+                    <p><?= $p_14_extra1 ?></p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4><?= $h4_12_extra2 ?></h4>
+                    <p><?= $p_14_extra2 ?></p>
                 </div>
             </div>
         </div>
@@ -286,19 +317,21 @@ $seo = [
             <div class="included">
                 <h3><i class="fas fa-check-circle"></i><?= $h3_4 ?></h3>
                 <ul>
-                    <li><i class="fas fa-check"></i> Vuelo privado en avioneta (ida y vuelta desde Cusco).</li>
-                    <li><i class="fas fa-check"></i> Traslados privados hotel – aeropuerto – hotel.</li>
-                    <li><i class="fas fa-check"></i> Regalo andino de cortesía (bufanda o chullo de alpaca).</li>
-                    <li><i class="fas fa-check"></i> Snack bag personalizada con productos naturales.</li>
-                    <li><i class="fas fa-check"></i> Guía profesional especializado. </li>
+                    <li><i class="fas fa-check"></i> Vuelo privado (Cusco – Nazca – Lima o Cusco – Nazca – Cusco)</li>
+                    <li><i class="fas fa-check"></i> Sobrevuelo de las Líneas de Nazca en aeronave especializada</li>
+                    <li><i class="fas fa-check"></i> Visita guiada al Museo María Reiche</li>
+                    <li><i class="fas fa-check"></i> Traslados privados (hotel–aeropuerto–hotel)</li>
+                    <li><i class="fas fa-check"></i> Refrigerio ligero a bordo</li>
+                    <li><i class="fas fa-check"></i> Incluye el almuerzo</li>
+                    <li><i class="fas fa-check"></i> Asistencia en inglés y español</li>
                 </ul>
             </div>
             <div class="not-included">
                 <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
                 <ul>
-                    <li><i class="fas fa-times"></i> Pasajes aéreos a Cusco</li>
-                    <li><i class="fas fa-times"></i> Seguro de viaje (es recomendado)</li>
-                    <li><i class="fas fa-times"></i> Propinas y consumos personales no mencionados</li>
+                    <li><i class="fas fa-times"></i> Alojamiento en Lima o Cusco</li>
+                    <li><i class="fas fa-times"></i> Seguro de viaje (altamente recomendado)</li>
+                    <li><i class="fas fa-times"></i> Gastos personales no especificados</li>
                 </ul>
             </div>
         </div>
@@ -306,7 +339,8 @@ $seo = [
             <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
             <ul>
                 <li>Se requiere documento de identidad válido</li>
-                <li>Cancelación hasta 24 horas antes</li>
+                <li>Hora de inicio flexible: Entre las 7:00 y 8:30 a.m.</li>
+                <li>Sujeto a condiciones climáticas</li>
             </ul>
         </div>
     </div>
@@ -401,7 +435,7 @@ $seo = [
                 </div>
                 <div class="form-group">
                     <label for="tourName">Nombre del Tour *</label>
-                    <input type="text" id="tourName" name="tourName" value="Vuelo Panorámico sobre el Valle Sagrado" required readonly>
+                    <input type="text" id="tourName" name="tourName" value="Sobrevuelo Líneas de Nazca" required readonly>
                 </div>
                 <div class="form-group">
                     <label for="passengers">Número de Pasajeros *</label>

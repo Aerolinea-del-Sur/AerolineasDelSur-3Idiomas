@@ -7,7 +7,7 @@ $seo = [
     'description' => 'Sobrevuelo en helicóptero por el Lago Titicaca. Vista panorámica única del lago desde el aire.',
     'keywords' => 'sobrevuelo lago titicaca, tour aéreo cusco, vuelo cusco lago titicaca',
     'og_image' => asset('img/sobrevuelos/titicaca-lake-1.webp'),
-    'canonical' => url('/sobrevuelo-titicaca-lake'),
+    'canonical' => url(app()->getLocale() . '/sobrevuelo-titicaca-lake'),
 ];
 @endphp
 @section('content')

@@ -1,23 +1,23 @@
 @extends('a_EncabezadoFooter.princi')
 
 @php
-// Custom SEO for Sobrevuelo Valle Maras
+// Custom SEO for Tour Vinicunca Elite
 $seo = [
-    'title' => 'Sobrevuelo Valle Sagrado y Maras | Tour Aéreo Cusco',
-    'description' => 'Sobrevuelo en helicóptero por el Valle Sagrado, Salineras de Maras y Moray. Vista panorámica única de los tesoros arqueológicos incas desde el aire.',
-    'keywords' => 'sobrevuelo valle sagrado, tour aéreo maras, helicóptero cusco valle sagrado, sobrevuelo moray',
-    'og_image' => asset('img/tours/sobrevuelo-valle-maras.jpg'),
-    'canonical' => url(app()->getLocale() . '/sobrevuelo-valle-maras'),
+    'title' => 'Tour Vinicunca Elite | Montaña 7 Colores VIP desde Cusco',
+    'description' => 'Tour VIP a Vinicunca con servicio premium. Grupos reducidos, alimentación gourmet y guía privado para una experiencia exclusiva en la Montaña de 7 Colores.',
+    'keywords' => 'tour vinicunca elite, rainbow mountain vip, tour privado vinicunca, excursión premium cusco',
+    'og_image' => asset('img/tours/vinicunca-elite.jpg'),
+    'canonical' => url('/tour-vinicunca-elite'),
 ];
 @endphp
 @section('content')
 
 <?php
-    $h1_1 = 'Valle Sagrado y Maras';
-    $p_1 = 'Descubre Sacsayhuamán, Tambomachay, Pisac, Valle Sagrado, Maras y Laguna de Huaypo.';
+    $h1_1 = 'Vinincunca';
+    $p_1 = 'Descubre Vinicunca, Palcoyo, Ausangate, Valle Rojo y Cuatro Lagunas.';
 
         $h2_1 = 'Detalles del Tour';
-        $p_2 = 'Aerolínea del Sur se complace en presentar una experiencia aérea inigualable: un sobrevuelo escénico en avioneta, ideal para quienes desean descubrir desde el cielo algunos de los sitios arqueológicos y paisajes más emblemáticos del corazón del Valle Sagrado de los Incas, sin necesidad de desplazamientos largos por tierra.';
+        $p_2 = 'Aerolínea del Sur se enorgullece en presentar una experiencia única e inolvidable: un sobrevuelo escénico en avioneta diseñado especialmente para quienes desean admirar los paisajes más espectaculares del sur andino sin necesidad de realizar exigentes caminatas.';
 
                 $h4_1 = 'Grupo Máximo';
                 $p_3 = '6 personas';
@@ -47,17 +47,15 @@ $seo = [
         
         $h2_3 = 'Itinerario Detallado';
 
-                $h4_7 = '1. El complejo arqueológico de Sacsayhuamán';
+                $h4_7 = '1. Las Cuatro Lagunas';
 
-                $h4_8 = '2. Las fuentes ceremoniales de Tambomachay';
+                $h4_8 = '2. El imponente nevado Ausangate';
 
-                $h4_9 = '3. Las andenerías circulares y terrazas de Pisac';
+                $h4_9 = '3. El místico Valle Rojo';
 
-                $h4_10 = '4. Los fértiles campos del Valle Sagrado de los Incas';
+                $h4_10 = '4. La famosa Montaña de 7 Colores (Vinicunca)';
 
-                $h4_11 = '5. Las misteriosas Salineras de Maras';
-
-                $h4_12 = '6. la hermosa laguna de Huaypo, rodeada de campos agrícolas y montañas';
+                $h4_11 = '5. enigmática Palcoyo';
 
         $h2_4 = 'Inclusiones del Tour';
 
@@ -86,12 +84,12 @@ $seo = [
 <!-- Sección Hero -->
 <section class="tour-hero">
     <div class="hero-background">
-        <img src="{{ asset('img/sobrevuelos/sacred-valley-1.webp') }}" alt="Valle Sagrado desde el aire">
+        <img src="{{ asset('img/sobrevuelos/vinicunca-mountain-1.webp') }}" alt="Montaña Vinicunca">
         <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
         <div class="tour-badges">
-            <span class="badge popular">SOBREVUELO</span>
+            <span class="badge popular">POPULAR</span>
             <span class="badge exclusive">EXCLUSIVO</span>
         </div>
         <h1 class="tour-title"><?= $h1_1 ?></h1>
@@ -152,18 +150,15 @@ $seo = [
                 <div class="image-carousel">
                     <div class="carousel-container" id="carouselContainer">
                         <div class="carousel-slide active">
-                            <img src="/public/img/tours/valle-sagrado-maras-1.jpg" alt="Vista aérea del Valle Sagrado">
-                        </div> 
-                        <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-2.jpg" alt="Valle Sagrado desde el aire">
+                            <img src="/public/img/tours/vinicunca-peru-1.jpg" alt="Vista aérea de Vinicunca">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-3.jpg" alt="Montañas andinas">
+                            <img src="/public/img/tours/vinicunca-peru-2.jpg" alt="Valle Sagrado desde el aire">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-4.jpg" alt="Río Urubamba">
+                            <img src="/public/img/tours/vinicunca-peru-3.jpg" alt="Montañas andinas">
                         </div>
-                    </div>
+                    </div> 
                     <button class="carousel-btn prev" onclick="moveSlide(-1)">
                         <i class="fas fa-chevron-left"></i>
                     </button>
@@ -268,12 +263,6 @@ $seo = [
                     <h4><?= $h4_11 ?></h4>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h4><?= $h4_12 ?></h4>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -286,11 +275,11 @@ $seo = [
             <div class="included">
                 <h3><i class="fas fa-check-circle"></i><?= $h3_4 ?></h3>
                 <ul>
-                    <li><i class="fas fa-check"></i> Vuelo privado en avioneta (ida y vuelta desde Cusco).</li>
+                    <li><i class="fas fa-check"></i> Vuelo privado en avioneta (ida y vuelta Cusco – Vinicunca).</li>
                     <li><i class="fas fa-check"></i> Traslados privados hotel – aeropuerto – hotel.</li>
-                    <li><i class="fas fa-check"></i> Regalo andino de cortesía (bufanda o chullo de alpaca).</li>
-                    <li><i class="fas fa-check"></i> Snack bag personalizada con productos naturales.</li>
-                    <li><i class="fas fa-check"></i> Guía profesional especializado. </li>
+                    <li><i class="fas fa-check"></i> Regalo andino (bufanda o chullo).</li>
+                    <li><i class="fas fa-check"></i> Snack bag personalizada.</li>
+                    <li><i class="fas fa-check"></i> Guía profesional. </li>
                 </ul>
             </div>
             <div class="not-included">
@@ -371,7 +360,6 @@ $seo = [
         </div>
     </div>
 </section>
-
     <!-- Formulario de Reserva Lateral -->
     <div class="booking-sidebar" id="bookingSidebar">
         <div class="booking-form-container">
@@ -401,7 +389,7 @@ $seo = [
                 </div>
                 <div class="form-group">
                     <label for="tourName">Nombre del Tour *</label>
-                    <input type="text" id="tourName" name="tourName" value="Vuelo Panorámico sobre el Valle Sagrado" required readonly>
+                    <input type="text" id="tourName" name="tourName" value="Vuelo Panorámico sobre Vinicunca" required readonly>
                 </div>
                 <div class="form-group">
                     <label for="passengers">Número de Pasajeros *</label>
@@ -568,6 +556,7 @@ function hideMessage() {
 // Establecer fecha mínima como hoy
 document.getElementById('tourDate').min = new Date().toISOString().split('T')[0];
 </script>
+
 <script>
     // Smooth scrolling para enlaces internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

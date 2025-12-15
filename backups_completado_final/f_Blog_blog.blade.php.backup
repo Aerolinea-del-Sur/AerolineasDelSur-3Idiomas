@@ -7,7 +7,7 @@ $seo = [
     'description' => 'Blog de Aerolínea del Sur con artículos sobre aviación, consejos de viaje, guías turísticas y novedades de vuelos privados en Perú.',
     'keywords' => 'blog aviación perú, consejos viaje cusco, guía turística perú, blog vuelos privados',
     'og_image' => asset('img/blog/aviation-peru.jpg'),
-    'canonical' => url(app()->getLocale() . '/blog'),
+    'canonical' => url('/blog'),
 ];
 @endphp
 @section('content')

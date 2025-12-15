@@ -7,7 +7,7 @@ $seo = [
     'description' => 'Sobrevuelo privado desde Cusco a las Líneas de Nazca. Vuelo panorámico sobre los Andes y tour arqueológico.',
     'keywords' => 'sobrevuelo lineas de nazca, tour aéreo cusco nazca, vuelo privado nazca, maria reiche',
     'og_image' => asset('img/sobrevuelos/nazca-lines-1.webp'),
-    'canonical' => url('/sobrevuelo-nazca-lines'),
+    'canonical' => url(app()->getLocale() . '/sobrevuelo-nazca-lines'),
 ];
 @endphp
 @section('content')

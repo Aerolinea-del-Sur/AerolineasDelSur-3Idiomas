@@ -1,32 +1,32 @@
 @extends('a_EncabezadoFooter.princi')
 
 @php
-// Custom SEO for Sobrevuelo Valle Maras
+// Custom SEO for Sobrevuelo Lago Titicaca
 $seo = [
-    'title' => 'Sobrevuelo Valle Sagrado y Maras | Tour Aéreo Cusco',
-    'description' => 'Sobrevuelo en helicóptero por el Valle Sagrado, Salineras de Maras y Moray. Vista panorámica única de los tesoros arqueológicos incas desde el aire.',
-    'keywords' => 'sobrevuelo valle sagrado, tour aéreo maras, helicóptero cusco valle sagrado, sobrevuelo moray',
-    'og_image' => asset('img/tours/sobrevuelo-valle-maras.jpg'),
-    'canonical' => url(app()->getLocale() . '/sobrevuelo-valle-maras'),
+    'title' => 'Sobrevuelo Lago Titicaca | Tour Aéreo Cusco',
+    'description' => 'Sobrevuelo en helicóptero por el Lago Titicaca. Vista panorámica única del lago desde el aire.',
+    'keywords' => 'sobrevuelo lago titicaca, tour aéreo cusco, vuelo cusco lago titicaca',
+    'og_image' => asset('img/sobrevuelos/titicaca-lake-1.webp'),
+    'canonical' => url('/sobrevuelo-titicaca-lake'),
 ];
 @endphp
 @section('content')
 
 <?php
-    $h1_1 = 'Valle Sagrado y Maras';
-    $p_1 = 'Descubre Sacsayhuamán, Tambomachay, Pisac, Valle Sagrado, Maras y Laguna de Huaypo.';
+    $h1_1 = 'Lago Titicaca';
+    $p_1 = 'El vuelo panorámico que domina el altiplano y ofrece las mejores vistas sobre el lago sagrado de los incas.';
 
-        $h2_1 = 'Detalles del Tour';
-        $p_2 = 'Aerolínea del Sur se complace en presentar una experiencia aérea inigualable: un sobrevuelo escénico en avioneta, ideal para quienes desean descubrir desde el cielo algunos de los sitios arqueológicos y paisajes más emblemáticos del corazón del Valle Sagrado de los Incas, sin necesidad de desplazamientos largos por tierra.';
+        $h2_1 = 'Detalles del Sobrevuelo';
+        $p_2 = 'El sobrevuelo Lago Titicaca y sus Islas es una experiencia aérea premium que lo transporta desde Cusco a la inmensidad del altiplano peruano. A bordo de una aeronave ligera privada, el viaje de aproximadamente una hora y cuarenta minutos ofrece una perspectiva única y privilegiada de la imponente Cordillera de los Andes, el vasto paisaje altiplánico y el legendario Lago Titicaca. Así también, desde el aire, se aprecian con claridad las estructuras únicas de las Islas Flotantes de los Uros, y las joyas culturales de Taquile y Amantaní.';
 
                 $h4_1 = 'Grupo Máximo';
-                $p_3 = '6 personas';
+                $p_3 = '8 personas';
 
                 $h4_2 = 'Edad Mínima';
                 $p_4 = 'Ninguna';
 
                 $h4_3 = 'Duración';
-                $p_5 = '1 hora';
+                $p_5 = '1 hora y 40 minutos';
 
             $h3_1 = 'Galería de Imágenes';
 
@@ -34,30 +34,36 @@ $seo = [
 
             $h3_2 = 'Aspectos Destacados';
 
-                $h4_4 = 'Vinicunca';
-                $p_6 = 'Conoceras la Montaña de 7 Colores, un lugar colorido con paisajes impresionantes.';
+                $h4_4 = 'Lago Titicaca';
+                $p_6 = 'El lago navegable más alto. Espejo azul sagrado entre Perú y Bolivia.';
 
-                $h4_5 = 'Fotografía Paisajes';
-                $p_7 = 'Captura tomas espectaculares de los pueblos, paisajes y costrucciones milenarias.';
+                $h4_5 = 'Islas Flotantes';
+                $p_7 = 'Vistas aéreas de las comunidades que viven sobre plataformas de totora ubicadas en el lago.';
 
-                $h4_6 = 'Historia y vistas';
-                $p_8 = 'El guía te narrará la historia del lugar mientras recorres el sendero hasta la montaña.';
+                $h4_6 = 'Fotografía y vistas';
+                $p_8 = 'Captura tomas espectaculares, mientras el guía te narrará la historia del lugar.';
 
             $h3_3 = 'Estadísticas del Tour';
         
-        $h2_3 = 'Itinerario Detallado';
+        $h2_3 = 'Lugares destacados en este Viaje';
 
-                $h4_7 = '1. El complejo arqueológico de Sacsayhuamán';
+                $h4_7 = 'Cordillera de los Andes y el Altiplano Peruano';
+                $p_9 = 'La gran cadena montañosa que marca el inicio de esta travesía. Comprende vastas mesetas altiplánicas, donde se observa un entorno natural rodeado de comunidades.';
 
-                $h4_8 = '2. Las fuentes ceremoniales de Tambomachay';
+                $h4_8 = 'Lago Titicaca';
+                $p_10 = 'El lago navegable más alto del mundo que se extiende entre Perú y Bolivia, considerado el lago sagrado de los incas, destacando sus intensos tonos.';
 
-                $h4_9 = '3. Las andenerías circulares y terrazas de Pisac';
+                $h4_9 = 'Islas Flotantes de los Uros';
+                $p_11 = 'Un conjunto de islas artificiales únicas en el mundo, construidas enteramente con totora. Cada isla tiene su propia historia y cultura.';
 
-                $h4_10 = '4. Los fértiles campos del Valle Sagrado de los Incas';
+                $h4_10 = 'Isla Taquile';
+                $p_12 = 'Una joya ovalada en medio del Titicaca, conocida por su impresionante cultura textil (Patrimonio Cultural Inmaterial de la Humanidad). Se aprecian sus terrazas y la organización de la isla desde las alturas.';
 
-                $h4_11 = '5. Las misteriosas Salineras de Maras';
+                $h4_11 = 'Isla Amantaní';
+                $p_13 = 'Reconocida por sus terrazas agrícolas y los templos preincaicos dedicados a Pachamama y Pachatata. Se encuentra rodeada de un entorno natural impresionante.';
 
-                $h4_12 = '6. la hermosa laguna de Huaypo, rodeada de campos agrícolas y montañas';
+                $h4_12 = 'Pueblos Ribereños de Puno';
+                $p_14 = 'Una panorámica de las pequeñas comunidades que rodean el borde del lago. Esto brinda una visión de la vida cotidiana que se desarrolla entre la pesca, la agricultura y las costumbres altoandinas.';
 
         $h2_4 = 'Inclusiones del Tour';
 
@@ -69,7 +75,7 @@ $seo = [
         $h2_5 = 'Otros Tours Recomendados';
 
                 $h4_14 = 'Líneas de Nazca';
-                $p_17 = 'Descubre los misteriosos geoglifos desde el aire en este tour de 1 hora.';
+                $p_17 = 'Descubre los misteriosos geoglifos desde el aire en este tour de día completo.';
 
                 $h4_15 = 'Vuelo Amazónico';
                 $p_18 = 'Explora la selva peruana desde las alturas y observa la biodiversidad única.';
@@ -86,7 +92,7 @@ $seo = [
 <!-- Sección Hero -->
 <section class="tour-hero">
     <div class="hero-background">
-        <img src="{{ asset('img/sobrevuelos/sacred-valley-1.webp') }}" alt="Valle Sagrado desde el aire">
+        <img src="{{ asset('public/img/sobrevuelos/titicaca-lake-1.webp') }}" alt="Lago Titicaca desde el aire">
         <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
@@ -97,11 +103,10 @@ $seo = [
         <h1 class="tour-title"><?= $h1_1 ?></h1>
         <p class="tour-subtitle"><?= $p_1 ?></p>
 
-
         <div class="tour-meta">
             <div class="meta-item">
                 <i class="fas fa-clock"></i>
-                <span>1 hora</span>
+                <span>1 hora y 40 minutos</span>
             </div>
             <div class="meta-item">
                 <i class="fas fa-users"></i>
@@ -152,16 +157,16 @@ $seo = [
                 <div class="image-carousel">
                     <div class="carousel-container" id="carouselContainer">
                         <div class="carousel-slide active">
-                            <img src="/public/img/tours/valle-sagrado-maras-1.jpg" alt="Vista aérea del Valle Sagrado">
+                            <img src="/public/img/sobrevuelos/titicaca-lake-1.webp" alt="Vista aérea de Lago Titicaca">
                         </div> 
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-2.jpg" alt="Valle Sagrado desde el aire">
+                            <img src="/public/img/sobrevuelos/titicaca-lake-2.webp" alt="Lago Titicaca">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-3.jpg" alt="Montañas andinas">
+                            <img src="/public/img/sobrevuelos/titicaca-lake-3.webp" alt="Lago Titicaca Peru">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-4.jpg" alt="Río Urubamba">
+                            <img src="/public/img/sobrevuelos/titicaca-lake-4.webp" alt="Lago Titicaca  Puno">
                         </div>
                     </div>
                     <button class="carousel-btn prev" onclick="moveSlide(-1)">
@@ -213,7 +218,7 @@ $seo = [
                 <div class="stats-grid">
                     <div class="stat-item">
                         <div class="stat-number">1</div>
-                        <div class="stat-label">hora</div>
+                        <div class="stat-label">hora y 40 minutos</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">1</div>
@@ -242,36 +247,42 @@ $seo = [
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_7 ?></h4>
+                    <p><?= $p_9 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_8 ?></h4>
+                    <p><?= $p_10 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_9 ?></h4>
+                    <p><?= $p_11 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_10 ?></h4>
+                    <p><?= $p_12 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_11 ?></h4>
+                    <p><?= $p_13 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_12 ?></h4>
+                    <p><?= $p_14 ?></p>
                 </div>
             </div>
         </div>
@@ -286,11 +297,11 @@ $seo = [
             <div class="included">
                 <h3><i class="fas fa-check-circle"></i><?= $h3_4 ?></h3>
                 <ul>
-                    <li><i class="fas fa-check"></i> Vuelo privado en avioneta (ida y vuelta desde Cusco).</li>
+                    <li><i class="fas fa-check"></i> Vuelo privado en avión ligero (Cusco – Lago Titicaca – Cusco).</li>
                     <li><i class="fas fa-check"></i> Traslados privados hotel – aeropuerto – hotel.</li>
-                    <li><i class="fas fa-check"></i> Regalo andino de cortesía (bufanda o chullo de alpaca).</li>
-                    <li><i class="fas fa-check"></i> Snack bag personalizada con productos naturales.</li>
-                    <li><i class="fas fa-check"></i> Guía profesional especializado. </li>
+                    <li><i class="fas fa-check"></i> Regalo andino de cortesía.</li>
+                    <li><i class="fas fa-check"></i> Catering ligero a bordo.</li>
+                    <li><i class="fas fa-check"></i> Guía profesional especializado (inglés/español). </li>
                 </ul>
             </div>
             <div class="not-included">
@@ -298,7 +309,7 @@ $seo = [
                 <ul>
                     <li><i class="fas fa-times"></i> Pasajes aéreos a Cusco</li>
                     <li><i class="fas fa-times"></i> Seguro de viaje (es recomendado)</li>
-                    <li><i class="fas fa-times"></i> Propinas y consumos personales no mencionados</li>
+                    <li><i class="fas fa-times"></i> Consumos personales no especificados</li>
                 </ul>
             </div>
         </div>
@@ -401,7 +412,7 @@ $seo = [
                 </div>
                 <div class="form-group">
                     <label for="tourName">Nombre del Tour *</label>
-                    <input type="text" id="tourName" name="tourName" value="Vuelo Panorámico sobre el Valle Sagrado" required readonly>
+                    <input type="text" id="tourName" name="tourName" value="Sobrevuelo Lago Titicaca" required readonly>
                 </div>
                 <div class="form-group">
                     <label for="passengers">Número de Pasajeros *</label>

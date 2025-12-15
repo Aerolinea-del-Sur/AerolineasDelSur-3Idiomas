@@ -7,7 +7,7 @@ $seo = [
     'description' => 'Sobrevuelo panorámico por los Andes Mágicos de Cusco. Vistas espectaculares de nevados, lagunas y montañas sagradas en helicóptero privado.',
     'keywords' => 'sobrevuelo andes cusco, tour aéreo cordillera, helicóptero montañas cusco, sobrevuelo panorámico andes',
     'og_image' => asset('img/tours/sobrevuelo-andes-magicos.jpg'),
-    'canonical' => url('/sobrevuelo-andes-magicos'),
+    'canonical' => url(app()->getLocale() . '/sobrevuelo-andes-magicos'),
 ];
 @endphp
 @section('content')

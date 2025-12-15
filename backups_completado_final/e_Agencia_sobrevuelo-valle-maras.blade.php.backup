@@ -7,7 +7,7 @@ $seo = [
     'description' => 'Sobrevuelo en helicóptero por el Valle Sagrado, Salineras de Maras y Moray. Vista panorámica única de los tesoros arqueológicos incas desde el aire.',
     'keywords' => 'sobrevuelo valle sagrado, tour aéreo maras, helicóptero cusco valle sagrado, sobrevuelo moray',
     'og_image' => asset('img/tours/sobrevuelo-valle-maras.jpg'),
-    'canonical' => url(app()->getLocale() . '/sobrevuelo-valle-maras'),
+    'canonical' => url('/sobrevuelo-valle-maras'),
 ];
 @endphp
 @section('content')

@@ -1,32 +1,32 @@
 @extends('a_EncabezadoFooter.princi')
 
 @php
-// Custom SEO for Sobrevuelo Valle Maras
+// Custom SEO for Sobrevuelo Choquequirao
 $seo = [
-    'title' => 'Sobrevuelo Valle Sagrado y Maras | Tour Aéreo Cusco',
-    'description' => 'Sobrevuelo en helicóptero por el Valle Sagrado, Salineras de Maras y Moray. Vista panorámica única de los tesoros arqueológicos incas desde el aire.',
-    'keywords' => 'sobrevuelo valle sagrado, tour aéreo maras, helicóptero cusco valle sagrado, sobrevuelo moray',
-    'og_image' => asset('img/tours/sobrevuelo-valle-maras.jpg'),
-    'canonical' => url(app()->getLocale() . '/sobrevuelo-valle-maras'),
+    'title' => 'Sobrevuelo Choquequirao | Tour Aéreo Cusco',
+    'description' => 'Sobrevuelo panorámico premium hacia Choquequirao. Descubre la hermana sagrada de Machu Picchu desde el aire.',
+    'keywords' => 'sobrevuelo choquequirao, tour aéreo cusco, vuelo cusco choquequirao, choquequirao helicóptero',
+    'og_image' => asset('img/sobrevuelos/choquequirao.webp'),
+    'canonical' => url('/sobrevuelo-choquequirao'),
 ];
 @endphp
 @section('content')
 
 <?php
-    $h1_1 = 'Valle Sagrado y Maras';
-    $p_1 = 'Descubre Sacsayhuamán, Tambomachay, Pisac, Valle Sagrado, Maras y Laguna de Huaypo.';
+    $h1_1 = 'Choquequirao';
+    $p_1 = 'El vuelo panorámico que revela la majestuosa "Cuna de Oro" y hermana sagrada de Machu Picchu, oculta entre los Andes.';
 
-        $h2_1 = 'Detalles del Tour';
-        $p_2 = 'Aerolínea del Sur se complace en presentar una experiencia aérea inigualable: un sobrevuelo escénico en avioneta, ideal para quienes desean descubrir desde el cielo algunos de los sitios arqueológicos y paisajes más emblemáticos del corazón del Valle Sagrado de los Incas, sin necesidad de desplazamientos largos por tierra.';
+        $h2_1 = 'Detalles del Sobrevuelo';
+        $p_2 = 'El sobrevuelo a Choquequirao es una experiencia aérea premium que lo transporta desde Cusco hacia las profundidades del cañón del Apurímac. A bordo de una aeronave ligera privada, el viaje de aproximadamente 1 hora ofrece una perspectiva única y privilegiada de la imponente Cordillera de Vilcabamba, el Valle Sagrado y la misteriosa ciudadela inca de Choquequirao. Desde el aire, se aprecia la complejidad de sus terrazas y templos, revelando una obra maestra del urbanismo inca rodeada de naturaleza exuberante.';
 
                 $h4_1 = 'Grupo Máximo';
-                $p_3 = '6 personas';
+                $p_3 = '4 personas'; // Asumiendo capacidad de aeronave ligera común, ajustable
 
                 $h4_2 = 'Edad Mínima';
                 $p_4 = 'Ninguna';
 
                 $h4_3 = 'Duración';
-                $p_5 = '1 hora';
+                $p_5 = '1 hora (aprox.)';
 
             $h3_1 = 'Galería de Imágenes';
 
@@ -34,30 +34,39 @@ $seo = [
 
             $h3_2 = 'Aspectos Destacados';
 
-                $h4_4 = 'Vinicunca';
-                $p_6 = 'Conoceras la Montaña de 7 Colores, un lugar colorido con paisajes impresionantes.';
+                $h4_4 = 'Choquequirao';
+                $p_6 = 'La hermana sagrada de Machu Picchu, una joya arqueológica oculta en las montañas.';
 
-                $h4_5 = 'Fotografía Paisajes';
-                $p_7 = 'Captura tomas espectaculares de los pueblos, paisajes y costrucciones milenarias.';
+                $h4_5 = 'Valle Sagrado';
+                $p_7 = 'Vistas aéreas de Pisac, Ollantaytambo y los paisajes agrícolas del valle.';
 
-                $h4_6 = 'Historia y vistas';
-                $p_8 = 'El guía te narrará la historia del lugar mientras recorres el sendero hasta la montaña.';
+                $h4_6 = 'Nevados Sagrados';
+                $p_8 = 'Contempla la majestuosidad de los nevados La Verónica y Salkantay desde las alturas.';
 
             $h3_3 = 'Estadísticas del Tour';
         
-        $h2_3 = 'Itinerario Detallado';
+        $h2_3 = 'Lugares destacados en este Viaje';
 
-                $h4_7 = '1. El complejo arqueológico de Sacsayhuamán';
+                $h4_7 = 'Pisac';
+                $p_9 = 'Majestuoso complejo arqueológico que domina el Valle Sagrado. Destaca por sus extensos andenes agrícolas, templos ceremoniales y su famoso Intihuatana. Desde el aire, revela su perfecta integración entre arquitectura y paisaje.';
 
-                $h4_8 = '2. Las fuentes ceremoniales de Tambomachay';
+                $h4_8 = 'Valle Sagrado de los Incas';
+                $p_10 = 'Extensas tierras fértiles rodeadas de majestuosas montañas y pueblos tradicionales, corazón espiritual y agrícola del antiguo imperio inca.';
 
-                $h4_9 = '3. Las andenerías circulares y terrazas de Pisac';
+                $h4_9 = 'Salineras de Maras';
+                $p_11 = 'Más de 3,000 pozas blancas escalonadas donde se extrae sal de forma artesanal. Un espectáculo natural y cultural único visto desde el aire.';
 
-                $h4_10 = '4. Los fértiles campos del Valle Sagrado de los Incas';
+                $h4_10 = 'Moray';
+                $p_12 = 'El antiguo laboratorio agrícola de los incas, con sus impresionantes terrazas circulares que forman un paisaje hipnótico. Desde el aire, se aprecia la perfección de su diseño y los contrastes de color.';
 
-                $h4_11 = '5. Las misteriosas Salineras de Maras';
+                $h4_11 = 'Ollantaytambo';
+                $p_13 = 'Imponente fortaleza inca que domina el valle con sus terrazas monumentales y calles de piedra perfectamente conservadas.';
 
-                $h4_12 = '6. la hermosa laguna de Huaypo, rodeada de campos agrícolas y montañas';
+                $h4_12 = 'Nevados La Verónica y Salkantay';
+                $p_14 = 'Picos sagrados que se elevan majestuosos con sus nieves perpetuas. El Salkantay es uno de los Apus más venerados del Cusco, dominando el horizonte andino.';
+                
+                $h4_12_extra = 'Choquequirao';
+                $p_14_extra = 'Conocida como “la hermana sagrada de Machu Picchu”, esta joya arqueológica se oculta entre las montañas de Vilcabamba. Su diseño en terrazas y templos se revela como una obra maestra del urbanismo inca.';
 
         $h2_4 = 'Inclusiones del Tour';
 
@@ -69,7 +78,7 @@ $seo = [
         $h2_5 = 'Otros Tours Recomendados';
 
                 $h4_14 = 'Líneas de Nazca';
-                $p_17 = 'Descubre los misteriosos geoglifos desde el aire en este tour de 1 hora.';
+                $p_17 = 'Descubre los misteriosos geoglifos desde el aire en este tour de día completo.';
 
                 $h4_15 = 'Vuelo Amazónico';
                 $p_18 = 'Explora la selva peruana desde las alturas y observa la biodiversidad única.';
@@ -86,7 +95,7 @@ $seo = [
 <!-- Sección Hero -->
 <section class="tour-hero">
     <div class="hero-background">
-        <img src="{{ asset('img/sobrevuelos/sacred-valley-1.webp') }}" alt="Valle Sagrado desde el aire">
+        <img src="{{ asset('img/sobrevuelos/choquequirao-2.webp') }}" alt="Choquequirao desde el aire">
         <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
@@ -97,15 +106,14 @@ $seo = [
         <h1 class="tour-title"><?= $h1_1 ?></h1>
         <p class="tour-subtitle"><?= $p_1 ?></p>
 
-
         <div class="tour-meta">
             <div class="meta-item">
                 <i class="fas fa-clock"></i>
-                <span>1 hora</span>
+                <span>1 hora (aprox.)</span>
             </div>
             <div class="meta-item">
                 <i class="fas fa-users"></i>
-                <span>Hasta 6 personas</span>
+                <span>Hasta 4 personas</span>
             </div>
             <div class="meta-item">
                 <i class="fas fa-star"></i>
@@ -152,16 +160,16 @@ $seo = [
                 <div class="image-carousel">
                     <div class="carousel-container" id="carouselContainer">
                         <div class="carousel-slide active">
-                            <img src="/public/img/tours/valle-sagrado-maras-1.jpg" alt="Vista aérea del Valle Sagrado">
+                            <img src="{{ asset('img/sobrevuelos/choquequirao-1.webp') }}" alt="Vista aérea de Choquequirao">
                         </div> 
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-2.jpg" alt="Valle Sagrado desde el aire">
+                            <img src="{{ asset('img/sobrevuelos/choquequirao-2.webp') }}" alt="Choquequirao">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-3.jpg" alt="Montañas andinas">
+                            <img src="{{ asset('img/sobrevuelos/choquequirao-3.webp') }}" alt="Choquequirao Peru">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-4.jpg" alt="Río Urubamba">
+                            <img src="{{ asset('img/sobrevuelos/choquequirao-4.webp') }}" alt="Choquequirao Cusco">
                         </div>
                     </div>
                     <button class="carousel-btn prev" onclick="moveSlide(-1)">
@@ -213,14 +221,14 @@ $seo = [
                 <div class="stats-grid">
                     <div class="stat-item">
                         <div class="stat-number">1</div>
-                        <div class="stat-label">hora</div>
+                        <div class="stat-label">hora (aprox.)</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">1</div>
-                        <div class="stat-label">Lugar Turistico</div>
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Lugares Turísticos</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">10</div>
+                        <div class="stat-number">180</div>
                         <div class="stat-label">Km recorridos</div>
                     </div>
                     <div class="stat-item">
@@ -242,36 +250,49 @@ $seo = [
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_7 ?></h4>
+                    <p><?= $p_9 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_8 ?></h4>
+                    <p><?= $p_10 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_9 ?></h4>
+                    <p><?= $p_11 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_10 ?></h4>
+                    <p><?= $p_12 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_11 ?></h4>
+                    <p><?= $p_13 ?></p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h4><?= $h4_12 ?></h4>
+                    <p><?= $p_14 ?></p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4><?= $h4_12_extra ?></h4>
+                    <p><?= $p_14_extra ?></p>
                 </div>
             </div>
         </div>
@@ -286,19 +307,20 @@ $seo = [
             <div class="included">
                 <h3><i class="fas fa-check-circle"></i><?= $h3_4 ?></h3>
                 <ul>
-                    <li><i class="fas fa-check"></i> Vuelo privado en avioneta (ida y vuelta desde Cusco).</li>
-                    <li><i class="fas fa-check"></i> Traslados privados hotel – aeropuerto – hotel.</li>
-                    <li><i class="fas fa-check"></i> Regalo andino de cortesía (bufanda o chullo de alpaca).</li>
-                    <li><i class="fas fa-check"></i> Snack bag personalizada con productos naturales.</li>
-                    <li><i class="fas fa-check"></i> Guía profesional especializado. </li>
+                    <li><i class="fas fa-check"></i> Vuelo privado en avión ligero (Cusco – Choquequirao – Cusco)</li>
+                    <li><i class="fas fa-check"></i> Traslados privados hotel – aeropuerto – hotel</li>
+                    <li><i class="fas fa-check"></i> Regalo andino</li>
+                    <li><i class="fas fa-check"></i> Catering ligero a bordo</li>
+                    <li><i class="fas fa-check"></i> Incluye el almuerzo</li>
+                    <li><i class="fas fa-check"></i> Guía profesional especializado (inglés/español)</li>
                 </ul>
             </div>
             <div class="not-included">
                 <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
                 <ul>
-                    <li><i class="fas fa-times"></i> Pasajes aéreos a Cusco</li>
-                    <li><i class="fas fa-times"></i> Seguro de viaje (es recomendado)</li>
-                    <li><i class="fas fa-times"></i> Propinas y consumos personales no mencionados</li>
+                    <li><i class="fas fa-times"></i> Pasajes aéreos hacia/desde Cusco</li>
+                    <li><i class="fas fa-times"></i> Seguro de viaje (altamente recomendado)</li>
+                    <li><i class="fas fa-times"></i> Consumos personales no especificados</li>
                 </ul>
             </div>
         </div>
@@ -306,7 +328,8 @@ $seo = [
             <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
             <ul>
                 <li>Se requiere documento de identidad válido</li>
-                <li>Cancelación hasta 24 horas antes</li>
+                <li>Hora de inicio flexible: Entre las 08:00 y 11:00 a.m.</li>
+                <li>Sujeto a condiciones climáticas</li>
             </ul>
         </div>
     </div>
@@ -401,7 +424,7 @@ $seo = [
                 </div>
                 <div class="form-group">
                     <label for="tourName">Nombre del Tour *</label>
-                    <input type="text" id="tourName" name="tourName" value="Vuelo Panorámico sobre el Valle Sagrado" required readonly>
+                    <input type="text" id="tourName" name="tourName" value="Sobrevuelo Choquequirao" required readonly>
                 </div>
                 <div class="form-group">
                     <label for="passengers">Número de Pasajeros *</label>

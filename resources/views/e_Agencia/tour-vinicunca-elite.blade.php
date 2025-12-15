@@ -7,7 +7,7 @@ $seo = [
     'description' => 'Tour VIP a Vinicunca con servicio premium. Grupos reducidos, alimentación gourmet y guía privado para una experiencia exclusiva en la Montaña de 7 Colores.',
     'keywords' => 'tour vinicunca elite, rainbow mountain vip, tour privado vinicunca, excursión premium cusco',
     'og_image' => asset('img/tours/vinicunca-elite.jpg'),
-    'canonical' => url('/tour-vinicunca-elite'),
+    'canonical' => url(app()->getLocale() . '/tour-vinicunca-elite'),
 ];
 @endphp
 @section('content')

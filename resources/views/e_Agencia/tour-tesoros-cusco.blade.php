@@ -7,7 +7,7 @@ $seo = [
     'description' => 'Tour Tesoros de Cusco: visita Sacsayhuamán, Qenqo, Puka Pukara y Tambomachay. City tour completo con guía experto por los principales sitios arqueológicos.',
     'keywords' => 'tour tesoros cusco, city tour cusco, sacsayhuaman tour, ruinas incas cusco, tour arqueológico',
     'og_image' => asset('img/tours/tesoros-cusco.jpg'),
-    'canonical' => url('/tour-tesoros-cusco'),
+    'canonical' => url(app()->getLocale() . '/tour-tesoros-cusco'),
 ];
 @endphp
 @section('content')

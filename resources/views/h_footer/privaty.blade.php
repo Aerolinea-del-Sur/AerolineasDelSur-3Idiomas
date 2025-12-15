@@ -7,7 +7,7 @@ $seo = [
     'description' => 'Política de privacidad y protección de datos personales de Aerolínea del Sur. Conoce cómo protegemos tu información.',
     'keywords' => 'política privacidad perú, protección datos, privacidad aerolínea',
     'og_image' => asset('img/logo.svg'),
-    'canonical' => url('/politica-privacidad'),
+    'canonical' => url(app()->getLocale() . '/politica-privacidad'),
 ];
 @endphp
 @section('content')

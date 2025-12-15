@@ -7,7 +7,7 @@ $seo = [
     'description' => 'Sobrevuelo panorámico premium hacia Choquequirao. Descubre la hermana sagrada de Machu Picchu desde el aire.',
     'keywords' => 'sobrevuelo choquequirao, tour aéreo cusco, vuelo cusco choquequirao, choquequirao helicóptero',
     'og_image' => asset('img/sobrevuelos/choquequirao.webp'),
-    'canonical' => url('/sobrevuelo-choquequirao'),
+    'canonical' => url(app()->getLocale() . '/sobrevuelo-choquequirao'),
 ];
 @endphp
 @section('content')

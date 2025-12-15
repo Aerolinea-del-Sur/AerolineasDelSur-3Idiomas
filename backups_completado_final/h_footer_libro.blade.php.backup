@@ -7,7 +7,7 @@ $seo = [
     'description' => 'Presenta tu reclamo o sugerencia en nuestro Libro de Reclamaciones virtual. Tu opinión nos ayuda a mejorar nuestros servicios de aviación.',
     'keywords' => 'libro reclamaciones perú, reclamos aerolínea, quejas servicios aéreos',
     'og_image' => asset('img/logo.svg'),
-    'canonical' => url(app()->getLocale() . '/libro-reclamaciones'),
+    'canonical' => url('/libro-reclamaciones'),
 ];
 @endphp
 @section('content')

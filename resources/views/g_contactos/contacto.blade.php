@@ -3,51 +3,51 @@
 @php
 // Custom SEO for Contact page
 $seo = [
-    'title' => 'Contacto | Aerolínea del Sur - Vuelos Privados en Perú',
-    'description' => 'Contáctanos para reservar tu vuelo privado en Perú. Oficinas en Cusco, atención 24/7. Tel: +51 944 055 408. Presupuestos personalizados sin compromiso.',
+    'title' => __('contact.seo.title'),
+    'description' => __('contact.seo.description'),
     'keywords' => 'contacto aerolínea del sur, reservar vuelo privado perú, cotización vuelo charter, oficina cusco',
     'og_image' => asset('img/contacto/oficina-cusco.jpg'),
-    'canonical' => url('/contacto'),
+    'canonical' => url(app()->getLocale() . '/contacto'),
 ];
 @endphp
 @section('content')
 <?php
     // Variables de contenido
-    $h1_1_1 = 'Estamos aquí';
-    $h1_1_2 = 'para ';
-    $h1_1_3 = 'ayudarte';
-    $p_1 = 'Tu experiencia de viaje es nuestra prioridad. Contáctanos para reservas, consultas o cualquier asistencia que necesites.';
+    $h1_1_1 = __('contact.hero.title1');
+    $h1_1_2 = __('contact.hero.title2');
+    $h1_1_3 = __('contact.hero.title3');
+    $p_1 = __('contact.hero.subtitle');
 
-    $h2_1 = 'Envíanos un mensaje';
-    $p_2 = 'Completa el formulario y te responderemos en menos de 24 horas';
+    $h2_1 = __('contact.form.title');
+    $p_2 = __('contact.form.subtitle');
 
-    $h2_2 = 'Información de Contacto';
-    $p_3 = 'Múltiples formas de comunicarte con nosotros';
+    $h2_2 = __('contact.info.title');
+    $p_3 = __('contact.info.subtitle');
 
-    $h3_1 = 'Teléfono';
+    $h3_1 = __('contact.info.phone');
     $p_4 = '+51 932 475 995';
 
-    $h3_2 = 'Email';
+    $h3_2 = __('contact.info.email');
     $p_5 = 'contacto@aerolineadelsur.com.pe';
 
-    $h3_3 = 'Oficina Principal';
+    $h3_3 = __('contact.info.office');
     $p_6 = 'Centro Comercial San Andrés oficina nro 314 tercer piso,';
 
-    $h3_4 = 'WhatsApp';
+    $h3_4 = __('contact.info.whatsapp');
     $p_7 = '+51 932 475 995';
     
-    $h2_3 = 'Horarios de Atención';
-    $p_8 = 'Estamos disponibles cuando nos necesites';
+    $h2_3 = __('contact.schedule.title');
+    $p_8 = __('contact.schedule.subtitle');
 
-    $h3_5 = 'Atención Telefónica';
-    $h3_6 = 'Oficina Principal';
-    $h3_7 = 'WhatsApp';
-    $h3_8 = 'Correo Electrónico';
+    $h3_5 = __('contact.schedule.phone');
+    $h3_6 = __('contact.schedule.office');
+    $h3_7 = __('contact.schedule.whatsapp');
+    $h3_8 = __('contact.schedule.email');
 
-    $h2_4 = 'Nuestra Ubicación';
-    $p_9 = 'Visítanos en nuestra oficina principal en Cusco';
+    $h2_4 = __('contact.map.title');
+    $p_9 = __('contact.map.subtitle');
 
-    $h3_9 = 'Oficina Principal';
+    $h3_9 = __('contact.map.office');
 ?>
 
 <link rel="stylesheet" href="{{ asset('public/css/paginas/contacto.css') }}">

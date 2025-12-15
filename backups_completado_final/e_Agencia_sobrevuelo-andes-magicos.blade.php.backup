@@ -1,31 +1,31 @@
 @extends('a_EncabezadoFooter.princi')
 
 @php
-// Custom SEO for Tour Vinicunca
+// Custom SEO for Sobrevuelo Andes Mágicos
 $seo = [
-    'title' => 'Tour Vinicunca Montaña 7 Colores | Excursión desde Cusco',
-    'description' => 'Tour a Vinicunca, la famosa Montaña de 7 Colores en Cusco. Excursión de 1 día con guía experto, transporte y alimentación incluida desde Cusco.',
-    'keywords' => 'tour vinicunca, montaña 7 colores, rainbow mountain peru, excursión cusco vinicunca, tour rainbow mountain',
-    'og_image' => asset('img/tours/vinicunca-7-colores.jpg'),
-    'canonical' => url(app()->getLocale() . '/tour-vinicunca'),
+    'title' => 'Sobrevuelo Andes Mágicos | Tour Aéreo Cordillera Cusco',
+    'description' => 'Sobrevuelo panorámico por los Andes Mágicos de Cusco. Vistas espectaculares de nevados, lagunas y montañas sagradas en helicóptero privado.',
+    'keywords' => 'sobrevuelo andes cusco, tour aéreo cordillera, helicóptero montañas cusco, sobrevuelo panorámico andes',
+    'og_image' => asset('img/tours/sobrevuelo-andes-magicos.jpg'),
+    'canonical' => url('/sobrevuelo-andes-magicos'),
 ];
 @endphp
 @section('content')
-
 <?php
-    $h1_1 = 'Montaña de Siete Colores';
-    $p_1 = 'Descubre la montaña arcoiris en una excursión por Cusco.';
+    $h1_1 = 'Tour Aéreo de Lujo<br>Andes Mágicos';
+    $p_1 = 'Descubre lo mejor del sur andino peruano desde una perspectiva privilegiada';
 
         $h2_1 = 'Detalles del Tour';
-        $p_2 = 'Vive una experiencia única en la Montaña de 7 Colores</strong>, también conocida como Vinicunca, una de las maravillas naturales más impresionantes del Cusco. Disfruta de un recorrido que combina paisajes andinos, caminata al aire libre y vistas inolvidables de la montaña multicolor a más de 5,000 m s.n.m. Una aventura inolvidable que te mostrara la naturaleza y la grandeza de los Andes.';
-                $h4_1 = 'Grupo Máximo';
-                $p_3 = '6 personas';
+        $p_2 = 'Prepárate para vivir una experiencia inolvidable: un tour aéreo diseñado para quienes desean ver lo mejor del sur andino peruano desde una perspectiva privilegiada. Sobrevuela montañas sagradas, valles milenarios y joyas arqueológicas que han desafiado el tiempo, todo en un servicio de alto nivel, operado con aeronaves pequeñas o helicópteros privados.';
 
-                $h4_2 = 'Edad Mínima';
-                $p_4 = 'Ninguna';
+                $h4_1 = 'Aeronave Moderna';
+                $p_3 = 'Cessna 206 con ventanas panorámicas';
 
-                $h4_3 = 'Duración';
-                $p_5 = '1 día';
+                $h4_2 = 'Piloto Certificado';
+                $p_4 = 'Más de 10 años de experiencia';
+
+                $h4_3 = 'Fotografía Aérea';
+                $p_5 = 'Oportunidades únicas de captura';
 
             $h3_1 = 'Galería de Imágenes';
 
@@ -33,36 +33,36 @@ $seo = [
 
             $h3_2 = 'Aspectos Destacados';
 
-                $h4_4 = 'Vinicunca';
-                $p_6 = 'Conoceras la Montaña de 7 Colores, un lugar colorido con paisajes impresionantes.';
+                $h4_4 = 'Vista Aerea';
+                $p_6 = 'Contempla los distintos destinos del Cusco desde los cielos';
 
-                $h4_5 = 'Fotografía Paisajes';
-                $p_7 = 'Captura tomas espectaculares de los pueblos, paisajes y costrucciones milenarias.';
+                $h4_5 = 'Fotografía Profesional';
+                $p_7 = 'Capturas aéreas espectaculares de los destinos del Cusco';
 
-                $h4_6 = 'Historia y vistas';
-                $p_8 = 'El guía te narrará la historia del lugar mientras recorres el sendero hasta la montaña.';
+                $h4_6 = 'Historia Viva';
+                $p_8 = 'Narración histórica durante el vuelo';
 
             $h3_3 = 'Estadísticas del Tour';
         
-        $h2_3 = 'Itinerario Detallado';
+        $h2_3 = 'Lugares a Conocer';
 
-                $h4_7 = '1. Recojo y salida temprana';
-                $p_9 = 'Nuestro recorrido inicia muy temprano, entre las 4:00 y 4:30 a.m., con el recojo desde tu alojamiento en Cusco. Partimos hacia el sur de la región, disfrutando del amanecer entre montañas y pintorescos paisajes andinos.';
+                $h4_7 = 'Montaña de Siete Colores';
+                $p_9 = 'Un espectáculo natural que solo desde el aire revela la magnitud de sus franjas minerales multicolores. Un ícono de los Andes como nunca lo habías visto.';
 
-                $h4_8 = '2. Desayuno en Cusipata';
-                $p_10 = 'Tras dos horas de viaje, llegamos a la localidad de Cusipata, donde te espera un desayuno nutritivo elaborado con insumos locales, perfecto para cargar energías antes de la caminata.';
+                $h4_8 = 'Nevado Ausangate';
+                $p_10 = 'Sobrevuelo sobre el apu más sagrado del Cusco. Sus cumbres nevadas y lagunas glaciares conforman uno de los paisajes más místicos y majestuosos del Perú.';
 
-                $h4_9 = '3. Inicio de la caminata';
-                $p_11 = 'Continuamos el trayecto en transporte por 40 minutos adicionales hasta llegar al punto de partida, ubicado a unos 4,000 m.s.n.m. Desde aquí comienza la caminata de aproximadamente 2 horas, rodeados de montañas, aire fresco y un entorno tranquilo.';
+                $h4_9 = 'Valle Rojo';
+                $p_11 = 'Un lugar de belleza surreal, donde las tierras rojizas crean un paisaje de otro planeta. Una joya escondida de los Andes que solo los vuelos de altura pueden captar en su totalidad.';
 
-                $h4_10 = '4. Llegada a la Montaña Arcoíris';
-                $p_12 = 'Alcanzamos la cima de Vinicunca a 5,036 m.s.n.m., donde serás testigo de un espectáculo natural único: las formaciones geológicas que dan vida a la famosa Montaña de 7 Colores. Tendrás tiempo libre para contemplar el paisaje y tomar fotografías.';
+                $h4_10 = 'Complejos Arqueológicos del Cusco';
+                $p_12 = 'Una vista privilegiada de Tambomachay, Qenqo y Puca Pucara restos arqueológicos del Cusco imperial.';
 
-                $h4_11 = '5. Retorno y almuerzo';
-                $p_13 = 'Iniciamos el descenso de 2 horas hasta encontrarnos nuevamente con nuestro transporte. De regreso en Cusipata, disfrutaremos de un almuerzo tradicional andino que pondrá el broche final a la experiencia.';
+                $h4_11 = 'Pisac y el Valle Sagrado';
+                $p_13 = 'Vista panorámica del legendario valle agrícola, cuna de civilización y vida incaica. Las terrazas, los pueblos vivos y las ruinas de Pisac se despliegan a tus pies.';
 
-                $h4_12 = '6. Regreso a Cusco';
-                $p_14 = 'Finalmente, retornamos a la ciudad del Cusco con llegada aproximada entre las 4:00 y 4:30 p.m., cerrando una jornada inolvidable.';
+                $h4_12 = 'Salineras de Maras';
+                $p_14 = 'Se observará los miles de pozas de sal formando un mosaico blanco impresionante, que desciende por la montaña como un río congelado en el tiempo.';
 
         $h2_4 = 'Inclusiones del Tour';
 
@@ -70,6 +70,8 @@ $seo = [
             $h3_5 = 'No Incluido';
 
                 $h4_13 = 'Notas Importantes';
+                $p_15 = 'Salida desde Cusco';
+                $p_16 = 'Regreso a Cusco';
 
         $h2_5 = 'Otros Tours Recomendados';
 
@@ -88,25 +90,24 @@ $seo = [
 ?>
 
     <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">
+    
     <!-- Sección Hero -->
     <section class="tour-hero">
         <div class="hero-background">
-            <img src="https://images.pexels.com/photos/6921111/pexels-photo-6921111.jpeg" alt="Machu Picchu desde el aire">
+            <img src="https://images.unsplash.com/photo-1532364158125-02d75a0f7fb9?q=80&w=1974" alt="Machu Picchu desde el aire">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
             <div class="tour-badges">
-                <span class="badge popular">POPULAR</span>
+                <span class="badge popular">SOBREVUELO</span>
                 <span class="badge exclusive">EXCLUSIVO</span>
             </div>
             <h1 class="tour-title"><?= $h1_1 ?></h1>
             <p class="tour-subtitle"><?= $p_1 ?></p>
-
-
             <div class="tour-meta">
                 <div class="meta-item">
                     <i class="fas fa-clock"></i>
-                    <span>1 día</span>
+                    <span>1 hora</span>
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-users"></i>
@@ -126,24 +127,24 @@ $seo = [
             <div class="details-grid">
                 <div class="details-content">
                     <h2 class="section-title"><?= $h2_1 ?></h2>
-                    <p class="tour-description"><strong><?= $p_2 ?></p>
+                    <p class="tour-description"><?= $p_2 ?></p>
                     <div class="detail-items">
                         <div class="detail-item">
-                            <i class="fas fa-users"></i>
+                            <i class="fas fa-plane"></i>
                             <div>
                                 <h4><?= $h4_1 ?></h4>
                                 <p><?= $p_3 ?></p>
                             </div>
                         </div>
                         <div class="detail-item">
-                            <i class="fas fa-user-plus"></i>
+                            <i class="fas fa-user-tie"></i>
                             <div>
                                 <h4><?= $h4_2 ?></h4>
                                 <p><?= $p_4 ?></p>
                             </div>
                         </div>
                         <div class="detail-item">
-                            <i class="fas fa-clock"></i>
+                            <i class="fas fa-camera"></i>
                             <div>
                                 <h4><?= $h4_3 ?></h4>
                                 <p><?= $p_5 ?></p>
@@ -156,17 +157,20 @@ $seo = [
                     <div class="image-carousel">
                         <div class="carousel-container" id="carouselContainer">
                             <div class="carousel-slide active">
-                                <img src="/public/img/tours/vinicunca-1.jpg" alt="Vista aérea de Machu Picchu">
+                                <img src="/public/img/tours/andes-magicos-1.jpg" alt="Vista aérea de Machu Picchu">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/public/img/tours/vinicunca-2.jpg" alt="Valle Sagrado desde el aire">
+                                <img src="/public/img/tours/andes-magicos-2.jpg" alt="Valle Sagrado desde el aire">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/public/img/tours/vinicunca-3.jpg" alt="Montañas andinas">
+                                <img src="/public/img/tours/andes-magicos-3.jpg" alt="Montañas andinas">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/public/img/tours/vinicunca-4.jpg" alt="Río Urubamba">
+                                <img src="/public/img/tours/andes-magicos-4.jpg" alt="Río Urubamba">
                             </div>
+                            <div class="carousel-slide">
+                                <img src="/public/img/tours/andes-magicos-5.jpg" alt="Río Urubamba">
+                            </div> 
                         </div>
                         <button class="carousel-btn prev" onclick="moveSlide(-1)">
                             <i class="fas fa-chevron-left"></i>
@@ -203,6 +207,7 @@ $seo = [
                             <i class="fas fa-camera-retro"></i>
                             <h4><?= $h4_5 ?></h4>
                             <p><?= $p_7 ?></p>
+
                         </div>
                         <div class="highlight-item">
                             <i class="fas fa-history"></i>
@@ -216,19 +221,19 @@ $seo = [
                     <div class="stats-grid">
                         <div class="stat-item">
                             <div class="stat-number">1</div>
-                            <div class="stat-label">Día</div>
+                            <div class="stat-label">Hora de vuelo</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">1</div>
-                            <div class="stat-label">Lugar Turistico</div>
+                            <div class="stat-number">3,400</div>
+                            <div class="stat-label">Metros de altitud</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">7</div>
+                            <div class="stat-number">120</div>
                             <div class="stat-label">Km recorridos</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">100%</div>
-                            <div class="stat-label">Conformidad</div>
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Satisfacción</div>
                         </div>
                     </div>
                 </div>
@@ -295,29 +300,37 @@ $seo = [
                 <div class="included">
                     <h3><i class="fas fa-check-circle"></i><?= $h3_4 ?></h3>
                     <ul>
-                        <li><i class="fas fa-check"></i> Transporte turístico (recojo desde el centro histórico de Cusco)</li>
-                        <li><i class="fas fa-check"></i> Entradas a la Montaña de 7 Colores</li>
-                        <li><i class="fas fa-check"></i> Guía profesional bilingüe (español - inglés)</li>
-                        <li><i class="fas fa-check"></i> Desayuno y almuerzo en restaurante local</li>
-                        <li><i class="fas fa-check"></i> Seguridad en ruta: oxígeno, botiquín, teléfonos satelitales y radios</li>
-                        <li><i class="fas fa-check"></i> Servicio en grupo reducido (máx. 19 personas)</li>
+                        <li><i class="fas fa-check"></i> Traslado: hotel - aeropuerto - hotel </li>
+                        <li><i class="fas fa-check"></i> Vuelo privado o compartido (según reserva)</li>
+                        <li><i class="fas fa-check"></i> Piloto profesional </li>
+                        <li><i class="fas fa-check"></i> Guía en español o inglés</li>
                     </ul>
                 </div>
                 <div class="not-included">
                     <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
                     <ul>
-                        <li><i class="fas fa-times"></i> Gastos personales, snacks o bebidas adicionales</li>
-                        <li><i class="fas fa-times"></i> Alquiler de bastones o caballos</li>
-                        <li><i class="fas fa-times"></i> Seguro de viaje personal</li>
-                        <li><i class="fas fa-times"></i> Propinas</li>
+                        <li><i class="fas fa-times"></i> Seguro de viaje</li>
+                        <li><i class="fas fa-times"></i> Tips </li>
                     </ul>
                 </div>
             </div>
             <div class="important-notes">
                 <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
                 <ul>
-                    <li>Se requiere documento de identidad válido</li>
-                    <li>Cancelación hasta 24 horas antes</li>
+                    <li>Llevar cámara con buena lente (ideal para fotografía aérea)</li>
+                    <li>Vestimenta abrigadora (temperaturas más bajas en altitud)</li>
+                    <li>No recomendable para personas con vértigo severo o problemas cardíacos sin consulta médica previa</li>
+                </ul>
+                <br>
+                <p><strong><?= $p_15 ?></strong></p>
+                <ul>
+                    <li><strong>Punto de partida:</strong> recojo de su hotel y traslado al Aeropuerto Internacional Alejandro Velasco Astete (Cusco)</li>
+                    <li><strong>Briefing previo al vuelo:</strong> Bienvenida, presentación del piloto, revisión de medidas de seguridad y descripción de la ruta.</li>
+                </ul>
+                <p><strong><?= $p_16 ?></strong></p>
+                <ul>
+                    <li>Aterrizaje en el Aeropuerto Velasco Astete.</li>
+                    <li>Despedida y entrega del certificado de vuelo (opcional para experiencias premium).</li>
                 </ul>
             </div>
         </div>
@@ -382,7 +395,6 @@ $seo = [
             </div>
         </div>
     </section>
-
     <!-- Formulario de Reserva Lateral -->
     <div class="booking-sidebar" id="bookingSidebar">
         <div class="booking-form-container">
@@ -579,6 +591,7 @@ function hideMessage() {
 // Establecer fecha mínima como hoy
 document.getElementById('tourDate').min = new Date().toISOString().split('T')[0];
 </script>
+    
 
     <script>
         // Smooth scrolling para enlaces internos

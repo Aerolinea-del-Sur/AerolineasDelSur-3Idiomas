@@ -1,31 +1,32 @@
 @extends('a_EncabezadoFooter.princi')
 
 @php
-// Custom SEO for Tour Vinicunca
+// Custom SEO for Tour Tesoros de Cusco
 $seo = [
-    'title' => 'Tour Vinicunca Montaña 7 Colores | Excursión desde Cusco',
-    'description' => 'Tour a Vinicunca, la famosa Montaña de 7 Colores en Cusco. Excursión de 1 día con guía experto, transporte y alimentación incluida desde Cusco.',
-    'keywords' => 'tour vinicunca, montaña 7 colores, rainbow mountain peru, excursión cusco vinicunca, tour rainbow mountain',
-    'og_image' => asset('img/tours/vinicunca-7-colores.jpg'),
-    'canonical' => url(app()->getLocale() . '/tour-vinicunca'),
+    'title' => 'Tour Tesoros de Cusco | City Tour y Ruinas Incas',
+    'description' => 'Tour Tesoros de Cusco: visita Sacsayhuamán, Qenqo, Puka Pukara y Tambomachay. City tour completo con guía experto por los principales sitios arqueológicos.',
+    'keywords' => 'tour tesoros cusco, city tour cusco, sacsayhuaman tour, ruinas incas cusco, tour arqueológico',
+    'og_image' => asset('img/tours/tesoros-cusco.jpg'),
+    'canonical' => url('/tour-tesoros-cusco'),
 ];
 @endphp
 @section('content')
 
 <?php
-    $h1_1 = 'Montaña de Siete Colores';
-    $p_1 = 'Descubre la montaña arcoiris en una excursión por Cusco.';
+    $h1_1 = 'Tesoros del Cusco';
+    $p_1 = 'Descubre Valle Sagrado y Machu Picchu en un tour exclusivo';
 
         $h2_1 = 'Detalles del Tour';
-        $p_2 = 'Vive una experiencia única en la Montaña de 7 Colores</strong>, también conocida como Vinicunca, una de las maravillas naturales más impresionantes del Cusco. Disfruta de un recorrido que combina paisajes andinos, caminata al aire libre y vistas inolvidables de la montaña multicolor a más de 5,000 m s.n.m. Una aventura inolvidable que te mostrara la naturaleza y la grandeza de los Andes.';
+        $p_2 = '¿Poco tiempo y muchas ganas de descubrir lo mejor de Cusco?</strong> Esta experiencia está pensada para viajeros que desean aprovechar al máximo cada instante. En solo 2 días y 1 noche recorrerás el Valle Sagrado de los Incas, un lugar con historia, cultura y paisajes deslumbrantes; finalizaras visitando Machu Picchu, la joya del mundo andino y una de las Siete Maravillas del Mundo Moderno.';
+
                 $h4_1 = 'Grupo Máximo';
-                $p_3 = '6 personas';
+                $p_3 = '10 Personas';
 
                 $h4_2 = 'Edad Mínima';
                 $p_4 = 'Ninguna';
 
                 $h4_3 = 'Duración';
-                $p_5 = '1 día';
+                $p_5 = '2 días y 1 noche';
 
             $h3_1 = 'Galería de Imágenes';
 
@@ -33,65 +34,66 @@ $seo = [
 
             $h3_2 = 'Aspectos Destacados';
 
-                $h4_4 = 'Vinicunca';
-                $p_6 = 'Conoceras la Montaña de 7 Colores, un lugar colorido con paisajes impresionantes.';
+                $h4_4 = 'Machu Picchu';
+                $p_6 = 'Conoceras la Ciudadela Inca en un recorrido de 2 horas.';
 
-                $h4_5 = 'Fotografía Paisajes';
-                $p_7 = 'Captura tomas espectaculares de los pueblos, paisajes y costrucciones milenarias.';
+                $h4_5 = 'Valle Sagrado';
+                $p_7 = 'Recorreras varios destinos llenos de historia, tradición y vestigios inca.';
 
-                $h4_6 = 'Historia y vistas';
-                $p_8 = 'El guía te narrará la historia del lugar mientras recorres el sendero hasta la montaña.';
+                $h4_6 = 'Fotografía Paisajes';
+                $p_8 = 'Captura tomas espectaculares de los pueblos, paisajes y costrucciones milenarias.';
+
+                $h4_7 = 'Historia en cada rincón';
+                $p_9 = 'El guía te narrará la historia de cada lugar y te mostrará pueblos, mercados y los vestigios de la cultura inca.';
 
             $h3_3 = 'Estadísticas del Tour';
         
         $h2_3 = 'Itinerario Detallado';
 
-                $h4_7 = '1. Recojo y salida temprana';
-                $p_9 = 'Nuestro recorrido inicia muy temprano, entre las 4:00 y 4:30 a.m., con el recojo desde tu alojamiento en Cusco. Partimos hacia el sur de la región, disfrutando del amanecer entre montañas y pintorescos paisajes andinos.';
+                $h4_8 = 'Día 1 - Recorrido por el Valle Sagrado';
+                $p_10 = 'Salimos por la mañana desde tu hotel en Cusco rumbo a los paisajes andinos del Valle Sagrado, donde la historia y la naturaleza se entrelazan.';
+                $p_10_1 = '- Comenzamos con una visita del majestuoso Centro Arqueológico de Pisac, ubicado sobre una colina con vistas impresionantes al valle.';
+                $p_10_2 = '- Luego descendemos al colorido mercado artesanal de Pisac, ideal para descubrir textiles, cerámica, platería y productos hechos a mano por las comunidades locales.';
+                $p_10_3 = '- Continuamos el recorrido hacia el corazón del valle para disfrutar de un almuerzo buffet con ingredientes andinos y cocina fusión andina internacional.';
+                $p_10_4 = '- Por la tarde, visitamos la enigmática fortaleza de Ollantaytambo, una joya inca viva rodeada de misterio y arquitectura monumental.';
+                $p_10_5 = '- Pernocte en Ollantaytambo, en un acogedor hotel del pueblo, lo que te permitirá descansar sin prisas y estar listo para la gran experiencia del día siguiente.';
 
-                $h4_8 = '2. Desayuno en Cusipata';
-                $p_10 = 'Tras dos horas de viaje, llegamos a la localidad de Cusipata, donde te espera un desayuno nutritivo elaborado con insumos locales, perfecto para cargar energías antes de la caminata.';
-
-                $h4_9 = '3. Inicio de la caminata';
-                $p_11 = 'Continuamos el trayecto en transporte por 40 minutos adicionales hasta llegar al punto de partida, ubicado a unos 4,000 m.s.n.m. Desde aquí comienza la caminata de aproximadamente 2 horas, rodeados de montañas, aire fresco y un entorno tranquilo.';
-
-                $h4_10 = '4. Llegada a la Montaña Arcoíris';
-                $p_12 = 'Alcanzamos la cima de Vinicunca a 5,036 m.s.n.m., donde serás testigo de un espectáculo natural único: las formaciones geológicas que dan vida a la famosa Montaña de 7 Colores. Tendrás tiempo libre para contemplar el paisaje y tomar fotografías.';
-
-                $h4_11 = '5. Retorno y almuerzo';
-                $p_13 = 'Iniciamos el descenso de 2 horas hasta encontrarnos nuevamente con nuestro transporte. De regreso en Cusipata, disfrutaremos de un almuerzo tradicional andino que pondrá el broche final a la experiencia.';
-
-                $h4_12 = '6. Regreso a Cusco';
-                $p_14 = 'Finalmente, retornamos a la ciudad del Cusco con llegada aproximada entre las 4:00 y 4:30 p.m., cerrando una jornada inolvidable.';
+                $h4_9 = 'Día 2 - Visita a Machu Picchu';
+                $p_11 = 'Despierta temprano para vivir uno de los momentos más esperados de tu viaje.';
+                $p_11_1 = '- Traslado a la estación de Ollantaytambo para abordar el tren con destino a Aguas Calientes, disfrutando de paisajes selváticos y quebradas impresionantes.';
+                $p_11_2 = '- Al llegar, tomamos el bus que nos llevará montaña arriba hasta la ciudadela de Machu Picchu, una de las maravillas más espectaculares del mundo.';
+                $p_11_3 = '- Disfruta de una visita guiada de 2 horas y media, donde recorrerás templos, andenes y miradores junto a un guía experto que te revelará los secretos de esta ciudad sagrada, según el circuito que se obtuvo.';
+                $p_11_4 = '- Luego del recorrido, regresamos en bus a Aguas Calientes, donde tendrás tiempo libre para almorzar a tu ritmo, comprar recuerdos o recorrer sus encantadoras calles.';
+                $p_11_5 = '- Por la tarde, abordarás el tren de retorno a Ollantaytambo y desde allí un transporte turístico te llevará de vuelta a Cusco, con llegada directa al centro de la ciudad. Allí te espera un taxi para llevarte a tu hotel.';
 
         $h2_4 = 'Inclusiones del Tour';
 
             $h3_4 = 'Incluido';
             $h3_5 = 'No Incluido';
 
-                $h4_13 = 'Notas Importantes';
+                $h4_14 = 'Notas Importantes';
 
         $h2_5 = 'Otros Tours Recomendados';
 
-                $h4_14 = 'Líneas de Nazca';
-                $p_17 = 'Descubre los misteriosos geoglifos desde el aire en este tour de día completo.';
+                $h4_15 = 'Líneas de Nazca';
+                $p_18 = 'Descubre los misteriosos geoglifos desde el aire en este tour de día completo.';
 
-                $h4_15 = 'Vuelo Amazónico';
-                $p_18 = 'Explora la selva peruana desde las alturas y observa la biodiversidad única.';
+                $h4_16 = 'Vuelo Amazónico';
+                $p_19 = 'Explora la selva peruana desde las alturas y observa la biodiversidad única.';
 
-                $h4_16 = 'Costa Peruana';
-                $p_19 = 'Sobrevuela la hermosa costa del Pacífico y las islas Ballestas.';
+                $h4_17 = 'Costa Peruana';
+                $p_20 = 'Sobrevuela la hermosa costa del Pacífico y las islas Ballestas.';
 
             $h3_6 = 'Reserva tu Tour';
 
-            $p_20 = '* Campos obligatorios. Te contactaremos en 24 horas para confirmar tu reserva.';
+            $p_21 = '* Campos obligatorios. Te contactaremos en 24 horas para confirmar tu reserva.';
 ?>
 
     <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">
     <!-- Sección Hero -->
     <section class="tour-hero">
         <div class="hero-background">
-            <img src="https://images.pexels.com/photos/6921111/pexels-photo-6921111.jpeg" alt="Machu Picchu desde el aire">
+            <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Machu Picchu desde el aire">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -102,11 +104,10 @@ $seo = [
             <h1 class="tour-title"><?= $h1_1 ?></h1>
             <p class="tour-subtitle"><?= $p_1 ?></p>
 
-
             <div class="tour-meta">
                 <div class="meta-item">
                     <i class="fas fa-clock"></i>
-                    <span>1 día</span>
+                    <span>2.5 horas</span>
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-users"></i>
@@ -153,19 +154,20 @@ $seo = [
                 </div>
                 <div class="gallery-section">
                     <h3><?= $h3_1 ?></h3>
-                    <div class="image-carousel">
-                        <div class="carousel-container" id="carouselContainer">
+                        <div class="image-carousel">
+                            <div id="carouselContainer" class="carousel-container">
                             <div class="carousel-slide active">
-                                <img src="/public/img/tours/vinicunca-1.jpg" alt="Vista aérea de Machu Picchu">
+                                <img src="/public/img/tours/tesoros-del-cusco-1.jpg" alt="Vista aérea de Machu Picchu">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/public/img/tours/vinicunca-2.jpg" alt="Valle Sagrado desde el aire">
+                                <img src="/public/img/tours/tesoros-del-cusco-2.jpg" alt="Valle Sagrado desde el aire">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/public/img/tours/vinicunca-3.jpg" alt="Montañas andinas">
+                                <img src="/public/img/tours/tesoros-del-cusco-3.jpg" alt="Montañas andinas y naturaleza">      
                             </div>
                             <div class="carousel-slide">
-                                <img src="/public/img/tours/vinicunca-4.jpg" alt="Río Urubamba">
+                                <img src="/public/img/tours/tesoros-del-cusco-4.jpg" alt="Río Urubamba">
+                            </div>
                             </div>
                         </div>
                         <button class="carousel-btn prev" onclick="moveSlide(-1)">
@@ -200,14 +202,19 @@ $seo = [
                             <p><?= $p_6 ?></p>
                         </div>
                         <div class="highlight-item">
-                            <i class="fas fa-camera-retro"></i>
+                            <i class="fas fa-water"></i>
                             <h4><?= $h4_5 ?></h4>
                             <p><?= $p_7 ?></p>
                         </div>
                         <div class="highlight-item">
-                            <i class="fas fa-history"></i>
+                            <i class="fas fa-camera-retro"></i>
                             <h4><?= $h4_6 ?></h4>
                             <p><?= $p_8 ?></p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-history"></i>
+                            <h4><?= $h4_7 ?></h4>
+                            <p><?= $p_9 ?></p>
                         </div>
                     </div>
                 </div>
@@ -215,15 +222,15 @@ $seo = [
                     <h3><?= $h3_3 ?></h3>
                     <div class="stats-grid">
                         <div class="stat-item">
-                            <div class="stat-number">1</div>
-                            <div class="stat-label">Día</div>
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Días</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">1</div>
-                            <div class="stat-label">Lugar Turistico</div>
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">Lugares Turisticos</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">7</div>
+                            <div class="stat-number">35</div>
                             <div class="stat-label">Km recorridos</div>
                         </div>
                         <div class="stat-item">
@@ -244,15 +251,15 @@ $seo = [
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h4><?= $h4_7 ?></h4>
-                        <p><?= $p_9 ?></p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
                         <h4><?= $h4_8 ?></h4>
                         <p><?= $p_10 ?></p>
+                        <p>
+                                <br><?= $p_10_1 ?>
+                            <br><br><?= $p_10_2 ?>
+                            <br><br><?= $p_10_3 ?>
+                            <br><br><?= $p_10_4 ?>
+                            <br><br><?= $p_10_5 ?>
+                        </p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -260,27 +267,13 @@ $seo = [
                     <div class="timeline-content">
                         <h4><?= $h4_9 ?></h4>
                         <p><?= $p_11 ?></p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4><?= $h4_10 ?></h4>
-                        <p><?= $p_12 ?></p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4><?= $h4_11 ?></h4>
-                        <p><?= $p_13 ?></p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4><?= $h4_12 ?></h4>
-                        <p><?= $p_14 ?></p>
+                        <p>
+                                <br><?= $p_11_1 ?>
+                            <br><br><?= $p_11_2 ?>
+                            <br><br><?= $p_11_3 ?>
+                            <br><br><?= $p_11_4 ?>
+                            <br><br><?= $p_11_5 ?>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -295,26 +288,28 @@ $seo = [
                 <div class="included">
                     <h3><i class="fas fa-check-circle"></i><?= $h3_4 ?></h3>
                     <ul>
-                        <li><i class="fas fa-check"></i> Transporte turístico (recojo desde el centro histórico de Cusco)</li>
-                        <li><i class="fas fa-check"></i> Entradas a la Montaña de 7 Colores</li>
-                        <li><i class="fas fa-check"></i> Guía profesional bilingüe (español - inglés)</li>
-                        <li><i class="fas fa-check"></i> Desayuno y almuerzo en restaurante local</li>
-                        <li><i class="fas fa-check"></i> Seguridad en ruta: oxígeno, botiquín, teléfonos satelitales y radios</li>
-                        <li><i class="fas fa-check"></i> Servicio en grupo reducido (máx. 19 personas)</li>
+                        <li><i class="fas fa-check"></i> Traslados turísticos desde y hacia tu hotel en Cusco (en el centro de la ciudad)</li>
+                        <li><i class="fas fa-check"></i> Tren turístico de ida y vuelta (categoría Expedition o voagager)</li>
+                        <li><i class="fas fa-check"></i> Tickets de ingreso a todos los sitios arqueológicos</li>
+                        <li><i class="fas fa-check"></i> Almuerzo buffet en el Valle Sagrado</li>
+                        <li><i class="fas fa-check"></i> Guía oficial bilingüe durante las visitas</li>
+                        <li><i class="fas fa-check"></i> 1 noche de alojamiento en hotel 3★ en Ollantaytambo</li>
+                        <li><i class="fas fa-check"></i> Asistencia permanente durante todo el viaje</li>
                     </ul>
                 </div>
                 <div class="not-included">
                     <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
                     <ul>
-                        <li><i class="fas fa-times"></i> Gastos personales, snacks o bebidas adicionales</li>
-                        <li><i class="fas fa-times"></i> Alquiler de bastones o caballos</li>
+                        <li><i class="fas fa-times"></i> Desayuno del primer día</li>
+                        <li><i class="fas fa-times"></i> Almuerzo en Machu Picchu</li>
                         <li><i class="fas fa-times"></i> Seguro de viaje personal</li>
                         <li><i class="fas fa-times"></i> Propinas</li>
+                        <li><i class="fas fa-times"></i> Seguros de viaje (se les recomienda tener uno)</li>
                     </ul>
                 </div>
             </div>
             <div class="important-notes">
-                <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
+                <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_14 ?></h4>
                 <ul>
                     <li>Se requiere documento de identidad válido</li>
                     <li>Cancelación hasta 24 horas antes</li>
@@ -334,8 +329,8 @@ $seo = [
                         <div class="tour-badge">POPULAR</div>
                     </div>
                     <div class="tour-content">
-                        <h4><?= $h4_14 ?></h4>
-                        <p><?= $p_17 ?></p>
+                        <h4><?= $h4_15 ?></h4>
+                        <p><?= $p_18 ?></p>
                         <div class="tour-details">
                             <span><i class="fas fa-clock"></i> 1.5 horas</span>
                             <span><i class="fas fa-users"></i> 4 personas</span>
@@ -351,8 +346,8 @@ $seo = [
                         <div class="tour-badge">NUEVO</div>
                     </div>
                     <div class="tour-content">
-                        <h4><?= $h4_15 ?></h4>
-                        <p><?= $p_18 ?></p>
+                        <h4><?= $h4_16 ?></h4>
+                        <p><?= $p_19 ?></p>
                         <div class="tour-details">
                             <span><i class="fas fa-clock"></i> 3 horas</span>
                             <span><i class="fas fa-users"></i> 6 personas</span>
@@ -368,8 +363,8 @@ $seo = [
                         <div class="tour-badge">EXCLUSIVO</div>
                     </div>
                     <div class="tour-content">
-                        <h4><?= $h4_16 ?></h4>
-                        <p><?= $p_19 ?></p>
+                        <h4><?= $h4_17 ?></h4>
+                        <p><?= $p_20 ?></p>
                         <div class="tour-details">
                             <span><i class="fas fa-clock"></i> 2.5 horas</span>
                             <span><i class="fas fa-users"></i> 5 personas</span>
@@ -382,7 +377,6 @@ $seo = [
             </div>
         </div>
     </section>
-
     <!-- Formulario de Reserva Lateral -->
     <div class="booking-sidebar" id="bookingSidebar">
         <div class="booking-form-container">
@@ -434,7 +428,7 @@ $seo = [
                     <i class="fas fa-paper-plane"></i>
                     Enviar Solicitud
                 </button>
-                <p class="form-note"><?= $p_20 ?></p>
+                <p class="form-note"><?= $p_21 ?></p>
             </form>
         </div>
     </div>
@@ -579,7 +573,6 @@ function hideMessage() {
 // Establecer fecha mínima como hoy
 document.getElementById('tourDate').min = new Date().toISOString().split('T')[0];
 </script>
-
     <script>
         // Smooth scrolling para enlaces internos
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {

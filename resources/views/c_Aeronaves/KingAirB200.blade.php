@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for King Air B200
+$aircraft_model = 'King Air B200';
 $seo = [
-    'title' => 'Beechcraft King Air B200 | Avión Ejecutivo en Perú',
-    'description' => 'King Air B200: avión turbohélice ejecutivo de  10 pasajeros. Ideal para vuelos corporativos, transporte médico y operaciones regionales en Perú.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'avión turbohélice ejecutivo de 10 pasajeros'], __('aircraft.seo.description_template')),
     'keywords' => 'king air b200 perú, beechcraft b200 cusco, avión ejecutivo turbohélice, vuelos corporativos perú',
     'og_image' => asset('img/aeronaves/aviones/Air-King-B200.webp'),
-    'canonical' => url('/aeronaves/KingAirB200'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/KingAirB200'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'KING AIR';
     $h1_1_2 = 'B200';
 
-    $p_1 = 'Excelencia en Aviación Comercial';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
+        $h2_1 = __('aircraft.description');
         $p_2 = 'El Beechcraft King Air B200 (parte de la familia Super King Air) es un avión bimotor turbohélice producido por Beechcraft (hoy Textron Aviation). Es reconocido mundialmente por su versatilidad, fiabilidad y capacidad de operar en pistas cortas y no preparadas, lo que lo convierte en un favorito tanto para aviación ejecutiva, aerolíneas regionales, transporte médico (ambulancia aérea) y operaciones militares.';
         $p_3 = 'El King Air B200 tiene una cabina presurizada para hasta 10 pasajeros, con interiores ejecutivos configurables, lo que le da un balance entre eficiencia operativa y comodidad.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
+            $h3_1 = __('aircraft.model');
             $p_4 = 'King Air B200';
 
-            $h3_2 = 'Año de Fabricación';
+            $h3_2 = __('aircraft.year');
             $p_5 = '1981';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Beechcraft';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '545 km/h';
 
-            $h3_5 = 'Alcance Máximo';
+            $h3_5 = __('aircraft.max_range');
             $p_8 = '3,440 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '10,668 metros';
 
-            $h3_7 = 'Consumo de Combustible';
+            $h3_7 = __('aircraft.fuel_consumption');
             $p_10 = '115 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '10 pasajeros';
 
-            $h3_9 = 'Autonomía';
+            $h3_9 = __('aircraft.autonomy');
             $p_12 = '3,440 km';
 
-            $h3_10 = 'Capacidad de Carga';
+            $h3_10 = __('aircraft.cargo_capacity');
             $p_13 = '5,670 kg';
 
-            $h3_11 = 'Longitud';
+            $h3_11 = __('aircraft.length');
             $p_14 = '13,50 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El King Air B200 opera en las principales rutas nacionales, conectando destinos estratégicos en Perú.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')
