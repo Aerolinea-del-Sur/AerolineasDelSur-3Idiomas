@@ -82,26 +82,7 @@
             <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('favicon.ico') }}">
             <link rel="manifest" href="{{ asset('site.webmanifest') }}">
             <meta name="theme-color" content="#C9A227">
-        <!-- Twitter Card 
-            <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:title" content="Aerolínea del Sur - Vuelos Privados en Perú">
-            <meta name="twitter:description" content="Descubre experiencias únicas de aviación privada en Perú con Aerolínea del Sur.">
-            <meta name="twitter:image" content="https://tusitio.com/imagenes/twitter-image.jpg">
-            /* Datos estructurados (JSON-LD)*/
-            <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                "name": "Russell Experience",
-                "url": "https://tusitio.com",
-                "logo": "https://tusitio.com/imagenes/logo.png",
-                "contactPoint": {
-                    "@type": "ContactPoint",
-                    "telephone": "+51 946 033 024",
-                    "contactType": "Customer Service"
-                }
-            } 
-            </script>-->
+            
             <!-- Bootstrap CSS - carga asíncrona -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
             <noscript>
