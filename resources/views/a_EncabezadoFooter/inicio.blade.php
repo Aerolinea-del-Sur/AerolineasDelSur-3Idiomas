@@ -125,23 +125,45 @@ $seo = [
 ?>
     <!-- presentacion -->
     <link rel="stylesheet" href="{{ asset('public/css/paginas/inicio.min.css') }}">
+    
+    <!-- Preload del contenido crítico del hero -->
+    <style>
+        /* CSS crítico inline para renderizado inmediato del hero text */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(28,28,28,0.8) 100%);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 80px 20px;
+        }
+    </style>
+    
     <section class="hero-section">
-        <!-- Slider de imágenes de fondo -->
-        <div class="hero-slider">
-            <!-- PERSONALIZAR: Cambiar las URLs por las imágenes de tu empresa -->
-            <div class="hero-slide active">
-                <video autoplay muted loop playsinline class="hero-video">
-                    <source src="{{ asset('/public/video/portada-aerolinea-del-sur.mp4') }}" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
-
+        <!-- Contenido prioritario - se renderiza PRIMERO -->
         <div class="hero-content">
             <h1 class="hero-title"> <?= $h1_1 ?> <span class="highlight"> <?= $h1_2 ?> </span></h1>
             <p class="hero-subtitle" style="text-align: center;">
                 <?= $p1_1 ?>
             </p>
+        </div>
+        
+        <!-- Video de fondo - carga diferida DESPUÉS del contenido -->
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <video autoplay muted loop playsinline class="hero-video" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Crect fill='%231c1c1c' width='1920' height='1080'/%3E%3C/svg%3E" loading="lazy">
+                    <source src="{{ asset('/public/video/portada-aerolinea-del-sur.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
     </section>
     
