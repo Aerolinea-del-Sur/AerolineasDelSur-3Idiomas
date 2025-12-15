@@ -57,6 +57,9 @@
             <link rel="preconnect" href="https://cdn.jsdelivr.net">
             <link rel="preconnect" href="https://cdnjs.cloudflare.com">
             
+            <!-- Precarga de recursos críticos -->
+            <link rel="preload" as="image" href="{{ asset('img/vder.svg') }}">
+            <link rel="preload" as="image" href="{{ asset('img/vizq.svg') }}">
             <!-- Critical Logo Preload -->
             <link rel="preload" as="image" href="{{ asset('img/logo.svg') }}" type="image/svg+xml">
             
