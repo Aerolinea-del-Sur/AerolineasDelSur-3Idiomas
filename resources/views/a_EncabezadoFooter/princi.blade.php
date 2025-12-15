@@ -616,7 +616,7 @@
                 // Cerrar menú móvil al hacer clic fuera
                 document.addEventListener('click', function(event) {
                     const mobileMenu = document.getElementById('mobileMenu');
-                    const menuBtn = document.querySelector('.mobile-menu-btn');
+                    const menuBtn = document.querySelector('.mobile-menu-btn') || document.querySelector('.hamburger-btn');
                     
                     if (mobileMenu && menuBtn && 
                         !mobileMenu.contains(event.target) && 
