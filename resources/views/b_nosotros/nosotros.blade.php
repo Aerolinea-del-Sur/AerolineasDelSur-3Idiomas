@@ -1,68 +1,68 @@
-@extends('a_EncabezadoFooter.princi')
+@extends('a_Enc abezadoFooter.princi')
 
 @php
 // Custom SEO for Nosotros page
 $seo = [
-    'title' => 'Sobre Nosotros | Aerolínea del Sur - Aviación Peruana de Confianza',
-    'description' => 'Aerolínea peruana fundada en 2024 con capital 100% nacional. Misión, visión y valores enfocados en seguridad, excelencia e innovación en servicios aéreos.',
+    'title' => __('about.seo.title'),
+    'description' => __('about.seo.description'),
     'keywords' => 'aerolínea peruana, aviación cusco, empresa aérea perú, vuelos seguros perú, historia aerolínea del sur',
     'og_image' => asset('img/nosotros-aerolinea-sur.jpg'),
-    'canonical' => url('/nosotros'),
+    'canonical' => url(app()->getLocale() . '/nosotros'),
 ];
 @endphp
 
 @section('content')
     <?php
-        $h1_1 = 'Nosotros';
-        $p_1 = 'Conozca nuestra historia y valores';
+        $h1_1 = __('about.hero.title');
+        $p_1 = __('about.hero.subtitle');
 
-        $h2_1 = 'Nuestra Misión';
-        $p_2 = 'Conectar el Perú mediante servicios aéreos seguros y personalizados que superen las expectativas de nuestros clientes.';
-        $p_3 = 'Operamos con los más altos estándares de calidad, innovación constante y compromiso con las comunidades donde trabajamos.';
+        $h2_1 = __('about.mission.title');
+        $p_2 = __('about.mission.content1');
+        $p_3 = __('about.mission.content2');
 
-            $h2_2 = 'Nuestra Visión';
-            $p_4 = 'Ser la aerolínea líder en Perú y Latinoamérica, reconocida por ofrecer experiencias aéreas exclusivas y seguras.';
-            $p_5 = 'Permitimos a nuestros pasajeros descubrir destinos espectaculares con innovación, confort y servicio personalizado de clase mundial.';
+            $h2_2 = __('about.vision.title');
+            $p_4 = __('about.vision.content1');
+            $p_5 = __('about.vision.content2');
 
-            $h2_3 = 'Nuestro Propósito';
-            $p_6 = 'Ser la aerolínea líder del Perú y Latinoamérica, reconocida a nivel nacional e internacional por ofrecer experiencias aéreas exclusivas y personalizadas que permitan a nuestros pasajeros descubrir los destinos más espectaculares, con seguridad, confort e innovación.';
-            $p_7 = 'Existimos para transformar la manera en que las personas viajan, haciendo que cada experiencia sea memorable, significativa y valiosa.';
+            $h2_3 = __('about.purpose.title');
+            $p_6 = __('about.purpose.content1');
+            $p_7 = __('about.purpose.content2');
 
-            $h2_4 = 'Nuestros Valores';
+            $h2_4 = __('about.values.title');
 
-                $h3_1 = 'Excelencia';
-                $p_8 = 'Ofrecer un servicio de calidad superior en cada experiencia de vuelo';
+                $h3_1 = __('about.values.excellence');
+                $p_8 = __('about.values.excellence_desc');
 
-                $h3_2 = 'Integridad';
-                $p_9 = 'Actuar con honestidad y transparencia en todas nuestras operaciones';
+                $h3_2 = __('about.values.integrity');
+                $p_9 = __('about.values.integrity_desc');
 
-                $h3_3 = 'Seguridad';
-                $p_11 = 'Mantener los más altos estándares de seguridad en cada vuelo';
+                $h3_3 = __('about.values.safety');
+                $p_11 = __('about.values.safety_desc');
 
-                $h3_4 = 'Innovación';
-                $p_12 = 'Implementar tecnología de vanguardia para mejorar la experiencia';
+                $h3_4 = __('about.values.innovation');
+                $p_12 = __('about.values.innovation_desc');
 
-                $h3_5 = 'Pasión';
-                $p_13 = 'Amor por la aviación y dedicación en cada servicio que brindamos';
+                $h3_5 = __('about.values.passion');
+                $p_13 = __('about.values.passion_desc');
 
-                $h3_6 = 'Compromiso';
-                $p_14 = 'Dedicación total con nuestros clientes y la comunidad peruana';
+                $h3_6 = __('about.values.commitment');
+                $p_14 = __('about.values.commitment_desc');
 
 
                 $h3_7 = '2024';
-                    $h4_1 = 'Fundación con visión peruana';
-                    $p_15 = 'Nace Aerolínea del Sur con capital 100% peruano. Un equipo de pilotos y profesionales de la aviación se une para mostrar la grandeza del Perú desde el cielo, priorizando la seguridad, la exclusividad y el servicio personalizado.';
+                    $h4_1 = __('about.history.2024_title');
+                    $p_15 = __('about.history.2024_desc');
 
                 $h3_8 = '2025';
-                    $h4_2 = 'Primeras rutas exclusivas';
-                    $p_16 = 'Inauguramos nuestras primeras rutas sobre el Valle Sagrado y Cusco. Conectamos a viajeros con el patrimonio cultural peruano desde una perspectiva aérea única y memorable.';
+                    $h4_2 = __('about.history.2025_title');
+                    $p_16 = __('about.history.2025_desc');
                 
-                $h3_9 = 'Hoy';
-                    $h4_3 = 'Mirando al futuro';
-                    $p_17 = 'Continuamos brindando un servicio de calidad y expandiendo nuestro alcance con nuevos aviones y servicios tursticos.';
+                $h3_9 = __('about.history.today');
+                    $h4_3 = __('about.history.today_title');
+                    $p_17 = __('about.history.today_desc');
 
-            $h2_5 = '¿Quieres saber más?';
-            $p_18 = 'Estamos aquí para responder a todas tus preguntas y ayudarte a conocer más sobre nuestra empresa.';
+            $h2_5 = __('about.cta.title');
+            $p_18 = __('about.cta.subtitle');
     ?>
 <link rel="stylesheet" href="{{ asset('css/paginas/nosotros.css') }}">
     <!-- Encabezado de la página -->

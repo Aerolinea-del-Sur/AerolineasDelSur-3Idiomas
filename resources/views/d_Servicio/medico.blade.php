@@ -3,11 +3,11 @@
 @php
 // Custom SEO for Medico page
 $seo = [
-    'title' => 'Transporte Aéreo Médico en Perú | Ambulancia Aérea Certificada',
-    'description' => 'Servicio aeromédico especializado 24/7 en Perú. Evacuaciones médicas y traslado de pacientes. Reservas solo por llamada y correo electrónico.',
+    'title' => __('services.aeromedical.seo.title'),
+    'description' => __('services.aeromedical.seo.description'),
     'keywords' => 'ambulancia aérea perú, transporte médico aéreo, evacuación médica cusco, traslado aéreo pacientes, servicio aeromédico',
     'og_image' => asset('img/servicio-aeromedico.jpg'),
-    'canonical' => url('/aeromedico'),
+    'canonical' => url(app()->getLocale() . '/aeromedico'),
 ];
 @endphp
 
@@ -92,9 +92,9 @@ $seo = [
 
 @section('content')
 <?php
-    $h1_page = 'Transporte Aéreo Médico Certificado';
-    $breadcrumb = 'Inicio / Servicios / Aeromédico';
-    $h2_form = 'Reserva de Helicóptero';
+    $h1_page = __('services.aeromedical.title');
+    $breadcrumb = __('services.aeromedical.breadcrumb');
+    $h2_form = __('services.aeromedical.form_title', ['default' => 'Reserva de Helicóptero']);
 ?>
 
 <!-- Medical White Theme Styles -->

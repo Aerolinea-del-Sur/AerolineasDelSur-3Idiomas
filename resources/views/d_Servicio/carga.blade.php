@@ -3,11 +3,11 @@
 @php
 // Custom SEO for Carga page
 $seo = [
-    'title' => 'Transporte Aéreo de Carga en Perú | Envíos Urgentes Certificados',
-    'description' => 'Carga aérea en Perú: helicóptero para carga externa gasiferías y transporte médico. Mi-8 MTV1 y Antonov AN-32B para carga interna/externa perecible, médica y valorada.',
+    'title' => __('services.cargo.seo.title'),
+    'description' => __('services.cargo.seo.description'),
     'keywords' => 'carga aérea perú, transporte urgente aéreo, envío helicóptero, carga pesada perú, logística aérea cusco',
     'og_image' => asset('img/carga-aerea-peru.jpg'),
-    'canonical' => url('/carga'),
+    'canonical' => url(app()->getLocale() . '/carga'),
 ];
 @endphp
 
@@ -92,9 +92,9 @@ $seo = [
 
 @section('content')
 <?php
-    $h1_page = 'Transporte Aéreo de Carga Especializada';
-    $breadcrumb = 'Inicio / Servicios / Carga Aérea';
-    $h2_form = 'Reserva de aeronave';
+    $h1_page = __('services.cargo.title');
+    $breadcrumb = __('services.cargo.breadcrumb');
+    $h2_form = __('services.cargo.form_title', ['default' => 'Reserva de aeronave']);
 ?>
 
 <link rel="stylesheet" href="{{ asset('css/paginas/aeronaves/aeronaves.css') }}">

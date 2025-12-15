@@ -3,55 +3,55 @@
 @php
 // Custom SEO for Sobrevuelos page
 $seo = [
-    'title' => 'Sobrevuelos Turísticos en Perú | Tours Aéreos sobre Cusco y Valle Sagrado',
-    'description' => 'Descubre Perú desde las alturas con nuestros sobrevuelos turísticos. Vinicunca, Valle Sagrado, Machu Picchu y más destinos espectaculares en tours aéreos exclusivos desde Cusco.',
+    'title' => __('services.overflights.seo.title'),
+    'description' => __('services.overflights.seo.description'),
     'keywords' => 'sobrevuelos cusco, tour aéreo valle sagrado, sobrevuelo vinicunca, montaña 7 colores helicóptero, machu picchu helicóptero, tours aéreos perú',
     'og_image' => asset('img/sobrevuelos-cusco.jpg'),
-    'canonical' => url('/sobrevuelos'),
+    'canonical' => url(app()->getLocale() . '/sobrevuelos'),
 ];
 @endphp
 
 @section('content')
 <?php
-    $h1_1_1 = 'Descubre el Mundo';
-    $h1_1_2 = 'Desde las Alturas';
-    $p_1 = 'Explora destinos únicos con nuestros sobrevuelos y vive experiencias inolvidables';
+    $h1_1_1 = __('services.overflights.hero.title1', ['default' => 'Descubre el Mundo']);
+    $h1_1_2 = __('services.overflights.hero.title2', ['default' => 'Desde las Alturas']);
+    $p_1 = __('services.overflights.subtitle');
 
-        $h2_1 = 'Nuestros Sobrevuelos';
-        $p_2 = 'Descubre los lugares más espectaculares del Perú desde una perspectiva única';
+        $h2_1 = __('services.overflights.featured_title');
+        $p_2 = __('services.overflights.subtitle');
 
-        $h2_2 = 'Andes Mágicos';
-        $p_3 = 'Descubre la montaña de 7 colores, nevado Ausangate, valle rojo, complejos arqueológicos del Cusco, Pisac junto al Valle Sagrado finalizando con las salineras de Maras.';
+        $h2_2 = __('services.overflights.andes.title', ['default' => 'Andes Mágicos']);
+        $p_3 = __('services.overflights.andes.desc', ['default' => 'Descubre la montaña de 7 colores, nevado Ausangate, valle rojo, complejos arqueológicos del Cusco, Pisac junto al Valle Sagrado finalizando con las salineras de Maras.']);
 
-        $h2_3 = 'Tesoros del Cusco';
-        $p_4 = 'Descubre Valle Sagrado y Machu Picchu en un tour exclusivo por los principales atractivos del Cusco.';
+        $h2_3 = __('services.overflights.treasures.title', ['default' => 'Tesoros del Cusco']);
+        $p_4 = __('services.overflights.treasures.desc', ['default' => 'Descubre Valle Sagrado y Machu Picchu en un tour exclusivo por los principales atractivos del Cusco.']);
 
-        $h2_4 = 'Valle Sagrado';
-        $p_5 = 'Descubre Sacsayhuamán, Tambomachay, Pisac, Valle Sagrado, Maras y Laguna de Huaypo desde las alturas.';
+        $h2_4 = __('services.overflights.sacred_valley.title', ['default' => 'Valle Sagrado']);
+        $p_5 = __('services.overflights.sacred_valley.desc', ['default' => 'Descubre Sacsayhuamán, Tambomachay, Pisac, Valle Sagrado, Maras y Laguna de Huaypo desde las alturas.']);
 
-        $h2_5 = 'Montaña de Siete Colores';
-        $p_6 = 'Descubre la montaña arcoíris Vinicunca en una excursión por Cusco, una de las maravillas naturales más impresionantes del Perú.';
+        $h2_5 = __('services.overflights.rainbow_mountain.title', ['default' => 'Montaña de Siete Colores']);
+        $p_6 = __('services.overflights.rainbow_mountain.desc', ['default' => 'Descubre la montaña arcoíris Vinicunca en una excursión por Cusco, una de las maravillas naturales más impresionantes del Perú.']);
 
-        $h2_6 = 'Vinicunca';
-        $p_7 = 'Visitamos Vinicunca, Palcoyo, Ausangate, Valle Rojo y Cuatro Lagunas en una experiencia exclusiva desde las alturas.';
+        $h2_6 = __('services.overflights.vinicunca.title', ['default' => 'Vinicunca']);
+        $p_7 = __('services.overflights.vinicunca.desc', ['default' => 'Visitamos Vinicunca, Palcoyo, Ausangate, Valle Rojo y Cuatro Lagunas en una experiencia exclusiva desde las alturas.']);
 
-        $h2_7 = 'Machu Picchu';
-        $p_8 = 'Visita la ciudadela inca más famosa del mundo y contempla su majestuosidad desde las alturas en un tour inolvidable.';
+        $h2_7 = __('services.overflights.machu_picchu.title', ['default' => 'Machu Picchu']);
+        $p_8 = __('services.overflights.machu_picchu.desc', ['default' => 'Visita la ciudadela inca más famosa del mundo y contempla su majestuosidad desde las alturas en un tour inolvidable.']);
 
         // Contacto
-        $h2_8 = '¿Listo para tu Próxima Aventura?';
-        $p_9 = 'Contáctanos para reservar tu tour aéreo y vivir una experiencia inolvidable';
+        $h2_8 = __('home.cta.title', ['default' => '¿Listo para tu Próxima Aventura?']);
+        $p_9 = __('home.cta.subtitle', ['default' => 'Contáctanos para reservar tu tour aéreo y vivir una experiencia inolvidable']);
 
-        $h2_9 = '¿Listo para tu Próxima Aventura?';
-        $p_10 = 'Contáctanos para reservar tu tour aéreo y vivir una experiencia inolvidable desde las alturas';
+        $h2_9 = __('home.cta.title');
+        $p_10 = __('home.cta.subtitle');
 
-                $h4_1 = 'Teléfono';
+                $h4_1 = __('common.contact.phone', ['default' => 'Teléfono']);
                 $p_11 = '+51 932 475 995';
 
-                $h4_2 = 'Email';
+                $h4_2 = __('common.contact.email', ['default' => 'Email']);
                 $p_12 = 'contacto@aerolineadelsur.com.pe';
 
-                $h4_3 = 'Ubicación';
+                $h4_3 = __('common.contact.location', ['default' => 'Ubicación']);
                 $p_13 = 'Cusco, Perú';        
 ?>
 

@@ -3,11 +3,11 @@
 @php
 // Custom SEO for Vuelos page
 $seo = [
-    'title' => 'Vuelos Charter Privados en Perú | Aerolínea del Sur',
-    'description' => 'Vuelos charter privados nacionales e internacionales en Perú. Flota moderna, pilotos certificados y servicio exclusivo para negocios, eventos y viajes familiares.',
+    'title' => __('services.flights.seo.title'),
+    'description' => __('services.flights.seo.description'),
     'keywords' => 'vuelos charter perú, vuelos privados cusco, alquiler avión privado perú, charter ejecutivo, vuelos negocios cusco',
     'og_image' => asset('img/vuelos-privados-peru.jpg'),
-    'canonical' => url('/vuelos'),
+    'canonical' => url(app()->getLocale() . '/vuelos'),
 ];
 @endphp
 
@@ -19,42 +19,42 @@ $seo = [
     "mainEntity": [
         {
             "@type": "Question",
-            "name": "¿Qué destinos cubren nuestros vuelos chárter?",
+            "name": "{{ __('services.flights.faq.q1') }}",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Conectamos cada rincón del Perú, desde la costa hasta la Amazonía, y las principales capitales de Sudamérica. Diseñamos vuelos chárter a medida que se adaptan a tu agenda, garantizando acceso directo a destinos exclusivos de negocios o placer."
+                "text": "{{ __('services.flights.faq.a1') }}"
             }
         },
         {
             "@type": "Question",
-            "name": "¿Cómo puedo hacer una reserva?",
+            "name": "{{ __('services.flights.faq.q2') }}",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Puedes hacer tu reserva a través de nuestro sitio web, llamando a nuestro centro de atención al cliente o visitando una de nuestras oficinas. También puedes enviarnos un correo a contacto@aerolineadelsur.com.pe para obtener ayuda personalizada."
+                "text": "{{ __('services.flights.faq.a2') }}"
             }
         },
         {
             "@type": "Question",
-            "name": "¿Cuál es la política de equipaje?",
+            "name": "{{ __('services.flights.faq.q3') }}",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Aerolinea del Sur permite un máximo de 23 kg de equipaje por pasajero. Este estándar es esencial para mantener la operatividad y eficiencia de nuestros vuelos privados."
+                "text": "{{ __('services.flights.faq.a3') }}"
             }
         },
         {
             "@type": "Question",
-            "name": "¿Qué medidas de seguridad aplica Aerolínea del Sur en sus operaciones?",
+            "name": "{{ __('services.flights.faq.q4') }}",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Cumplimos con todos los estándares internacionales de seguridad aérea. Nuestras aeronaves reciben mantenimiento regular certificado, nuestros pilotos tienen entrenamiento continuo, y seguimos protocolos estrictos de seguridad en tierra y vuelo."
+                "text": "{{ __('services.flights.faq.a4') }}"
             }
         },
         {
             "@type": "Question",
-            "name": "¿Ofrecen programas de viajero frecuente?",
+            "name": "{{ __('services.flights.faq.q5') }}",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí, nuestro programa Cielos del Sur ofrece beneficios exclusivos como acumulación de millas, upgrades gratuitos, acceso a salas VIP, y prioridad en check-in. Únete gratis y comienza a disfrutar de privilegios desde tu primer vuelo."
+                "text": "{{ __('services.flights.faq.a5') }}"
             }
         }
     ]
@@ -70,20 +70,20 @@ $seo = [
         {
             "@type": "ListItem",
             "position": 1,
-            "name": "Inicio",
-            "item": "{{ url('/') }}"
+            "name": "{{ __('common.nav.home') }}",
+            "item": "{{ url(app()->getLocale()) }}"
         },
         {
             "@type": "ListItem",
             "position": 2,
-            "name": "Servicios",
-            "item": "{{ url('/servicio') }}"
+            "name": "{{ __('common.footer.services') }}",
+            "item": "{{ url(app()->getLocale() . '/servicio') }}"
         },
         {
             "@type": "ListItem",
             "position": 3,
-            "name": "Vuelos Charter",
-            "item": "{{ url('/vuelos') }}"
+            "name": "{{ __('common.nav.flights') }}",
+            "item": "{{ url(app()->getLocale() . '/vuelos') }}"
         }
     ]
 }
@@ -92,9 +92,9 @@ $seo = [
 
 @section('content')
 <?php
-    $h1_page = 'Vuelos Charter Privados en Perú';
-    $breadcrumb = 'Inicio / Servicios / Vuelos Privados';
-    $h2_form = 'Reserva de Vuelo Privado';
+    $h1_page = __('services.flights.title');
+    $breadcrumb = __('services.flights.breadcrumb');
+    $h2_form = __('services.flights.form_title');
 ?>
 
 
@@ -116,30 +116,30 @@ $seo = [
             
             <div class="heli-form-head">
                 <h2 class="heli-section-title"><?= $h2_form ?></h2>
-                <p style="color: #ccc; font-size: 14px; margin-top: 8px;">Complete el formulario para solicitar información</p>
+                <p style="color: #ccc; font-size: 14px; margin-top: 8px;">{{ __('services.flights.form_subtitle') }}</p>
             </div>
 
             <div class="heli-form-personal">
                 <div class="heli-field">
-                    <input class="heli-input" type="text" id="nombres_apellidos" name="nombres_apellidos" placeholder="Nombres y Apellidos *" required>
+                    <input class="heli-input" type="text" id="nombres_apellidos" name="nombres_apellidos" placeholder="{{ __('services.form.name') }} *" required>
                 </div>
                 <div class="heli-field">
-                    <input class="heli-input" type="email" id="correo" name="correo" placeholder="Correo electrónico *" required>
+                    <input class="heli-input" type="email" id="correo" name="correo" placeholder="{{ __('services.form.email') }} *" required>
                 </div>
                 <div class="heli-field">
-                    <input class="heli-input" type="tel" id="telefono" name="telefono" placeholder="Teléfono *" required pattern="[0-9+\s-]{7,20}">
+                    <input class="heli-input" type="tel" id="telefono" name="telefono" placeholder="{{ __('services.form.phone') }} *" required pattern="[0-9+\s-]{7,20}">
                 </div>
             </div>
             
             <div class="heli-actions">
                 <button type="button" class="heli-btn btn-whatsapp" onclick="enviarWhatsApp('vuelos')">
-                    <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+                    <i class="fab fa-whatsapp"></i> {{ __('services.form.send_whatsapp') }}
                 </button>
                 <button type="button" class="heli-btn btn-outlook" onclick="enviarOutlook('vuelos')">
-                    <i class="far fa-envelope"></i> Enviar por Outlook
+                    <i class="far fa-envelope"></i> {{ __('services.form.send_outlook') }}
                 </button>
                 <button type="button" class="heli-btn btn-gmail" onclick="enviarGmail('vuelos')">
-                    <i class="far fa-envelope"></i> Enviar por Gmail
+                    <i class="far fa-envelope"></i> {{ __('services.form.send_gmail') }}
                 </button>
             </div>
         </form>
@@ -261,19 +261,19 @@ $seo = [
 <!-- Alcance del Servicioijo -->
 <section class="heli-fleet-section" style="padding-top:40px;">
     <div class="heli-container">
-        <h2 class="heli-section-title">Alcance de Nuestros Vuelos Charter</h2>
+        <h2 class="heli-section-title">{{ __('services.flights.scope_title') }}</h2>
         <div style="max-width:900px; margin:0 auto; text-align:center; margin-bottom:30px;">
             <p style="font-size:18px; color:#ccc; line-height:1.8;">
-                Operamos <strong style="color:#D4AF37;">vuelos charter privados nacionales e internacionales</strong> con cobertura completa en todo el territorio peruano y conexiones a destinos internacionales en América Latina y el mundo.
+                {{ __('services.flights.scope_desc') }}
             </p>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px; margin-top:30px;">
                 <div style="background:rgba(212,175,55,0.1); padding:20px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
-                    <h3 style="color:#D4AF37; margin-bottom:10px; font-size:20px; font-weight:600;">Vuelos Nacionales dentro de Perú</h3>
-                    <p style="color:#ccc; font-size:15px;">Conexiones a todas las ciudades principales del Perú</p>
+                    <h3 style="color:#D4AF37; margin-bottom:10px; font-size:20px; font-weight:600;">{{ __('services.flights.scope_national') }}</h3>
+                    <p style="color:#ccc; font-size:15px;">{{ __('services.flights.scope_national_desc') }}</p>
                 </div>
                 <div style="background:rgba(212,175,55,0.1); padding:20px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
-                    <h3 style="color:#D4AF37; margin-bottom:10px; font-size:20px; font-weight:600;">Vuelos Internacionales desde Perú</h3>
-                    <p style="color:#ccc; font-size:15px;">Destinos en América Latina y conexiones globales</p>
+                    <h3 style="color:#D4AF37; margin-bottom:10px; font-size:20px; font-weight:600;">{{ __('services.flights.scope_international') }}</h3>
+                    <p style="color:#ccc; font-size:15px;">{{ __('services.flights.scope_international_desc') }}</p>
                 </div>
             </div>
         </div>
@@ -284,7 +284,7 @@ $seo = [
 
 <section class="heli-fleet-section">
     <div class="heli-container">
-        <h2 class="heli-section-title">Nuestras Aeronaves</h2>
+        <h2 class="heli-section-title">{{ __('services.flights.fleet_title') }}</h2>
         
         <?php
         $aeronaves = [
@@ -466,18 +466,18 @@ $seo = [
                 <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/' . $avion['img']) }}')">
                     <div class="aircraft-overlay">
                         <div class="aircraft-details">
-                            <p>Capacidad: <?= $avion['capacidad'] ?></p>
-                            <p>Velocidad: <?= $avion['velocidad'] ?></p>
-                            <p>Peso Max: <?= $avion['peso'] ?></p>
+                            <p>{{ __('services.capacity') }}: <?= $avion['capacidad'] ?></p>
+                            <p>{{ __('services.speed') }}: <?= $avion['velocidad'] ?></p>
+                            <p>{{ __('services.weight') }}: <?= $avion['peso'] ?></p>
                         </div>
                     </div>
                 </div>
                 <div class="aircraft-info">
                     <h3 class="aircraft-name"><?= $avion['name'] ?></h3>
                     <div class="aircraft-types">
-                        <span class="aircraft-type transport">Transporte</span>
+                        <span class="aircraft-type transport">{{ __('services.transport') }}</span>
                     </div>
-                    <div class="view-details-btn">Ver más información</div>
+                    <div class="view-details-btn">{{ __('services.view_more') }}</div>
                 </div>
             </a>
             <?php endforeach; ?>
@@ -566,7 +566,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section class="heli-blogs-section">
     <div class="heli-container">
-        <h2 class="heli-section-title">Blog y Noticias de Aviación</h2>
+        <h2 class="heli-section-title">{{ __('services.flights.blog_title') }}</h2>
         <div class="heli-articles-grid">
             <article class="article-card">
                 <div class="article-image">
@@ -620,18 +620,18 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
 
 <?php
-    $h1_7 = 'Preguntas Frecuentes';
-    $p_17 = 'Encuentra respuestas a las preguntas más comunes sobre nuestros servicios';
-    $h3_8 = '¿Qué destinos cubren nuestros vuelos chárter?';
-    $p_18 = 'Conectamos cada rincón del Perú, desde la costa hasta la Amazonía, y las principales capitales de Sudamérica. Diseñamos vuelos chárter a medida que se adaptan a tu agenda, garantizando acceso directo a destinos exclusivos de negocios o placer.';
-    $h3_9 = '¿Cómo puedo hacer una reserva?';
-    $p_19 = 'Puedes hacer tu reserva a través de nuestro sitio web, llamando a nuestro centro de atención al cliente o visitando una de nuestras oficinas. También puedes enviarnos un correo a contacto@aerolineadelsur.com.pe para obtener ayuda personalizada.';
-    $h3_10 = '¿Cuál es la política de equipaje?';
-    $p_20 = 'Aerolinea del Sur permite un máximo de 23 kg de equipaje por pasajero. Este estándar es esencial para mantener la operatividad y eficiencia de nuestros vuelos privados.';
-    $h3_11 = '¿Qué medidas de seguridad aplica Aerolínea del Sur en sus operaciones?';
-    $p_21 = 'Cumplimos con todos los estándares internacionales de seguridad aérea. Nuestras aeronaves reciben mantenimiento regular certificado, nuestros pilotos tienen entrenamiento continuo, y seguimos protocolos estrictos de seguridad en tierra y vuelo.';
-    $h3_12 = '¿Ofrecen programas de viajero frecuente?';
-    $p_22 = 'Sí, nuestro programa Cielos del Sur ofrece beneficios exclusivos como acumulación de millas, upgrades gratuitos, acceso a salas VIP, y prioridad en check-in. Únete gratis y comienza a disfrutar de privilegios desde tu primer vuelo';
+    $h1_7 = __('services.flights.faq.title');
+    $p_17 = __('services.flights.faq.subtitle');
+    $h3_8 = __('services.flights.faq.q1');
+    $p_18 = __('services.flights.faq.a1');
+    $h3_9 = __('services.flights.faq.q2');
+    $p_19 = __('services.flights.faq.a2');
+    $h3_10 = __('services.flights.faq.q3');
+    $p_20 = __('services.flights.faq.a3');
+    $h3_11 = __('services.flights.faq.q4');
+    $p_21 = __('services.flights.faq.a4');
+    $h3_12 = __('services.flights.faq.q5');
+    $p_22 = __('services.flights.faq.a5');
 ?>
 
 <section class="heli-faq-section faq-section">

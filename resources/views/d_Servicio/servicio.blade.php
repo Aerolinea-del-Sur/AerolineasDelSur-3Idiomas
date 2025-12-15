@@ -3,36 +3,36 @@
 @php
 // Custom SEO for Servicio page
 $seo = [
-    'title' => 'Servicios de Aviación en Perú | Vuelos, Helicópteros, Médico y Carga',
-    'description' => 'Servicios completos de aviación en Perú: vuelos chárter, helicópteros, sobrevuelos turísticos, transporte aeromédico y carga aérea especializada desde Cusco.',
+    'title' => __('services.main.seo.title'),
+    'description' => __('services.main.seo.description'),
     'keywords' => 'servicios aviación perú, vuelos charter cusco, transporte aéreo perú, servicios helicóptero, aviación ejecutiva',
     'og_image' => asset('img/servicios-aviacion.jpg'),
-    'canonical' => url('/servicio'),
+    'canonical' => url(app()->getLocale() . '/servicio'),
 ];
 @endphp
 
 @section('content')
 <?php
-    $h1_1 = 'Servicios de Aviación en Perú';
-    $p_1 = 'Soluciones aéreas completas y personalizadas para todas sus necesidades';
+    $h1_1 = __('services.main.title');
+    $p_1 = __('services.main.subtitle');
 
-            $h3_1 = 'Vuelos Chárter';
-            $p_2 = 'Vuelos privados adaptados a las necesidades de tiempo, destino y protocolo. Ideales para negocios, deportes, giras, instituciones y también para familias o particulares que buscan una alternativa a las aerolíneas comerciales.';
+            $h3_1 = __('common.nav.flights');
+            $p_2 = __('services.main.flights_desc');
 
-            $h3_2 = 'Sobrevuelos';
-            $p_3 = 'Reservas rápidas a precios competitivos. Aeronaves exclusivas con atención personalizada, catering a medida y embarque.';
+            $h3_2 = __('common.nav.overflights');
+            $p_3 = __('services.main.overflights_desc');
 
-            $h3_3 = 'Helicóptero';
-            $p_4 = 'Medio de transporte rápido, flexible y elegante para grupos pequeños o cargas valiosas. Ideal en rutas urbanas e interurbanas, con nuestros servicios especializados de helicóptero para transporte rápido, rescate y acceso a zonas de difícil alcance.';
+            $h3_3 = __('common.nav.helicopter');
+            $p_4 = __('services.main.helicopter_desc');
 
-            $h3_4 = 'Aero Medico';
-            $p_5 = 'Transporte especializado para pacientes en estado crítico o no, evacuaciones médicas y traslado de órganos. Aeronaves equipadas con tecnología avanzada y personal médico calificado.';
+            $h3_4 = __('common.nav.aeromedical');
+            $p_5 = __('services.main.aeromedical_desc');
 
-            $h3_5 = 'Carga';
-            $p_6 = 'Servicio de vuelos chárter de carga con diferentes tipos de aeronaves, desde jets pequeños hasta aviones de gran capacidad. Garantiza entregas urgentes y de grandes volúmenes en tiempo récord.';
+            $h3_5 = __('common.nav.cargo');
+            $p_6 = __('services.main.cargo_desc');
 
-        $h2_1 = '¿Listo para volar?';
-        $p_7 = 'Contáctanos ahora y descubre cómo podemos hacer realidad tu próximo vuelo';
+        $h2_1 = __('services.main.cta_title');
+        $p_7 = __('services.main.cta_desc');
 ?>
 <link rel="stylesheet" href="{{ asset('public/css/paginas/Servicio.css') }}">
     <!-- Encabezado de la página -->
@@ -141,7 +141,7 @@ $seo = [
         <div class="services-contact-section">
             <h2><?= $h2_1 ?></h2>
             <p><?= $p_7 ?></p>
-            <a href="contacto" class="services-contact-btn">Contactar Ahora</a>
+            <a href="{{url(app()->getLocale() . '/contacto')}}" class="services-contact-btn">{{ __('common.button.contact', ['default' => 'Contactar Ahora']) }}</a>
         </div>
     </div>
 @endsection

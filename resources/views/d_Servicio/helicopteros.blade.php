@@ -3,11 +3,11 @@
 @php
 // Custom SEO for Helicopteros page
 $seo = [
-    'title' => 'Servicio de Helicóptero en Cusco y Perú | Aerolínea del Sur',
-    'description' => 'Servicio de helicóptero en Perú: vuelos ejecutivos, carga externa, aeromédico y servicios para minería, gasiferías y petroliferas. Cobertura en mar, costa, sierra y selva.',
+    'title' => __('services.helicopter.seo.title'),
+    'description' => __('services.helicopter.seo.description'),
     'keywords' => 'helicóptero cusco, sobrevuelo valle sagrado, transporte helicóptero perú, tour helicóptero machu picchu, vuelos panorámicos cusco',
     'og_image' => asset('img/helicoptero-cusco.jpg'),
-    'canonical' => url('/helicopteros'),
+    'canonical' => url(app()->getLocale() . '/helicopteros'),
 ];
 @endphp
 
@@ -92,9 +92,9 @@ $seo = [
 
 @section('content')
 <?php
-    $h1_page = 'Servicio de Helicóptero en Perú';
-    $breadcrumb = 'Inicio / Servicios / Helicóptero';
-    $h2_form = 'Reserva de Helicóptero';
+    $h1_page = __('services.helicopter.title');
+    $breadcrumb = __('services.helicopter.breadcrumb');
+    $h2_form = __('services.helicopter.form_title', ['default' => 'Reserva de Helicóptero']);
 ?>
 
 <link rel="stylesheet" href="{{ asset('css/paginas/aeronaves/aeronaves.css') }}">
