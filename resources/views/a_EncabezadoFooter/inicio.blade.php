@@ -6,7 +6,7 @@ $seo = [
     'title' => 'Aerolínea del Sur | Vuelos Privados y Charter en Perú',
     'description' => 'Servicios aéreos premium en Perú: vuelos charter personalizados, helicópteros, transporte médico certificado y carga especializada. Seguridad garantizada desde Cusco.',
     'keywords' => 'vuelos privados perú, charter cusco, helicóptero cusco, transporte aéreo médico perú, carga aérea, sobrevuelos valle sagrado',
-    'og_image' => asset('img/portada-aerolinea.jpg'),
+    'og_image' => asset('img/portada-home.mp4'),
     'canonical' => url('/'),
 ];
 @endphp
@@ -200,7 +200,7 @@ $seo = [
                     if (typeof isMobile !== 'undefined' && !isMobile) {
                         document.write(
                             '<video autoplay muted loop playsinline class="hero-video" poster="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1920 1080\'%3E%3Crect fill=\'%231c1c1c\' width=\'1920\' height=\'1080\'/%3E%3C/svg%3E">' +
-                            '<source src="{{ asset("video/portada-home.mp4") }}" type="video/mp4">' +
+                            '<source src="{{ asset("/img/video/portada-home.mp4") }}" type="video/mp4">' +
                             '</video>'
                         );
                     }
