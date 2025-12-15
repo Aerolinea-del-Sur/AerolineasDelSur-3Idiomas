@@ -624,6 +624,103 @@ $seo = [
             <p style="color:var(--medical-gray); font-size:18px; margin:0;">Flota especializada para traslados aeromédicos</p>
         </div>
         <div class="fleet-grid">
+            
+            <style>
+                /* Aircraft Cards White Theme */
+                .fleet-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 24px;
+                    margin-top: 32px;
+                }
+                
+                .aircraft-card {
+                    background: #FFFFFF;
+                    border: 2px solid #e2e8f0;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+                }
+                
+                .aircraft-card:hover {
+                    border-color: var(--medical-gold);
+                    transform: translateY(-8px);
+                    box-shadow: 0 12px 24px rgba(212,175,55,0.15);
+                }
+                
+                .aircraft-image {
+                    height: 220px;
+                    background-size: cover;
+                    background-position: center;
+                    position: relative;
+                }
+                
+                .aircraft-overlay {
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.8) 100%);
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                    display: flex;
+                    align-items: flex-end;
+                    padding: 20px;
+                }
+                
+                .aircraft-card:hover .aircraft-overlay {
+                    opacity: 1;
+                }
+                
+                .aircraft-details {
+                    color: white;
+                    font-size: 14px;
+                }
+                
+                .aircraft-details p {
+                    margin: 4px 0;
+                }
+                
+                .aircraft-info {
+                    padding: 20px;
+                }
+                
+                .aircraft-name {
+                    color: var(--medical-black);
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin: 0 0 12px 0;
+                }
+                
+                .aircraft-types {
+                    display: flex;
+                    gap: 8px;
+                    margin-bottom: 12px;
+                }
+                
+                .aircraft-type {
+                    padding: 6px 12px;
+                    border-radius: 6px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    background: linear-gradient(135deg, var(--medical-green) 0%, #059669 100%);
+                    color: white;
+                }
+                
+                .view-details-btn {
+                    color: var(--medical-gold);
+                    font-size: 14px;
+                    font-weight: 600;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 6px;
+                    transition: all 0.3s ease;
+                }
+                
+                .view-details-btn:hover {
+                    color: var(--medical-green);
+                    transform: translateX(4px);
+                }
+            </style>
             <a href="/aeronaves/Mi8-mtv1" class="aircraft-card" style="text-decoration: none; color: inherit;">
                 <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/Mi8-mtv1.webp') }}')">
                     <div class="aircraft-overlay">
@@ -705,9 +802,116 @@ $seo = [
     </div>
 </section>
 
-<section class="heli-blogs-section">
-    <div class="heli-container">
-        <h2 class="heli-section-title">Blog</h2>
+<!-- Blog Section White Theme -->
+<section style="background:#FFFFFF; padding:80px 20px;">
+    <div style="max-width:1200px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:48px;">
+            <h2 style="color:var(--medical-black); font-size:36px; font-weight:700; margin:0 0 16px 0;">Blog Médico</h2>
+            <p style="color:var(--medical-gray); font-size:18px; margin:0;">Últimas noticias y consejos sobre transporte aeromédico</p>
+        </div>
+        
+        <style>
+            .heli-articles-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 28px;
+            }
+            
+            .article-card {
+                background: #FFFFFF;
+                border: 2px solid #e2e8f0;
+                border-radius: 16px;
+                overflow: hidden;
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            }
+            
+            .article-card:hover {
+                border-color: var(--medical-gold);
+                transform: translateY(-8px);
+                box-shadow: 0 12px 24px rgba(212,175,55,0.12);
+            }
+            
+            .article-image {
+                height: 200px;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .article-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            .article-category {
+                position: absolute;
+                top: 16px;
+                left: 16px;
+                background: linear-gradient(135deg, var(--medical-gold) 0%, #C5A028 100%);
+                color: white;
+                padding: 6px 14px;
+                border-radius: 20px;
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+            
+            .article-content {
+                padding: 24px;
+            }
+            
+            .article-meta {
+                display: flex;
+                gap: 16px;
+                margin-bottom: 12px;
+                font-size: 13px;
+                color: var(--medical-gray);
+            }
+            
+            .article-meta span {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            }
+            
+            .article-meta i {
+                color: var(--medical-gold);
+            }
+            
+            .article-title {
+                color: var(--medical-black);
+                font-size: 19px;
+                font-weight: 700;
+                margin: 0 0 12px 0;
+                line-height: 1.4;
+            }
+            
+            .article-excerpt {
+                color: var(--medical-gray);
+                font-size: 15px;
+                line-height: 1.6;
+                margin: 0 0 16px 0;
+            }
+            
+            .article-link {
+                color: var(--medical-gold);
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                transition: all 0.3s ease;
+            }
+            
+            .article-link:hover {
+                color: var(--medical-green);
+                transform: translateX(4px);
+            }
+        </style>
+        
         <div class="heli-articles-grid">
             <article class="article-card">
                 <div class="article-image">
@@ -924,6 +1128,26 @@ $seo = [
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    // FAQ Toggle Functionality
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', function() {
+            const isActive = item.classList.contains('active');
+            // Close all other items
+            faqItems.forEach(other => {
+                if (other !== item) other.classList.remove('active');
+            });
+            // Toggle current item
+            if (isActive) {
+                item.classList.remove('active');
+            } else {
+                item.classList.add('active');
+            }
+        });
+    });
+    
+    // Form Handler
     const form = document.querySelector('#servicioForm');
     
     // Verificar que el formulario existe
