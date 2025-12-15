@@ -45,6 +45,7 @@ $seo = [
         min-height: 70vh;
         position: relative;
         overflow: hidden;
+        padding-top: 120px;
     }
     
     .medical-header::before {
