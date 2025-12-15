@@ -146,6 +146,7 @@ $seo = [
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-background">
+            
             <!-- Video de fondo de Vimeo con audio -->
             <div class="bg-video">
                 <iframe 
