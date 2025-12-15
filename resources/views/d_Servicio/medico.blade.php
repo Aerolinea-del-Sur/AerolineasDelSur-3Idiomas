@@ -1146,7 +1146,7 @@ $seo = [
                 margin: 0;
             }
         </style>
-    <h2 style="color:var(--medical-black); font-size:36px; font-weight:700; margin:0 0 16px 0;"><?= $h1_7 ?></h2>
+    <h3 style="color:var(--medical-black); font-size:36px; font-weight:700; margin:0 0 16px 0;"><?= $h1_7 ?></h3>
             <p style="color:var(--medical-gray); font-size:18px; margin:0;"><?= $p_17 ?></p>
         </div>
 
