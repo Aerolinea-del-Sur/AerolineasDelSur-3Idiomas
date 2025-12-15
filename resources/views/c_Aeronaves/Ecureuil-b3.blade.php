@@ -163,16 +163,16 @@ $seo = [
                         <div class="new-carousel-container">
                             <div class="new-carousel-track">
                                 <div class="new-carousel-slide current-slide">
-                                    <img src="/public/img/aeronaves/aviones/Ecureuil-b3.webp" alt="" class="carousel-image">
+                                    <img src="/public/img/aeronaves/aviones/Ecureuil-b3.webp" alt="Helicóptero Eurocopter Ecureuil B3 para sobrevuelos turísticos en Cusco y Perú" class="carousel-image">
                                 </div>
                                 <div class="new-carousel-slide">
-                                    <img src="/public/img/aeronaves/aviones/Ecureuil-b3.webp" alt="" class="carousel-image">
+                                    <img src="/public/img/aeronaves/aviones/Ecureuil-b3.webp" alt="Helicóptero Eurocopter Ecureuil B3 para sobrevuelos turísticos en Cusco y Perú" class="carousel-image">
                                 </div>
                                 <div class="new-carousel-slide">
-                                    <img src="/public/img/aeronaves/aviones/Ecureuil-b3.webp" alt="" class="carousel-image">
+                                    <img src="/public/img/aeronaves/aviones/Ecureuil-b3.webp" alt="Helicóptero Eurocopter Ecureuil B3 para sobrevuelos turísticos en Cusco y Perú" class="carousel-image">
                                 </div>
                                 <div class="new-carousel-slide">
-                                    <img src="/public/img/aeronaves/aviones/Ecureuil-b3.webp" alt="" class="carousel-image">
+                                    <img src="/public/img/aeronaves/aviones/Ecureuil-b3.webp" alt="Helicóptero Eurocopter Ecureuil B3 para sobrevuelos turísticos en Cusco y Perú" class="carousel-image">
                                 </div>
                             </div>
                         </div>
@@ -295,7 +295,7 @@ $seo = [
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="/public/img/aeronaves/aviones/Ecureuil-b3.webp" alt="" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
+                            <img src="/public/img/aeronaves/aviones/Ecureuil-b3.webp" alt="Helicóptero Ecureuil B3 para tours aéreos y transporte en Perú" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
                         </div>
                     </div>
                 </section>

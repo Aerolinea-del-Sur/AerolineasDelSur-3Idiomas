@@ -405,7 +405,7 @@ $h3_14 = 'Solicitar Información';
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="public/img/aeronaves/aviones/Challenger300.webp" alt=""
+                            <img src="public/img/aeronaves/aviones/Challenger300.webp" alt="Bombardier Challenger 300 jet ejecutivo premium para vuelos charter en Perú"
                                 style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
                         </div>
                     </div>

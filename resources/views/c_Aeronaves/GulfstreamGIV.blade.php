@@ -398,7 +398,7 @@ $seo = [
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="public/img/aeronaves/aviones/GulfstreamGiv.webp" alt="" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
+                            <img src="public/img/aeronaves/aviones/GulfstreamGiv.webp" alt="Gulfstream GIV jet de lujo para vuelos charter de largo alcance desde Perú" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
                         </div>
                     </div>
                 </section>

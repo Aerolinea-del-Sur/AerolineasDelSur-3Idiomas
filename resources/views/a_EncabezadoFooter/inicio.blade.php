@@ -149,7 +149,7 @@ $seo = [
     <section class="tours-section">
         <div class="tours-container">
             <div class="tours-header">
-                <h1> <?= $h1_3 ?> </h1>
+                <h2 style="font-size:32px; font-weight:700; margin-bottom:16px;"> <?= $h1_3 ?> </h2>
                 <p> <?= $p1_2 ?> </p>
             </div>
             <!-- Sección Acordeón Diagonal de Destinos -->
@@ -200,7 +200,7 @@ $seo = [
     <section class="por-que-section" itemscope itemtype="https://schema.org/Service">
         <div class="por-que-container">
             <div class="por-que-header">
-                <h1 itemprop="name"><?= $h1_4 ?></h1>
+                <h2 itemprop="name" style="font-size:32px; font-weight:700; margin-bottom:16px;"><?= $h1_4 ?></h2>
                 <p itemprop="description"><?= $p_5 ?></p>
                 <div class="linea"></div>
             </div>
@@ -299,7 +299,7 @@ $seo = [
     <section class="testimonios-section">
         <div class="testimonios-container">
             <div class="testimonios-header">
-                <h1><?= $h1_5 ?></h1>
+                <h2 style="font-size:32px; font-weight:700; margin-bottom:16px;"><?= $h1_5 ?></h2>
                 <p><?= $p_9 ?></p>
                 <div class="linea"></div>
             </div>
@@ -529,7 +529,7 @@ $seo = [
     <section class="certificaciones-section">
         <div class="certificaciones-container">
             <div class="certificaciones-header">
-                <h1> <?= $h1_6 ?> </h1>
+                <h2 style="font-size:32px; font-weight:700; margin-bottom:16px;"> <?= $h1_6 ?> </h2>
                 <p> <?= $p_16 ?> </p>
                 <div class="linea"></div>
             </div>
@@ -685,7 +685,7 @@ $seo = [
         <div class="faq-container">
             <!-- Header -->
             <div class="faq-header">
-                <h1><?= $h1_7 ?></h1>
+                <h2 style="font-size:32px; font-weight:700; margin-bottom:16px;"><?= $h1_7 ?></h2>
                 <p class="p"><?= $p_17 ?></p>
             </div>
 

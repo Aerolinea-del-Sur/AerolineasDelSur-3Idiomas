@@ -11,6 +11,85 @@ $seo = [
 ];
 @endphp
 
+<!-- FAQ Schema for Rich Snippets -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Qué tipos de carga aérea pueden transportar?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Transportamos carga general, perecibles, equipos industriales, suministros médicos, materiales para gasiferías y minería, carga prioritaria y de alto valor. Disponemos de carga interna y externa en helicóptero."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cuál es el tiempo de entrega para envíos urgentes?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Para envíos urgentes dentro de Perú, ofrecemos entregas el mismo día o en 24 horas dependiendo del destino. Vuelos charter dedicados disponibles para máxima prioridad con tiempos de respuesta desde 2 horas."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cuál es el peso y dimensión máxima de carga?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El Mi-8 MTV1 puede transportar hasta 4,000 kg de carga interna o externa. El Antonov AN-32B maneja hasta 6,700 kg. Para cargas especiales o sobredimensionadas, realizamos evaluación personalizada."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Ofrecen seguimiento en tiempo real del envío?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, proporcionamos seguimiento GPS en tiempo real para todos los envíos, con actualizaciones cada 15 minutos. Notificaciones automáticas en cada etapa: carga, vuelo, descarga y entrega final."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Pueden transportar mercancías peligrosas?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, estamos certificados para transportar mercancías peligrosas cumpliendo regulaciones IATA DGR. Manejamos materiales inflamables, químicos, gases comprimidos y materiales médicos bajo protocolos estrictos de seguridad."
+            }
+        }
+    ]
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "{{ url('/') }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Servicios",
+            "item": "{{ url('/servicio') }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Carga Aérea",
+            "item": "{{ url('/carga') }}"
+        }
+    ]
+}
+</script>
+
+
 @section('content')
 <?php
     $h1_page = 'Transporte Aéreo de Carga Especializada';
@@ -694,7 +773,7 @@ $seo = [
 <section class="heli-faq-section faq-section">
     <div class="heli-container faq-container">
         <div class="faq-header">
-            <h1><?= $h1_7 ?></h1>
+            <h2 style="font-size:28px; font-weight:700; margin-bottom:20px;"><?= $h1_7 ?></h2>
             <p class="p"><?= $p_17 ?></p>
         </div>
 

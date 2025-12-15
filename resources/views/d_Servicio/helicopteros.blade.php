@@ -11,6 +11,85 @@ $seo = [
 ];
 @endphp
 
+<!-- FAQ Schema for Rich Snippets -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Qué tipos de servicios de helicóptero ofrecen en Perú?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ofrecemos vuelos ejecutivos, sobrevuelos turísticos, transporte a zonas remotas, carga externa, servicios aeromédicos, apoyo a minería, gasíferas y petrolíferas. Cubrimos mar, costa, sierra y selva en todo Perú."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cuál es la capacidad de pasajeros de sus helicópteros?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nuestra flota incluye helicópteros con capacidad desde 4 hasta 24 pasajeros dependiendo del modelo. El Ecureuil B3 transporta hasta 5 pasajeros, mientras que el Mi-8 MTV1 puede llevar hasta 24 pasajeros."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Realizan sobrevuelos al Valle Sagrado y Machu Picchu?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, ofrecemos sobrevuelos turísticos al Valle Sagrado, Machu Picchu, Vinicunca (Montaña de 7 Colores), Salineras de Maras y principales atractivos de Cusco. Duración desde 30 minutos hasta tours personalizados."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué medidas de seguridad aplican en vuelos de helicóptero?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Todos nuestros helicópteros cumplen certificaciones internacionales, pilotos con licencias vigentes y experiencia en montaña, mantenimiento preventivo riguroso, y protocolos de seguridad específicos para operaciones en altura en los Andes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Ofrecen servicios de helicóptero para emergencias?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, contamos con servicio aeromédico de emergencia 24/7 en helicóptero, evacuaciones médicas, rescates en zonas remotas y apoyo en situaciones críticas. Equipamiento médico especializado y personal capacitado."
+            }
+        }
+    ]
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "{{ url('/') }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Servicios",
+            "item": "{{ url('/servicio') }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Helicópteros",
+            "item": "{{ url('/helicopteros') }}"
+        }
+    ]
+}
+</script>
+
+
 @section('content')
 <?php
     $h1_page = 'Servicio de Helicóptero en Perú';
@@ -347,7 +426,7 @@ $seo = [
 <section class="heli-faq-section faq-section">
     <div class="heli-container faq-container">
         <div class="faq-header">
-            <h1><?= $h1_7 ?></h1>
+            <h2 style="font-size:28px; font-weight:700; margin-bottom:20px;"><?= $h1_7 ?></h2>
             <p class="p"><?= $p_17 ?></p>
         </div>
 

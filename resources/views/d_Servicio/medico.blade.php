@@ -11,6 +11,85 @@ $seo = [
 ];
 @endphp
 
+<!-- FAQ Schema for Rich Snippets -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Cuentan con certificaciones médicas para transporte aeromédico?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, contamos con todas las certificaciones nacionales e internacionales para transporte aeromédico. Personal médico certificado ACLS/PALS, aeronaves equipadas según normas DGAC, y protocolos de atención pre-hospitalaria avanzada."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué equipamiento médico tienen a bordo?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nuestras aeronaves aeromédicas incluyen: monitor de signos vitales, desfibrilador, ventilador mecánico, bomba de infusión, oxígeno portátil, camilla de traslado, medicamentos de emergencia y equipo de reanimación avanzada completo."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿El servicio aeromédico está disponible 24/7?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, ofrecemos servicio aeromédico de emergencia 24 horas al día, 7 días a la semana, los 365 días del año. Tiempo de respuesta promedio de 30 minutos desde la llamada hasta el despegue."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué zonas del Perú cubren con el servicio aeromédico?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cubrimos todo el territorio peruano: costa, sierra, selva y zonas remotas. Especialistas en evacuaciones desde altura en Andes, Amazonía y áreas mineras. También traslados inter-hospitalarios en Lima, Cusco, Arequipa y principales ciudades."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Realizan evacuaciones médicas internacionales?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, coordinamos evacuaciones médicas internacionales a Chile, Colombia, Ecuador, Brasil y Estados Unidos. Incluye coordinación con hospitales destino, trámites migratorios, seguros médicos y acompañamiento de personal especializado."
+            }
+        }
+    ]
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "{{ url('/') }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Servicios",
+            "item": "{{ url('/servicio') }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Servicio Aeromédico",
+            "item": "{{ url('/aeromedico') }}"
+        }
+    ]
+}
+</script>
+
+
 @section('content')
 <?php
     $h1_page = 'Transporte Aéreo Médico Certificado';

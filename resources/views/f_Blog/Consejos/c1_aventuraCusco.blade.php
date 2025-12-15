@@ -866,7 +866,7 @@ $seo = [
                 <h3>Artículos Relacionados</h3>
                 <div class="related-post">
                     <a href="#" aria-label="Leer: Hoteles Boutique en Cusco">
-                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=320&h=180&fit=crop" alt="" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=320&h=180&fit=crop" alt="Aventura en Cusco - Trekking y senderismo en los Andes peruanos" loading="lazy">
                         <div class="related-post-content">
                             <h4>Hoteles Boutique en Cusco</h4>
                             <small>6 min</small>
@@ -875,7 +875,7 @@ $seo = [
                 </div>
                 <div class="related-post">
                     <a href="#" aria-label="Leer: 7 Días en Cusco">
-                        <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=320&h=180&fit=crop" alt="" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=320&h=180&fit=crop" alt="Montañismo y escalada en la cordillera de Cusco Perú" loading="lazy">
                         <div class="related-post-content">
                             <h4>7 Días en Cusco</h4>
                             <small>9 min</small>
@@ -884,7 +884,7 @@ $seo = [
                 </div>
                 <div class="related-post">
                     <a href="#" aria-label="Leer: Gastronomía Cusqueña">
-                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=320&h=180&fit=crop" alt="" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=320&h=180&fit=crop" alt="Deportes de aventura y turismo extremo en Cusco" loading="lazy">
                         <div class="related-post-content">
                             <h4>Gastronomía Cusqueña</h4>
                             <small>7 min</small>

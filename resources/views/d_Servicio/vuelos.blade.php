@@ -11,6 +11,85 @@ $seo = [
 ];
 @endphp
 
+<!-- FAQ Schema for Rich Snippets -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Qué destinos cubren nuestros vuelos chárter?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Conectamos cada rincón del Perú, desde la costa hasta la Amazonía, y las principales capitales de Sudamérica. Diseñamos vuelos chárter a medida que se adaptan a tu agenda, garantizando acceso directo a destinos exclusivos de negocios o placer."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cómo puedo hacer una reserva?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Puedes hacer tu reserva a través de nuestro sitio web, llamando a nuestro centro de atención al cliente o visitando una de nuestras oficinas. También puedes enviarnos un correo a contacto@aerolineadelsur.com.pe para obtener ayuda personalizada."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cuál es la política de equipaje?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aerolinea del Sur permite un máximo de 23 kg de equipaje por pasajero. Este estándar es esencial para mantener la operatividad y eficiencia de nuestros vuelos privados."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué medidas de seguridad aplica Aerolínea del Sur en sus operaciones?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cumplimos con todos los estándares internacionales de seguridad aérea. Nuestras aeronaves reciben mantenimiento regular certificado, nuestros pilotos tienen entrenamiento continuo, y seguimos protocolos estrictos de seguridad en tierra y vuelo."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Ofrecen programas de viajero frecuente?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, nuestro programa Cielos del Sur ofrece beneficios exclusivos como acumulación de millas, upgrades gratuitos, acceso a salas VIP, y prioridad en check-in. Únete gratis y comienza a disfrutar de privilegios desde tu primer vuelo."
+            }
+        }
+    ]
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "{{ url('/') }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Servicios",
+            "item": "{{ url('/servicio') }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Vuelos Charter",
+            "item": "{{ url('/vuelos') }}"
+        }
+    ]
+}
+</script>
+
+
 @section('content')
 <?php
     $h1_page = 'Vuelos Charter Privados en Perú';
@@ -189,11 +268,11 @@ $seo = [
             </p>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px; margin-top:30px;">
                 <div style="background:rgba(212,175,55,0.1); padding:20px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
-                    <h4 style="color:#D4AF37; margin-bottom:10px;">✈️ Vuelos Nacionales</h4>
+                    <h3 style="color:#D4AF37; margin-bottom:10px; font-size:20px; font-weight:600;">Vuelos Nacionales dentro de Perú</h3>
                     <p style="color:#ccc; font-size:15px;">Conexiones a todas las ciudades principales del Perú</p>
                 </div>
                 <div style="background:rgba(212,175,55,0.1); padding:20px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
-                    <h4 style="color:#D4AF37; margin-bottom:10px;">🌎 Vuelos Internacionales</h4>
+                    <h3 style="color:#D4AF37; margin-bottom:10px; font-size:20px; font-weight:600;">Vuelos Internacionales desde Perú</h3>
                     <p style="color:#ccc; font-size:15px;">Destinos en América Latina y conexiones globales</p>
                 </div>
             </div>
@@ -487,7 +566,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section class="heli-blogs-section">
     <div class="heli-container">
-        <h2 class="heli-section-title">Blog</h2>
+        <h2 class="heli-section-title">Blog y Noticias de Aviación</h2>
         <div class="heli-articles-grid">
             <article class="article-card">
                 <div class="article-image">
@@ -558,7 +637,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <section class="heli-faq-section faq-section">
     <div class="heli-container faq-container">
         <div class="faq-header">
-            <h1><?= $h1_7 ?></h1>
+            <h2 style="font-size:28px; font-weight:700; margin-bottom:20px;"><?= $h1_7 ?></h2>
             <p class="p"><?= $p_17 ?></p>
         </div>
 
