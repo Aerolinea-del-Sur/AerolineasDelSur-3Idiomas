@@ -329,7 +329,7 @@ $seo = [
                             >
                         </div>
                         <div class="author-info">
-                            <h4 itemprop="name"><?= $h4_1 ?></h4>
+                            <h3 itemprop="name" style="font-size:18px; font-weight:600; margin:0;"><?= $h4_1 ?></h3>
                             <span><?= $span_10 ?></span>
                         </div>
                     </div>
@@ -357,7 +357,7 @@ $seo = [
                             >
                         </div>
                         <div class="author-info">
-                            <h4 itemprop="name"><?= $h4_2 ?></h4>
+                            <h3 itemprop="name" style="font-size:18px; font-weight:600; margin:0;"><?= $h4_2 ?></h3>
                             <span><?= $span_11 ?></span>
                         </div>
                     </div>
@@ -385,7 +385,7 @@ $seo = [
                             >
                         </div>
                         <div class="author-info">
-                            <h4 itemprop="name"><?= $h4_3 ?></h4>
+                            <h3 itemprop="name" style="font-size:18px; font-weight:600; margin:0;"><?= $h4_3 ?></h3>
                             <span><?= $span_12 ?></span>
                         </div>
                     </div>
