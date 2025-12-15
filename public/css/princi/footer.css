@@ -14,7 +14,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
+    background:
         radial-gradient(circle at 20% 80%, rgba(201, 162, 39, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, rgba(201, 162, 39, 0.05) 0%, transparent 50%);
     pointer-events: none;
@@ -299,10 +299,14 @@
 /* ===== FOOTER BOTTOM ===== */
 .footer-bottom {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;      /* Centra verticalmente (si tiene altura) */
-    text-align: center;       /* Asegura que el texto esté centrado */
-    padding: 10px 0;          /* Espaciado opcional */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente (si tiene altura) */
+    text-align: center;
+    /* Asegura que el texto esté centrado */
+    padding: 10px 0;
+    /* Espaciado opcional */
 }
 
 .footer-legal {
@@ -354,35 +358,58 @@
 /* ===== RESPONSIVE FOOTER ===== */
 @media (min-width: 1025px) and (max-width: 1199px) {
     .footer-container {
-        padding: 80px 80px 32px;
+        padding: 80px 60px 32px;
     }
-    
+
     .footer-main {
         gap: 50px;
     }
-    
+
     .footer-links {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 36px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 32px;
     }
-    
+
+    .footer-contact-column {
+        grid-column: span 2;
+        border-left: none;
+        border-top: 1px solid rgba(201, 162, 39, 0.2);
+        padding-left: 0;
+        padding-top: 32px;
+        margin-top: 20px;
+    }
+
     .footer-newsletter {
         padding: 40px 32px;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     .footer-container {
-        padding: 80px 80px 32px;
+        padding: 60px 40px 32px;
     }
+
     .footer-main {
         grid-template-columns: 1fr;
-        gap: 60px;
+        gap: 48px;
     }
 
     .footer-links {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 24px;
+    }
+
+    .footer-contact-column {
+        grid-column: span 2;
+        border-left: none;
+        border-top: 1px solid rgba(201, 162, 39, 0.2);
+        padding-left: 0;
+        padding-top: 32px;
+        margin-top: 20px;
+    }
+
+    .footer-contact-info {
+        gap: 16px;
     }
 
     .newsletter-content {
@@ -391,30 +418,46 @@
     }
 }
 
-@media (max-width: 1024px) {
-    .footer-links {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
-}
+
 
 @media (max-width: 768px) {
     .footer-container {
-        padding: 60px 24px 24px;
+        padding: 50px 24px 24px;
     }
 
     .footer-main {
-        gap: 48px;
+        gap: 40px;
     }
 
     .footer-links {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 32px 20px;
-        row-gap: 40px;
+        grid-template-columns: 1fr;
+        gap: 32px;
     }
 
     .footer-column {
-        padding-right: 10px;
+        padding-right: 0;
+    }
+
+    .footer-contact-column {
+        grid-column: 1;
+        border-top: 1px solid rgba(201, 162, 39, 0.2);
+        border-left: none;
+        padding-top: 32px;
+        padding-left: 0;
+        margin-top: 8px;
+    }
+
+    .footer-contact-info {
+        gap: 20px;
+    }
+
+    .contact-info-item {
+        gap: 12px;
+    }
+
+    .contact-icon {
+        font-size: 18px;
+        width: 20px;
     }
 
     .footer-newsletter {
@@ -448,13 +491,13 @@
     .footer-bottom {
         flex-direction: column;
         gap: 24px;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .footer-legal {
         flex-direction: column;
         gap: 16px;
-        align-items: flex-start;
+        align-items: center;
         width: 100%;
     }
 
@@ -462,12 +505,14 @@
         flex-wrap: wrap;
         gap: 16px;
         width: 100%;
+        justify-content: center;
     }
 
     .footer-badges {
         flex-direction: column;
         gap: 12px;
         width: 100%;
+        align-items: center;
     }
 }
 
@@ -496,7 +541,7 @@
             margin: 1rem 0;
             padding: 0.8rem 0;
         }
-        
+
         .contact-item {
             font-size: 0.85rem;
             margin-bottom: 0.4rem;
@@ -553,16 +598,17 @@
         display: block;
     }
 }
+
 /* Asegurar que en pantallas grandes no se aplique el acorde��n */
 @media (min-width: 481px) {
     .footer-title::after {
         display: none !important;
     }
-    
+
     .footer-title {
         cursor: default !important;
     }
-    
+
     .footer-list {
         max-height: none !important;
         opacity: 1 !important;
