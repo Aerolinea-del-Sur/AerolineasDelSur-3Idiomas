@@ -42,7 +42,7 @@ $seo = [
     
     .medical-header {
         background: 
-            linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(240, 249, 255, 0.88) 100%),
+            linear-gradient(135deg, rgba(255, 255, 255, 0.45) 0%, rgba(240, 249, 255, 0.35) 100%),
             url('{{ asset("img/service/medical-jet-bg.jpg") }}') center/cover no-repeat;
         min-height: 70vh;
         position: relative;
@@ -130,13 +130,15 @@ $seo = [
         margin-top: 40px;
     }
     
-    /* Form Card */
+    /* Form Card - Glassmorphism */
     .medical-form-card {
-        background: var(--medical-white);
+        background: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
         padding: 32px;
         border-radius: 16px;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-       border: 2px solid var(--medical-gold);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+        border: 2px solid rgba(212, 175, 55, 0.4);
     }
     
     .form-header {
@@ -233,13 +235,15 @@ $seo = [
         border-color: var(--medical-gold);
     }
     
-    /* Emergency Info Card */
+    /* Emergency Info Card - Glassmorphism */
     .emergency-card {
-        background: linear-gradient(135deg, #d1fae5 0%, #ecfdf5 100%);
+        background: rgba(209, 250, 229, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
         padding: 32px;
         border-radius: 16px;
-        border: 2px solid var(--medical-green);
-        box-shadow: 0 8px 24px rgba(16,185,129,0.15);
+        border: 2px solid rgba(16, 185, 129, 0.5);
+        box-shadow: 0 8px 32px rgba(16,185,129,0.2);
     }
     
     .emergency-title {
