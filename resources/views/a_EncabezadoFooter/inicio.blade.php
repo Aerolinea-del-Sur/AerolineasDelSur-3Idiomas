@@ -160,7 +160,7 @@ $seo = [
         <div class="hero-slider">
             <div class="hero-slide active">
                 <video autoplay muted loop playsinline class="hero-video" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Crect fill='%231c1c1c' width='1920' height='1080'/%3E%3C/svg%3E" loading="lazy">
-                    <source src="{{ asset('/public/video/portada-aerolinea-del-sur.mp4') }}" type="video/mp4">
+                    <source src="{{ asset('/public/video/portada-home.mp4') }}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
