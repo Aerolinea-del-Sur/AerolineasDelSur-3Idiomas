@@ -57,10 +57,6 @@
             <link rel="preconnect" href="https://cdn.jsdelivr.net">
             <link rel="preconnect" href="https://cdnjs.cloudflare.com">
             
-            <!-- Preload de fuentes críticas de Google Fonts -->
-            <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2" crossorigin>
-            <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUXskPMBBSSJLm2E.woff2" crossorigin>
-            
             <!-- Precarga de recursos críticos -->
             <!-- Images -->
             <link rel="preload" as="image" href="{{ asset('img/vder.webp') }}">
@@ -615,7 +611,7 @@
 
                 // Cerrar menú móvil al hacer clic fuera
                 document.addEventListener('click', function(event) {
-                    const mobileMenu = document.getElementById('mobileMenu');
+                    const mobileMenu = document.getElementById('mainHeader');
                     const menuBtn = document.querySelector('.mobile-menu-btn') || document.querySelector('.hamburger-btn');
                     
                     if (mobileMenu && menuBtn && 
