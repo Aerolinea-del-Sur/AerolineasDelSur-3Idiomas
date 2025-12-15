@@ -84,9 +84,14 @@
     # Permissions Policy
     Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
     
-    # Cache para archivos estáticos
-    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$">
-        Header set Cache-Control "max-age=2592000, public"
+    # Cache para archivos estáticos (imágenes, fuentes, CSS, JS)
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|webp)$">
+        Header set Cache-Control "max-age=31536000, public, immutable"
+    </FilesMatch>
+    
+    # Cache para videos (1 año)
+    <FilesMatch "\.(mp4|webm|ogg|avi|mov)$">
+        Header set Cache-Control "max-age=31536000, public, immutable"
     </FilesMatch>
     
     # No cache para archivos sensibles
