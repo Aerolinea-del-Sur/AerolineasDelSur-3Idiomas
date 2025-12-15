@@ -57,9 +57,6 @@
             <link rel="preconnect" href="https://cdn.jsdelivr.net">
             <link rel="preconnect" href="https://cdnjs.cloudflare.com">
             
-            <!-- Precarga de recursos críticos -->
-            <link rel="preload" as="image" href="{{ asset('img/vder.svg') }}">
-            <link rel="preload" as="image" href="{{ asset('img/vizq.svg') }}">
             
             <!-- Carga asíncrona de fuentes (no bloqueante) -->
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
