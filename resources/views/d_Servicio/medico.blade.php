@@ -124,21 +124,22 @@ $seo = [
     }
     
     .medical-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
+        display: flex;
+        justify-content: center;
         margin-top: 40px;
     }
     
     /* Form Card - Glassmorphism */
     .medical-form-card {
-        background: rgba(255, 255, 255, 0.75);
+        background: rgba(255, 255, 255, 0.55);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         padding: 32px;
         border-radius: 16px;
         box-shadow: 0 8px 32px rgba(0,0,0,0.12);
         border: 2px solid rgba(212, 175, 55, 0.4);
+        max-width: 500px;
+        width: 100%;
     }
     
     .form-header {
@@ -379,43 +380,6 @@ $seo = [
                         </div>
                     </div>
                 </form>
-            </div>
-            
-            <!-- Emergency Info Card -->
-            <div class="emergency-card">
-                <div class="emergency-title">
-                    <div class="emergency-icon">
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    Servicio 24/7
-                </div>
-                
-                <div class="contact-item1">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div>
-                        <div class="contact-label">Línea Directa</div>
-                        <div class="contact-value">+51 932 475 995</div>
-                    </div>
-                </div>
-                
-                <div class="contact-item1">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div>
-                        <div class="contact-label">Email</div>
-                        <div class="contact-value" style="font-size:15px">contacto@aerolineadelsur.com.pe</div>
-                    </div>
-                </div>
-                
-                <div class="emergency-note">
-                    <p>
-                        <i class="fas fa-info-circle" style="color:var(--medical-gold);margin-right:8px"></i>
-                        <strong>Atención inmediata</strong> para evacuaciones médicas, traslado de pacientes y emergencias en zonas remotas.
-                    </p>
-                </div>
             </div>
         </div>
     </div>
