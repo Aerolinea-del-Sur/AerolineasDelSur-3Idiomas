@@ -221,6 +221,7 @@
             }
         </style>
     </head>
+    
     <body>
         <!-- Encabezado (Header de base.html integrado) -->
             <header class="header">
