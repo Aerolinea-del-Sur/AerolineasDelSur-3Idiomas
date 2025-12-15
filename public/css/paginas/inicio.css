@@ -2144,19 +2144,19 @@ p {
         }
 
         .accordion-skewed li:nth-child(1)::before {
-            background-image: url('../../img/aeronaves/service/servicio-charter.webp');
+            background-image: url('../../img/servicio-charter.webp');
         }
 
         .accordion-skewed li:nth-child(2)::before {
-            background-image: url('../../img/aeronaves/service/servicio-carga-helicoptero.webp');
+            background-image: url('../../img/servicio-carga-helicoptero.webp');
         }
 
         .accordion-skewed li:nth-child(3)::before {
-            background-image: url('../../img/aeronaves/service/servicio-transporte-medico.webp');
+            background-image: url('../../img/servicio-transporte-medico.webp');
         }
 
         .accordion-skewed li:nth-child(4)::before {
-            background-image: url('../../img/aeronaves/service/servicio-carga.webp');
+            background-image: url('../../img/servicio-carga.webp');
         }
 
         .accordion-skewed li:nth-child(3) {
