@@ -7,7 +7,7 @@
                 'title' => 'Aerolínea del Sur | Vuelos Privados y Charter en Perú',
                 'description' => 'Servicios aéreos premium en Perú: vuelos charter, helicópteros, transporte médico certificado y carga especializada. Seguridad garantizada desde Cusco.',
                 'keywords' => 'vuelos privados perú, charter cusco, helicóptero cusco, transporte aéreo médico, carga aérea perú',
-                'og_image' => asset('img/logo.svg'),
+                'og_image' => asset('img/logo.webp'),
                 'canonical' => url()->current(),
                 'author' => 'Aerolínea del Sur'
             ];
@@ -57,21 +57,15 @@
             <link rel="preconnect" href="https://cdn.jsdelivr.net">
             <link rel="preconnect" href="https://cdnjs.cloudflare.com">
             
-            <!-- Preload de fuentes críticas (WOFF2 para mejor rendimiento) -->
-            <!-- Preload de Playfair Display (fuente principal de títulos) -->
+            <!-- Preload de fuentes críticas de Google Fonts -->
             <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2" crossorigin>
-            
-            <!-- Preload de Space Grotesk (fuente principal de cuerpo) -->
             <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUXskPMBBSSJLm2E.woff2" crossorigin>
-            
-            <!-- Preload de Font Awesome (rompe cadena de dependencias crítica) -->
-            <link rel="preload" as="font" type="font/woff2" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" crossorigin>
             
             <!-- Precarga de recursos críticos -->
             <!-- Images -->
-            <link rel="preload" as="image" href="{{ asset('img/vder.svg') }}">
-            <link rel="preload" as="image" href="{{ asset('img/vizq.svg') }}">
-            <link rel="preload" as="image" href="{{ asset('img/logo.svg') }}" type="image/svg+xml">
+            <link rel="preload" as="image" href="{{ asset('img/vder.webp') }}">
+            <link rel="preload" as="image" href="{{ asset('img/vizq.webp') }}">
+            <link rel="preload" as="image" href="{{ asset('img/logo.webp') }}" type="image/svg+xml">
             
             <!-- Critical CSS -->
             <link rel="preload" as="style" href="{{ asset('css/general.css') }}">
@@ -181,8 +175,8 @@
             ol, ul {
                 padding-left: 0rem;
             }
-            .btn-left { padding-right: 20px; margin-right: -25px; background-image: url("{{ asset('img/vder.svg') }}"); }
-            .btn-right { padding-left: 20px; margin-left: -25px; background-image: url("{{ asset('img/vizq.svg') }}"); }
+            .btn-left { padding-right: 20px; margin-right: -25px; background-image: url("{{ asset('img/vder.webp') }}"); }
+            .btn-right { padding-left: 20px; margin-left: -25px; background-image: url("{{ asset('img/vizq.webp') }}"); }
             .aero-btn:hover { filter: none; transform: none; color: var(--accent); z-index: 15; }
             .aero-btn:active { transform: scale(0.98); }
 
@@ -281,7 +275,7 @@
                     "url": "https://www.aerolineadelsur.com",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "{{ asset('img/logo.svg') }}",
+                        "url": "{{ asset('img/logo.webp') }}",
                         "width": 200,
                         "height": 200
                     },
@@ -325,7 +319,7 @@
                     "@type": "LocalBusiness",
                     "@id": "https://www.aerolineadelsur.com/#business",
                     "name": "Aerolínea del Sur",
-                    "image": "{{ asset('img/logo.svg') }}",
+                    "image": "{{ asset('img/logo.webp') }}",
                     "priceRange": "$$$$",
                     "address": {
                         "@type": "PostalAddress",
@@ -430,7 +424,7 @@
                 <!-- Barra superior móvil -->
                 <div class="mobile-top-bar">
                     <a href="/" class="mobile-logo" aria-label="Inicio">
-                        <img src="{{ asset('img/logo.svg') }}" alt="Logo">
+                        <img src="{{ asset('img/logo.webp') }}" alt="Logo">
                     </a>
                     <button class="hamburger-btn" aria-label="Abrir menú" onclick="toggleMenu()">
                         <span></span>
@@ -457,7 +451,7 @@
                             </ul>
 
                             <a href="{{ url('/') }}" class="logo-center" aria-label="Inicio">
-                                <img src="{{ asset('img/logo.svg') }}" alt="Logo">
+                                <img src="{{ asset('img/logo.webp') }}" alt="Logo">
                             </a>
 
                             <ul class="nav-menu">
