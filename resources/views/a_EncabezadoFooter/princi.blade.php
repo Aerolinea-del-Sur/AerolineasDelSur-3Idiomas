@@ -424,11 +424,7 @@
                 <!-- Barra superior móvil -->
                 <div class="mobile-top-bar">
                     <a href="/" class="mobile-logo" aria-label="Inicio">
-                        <!-- Logo optimizado para móviles: solo texto -->
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="{{ asset('img/logo.webp') }}">
-                            <span style="color: #c9a227; font-weight: bold; font-size: 18px;">ADS</span>
-                        </picture>
+                        <img src="{{ asset('img/logo.webp') }}" alt="Logo">
                     </a>
                     <button class="hamburger-btn" aria-label="Abrir menú" onclick="toggleMenu()">
                         <span></span>
