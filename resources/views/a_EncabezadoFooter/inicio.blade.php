@@ -191,7 +191,6 @@ $seo = [
         <!-- Video de fondo - Solo carga en desktop (NO en móviles para ahorrar datos) -->
         <div class="hero-slider">
             <div class="hero-slide active">
-                <!-- Script para detectar móvil y NO cargar video -->
                 <script>
                     // Detectar si es dispositivo móvil
                     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
@@ -200,7 +199,7 @@ $seo = [
                     if (typeof isMobile !== 'undefined' && !isMobile) {
                         document.write(
                             '<video autoplay muted loop playsinline class="hero-video" poster="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1920 1080\'%3E%3Crect fill=\'%231c1c1c\' width=\'1920\' height=\'1080\'/%3E%3C/svg%3E">' +
-                            '<source src="{{ asset("/img/video/portada-home.mp4") }}" type="video/mp4">' +
+                            '<source src="{{ asset("public/video/portada-home.mp4") }}" type="video/mp4">' +
                             '</video>'
                         );
                     }
