@@ -424,7 +424,11 @@
                 <!-- Barra superior móvil -->
                 <div class="mobile-top-bar">
                     <a href="/" class="mobile-logo" aria-label="Inicio">
-                        <img src="{{ asset('img/logo.webp') }}" alt="Logo">
+                        <!-- Logo optimizado para móviles: solo texto -->
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{{ asset('img/logo.webp') }}">
+                            <span style="color: #c9a227; font-weight: bold; font-size: 18px;">ADS</span>
+                        </picture>
                     </a>
                     <button class="hamburger-btn" aria-label="Abrir menú" onclick="toggleMenu()">
                         <span></span>
@@ -451,7 +455,8 @@
                             </ul>
 
                             <a href="{{ url('/') }}" class="logo-center" aria-label="Inicio">
-                                <img src="{{ asset('img/logo.webp') }}" alt="Logo">
+                                <!-- Logo desktop -->
+                                <img src="{{ asset('img/logo.webp') }}" alt="Logo" width="68" height="67">
                             </a>
 
                             <ul class="nav-menu">
