@@ -112,14 +112,14 @@ $seo = [
     .medical-title {
         font-size: 42px;
         font-weight: 700;
-        color: var(--medical-black);
+        color: var(--medical-white);
         margin: 0 0 12px 0;
         line-height: 1.2;
     }
     
     .medical-subtitle {
         font-size: 18px;
-        color: var(--medical-gray);
+        color: var(--medical-white);
         margin: 0 0 40px 0;
     }
     
