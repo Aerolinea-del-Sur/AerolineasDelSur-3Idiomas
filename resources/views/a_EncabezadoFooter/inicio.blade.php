@@ -881,47 +881,6 @@ $seo = [
         </div>
     </section>
     <script>
-    function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-            
-            mobileMenu.classList.toggle('active');
-            mobileMenuBtn.classList.toggle('active');
-        }
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const mobileMenu = document.getElementById('mobileMenu');
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-            
-            if (!mobileMenu.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
-                mobileMenu.classList.remove('active');
-                mobileMenuBtn.classList.remove('active');
-            }
-        });
-
-        // Efecto de scroll en el encabezado
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.header');
-            const scrolled = window.pageYOffset;
-            
-            if (scrolled > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Close mobile menu on window resize
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                const mobileMenu = document.getElementById('mobileMenu');
-                const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-                mobileMenu.classList.remove('active');
-                mobileMenuBtn.classList.remove('active');
-            }
-        });
-
         // Footer accordion for mobile devices
         document.addEventListener('DOMContentLoaded', function() {
             const footerTitles = document.querySelectorAll('.footer-title');
@@ -1014,37 +973,6 @@ $seo = [
                 faqSection.style.transform = 'translateY(20px)';
                 faqSection.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
                 observer.observe(faqSection);
-            }
-            
-            // Efecto de seguimiento del mouse en todas las imágenes del slider
-            document.addEventListener('mousemove', function(e) {
-                const mouseX = e.clientX;
-                const mouseY = e.clientY;
-                const windowWidth = window.innerWidth;
-                const windowHeight = window.innerHeight;
-                
-                // Calcular el porcentaje de movimiento (0-100)
-                const xPercent = (mouseX / windowWidth) * 100;
-                const yPercent = (mouseY / windowHeight) * 100;
-                
-                // Aplicar el movimiento a todas las imágenes del slider
-                const moveX = (xPercent - 50) * 0.6;
-                const moveY = (yPercent - 50) * 0.6;
-                
-                // Aplicar transformación a todas las slides
-                const slides = document.querySelectorAll('.hero-slide');
-                slides.forEach(slide => {
-                    slide.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.1)`;
-                });
-            });
-            
-            // Resetear posición cuando el mouse sale de la ventana
-            document.addEventListener('mouseleave', function() {
-                const slides = document.querySelectorAll('.hero-slide');
-                slides.forEach(slide => {
-                    slide.style.transform = 'translate(0px, 0px) scale(1.1)';
-                });
-            });
         });
 </script>
 
