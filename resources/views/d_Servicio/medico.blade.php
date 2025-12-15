@@ -41,11 +41,27 @@ $seo = [
     }
     
     .medical-header {
-        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #dbeafe 100%);
         min-height: 70vh;
         position: relative;
         overflow: hidden;
         padding-top: 120px;
+    }
+    
+    /* Medical pattern overlay */
+    .medical-header::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: 
+            radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.05) 0%, transparent 50%),
+            radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+            radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.03) 0%, transparent 70%);
+        pointer-events: none;
+        z-index: 1;
     }
     
     .medical-header::before {
@@ -54,8 +70,19 @@ $seo = [
         top: 0;
         left: 0;
         right: 0;
-        height: 4px;
-        background: linear-gradient(90deg, var(--medical-gold) 0%, var(--medical-green) 100%);
+        height: 5px;
+        background: linear-gradient(90deg, 
+            var(--medical-gold) 0%, 
+            var(--medical-green) 50%,
+            #3b82f6 100%);
+        background-size: 200% 100%;
+        animation: gradient-shift 8s ease infinite;
+        z-index: 10;
+    }
+    
+    @keyframes gradient-shift {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
     }
     
     .medical-container {
