@@ -57,6 +57,8 @@
             <link rel="preconnect" href="https://cdn.jsdelivr.net">
             <link rel="preconnect" href="https://cdnjs.cloudflare.com">
             
+            <!-- Critical Logo Preload -->
+            <link rel="preload" as="image" href="{{ asset('img/logo.svg') }}" type="image/svg+xml">
             
             <!-- Carga asíncrona de fuentes (no bloqueante) -->
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
