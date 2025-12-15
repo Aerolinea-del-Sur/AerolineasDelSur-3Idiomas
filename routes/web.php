@@ -132,10 +132,10 @@ Route::prefix('{locale}')->where(['locale' => 'es|en|pt'])->group(function () {
     Route::get('/blog/Aventura-Cusco', function () {
         return view('f_Blog.Consejos.c1_aventuraCusco');
     })->name('blog.aventura-cusco');
-    
-    //----------------------------------  FORMULARIOS  ---------------------------------------------------//
-    Route::post('/enviar-contacto', [ContactController::class, 'send'])->name('contact.send');
-    Route::post('/enviar-solicitud-aeronave', [AircraftController::class, 'sendAircraftInquiry'])->name('aircraft.inquiry.send');
-    Route::post('/enviar-turismo', [TurismoController::class, 'sendTourRequest'])->name('turismo.send');
-    Route::post('/enviar-vuelo', [VueloController::class, 'sendFlightRequest'])->name('vuelos.send');
 });
+
+//----------------------------------  FORMULARIOS (SIN PREFIJO DE IDIOMA)  ---------------------------------------------------//
+Route::post('/enviar-contacto', [ContactController::class, 'send'])->name('contact.send');
+Route::post('/enviar-solicitud-aeronave', [AircraftController::class, 'sendAircraftInquiry'])->name('aircraft.inquiry.send');
+Route::post('/enviar-turismo', [TurismoController::class, 'sendTourRequest'])->name('turismo.send');
+Route::post('/enviar-vuelo', [VueloController::class, 'sendFlightRequest'])->name('vuelos.send');
