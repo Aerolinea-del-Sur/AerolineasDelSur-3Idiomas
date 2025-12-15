@@ -235,6 +235,11 @@ Route::get('/agencia/choquequirao', function () {
     return view('e_Agencia.sobrevuelo-choquequirao');
 })->name('sobrevuelo-choquequirao'); 
 
+// Página de lineas de Nazca
+Route::get('/agencia/nazca-lines', function () {
+    return view('e_Agencia.sobrevuelo-nazca-lines');
+})->name('sobrevuelo-nazca-lines'); 
+
 // Página de valle-maras
 Route::get('/agencia/valle-maras', function () {
     return view('e_Agencia.sobrevuelo-valle-maras');

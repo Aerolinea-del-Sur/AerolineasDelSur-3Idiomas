@@ -250,7 +250,7 @@ $seo = [
                         'badge' => 'Sobrevuelo',
                         'extra_icon' => 'fas fa-eye',
                         'extra_text' => 'Patrimonio Mundial',
-                        'url' => '/agencia/nazca'
+                        'url' => '/agencia/nazca-lines'
                     ],
                     //[
                     //    'title' => 'Salar de Uyuni',
