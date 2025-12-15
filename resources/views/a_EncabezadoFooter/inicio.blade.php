@@ -124,7 +124,7 @@ $seo = [
     $p_23 = 'Nuestro equipo está disponible para ayudarte';
 ?>
     <!-- presentacion -->
-    <link rel="stylesheet" href="{{ asset('public/css/paginas/inicio.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/paginas/inicio.min.css') }}">
     <section class="hero-section">
         <!-- Slider de imágenes de fondo -->
         <div class="hero-slider">
