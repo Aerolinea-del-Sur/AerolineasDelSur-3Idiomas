@@ -304,13 +304,23 @@
                             <div class="footer-links">
 
                                 <div class="footer-column">
-                                    <h3 class="footer-title">Servicios</h3>
+                                    <h3 class="footer-title">Acerca de</h3>
                                     <ul class="footer-list">
                                         <li><a href="/nosotros" class="footer-link">Nosotros</a></li>
-                                        <li><a href="/servicio" class="footer-link">Servicio</a></li>
                                         <li><a href="/aeronaves" class="footer-link">Aeronaves</a></li>
                                         <li><a href="/agencia" class="footer-link">Agencia</a></li>
                                         <li><a href="/blog" class="footer-link">Blog</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="footer-column">
+                                    <h3 class="footer-title">Nuestros Servicios</h3>
+                                    <ul class="footer-list">
+                                        <li><a href="/vuelos" class="footer-link">Vuelos Chárter</a></li>
+                                        <li><a href="/agencia" class="footer-link">Sobrevuelos</a></li>
+                                        <li><a href="/helicopteros" class="footer-link">Helicópteros</a></li>
+                                        <li><a href="/aeromedico" class="footer-link">Servicio Aeromédico</a></li>
+                                        <li><a href="/carga" class="footer-link">Carga Aérea</a></li>
                                     </ul>
                                 </div>
 

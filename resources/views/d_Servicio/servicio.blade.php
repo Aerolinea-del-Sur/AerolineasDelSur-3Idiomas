@@ -45,7 +45,7 @@ $seo = [
     <div class="services-container">
         <div class="services-list">
             <!-- Servicio 1: CONTENIDO | IMAGEN -->
-            <div class="service-row">
+            <a href="/vuelos" class="service-row" style="text-decoration: none; color: inherit;" title="Ver servicio de Vuelos Chárter">
                 <div class="service-content">
                     <div class="service-icon">
                         <i class="fa fa-plane" style="font-size: 40px; color: #FFFFFF;"></i>
@@ -61,7 +61,7 @@ $seo = [
                 <div class="service-image">
                     <img src="/public/img/servicios/Servicios-1.webp" alt="Avión privado en vuelo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
                 </div>
-            </div>
+            </a>
             <!-- Servicio 2: IMAGEN | CONTENIDO -->
             <a href="/agencia" class="service-row reverse" style="text-decoration: none; color: inherit;" title="Ir a Agencia - Sobrevuelo Andes Mágicos">
                 <div class="service-content">
@@ -81,7 +81,7 @@ $seo = [
                 </div>
             </a>
             <!-- Servicio 3: CONTENIDO | IMAGEN -->
-            <div class="service-row">
+            <a href="/helicopteros" class="service-row" style="text-decoration: none; color: inherit;" title="Ver servicio de Helicópteros">
                 <div class="service-content">
                     <div class="service-icon">
                         <i class="fa fa-helicopter" style="font-size: 40px; color: #FFFFFF;"></i>
@@ -97,9 +97,9 @@ $seo = [
                 <div class="service-image">
                     <img src="/public/img/servicios/Servicios-3.webp" alt="Helicóptero en vuelo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
                 </div>
-            </div>
+            </a>
             <!-- Servicio 4: IMAGEN | CONTENIDO -->
-            <div class="service-row reverse">
+            <a href="/aeromedico" class="service-row reverse" style="text-decoration: none; color: inherit;" title="Ver servicio Aeromédico">
                 <div class="service-content">
                     <div class="service-icon">
                         <i class="fa fa-ambulance" style="font-size: 40px; color: #FFFFFF;"></i>
@@ -115,9 +115,9 @@ $seo = [
                 <div class="service-image">
                     <img src="/public/img/servicios/Servicios-4.webp" alt="Ambulancia aérea médica" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
                 </div>
-            </div>
+            </a>
             <!-- Servicio 5: CONTENIDO | IMAGEN -->
-            <div class="service-row">
+            <a href="/carga" class="service-row" style="text-decoration: none; color: inherit;" title="Ver servicio de Carga Aérea">
                 <div class="service-content">
                     <div class="service-icon">
                         <i class="fa fa-archive" style="font-size: 40px; color: #FFFFFF;"></i>
@@ -133,7 +133,7 @@ $seo = [
                 <div class="service-image">
                     <img src="/public/img/servicios/Servicios-5.webp" alt="Avión de carga" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
                 </div>
-            </div>
+            </a>
         </div>
         
         <!-- Sección de Contacto -->
