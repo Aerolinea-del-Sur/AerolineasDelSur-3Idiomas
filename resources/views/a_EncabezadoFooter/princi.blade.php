@@ -114,6 +114,34 @@
                 <link rel="stylesheet" href="{{ asset('css/princi/footer.css') }}">
             </noscript>
 
+        <!-- Font Display Optimization para Font Awesome -->
+        <style>
+            /* Forzar font-display: swap para Font Awesome (Cloudflare CDN) */
+            @font-face {
+                font-family: 'Font Awesome 6 Free';
+                font-style: normal;
+                font-weight: 900;
+                font-display: swap;
+                src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2') format('woff2');
+            }
+            
+            @font-face {
+                font-family: 'Font Awesome 6 Free';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-regular-400.woff2') format('woff2');
+            }
+            
+            @font-face {
+                font-family: 'Font Awesome 6 Brands';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-brands-400.woff2') format('woff2');
+            }
+        </style>
+
         <!-- Estilos del header importados de base.html (acotados al header) -->
         <style>
             /* Barra móvil superior eliminada */
