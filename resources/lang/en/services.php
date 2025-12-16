@@ -40,6 +40,11 @@ return [
     'overflights.hero.title1' => 'Discover the World',
     'overflights.hero.title2' => 'From the Heights',
     
+    // Individual tour descriptions
+    'overflights.choquequirao.desc' => 'Discover the majestic "Golden Cradle" and sacred sister of Machu Picchu, an archaeological jewel hidden among the Andes.',
+    'overflights.titicaca.desc' => 'Contemplate the immensity of the highest navigable lake in the world and its floating islands from a celestial perspective.',
+    'overflights.nazca.desc' => 'Decipher the mysteries of the ancient geoglyphic figures that only reveal their true form from the sky.',
+    
     // ==================== HELICOPTER ====================
     'helicopter.seo.title' => 'Helicopter Services in Peru | Aerolínea del Sur',
     'helicopter.seo.description' => 'Fast and safe helicopter transport. Ideal for executives, rescues, filming and access to remote areas.',

@@ -55,6 +55,11 @@ return [
     'overflights.hero.title1' => 'Descubre el Mundo',
     'overflights.hero.title2' => 'Desde las Alturas',
     
+    // Descripciones de tours individuales
+    'overflights.choquequirao.desc' => 'Descubre la majestuosa "Cuna de Oro" y hermana sagrada de Machu Picchu, una joya arqueológica oculta entre los Andes.',
+    'overflights.titicaca.desc' => 'Contempla la inmensidad del lago navegable más alto del mundo y sus islas flotantes desde una perspectiva celestial.',
+    'overflights.nazca.desc' => 'Descifra los misterios de las antiguas figuras geoglíficas que solo revelan su verdadera forma desde el cielo.',
+    
     // ==================== HELICÓPTEROS ====================
     'helicopter.seo.title' => 'Servicios de Helicóptero en Perú | Aerolínea del Sur',
     'helicopter.seo.description' => 'Transporte en helic óptero rápido y seguro. Ideal para ejecutivos, rescates, filmaciones y acceso a zonas remotas.',

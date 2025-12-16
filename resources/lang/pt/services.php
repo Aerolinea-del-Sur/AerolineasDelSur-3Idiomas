@@ -32,13 +32,18 @@ return [
     
     // ==================== SOBREVOOS ====================
     'overflights.seo.title' => 'Sobrevoos Turísticos no Peru | Aerolínea del Sur',
-    'overflights.seo.description' => 'Descubra o Peru das alturas com nossos sobrevoos turísticos. Linhas de Nazca, Vale Sagrado, Machu Picchu e mais.',
+    'overflights.seo.description' => 'Descubra o Peru do alto com nossos sobrevoos turísticos. Linhas de Nazca, Vale Sagrado, Machu Picchu e mais.',
     'overflights.title' => 'Sobrevoos Turísticos',
     'overflights.breadcrumb' => 'Início / Serviços / Sobrevoos',
     'overflights.subtitle' => 'Descubra paisagens espetaculares de uma perspectiva única',
     'overflights.featured_title' => 'Nossos Sobrevoos',
     'overflights.hero.title1' => 'Descubra o Mundo',
     'overflights.hero.title2' => 'Das Alturas',
+    
+    // Descrições de tours individuais
+    'overflights.choquequirao.desc' => 'Descubra o majestoso "Berço de Ouro" e irmã sagrada de Machu Picchu, uma joia arqueológica escondida nos Andes.',
+    'overflights.titicaca.desc' => 'Contemple a imensidão do lago navegável mais alto do mundo e suas ilhas flutuantes de uma perspectiva celestial.',
+    'overflights.nazca.desc' => 'Decifre os mistérios das antigas figuras geoglíficas que só revelam sua verdadeira forma vista do céu.',
     
     // ==================== HELICÓPTERO ====================
     'helicopter.seo.title' => 'Serviços de Helicóptero no Peru | Aerolínea del Sur',

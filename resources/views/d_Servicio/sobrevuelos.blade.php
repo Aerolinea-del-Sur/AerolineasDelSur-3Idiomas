@@ -200,7 +200,7 @@ $seo = [
                     // Nuevos Tours
                     [
                         'title' => 'Choquequirao',
-                        'description' => 'Descubre la majestuosa "Cuna de Oro" y hermana sagrada de Machu Picchu, una joya arqueológica oculta entre los Andes.',
+                        'description' => __('services.overflights.choquequirao.desc'),
                         'images' => [
                             '/public/img/sobrevuelos/choquequirao-1.webp',
                             '/public/img/sobrevuelos/choquequirao-2.webp',
@@ -217,7 +217,7 @@ $seo = [
                     ],
                     [
                         'title' => 'Lago Titicaca',
-                        'description' => 'Contempla la inmensidad del lago navegable más alto del mundo y sus islas flotantes desde una perspectiva celestial.',
+                        'description' => __('services.overflights.titicaca.desc'),
                         'images' => [
                             '/public/img/sobrevuelos/titicaca-lake-1.webp',
                             '/public/img/sobrevuelos/titicaca-lake-2.webp',
@@ -234,7 +234,7 @@ $seo = [
                     ],
                     [
                         'title' => 'Líneas de Nazca',
-                        'description' => 'Descifra los misterios de las antiguas figuras geoglíficas que solo revelan su verdadera forma desde el cielo.',
+                        'description' => __('services.overflights.nazca.desc'),
                         'images' => [
                             '/public/img/sobrevuelos/nazca-lines-1.webp',
                             '/public/img/sobrevuelos/nazca-lines-2.webp',
