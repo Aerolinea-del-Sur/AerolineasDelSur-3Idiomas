@@ -122,7 +122,7 @@ $seo = [
     .medical-header {
         background: 
             linear-gradient(180deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.50) 50%, rgba(0, 0, 0, 0) 100%),
-            url('{{ asset("img/service/medical-jet-bg.jpg") }}') center/cover no-repeat;
+            url('{{ asset("img/service/medical-jet-bg.webp") }}') center/cover no-repeat;
         min-height: 70vh;
         position: relative;
         overflow: hidden;
