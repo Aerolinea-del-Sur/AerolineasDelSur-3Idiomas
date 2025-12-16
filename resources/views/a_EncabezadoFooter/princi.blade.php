@@ -431,16 +431,25 @@
                     $cleanPath = $pathWithoutLocale ? '/' . $pathWithoutLocale : '';
                     
                     $languages = [
-                        'es' => ['name' => 'Español', 'flag' => '🇪🇸'],
-                        'en' => ['name' => 'English', 'flag' => '🇬🇧'],
-                        'pt' => ['name' => 'Português', 'flag' => '🇧🇷']
+                        'es' => [
+                            'name' => 'Español',
+                            'flag' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500"><rect fill="#c60b1e" width="750" height="500"/><rect fill="#ffc400" y="125" width="750" height="250"/></svg>'
+                        ],
+                        'en' => [
+                            'name' => 'English',
+                            'flag' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30"><clipPath id="t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>'
+                        ],
+                        'pt' => [
+                            'name' => 'Português',
+                            'flag' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 504"><rect fill="#009b3a" width="720" height="504"/><path fill="#fedf00" d="M0,252 l360,-144 l360,144 l-360,144 z"/><circle fill="#002776" cx="360" cy="252" r="72"/></svg>'
+                        ]
                     ];
                 @endphp
                 
                 <div class="language-selector-dropdown">
                     <!-- Botón que muestra idioma actual -->
                     <button type="button" class="lang-dropdown-btn">
-                        <span class="flag-emoji">{{ $languages[$currentLocale]['flag'] }}</span>
+                        <span class="flag-icon">{!! $languages[$currentLocale]['flag'] !!}</span>
                         <span class="lang-name">{{ $languages[$currentLocale]['name'] }}</span>
                         <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -451,7 +460,7 @@
                     <div class="lang-dropdown-menu">
                         @foreach($languages as $code => $lang)
                             <a href="{{ url($code . $cleanPath) }}" class="lang-dropdown-item {{ $currentLocale == $code ? 'active' : '' }}">
-                                <span class="flag-emoji">{{ $lang['flag'] }}</span>
+                                <span class="flag-icon">{!! $lang['flag'] !!}</span>
                                 <span class="lang-name">{{ $lang['name'] }}</span>
                                 @if($currentLocale == $code)
                                     <svg class="check-icon" fill="currentColor" viewBox="0 0 20 20">
@@ -498,9 +507,19 @@
                         transform: rotate(180deg);
                     }
                     
-                    .flag-emoji {
-                        font-size: 22px;
-                        line-height: 1;
+                    .flag-icon {
+                        width: 28px;
+                        height: 20px;
+                        display: inline-block;
+                        border-radius: 3px;
+                        overflow: hidden;
+                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+                    }
+                    
+                    .flag-icon svg {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
                     }
                     
                     .dropdown-arrow {

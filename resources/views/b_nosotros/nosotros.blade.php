@@ -1,4 +1,4 @@
-@extends('a_Enc abezadoFooter.princi')
+@extends('a_EncabezadoFooter.princi')
 
 @php
 // Custom SEO for Nosotros page
