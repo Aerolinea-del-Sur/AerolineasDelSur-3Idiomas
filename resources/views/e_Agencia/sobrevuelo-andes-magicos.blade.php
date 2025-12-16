@@ -158,19 +158,19 @@ $seo = [
                     <div class="image-carousel">
                         <div class="carousel-container" id="carouselContainer">
                             <div class="carousel-slide active">
-                                <img src="/public/img/tours/andes-magicos-1.jpg" alt="Vista aérea de Machu Picchu">
+                                <img src="/public/img/tours/andes-magicos-1.webp" alt="Vista aérea de Machu Picchu">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/public/img/tours/andes-magicos-2.jpg" alt="Valle Sagrado desde el aire">
+                                <img src="/public/img/tours/andes-magicos-2.webp" alt="Valle Sagrado desde el aire">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/public/img/tours/andes-magicos-3.jpg" alt="Montañas andinas">
+                                <img src="/public/img/tours/andes-magicos-3.webp" alt="Montañas andinas">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/public/img/tours/andes-magicos-4.jpg" alt="Río Urubamba">
+                                <img src="/public/img/tours/andes-magicos-4.webp" alt="Río Urubamba">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/public/img/tours/andes-magicos-5.jpg" alt="Río Urubamba">
+                                <img src="/public/img/tours/andes-magicos-5.webp" alt="Río Urubamba">
                             </div> 
                         </div>
                         <button class="carousel-btn prev" onclick="moveSlide(-1)">
