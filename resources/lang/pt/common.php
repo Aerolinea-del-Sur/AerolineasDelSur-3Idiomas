@@ -38,8 +38,16 @@ return [
     'contact.office_hours' => 'Horário de Atendimento',
     'contact.schedule' => 'Seg - Sáb: 8:00 - 18:00',
     
-    // Mensajes comunes  
+    // Mensagens comuns  
     'message.loading' => 'Carregando...',
     'message.error' => 'Erro ao carregar',
     'message.success' => 'Sucesso',
+    
+    // Tours comuns
+    'up_to' => 'Até',
+    'people' => 'pessoas',
+    'overflight' => 'Sobrevoo',
+    'archaeological_adventure' => 'Aventura Arqueológica',
+    'natural_wonder' => 'Maravilha Natural',
+    'world_heritage' => 'Patrimônio Mundial',
 ];

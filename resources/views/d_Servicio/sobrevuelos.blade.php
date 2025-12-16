@@ -208,11 +208,11 @@ $seo = [
                             '/public/img/sobrevuelos/choquequirao-4.webp'
                         ],
                         'duration' => '1h',
-                        'pax' => 'Hasta 4 personas',
+                        'pax' => __('common.up_to') . ' 4 ' . __('common.people'),
                         'location' => 'Cusco, Perú',
-                        'badge' => 'Sobrevuelo',
+                        'badge' => __('common.overflight'),
                         'extra_icon' => 'fas fa-mountain',
-                        'extra_text' => 'Aventura Arqueológica',
+                        'extra_text' => __('common.archaeological_adventure'),
                         'url' => '/agencia/choquequirao'
                     ],
                     [
@@ -225,11 +225,11 @@ $seo = [
                             '/public/img/sobrevuelos/titicaca-lake-4.webp'
                         ],
                         'duration' => '1h 40m',
-                        'pax' => 'Hasta 6 personas',
+                        'pax' => __('common.up_to') . ' 6 ' . __('common.people'),
                         'location' => 'Puno, Perú',
-                        'badge' => 'Sobrevuelo',
+                        'badge' => __('common.overflight'),
                         'extra_icon' => 'fas fa-water',
-                        'extra_text' => 'Maravilla Natural',
+                        'extra_text' => __('common.natural_wonder'),
                         'url' => '/agencia/titicaca-lake'
                     ],
                     [
@@ -242,11 +242,11 @@ $seo = [
                             '/public/img/sobrevuelos/nazca-lines-4.webp'
                         ],
                         'duration' => '1h 20m',
-                        'pax' => 'Hasta 4 personas',
+                        'pax' => __('common.up_to') . ' 4 ' . __('common.people'),
                         'location' => 'Ica, Perú',
-                        'badge' => 'Sobrevuelo',
+                        'badge' => __('common.overflight'),
                         'extra_icon' => 'fas fa-eye',
-                        'extra_text' => 'Patrimonio Mundial',
+                        'extra_text' => __('common.world_heritage'),
                         'url' => '/agencia/nazca-lines'
                     ],
                     //[
@@ -373,8 +373,8 @@ $seo = [
                                 <span><?= $tour['extra_text'] ?></span>
                             </div>
                         </div>
-                        <a href="<?= $tour['url'] ?>" class="tour-btn" itemprop="url" title="Reservar <?= $tour['title'] ?>">
-                            <span>Conoce más</span>
+                        <a href="<?= $tour['url'] ?>" class="tour-btn" itemprop="url" title="{{ __('common.button.reserve') }} <?= $tour['title'] ?>">
+                            <span>{{ __('common.button.learn_more') }}</span>
                             <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>

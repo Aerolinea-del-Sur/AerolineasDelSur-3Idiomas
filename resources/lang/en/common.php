@@ -42,4 +42,12 @@ return [
     'message.loading' => 'Loading...',
     'message.error' => 'Error loading',
     'message.success' => 'Success',
+    
+    // Tours comunes
+    'up_to' => 'Up to',
+    'people' => 'people',
+    'overflight' => 'Overflight',
+    'archaeological_adventure' => 'Archaeological Adventure',
+    'natural_wonder' => 'Natural Wonder',
+    'world_heritage' => 'World Heritage',
 ];
