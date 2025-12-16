@@ -2,9 +2,10 @@
 
 @php
 // Custom SEO for Sobrevuelo Líneas de Nazca
+$tour_name = 'Líneas de Nazca';
 $seo = [
-    'title' => 'Sobrevuelo Líneas de Nazca | Tour Aéreo Cusco',
-    'description' => 'Sobrevuelo privado desde Cusco a las Líneas de Nazca. Vuelo panorámico sobre los Andes y tour arqueológico.',
+    'title' => str_replace(':tour', $tour_name, __('tours.seo.title_template')),
+    'description' => str_replace(':tour', $tour_name, __('tours.seo.description_template')),
     'keywords' => 'sobrevuelo lineas de nazca, tour aéreo cusco nazca, vuelo privado nazca, maria reiche',
     'og_image' => asset('img/sobrevuelos/nazca-lines-1.webp'),
     'canonical' => url(app()->getLocale() . '/sobrevuelo-nazca-lines'),

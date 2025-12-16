@@ -2,9 +2,10 @@
 
 @php
 // Custom SEO for Sobrevuelo Lago Titicaca
+$tour_name = 'Lago Titicaca';
 $seo = [
-    'title' => 'Sobrevuelo Lago Titicaca | Tour Aéreo Cusco',
-    'description' => 'Sobrevuelo en helicóptero por el Lago Titicaca. Vista panorámica única del lago desde el aire.',
+    'title' => str_replace(':tour', $tour_name, __('tours.seo.title_template')),
+    'description' => str_replace(':tour', $tour_name, __('tours.seo.description_template')),
     'keywords' => 'sobrevuelo lago titicaca, tour aéreo cusco, vuelo cusco lago titicaca',
     'og_image' => asset('img/sobrevuelos/titicaca-lake-1.webp'),
     'canonical' => url(app()->getLocale() . '/sobrevuelo-titicaca-lake'),

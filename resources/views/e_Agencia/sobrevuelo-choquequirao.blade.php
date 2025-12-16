@@ -2,11 +2,12 @@
 
 @php
 // Custom SEO for Sobrevuelo Choquequirao
+$tour_name = 'Choquequirao';
 $seo = [
-    'title' => 'Sobrevuelo Choquequirao | Tour Aéreo Cusco',
-    'description' => 'Sobrevuelo panorámico premium hacia Choquequirao. Descubre la hermana sagrada de Machu Picchu desde el aire.',
+    'title' => str_replace(':tour', $tour_name, __('tours.seo.title_template')),
+    'description' => str_replace(':tour', $tour_name, __('tours.seo.description_template')),
     'keywords' => 'sobrevuelo choquequirao, tour aéreo cusco, vuelo cusco choquequirao, choquequirao helicóptero',
-    'og_image' => asset('img/sobrevuelos/choquequirao.webp'),
+    'og_image' => asset('img/sobrevuelos/choquequ irao.webp'),
     'canonical' => url(app()->getLocale() . '/sobrevuelo-choquequirao'),
 ];
 @endphp
