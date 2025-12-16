@@ -424,22 +424,54 @@
         <!-- Encabezado (Header de base.html integrado) -->
             <header class="header">
                 <!-- Selector de idioma premium tipo dropdown -->
-                <div class="language-selector-dropdown" style="position: absolute; top: 15px; right: 20px; z-index: 1001;">
-                    @php
-                        $currentPath = request()->path();
-                        $currentLocale = app()->getLocale();
-                        $pathWithoutLocale = preg_replace('/^(es|en|pt)(\/|$)/', '', $currentPath);
-                        $cleanPath = $pathWithoutLocale ? '/' . $pathWithoutLocale : '';
-                        
-                        $languages = [
-                            'es' => ['name' => 'Español', 'flag' => '🇪🇸'],
-                            'en' => ['name' => 'English', 'flag' => '🇬🇧'],
-                            'pt' => ['name' => 'Português', 'flag' => '🇧🇷']
-                        ];
-                    @endphp
+                @php
+                    $currentPath = request()->path();
+                    $currentLocale = app()->getLocale();
+                    $pathWithoutLocale = preg_replace('/^(es|en|pt)(\/|$)/', '', $currentPath);
+                    $cleanPath = $pathWithoutLocale ? '/' . $pathWithoutLocale : '';
                     
-                    <!-- Botón selector actual -->
-                    <button class="lang-dropdown-btn" style="
+                    $languages = [
+                        'es' => ['name' => 'Español', 'flag' => '🇪🇸'],
+                        'en' => ['name' => 'English', 'flag' => '🇬🇧'],
+                        'pt' => ['name' => 'Português', 'flag' => '🇧🇷']
+                    ];
+                @endphp
+                
+                <div class="language-selector-dropdown">
+                    <!-- Botón que muestra idioma actual -->
+                    <button type="button" class="lang-dropdown-btn">
+                        <span class="flag-emoji">{{ $languages[$currentLocale]['flag'] }}</span>
+                        <span class="lang-name">{{ $languages[$currentLocale]['name'] }}</span>
+                        <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Menú con todos los idiomas -->
+                    <div class="lang-dropdown-menu">
+                        @foreach($languages as $code => $lang)
+                            <a href="{{ url($code . $cleanPath) }}" class="lang-dropdown-item {{ $currentLocale == $code ? 'active' : '' }}">
+                                <span class="flag-emoji">{{ $lang['flag'] }}</span>
+                                <span class="lang-name">{{ $lang['name'] }}</span>
+                                @if($currentLocale == $code)
+                                    <svg class="check-icon" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                @endif
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+                
+                <style>
+                    .language-selector-dropdown {
+                        position: absolute;
+                        top: 15px;
+                        right: 20px;
+                        z-index: 1001;
+                    }
+                    
+                    .lang-dropdown-btn {
                         display: flex;
                         align-items: center;
                         gap: 10px;
@@ -454,16 +486,30 @@
                         cursor: pointer;
                         transition: all 0.3s ease;
                         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-                    ">
-                        <span style="font-size: 22px;">{{ $languages[$currentLocale]['flag'] }}</span>
-                        <span>{{ $languages[$currentLocale]['name'] }}</span>
-                        <svg style="width: 16px; height: 16px; transition: transform 0.3s ease;" class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
+                    }
                     
-                    <!-- Menú dropdown -->
-                    <div class="lang-dropdown-menu" style="
+                    .lang-dropdown-btn:hover {
+                        border-color: #c9a227;
+                        box-shadow: 0 6px 20px rgba(201, 162, 39, 0.3);
+                        transform: translateY(-2px);
+                    }
+                    
+                    .lang-dropdown-btn.active .dropdown-arrow {
+                        transform: rotate(180deg);
+                    }
+                    
+                    .flag-emoji {
+                        font-size: 22px;
+                        line-height: 1;
+                    }
+                    
+                    .dropdown-arrow {
+                        width: 16px;
+                        height: 16px;
+                        transition: transform 0.3s ease;
+                    }
+                    
+                    .lang-dropdown-menu {
                         position: absolute;
                         top: calc(100% + 10px);
                         right: 0;
@@ -478,112 +524,102 @@
                         transform: translateY(-10px);
                         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
                         overflow: hidden;
-                    ">
-                        @foreach($languages as $code => $lang)
-                            <a href="{{ url($code . $cleanPath) }}" 
-                               class="lang-dropdown-item {{ $currentLocale == $code ? 'active' : '' }}"
-                               style="
-                                   display: flex;
-                                   align-items: center;
-                                   gap: 12px;
-                                   padding: 12px 16px;
-                                   color: {{ $currentLocale == $code ? '#c9a227' : '#fff' }};
-                                   text-decoration: none;
-                                   font-size: 15px;
-                                   font-weight: {{ $currentLocale == $code ? '700' : '500' }};
-                                   background: {{ $currentLocale == $code ? 'rgba(201, 162, 39, 0.1)' : 'transparent' }};
-                                   border-left: 3px solid {{ $currentLocale == $code ? '#c9a227' : 'transparent' }};
-                                   transition: all 0.2s ease;
-                               ">
-                                <span style="font-size: 22px;">{{ $lang['flag'] }}</span>
-                                <span>{{ $lang['name'] }}</span>
-                                @if($currentLocale == $code)
-                                    <svg style="width: 16px; height: 16px; margin-left: auto;" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                @endif
-                            </a>
-                        @endforeach
-                    </div>
+                    }
                     
-                    <style>
-                        .lang-dropdown-btn:hover {
-                            border-color: #c9a227;
-                            box-shadow: 0 6px 20px rgba(201, 162, 39, 0.3);
-                            transform: translateY(-2px);
-                        }
-                        
-                        .lang-dropdown-btn.active .dropdown-arrow {
-                            transform: rotate(180deg);
-                        }
-                        
-                        .lang-dropdown-menu.show {
-                            opacity: 1;
-                            visibility: visible;
-                            transform: translateY(0);
-                        }
-                        
-                        .lang-dropdown-item:hover {
-                            background: rgba(201, 162, 39, 0.2) !important;
-                            border-left-color: #c9a227 !important;
-                            padding-left: 20px;
-                        }
-                        
-                        @media (max-width: 768px) {
-                            .language-selector-dropdown {
-                                top: 12px;
-                                right: 70px;
-                            }
-                            
-                            .lang-dropdown-btn {
-                                padding: 8px 12px !important;
-                                font-size: 14px !important;
-                            }
-                            
-                            .lang-dropdown-btn span:nth-child(2) {
-                                display: none;
-                            }
-                            
-                            .lang-dropdown-menu {
-                                min-width: 160px !important;
-                            }
-                        }
-                    </style>
+                    .lang-dropdown-menu.show {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(0);
+                    }
                     
-                    <script>
-                        // Asegurar que el script se ejecute después de que el DOM esté listo
-                        document.addEventListener('DOMContentLoaded', function() {
-                            const langBtn = document.querySelector('.lang-dropdown-btn');
-                            const langMenu = document.querySelector('.lang-dropdown-menu');
+                    .lang-dropdown-item {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                        padding: 12px 16px;
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 15px;
+                        font-weight: 500;
+                        background: transparent;
+                        border-left: 3px solid transparent;
+                        transition: all 0.2s ease;
+                    }
+                    
+                    .lang-dropdown-item.active {
+                        color: #c9a227;
+                        font-weight: 700;
+                        background: rgba(201, 162, 39, 0.1);
+                        border-left-color: #c9a227;
+                    }
+                    
+                    .lang-dropdown-item:hover {
+                        background: rgba(201, 162, 39, 0.2);
+                        border-left-color: #c9a227;
+                        padding-left: 20px;
+                    }
+                    
+                    .check-icon {
+                        width: 16px;
+                        height: 16px;
+                        margin-left: auto;
+                    }
+                    
+                    @media (max-width: 768px) {
+                        .language-selector-dropdown {
+                            top: 12px;
+                            right: 70px;
+                        }
+                        
+                        .lang-dropdown-btn {
+                            padding: 8px 12px;
+                            font-size: 14px;
+                        }
+                        
+                        .lang-dropdown-btn .lang-name {
+                            display: none;
+                        }
+                        
+                        .lang-dropdown-menu {
+                            min-width: 160px;
+                        }
+                    }
+                </style>
+                
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const langBtn = document.querySelector('.lang-dropdown-btn');
+                        const langMenu = document.querySelector('.lang-dropdown-menu');
+                        
+                        if (langBtn && langMenu) {
+                            // Toggle dropdown
+                            langBtn.addEventListener('click', function(event) {
+                                event.stopPropagation();
+                                langBtn.classList.toggle('active');
+                                langMenu.classList.toggle('show');
+                                console.log('Dropdown toggled:', langMenu.classList.contains('show'));
+                            });
                             
-                            if (langBtn && langMenu) {
-                                // Toggle dropdown al hacer clic en el botón
-                                langBtn.addEventListener('click', function(event) {
-                                    event.stopPropagation();
-                                    langBtn.classList.toggle('active');
-                                    langMenu.classList.toggle('show');
-                                });
-                                
-                                // Cerrar dropdown al hacer clic fuera
-                                document.addEventListener('click', function(event) {
-                                    const dropdown = document.querySelector('.language-selector-dropdown');
-                                    if (dropdown && !dropdown.contains(event.target)) {
-                                        langBtn.classList.remove('active');
-                                        langMenu.classList.remove('show');
-                                    }
-                                });
-                                
-                                // Cerrar dropdown al presionar ESC
-                                document.addEventListener('keydown', function(event) {
-                                    if (event.key === 'Escape') {
-                                        langBtn.classList.remove('active');
-                                        langMenu.classList.remove('show');
-                                    }
-                                });
-                            }
-                        });
-                    </script>
-                </div>
+                            // Cerrar al hacer clic fuera
+                            document.addEventListener('click', function(event) {
+                                if (!langBtn.contains(event.target) && !langMenu.contains(event.target)) {
+                                    langBtn.classList.remove('active');
+                                    langMenu.classList.remove('show');
+                                }
+                            });
+                            
+                            // Cerrar con ESC
+                            document.addEventListener('keydown', function(event) {
+                                if (event.key === 'Escape') {
+                                    langBtn.classList.remove('active');
+                                    langMenu.classList.remove('show');
+                                }
+                            });
+                        } else {
+                            console.error('Language selector elements not found');
+                        }
+                    });
+                </script>
 
                 <!-- Barra superior móvil -->
                 <div class="mobile-top-bar">
