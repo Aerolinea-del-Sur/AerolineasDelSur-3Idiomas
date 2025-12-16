@@ -161,10 +161,10 @@ $seo = [
                 <span>TOURS DE SOBREVUELOS</span>
             </div>
             <h1 class="hero-title">
-                <span class="title-line"><?= $h1_1_1 ?></span>
-                <span class="title-line highlight"><?= $h1_1_2 ?></span>
+                <span class="title-line">{{ $h1_1_1 }}</span>
+                <span class="title-line highlight">{{ $h1_1_2 }}</span>
             </h1>
-            <p class="hero-description"><?= $p_1 ?></p>
+            <p class="hero-description">{{ $p_1 }}</p>
             <div class="hero-actions">
                 <a href="#tours" class="btn btn-primary">
                     <span>Ver Tours</span>
@@ -190,8 +190,8 @@ $seo = [
         <div class="container">
             <div class="section-header">
                 <div class="section-badge">TOURS SOBREVUELOS EXCLUSIVOS</div>
-                <h2 class="section-title"><?= $h2_1 ?></h2>
-                <p class="section-subtitle"><?= $p_2 ?></p>
+                <h2 class="section-title">{{ $h2_1 }}</h2>
+                <p class="section-subtitle">{{ $p_2 }}</p>
             </div>
             
             <div class="tours-grid">
