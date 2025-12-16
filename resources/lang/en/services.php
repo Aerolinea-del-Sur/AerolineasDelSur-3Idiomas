@@ -44,6 +44,10 @@ return [
     'overflights.choquequirao.desc' => 'Discover the majestic "Golden Cradle" and sacred sister of Machu Picchu, an archaeological jewel hidden among the Andes.',
     'overflights.titicaca.desc' => 'Contemplate the immensity of the highest navigable lake in the world and its floating islands from a celestial perspective.',
     'overflights.nazca.desc' => 'Decipher the mysteries of the ancient geoglyphic figures that only reveal their true form from the sky.',
+    'overflights.sacred_valley.title' => 'Sacred Valley and Maras',
+    'overflights.sacred_valley.desc' => 'Discover Sacsayhuamán, Tambomachay, Pisac, Sacred Valley, Maras and Huaypo Lagoon from above.',
+    'overflights.vinicunca.title' => 'Vinicunca Elite',
+    'overflights.vinicunca.desc' => 'Visit Vinicunca, Palcoyo, Ausangate, Red Valley and Four Lagoons in an exclusive experience from the heights.',
     
     // ==================== HELICOPTER ====================
     'helicopter.seo.title' => 'Helicopter Services in Peru | Aerolínea del Sur',

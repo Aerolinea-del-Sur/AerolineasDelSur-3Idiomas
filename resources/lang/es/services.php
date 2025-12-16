@@ -59,6 +59,10 @@ return [
     'overflights.choquequirao.desc' => 'Descubre la majestuosa "Cuna de Oro" y hermana sagrada de Machu Picchu, una joya arqueológica oculta entre los Andes.',
     'overflights.titicaca.desc' => 'Contempla la inmensidad del lago navegable más alto del mundo y sus islas flotantes desde una perspectiva celestial.',
     'overflights.nazca.desc' => 'Descifra los misterios de las antiguas figuras geoglíficas que solo revelan su verdadera forma desde el cielo.',
+    'overflights.sacred_valley.title' => 'Valle Sagrado y Maras',
+    'overflights.sacred_valley.desc' => 'Descubre Sacsayhuamán, Tambomachay, Pisac, Valle Sagrado, Maras y Laguna de Huaypo desde las alturas.',
+    'overflights.vinicunca.title' => 'Vinicunca Elite',
+    'overflights.vinicunca.desc' => 'Visitamos Vinicunca, Palcoyo, Ausangate, Valle Rojo y Cuatro Lagunas en una experiencia exclusiva desde las alturas.',
     
     // ==================== HELICÓPTEROS ====================
     'helicopter.seo.title' => 'Servicios de Helicóptero en Perú | Aerolínea del Sur',
