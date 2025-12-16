@@ -423,6 +423,50 @@
     <body>
         <!-- Encabezado (Header de base.html integrado) -->
             <header class="header">
+                <!-- Selector de idioma en esquina superior derecha -->
+                <div class="language-selector-top" style="position: absolute; top: 15px; right: 20px; z-index: 1001; background: rgba(0, 150, 200, 0.9); padding: 8px 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="{{ url('es' . request()->getPathInfo()) }}" 
+                           class="lang-btn-top {{ app()->getLocale() == 'es' ? 'active' : '' }}" 
+                           style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 6px; text-decoration: none; color: #fff; font-size: 14px; font-weight: 500; background: {{ app()->getLocale() == 'es' ? '#c9a227' : 'transparent' }}; border: 1px solid {{ app()->getLocale() == 'es' ? '#c9a227' : 'rgba(255,255,255,0.3)' }}; transition: all 0.3s ease;">
+                            <span style="font-size: 18px;">🇪🇸</span>
+                            <span>Español</span>
+                        </a>
+                        <a href="{{ url('en' . request()->getPathInfo()) }}" 
+                           class="lang-btn-top {{ app()->getLocale() == 'en' ? 'active' : '' }}" 
+                           style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 6px; text-decoration: none; color: #fff; font-size: 14px; font-weight: 500; background: {{ app()->getLocale() == 'en' ? '#c9a227' : 'transparent' }}; border: 1px solid {{ app()->getLocale() == 'en' ? '#c9a227' : 'rgba(255,255,255,0.3)' }}; transition: all 0.3s ease;">
+                            <span style="font-size: 18px;">🇬🇧</span>
+                            <span>English</span>
+                        </a>
+                        <a href="{{ url('pt' . request()->getPathInfo()) }}" 
+                           class="lang-btn-top {{ app()->getLocale() == 'pt' ? 'active' : '' }}" 
+                           style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 6px; text-decoration: none; color: #fff; font-size: 14px; font-weight: 500; background: {{ app()->getLocale() == 'pt' ? '#c9a227' : 'transparent' }}; border: 1px solid {{ app()->getLocale() == 'pt' ? '#c9a227' : 'rgba(255,255,255,0.3)' }}; transition: all 0.3s ease;">
+                            <span style="font-size: 18px;">🇧🇷</span>
+                            <span>Português</span>
+                        </a>
+                    </div>
+                    <style>
+                        .lang-btn-top:hover {
+                            background: #c9a227 !important;
+                            transform: translateY(-2px);
+                            box-shadow: 0 4px 8px rgba(201, 162, 39, 0.3);
+                        }
+                        @media (max-width: 768px) {
+                            .language-selector-top {
+                                top: 10px;
+                                right: 70px;
+                                padding: 6px 10px;
+                            }
+                            .lang-btn-top span:last-child {
+                                display: none;
+                            }
+                            .lang-btn-top {
+                                padding: 4px 8px !important;
+                            }
+                        }
+                    </style>
+                </div>
+
                 <!-- Barra superior móvil -->
                 <div class="mobile-top-bar">
                     <a href="/" class="mobile-logo" aria-label="Inicio">
@@ -464,12 +508,7 @@
                             </ul>
                         </div>
 
-                        <!-- Selector de idioma -->
-                        <div class="language-selector" style="display: flex; gap: 8px; align-items: center; margin-left: 20px;">
-                            <a href="{{ url('es' . request()->getPathInfo()) }}" class="lang-btn {{ app()->getLocale() == 'es' ? 'active' : '' }}" style="padding: 6px 12px; border-radius: 4px; text-decoration: none; color: #fff; background: {{ app()->getLocale() == 'es' ? '#c9a227' : 'transparent' }}; border: 1px solid #c9a227;">ES</a>
-                            <a href="{{ url('en' . request()->getPathInfo()) }}" class="lang-btn {{ app()->getLocale() == 'en' ? 'active' : '' }}" style="padding: 6px 12px; border-radius: 4px; text-decoration: none; color: #fff; background: {{ app()->getLocale() == 'en' ? '#c9a227' : 'transparent' }}; border: 1px solid #c9a227;">EN</a>
-                            <a href="{{ url('pt' . request()->getPathInfo()) }}" class="lang-btn {{ app()->getLocale() == 'pt' ? 'active' : '' }}" style="padding: 6px 12px; border-radius: 4px; text-decoration: none; color: #fff; background: {{ app()->getLocale() == 'pt' ? '#c9a227' : 'transparent' }}; border: 1px solid #c9a227;">PT</a>
-                        </div>
+
 
                         <!-- Botón derecho estilo aerodinámico -->
                         <a href="{{ url(app()->getLocale() . '/blog') }}" class="aero-btn btn-right">BLOG</a>
