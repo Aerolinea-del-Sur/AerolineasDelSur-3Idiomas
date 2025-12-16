@@ -349,7 +349,7 @@ $seo = [
                         </div>
                         
                         <div class="tour-overlay">
-                            <div class="tour-badge <?= strtolower($tour['badge']) ?>" itemprop="additionalType"><?= $tour['badge'] ?></div>
+                            <div class="tour-badge sobrevuelo" itemprop="additionalType"><?= $tour['badge'] ?></div>
                         </div>
                     </div>
                     <div class="tour-content">
