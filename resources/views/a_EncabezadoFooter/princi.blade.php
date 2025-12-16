@@ -424,21 +424,30 @@
         <!-- Encabezado (Header de base.html integrado) -->
             <header class="header">
                 <!-- Selector de idioma en esquina superior derecha -->
-                <div class="language-selector-top" style="position: absolute; top: 15px; right: 20px; z-index: 1001; background: rgba(0, 150, 200, 0.9); padding: 8px 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                <div class="language-selector-top" style="position: absolute; top: 15px; right: 20px; z-index: 1001; backdrop-filter: blur(10px); background: rgba(28, 28, 28, 0.9); padding: 8px 15px; border-radius: 8px; border: 1px solid rgba(201, 162, 39, 0.3); box-shadow: 0 2px 10px rgba(0,0,0,0.3);">
                     <div style="display: flex; gap: 12px; align-items: center;">
-                        <a href="{{ url('es' . request()->getPathInfo()) }}" 
+                        @php
+                            $currentPath = request()->path();
+                            $currentLocale = app()->getLocale();
+                            // Remover el locale actual del path
+                            $pathWithoutLocale = preg_replace('/^(es|en|pt)(\/|$)/', '', $currentPath);
+                            // Si el path está vacío después de remover el locale, mantenerlo vacío
+                            $cleanPath = $pathWithoutLocale ? '/' . $pathWithoutLocale : '';
+                        @endphp
+                        
+                        <a href="{{ url('es' . $cleanPath) }}" 
                            class="lang-btn-top {{ app()->getLocale() == 'es' ? 'active' : '' }}" 
                            style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 6px; text-decoration: none; color: #fff; font-size: 14px; font-weight: 500; background: {{ app()->getLocale() == 'es' ? '#c9a227' : 'transparent' }}; border: 1px solid {{ app()->getLocale() == 'es' ? '#c9a227' : 'rgba(255,255,255,0.3)' }}; transition: all 0.3s ease;">
                             <span style="font-size: 18px;">🇪🇸</span>
                             <span>Español</span>
                         </a>
-                        <a href="{{ url('en' . request()->getPathInfo()) }}" 
+                        <a href="{{ url('en' . $cleanPath) }}" 
                            class="lang-btn-top {{ app()->getLocale() == 'en' ? 'active' : '' }}" 
                            style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 6px; text-decoration: none; color: #fff; font-size: 14px; font-weight: 500; background: {{ app()->getLocale() == 'en' ? '#c9a227' : 'transparent' }}; border: 1px solid {{ app()->getLocale() == 'en' ? '#c9a227' : 'rgba(255,255,255,0.3)' }}; transition: all 0.3s ease;">
                             <span style="font-size: 18px;">🇬🇧</span>
                             <span>English</span>
                         </a>
-                        <a href="{{ url('pt' . request()->getPathInfo()) }}" 
+                        <a href="{{ url('pt' . $cleanPath) }}" 
                            class="lang-btn-top {{ app()->getLocale() == 'pt' ? 'active' : '' }}" 
                            style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 6px; text-decoration: none; color: #fff; font-size: 14px; font-weight: 500; background: {{ app()->getLocale() == 'pt' ? '#c9a227' : 'transparent' }}; border: 1px solid {{ app()->getLocale() == 'pt' ? '#c9a227' : 'rgba(255,255,255,0.3)' }}; transition: all 0.3s ease;">
                             <span style="font-size: 18px;">🇧🇷</span>
