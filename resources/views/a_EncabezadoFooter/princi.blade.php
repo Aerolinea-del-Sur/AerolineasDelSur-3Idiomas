@@ -439,7 +439,7 @@
                     @endphp
                     
                     <!-- Botón selector actual -->
-                    <button class="lang-dropdown-btn" onclick="toggleLangDropdown(event)" style="
+                    <button class="lang-dropdown-btn" style="
                         display: flex;
                         align-items: center;
                         gap: 10px;
@@ -551,23 +551,35 @@
                     </style>
                     
                     <script>
-                        function toggleLangDropdown(event) {
-                            event.stopPropagation();
-                            const btn = event.currentTarget;
-                            const menu = btn.nextElementSibling;
+                        // Asegurar que el script se ejecute después de que el DOM esté listo
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const langBtn = document.querySelector('.lang-dropdown-btn');
+                            const langMenu = document.querySelector('.lang-dropdown-menu');
                             
-                            btn.classList.toggle('active');
-                            menu.classList.toggle('show');
-                        }
-                        
-                        // Cerrar dropdown al hacer clic fuera
-                        document.addEventListener('click', function(event) {
-                            const dropdown = document.querySelector('.language-selector-dropdown');
-                            if (dropdown && !dropdown.contains(event.target)) {
-                                const btn = dropdown.querySelector('.lang-dropdown-btn');
-                                const menu = dropdown.querySelector('.lang-dropdown-menu');
-                                btn?.classList.remove('active');
-                                menu?.classList.remove('show');
+                            if (langBtn && langMenu) {
+                                // Toggle dropdown al hacer clic en el botón
+                                langBtn.addEventListener('click', function(event) {
+                                    event.stopPropagation();
+                                    langBtn.classList.toggle('active');
+                                    langMenu.classList.toggle('show');
+                                });
+                                
+                                // Cerrar dropdown al hacer clic fuera
+                                document.addEventListener('click', function(event) {
+                                    const dropdown = document.querySelector('.language-selector-dropdown');
+                                    if (dropdown && !dropdown.contains(event.target)) {
+                                        langBtn.classList.remove('active');
+                                        langMenu.classList.remove('show');
+                                    }
+                                });
+                                
+                                // Cerrar dropdown al presionar ESC
+                                document.addEventListener('keydown', function(event) {
+                                    if (event.key === 'Escape') {
+                                        langBtn.classList.remove('active');
+                                        langMenu.classList.remove('show');
+                                    }
+                                });
                             }
                         });
                     </script>
