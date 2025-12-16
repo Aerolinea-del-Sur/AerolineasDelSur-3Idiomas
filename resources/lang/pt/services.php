@@ -36,7 +36,9 @@ return [
     'overflights.title' => 'Sobrevoos Turísticos',
     'overflights.breadcrumb' => 'Início / Serviços / Sobrevoos',
     'overflights.subtitle' => 'Descubra paisagens espetaculares de uma perspectiva única',
-    'overflights.featured_title' => 'Tours Aéreos em Destaque',
+    'overflights.featured_title' => 'Nossos Sobrevoos',
+    'overflights.hero.title1' => 'Descubra o Mundo',
+    'overflights.hero.title2' => 'Das Alturas',
     
     // ==================== HELICÓPTERO ====================
     'helicopter.seo.title' => 'Serviços de Helicóptero no Peru | Aerolínea del Sur',
