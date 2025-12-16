@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Gulfstream GIV
+$aircraft_model = 'Gulfstream GIV';
 $seo = [
-    'title' => 'Gulfstream GIV | Jet de Largo Alcance Premium',
-    'description' => 'Gulfstream GIV: jet de alto rendimiento de 6 pasajeros y 782 km/h. Perfecto para vuelos ejecutivos de larga distancia con máximo confort.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet de largo alcance premium'], __('aircraft.seo.description_template')),
     'keywords' => 'gulfstream giv perú, jet largo alcance, avión ejecutivo internacional, gulfstream cusco',
     'og_image' => asset('img/aeronaves/aviones/GulfstreamGiv.webp'),
-    'canonical' => url('/aeronaves/GulfstreamGIV'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/GulfstreamGIV'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Gulfstream';
     $h1_1_2 = 'G IV';
 
-    $p_1 = 'Excelencia en Aviación Comercial';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
+        $h2_1 = __('aircraft.description');
         $p_2 = 'El Gulfstream GIV (también G-IV o GIV-SP) es un jet de negocios de largo alcance desarrollado por Gulfstream Aerospace desde mediados de los años 80 hasta finales de los 90. Destaca por su cabina amplia —con longitud que supera los 13 m, altura de más de 1,8 m y opción de tres zonas—, ideal para vuelos ejecutivos intercontinentales con hasta 14 pasajeros, y máximas estructurales que permiten configuraciones de hasta 19 plazas.';
         $p_3 = 'Su rendimiento es notable: crucero sostenido por encima de 900 km/h, alcance superior a 7 000 km y techo de servicio de hasta 13 716 m. Los motores Rolls-Royce TAY 611-8 ofrecen eficiencia mejorada, menor ruido y menor consumo respecto a sus antecesores, lo que consolidó al GIV como referente en aviación ejecutiva de larga distancia.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
+            $h3_1 = __('aircraft.model');
             $p_4 = 'Gulfstream GIV';
 
-            $h3_2 = 'Año de Fabricación';
+            $h3_2 = __('aircraft.year');
             $p_5 = '1986';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Gulfstream Aerospace';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '926 km/h';
 
-            $h3_5 = 'Alcance Máximo';
+            $h3_5 = __('aircraft.max_range');
             $p_8 = '7,600 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '13,716 metros';
 
-            $h3_7 = 'Consumo de Combustible';
+            $h3_7 = __('aircraft.fuel_consumption');
             $p_10 = '520 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '14 pasajeros';
 
-            $h3_9 = 'Autonomía';
+            $h3_9 = __('aircraft.autonomy');
             $p_12 = '7,000 km';
 
-            $h3_10 = 'Capacidad de Carga';
+            $h3_10 = __('aircraft.cargo_capacity');
             $p_13 = '17,104 kg';
 
-            $h3_11 = 'Longitud';
+            $h3_11 = __('aircraft.length');
             $p_14 = '26,9 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Gulfstream G IV opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')

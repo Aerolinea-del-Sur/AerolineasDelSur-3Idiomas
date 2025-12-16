@@ -2,9 +2,10 @@
 
 @php
 // Custom SEO for Tour Tesoros de Cusco
+$tour_name = 'Tesoros de Cusco';
 $seo = [
-    'title' => 'Tour Tesoros de Cusco | City Tour y Ruinas Incas',
-    'description' => 'Tour Tesoros de Cusco: visita Sacsayhuamán, Qenqo, Puka Pukara y Tambomachay. City tour completo con guía experto por los principales sitios arqueológicos.',
+    'title' => str_replace(':tour', $tour_name, __('tours.seo.title_template')),
+    'description' => str_replace(':tour', $tour_name, __('tours.seo.description_template')),
     'keywords' => 'tour tesoros cusco, city tour cusco, sacsayhuaman tour, ruinas incas cusco, tour arqueológico',
     'og_image' => asset('img/tours/tesoros-cusco.jpg'),
     'canonical' => url(app()->getLocale() . '/tour-tesoros-cusco'),
@@ -13,22 +14,22 @@ $seo = [
 @section('content')
 
 <?php
-    $h1_1 = 'Tesoros del Cusco';
-    $p_1 = 'Descubre Valle Sagrado y Machu Picchu en un tour exclusivo';
+    $h1_1 = __('tours.tesoros_cusco.title');
+    $p_1 = __('tours.tesoros_cusco.subtitle');
 
-        $h2_1 = 'Detalles del Tour';
-        $p_2 = '¿Poco tiempo y muchas ganas de descubrir lo mejor de Cusco?</strong> Esta experiencia está pensada para viajeros que desean aprovechar al máximo cada instante. En solo 2 días y 1 noche recorrerás el Valle Sagrado de los Incas, un lugar con historia, cultura y paisajes deslumbrantes; finalizaras visitando Machu Picchu, la joya del mundo andino y una de las Siete Maravillas del Mundo Moderno.';
+        $h2_1 = __('tours.tour_details');
+        $p_2 = __('tours.tesoros_cusco.description');
 
-                $h4_1 = 'Grupo Máximo';
+                $h4_1 = __('tours.max_group');
                 $p_3 = '10 Personas';
 
-                $h4_2 = 'Edad Mínima';
+                $h4_2 = __('tours.min_age');
                 $p_4 = 'Ninguna';
 
-                $h4_3 = 'Duración';
+                $h4_3 = __('tours.duration');
                 $p_5 = '2 días y 1 noche';
 
-            $h3_1 = 'Galería de Imágenes';
+            $h3_1 = __('tours.image_gallery');
 
         $h2_2 = 'Resumen del Viaje';
 

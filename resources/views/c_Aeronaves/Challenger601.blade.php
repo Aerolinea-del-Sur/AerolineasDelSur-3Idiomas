@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Challenger 601
+$aircraft_model = 'Challenger 601';
 $seo = [
-    'title' => 'Challenger 601 | Jet de Negocios de Gran Alcance',
-    'description' => 'Challenger 601: 12 pasajeros y 7,620 km de autonomía. Ideal para vuelos intercontinentales de negocios con máxima eficiencia.',
-    'keywords' => 'challenger 601 perú, jet intercontinental, bombardier 601, vuelo negocios largo alcance',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo de largo alcance para 13 pasajeros'], __('aircraft.seo.description_template')),
+    'keywords' => 'challenger 601 perú, bombardier 601, jet ejecutivo largo alcance, vuelo internacional',
     'og_image' => asset('img/aeronaves/aviones/Challenger601.webp'),
-    'canonical' => url('/aeronaves/Challenger601'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/Challenger601'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Challenger';
     $h1_1_2 = '601';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
-        $p_2 = 'El Challenger 601 se introdujo a inicios de los años 80 como evolución del Challenger 600, incorporando motores General Electric CF34 más eficientes y mejoras en aviónica y sistemas de control. Se convirtió en un referente entre los jets de cabina ancha ejecutivos, con espacio cómodo para 9 a 12 pasajeros, ideal para vuelos transcontinentales sin escalas.';
-        $p_3 = 'Gracias a su cabina amplia, versatilidad y autonomía de más de 6 000 km, el Challenger 601 ha sido elegido tanto por clientes privados como por gobiernos y operadores corporativos. Su techo de crucero de 12 500 m y velocidad cercana a los 850 km/h lo colocan como un avión confiable y competitivo en su segmento durante más de dos décadas de producción.';
+        $h2_1 = __('aircraft.description');
+        $p_2 = 'El Bombardier Challenger 601 es un jet ejecutivo de largo alcance que combina rendimiento superior con lujo excepcional. Con capacidad para hasta 13 pasajeros, este avión ofrece una cabina espaciosa y confortable para vuelos transcontinentales.';
+        $p_3 = 'Equipado con motores General Electric CF34 de alto rendimiento, el Challenger 601 alcanza velocidades de crucero de 850 km/h con un alcance máximo de 6,700 km. Su diseño aerodinámico y sistemas avanzados garantizan viajes eficientes y seguros.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Bombardier Challenger 601';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Challenger 601';
 
-            $h3_2 = 'Año de Fabricación';
-            $p_5 = '1996';
+            $h3_2 = __('aircraft.year');
+            $p_5 = '1986';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Bombardier Aerospace';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '850 km/h';
 
-            $h3_5 = 'Alcance Máximo';
-            $p_8 = '6,100 km';
+            $h3_5 = __('aircraft.max_range');
+            $p_8 = '6,700 km';
 
-            $h3_6 = 'Altitud de Crucero';
-            $p_9 = '12,500 metros';
+            $h3_6 = __('aircraft.cruise_altitude');
+            $p_9 = '12,497 metros';
 
-            $h3_7 = 'Consumo de Combustible';
-            $p_10 = '330 gal/h';
+            $h3_7 = __('aircraft.fuel_consumption');
+            $p_10 = '320 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
-            $p_11 = '12 pasajeros';
+            $h3_8 = __('aircraft.max_passengers');
+            $p_11 = '13 pasajeros';
 
-            $h3_9 = 'Autonomía';
-            $p_12 = '6,100 km';
+            $h3_9 = __('aircraft.autonomy');
+            $p_12 = '6,700 km';
 
-            $h3_10 = 'Capacidad de Carga';
-            $p_13 = '1,700 kg';
+            $h3_10 = __('aircraft.cargo_capacity');
+            $p_13 = '1,600 kg';
 
-            $h3_11 = 'Longitud';
+            $h3_11 = __('aircraft.length');
             $p_14 = '20,85 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Challenger 601 opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');
 ?>
 
 @section('content')

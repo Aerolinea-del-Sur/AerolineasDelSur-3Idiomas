@@ -3,8 +3,8 @@
 @php
 // Custom SEO for Privacy Policy
 $seo = [
-    'title' => 'Política de Privacidad | Aerolínea del Sur',
-    'description' => 'Política de privacidad y protección de datos personales de Aerolínea del Sur. Conoce cómo protegemos tu información.',
+    'title' => __('legal.privacy.seo_title'),
+    'description' => __('legal.privacy.seo_description'),
     'keywords' => 'política privacidad perú, protección datos, privacidad aerolínea',
     'og_image' => asset('img/logo.svg'),
     'canonical' => url(app()->getLocale() . '/politica-privacidad'),
@@ -21,10 +21,10 @@ $seo = [
             </div>
             <h1 class="privacy-title">
                 <i class="fas fa-shield-alt"></i>
-                Políticas de Privacidad
+                <?= __('legal.privacy.title') ?>
             </h1>
-            <p class="privacy-subtitle">Protección y transparencia en el manejo de su información personal</p>
-            <p style="color: var(--accent); font-weight: 600; font-size: 1rem;">Aerolíneas del Sur - Compromiso con su Privacidad</p>
+            <p class="privacy-subtitle"><?= __('legal.privacy.subtitle') ?></p>
+            <p style="color: var(--accent); font-weight: 600; font-size: 1rem;"><?= __('legal.privacy.company_commitment') ?></p>
         </header>
 
         <!-- Introduction Section -->

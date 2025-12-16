@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Challenger 350
+$aircraft_model = 'Challenger 350';
 $seo = [
-    'title' => 'Challenger 350 | Jet Ejecutivo de Largo Alcance',
-    'description' => 'Challenger 350: 12 pasajeros, 850 km/h y 6,100 km de alcance. Tecnología de vanguardia y máximo confort transcontinental.',
-    'keywords' => 'challenger 350 perú, jet largo alcance, bombardier 350, avión ejecutivo premium',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet super mediano de lujo para hasta 10 pasajeros'], __('aircraft.seo.description_template')),
+    'keywords' => 'challenger 350 perú, bombardier 350, jet ejecutivo, vuelo internacional cusco',
     'og_image' => asset('img/aeronaves/aviones/Challenger350.webp'),
-    'canonical' => url('/aeronaves/Challenger350'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/Challenger350'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Challenger';
     $h1_1_2 = '350';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
-        $p_2 = 'El Bombardier Challenger 350, introducido en 2014, es la versión mejorada del Challenger 300, optimizado para mayor rendimiento y confort. Equipa motores Honeywell HTF7350 que le brindan más potencia y eficiencia, junto con una cabina renovada que incluye ventanillas más amplias, asientos rediseñados y conectividad avanzada.';
-        $p_3 = 'Su rendimiento le permite cubrir rutas de hasta 6 297 km con techo de servicio de 13 716 m. La aviónica Rockwell Collins Pro Line 21 Advanced asegura una operación moderna y segura. Este modelo se ha consolidado como uno de los jets supermedianos más populares del mercado, por su equilibrio entre autonomía, lujo interior y costos de operación competitivos.';
+        $h2_1 = __('aircraft.description');
+        $p_2 = 'El Bombardier Challenger 350 es un jet ejecutivo de categoría super mediana que ofrece un rendimiento excepcional y un confort superior. Con capacidad para hasta 10 pasajeros, este avión está diseñado para vuelos de largo alcance con tecnología de aviónica de vanguardia.';
+        $p_3 = 'El Challenger 350 cuenta con una cabina amplia y silenciosa, equipada con asientos de cuero premium y sistemas de entretenimiento de última generación. Su diseño aerodinámico y motores eficientes permiten alcanzar velocidades de crucero superiores y un alcance impresionante.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Bombardier Challenger 350';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Challenger 350';
 
-            $h3_2 = 'Año de Fabricación';
+            $h3_2 = __('aircraft.year');
             $p_5 = '2014';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Bombardier Aerospace';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '870 km/h';
 
-            $h3_5 = 'Alcance Máximo';
-            $p_8 = '6,297 km';
+            $h3_5 = __('aircraft.max_range');
+            $p_8 = '5,926 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '13,716 metros';
 
-            $h3_7 = 'Consumo de Combustible';
-            $p_10 = '290 gal/h';
+            $h3_7 = __('aircraft.fuel_consumption');
+            $p_10 = '280 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '10 pasajeros';
 
-            $h3_9 = 'Autonomía';
-            $p_12 = '6,297 km';
+            $h3_9 = __('aircraft.autonomy');
+            $p_12 = '5,926 km';
 
-            $h3_10 = 'Capacidad de Carga';
-            $p_13 = '1,450 kg';
+            $h3_10 = __('aircraft.cargo_capacity');
+            $p_13 = '1,361 kg';
 
-            $h3_11 = 'Longitud';
+            $h3_11 = __('aircraft.length');
             $p_14 = '20,9 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Challenger 350 opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Vuelos Charter';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')

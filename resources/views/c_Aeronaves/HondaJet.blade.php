@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for HondaJet
+$aircraft_model = 'HondaJet';
 $seo = [
-    'title' => 'HondaJet | Jet Ligero de Lujo y Tecnología',
-    'description' => 'HondaJet: jet ligero de 6 pasajeros con diseño innovador y 722 km/h de velocidad. Eficiencia y tecnología japonesa para vuelos ejecutivos.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ligero de lujo y tecnología'], __('aircraft.seo.description_template')),
     'keywords' => 'hondajet perú, jet ligero ejecutivo, avión honda, vuelo privado eficiente',
     'og_image' => asset('img/aeronaves/aviones/HondaJet.webp'),
-    'canonical' => url('/aeronaves/HondaJet'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/HondaJet'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Honda';
     $h1_1_2 = 'Jet';
 
-    $p_1 = 'Excelencia en Aviación Comercial';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
+        $h2_1 = __('aircraft.description');
         $p_2 = 'El HondaJet es un avión ejecutivo ligero desarrollado por Honda Aircraft Company, subsidiaria de Honda Motor Co. Destaca por su revolucionaria configuración de motores sobre el ala (Over-The-Wing Engine Mount), que reduce la resistencia aerodinámica, optimiza el consumo de combustible y ofrece un interior más espacioso en comparación con otros jets ligeros de su categoría.';
         $p_3 = 'Diseñado para vuelos de corto a mediano alcance, el HondaJet ofrece una velocidad de crucero cercana a los 782 km/h y un alcance máximo superior a los 2 200 km. Su cabina está pensada para la comodidad de hasta 5 pasajeros, con acabados premium y sistemas de aviónica Garmin G3000 de última generación. Su combinación de innovación, eficiencia y confort lo ha convertido en uno de los jets ligeros más avanzados de su clase.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Honda HA-420 HondaJet';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'HondaJet';
 
-            $h3_2 = 'Año de Fabricación';
+            $h3_2 = __('aircraft.year');
             $p_5 = '2015';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Honda Aircraft Company';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '782 km/h';
 
-            $h3_5 = 'Alcance Máximo';
+            $h3_5 = __('aircraft.max_range');
             $p_8 = '2,265 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '13,100 metros';
 
-            $h3_7 = 'Consumo de Combustible';
+            $h3_7 = __('aircraft.fuel_consumption');
             $p_10 = '150 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '6 pasajeros';
 
-            $h3_9 = 'Autonomía';
+            $h3_9 = __('aircraft.autonomy');
             $p_12 = '2,265 km';
 
-            $h3_10 = 'Capacidad de Carga';
+            $h3_10 = __('aircraft.cargo_capacity');
             $p_13 = '624 kg';
 
-            $h3_11 = 'Longitud';
+            $h3_11 = __('aircraft.length');
             $p_14 = '12,99 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El HondaJet opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')

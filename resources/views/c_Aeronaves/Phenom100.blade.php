@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Phenom 100
+$aircraft_model = 'Phenom 100';
 $seo = [
-    'title' => 'Embraer Phenom 100 | Jet Ejecutivo Ligero',
-    'description' => 'Phenom 100: jet ejecutivo de 7 pasajeros con 839 km/h y 3,650 km de autonomía. Compacto, eficiente y perfecto para vuelos regionales.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo ligero de 7 pasajeros'], __('aircraft.seo.description_template')),
     'keywords' => 'phenom 100 perú, embraer phenom, jet ligero, vuelo ejecutivo regional',
     'og_image' => asset('img/aeronaves/aviones/Phenom100.webp'),
-    'canonical' => url('/aeronaves/Phenom100'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/Phenom100'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Phenom';
     $h1_1_2 = '100';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
+        $h2_1 = __('aircraft.description');
         $p_2 = 'El Embraer Phenom 100 es un jet ejecutivo muy ligero desarrollado por la compañía brasileña Embraer y lanzado en 2007. Es uno de los aviones más populares de su categoría, ofreciendo una excelente relación entre costo operativo, comodidad y tecnología. Su diseño prioriza la eficiencia aerodinámica, con motores Pratt & Whitney PW617F-E que permiten un rendimiento sólido en rutas cortas y regionales.';
         $p_3 = 'Su cabina, equipada con aviónica Garmin G1000 (o G3000 en versiones más nuevas), proporciona al piloto sistemas avanzados de gestión de vuelo y gran facilidad de operación. Con espacio para hasta 6 ocupantes, el Phenom 100 ofrece confort, seguridad y un consumo de combustible optimizado, lo que lo convierte en una de las opciones más atractivas para vuelos ejecutivos cortos de 2 a 3 horas.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Embraer Phenom 100';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Phenom 100';
 
-            $h3_2 = 'Año de Fabricación';
+            $h3_2 = __('aircraft.year');
             $p_5 = '2007';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Embraer';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '722 km/h';
 
-            $h3_5 = 'Alcance Máximo';
+            $h3_5 = __('aircraft.max_range');
             $p_8 = '2,182 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '12,500 metros';
 
-            $h3_7 = 'Consumo de Combustible';
+            $h3_7 = __('aircraft.fuel_consumption');
             $p_10 = '100 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '6 pasajeros';
 
-            $h3_9 = 'Autonomía';
+            $h3_9 = __('aircraft.autonomy');
             $p_12 = '2,182 km';
 
-            $h3_10 = 'Capacidad de Carga';
+            $h3_10 = __('aircraft.cargo_capacity');
             $p_13 = '750 kg';
 
-            $h3_11 = 'Longitud';
+            $h3_11 = __('aircraft.length');
             $p_14 = '12,8 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Phenom 100 opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')

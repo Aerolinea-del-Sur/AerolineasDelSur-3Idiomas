@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Challenger 850
+$aircraft_model = 'Challenger 850';
 $seo = [
-    'title' => 'Challenger 850 | Jet Ejecutivo de Alto Rendimiento',
-    'description' => 'Challenger 850: 7 pasajeros, 740 km/h y 3,520 km de autonomía. Cabina amplia convertible para configuraciones VIP personalizadas.',
-    'keywords' => 'challenger 850 perú, jet vip, bombardier 850, avión ejecutivo personalizable',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet de gran capacidad para 16 pasajeros con alcance transcontinental'], __('aircraft.seo.description_template')),
+    'keywords' => 'challenger 850 perú, bombardier 850, jet gran capacidad, vuelo corporativo',
     'og_image' => asset('img/aeronaves/aviones/Challenger850.webp'),
-    'canonical' => url('/aeronaves/Challenger850'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/Challenger850'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Challenger';
     $h1_1_2 = '850';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
-        $p_2 = 'El Bombardier Challenger 850 fue diseñado para quienes buscan la amplitud de un avión regional con la comodidad y lujo de un jet ejecutivo. Basado en la plataforma del CRJ200, combina confiabilidad comprobada con un interior lujoso configurable para reuniones de trabajo, descanso y entretenimiento, con capacidad para hasta 16 pasajeros.';
-        $p_3 = 'Aunque su alcance es menor que el de los modelos 605 y 650, puede cubrir rutas intercontinentales medianas como Nueva York – Los Ángeles o Dubái – Moscú sin escalas. Su cabina de gran tamaño lo hace ideal para ejecutivos y vuelos corporativos, destacando por ser uno de los jets de negocios con la cabina más amplia dentro de su categoría.';
+        $h2_1 = __('aircraft.description');
+        $p_2 = 'El Bombardier Challenger 850 es un jet ejecutivo de gran capacidad diseñado para transportar hasta 16 pasajeros en configuración de lujo. Basado en el exitoso CRJ200, ofrece una cabina espaciosa ideal para vuelos corporativos de largo alcance.';
+        $p_3 = 'Con motores General Electric CF34 y aviónica avanzada, el Challenger 850 alcanza velocidades de 850 km/h con un alcance de 5,206 km, perfecto para rutas transcontinentales con grupos grandes.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Bombardier Challenger 850';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Challenger 850';
 
-            $h3_2 = 'Año de Fabricación';
-            $p_5 = '2012';
+            $h3_2 = __('aircraft.year');
+            $p_5 = '2006';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Bombardier Aerospace';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '850 km/h';
 
-            $h3_5 = 'Alcance Máximo';
+            $h3_5 = __('aircraft.max_range');
             $p_8 = '5,206 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '12,497 metros';
 
-            $h3_7 = 'Consumo de Combustible';
-            $p_10 = '370 gal/h';
+            $h3_7 = __('aircraft.fuel_consumption');
+            $p_10 = '400 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '16 pasajeros';
 
-            $h3_9 = 'Autonomía';
+            $h3_9 = __('aircraft.autonomy');
             $p_12 = '5,206 km';
 
-            $h3_10 = 'Capacidad de Carga';
-            $p_13 = '1,800 kg';
+            $h3_10 = __('aircraft.cargo_capacity');
+            $p_13 = '2,268 kg';
 
-            $h3_11 = 'Longitud';
+            $h3_11 = __('aircraft.length');
             $p_14 = '26,77 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Challenger 850 opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');
 ?>
 
 @section('content')

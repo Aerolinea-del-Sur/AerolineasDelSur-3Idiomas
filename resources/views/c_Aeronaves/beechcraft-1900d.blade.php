@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Beechcraft 1900D
+$aircraft_model = 'Beechcraft 1900D';
 $seo = [
-    'title' => 'Beechcraft 1900D | Avión Regional de Pasajeros',
-    'description' => 'Beechcraft 1900D: avión regional de 19 pasajeros. Ideal para rutas cortas y operaciones comerciales en Perú con pistas cortas.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'avión regional de pasajeros'], __('aircraft.seo.description_template')),
     'keywords' => 'beechcraft 1900d perú, avión regional, vuelos comerciales regionales, transporte pasajeros perú',
     'og_image' => asset('img/aeronaves/aviones/Beechcraft1900D.webp'),
-    'canonical' => url('/aeronaves/beechcraft-1900d'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/beechcraft-1900d'),
 ];
 @endphp
 
@@ -15,9 +16,9 @@ $seo = [
 $h1_1_1 = 'Beechcraft';
 $h1_1_2 = '1900D';
 
-$p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+$p_1 = __('aircraft.excellence');
 
-$h2_1 = 'Descripción del Avión';
+$h2_1 = __('aircraft.description');
 $p_2 = 'La Beechcraft 1900D es un aeronave turbohélice bimotor diseñada para ofrecer un rendimiento sólido en rutas regionales. 
 Su estructura robusta, excelente capacidad de ascenso y eficiencia operativa la convierten en una opción ideal para vuelos chárter 
 o traslados ejecutivos en zonas de difícil acceso, como la selva o la sierra peruana.';
@@ -25,56 +26,55 @@ o traslados ejecutivos en zonas de difícil acceso, como la selva o la sierra pe
 $p_3 = 'Pensada para operar en aeropuertos con pistas cortas o ubicados en altitud, esta aeronave cuenta con tren retráctil y ala baja, 
 lo que le permite aterrizar con estabilidad en entornos exigentes. ';
 
-$h2_2 = 'Galería de Imágenes';
+$h2_2 = __('aircraft.gallery');
 
-$h2_3 = 'Visión General';
+$h2_3 = __('aircraft.overview');
 
-$h3_1 = 'Modelo';
+$h3_1 = __('aircraft.model');
 $p_4 = 'Beechcraft 1900D';
 
-$h3_2 = 'Año de Fabricación';
+$h3_2 = __('aircraft.year');
 $p_5 = '1991';
 
-$h3_3 = 'Fabricante';
+$h3_3 = __('aircraft.manufacturer');
 $p_6 = 'Beechcraft';
 
-$h2_4 = 'Rendimiento';
+$h2_4 = __('aircraft.performance');
 
-$h3_4 = 'Velocidad Máxima';
+$h3_4 = __('aircraft.max_speed_label');
 $p_7 = '526 km/h';
 
-$h3_5 = 'Alcance Máximo';
+$h3_5 = __('aircraft.max_range');
 $p_8 = '2,511 km';
 
-$h3_6 = 'Altitud de Crucero';
+$h3_6 = __('aircraft.cruise_altitude');
 $p_9 = '7,620 metros';
 
-$h3_7 = 'Consumo de Combustible';
+$h3_7 = __('aircraft.fuel_consumption');
 $p_10 = '128 gal/h';
 
-$h2_5 = 'Capacidad';
+$h2_5 = __('aircraft.capacity');
 
-$h3_8 = 'Pasajeros Máximo';
+$h3_8 = __('aircraft.max_passengers');
 $p_11 = '19 pasajeros';
 
-$h3_9 = 'Autonomía';
+$h3_9 = __('aircraft.autonomy');
 $p_12 = '2,511 km';
 
-$h3_10 = 'Capacidad de Carga';
+$h3_10 = __('aircraft.cargo_capacity');
 $p_13 = '2,100 kg';
 
-$h3_11 = 'Longitud';
+$h3_11 = __('aircraft.length');
 $p_14 = '17.63 metros';
 
-$h2_6 = 'Lugares de Operación';
-$p_15 = 'El jet privado Beechcraft 1900D opera en las principales rutas nacionales, conectando destinos estratégicos en
-Peru.';
+$h2_6 = __('aircraft.operation_places');
+$p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
 
-$h3_12 = 'Rutas Nacionales';
+$h3_12 = __('aircraft.national_routes');
 
-$h3_13 = 'Otros Servicios';
+$h3_13 = __('aircraft.other_services');
 
-$h3_14 = 'Solicitar Información';
+$h3_14 = __('aircraft.request_info');
 ?>
 
 @section('content')

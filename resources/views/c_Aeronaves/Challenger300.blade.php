@@ -2,81 +2,81 @@
 
 @php
 // Custom SEO for Challenger 300
+$aircraft_model = 'Challenger 300';
 $seo = [
-    'title' => 'Bombardier Challenger 300 | Jet Ejecutivo Super Mediano',
-    'description' => 'Challenger 300: jet super mediano de 10 pasajeros, 870 km/h y 6,297 km de autonomía. Cabina amplia y tecnología avanzada.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet super mediano de 10 pasajeros, 870 km/h y 6,297 km de autonomía'], __('aircraft.seo.description_template')),
     'keywords' => 'challenger 300 perú, bombardier 300, jet super mediano, vuelo ejecutivo internacional',
     'og_image' => asset('img/aeronaves/aviones/Challenger300.webp'),
-    'canonical' => url('/aeronaves/Challenger300'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/Challenger300'),
 ];
 @endphp
 
 <?php
-$h1_1_1 = 'Challenger';
-$h1_1_2 = '300';
+    $h1_1_1 = 'Challenger';
+    $h1_1_2 = '300';
 
-$p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-$h2_1 = 'Descripción del Avión';
-$p_2 = 'El Bombardier Challenger 300 es un jet supermediano presentado en 1999 y puesto en servicio en 2004, Diseñado para cubrir rutas transcontinentales sin escalas. Equipa dos motores Honeywell HTF7000 que le
+        $h2_1 = __('aircraft.description');
+        $p_2 = 'El Bombardier Challenger 300 es un jet supermediano presentado en 1999 y puesto en servicio en 2004, Diseñado para cubrir rutas transcontinentales sin escalas. Equipa dos motores Honeywell HTF7000 que le
 permiten gran eficiencia, alto rendimiento y excelente fiabilidad operativa. Su cabina fue concebida para brindar
 comodidad superior, con asientos reclinables y un ambiente silencioso.';
 
-$p_3 = 'Este avión se destaca por su versatilidad: es capaz de despegar desde pistas relativamente cortas, al mismo
+        $p_3 = 'Este avión se destaca por su versatilidad: es capaz de despegar desde pistas relativamente cortas, al mismo
 tiempo que ofrece un alcance de más de 5 700 km y techo de crucero de 13 716 m. La aviónica Pro Line 21 de Rockwell
 Collins proporciona una operación segura y moderna. Gracias a su autonomía y espacio interior, el Challenger 300 es una
 de las opciones más apreciadas en el segmento de jets ejecutivos supermedianos.';
 
-$h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-$h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-$h3_1 = 'Modelo';
-$p_4 = 'Challenger 300';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Challenger 300';
 
-$h3_2 = 'Año de Fabricación';
-$p_5 = '2014';
+            $h3_2 = __('aircraft.year');
+            $p_5 = '2014';
 
-$h3_3 = 'Fabricante';
-$p_6 = 'Bombardier Aerospace';
+            $h3_3 = __('aircraft.manufacturer');
+            $p_6 = 'Bombardier Aerospace';
+        
+        $h2_4 = __('aircraft.performance');
 
-$h2_4 = 'Rendimiento';
+            $h3_4 = __('aircraft.max_speed_label');
+            $p_7 = '870 km/h';
 
-$h3_4 = 'Velocidad Máxima';
-$p_7 = '870 km/h';
+            $h3_5 = __('aircraft.max_range');
+            $p_8 = '5,741 km';
 
-$h3_5 = 'Alcance Máximo';
-$p_8 = '5,741 km';
+            $h3_6 = __('aircraft.cruise_altitude');
+            $p_9 = '13,716 metros';
 
-$h3_6 = 'Altitud de Crucero';
-$p_9 = '13,716 metros';
+            $h3_7 = __('aircraft.fuel_consumption');
+            $p_10 = '277 gal/h';
 
-$h3_7 = 'Consumo de Combustible';
-$p_10 = '277 gal/h';
+        $h2_5 = __('aircraft.capacity');
 
-$h2_5 = 'Capacidad';
+            $h3_8 = __('aircraft.max_passengers');
+            $p_11 = '10 pasajeros';
 
-$h3_8 = 'Pasajeros Máximo';
-$p_11 = '10 pasajeros';
+            $h3_9 = __('aircraft.autonomy');
+            $p_12 = '5,741 km';
 
-$h3_9 = 'Autonomía';
-$p_12 = '5,741 km';
+            $h3_10 = __('aircraft.cargo_capacity');
+            $p_13 = '1,350 kg';
 
-$h3_10 = 'Capacidad de Carga';
-$p_13 = '1,350 kg';
+            $h3_11 = __('aircraft.length');
+            $p_14 = '0,9 metros';
 
-$h3_11 = 'Longitud';
-$p_14 = '0,9 metros';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
+        
+            $h3_12 = __('aircraft.national_routes');
 
-$h2_6 = 'Lugares de Operación';
-$p_15 = 'El jet privado Challenger 300 opera en las principales rutas nacionales, conectando destinos estratégicos en
-Peru.';
+            $h3_13 = __('aircraft.other_services');
 
-$h3_12 = 'Rutas Nacionales';
-
-$h3_13 = 'Otros Servicios';
-
-$h3_14 = 'Solicitar Información';
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')

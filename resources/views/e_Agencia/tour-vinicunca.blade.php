@@ -2,9 +2,10 @@
 
 @php
 // Custom SEO for Tour Vinicunca
+$tour_name = 'Vinicunca';
 $seo = [
-    'title' => 'Tour Vinicunca Montaña 7 Colores | Excursión desde Cusco',
-    'description' => 'Tour a Vinicunca, la famosa Montaña de 7 Colores en Cusco. Excursión de 1 día con guía experto, transporte y alimentación incluida desde Cusco.',
+    'title' => str_replace(':tour', $tour_name, __('tours.seo.title_template')),
+    'description' => str_replace(':tour', $tour_name, __('tours.seo.description_template')),
     'keywords' => 'tour vinicunca, montaña 7 colores, rainbow mountain peru, excursión cusco vinicunca, tour rainbow mountain',
     'og_image' => asset('img/tours/vinicunca-7-colores.jpg'),
     'canonical' => url(app()->getLocale() . '/tour-vinicunca'),
@@ -13,21 +14,21 @@ $seo = [
 @section('content')
 
 <?php
-    $h1_1 = 'Montaña de Siete Colores';
-    $p_1 = 'Descubre la montaña arcoiris en una excursión por Cusco.';
+    $h1_1 = __('tours.vinicunca.title');
+    $p_1 = __('tours.vinicunca.subtitle');
 
-        $h2_1 = 'Detalles del Tour';
-        $p_2 = 'Vive una experiencia única en la Montaña de 7 Colores</strong>, también conocida como Vinicunca, una de las maravillas naturales más impresionantes del Cusco. Disfruta de un recorrido que combina paisajes andinos, caminata al aire libre y vistas inolvidables de la montaña multicolor a más de 5,000 m s.n.m. Una aventura inolvidable que te mostrara la naturaleza y la grandeza de los Andes.';
-                $h4_1 = 'Grupo Máximo';
+        $h2_1 = __('tours.tour_details');
+        $p_2 = __('tours.vinicunca.description');
+                $h4_1 = __('tours.max_group');
                 $p_3 = '6 personas';
 
-                $h4_2 = 'Edad Mínima';
+                $h4_2 = __('tours.min_age');
                 $p_4 = 'Ninguna';
 
-                $h4_3 = 'Duración';
+                $h4_3 = __('tours.duration');
                 $p_5 = '1 día';
 
-            $h3_1 = 'Galería de Imágenes';
+            $h3_1 = __('tours.image_gallery');
 
         $h2_2 = 'Resumen del Viaje';
 

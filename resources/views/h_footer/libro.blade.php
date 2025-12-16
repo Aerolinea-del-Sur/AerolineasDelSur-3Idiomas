@@ -3,8 +3,8 @@
 @php
 // Custom SEO for Libro de Reclamaciones
 $seo = [
-    'title' => 'Libro de Reclamaciones | Aerolínea del Sur',
-    'description' => 'Presenta tu reclamo o sugerencia en nuestro Libro de Reclamaciones virtual. Tu opinión nos ayuda a mejorar nuestros servicios de aviación.',
+    'title' => __('legal.complaints_book.seo_title'),
+    'description' => __('legal.complaints_book.seo_description'),
     'keywords' => 'libro reclamaciones perú, reclamos aerolínea, quejas servicios aéreos',
     'og_image' => asset('img/logo.svg'),
     'canonical' => url(app()->getLocale() . '/libro-reclamaciones'),
@@ -17,8 +17,8 @@ $seo = [
 <!-- Agregar html2canvas para generar PDF desde la confirmación -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <div class="libro-header">
-        <div class="libro-header__title">Libro de Reclamaciones</div>
-        <div class="libro-header__subtitle">Registre su queja o reclamo de forma clara y segura</div>
+        <div class="libro-header__title"><?= __('legal.complaints_book.title') ?></div>
+        <div class="libro-header__subtitle"><?= __('legal.complaints_book.subtitle') ?></div>
     </div>
     <div class="reclamacion-container">
         <!-- Barra de progreso -->

@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Citation Hemisphere
+$aircraft_model = 'Citation Hemisphere';
 $seo = [
-    'title' => 'Citation Hemisphere | Jet Ejecutivo de Nueva Generación',
-    'description' => 'Citation Hemisphere: 19 pasajeros, 1050 km/h y 8,300 km. El más grande y avanzado de la familia Citation.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo de nueva generación'], __('aircraft.seo.description_template')),
     'keywords' => 'citation hemisphere perú, cessna hemisphere, jet gran alcance, avión ejecutivo lujo',
     'og_image' => asset('img/aeronaves/aviones/CitationHemisPhere.webp'),
-    'canonical' => url('/aeronaves/CitationHemisPhere'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/CitationHemisPhere'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Citation';
     $h1_1_2 = 'HemisPhere';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
+        $h2_1 = __('aircraft.description');
         $p_2 = 'El Cessna Citation HemisPhere fue presentado en 2015 por Textron Aviation como el proyecto más ambicioso de la serie Citation, apuntando al segmento de jets ejecutivos de gran cabina y largo alcance. La aeronave estaba diseñada para competir con modelos como el Gulfstream G500 y Dassault Falcon 5X, ofreciendo un diseño de cabina de hasta 3 metros de ancho y gran autonomía.';
         $p_3 = 'Impulsado por motores Safran Silvercrest y con aviónica avanzada Honeywell Primus Epic, el Hemisphere prometía un rendimiento de alta eficiencia y confort de clase superior. Sin embargo, debido a retrasos en el desarrollo de los motores, el programa fue suspendido indefinidamente en 2019, por lo que nunca llegó a entrar en producción.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Cessna Citation Hemisphere';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Citation Hemisphere';
 
-            $h3_2 = 'Año de Fabricación';
+            $h3_2 = __('aircraft.year');
             $p_5 = '2019';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Cessna Aircraft Company';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '1,550 km/h';
 
-            $h3_5 = 'Alcance Máximo';
+            $h3_5 = __('aircraft.max_range');
             $p_8 = '8,300 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '13,700 metros';
 
-            $h3_7 = 'Consumo de Combustible';
+            $h3_7 = __('aircraft.fuel_consumption');
             $p_10 = '370 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '15 pasajeros';
 
-            $h3_9 = 'Autonomía';
+            $h3_9 = __('aircraft.autonomy');
             $p_12 = '8,300 km';
 
-            $h3_10 = 'Capacidad de Carga';
+            $h3_10 = __('aircraft.cargo_capacity');
             $p_13 = '1,800 kg';
 
-            $h3_11 = 'Longitud';
+            $h3_11 = __('aircraft.length');
             $p_14 = '24 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Citation HemisPhere opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')

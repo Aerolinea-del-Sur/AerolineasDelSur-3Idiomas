@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Gulfstream G100
+$aircraft_model = 'Gulfstream G100';
 $seo = [
-    'title' => 'Gulfstream G100 | Jet Ejecutivo de Lujo en Perú',
-    'description' => 'Gulfstream G100: jet ejecutivo de 14 pasajeros con velocidad de 935 km/h. Máxima comodidad y rendimiento para vuelos de negocios internacionales.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo de lujo'], __('aircraft.seo.description_template')),
     'keywords' => 'gulfstream g100 perú, jet ejecutivo lujo, vuelo privado internacional, avión corporativo',
     'og_image' => asset('img/aeronaves/aviones/Gulfstream-G100.webp'),
-    'canonical' => url('/aeronaves/GulfstreamG100'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/GulfstreamG100'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Gulfstream';
     $h1_1_2 = 'G100';
 
-    $p_1 = 'Excelencia en Aviación Comercial';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
+        $h2_1 = __('aircraft.description');
         $p_2 = 'El Gulfstream G100, originalmente conocido como IAI Astra SPX, fue desarrollado por Israel Aircraft Industries y posteriormente producido bajo la marca Gulfstream. Es un jet ejecutivo bimotor de categoría midsize, con capacidad para entre 7 y 8 pasajeros. Su cabina es cómoda y eficiente para misiones transcontinentales, combinando diseño aerodinámico avanzado y motores turbofan Honeywell-IAI TFE731-40.';
         $p_3 = 'Su rendimiento es notable: velocidad de crucero cercana a los 870 km/h (470 kt), techo de servicio de hasta 13 716 m (45 000 ft), y alcance de aproximadamente 5 167 km (2 790 nm). Es ideal para vuelos rápidos con tiempos eficientes, y su confiabilidad lo hizo popular tanto en el sector civil como en versiones militares (por ejemplo, USAF C-38 Courier).';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
+            $h3_1 = __('aircraft.model');
             $p_4 = 'Gulfstream G100';
 
-            $h3_2 = 'Año de Fabricación';
+            $h3_2 = __('aircraft.year');
             $p_5 = '2002';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Gulfstream Aerospace';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '870 km/h';
 
-            $h3_5 = 'Alcance Máximo';
+            $h3_5 = __('aircraft.max_range');
             $p_8 = '5,167 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '13,716 metros';
 
-            $h3_7 = 'Consumo de Combustible';
+            $h3_7 = __('aircraft.fuel_consumption');
             $p_10 = 'Entre 207 y 210 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '8 pasajeros';
 
-            $h3_9 = 'Autonomía';
+            $h3_9 = __('aircraft.autonomy');
             $p_12 = '5,167 km';
 
-            $h3_10 = 'Capacidad de Carga';
+            $h3_10 = __('aircraft.cargo_capacity');
             $p_13 = '410 kg';
 
-            $h3_11 = 'Longitud';
+            $h3_11 = __('aircraft.length');
             $p_14 = '16,9 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Gulfstream G100 opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')

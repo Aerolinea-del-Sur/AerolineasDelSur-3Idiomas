@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Challenger 650
+$aircraft_model = 'Challenger 650';
 $seo = [
-    'title' => 'Challenger 650 | Jet Ejecutivo de Máxima Capacidad',
-    'description' => 'Challenger 650: el más grande de la serie con 16 pasajeros, 850 km/h y 5,206 km. Cabina ultra espaciosa y confort premium.',
-    'keywords' => 'challenger 650 perú, jet gran capacidad, bombardier 650, avión 16 pasajeros',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo premium con cabina ampliada para 12 pasajeros'], __('aircraft.seo.description_template')),
+    'keywords' => 'challenger 650 perú, bombardier 650, jet ejecutivo premium, vuelo internacional',
     'og_image' => asset('img/aeronaves/aviones/Challenger650.webp'),
-    'canonical' => url('/aeronaves/Challenger650'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/Challenger650'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Challenger';
     $h1_1_2 = '650';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
-        $p_2 = 'El Bombardier Challenger 650 representa la última evolución de la familia Challenger, presentada oficialmente en 2015. Mantiene la confiabilidad probada del 605, pero incorpora motores General Electric CF34-3B mejorados, interiores personalizables con acabados premium y aviónica Rockwell Collins Pro Line 21 avanzada, brindando una experiencia de vuelo más cómoda y segura.';
-        $p_3 = 'Gracias a su alcance de más de 7 400 km y capacidad para hasta 12 pasajeros, este jet puede unir sin escalas pares de ciudades como Nueva York – Londres o Dubái – París. Su cabina amplia y silenciosa lo convierte en una opción altamente competitiva en el segmento de jets ejecutivos de cabina ancha, siendo elegido tanto por corporaciones como por operadores de vuelos charter de alta gama.';
+        $h2_1 = __('aircraft.description');
+        $p_2 = 'El Bombardier Challenger 650 representa la evolución del exitoso Challenger 605, ofreciendo una cabina rediseñada con mayor espacio y confort. Este jet ejecutivo de largo alcance combina tecnología de vanguardia con lujo excepcional.';
+        $p_3 = 'Con capacidad para 12 pasajeros, el Challenger 650 alcanza velocidades de crucero de 850 km/h y un alcance de 7,408 km, ideal para vuelos intercontinentales sin escalas con máximo confort.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Bombardier Challenger 650';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Challenger 650';
 
-            $h3_2 = 'Año de Fabricación';
+            $h3_2 = __('aircraft.year');
             $p_5 = '2015';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Bombardier Aerospace';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
-            $p_7 = '870 km/h';
+            $h3_4 = __('aircraft.max_speed_label');
+            $p_7 = '850 km/h';
 
-            $h3_5 = 'Alcance Máximo';
+            $h3_5 = __('aircraft.max_range');
             $p_8 = '7,408 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '12,497 metros';
 
-            $h3_7 = 'Consumo de Combustible';
-            $p_10 = '335 gal/h';
+            $h3_7 = __('aircraft.fuel_consumption');
+            $p_10 = '350 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '12 pasajeros';
 
-            $h3_9 = 'Autonomía';
+            $h3_9 = __('aircraft.autonomy');
             $p_12 = '7,408 km';
 
-            $h3_10 = 'Capacidad de Carga';
-            $p_13 = '2,000 kg';
+            $h3_10 = __('aircraft.cargo_capacity');
+            $p_13 = '1,746 kg';
 
-            $h3_11 = 'Longitud';
-            $p_14 = '20,85 metros';
+            $h3_11 = __('aircraft.length');
+            $p_14 = '20,92 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Challenger 650 opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');
 ?>
 
 @section('content')

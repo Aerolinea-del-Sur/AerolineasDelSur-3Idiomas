@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Challenger 605
+$aircraft_model = 'Challenger 605';
 $seo = [
-    'title' => 'Challenger 605 | Jet de Negocios Global',
-    'description' => 'Challenger 605: 12 pasajeros y 7,408 km. Tecnología fly-by-wire y cabina silenciosa para viajes ejecutivos de lujo.',
-    'keywords' => 'challenger 605 perú, jet global, bombardier 605, vuelo ejecutivo transoceánico',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo de alto rendimiento para 12 pasajeros'], __('aircraft.seo.description_template')),
+    'keywords' => 'challenger 605 perú, bombardier 605, jet ejecutivo, vuelo corporativo',
     'og_image' => asset('img/aeronaves/aviones/Challenger605.webp'),
-    'canonical' => url('/aeronaves/Challenger605'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/Challenger605'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Challenger';
     $h1_1_2 = '605';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
-        $p_2 = 'El Bombardier Challenger 605 fue lanzado en 2006 como reemplazo del 604, manteniendo la plataforma robusta de la serie Challenger pero con significativas mejoras en cabina, diseño interior y sistemas de aviónica Rockwell Collins Pro Line 21. Está diseñado para transportar hasta 12 pasajeros en un ambiente lujoso y silencioso, con mayor espacio para ventanas y cabina rediseñada.';
-        $p_3 = 'Con un alcance cercano a los 8 000 km y techo operativo de 12 500 m, este jet puede conectar sin escalas ciudades intercontinentales como Nueva York – Londres o Dubái – París. Su consumoeficiente y confiabilidad lo posicionan como uno de los modelos más demandados en el segmento de jets ejecutivos de cabina ancha.';
+        $h2_1 = __('aircraft.description');
+        $p_2 = 'El Bombardier Challenger 605 combina tecnología de avanzada con lujo refinado. Este jet ejecutivo de largo alcance ofrece una cabina amplia para hasta 12 pasajeros, ideal para viajes corporativos transoceánicos.';
+        $p_3 = 'Con motores General Electric CF34-3B1 y sistemas de aviónica Rockwell Collins Pro Line, el Challenger 605 alcanza velocidades de 850 km/h con un alcance impresionante de 7,400 km.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Bombardier Challenger 605';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Challenger 605';
 
-            $h3_2 = 'Año de Fabricación';
-            $p_5 = '2015';
+            $h3_2 = __('aircraft.year');
+            $p_5 = '2006';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Bombardier Aerospace';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
-            $p_7 = '870 km/h';
+            $h3_4 = __('aircraft.max_speed_label');
+            $p_7 = '850 km/h';
 
-            $h3_5 = 'Alcance Máximo';
-            $p_8 = '7,991 km';
+            $h3_5 = __('aircraft.max_range');
+            $p_8 = '7,400 km';
 
-            $h3_6 = 'Altitud de Crucero';
-            $p_9 = '12,500 metros';
+            $h3_6 = __('aircraft.cruise_altitude');
+            $p_9 = '12,497 metros';
 
-            $h3_7 = 'Consumo de Combustible';
-            $p_10 = '340 gal/h';
+            $h3_7 = __('aircraft.fuel_consumption');
+            $p_10 = '345 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '12 pasajeros';
 
-            $h3_9 = 'Autonomía';
-            $p_12 = '7,991 km';
+            $h3_9 = __('aircraft.autonomy');
+            $p_12 = '7,400 km';
 
-            $h3_10 = 'Capacidad de Carga';
-            $p_13 = '2,000 kg';
+            $h3_10 = __('aircraft.cargo_capacity');
+            $p_13 = '1,741 kg';
 
-            $h3_11 = 'Longitud';
-            $p_14 = '20,85 metros';
+            $h3_11 = __('aircraft.length');
+            $p_14 = '20,92 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Challenger 605 opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');
 ?>
 
 @section('content')

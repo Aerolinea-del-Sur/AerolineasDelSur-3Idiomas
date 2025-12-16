@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Mi-8 MTV-1
+$aircraft_model = 'Mi-8 MTV-1';
 $seo = [
-    'title' => 'Helicóptero Mi-8 MTV- 1 | Transporte Multifunción',
-    'description' => 'Mi-8 MTV-1: helicóptero versátil con capacidad de 24 pasajeros. Perfecto para transporte, rescate y operaciones especiales en Perú.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'transporte multifunción'], __('aircraft.seo.description_template')),
     'keywords' => 'mi-8 mtv-1 perú, helicóptero mi8, transporte aéreo pesado, rescate helicóptero perú',
     'og_image' => asset('img/aeronaves/aviones/Mi8-mtv1.webp'),
-    'canonical' => url('/aeronaves/Mi8-mtv1'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/Mi8-mtv1'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Mi 8';
     $h1_1_2 = 'MTV 1';
 
-    $p_1 = 'Excelencia en Aviación Comercial';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
+        $h2_1 = __('aircraft.description');
         $p_2 = 'El Mil Mi 8 MTV 1 es una versión modernizada del Mi-8, introducida en la década de 1980. Está propulsado por dos motores Klimov TV3-117VM, que le permiten un mejor rendimiento en climas cálidos y altitudes elevadas, características muy valoradas en operaciones internacionales. Es utilizado ampliamente en misiones civiles y militares por su confiabilidad y bajo costo operativo en relación con su tamaño y capacidad.';
         $p_3 = 'Este helicóptero puede transportar hasta 24 pasajeros en configuración estándar, o ser adaptado para transporte de carga interna y externa, evacuaciones médicas y operaciones de rescate. Su cabina espaciosa y la capacidad de operar en terrenos difíciles lo convirtieron en uno de los helicópteros más producidos y exportados de la historia.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
+            $h3_1 = __('aircraft.model');
             $p_4 = 'Mi 8 MTV';
 
-            $h3_2 = 'Año de Fabricación';
+            $h3_2 = __('aircraft.year');
             $p_5 = '1980';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Mil Moscow Helicopter Plant';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '250 km/h';
 
-            $h3_5 = 'Alcance Máximo';
+            $h3_5 = __('aircraft.max_range');
             $p_8 = '1000 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '4500 metros';
 
-            $h3_7 = 'Consumo de Combustible';
+            $h3_7 = __('aircraft.fuel_consumption');
             $p_10 = '1040 kg/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '24 pasajeros';
 
-            $h3_9 = 'Autonomía';
+            $h3_9 = __('aircraft.autonomy');
             $p_12 = '1000 km';
 
-            $h3_10 = 'Capacidad de Carga';
+            $h3_10 = __('aircraft.cargo_capacity');
             $p_13 = '4000 kg';
 
-            $h3_11 = 'Longitud';
+            $h3_11 = __('aircraft.length');
             $p_14 = '18,20 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Mi-8 MTV opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')

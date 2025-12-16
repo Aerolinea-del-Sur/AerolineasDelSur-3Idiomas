@@ -2,9 +2,10 @@
 
 @php
 // Custom SEO for Tour Vinicunca Elite
+$tour_name = 'Vinicunca Elite';
 $seo = [
-    'title' => 'Tour Vinicunca Elite | Montaña 7 Colores VIP desde Cusco',
-    'description' => 'Tour VIP a Vinicunca con servicio premium. Grupos reducidos, alimentación gourmet y guía privado para una experiencia exclusiva en la Montaña de 7 Colores.',
+    'title' => str_replace(':tour', $tour_name, __('tours.seo.title_template')),
+    'description' => str_replace(':tour', $tour_name, __('tours.seo.description_template')),
     'keywords' => 'tour vinicunca elite, rainbow mountain vip, tour privado vinicunca, excursión premium cusco',
     'og_image' => asset('img/tours/vinicunca-elite.jpg'),
     'canonical' => url(app()->getLocale() . '/tour-vinicunca-elite'),
@@ -13,22 +14,22 @@ $seo = [
 @section('content')
 
 <?php
-    $h1_1 = 'Vinincunca';
-    $p_1 = 'Descubre Vinicunca, Palcoyo, Ausangate, Valle Rojo y Cuatro Lagunas.';
+    $h1_1 = __('tours.vinicunca_elite.title');
+    $p_1 = __('tours.vinicunca_elite.subtitle');
 
-        $h2_1 = 'Detalles del Tour';
-        $p_2 = 'Aerolínea del Sur se enorgullece en presentar una experiencia única e inolvidable: un sobrevuelo escénico en avioneta diseñado especialmente para quienes desean admirar los paisajes más espectaculares del sur andino sin necesidad de realizar exigentes caminatas.';
+        $h2_1 = __('tours.tour_details');
+        $p_2 = __('tours.vinicunca_elite.description');
 
-                $h4_1 = 'Grupo Máximo';
+                $h4_1 = __('tours.max_group');
                 $p_3 = '6 personas';
 
-                $h4_2 = 'Edad Mínima';
+                $h4_2 = __('tours.min_age');
                 $p_4 = 'Ninguna';
 
-                $h4_3 = 'Duración';
+                $h4_3 = __('tours.duration');
                 $p_5 = '1 hora';
 
-            $h3_1 = 'Galería de Imágenes';
+            $h3_1 = __('tours.image_gallery');
 
         $h2_2 = 'Resumen del Viaje';
 

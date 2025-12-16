@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for King Air B350
+$aircraft_model = 'King Air B350';
 $seo = [
-    'title' => 'King Air B350 | Avión Turbohélice Ejecutivo',
-    'description' => 'Beechcraft King Air B350: turbohélice premium de 8 pasajeros con 870 km/h de velocidad. Perfecto para vuelos ejecutivos y charter en Perú.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'avión turbohélice ejecutivo'], __('aircraft.seo.description_template')),
     'keywords' => 'king air b350, beechcraft 350 perú, avión turbohélice charter, vuelo ejecutivo cusco',
     'og_image' => asset('img/aeronaves/aviones/AirKingB350.webp'),
-    'canonical' => url('/aeronaves/king-air-b350'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/king-air-b350'),
 ];
 @endphp
 
@@ -15,65 +16,64 @@ $seo = [
 $h1_1_1 = 'King Air';
 $h1_1_2 = 'B350';
 
-$p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+$p_1 = __('aircraft.excellence');
 
-$h2_1 = 'Descripción del Avión';
+$h2_1 = __('aircraft.description');
 $p_2 = 'El King Air B350 es una aeronave turbohélice que permite vuelos a alta velocidad y acceso a pistas 
 más cortas que las requeridas por un jet.';
 
 $p_3 = 'Con alta tecnología y una cabina espaciosa, supera a versiones anteriores y a sus competidores en prestigio. 
 Su excelente capacidad de carga útil y eficiente consumo de combustible lo hacen muy productivo y económico.';
 
-$h2_2 = 'Galería de Imágenes';
+$h2_2 = __('aircraft.gallery');
 
-$h2_3 = 'Visión General';
+$h2_3 = __('aircraft.overview');
 
-$h3_1 = 'Modelo';
+$h3_1 = __('aircraft.model');
 $p_4 = 'Beechcraft King Air B350';
 
-$h3_2 = 'Año de Fabricación';
+$h3_2 = __('aircraft.year');
 $p_5 = '1989';
 
-$h3_3 = 'Fabricante';
+$h3_3 = __('aircraft.manufacturer');
 $p_6 = 'Beechcraft';
 
-$h2_4 = 'Rendimiento';
+$h2_4 = __('aircraft.performance');
 
-$h3_4 = 'Velocidad Máxima';
+$h3_4 = __('aircraft.max_speed_label');
 $p_7 = '578 km/h';
 
-$h3_5 = 'Alcance Máximo';
+$h3_5 = __('aircraft.max_range');
 $p_8 = '4,960 km';
 
-$h3_6 = 'Altitud de Crucero';
+$h3_6 = __('aircraft.cruise_altitude');
 $p_9 = '10,668 metros';
 
-$h3_7 = 'Consumo de Combustible';
+$h3_7 = __('aircraft.fuel_consumption');
 $p_10 = '134 gal/h';
 
-$h2_5 = 'Capacidad';
+$h2_5 = __('aircraft.capacity');
 
-$h3_8 = 'Pasajeros Máximo';
+$h3_8 = __('aircraft.max_passengers');
 $p_11 = '9 pasajeros';
 
-$h3_9 = 'Autonomía';
+$h3_9 = __('aircraft.autonomy');
 $p_12 = '3,345 km';
 
-$h3_10 = 'Capacidad de Carga';
+$h3_10 = __('aircraft.cargo_capacity');
 $p_13 = '2,334 kg';
 
-$h3_11 = 'Longitud';
+$h3_11 = __('aircraft.length');
 $p_14 = '14.22 metros';
 
-$h2_6 = 'Lugares de Operación';
-$p_15 = 'El jet privado King Air B350 opera en las principales rutas nacionales, conectando destinos estratégicos en
-Peru.';
+$h2_6 = __('aircraft.operation_places');
+$p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
 
-$h3_12 = 'Rutas Nacionales';
+$h3_12 = __('aircraft.national_routes');
 
-$h3_13 = 'Otros Servicios';
+$h3_13 = __('aircraft.other_services');
 
-$h3_14 = 'Solicitar Información';
+$h3_14 = __('aircraft.request_info');
 ?>
 
 @section('content')

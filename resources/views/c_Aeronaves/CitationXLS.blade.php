@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Citation XLS
+$aircraft_model = 'Citation XLS';
 $seo = [
-    'title' => 'Citation XLS | Jet Ejecutivo de Gran Capacidad',
-    'description' => 'Citation XLS: 9 pasajeros, 815 km/h y 3,890 km. Cabina amplia y velocidad de crucero rápida para eficiencia máxima.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo de gran capacidad'], __('aircraft.seo.description_template')),
     'keywords' => 'citation xls perú, cessna xls, jet rápido, avión ejecutivo amplio',
     'og_image' => asset('img/aeronaves/aviones/CitationXLS.webp'),
-    'canonical' => url('/aeronaves/CitationXLS'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/CitationXLS'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Citation';
     $h1_1_2 = 'XLS';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
+        $h2_1 = __('aircraft.description');
         $p_2 = 'El Cessna Citation Excel (Modelo 560XL) se presentó en 1998 como un jet mediano que equilibraba tamaño, rendimiento y accesibilidad. Equipado con motores Pratt & Whitney Canada PW545A, ofrece una velocidad de crucero cercana a los 815 km/h y excelente desempeño en pistas más cortas en comparación con otros jets midsize.';
         $p_3 = 'Su cabina presurizada, con capacidad para hasta 8 o 9 pasajeros, está diseñada para viajes corporativos cómodos, con interiores configurables para reuniones y descanso. Con un alcance aproximado de 3 890 km, el Citation Excel puede realizar vuelos regionales y transcontinentales cortos, convirtiéndose en una opción popular en el mercado de jets ejecutivos medianos.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Cessna Citation XLS';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Citation XLS';
 
-            $h3_2 = 'Año de Fabricación';
+            $h3_2 = __('aircraft.year');
             $p_5 = '2004';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Cessna Aircraft Company';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '815 km/h';
 
-            $h3_5 = 'Alcance Máximo';
+            $h3_5 = __('aircraft.max_range');
             $p_8 = '3,890 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '13,716 metros';
 
-            $h3_7 = 'Consumo de Combustible';
+            $h3_7 = __('aircraft.fuel_consumption');
             $p_10 = '220 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '9 pasajeros';
 
-            $h3_9 = 'Autonomía';
+            $h3_9 = __('aircraft.autonomy');
             $p_12 = '3,890 km';
 
-            $h3_10 = 'Capacidad de Carga';
+            $h3_10 = __('aircraft.cargo_capacity');
             $p_13 = '1,100 kg';
 
-            $h3_11 = 'Longitud';
+            $h3_11 = __('aircraft.length');
             $p_14 = '16 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Citation XLS opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')

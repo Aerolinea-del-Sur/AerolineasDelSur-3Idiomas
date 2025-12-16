@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Phenom 300
+$aircraft_model = 'Phenom 300';
 $seo = [
-    'title' => 'Embraer Phenom 300 | Jet Ejecutivo Mediano Premium',
-    'description' => 'Phenom 300: jet ejecutivo de 10 pasajeros, 870 km/h y 5,741 km de alcance. Líder en su categoría por rendimiento y confort.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo mediano premium'], __('aircraft.seo.description_template')),
     'keywords' => 'phenom 300 perú, embraer 300, jet ejecutivo mediano, vuelo privado largo alcance',
     'og_image' => asset('img/aeronaves/aviones/Phenom300.webp'),
-    'canonical' => url('/aeronaves/Phenom300'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/Phenom300'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Phenom';
     $h1_1_2 = '300';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
+        $h2_1 = __('aircraft.description');
         $p_2 = 'El Embraer Phenom 300 es un jet ligero desarrollado por Embraer y lanzado en 2009 como una evolución del Phenom 100. Se ha consolidado como el avión más vendido en su categoría durante varios años consecutivos, gracias a su equilibrio entre costos operativos, alcance y capacidad. Incorpora dos motores Pratt & Whitney PW535E que le otorgan un rendimiento sobresaliente y excelente fiabilidad.';
         $p_3 = 'Su cabina, diseñada para 6 a 8 pasajeros, ofrece un interior espacioso con asientos reclinables, conectividad moderna y aviónica Garmin Prodigy Touch basada en G3000. Con un techo de servicio de 13 716 m y un alcance cercano a los 3 650 km, es ideal tanto para viajes de negocios como para operaciones privadas de mediano alcance. Su combinación de rendimiento, confort y tecnología lo convierte en referencia dentro de los light jets.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Embraer Phenom 300';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Phenom 300';
 
-            $h3_2 = 'Año de Fabricación';
+            $h3_2 = __('aircraft.year');
             $p_5 = '2009';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Embraer';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '839 km/h';
 
-            $h3_5 = 'Alcance Máximo';
+            $h3_5 = __('aircraft.max_range');
             $p_8 = '3,650 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '13,716 metros';
 
-            $h3_7 = 'Consumo de Combustible';
+            $h3_7 = __('aircraft.fuel_consumption');
             $p_10 = '170 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '8 pasajeros';
 
-            $h3_9 = 'Autonomía';
+            $h3_9 = __('aircraft.autonomy');
             $p_12 = '3,650 km';
 
-            $h3_10 = 'Capacidad de Carga';
+            $h3_10 = __('aircraft.cargo_capacity');
             $p_13 = '1,150 kg';
 
-            $h3_11 = 'Longitud';
+            $h3_11 = __('aircraft.length');
             $p_14 = '15,9 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Phenom 300 opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')

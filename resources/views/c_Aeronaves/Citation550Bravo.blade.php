@@ -2,74 +2,75 @@
 
 @php
 // Custom SEO for Citation 550 Bravo
+$aircraft_model = 'Citation 550 Bravo';
 $seo = [
-    'title' => 'Citation 550 Bravo | Jet Ejecutivo Cessna',
-    'description' => 'Citation 550 Bravo: jet de 7 pasajeros, 740 km/h y 3,520 km. Fiabilidad y economía Cessna para vuelos ejecutivos regionales.',
-    'keywords' => 'citation 550 bravo perú, cessna bravo, jet ejecutivo cessna, vuelo regional eficiente',
-    'og_image' => asset('img/aeronaves/aviones/Citation550-Bravo.webp'),
-    'canonical' => url('/aeronaves/Citation550Bravo'),
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo ligero para 8 pasajeros con tecnología avanzada'], __('aircraft.seo.description_template')),
+    'keywords' => 'citation 550 bravo perú, cessna bravo, jet ejecutivo ligero, vuelo corporativo',
+    'og_image' => asset('img/aeronaves/aviones/Citation550Bravo.webp'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/Citation550Bravo'),
 ];
 @endphp
 
 <?php
-    $h1_1_1 = 'Citation';
-    $h1_1_2 = '550 Bravo';
+    $h1_1_1 = 'Citation 550';
+    $h1_1_2 = 'Bravo';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
-        $p_2 = 'El Cessna Citation 550 Bravo pertenece a la familia Citation, reconocida por ser una de las más exitosas en el segmento de jets ejecutivos ligeros. Basado en el Citation II, el Bravo incorporó motores Pratt & Whitney PW530A más eficientes, además de aviónica Collins Pro Line 21 y mejoras en la cabina, que permiten un vuelo más confortable y seguro.';
-        $p_3 = 'Su rendimiento lo hace ideal para vuelos regionales y de medio alcance, con una autonomía cercana a los 3 500 km. La cabina puede configurarse para hasta 7 pasajeros, con un diseño enfocado en comodidad en trayectos cortos y medianos. Gracias a su economía operativa y confiabilidad, es uno de los jets más valorados por operadores privados y corporativos.';
+        $h2_1 = __('aircraft.description');
+        $p_2 = 'El Cessna Citation 550 Bravo es un jet ejecutivo ligero reconocido por su eficiencia y confiabilidad. Con capacidad para 8 pasajeros, ofrece un rendimiento excepcional en rutas de mediano alcance.';
+        $p_3 = 'Equipado con motores Pratt & Whitney PW530A, el Citation Bravo alcanza velocidades de crucero de 740 km/h con un alcance de 3,520 km, ideal para vuelos regionales y corporativos.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Cessna Citation 550 Bravo';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Citation 550 Bravo';
 
-            $h3_2 = 'Año de Fabricación';
-            $p_5 = '2006';
+            $h3_2 = __('aircraft.year');
+            $p_5 = '1997';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Cessna Aircraft Company';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '740 km/h';
 
-            $h3_5 = 'Alcance Máximo';
+            $h3_5 = __('aircraft.max_range');
             $p_8 = '3,520 km';
 
-            $h3_6 = 'Altitud de Crucero';
-            $p_9 = '13,700 metros';
+            $h3_6 = __('aircraft.cruise_altitude');
+            $p_9 = '13,716 metros';
 
-            $h3_7 = 'Consumo de Combustible';
-            $p_10 = '160 gal/h';
+            $h3_7 = __('aircraft.fuel_consumption');
+            $p_10 = '220 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
-            $p_11 = '7 pasajeros';
+            $h3_8 = __('aircraft.max_passengers');
+            $p_11 = '8 pasajeros';
 
-            $h3_9 = 'Autonomía';
+            $h3_9 = __('aircraft.autonomy');
             $p_12 = '3,520 km';
 
-            $h3_10 = 'Capacidad de Carga';
-            $p_13 = '1,000 kg';
+            $h3_10 = __('aircraft.cargo_capacity');
+            $p_13 = '454 kg';
 
-            $h3_11 = 'Longitud';
-            $p_14 = '14,9 metros';
+            $h3_11 = __('aircraft.length');
+            $p_14 = '14,39 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Citation 550 Bravo opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');
 ?>
 
 @section('content')

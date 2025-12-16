@@ -2,81 +2,76 @@
 
 @php
 // Custom SEO for Mi-17
+$aircraft_model = 'Mi-17';
 $seo = [
-    'title' => 'Helicóptero Mi-17 | Transporte de Carga y Pasajeros en Perú',
-    'description' => 'Mi-17: helicóptero soviético de 24 pasajeros y gran capacidad de carga. Ideal para operaciones en zonas remotas y montañosas de Perú.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'transporte de carga y pasajeros'], __('aircraft.seo.description_template')),
     'keywords' => 'mi-17 perú, helicóptero cargo perú, transporte montaña, mi17 cusco',
     'og_image' => asset('img/aeronaves/aviones/mi17-5.webp'),
-    'canonical' => url('/aeronaves/mi-17'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/mi-17'),
 ];
 @endphp
 
 <?php
-$h1_1_1 = 'Challenger';
-$h1_1_2 = '300';
+$h1_1_1 = 'Mi';
+$h1_1_2 = '17';
 
-$p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+$p_1 = __('aircraft.excellence');
 
-$h2_1 = 'Descripción del Avión';
-$p_2 = 'El Bombardier Challenger 300 es un jet supermediano presentado en 1999 y puesto en servicio en 2004, Diseñado para cubrir rutas transcontinentales sin escalas. Equipa dos motores Honeywell HTF7000 que le
-permiten gran eficiencia, alto rendimiento y excelente fiabilidad operativa. Su cabina fue concebida para brindar
-comodidad superior, con asientos reclinables y un ambiente silencioso.';
+$h2_1 = __('aircraft.description');
+$p_2 = 'El Mil Mi-17 es un helicóptero de transporte medio desarrollado en la Unión Soviética como una evolución del Mi-8. Introducido a finales de la década de 1970, es ampliamente utilizado en operaciones civiles y militares en todo el mundo. Está equipado con motores Klimov TV3-117MT que proporcionan mayor potencia y mejor rendimiento en condiciones de alta temperatura y altitud.';
 
-$p_3 = 'Este avión se destaca por su versatilidad: es capaz de despegar desde pistas relativamente cortas, al mismo
-tiempo que ofrece un alcance de más de 5 700 km y techo de crucero de 13 716 m. La aviónica Pro Line 21 de Rockwell
-Collins proporciona una operación segura y moderna. Gracias a su autonomía y espacio interior, el Challenger 300 es una
-de las opciones más apreciadas en el segmento de jets ejecutivos supermedianos.';
+$p_3 = 'Con capacidad para transportar hasta 24 pasajeros o 4,000 kg de carga interna, el Mi-17 es ideal para misiones de transporte, evacuación médica, búsqueda y rescate, y apoyo logístico en zonas remotas. Su versatilidad, robustez y bajo costo de operación lo han convertido en uno de los helicópteros más populares en su categoría a nivel mundial.';
 
-$h2_2 = 'Galería de Imágenes';
+$h2_2 = __('aircraft.gallery');
 
-$h2_3 = 'Visión General';
+$h2_3 = __('aircraft.overview');
 
-$h3_1 = 'Modelo';
-$p_4 = 'Challenger 300';
+$h3_1 = __('aircraft.model');
+$p_4 = 'Mil Mi-17';
 
-$h3_2 = 'Año de Fabricación';
-$p_5 = '2014';
+$h3_2 = __('aircraft.year');
+$p_5 = '1977';
 
-$h3_3 = 'Fabricante';
-$p_6 = 'Bombardier Aerospace';
+$h3_3 = __('aircraft.manufacturer');
+$p_6 = 'Mil Moscow Helicopter Plant';
 
-$h2_4 = 'Rendimiento';
+$h2_4 = __('aircraft.performance');
 
-$h3_4 = 'Velocidad Máxima';
-$p_7 = '870 km/h';
+$h3_4 = __('aircraft.max_speed_label');
+$p_7 = '250 km/h';
 
-$h3_5 = 'Alcance Máximo';
-$p_8 = '5,741 km';
+$h3_5 = __('aircraft.max_range');
+$p_8 = '950 km';
 
-$h3_6 = 'Altitud de Crucero';
-$p_9 = '13,716 metros';
+$h3_6 = __('aircraft.cruise_altitude');
+$p_9 = '6,000 metros';
 
-$h3_7 = 'Consumo de Combustible';
-$p_10 = '277 gal/h';
+$h3_7 = __('aircraft.fuel_consumption');
+$p_10 = '580 kg/h';
 
-$h2_5 = 'Capacidad';
+$h2_5 = __('aircraft.capacity');
 
-$h3_8 = 'Pasajeros Máximo';
-$p_11 = '10 pasajeros';
+$h3_8 = __('aircraft.max_passengers');
+$p_11 = '24 pasajeros';
 
-$h3_9 = 'Autonomía';
-$p_12 = '5,741 km';
+$h3_9 = __('aircraft.autonomy');
+$p_12 = '950 km';
 
-$h3_10 = 'Capacidad de Carga';
-$p_13 = '1,350 kg';
+$h3_10 = __('aircraft.cargo_capacity');
+$p_13 = '4,000 kg';
 
-$h3_11 = 'Longitud';
-$p_14 = '0,9 metros';
+$h3_11 = __('aircraft.length');
+$p_14 = '18,4 metros';
 
-$h2_6 = 'Lugares de Operación';
-$p_15 = 'El jet privado Challenger 300 opera en las principales rutas nacionales, conectando destinos estratégicos en
-Peru.';
+$h2_6 = __('aircraft.operation_places');
+$p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
 
-$h3_12 = 'Rutas Nacionales';
+$h3_12 = __('aircraft.national_routes');
 
-$h3_13 = 'Otros Servicios';
+$h3_13 = __('aircraft.other_services');
 
-$h3_14 = 'Solicitar Información';
+$h3_14 = __('aircraft.request_info');
 ?>
 
 @section('content')

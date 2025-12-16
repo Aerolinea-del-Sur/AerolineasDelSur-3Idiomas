@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Citation Latitude
+$aircraft_model = 'Citation Latitude';
 $seo = [
-    'title' => 'Citation Latitude | Jet Mediano Premium',
-    'description' => 'Citation Latitude: 9 pasajeros, 826 km/h y 5,278 km. Cabina más espaciosa de su clase con tecnología Garmin G5000.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet mediano premium con cabina espaciosa'], __('aircraft.seo.description_template')),
     'keywords' => 'citation latitude perú, cessna latitude, jet mediano premium, avión tecnología avanzada',
     'og_image' => asset('img/aeronaves/aviones/CitationLatitude.webp'),
-    'canonical' => url('/aeronaves/CitationLatitude'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/CitationLatitude'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Citation';
     $h1_1_2 = 'Latitude';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
-        $p_2 = 'El Cessna Citation Latitude fue lanzado en 2015 como parte de la nueva generación de jets ejecutivos midsize de Textron Aviation. Su diseño incluye una cabina de piso plano con 1,83 m de altura, lo que lo hace uno de los modelos más confortables de su clase. Está propulsado por dos motores Pratt & Whitney Canada PW306D1, capaces de llevarlo a una altitud máxima de 13 716 m (45 000 ft).';
-        $p_3 = 'Con un alcance de más de 5 200 km, el Latitude permite vuelos transcontinentales con gran eficiencia. Su aviónica Garmin G5000 y sistemas automáticos avanzados lo convierten en una aeronave segura y moderna. Gracias a su equilibrio entre costos de operación, autonomía y comodidad, ha ganado gran popularidad en el mercado de jets corporativos medianos.';
+        $h2_1 = __('aircraft.description');
+        $p_2 = 'El Cessna Citation Latitude es un jet ejecutivo de tamaño medio reconocido por su cabina espaciosa y tecnología Garmin G5000. Con capacidad para 9 pasajeros, ofrece confort excepcional.';
+        $p_3 = 'Equipado con motores Pratt & Whitney Canada PW306D1, alcanza velocidades de 826 km/h con un alcance de 5,278 km, ideal para vuelos transcontinentales.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Cessna Citation Latitude';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Citation Latitude';
 
-            $h3_2 = 'Año de Fabricación';
+            $h3_2 = __('aircraft.year');
             $p_5 = '2015';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Cessna Aircraft Company';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '826 km/h';
 
-            $h3_5 = 'Alcance Máximo';
+            $h3_5 = __('aircraft.max_range');
             $p_8 = '5,278 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '13,716 metros';
 
-            $h3_7 = 'Consumo de Combustible';
+            $h3_7 = __('aircraft.fuel_consumption');
             $p_10 = '220 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '9 pasajeros';
 
-            $h3_9 = 'Autonomía';
+            $h3_9 = __('aircraft.autonomy');
             $p_12 = '5,278 km';
 
-            $h3_10 = 'Capacidad de Carga';
+            $h3_10 = __('aircraft.cargo_capacity');
             $p_13 = '1,100 kg';
 
-            $h3_11 = 'Longitud';
+            $h3_11 = __('aircraft.length');
             $p_14 = '19,4 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Citation Latitude opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')

@@ -7,7 +7,7 @@ $seo = [
     'description' => 'Información de registro ESNA y datos fiscales de Aerolínea del Sur. Transparencia y cumplimiento normativo en Perú.',
     'keywords' => 'registro esna perú, datos fiscales aerolínea, información tributaria',
     'og_image' => asset('img/logo.svg'),
-    'canonical' => url('/esna'),
+    'canonical' => url(app()->getLocale() . '/esna'),
 ];
 @endphp
 @section('content')

@@ -2,9 +2,10 @@
 
 @php
 // Custom SEO for Tour Machu Picchu
+$tour_name = 'Machu Picchu';
 $seo = [
-    'title' => 'Tour Machu Picchu | Excursión 1 Día desde Cusco',
-    'description' => 'Tour a Machu Picchu en 1 día desde Cusco. Incluye tren, bus, entradas, guía certificado y almuerzo. Descubre la maravilla del mundo con expertos locales.',
+    'title' => str_replace(':tour', $tour_name, __('tours.seo.title_template')),
+    'description' => str_replace(':tour', $tour_name, __('tours.seo.description_template')),
     'keywords' => 'tour machu picchu, excursión machu picchu 1 dia, tour cusco machu picchu, viaje machu picchu',
     'og_image' => asset('img/tours/machu-picchu.jpg'),
     'canonical' => url(app()->getLocale() . '/tour-machu-picchu'),
@@ -13,41 +14,41 @@ $seo = [
 @section('content')
 
 <?php
-    $h1_1 = 'Vuelo Panorámico sobre Machu Picchu';
-    $p_1 = 'Descubre la majestuosidad de la ciudadela inca desde una perspectiva única en el aire';
+    $h1_1 = __('tours.machu_picchu.title');
+    $p_1 = __('tours.machu_picchu.subtitle');
 
-        $h2_1 = 'Detalles del Tour';
-        $p_2 = 'Embárcate en una aventura aérea inolvidable sobre una de las Siete Maravillas del Mundo Moderno. Nuestro vuelo panorámico te llevará a través de los cielos del Valle Sagrado, ofreciéndote vistas espectaculares de Machu Picchu, el río Urubamba y los imponentes picos andinos.';
-        $p_3 = 'Durante este tour exclusivo, volarás en una aeronave moderna y segura, acompañado por pilotos experimentados que conocen cada rincón de esta región mágica. Captura fotografías únicas y crea recuerdos que durarán toda la vida.';
+        $h2_1 = __('tours.tour_details');
+        $p_2 = __('tours.machu_picchu.description_1');
+        $p_3 = __('tours.machu_picchu.description_2');
 
-                $h4_1 = 'Aeronave Moderna';
+                $h4_1 = __('tours.machu_picchu.modern_aircraft');
                 $p_4 = 'Cessna 206 con ventanas panorámicas';
 
-                $h4_2 = 'Piloto Certificado';
+                $h4_2 = __('tours.machu_picchu.certified_pilot');
                 $p_5 = 'Más de 10 años de experiencia';
 
-                $h4_3 = 'Fotografía Aérea';
+                $h4_3 = __('tours.machu_picchu.aerial_photography');
                 $p_6 = 'Oportunidades únicas de captura';
 
-            $h3_1 = 'Galería de Imágenes';
+            $h3_1 = __('tours.image_gallery');
 
-        $h2_2 = 'Resumen del Viaje';
+        $h2_2 = __('tours.trip_summary');
 
-            $h3_2 = 'Highlights Principales';
+            $h3_2 = __('tours.main_highlights');
 
-                $h4_4 = 'Vista de Machu Picchu';
+                $h4_4 = __('tours.machu_picchu.view_highlight');
                 $p_7 = 'Perspectiva aérea única de la ciudadela inca';
 
-                $h4_5 = 'Valle Sagrado';
+                $h4_5 = __('tours.machu_picchu.sacred_valley');
                 $p_8 = 'Sobrevuela el místico valle de los incas';
 
-                $h4_6 = 'Fotografía Profesional';
+                $h4_6 = __('tours.machu_picchu.professional_photo');
                 $p_9 = 'Capturas aéreas espectaculares';
 
-                $h4_7 = 'Historia Viva';
+                $h4_7 = __('tours.machu_picchu.living_history');
                 $p_10 = 'Narración histórica durante el vuelo';                
 
-            $h3_3 = 'Estadísticas del Tour';
+            $h3_3 = __('tours.tour_statistics');
         
         $h2_3 = 'Itinerario Detallado';
 

@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Citation Encore
+$aircraft_model = 'Citation Encore';
 $seo = [
-    'title' => 'Citation Encore | Jet Ejecutivo Mediano Cessna',
-    'description' => 'Citation Encore: 8 pasajeros, 796 km/h y 3,441 km de alcance. Cabina espaciosa y rendimiento confiable para viajes de negocios.',
-    'keywords' => 'citation encore perú, cessna encore, jet mediano, vuelo corporativo confiable',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo para 8 pasajeros con confiabilidad excepcional'], __('aircraft.seo.description_template')),
+    'keywords' => 'citation encore perú, cessna encore, jet ejecutivo, vuelo corporativo',
     'og_image' => asset('img/aeronaves/aviones/CitationEncore.webp'),
-    'canonical' => url('/aeronaves/CitationEncore'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/CitationEncore'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Citation';
     $h1_1_2 = 'Encore';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
+        $h2_1 = __('aircraft.description');
         $p_2 = 'El Cessna Citation Encore es parte de la familia Citation 560, destacando por su equilibrio entre rendimiento, confort y economía. Introducido en el año 2000, se diferencia de sus antecesores por incorporar motores Pratt & Whitney PW535A, que mejoran la eficiencia de combustible y el despegue en pistas cortas.';
         $p_3 = 'La cabina está diseñada para 7 pasajeros más tripulación, con espacio optimizado y mayor capacidad de equipaje respecto a modelos anteriores. Gracias a su autonomía cercana a los 3 400 km, puede realizar vuelos de medio alcance, lo que lo hace atractivo para operadores corporativos y de charter que buscan versatilidad y bajos costos operativos.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Cessna Citation Encore';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Citation Encore';
 
-            $h3_2 = 'Año de Fabricación';
-            $p_5 = '2006';
+            $h3_2 = __('aircraft.year');
+            $p_5 = '2000';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Cessna Aircraft Company';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
-            $p_7 = '796 km/h';
+            $h3_4 = __('aircraft.max_speed_label');
+            $p_7 = '760 km/h';
 
-            $h3_5 = 'Alcance Máximo';
-            $p_8 = '3,441 km';
+            $h3_5 = __('aircraft.max_range');
+            $p_8 = '2,800 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '13,716 metros';
 
-            $h3_7 = 'Consumo de Combustible';
-            $p_10 = '190 gal/h';
+            $h3_7 = __('aircraft.fuel_consumption');
+            $p_10 = '210 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '8 pasajeros';
 
-            $h3_9 = 'Autonomía';
-            $p_12 = '3,441 km';
+            $h3_9 = __('aircraft.autonomy');
+            $p_12 = '2,800 km';
 
-            $h3_10 = 'Capacidad de Carga';
-            $p_13 = '1,000 kg';
+            $h3_10 = __('aircraft.cargo_capacity');
+            $p_13 = '500 kg';
 
-            $h3_11 = 'Longitud';
-            $p_14 = '14,9 metros';
+            $h3_11 = __('aircraft.length');
+            $p_14 = '15,90 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Citation Encore opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')

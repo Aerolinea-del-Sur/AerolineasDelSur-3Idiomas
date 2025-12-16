@@ -2,74 +2,75 @@
 
 @php
 // Custom SEO for Citation CJ4
+$aircraft_model = 'Citation CJ4';
 $seo = [
-    'title' => 'Citation CJ4 | Jet Ligero de Alto Rendimiento',
-    'description' => 'Citation CJ4: jet ligero de 9 pasajeros, 835 km/h y 4,010 km. Rendimiento excepcional y tecnología Garmin de última generación.',
-    'keywords' => 'citation cj4 perú, cessna cj4, jet ligero, vuelo ejecutivo tecnología',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo ligero para 9 pasajeros con tecnología avanzada'], __('aircraft.seo.description_template')),
+    'keywords' => 'citation cj4 perú, cessna cj4, jet ejecutivo ligero, vuelo corporat ivo',
     'og_image' => asset('img/aeronaves/aviones/CitationCj4.webp'),
-    'canonical' => url('/aeronaves/CitationCj4'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/CitationCj4'),
 ];
 @endphp
 
 <?php
     $h1_1_1 = 'Citation';
-    $h1_1_2 = 'Cj4';
+    $h1_1_2 = 'CJ4';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
-        $p_2 = 'El Cessna Citation CJ4 fue lanzado en 2010 como el modelo más avanzado de la familia CitationJet. Equipado con motores Williams FJ44-4A, ofrece mejor rendimiento que sus predecesores, alcanzando velocidades cercanas a los 835 km/h y un alcance de más de 4 000 km. Su aviónica Garmin G3000 asegura máxima seguridad y facilidad de operación.';
-        $p_3 = 'La cabina permite acomodar cómodamente a 8 o 9 pasajeros, con configuraciones pensadas para negocios y viajes corporativos. Su capacidad de operar en pistas cortas y aeropuertos secundarios lo hace especialmente versátil, manteniendo bajos costos de operación en comparación con otros jets ejecutivos de tamaño similar.';
+        $h2_1 = __('aircraft.description');
+        $p_2 = 'El Cessna Citation CJ4 es el modelo más grande de la serie CJ (CitationJet), diseñado para ofrecer mayor alcance, velocidad y capacidad. Con un interior espacioso para 9 pasajeros, combina eficiencia operativa con tecnología de vanguardia.';
+        $p_3 = 'Equipado con motores Williams FJ44-4A, el CJ4 alcanza velocidades de crucero de 778 km/h con un alcance de 3,704 km, ideal para vuelos regionales y transcontinentales cortos.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Cessna Citation CJ4';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Citation CJ4';
 
-            $h3_2 = 'Año de Fabricación';
+            $h3_2 = __('aircraft.year');
             $p_5 = '2010';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Cessna Aircraft Company';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
-            $p_7 = '835 km/h';
+            $h3_4 = __('aircraft.max_speed_label');
+            $p_7 = '778 km/h';
 
-            $h3_5 = 'Alcance Máximo';
-            $p_8 = '4,010 km';
+            $h3_5 = __('aircraft.max_range');
+            $p_8 = '3,704 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '13,716 metros';
 
-            $h3_7 = 'Consumo de Combustible';
-            $p_10 = '170 gal/h';
+            $h3_7 = __('aircraft.fuel_consumption');
+            $p_10 = '240 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '9 pasajeros';
 
-            $h3_9 = 'Autonomía';
-            $p_12 = '4,010 km';
+            $h3_9 = __('aircraft.autonomy');
+            $p_12 = '3,704 km';
 
-            $h3_10 = 'Capacidad de Carga';
-            $p_13 = '1,000 kg';
+            $h3_10 = __('aircraft.cargo_capacity');
+            $p_13 = '544 kg';
 
-            $h3_11 = 'Longitud';
-            $p_14 = '16,3 metros';
+            $h3_11 = __('aircraft.length');
+            $p_14 = '16,26 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Citation CJ4 opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')

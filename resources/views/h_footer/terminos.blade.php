@@ -3,11 +3,11 @@
 @php
 // Custom SEO for Terms and Conditions
 $seo = [
-    'title' => 'Términos y Condiciones | Aerolínea del Sur',
-    'description' => 'Términos y condiciones de uso de servicios de Aerolínea del Sur. Normas, políticas de cancelación y responsabilidades.',
+    'title' => __('legal.terms.seo_title'),
+    'description' => __('legal.terms.seo_description'),
     'keywords' => 'términos condiciones aerolínea, política cancelación, condiciones uso',
     'og_image' => asset('img/logo.svg'),
-    'canonical' => url('/terminos-condiciones'),
+    'canonical' => url(app()->getLocale() . '/terminos-condiciones'),
 ];
 @endphp
 @section('content')
@@ -22,10 +22,10 @@ $seo = [
             </div>
             <h1 class="terminos-title">
                 <i class="fas fa-file-contract"></i>
-                Términos y Condiciones
+                <?= __('legal.terms.title') ?>
             </h1>
-            <p class="terminos-subtitle">Conoce nuestras políticas de reserva y condiciones de servicio</p>
-            <p style="color: var(--accent); font-weight: 600; font-size: 1rem;">Aerolíneas del Sur - Transparencia y Confianza</p>
+            <p class="terminos-subtitle"><?= __('legal.terms.subtitle') ?></p>
+            <p style="color: var(--accent); font-weight: 600; font-size: 1rem;"><?= __('legal.terms.company_commitment') ?></p>
         </header>
 
         <!-- Introduction Section -->

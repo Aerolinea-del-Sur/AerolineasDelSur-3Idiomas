@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Challenger 604
+$aircraft_model = 'Challenger 604';
 $seo = [
-    'title' => 'Challenger 604 | Jet Ejecutivo Intercontinental',
-    'description' => 'Challenger 604: jet de 12 pasajeros, 870 km/h y 7,991 km de alcance. Cabina lujosa para vuelos transoceánicos de negocios.',
-    'keywords' => 'challenger 604 perú, jet transoceánico, bombardier 604, avión lujo internacional',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo premium para 12 pasajeros con alcance intercontinental'], __('aircraft.seo.description_template')),
+    'keywords' => 'challenger 604 perú, bombardier 604, jet ejecutivo premium, vuelo intercontinental',
     'og_image' => asset('img/aeronaves/aviones/Challenger604.webp'),
-    'canonical' => url('/aeronaves/Challenger604'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/Challenger604'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Challenger';
     $h1_1_2 = '604';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
-        $p_2 = 'El Bombardier Challenger 604, introducido en 1995, representó un salto significativo respecto al modelo 601, con motores General Electric CF34-3B más potentes, aviónica modernizada y mayor capacidad de combustible. Este jet de cabina ancha fue diseñado para ofrecer más alcance, mejor desempeño en despegues y aterrizajes, y una experiencia de vuelo más segura.';
-        $p_3 = 'Con un alcance de más de 7 600 km, puede cubrir rutas intercontinentales sin escalas, siendo ampliamente utilizado por corporaciones, operadores de vuelos charter y fuerzas gubernamentales. Su cabina espaciosa, con capacidad para hasta 12 pasajeros, lo convierte en una opción de lujo para trayectos largos, equilibrando comodidad y confiabilidad.';
+        $h2_1 = __('aircraft.description');
+        $p_2 = 'El Bombardier Challenger 604 es un jet ejecutivo de largo alcance reconocido por su cabina espaciosa y tecnología avanzada. Con capacidad para hasta 12 pasajeros, ofrece confort excepcional para vuelos intercontinentales.';
+        $p_3 = 'Equipado con motores General Electric CF34-3B de alta eficiencia, el Challenger 604 alcanza velocidades de crucero de 850 km/h con un alcance de hasta 7,400 km, permitiendo vuelos sin escalas entre continentes.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
-            $p_4 = 'Bombardier Challenger 604';
+            $h3_1 = __('aircraft.model');
+            $p_4 = 'Challenger 604';
 
-            $h3_2 = 'Año de Fabricación';
-            $p_5 = '2006';
+            $h3_2 = __('aircraft.year');
+            $p_5 = '1996';
 
-            $h3_3 ='Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = 'Bombardier Aerospace';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '850 km/h';
 
-            $h3_5 = 'Alcance Máximo';
-            $p_8 = '7,620 km';
+            $h3_5 = __('aircraft.max_range');
+            $p_8 = '7,400 km';
 
-            $h3_6 = 'Altitud de Crucero';
-            $p_9 = '12,500 metros';
+            $h3_6 = __('aircraft.cruise_altitude');
+            $p_9 = '12,497 metros';
 
-            $h3_7 = 'Consumo de Combustible';
-            $p_10 = '336 gal/h';
+            $h3_7 = __('aircraft.fuel_consumption');
+            $p_10 = '340 gal/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '12 pasajeros';
 
-            $h3_9 = 'Autonomía';
-            $p_12 = '7,620 km';
+            $h3_9 = __('aircraft.autonomy');
+            $p_12 = '7,400 km';
 
-            $h3_10 = 'Capacidad de Carga';
-            $p_13 = '2,000 kg';
+            $h3_10 = __('aircraft.cargo_capacity');
+            $p_13 = '1,723 kg';
 
-            $h3_11 = 'Longitud';
-            $p_14 = '20,85 metros';
+            $h3_11 = __('aircraft.length');
+            $p_14 = '20,9 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Challenger 604 opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Otros Servicios';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');
 ?>
 
 @section('content')

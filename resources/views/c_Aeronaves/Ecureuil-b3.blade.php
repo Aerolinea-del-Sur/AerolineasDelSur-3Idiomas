@@ -2,12 +2,13 @@
 
 @php
 // Custom SEO for Ecureuil B3
+$aircraft_model = 'Ecureuil B3';
 $seo = [
-    'title' => 'Eurocopter Ecureuil B3 | Helicóptero Ligero Alta Montaña',
-    'description' => 'Ecureuil B3: helicóptero ligero de 5 pasajeros optimizado para operaciones en alta altitud. Ideal para turismo y acceso a zonas remotas.',
+    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
+    'description' => str_replace([':model', ':description'], [$aircraft_model, 'helicóptero ligero alta montaña'], __('aircraft.seo.description_template')),
     'keywords' => 'ecureuil b3 perú, helicóptero alta montaña, eurocopter cusco, sobrevuelos cusco',
     'og_image' => asset('img/aeronaves/aviones/Ecureuil-b3.webp'),
-    'canonical' => url('/aeronaves/Ecureuil-b3'),
+    'canonical' => url(app()->getLocale() . '/aeronaves/Ecureuil-b3'),
 ];
 @endphp
 
@@ -15,61 +16,61 @@ $seo = [
     $h1_1_1 = 'Ecureuil';
     $h1_1_2 = 'B3';
 
-    $p_1 = 'Innovación en Aviación Ejecutiva Ligera';
+    $p_1 = __('aircraft.excellence');
 
-        $h2_1 = 'Descripción del Avión';
+        $h2_1 = __('aircraft.description');
         $p_2 = 'El AS350 B3 Ecureuil (AStar B3) es una de las versiones más potentes y exitosas de la familia Ecureuil, equipada con un motor Turbomeca Arriel 2B1 que le otorga excelente desempeño en operaciones de alta montaña y condiciones extremas. Es ampliamente utilizado en transporte ejecutivo, turístico, médico y de carga externa.';
         $p_3 = 'Este modelo es famoso por haber alcanzado la cima del Monte Everest en 2005, demostrando su capacidad en altitudes extremas. Su cabina flexible permite configuraciones rápidas entre transporte de pasajeros, evacuaciones médicas y carga. Su versatilidad, bajo costo de operación y fiabilidad lo hacen uno de los helicópteros más populares en su categoría.';
 
-        $h2_2 = 'Galería de Imágenes';
+        $h2_2 = __('aircraft.gallery');
 
-        $h2_3 = 'Visión General';
+        $h2_3 = __('aircraft.overview');
 
-            $h3_1 = 'Modelo';
+            $h3_1 = __('aircraft.model');
             $p_4 = 'Airbus Helicopters AS350 B3';
 
-            $h3_2 = 'Año de Fabricación';
+            $h3_2 = __('aircraft.year');
             $p_5 = '1990';
 
-            $h3_3 = 'Fabricante';
+            $h3_3 = __('aircraft.manufacturer');
             $p_6 = ': Airbus Helicopters';
         
-        $h2_4 = 'Rendimiento';
+        $h2_4 = __('aircraft.performance');
 
-            $h3_4 = 'Velocidad Máxima';
+            $h3_4 = __('aircraft.max_speed_label');
             $p_7 = '287 km/h';
 
-            $h3_5 = 'Alcance Máximo';
+            $h3_5 = __('aircraft.max_range');
             $p_8 = '650 km';
 
-            $h3_6 = 'Altitud de Crucero';
+            $h3_6 = __('aircraft.cruise_altitude');
             $p_9 = '4600 metros';
 
-            $h3_7 = 'Consumo de Combustible';
+            $h3_7 = __('aircraft.fuel_consumption');
             $p_10 = '120 kg/h';
 
-        $h2_5 = 'Capacidad';
+        $h2_5 = __('aircraft.capacity');
 
-            $h3_8 = 'Pasajeros Máximo';
+            $h3_8 = __('aircraft.max_passengers');
             $p_11 = '5 pasajeros';
 
-            $h3_9 = 'Autonomía';
+            $h3_9 = __('aircraft.autonomy');
             $p_12 = '650 km';
 
-            $h3_10 = 'Capacidad de Carga';
+            $h3_10 = __('aircraft.cargo_capacity');
             $p_13 = '1160 kg';
 
-            $h3_11 = 'Longitud';
+            $h3_11 = __('aircraft.length');
             $p_14 = '10,9 metros';
 
-        $h2_6 = 'Lugares de Operación';
-        $p_15 = 'El Ecureuil B3 opera en las principales rutas nacionales, conectando destinos estratégicos en Peru.';
+        $h2_6 = __('aircraft.operation_places');
+        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
         
-            $h3_12 = 'Rutas Nacionales';
+            $h3_12 = __('aircraft.national_routes');
 
-            $h3_13 = 'Vuelos Charter';
+            $h3_13 = __('aircraft.other_services');
 
-            $h3_14 = 'Solicitar Información';            
+            $h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')
