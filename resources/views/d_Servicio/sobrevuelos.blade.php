@@ -167,12 +167,12 @@ $seo = [
             <p class="hero-description">{{ $p_1 }}</p>
             <div class="hero-actions">
                 <a href="#tours" class="btn btn-primary">
-                    <span>Ver Tours</span>
+                    <span>{{ __('common.button.see_tours') }}</span>
                     <i class="fas fa-arrow-down"></i>
                 </a>
                 <a href="#contacto" class="btn btn-outline">
                     <i class="fas fa-phone"></i>
-                    <span>Reservar</span>
+                    <span>{{ __('common.button.reserve') }}</span>
                 </a>
             </div>
         </div>
