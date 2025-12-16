@@ -16,7 +16,7 @@ return [
     'button.learn_more' => 'Saiba Mais',
     'button.contact' => 'Contato',
     'button.call_now' => 'Ligue Agora',
-    'button.see_tours' => 'Ver Tours',
+    'button.see_tours' => 'Ver Passeios',
     'button.reserve' => 'Reservar',
     
     // Footer
