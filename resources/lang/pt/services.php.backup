@@ -133,3 +133,4 @@ return [
     'form.send_gmail' => 'Enviar por Gmail',
     'form.complete_fields' => 'Por favor complete todos los campos',
 ];
+

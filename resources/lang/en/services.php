@@ -59,6 +59,18 @@ return [
     'helicopter.form_title' => 'Helicopter Booking',
     'helicopter.form_subtitle' => 'Complete the form to request information',
     
+    // Services
+    'helicopter.services_title' => 'Our Helicopter Services',
+    'helicopter.services_subtitle' => 'We operate specialized services with comprehensive coverage in sea, coast, mountains and jungle of Peru',
+    'helicopter.executive_flights' => 'Executive Flights',
+    'helicopter.executive_desc' => 'VIP transfers and executive transport for companies',
+    'helicopter.external_cargo' => 'External Cargo',
+    'helicopter.external_cargo_desc' => 'Heavy cargo and industrial equipment transport',
+    'helicopter.aeromedical' => 'Aeromedical',
+    'helicopter.aeromedical_desc' => 'Medical evacuations and rescues',
+    'helicopter.mining_energy' => 'Mining and Energy',
+    'helicopter.mining_energy_desc' => 'Services for mining, gas and oil companies',
+    
     // ==================== AEROMEDICAL ====================
     'aeromedical.seo.title' => 'Certified Aeromedical Transport | Aerolínea del Sur',
     'aeromedical.seo.description' => 'Specialized aeromedical service with equipped air ambulances and qualified medical staff. Evacuations and urgent transfers.',

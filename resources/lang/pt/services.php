@@ -57,7 +57,19 @@ return [
     'helicopter.subtitle' => 'Transporte versátil e eficiente para qualquer necessidade',
     'helicopter.fleet' => 'Nossa Frota de Helicópteros',
     'helicopter.form_title' => 'Reserva de Helicóptero',
-    'helicopter.form_subtitle' => 'Preencha o formulário para solicitar informações',
+    'helicopter.form_subtitle' =\u003e 'Preencha o formulário para solicitar informações',
+    
+    // Serviços
+    'helicopter.services_title' => 'Nossos Serviços de Helicóptero',
+    'helicopter.services_subtitle' => 'Operamos serviços especializados com cobertura integral em mar, costa, serra e selva do Peru',
+    'helicopter.executive_flights' => 'Voos Executivos',
+    'helicopter.executive_desc' => 'Transferências VIP e executivas para empresas',
+    'helicopter.external_cargo' => 'Carga Externa',
+    'helicopter.external_cargo_desc' => 'Transporte de carga pesada e equipamento industrial',
+    'helicopter.aeromedical' => 'Aeromédico',
+    'helicopter.aeromedical_desc' => 'Evacuações médicas e resgates',
+    'helicopter.mining_energy' => 'Mineração e Energia',
+    'helicopter.mining_energy_desc' => 'Serviços para mineração, gasíferas e petrolíferas',
     
     // ==================== AEROMÉDICO ====================
     'aeromedical.seo.title' => 'Transporte Aeromédico Certificado | Aerolínea del Sur',
