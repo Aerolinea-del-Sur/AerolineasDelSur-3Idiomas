@@ -116,30 +116,30 @@ $seo = [
             
             <div class="heli-form-head">
                 <h2 class="heli-section-title"><?= $h2_form ?></h2>
-                <p style="color: #ccc; font-size: 14px; margin-top: 8px;">Complete el formulario para solicitar información</p>
+                <p class="heli-section-subtitle" style="color:#ccc; margin-bottom:16px;">{{ __('services.helicopter.form_subtitle') }}</p>
             </div>
 
             <div class="heli-form-personal">
                 <div class="heli-field">
-                    <input class="heli-input" type="text" id="nombres_apellidos" name="nombres_apellidos" placeholder="Nombres y Apellidos *" required>
+                    <input class="heli-input" type="text" id="nombres_apellidos" name="nombres_apellidos" placeholder="{{ __('services.form.name') }} *" required>
                 </div>
                 <div class="heli-field">
-                    <input class="heli-input" type="email" id="correo" name="correo" placeholder="Correo electrónico *" required>
+                    <input class="heli-input" type="email" id="correo" name="correo" placeholder="{{ __('services.form.email') }} *" required>
                 </div>
                 <div class="heli-field">
-                    <input class="heli-input" type="tel" id="telefono" name="telefono" placeholder="Teléfono *" required pattern="[0-9+\s-]{7,20}">
+                    <input class="heli-input" type="tel" id="telefono" name="telefono" placeholder="{{ __('services.form.phone') }} *" required pattern="[0-9+\s-]{7,20}">
                 </div>
             </div>
             
             <div class="heli-actions">
                 <button type="button" class="heli-btn btn-whatsapp" onclick="enviarWhatsApp('helicopteros')">
-                    <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+                    <i class="fab fa-whatsapp"></i> {{ __('services.form.send_whatsapp') }}
                 </button>
                 <button type="button" class="heli-btn btn-outlook" onclick="enviarOutlook('helicopteros')">
-                    <i class="far fa-envelope"></i> Enviar por Outlook
+                    <i class="far fa-envelope"></i> {{ __('services.form.send_outlook') }}
                 </button>
                 <button type="button" class="heli-btn btn-gmail" onclick="enviarGmail('helicopteros')">
-                    <i class="far fa-envelope"></i> Enviar por Gmail
+                    <i class="far fa-envelope"></i> {{ __('services.form.send_gmail') }}
                 </button>
             </div>
         </form>
@@ -261,27 +261,27 @@ $seo = [
 <!-- Servicios y Cobertura de Helicópteros -->
 <section class="heli-fleet-section" style="padding-top:40px;">
     <div class="heli-container">
-        <h2 class="heli-section-title">Nuestros Servicios de Helicóptero</h2>
+        <h2 class="heli-section-title">{{ __('services.helicopter.services_title') }}</h2>
         <div style="max-width:1000px; margin:0 auto;">
             <p style="font-size:18px; color:#ccc; line-height:1.8; text-align:center; margin-bottom:40px;">
-                Operamos servicios especializados con <strong style="color:#D4AF37;">cobertura integral en mar, costa, sierra y selva</strong> del Perú
+                {{ __('services.helicopter.services_subtitle') }}
             </p>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:20px; margin-bottom:40px;">
                 <div style="background:rgba(212,175,55,0.1); padding:25px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
-                    <h4 style="color:#D4AF37; margin-bottom:12px; font-size:18px;">🚁 Vuelos Ejecutivos</h4>
-                    <p style="color:#ccc; font-size:14px;">Traslados VIP y ejecutivos para empresas</p>
+                    <h4 style="color:#D4AF37; margin-bottom:12px; font-size:18px;">🚁 {{ __('services.helicopter.executive_flights') }}</h4>
+                    <p style="color:#ccc; font-size:14px;">{{ __('services.helicopter.executive_desc') }}</p>
                 </div>
                 <div style="background:rgba(212,175,55,0.1); padding:25px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
-                    <h4 style="color:#D4AF37; margin-bottom:12px; font-size:18px;">📦 Carga Externa</h4>
-                    <p style="color:#ccc; font-size:14px;">Transporte de carga pesada y equipo industrial</p>
+                    <h4 style="color:#D4AF37; margin-bottom:12px; font-size:18px;">📦 {{ __('services.helicopter.external_cargo') }}</h4>
+                    <p style="color:#ccc; font-size:14px;">{{ __('services.helicopter.external_cargo_desc') }}</p>
                 </div>
                 <div style="background:rgba(212,175,55,0.1); padding:25px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
-                    <h4 style="color:#D4AF37; margin-bottom:12px; font-size:18px;">⛑️ Aeromédico</h4>
-                    <p style="color:#ccc; font-size:14px;">Evacuaciones médicas y rescates</p>
+                    <h4 style="color:#D4AF37; margin-bottom:12px; font-size:18px;">⛑️ {{ __('services.helicopter.aeromedical') }}</h4>
+                    <p style="color:#ccc; font-size:14px;">{{ __('services.helicopter.aeromedical_desc') }}</p>
                 </div>
                 <div style="background:rgba(212,175,55,0.1); padding:25px; border-radius:8px; border:1px solid rgba(212,175,55,0.3);">
-                    <h4 style="color:#D4AF37; margin-bottom:12px; font-size:18px;">⚙️ Minería y Energía</h4>
-                    <p style="color:#ccc; font-size:14px;">Servicios para minería, gasiferías y petroliferas</p>
+                    <h4 style="color:#D4AF37; margin-bottom:12px; font-size:18px;">⚙️ {{ __('services.helicopter.mining_energy') }}</h4>
+                    <p style="color:#ccc; font-size:14px;">{{ __('services.helicopter.mining_energy_desc') }}</p>
                 </div>
             </div>
         </div>
