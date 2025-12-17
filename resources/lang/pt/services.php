@@ -57,7 +57,7 @@ return [
     'helicopter.subtitle' => 'Transporte versátil e eficiente para qualquer necessidade',
     'helicopter.fleet' => 'Nossa Frota de Helicópteros',
     'helicopter.form_title' => 'Reserva de Helicóptero',
-    'helicopter.form_subtitle' =\u003e 'Preencha o formulário para solicitar informações',
+    'helicopter.form_subtitle' => 'Preencha o formulário para solicitar informações',
     
     // Serviços
     'helicopter.services_title' => 'Nossos Serviços de Helicóptero',
