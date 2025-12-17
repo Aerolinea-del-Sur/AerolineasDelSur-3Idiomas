@@ -19,45 +19,46 @@ $seo = [
     "mainEntity": [
         {
             "@type": "Question",
-            "name": "¿Qué tipos de servicios de helicóptero ofrecen en Perú?",
+            "name": "{{ __('services.helicopter.faq.q1') }}",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Ofrecemos vuelos ejecutivos, sobrevuelos turísticos, transporte a zonas remotas, carga externa, servicios aeromédicos, apoyo a minería, gasíferas y petrolíferas. Cubrimos mar, costa, sierra y selva en todo Perú."
+                "text": "{{ __('services.helicopter.faq.a1') }}"
             }
         },
         {
             "@type": "Question",
-            "name": "¿Cuál es la capacidad de pasajeros de sus helicópteros?",
+            "name": "{{ __('services.helicopter.faq.q2') }}",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Nuestra flota incluye helicópteros con capacidad desde 4 hasta 24 pasajeros dependiendo del modelo. El Ecureuil B3 transporta hasta 5 pasajeros, mientras que el Mi-8 MTV1 puede llevar hasta 24 pasajeros."
+                "text": "{{ __('services.helicopter.faq.a2') }}"
             }
         },
         {
             "@type": "Question",
-            "name": "¿Realizan sobrevuelos al Valle Sagrado y Machu Picchu?",
+            "name": "{{ __('services.helicopter.faq.q3') }}",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí, ofrecemos sobrevuelos turísticos al Valle Sagrado, Machu Picchu, Vinicunca (Montaña de 7 Colores), Salineras de Maras y principales atractivos de Cusco. Duración desde 30 minutos hasta tours personalizados."
+                "text": "{{ __('services.helicopter.faq.a3') }}"
             }
         },
         {
             "@type": "Question",
-            "name": "¿Qué medidas de seguridad aplican en vuelos de helicóptero?",
+            "name": "{{ __('services.helicopter.faq.q4') }}",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Todos nuestros helicópteros cumplen certificaciones internacionales, pilotos con licencias vigentes y experiencia en montaña, mantenimiento preventivo riguroso, y protocolos de seguridad específicos para operaciones en altura en los Andes."
+                "text": "{{ __('services.helicopter.faq.a4') }}"
             }
         },
         {
             "@type": "Question",
-            "name": "¿Ofrecen servicios de helicóptero para emergencias?",
+            "name": "{{ __('services.helicopter.faq.q5') }}",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí, contamos con servicio aeromédico de emergencia 24/7 en helicóptero, evacuaciones médicas, rescates en zonas remotas y apoyo en situaciones críticas. Equipamiento médico especializado y personal capacitado."
+                "text": "{{ __('services.helicopter.faq.a5') }}"
             }
         }
     ]
+}
 }
 </script>
 

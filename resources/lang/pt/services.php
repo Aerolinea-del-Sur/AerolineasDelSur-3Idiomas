@@ -71,6 +71,18 @@ return [
     'helicopter.mining_energy' => 'Mineração e Energia',
     'helicopter.mining_energy_desc' => 'Serviços para mineração, gasíferas e petrolíferas',
     
+    // FAQs
+    'helicopter.faq.q1' => 'Que tipos de serviços de helicóptero vocês oferecem no Peru?',
+    'helicopter.faq.a1' => 'Oferecemos voos executivos, sobrevoos turísticos, transporte para áreas remotas, carga externa, serviços aeromédicos, apoio à mineração, gasíferas e petrolíferas. Cobrimos mar, costa, serra e selva em todo o Peru.',
+    'helicopter.faq.q2' => 'Qual é a capacidade de passageiros dos seus helicópteros?',
+    'helicopter.faq.a2' => 'Nossa frota inclui helicópteros com capacidade de 4 a 24 passageiros dependendo do modelo. O Ecureuil B3 transporta até 5 passageiros, enquanto o Mi-8 MTV1 pode levar até 24 passageiros.',
+    'helicopter.faq.q3' => 'Vocês realizam sobrevoos ao Vale Sagrado e Machu Picchu?',
+    'helicopter.faq.a3' => 'Sim, oferecemos sobrevoos turísticos ao Vale Sagrado, Machu Picchu, Vinicunca (Montanha das 7 Cores), Salineiras de Maras e principais atrações de Cusco. Duração de 30 minutos até tours personalizados.',
+    'helicopter.faq.q4' => 'Que medidas de segurança vocês aplicam em voos de helicóptero?',
+    'helicopter.faq.a4' => 'Todos os nossos helicópteros cumprem certificações internacionais, pilotos com licenças válidas e experiência em montanha, manutenção preventiva rigorosa e protocolos de segurança específicos para operações em altitude nos Andes.',
+    'helicopter.faq.q5' => 'Vocês oferecem serviços de helicóptero para emergências?',
+    'helicopter.faq.a5' => 'Sim, temos serviço aeromédico de emergência 24/7 em helicóptero, evacuações médicas, resgates em áreas remotas e apoio em situações críticas. Equipamento médico especializado e pessoal capacitado.',
+    
     // ==================== AEROMÉDICO ====================
     'aeromedical.seo.title' => 'Transporte Aeromédico Certificado | Aerolínea del Sur',
     'aeromedical.seo.description' => 'Serviço aeromédico especializado com ambulâncias aéreas equipadas e pessoal médico qualificado. Evacuações e transferências urgentes.',

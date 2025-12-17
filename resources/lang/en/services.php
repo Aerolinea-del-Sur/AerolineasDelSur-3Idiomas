@@ -71,6 +71,18 @@ return [
     'helicopter.mining_energy' => 'Mining and Energy',
     'helicopter.mining_energy_desc' => 'Services for mining, gas and oil companies',
     
+    // FAQs
+    'helicopter.faq.q1' => 'What types of helicopter services do you offer in Peru?',
+    'helicopter.faq.a1' => 'We offer executive flights, tourist overflights, transport to remote areas, external cargo, aeromedical services, mining, gas and oil support. We cover sea, coast, mountains and jungle throughout Peru.',
+    'helicopter.faq.q2' => 'What is the passenger capacity of your helicopters?',
+    'helicopter.faq.a2' => 'Our fleet includes helicopters with capacity ranging from 4 to 24 passengers depending on the model. The Ecureuil B3 carries up to 5 passengers, while the Mi-8 MTV1 can carry up to 24 passengers.',
+    'helicopter.faq.q3' => 'Do you offer overflights to the Sacred Valley and Machu Picchu?',
+    'helicopter.faq.a3' => 'Yes, we offer tourist overflights to the Sacred Valley, Machu Picchu, Vinicunca (Rainbow Mountain), Maras Salt Mines and main attractions of Cusco. Duration from 30 minutes to customized tours.',
+    'helicopter.faq.q4' => 'What security measures do you apply in helicopter flights?',
+    'helicopter.faq.a4' => 'All our helicopters meet international certifications, pilots with valid licenses and mountain experience, rigorous preventive maintenance, and specific security protocols for high-altitude operations in the Andes.',
+    'helicopter.faq.q5' => 'Do you offer helicopter services for emergencies?',
+    'helicopter.faq.a5' => 'Yes, we have 24/7 emergency aeromedical helicopter service, medical evacuations, rescues in remote areas and support in critical situations. Specialized medical equipment and trained personnel.',
+    
     // ==================== AEROMEDICAL ====================
     'aeromedical.seo.title' => 'Certified Aeromedical Transport | Aerolínea del Sur',
     'aeromedical.seo.description' => 'Specialized aeromedical service with equipped air ambulances and qualified medical staff. Evacuations and urgent transfers.',
