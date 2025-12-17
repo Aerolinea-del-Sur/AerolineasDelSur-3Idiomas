@@ -64,4 +64,10 @@ return [
     'faq.safety_measures_a' => 'Cumplimos con todos los estándares internacionales de seguridad aérea. Nuestras aeronaves reciben mantenimiento regular certificado, nuestros pilotos tienen entrenamiento continuo, y seguimos protocolos estrictos de seguridad en tierra y vuelo.',
     'faq.frequent_flyer_q' => '¿Ofrecen programas de viajero frecuente?',
     'faq.frequent_flyer_a' => 'Sí, nuestro programa Cielos del Sur ofrece beneficios exclusivos como acumulación de millas, upgrades gratuitos, acceso a salas VIP, y prioridad en check-in. Únete gratis y comienza a disfrutar de privilegios desde tu primer vuelo',
+    
+    // FAQ Home specific
+    'faq.how_to_book_home_a' => 'Realiza tu reserva a través de nuestro sitio web, por teléfono al +51 932 475 995, o vía correo electrónico a contacto@aerolineadelsur.com.pe. Nuestro equipo te brindará atención personalizada 24/7.',
+    'faq.frequent_flyer_home_a' => 'Sí. Nuestro programa Cielos del Sur ofrece beneficios exclusivos: acumulación de millas, upgrades gratuitos, acceso a salas VIP y prioridad en check-in. Únete sin costo y disfruta de privilegios desde tu primer vuelo.',
+    'faq.need_more_info' => '¿Necesitas más información?',
+    'faq.team_available' => 'Nuestro equipo está disponible para ayudarte',
 ];

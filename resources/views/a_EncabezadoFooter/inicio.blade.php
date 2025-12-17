@@ -92,26 +92,26 @@ $seo = [
     $p_16 = 'Excelencia certificada en cada vuelo. Nuestros estándares de calidad y seguridad están respaldados por las más prestigiosas organizaciones internacionales de aviación.';
     
     //    <!-- FAQ Section -->
-    $h1_7 = 'Preguntas Frecuentes';
-    $p_17 = 'Encuentra respuestas a las preguntas más comunes sobre nuestros servicios';
+    $h1_7 = __('common.faq.title');
+    $p_17 = __('common.faq.subtitle');
     
-            $h3_8 = '¿Qué destinos cubren nuestros vuelos chárter?';
-            $p_18 = 'Conectamos cada rincón del Perú, desde la costa hasta la Amazonía, y las principales capitales de Sudamérica. Diseñamos vuelos chárter a medida que se adaptan a tu agenda, garantizando acceso directo a destinos exclusivos de negocios o placer.';
+            $h3_8 = __('common.faq.charter_destinations_q');
+            $p_18 = __('common.faq.charter_destinations_a');
             
-            $h3_9 = '¿Cómo puedo hacer una reserva?';
-            $p_19 = 'Realiza tu reserva a través de nuestro sitio web, por teléfono al +51 932 475 995, o vía correo electrónico a contacto@aerolineadelsur.com.pe. Nuestro equipo te brindará atención personalizada 24/7.';
+            $h3_9 = __('common.faq.how_to_book_q');
+            $p_19 = __('common.faq.how_to_book_home_a');
             
-            $h3_10 = '¿Cuál es la política de equipaje?';
-            $p_20 = 'Aerolinea del Sur permite un máximo de 23 kg de equipaje por pasajero. Este estándar es esencial para mantener la operatividad y eficiencia de nuestros vuelos privados.';
+            $h3_10 = __('common.faq.baggage_policy_q');
+            $p_20 = __('common.faq.baggage_policy_a');
 
-            $h3_11 = '¿Qué medidas de seguridad aplica Aerolínea del Sur en sus operaciones?';
-            $p_21 = 'Cumplimos con todos los estándares internacionales de seguridad aérea. Nuestras aeronaves reciben mantenimiento regular certificado, nuestros pilotos tienen entrenamiento continuo, y seguimos protocolos estrictos de seguridad en tierra y vuelo.';
+            $h3_11 = __('common.faq.safety_measures_q');
+            $p_21 = __('common.faq.safety_measures_a');
 
-            $h3_12 = '¿Ofrecen programas de viajero frecuente?';
-            $p_22 = 'Sí. Nuestro programa Cielos del Sur ofrece beneficios exclusivos: acumulación de millas, upgrades gratuitos, acceso a salas VIP y prioridad en check-in. Únete sin costo y disfruta de privilegios desde tu primer vuelo.';
+            $h3_12 = __('common.faq.frequent_flyer_q');
+            $p_22 = __('common.faq.frequent_flyer_home_a');
     // h1_8  - h2_3 - h3_13 - h4_7 p_24
-    $h2_2 = '¿Necesitas más información?';
-    $p_23 = 'Nuestro equipo está disponible para ayudarte';
+    $h2_2 = __('common.faq.need_more_info');
+    $p_23 = __('common.faq.team_available');
 ?>
     <!-- presentacion -->
     <link rel="stylesheet" href="{{ asset('public/css/paginas/inicio.min.css') }}">

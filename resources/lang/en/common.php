@@ -64,4 +64,10 @@ return [
     'faq.safety_measures_a' => 'We comply with all international aviation safety standards. Our aircraft receive certified regular maintenance, our pilots have continuous training, and we follow strict safety protocols on the ground and in flight.',
     'faq.frequent_flyer_q' => 'Do you offer frequent flyer programs?',
     'faq.frequent_flyer_a' => 'Yes, our Cielos del Sur program offers exclusive benefits such as mileage accumulation, free upgrades, access to VIP lounges, and priority check-in. Join for free and start enjoying privileges from your first flight',
+    
+    // FAQ Home specific
+    'faq.how_to_book_home_a' => 'Make your reservation through our website, by phone at +51 932 475 995, or via email at contacto@aerolineadelsur.com.pe. Our team will provide you with personalized attention 24/7.',
+    'faq.frequent_flyer_home_a' => 'Yes. Our Cielos del Sur program offers exclusive benefits: mileage accumulation, free upgrades, access to VIP lounges and priority check-in. Join at no cost and enjoy privileges from your first flight.',
+    'faq.need_more_info' => 'Need more information?',
+    'faq.team_available' => 'Our team is available to help you',
 ];
