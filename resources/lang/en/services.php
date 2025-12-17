@@ -56,6 +56,8 @@ return [
     'helicopter.breadcrumb' => 'Home / Services / Helicopter',
     'helicopter.subtitle' => 'Versatile and efficient transport for any need',
     'helicopter.fleet' => 'Our Helicopter Fleet',
+    'helicopter.form_title' => 'Helicopter Booking',
+    'helicopter.form_subtitle' => 'Complete the form to request information',
     
     // ==================== AEROMEDICAL ====================
     'aeromedical.seo.title' => 'Certified Aeromedical Transport | Aerolínea del Sur',

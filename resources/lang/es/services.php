@@ -66,11 +66,13 @@ return [
     
     // ==================== HELICÓPTEROS ====================
     'helicopter.seo.title' => 'Servicios de Helicóptero en Perú | Aerolínea del Sur',
-    'helicopter.seo.description' => 'Transporte en helic óptero rápido y seguro. Ideal para ejecutivos, rescates, filmaciones y acceso a zonas remotas.',
+    'helicopter.seo.description' => 'Transporte en helicóptero rápido y seguro. Ideal para ejecutivos, rescates, filmaciones y acceso a zonas remotas.',
     'helicopter.title' => 'Servicios de Helicóptero',
     'helicopter.breadcrumb' => 'Inicio / Servicios / Helicóptero',
     'helicopter.subtitle' => 'Transporte versátil y eficiente para cualquier necesidad',
     'helicopter.fleet' => 'Nuestra Flota de Helicópteros',
+    'helicopter.form_title' => 'Reserva de Helicóptero',
+    'helicopter.form_subtitle' => 'Complete el formulario para solicitar información',
     
     // ==================== AEROMÉDICO ====================
     'aeromedical.seo.title' => 'Transporte Aeromédico Certificado | Aerolínea del Sur',

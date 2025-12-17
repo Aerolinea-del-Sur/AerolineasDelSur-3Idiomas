@@ -56,6 +56,8 @@ return [
     'helicopter.breadcrumb' => 'Início / Serviços / Helicóptero',
     'helicopter.subtitle' => 'Transporte versátil e eficiente para qualquer necessidade',
     'helicopter.fleet' => 'Nossa Frota de Helicópteros',
+    'helicopter.form_title' => 'Reserva de Helicóptero',
+    'helicopter.form_subtitle' => 'Preencha o formulário para solicitar informações',
     
     // ==================== AEROMÉDICO ====================
     'aeromedical.seo.title' => 'Transporte Aeromédico Certificado | Aerolínea del Sur',
