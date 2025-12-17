@@ -50,4 +50,18 @@ return [
     'archaeological_adventure' => 'Aventura Arqueológica',
     'natural_wonder' => 'Maravilha Natural',
     'world_heritage' => 'Patrimônio Mundial',
+    
+    // FAQ Section
+    'faq.title' => 'Perguntas Frequentes',
+    'faq.subtitle' => 'Encontre respostas às perguntas mais comuns sobre nossos serviços',
+    'faq.charter_destinations_q' => 'Que destinos nossos voos fretados cobrem?',
+    'faq.charter_destinations_a' => 'Conectamos cada canto do Peru, da costa à Amazônia, e as principais capitais da América do Sul. Projetamos voos fretados personalizados que se adaptam à sua agenda, garantindo acesso direto a destinos exclusivos de negócios ou lazer.',
+    'faq.how_to_book_q' => 'Como posso fazer uma reserva?',
+    'faq.how_to_book_a' => 'Você pode fazer sua reserva através do nosso site, ligando para nosso centro de atendimento ao cliente ou visitando um de nossos escritórios. Você também pode nos enviar um e-mail para contacto@aerolineadelsur.com.pe para obter assistência personalizada.',
+    'faq.baggage_policy_q' => 'Qual é a política de bagagem?',
+    'faq.baggage_policy_a' => 'A Aerolínea del Sur permite um máximo de 23 kg de bagagem por passageiro. Este padrão é essencial para manter a operacionalidade e eficiência de nossos voos privados.',
+    'faq.safety_measures_q' => 'Que medidas de segurança a Aerolínea del Sur aplica em suas operações?',
+    'faq.safety_measures_a' => 'Cumprimos todos os padrões internacionais de segurança da aviação. Nossas aeronaves recebem manutenção regular certificada, nossos pilotos têm treinamento contínuo e seguimos protocolos rigorosos de segurança em terra e em voo.',
+    'faq.frequent_flyer_q' => 'Vocês oferecem programas de passageiro frequente?',
+    'faq.frequent_flyer_a' => 'Sim, nosso programa Cielos del Sur oferece benefícios exclusivos como acumulação de milhas, upgrades gratuitos, acesso a salas VIP e prioridade no check-in. Junte-se gratuitamente e comece a desfrutar de privilégios desde seu primeiro voo',
 ];
