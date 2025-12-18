@@ -115,6 +115,9 @@ return [
     'aeromedical.immediate_attention' => 'Atención inmediata',
     'aeromedical.email' => 'Correo Electrónico',
     'aeromedical.official_confirmation' => 'Confirmación oficial',
+    'aeromedical.aircraft_title' => 'Nuestras Aeronaves Médicas',
+    'aeromedical.aircraft_subtitle' => 'Flota especializada para traslados aeromédicos',
+    'aeromedical.blog_title' => 'Blog Médico',
     
     // ==================== CARGA ====================
     'cargo.seo.title' => 'Transporte de Carga Aérea | Aerolínea del Sur',

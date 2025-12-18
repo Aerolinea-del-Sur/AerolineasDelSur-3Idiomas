@@ -100,6 +100,9 @@ return [
     'aeromedical.immediate_attention' => 'Immediate attention',
     'aeromedical.email' => 'Email',
     'aeromedical.official_confirmation' => 'Official confirmation',
+    'aeromedical.aircraft_title' => 'Our Medical Aircraft',
+    'aeromedical.aircraft_subtitle' => 'Specialized fleet for aeromedical transfers',
+    'aeromedical.blog_title' => 'Medical Blog',
     
     // ==================== CARGO ====================
     'cargo.seo.title' => 'Air Cargo Transport | Aerolínea del Sur',
