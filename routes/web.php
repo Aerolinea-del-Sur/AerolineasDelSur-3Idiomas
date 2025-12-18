@@ -121,12 +121,12 @@ Route::prefix('{locale}')->where(['locale' => 'es|en|pt'])->group(function () {
         Route::get('/tesoros-cusco', fn() => view('e_Agencia.tour-tesoros-cusco'))->name('tour-tesoros-cusco');
         Route::get('/vinicunca', fn() => view('e_Agencia.tour-vinicunca'))->name('tour-vinicunca');
     });
-        Route::prefix('agencia')->group(function () {
+        Route::prefix('sobrevuelo')->group(function () {
         Route::get('/titicaca-lake', fn() => view('e_Agencia.sobrevuelo-titicaca-lake'))->name('sobrevuelo-titicaca-lake');
         Route::get('/choquequirao', fn() => view('e_Agencia.sobrevuelo-choquequirao'))->name('sobrevuelo-choquequirao');
         Route::get('/nazca-lines', fn() => view('e_Agencia.sobrevuelo-nazca-lines'))->name('sobrevuelo-nazca-lines');
         Route::get('/valle-maras', fn() => view('e_Agencia.sobrevuelo-valle-maras'))->name('sobrevuelo-valle-maras');
-        Route::get('/vinicunca-elite', fn() => view('e_Agencia.tour-vinicunca-elite'))->name('tour-vinicunca-elite');
+        Route::get('/vinicunca-elite', fn() => view('e_Agencia.tour-vinicunca-elite'))->name('sobrevuelo-vinicunca-elite');
     });
     
     //----------------------------------  BLOG  ---------------------------------------------------//
