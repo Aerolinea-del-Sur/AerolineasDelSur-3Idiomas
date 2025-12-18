@@ -300,7 +300,7 @@ $seo = [
                         'badge' => 'Sobrevuelo',
                         'extra_icon' => 'fas fa-water',
                         'extra_text' => 'Incluye lagunas',
-                        'url' => '/agencia/valle-maras'
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/valle-maras'
                     ],
                     [
                         'title' => $h2_6, // Vinicunca
@@ -317,7 +317,7 @@ $seo = [
                         'badge' => 'Sobrevuelo',
                         'extra_icon' => 'fas fa-crown',
                         'extra_text' => 'Experiencia elite',
-                        'url' => '/agencia/vinicunca-elite'
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/vinicunca-elite'
                     ]
                 ];
 
