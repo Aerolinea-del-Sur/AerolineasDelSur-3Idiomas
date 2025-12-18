@@ -136,7 +136,7 @@ $seo = [
                                 <span>{{ __('services.agency.archaeological_sites') }}</span>
                             </div>
                         </div>
-                        <a href="/agencia/tesoros-cusco" class="tour-btn" itemprop="url" title="Reservar Tour Tesoros del Cusco">
+                        <a href="/{{ app()->getLocale() }}/agencia/tesoros-cusco" class="tour-btn" itemprop="url" title="Reservar Tour Tesoros del Cusco">
                             <span>{{ __('services.agency.know_more') }}</span>
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -174,7 +174,7 @@ $seo = [
                                 <span>Naturaleza única</span>
                             </div>
                         </div>
-                        <a href="/agencia/vinicunca" class="tour-btn" itemprop="url" title="Reservar Tour Montaña de Siete Colores">
+                        <a href="/{{ app()->getLocale() }}/agencia/vinicunca" class="tour-btn" itemprop="url" title="Reservar Tour Montaña de Siete Colores">
                             <span>Conoce más</span>
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -212,7 +212,7 @@ $seo = [
                                 <span>Patrimonio mundial</span>
                             </div>
                         </div>
-                        <a href="/agencia/machu-picchu" class="tour-btn" itemprop="url" title="Reservar Tour Machu Picchu">
+                        <a href="/{{ app()->getLocale() }}/agencia/machu-picchu" class="tour-btn" itemprop="url" title="Reservar Tour Machu Picchu">
                             <span>Conoce más</span>
                             <i class="fas fa-arrow-right"></i>
                         </a>
