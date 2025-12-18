@@ -114,7 +114,7 @@ return [
     'cargo.form_title' => 'Solicitar Cotação',
     'cargo.form_subtitle' => 'Preencha o formulário para solicitar informações',
     'cargo.services_title' => 'Serviços de Carga Especializada',
-    'cargo.services_subtitle' => 'Operamos helicópteros para carga externa em gasodutos e transporte médico para locais remotos. Nossa frota especializada manuse ia carga interna e externa em múltiplas categorias.',
+    'cargo.services_subtitle' => 'Operamos helicópteros para carga externa em gasodutos e transporte médico para locais remotos. Nossa frota especializada manuseia carga interna e externa em múltiplas categorias.',
     'cargo.aircraft_title' => '🚁 Aeronaves para Carga Pesada',
     'cargo.aircraft_mi8' => 'Helicóptero de transporte pesado ideal para carga externa e interna em áreas de difícil acesso',
     'cargo.aircraft_antonov' => 'Avião de carga militar certificado para operações civis de alta tonelagem',
@@ -145,9 +145,9 @@ return [
     'cargo.dangerous_desc' => 'Manuseio conforme IATA DGR com embalagem homologada e documentação específica.',
     'cargo.un_classification' => 'Classificação UN',
     'cargo.certified_packaging' => 'Embalagem certificada',
-    'cargo.helicopter_external' => 'Helic óptero Externa',
+    'cargo.helicopter_external' => 'Helicóptero Externa',
     'cargo.helicopter_external_desc' => 'Carga externa para gasodutos, mineração e operações em áreas remotas sem pista.',
-    'cargo.certified_sling' > 'Eslinga certificada',
+    'cargo.certified_sling' => 'Eslinga certificada',
     
     // ==================== AGÊNCIA ====================
     'agency.seo.title' => 'Agência de Viagens e Tours Aéreos | Aerolínea del Sur',
