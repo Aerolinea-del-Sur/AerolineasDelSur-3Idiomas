@@ -252,30 +252,30 @@ $seo = [
             
             <div class="heli-form-head">
                 <h2 class="heli-section-title"><?= $h2_form ?></h2>
-                <p style="color: #ccc; font-size: 14px; margin-top: 8px;">Complete el formulario para solicitar información</p>
+                <p style="color: #ccc; font-size: 14px; margin-top: 8px;">{{ __('services.cargo.form_subtitle') }}</p>
             </div>
 
             <div class="heli-form-personal">
                 <div class="heli-field">
-                    <input class="heli-input" type="text" id="nombres_apellidos" name="nombres_apellidos" placeholder="Nombres y Apellidos *" required>
+                    <input class="heli-input" type="text" id="nombres_apellidos" name="nombres_apellidos" placeholder="{{ __('services.form.name') }} *" required>
                 </div>
                 <div class="heli-field">
-                    <input class="heli-input" type="email" id="correo" name="correo" placeholder="Correo electrónico *" required>
+                    <input class="heli-input" type="email" id="correo" name="correo" placeholder="{{ __('services.form.email') }} *" required>
                 </div>
                 <div class="heli-field">
-                    <input class="heli-input" type="tel" id="telefono" name="telefono" placeholder="Teléfono *" required pattern="[0-9+\s-]{7,20}">
+                    <input class="heli-input" type="tel" id="telefono" name="telefono" placeholder="{{ __('services.form.phone') }} *" required pattern="[0-9+\s-]{7,20}">
                 </div>
             </div>
             
             <div class="heli-actions">
                 <button type="button" class="heli-btn btn-whatsapp" onclick="enviarWhatsApp('carga')">
-                    <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+                    <i class="fab fa-whatsapp"></i> {{ __('services.form.send_whatsapp') }}
                 </button>
                 <button type="button" class="heli-btn btn-outlook" onclick="enviarOutlook('carga')">
-                    <i class="far fa-envelope"></i> Enviar por Outlook
+                    <i class="far fa-envelope"></i> {{ __('services.form.send_outlook') }}
                 </button>
                 <button type="button" class="heli-btn btn-gmail" onclick="enviarGmail('carga')">
-                    <i class="far fa-envelope"></i> Enviar por Gmail
+                    <i class="far fa-envelope"></i> {{ __('services.form.send_gmail') }}
                 </button>
             </div>
         </form>
@@ -417,29 +417,28 @@ $seo = [
 
 <section class="cargo-section">
     <div class="cargo-container">
-        <h2 class="heli-section-title">Servicios de Carga Especializada</h2>
+        <h2 class="heli-section-title">{{ __('services.cargo.services_title') }}</h2>
         <p class="cargo-desc" style="margin-bottom: 30px; text-align:center; max-width:900px; margin-left:auto; margin-right:auto;">
-            Operamos <strong style="color:#D4AF37;">helicóptero para carga externa en gasiferías</strong> y transporte médico a lugares remotos. 
-            Nuestra flota especializada maneja carga interna y externa en múltiples categorías.
+            {{ __('services.cargo.services_subtitle') }}
         </p>
         
         <!-- Aeronaves Especializadas -->
         <div style="background:linear-gradient(135deg, rgba(212,175,55,0.1), rgba(0,0,0,0.2)); padding:25px; border-radius:12px; margin-bottom:40px; border:1px solid rgba(212,175,55,0.3);">
-            <h3 style="color:#D4AF37; text-align:center; margin-bottom:20px; font-size:22px;">🚁 Aeronaves para Carga Pesada</h3>
+            <h3 style="color:#D4AF37; text-align:center; margin-bottom:20px; font-size:22px;">{{ __('services.cargo.aircraft_title') }}</h3>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px;">
                 <div style="background:rgba(0,0,0,0.4); padding:20px; border-radius:8px; border:1px solid rgba(212,175,55,0.2);">
                     <h4 style="color:#D4AF37; margin-bottom:10px; font-size:18px;">Mi-8 MTV1</h4>
-                    <p style="color:#ccc; font-size:14px; line-height:1.6;">Helicóptero de transporte pesado ideal para carga externa e interna en zonas de difícil acceso</p>
+                    <p style="color:#ccc; font-size:14px; line-height:1.6;">{{ __('services.cargo.aircraft_mi8') }}</p>
                     <div style="margin-top:15px; display:flex; gap:8px; flex-wrap:wrap;">
-                        <span style="background:rgba(212,175,55,0.2); padding:4px 10px; border-radius:4px; font-size:12px; color:#fff;">Carga Externa</span>
+                        <span style="background:rgba(212,175,55,0.2); padding:4px 10px; border-radius:4px; font-size:12px; color:#fff;">{{ __('services.cargo.external_cargo') }}</span>
                         <span style="background:rgba(212,175,55,0.2); padding:4px 10px; border-radius:4px; font-size:12px; color:#fff;">4000kg</span>
                     </div>
                 </div>
                 <div style="background:rgba(0,0,0,0.4); padding:20px; border-radius:8px; border:1px solid rgba(212,175,55,0.2);">
                     <h4 style="color:#D4AF37; margin-bottom:10px; font-size:18px;">Antonov AN-32B</h4>
-                    <p style="color:#ccc; font-size:14px; line-height:1.6;">Avión de carga militar certificado para operaciones civiles de alto tonelaje</p>
+                    <p style="color:#ccc; font-size:14px; line-height:1.6;">{{ __('services.cargo.aircraft_antonov') }}</p>
                     <div style="margin-top:15px; display:flex; gap:8px; flex-wrap:wrap;">
-                        <span style="background:rgba(212,175,55,0.2); padding:4px 10px; border-radius:4px; font-size:12px; color:#fff;">Carga Interna</span>
+                        <span style="background:rgba(212,175,55,0.2); padding:4px 10px; border-radius:4px; font-size:12px; color:#fff;">{{ __('services.cargo.internal_cargo') }}</span>
                         <span style="background:rgba(212,175,55,0.2); padding:4px 10px; border-radius:4px; font-size:12px; color:#fff;">6700kg</span>
                     </div>
                 </div>
@@ -447,7 +446,7 @@ $seo = [
         </div>
 
         <!-- Tipos de Carga -->
-        <h3 style="color:#fff; text-align:center; margin-bottom:30px; font-size:20px;">Tipos de Carga que Manejamos</h3>
+        <h3 style="color:#fff; text-align:center; margin-bottom:30px; font-size:20px;">{{ __('services.cargo.types_title') }}</h3>
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:20px; margin-bottom:50px;">
             <div style="background:rgba(212,175,55,0.05); padding:25px 20px; border-radius:10px; border:1px solid rgba(212,175,55,0.25); text-align:center; transition:all 0.3s;">
                 <div style="font-size:40px; margin-bottom:15px;">❄️</div>
