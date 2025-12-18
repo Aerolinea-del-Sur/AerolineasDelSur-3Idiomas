@@ -18,39 +18,39 @@ $seo = [
         $h2_1 = __('services.agency.our_tours');
         $p_2 = __('services.agency.discover_description');
 
-        $h2_2 = 'Andes Mágicos';
-        $p_3 = 'Descubre la montaña de 7 colores, nevado Ausangate, valle rojo, complejos arqueológicos del Cusco, Pisac junto al Valle Sagrado finalizando con las salineras de Maras.';
+        $h2_2 = __('services.agency.magical_andes');
+        $p_3 = __('services.agency.magical_andes_desc');
 
-        $h2_3 = 'Tesoros del Cusco';
-        $p_4 = 'Descubre Valle Sagrado y Machu Picchu en un tour exclusivo por los principales atractivos del Cusco.';
+        $h2_3 = __('services.agency.cusco_treasures');
+        $p_4 = __('services.agency.cusco_treasures_desc');
 
-        $h2_4 = 'Valle Maras';
-        $p_5 = 'Descubre Sacsayhuamán, Tambomachay, Pisac, Valle Sagrado, Maras y Laguna de Huaypo desde las alturas.';
+        $h2_4 = __('services.agency.maras_valley');
+        $p_5 = __('services.agency.maras_valley_desc');
 
-        $h2_5 = 'Montaña de Siete Colores';
-        $p_6 = 'Descubre la montaña arcoíris Vinicunca en una excursión por Cusco, una de las maravillas naturales más impresionantes del Perú.';
+        $h2_5 = __('services.agency.seven_colors_mountain');
+        $p_6 = __('services.agency.seven_colors_mountain_desc');
 
-        $h2_6 = 'Vinicunca Elite Experience';
-        $p_7 = 'Visitamos Vinicunca, Palcoyo, Ausangate, Valle Rojo y Cuatro Lagunas en una experiencia exclusiva desde las alturas.';
+        $h2_6 = __('services.agency.vinicunca_elite');
+        $p_7 = __('services.agency.vinicunca_elite_desc');
 
-        $h2_7 = 'Machu Picchu';
-        $p_8 = 'Visita la ciudadela inca más famosa del mundo y contempla su majestuosidad desde las alturas en un tour inolvidable.';
+        $h2_7 = __('services.agency.machu_picchu');
+        $p_8 = __('services.agency.machu_picchu_desc');
 
         // Contacto
-        $h2_8 = '¿Listo para tu Próxima Aventura?';
-        $p_9 = 'Contáctanos para reservar tu tour aéreo y vivir una experiencia inolvidable';
+        $h2_8 = __('services.agency.ready_adventure');
+        $p_9 = __('services.agency.contact_us_desc');
 
-        $h2_9 = '¿Listo para tu Próxima Aventura?';
-        $p_10 = 'Contáctanos para reservar tu tour aéreo y vivir una experiencia inolvidable desde las alturas';
+        $h2_9 = __('services.agency.ready_adventure');
+       $p_10 = __('services.agency.contact_us_heights');
 
-                $h4_1 = 'Teléfono';
+                $h4_1 = __('services.agency.phone');
                 $p_11 = '+51 932 475 995';
 
-                $h4_2 = 'Email';
+                $h4_2 = __('services.agency.email');
                 $p_12 = 'contacto@aerolineadelsur.com.pe';
 
-                $h4_3 = 'Ubicación';
-                $p_13 = 'Cusco, Perú';        
+                $h4_3 = __('services.agency.location');
+                $p_13 = __('services.agency.cusco_peru');        
 ?>
 
     <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/Agencia.css') }}">
@@ -77,12 +77,12 @@ $seo = [
             <p class="hero-description"><?= $p_1 ?></p>
             <div class="hero-actions">
                 <a href="#tours" class="btn btn-primary">
-                    <span>Ver Tours</span>
+                    <span>{{ __('services.agency.see_tours') }}</span>
                     <i class="fas fa-arrow-down"></i>
                 </a>
                 <a href="#contacto" class="btn btn-outline">
                     <i class="fas fa-phone"></i>
-                    <span>Reservar</span>
+                    <span>{{ __('services.agency.reserve') }}</span>
                 </a>
             </div>
         </div>
@@ -112,7 +112,7 @@ $seo = [
                             alt="Valle Sagrado y Machu Picchu en Cusco" 
                             itemprop="image">
                         <div class="tour-overlay">
-                            <div class="tour-badge tradicional" itemprop="additionalType">Tradicional</div>
+                            <div class="tour-badge tradicional" itemprop="additionalType">{{ __('services.agency.traditional') }}</div>
                         </div>
                     </div>
                     <div class="tour-content">
@@ -121,23 +121,23 @@ $seo = [
                         <div class="tour-details">
                             <div class="detail" itemprop="duration" content="PT3H">
                                 <i class="fas fa-clock"></i>
-                                <span>1 horas</span>
+                                <span>1 {{ __('services.agency.hours') }}</span>
                             </div>
                             <div class="detail" itemprop="audience" content="Grupo mediano">
                                 <i class="fas fa-users"></i>
-                                <span>Hasta 8 personas</span>
+                                <span>{{ __('services.agency.up_to') }} 8 {{ __('services.agency.people') }}</span>
                             </div>
                             <div class="detail" itemprop="location" itemscope itemtype="https://schema.org/Place">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <span itemprop="address">Cusco, Perú</span>
+                                <span itemprop="address">{{ __('services.agency.cusco_peru') }}</span>
                             </div>
                             <div class="detail">
                                 <i class="fas fa-landmark"></i>
-                                <span>Sitios arqueológicos</span>
+                                <span>{{ __('services.agency.archaeological_sites') }}</span>
                             </div>
                         </div>
                         <a href="/agencia/tesoros-cusco" class="tour-btn" itemprop="url" title="Reservar Tour Tesoros del Cusco">
-                            <span>Conoce más</span>
+                            <span>{{ __('services.agency.know_more') }}</span>
                             <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -226,13 +226,13 @@ $seo = [
     <section id="contacto" class="contact">
         <div class="container">
             <div class="section-header">
-                <div class="section-badge">CONTACTO</div>
+                <div class="section-badge">{{ __('services.agency.contact') }}</div>
                 <h2 class="section-title"><?= $h2_8 ?></h2>
                 <p class="section-subtitle"><?= $p_9 ?></p>
             </div>
             <div class="contact-content">
                 <div class="contact-text">
-                    <div class="section-badge">RESERVA AHORA</div>
+                    <div class="section-badge">{{ __('services.agency.reserve_now') }}</div>
                     <h2 class="section-title"><?= $h2_9 ?></h2>
                     <p class="section-subtitle"><?= $p_10 ?></p>
                 </div>
