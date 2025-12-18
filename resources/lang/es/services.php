@@ -105,6 +105,10 @@ return [
     'aeromedical.breadcrumb' => 'Inicio / Servicios / Aeromédico',
     'aeromedical.subtitle' => 'Atención médica de emergencia en el aire',
     'aeromedical.services' => 'Servicios Aeromédicos',
+    'aeromedical.hero_subtitle' => 'Evacuaciones médicas y traslado de pacientes con equipos certificados',
+    'aeromedical.form_title' => 'Solicitar Servicio',
+    'aeromedical.form_subtitle' => 'Complete para emergencias médicas 24/7',
+    'aeromedical.call' => 'Llamar',
     
     // ==================== CARGA ====================
     'cargo.seo.title' => 'Transporte de Carga Aérea | Aerolínea del Sur',

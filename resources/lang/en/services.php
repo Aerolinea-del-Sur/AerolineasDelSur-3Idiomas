@@ -90,6 +90,10 @@ return [
     'aeromedical.breadcrumb' => 'Home / Services / Aeromedical',
     'aeromedical.subtitle' => 'Emergency medical care in the air',
     'aeromedical.services' => 'Aeromedical Services',
+    'aeromedical.hero_subtitle' => 'Medical evacuations and patient transport with certified equipment',
+    'aeromedical.form_title' => 'Request Service',
+    'aeromedical.form_subtitle' => 'Complete for 24/7 medical emergencies',
+    'aeromedical.call' => 'Call',
     
     // ==================== CARGO ====================
     'cargo.seo.title' => 'Air Cargo Transport | Aerolínea del Sur',
