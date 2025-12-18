@@ -213,7 +213,7 @@ $seo = [
                         'badge' => __('common.overflight'),
                         'extra_icon' => 'fas fa-mountain',
                         'extra_text' => __('common.archaeological_adventure'),
-                        'url' => '/agencia/choquequirao'
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/choquequirao'
                     ],
                     [
                         'title' => 'Lago Titicaca',
@@ -230,7 +230,7 @@ $seo = [
                         'badge' => __('common.overflight'),
                         'extra_icon' => 'fas fa-water',
                         'extra_text' => __('common.natural_wonder'),
-                        'url' => '/agencia/titicaca-lake'
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/titicaca-lake'
                     ],
                     [
                         'title' => 'Líneas de Nazca',
@@ -247,7 +247,7 @@ $seo = [
                         'badge' => __('common.overflight'),
                         'extra_icon' => 'fas fa-eye',
                         'extra_text' => __('common.world_heritage'),
-                        'url' => '/agencia/nazca-lines'
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/nazca-lines'
                     ],
                     //[
                     //    'title' => 'Salar de Uyuni',
