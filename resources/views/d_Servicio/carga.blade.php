@@ -450,23 +450,23 @@ $seo = [
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:20px; margin-bottom:50px;">
             <div style="background:rgba(212,175,55,0.05); padding:25px 20px; border-radius:10px; border:1px solid rgba(212,175,55,0.25); text-align:center; transition:all 0.3s;">
                 <div style="font-size:40px; margin-bottom:15px;">❄️</div>
-                <h4 style="color:#D4AF37; margin-bottom:10px; font-size:16px; font-weight:600;">Perecible</h4>
-                <p style="color:#aaa; font-size:13px; line-height:1.5;">Cadena de frío garantizada y transporte rápido</p>
+                <h4 style="color:#D4AF37; margin-bottom:10px; font-size:16px; font-weight:600;">{{ __('services.cargo.perishable') }}</h4>
+                <p style="color:#aaa; font-size:13px; line-height:1.5;">{{ __('services.cargo.perishable_desc') }}</p>
             </div>
             <div style="background:rgba(212,175,55,0.05); padding:25px 20px; border-radius:10px; border:1px solid rgba(212,175,55,0.25); text-align:center; transition:all 0.3s;">
                 <div style="font-size:40px; margin-bottom:15px;">⚕️</div>
-                <h4 style="color:#D4AF37; margin-bottom:10px; font-size:16px; font-weight:600;">Médica</h4>
-                <p style="color:#aaa; font-size:13px; line-height:1.5;">Equipo médico, medicamentos y órganos</p>
+                <h4 style="color:#D4AF37; margin-bottom:10px; font-size:16px; font-weight:600;">{{ __('services.cargo.medical') }}</h4>
+                <p style="color:#aaa; font-size:13px; line-height:1.5;">{{ __('services.cargo.medical_desc') }}</p>
             </div>
             <div style="background:rgba(212,175,55,0.05); padding:25px 20px; border-radius:10px; border:1px solid rgba(212,175,55,0.25); text-align:center; transition:all 0.3s;">
                 <div style="font-size:40px; margin-bottom:15px;">💎</div>
-                <h4 style="color:#D4AF37; margin-bottom:10px; font-size:16px; font-weight:600;">Valorada</h4>
-                <p style="color:#aaa; font-size:13px; line-height:1.5;">Custodia especializada y monitoreo 24/7</p>
+                <h4 style="color:#D4AF37; margin-bottom:10px; font-size:16px; font-weight:600;">{{ __('services.cargo.valuable') }}</h4>
+                <p style="color:#aaa; font-size:13px; line-height:1.5;">{{ __('services.cargo.valuable_desc') }}</p>
             </div>
             <div style="background:rgba(212,175,55,0.05); padding:25px 20px; border-radius:10px; border:1px solid rgba(212,175,55,0.25); text-align:center; transition:all 0.3s;">
                 <div style="font-size:40px; margin-bottom:15px;">📦</div>
-                <h4 style="color:#D4AF37; margin-bottom:10px; font-size:16px; font-weight:600;">No Perecible</h4>
-                <p style="color:#aaa; font-size:13px; line-height:1.5;">Carga general y equipos industriales</p>
+                <h4 style="color:#D4AF37; margin-bottom:10px; font-size:16px; font-weight:600;">{{ __('services.cargo.non_perishable') }}</h4>
+                <p style="color:#aaa; font-size:13px; line-height:1.5;">{{ __('services.cargo.non_perishable_desc') }}</p>
             </div>
         </div>
 
@@ -476,15 +476,15 @@ $seo = [
                 <div class="bg"></div>
                 <div class="overlay"></div>
                 <div class="content">
-                    <div class="cargo-title">🇵🇪 Carga Interna Nacional</div>
-                    <p class="cargo-desc">Movilización dentro del territorio nacional con rutas optimizadas y tiempos garantizados.</p>
+                    <div class="cargo-title">🇵🇪 {{ __('services.cargo.domestic') }}</div>
+                    <p class="cargo-desc">{{ __('services.cargo.domestic_desc') }}</p>
                     <div class="cargo-variants">
                         <div class="cargo-variant">
-                            <h4>⚡ Urgente</h4>
-                            <p>Respuesta rápida 24/7, priorización de pista y cadena directa sin transbordos.</p>
+                            <h4>⚡ {{ __('services.cargo.urgent') }}</h4>
+                            <p>{{ __('services.cargo.urgent_desc') }}</p>
                             <div class="cargo-meta">
-                                <span class="chip">SLA garantizado</span>
-                                <span class="chip">Tracking en vivo</span>
+                                <span class="chip">{{ __('services.cargo.sla_guaranteed') }}</span>
+                                <span class="chip">{{ __('services.cargo.live_tracking') }}</span>
                             </div>
                         </div>
                         <div class="cargo-variant">
@@ -503,22 +503,22 @@ $seo = [
                 <div class="bg" background-size:cover; background-position:center;"></div>
                 <div class="overlay"></div>
                 <div class="content">
-                    <div class="cargo-title">🌎 Carga Externa Internacional</div>
-                    <p class="cargo-desc">Operaciones internacionales con coordinación aduanera y normativa ICAO/IATA completa.</p>
+                    <div class="cargo-title">🌎 {{ __('services.cargo.international') }}</div>
+                    <p class="cargo-desc">{{ __('services.cargo.international_desc') }}</p>
                     <div class="cargo-variants">
                         <div class="cargo-variant">
-                            <h4>⚠️ Peligrosa (DGR)</h4>
-                            <p>Manejo conforme IATA DGR con embalaje homologado y documentación específica.</p>
+                            <h4>⚠️ {{ __('services.cargo.dangerous') }}</h4>
+                            <p>{{ __('services.cargo.dangerous_desc') }}</p>
                             <div class="cargo-meta">
-                                <span class="chip">Clasificación UN</span>
-                                <span class="chip">Embalaje certificado</span>
+                                <span class="chip">{{ __('services.cargo.un_classification') }}</span>
+                                <span class="chip">{{ __('services.cargo.certified_packaging') }}</span>
                             </div>
                         </div>
                         <div class="cargo-variant">
-                            <h4>🚁 Helicóptero Externa</h4>
-                            <p>Carga externa para gasiferías, minería y operaciones en zonas remotas sin pista.</p>
+                            <h4>🚁 {{ __('services.cargo.helicopter_external') }}</h4>
+                            <p>{{ __('services.cargo.helicopter_external_desc') }}</p>
                             <div class="cargo-meta">
-                                <span class="chip">Eslinga certificada</span>
+                                <span class="chip">{{ __('services.cargo.certified_sling') }}</span>
                                 <span class="chip">Zonas remotas</span>
                             </div>
                         </div>
