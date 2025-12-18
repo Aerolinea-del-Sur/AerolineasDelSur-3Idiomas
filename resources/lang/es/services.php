@@ -109,6 +109,12 @@ return [
     'aeromedical.form_title' => 'Solicitar Servicio',
     'aeromedical.form_subtitle' => 'Complete para emergencias médicas 24/7',
     'aeromedical.call' => 'Llamar',
+    'aeromedical.emergency_title' => 'Servicio de Emergencia 24/7',
+    'aeromedical.emergency_desc' => 'Por la naturaleza crítica de nuestro servicio aeromédico, las reservas se realizan ÚNICAMENTE por llamada telefónica y correo electrónico para garantizar comunicación inmediata y coordinación de emergencias.',
+    'aeromedical.direct_call' => 'Llamada Directa',
+    'aeromedical.immediate_attention' => 'Atención inmediata',
+    'aeromedical.email' => 'Correo Electrónico',
+    'aeromedical.official_confirmation' => 'Confirmación oficial',
     
     // ==================== CARGA ====================
     'cargo.seo.title' => 'Transporte de Carga Aérea | Aerolínea del Sur',

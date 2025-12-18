@@ -674,20 +674,20 @@ $seo = [
         <div style="width:64px; height:64px; background:linear-gradient(135deg, var(--medical-red) 0%, #b91c1c 100%); border-radius:16px; display:flex; align-items:center; justify-content:center; margin:0 auto 24px;">
             <i class="fas fa-heartbeat" style="color:#fff; font-size:32px;"></i>
         </div>
-        <h3 style="color:var(--medical-black); margin-bottom:16px; font-size:26px; font-weight:700;">Servicio de Emergencia 24/7</h3>
+        <h3 style="color:var(--medical-black); margin-bottom:16px; font-size:26px; font-weight:700;">{{ __('services.aeromedical.emergency_title') }}</h3>
         <p style="color:var(--medical-gray); font-size:17px; line-height:1.8; margin-bottom:24px;">
-            Por la naturaleza crítica de nuestro servicio aeromédico, <strong style="color:var(--medical-red);">las reservas se realizan ÚNICAMENTE por llamada telefónica y correo electrónico</strong> para garantizar comunicación inmediata y coordinación de emergencias.
+            {!! __('services.aeromedical.emergency_desc') !!}
         </p>
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px; margin-top:28px;">
             <div style="background:linear-gradient(135deg, #fee2e2 0%, #fef2f2 100%); padding:20px; border-radius:12px; border:2px solid var(--medical-red);">
                 <div style="font-size:32px; margin-bottom:8px;">📞</div>
-                <p style="color:var(--medical-red); font-weight:700; margin-bottom:6px; font-size:16px;">Llamada Directa</p>
-                <p style="color:var(--medical-gray); font-size:14px; margin:0;">Atención inmediata</p>
+                <p style="color:var(--medical-red); font-weight:700; margin-bottom:6px; font-size:16px;">{{ __('services.aeromedical.direct_call') }}</p>
+                <p style="color:var(--medical-gray); font-size:14px; margin:0;">{{ __('services.aeromedical.immediate_attention') }}</p>
             </div>
             <div style="background:linear-gradient(135deg, #fef3c7 0%, #fefce8 100%); padding:20px; border-radius:12px; border:2px solid var(--medical-gold);">
                 <div style="font-size:32px; margin-bottom:8px;">✉️</div>
-                <p style="color:var(--medical-gold); font-weight:700; margin-bottom:6px; font-size:16px;">Correo Electrónico</p>
-                <p style="color:var(--medical-gray); font-size:14px; margin:0;">Confirmación oficial</p>
+                <p style="color:var(--medical-gold); font-weight:700; margin-bottom:6px; font-size:16px;">{{ __('services.aeromedical.email') }}</p>
+                <p style="color:var(--medical-gray); font-size:14px; margin:0;">{{ __('services.aeromedical.official_confirmation') }}</p>
             </div>
         </div>
     </div>

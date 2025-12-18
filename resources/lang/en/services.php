@@ -94,6 +94,12 @@ return [
     'aeromedical.form_title' => 'Request Service',
     'aeromedical.form_subtitle' => 'Complete for 24/7 medical emergencies',
     'aeromedical.call' => 'Call',
+    'aeromedical.emergency_title' => '24/7 Emergency Service',
+    'aeromedical.emergency_desc' => 'Due to the critical nature of our aeromedical service, reservations are made ONLY by phone call and email to ensure immediate communication and emergency coordination.',
+    'aeromedical.direct_call' => 'Direct Call',
+    'aeromedical.immediate_attention' => 'Immediate attention',
+    'aeromedical.email' => 'Email',
+    'aeromedical.official_confirmation' => 'Official confirmation',
     
     // ==================== CARGO ====================
     'cargo.seo.title' => 'Air Cargo Transport | Aerolínea del Sur',
