@@ -70,4 +70,8 @@ return [
     'faq.frequent_flyer_home_a' => 'Yes. Our Cielos del Sur program offers exclusive benefits: mileage accumulation, free upgrades, access to VIP lounges and priority check-in. Join at no cost and enjoy privileges from your first flight.',
     'faq.need_more_info' => 'Need more information?',
     'faq.team_available' => 'Our team is available to help you',
+    
+    // Certifications
+    'certifications.title' => 'Premium Certifications',
+    'certifications.subtitle' => 'Certified excellence on every flight. Our quality and safety standards are backed by the most prestigious international aviation organizations.',
 ];

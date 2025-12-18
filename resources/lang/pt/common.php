@@ -70,4 +70,8 @@ return [
     'faq.frequent_flyer_home_a' => 'Sim. Nosso programa Cielos del Sur oferece benefícios exclusivos: acumulação de milhas, upgrades gratuitos, acesso a salas VIP e prioridade no check-in. Junte-se sem custo e desfrute de privilégios desde seu primeiro voo.',
     'faq.need_more_info' => 'Precisa de mais informações?',
     'faq.team_available' => 'Nossa equipe está disponível para ajudá-lo',
+    
+    // Certifications
+    'certifications.title' => 'Certificações Premium',
+    'certifications.subtitle' => 'Excelência certificada em cada voo. Nossos padrões de qualidade e segurança são respaldados pelas mais prestigiosas organizações internacionais de aviação.',
 ];

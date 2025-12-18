@@ -88,8 +88,8 @@ $seo = [
     $span_15 = 'Consultor - Buenos Aires, Argentina';
 
     // Certifications
-    $h1_6 = 'Certificaciones Premium';
-    $p_16 = 'Excelencia certificada en cada vuelo. Nuestros estándares de calidad y seguridad están respaldados por las más prestigiosas organizaciones internacionales de aviación.';
+    $h1_6 = __('common.certifications.title');
+    $p_16 = __('common.certifications.subtitle');
     
     //    <!-- FAQ Section -->
     $h1_7 = __('common.faq.title');
