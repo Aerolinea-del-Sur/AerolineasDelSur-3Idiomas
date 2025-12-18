@@ -11,12 +11,12 @@ $seo = [
 @endphp
 @section('content')
 <?php
-    $h1_1_1 = 'Visita el Mundo';
-    $h1_1_2 = 'De Nuestras Tradiciones';
-    $p_1 = 'Explora destinos únicos con nuestros tours y vive experiencias unica';
+    $h1_1_1 = __('services.agency.visit_world');
+    $h1_1_2 = __('services.agency.our_traditions');
+    $p_1 = __('services.agency.explore_description');
 
-        $h2_1 = 'Nuestros Tours';
-        $p_2 = 'Descubre los lugares más espectaculares con una perspectiva diferente';
+        $h2_1 = __('services.agency.our_tours');
+        $p_2 = __('services.agency.discover_description');
 
         $h2_2 = 'Andes Mágicos';
         $p_3 = 'Descubre la montaña de 7 colores, nevado Ausangate, valle rojo, complejos arqueológicos del Cusco, Pisac junto al Valle Sagrado finalizando con las salineras de Maras.';
@@ -68,7 +68,7 @@ $seo = [
         <div class="hero-content">
             <div class="hero-badge">
                 <i class="fas fa-plane"></i>
-                <span>TOURS TRADICIONALES</span>
+                <span>{{ __('services.agency.traditional_tours') }}</span>
             </div>
             <h1 class="hero-title">
                 <span class="title-line"><?= $h1_1_1 ?></span>
@@ -99,7 +99,7 @@ $seo = [
     <section id="tours" class="tours">
         <div class="container">
             <div class="section-header">
-                <div class="section-badge">TOURS TRADICIONALES</div>
+                <div class="section-badge">{{ __('services.agency.traditional_tours') }}</div>
                 <h2 class="section-title"><?= $h2_1 ?></h2>
                 <p class="section-subtitle"><?= $p_2 ?></p>
             </div>

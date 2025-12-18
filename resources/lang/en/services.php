@@ -156,6 +156,12 @@ return [
     'agency.breadcrumb' => 'Home / Services / Agency',
     'agency.subtitle' => 'Complete tour packages with air experiences',
     'agency.packages' => 'Our Packages',
+    'agency.traditional_tours' => 'TRADITIONAL TOURS',
+    'agency.visit_world' => 'Visit the World',
+    'agency.our_traditions' => 'Of Our Traditions',
+    'agency.explore_description' => 'Explore unique destinations with our tours and live unique experiences',
+    'agency.our_tours' => 'Our Tours',
+    'agency.discover_description' => 'Discover the most spectacular places with a different perspective',
     
     // ==================== COMMON ====================
     'capacity' => 'Capacity',

@@ -171,6 +171,12 @@ return [
     'agency.breadcrumb' => 'Inicio / Servicios / Agencia',
     'agency.subtitle' => 'Paquetes turísticos completos con experiencias aéreas',
     'agency.packages' => 'Nuestros Paquetes',
+    'agency.traditional_tours' => 'TOURS TRADICIONALES',
+    'agency.visit_world' => 'Visita el Mundo',
+    'agency.our_traditions' => 'De Nuestras Tradiciones',
+    'agency.explore_description' => 'Explora destinos únicos con nuestros tours y vive experiencias unica',
+    'agency.our_tours' => 'Nuestros Tours',
+    'agency.discover_description' => 'Descubre los lugares más espectaculares con una perspectiva diferente',
     
     // ==================== COMÚN ====================
     'capacity' => 'Capacidad',
