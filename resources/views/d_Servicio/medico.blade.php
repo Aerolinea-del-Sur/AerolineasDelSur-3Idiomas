@@ -424,14 +424,14 @@ $seo = [
         </div>
         
         <h1 class="medical-title" style="text-align:center;"><?= $h1_page ?></h1>
-        <p class="medical-subtitle" style="text-align:center;">Evacuaciones médicas y traslado de pacientes con equipos certificados</p>
+        <p class="medical-subtitle" style="text-align:center;">{{ __('services.aeromedical.hero_subtitle') }}</p>
         
         <div class="medical-grid">
             <!-- Form Card -->
             <div class="medical-form-card">
                 <div class="form-header">
-                    <h2 class="form-title">Solicitar Servicio</h2>
-                    <p class="form-desc">Complete para emergencias médicas 24/7</p>
+                    <h2 class="form-title">{{ __('services.aeromedical.form_title') }}</h2>
+                    <p class="form-desc">{{ __('services.aeromedical.form_subtitle') }}</p>
                 </div>
                 
                 <form id="servicioForm" method="post" action="{{ route('vuelos.send') }}">
@@ -439,14 +439,14 @@ $seo = [
                     <input type="hidden" name="tipo_servicio" value="aeromedico">
                     
                     <div class="form-inputs">
-                        <input class="medical-input-field" type="text" name="nombres_apellidos" placeholder="Nombre completo *" required>
-                        <input class="medical-input-field" type="email" name="correo" placeholder="Correo electrónico *" required>
-                        <input class="medical-input-field" type="tel" name="telefono" placeholder="Teléfono *" required pattern="[0-9+\s-]{7,20}">
+                        <input class="medical-input-field" type="text" name="nombres_apellidos" placeholder="{{ __('services.form.name') }} *" required>
+                        <input class="medical-input-field" type="email" name="correo" placeholder="{{ __('services.form.email') }} *" required>
+                        <input class="medical-input-field" type="tel" name="telefono" placeholder="{{ __('services.form.phone') }} *" required pattern="[0-9+\s-]{7,20}">
                     </div>
                     
                     <div class="form-buttons">
                         <button type="button" class="medical-button btn-emergency" onclick="llamarDirecto()">
-                            <i class="fas fa-phone-alt"></i> Llamar: +51 932 475 995
+                            <i class="fas fa-phone-alt"></i> {{ __('services.aeromedical.call') }}: +51 932 475 995
                         </button>
                         <button type="button" class="medical-button btn-success" onclick="enviarWhatsApp('aeromedico')">
                             <i class="fab fa-whatsapp"></i> WhatsApp
