@@ -149,4 +149,32 @@ return [
     'valle_maras.step4_title' => '4. The fertile fields of the Sacred Valley of the Incas',
     'valle_maras.step5_title' => '5. The mysterious Maras Salt Mines',
     'valle_maras.step6_title' => '6. The beautiful Huaypo lagoon, surrounded by agricultural fields and mountains',
+    
+    // Choquequirao specific inclusions
+    'choquequirao.included1' => 'Private light aircraft flight (Cusco – Choquequirao – Cusco)',
+    'choquequirao.included2' => 'Private hotel – airport transfers',
+    'choquequirao.included3' => 'Andean gift',
+    'choquequirao.included4' => 'Light catering on board',
+    'choquequirao.included5' => 'Includes lunch',
+    'choquequirao.included6' => 'Specialized professional guide (English/Spanish)',
+    'choquequirao.notincluded1' => 'Airfare to/from Cusco',
+    'choquequirao.notincluded2' => 'Travel insurance (highly recommended)',
+    'choquequirao.notincluded3' => 'Unspecified personal expenses',
+    'choquequirao.note1' => 'Valid ID required',
+    'choquequirao.note2' => 'Flexible start time: Between 08:00 and 11:00 a.m.',
+    'choquequirao.note3' => 'Subject to weather conditions',
+    
+    // Common inclusions for Nazca, Titicaca and Valle Maras
+    'common.included1' => 'Private light aircraft flight',
+    'common.included2' => 'Private hotel – airport transfers',
+    'common.included3' => 'Andean gift',
+    'common.included4' => 'Light catering on board',
+    'common.included5' => 'Lunch',
+    'common.included6' => 'Specialized professional guide (English/Spanish)',
+    'common.notincluded1' => 'Airfare to/from Cusco',
+    'common.notincluded2' => 'Travel insurance (highly recommended)',
+    'common.notincluded3' => 'Unspecified personal expenses',
+    'common.note1' => 'Valid ID required',
+    'common.note2' => 'Flexible start time depending on availability',
+    'common.note3' => 'Subject to weather conditions',
 ];
