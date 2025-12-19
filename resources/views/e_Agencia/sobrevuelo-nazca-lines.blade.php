@@ -14,72 +14,72 @@ $seo = [
 @section('content')
 
 <?php
-    $h1_1 = 'Líneas de Nazca';
-    $p_1 = 'Un viaje aéreo exclusivo desde Cusco para descubrir los enigmáticos geoglifos del desierto peruano.';
+    $h1_1 = __('tours.nazca.title');
+    $p_1 = __('tours.nazca.subtitle');
 
-        $h2_1 = 'Detalles del Sobrevuelo';
-        $p_2 = 'Esta experiencia única combina un espectacular vuelo panorámico sobre los Andes con el misterio arqueológico de las Líneas de Nazca. Partiendo desde Cusco en un avión privado, cruzará la cordillera hasta llegar a la costa desértica, donde sobrevolará las famosas figuras trazadas en la tierra: el Colibrí, el Mono, la Araña y muchas más, visibles solo desde el cielo. El tour incluye una inmersión cultural con la visita al legado de María Reiche.';
+        $h2_1 = __('tours.nazca.details_title');
+        $p_2 = __('tours.nazca.details_desc');
 
-                $h4_1 = 'Grupo Máximo';
-                $p_3 = '12 personas';
+                $h4_1 = __('tours.max_group');
+                $p_3 = __('tours.nazca.max_group');
 
-                $h4_2 = 'Edad Mínima';
-                $p_4 = '3 años';
+                $h4_2 = __('tours.min_age');
+                $p_4 = __('tours.nazca.min_age');
 
-                $h4_3 = 'Duración';
-                $p_5 = '1 hora y 20 minutos';
+                $h4_3 = __('tours.duration');
+                $p_5 = __('tours.nazca.duration');
 
-            $h3_1 = 'Galería de Imágenes';
+            $h3_1 = __('tours.image_gallery');
 
-        $h2_2 = 'Resumen del Viaje';
+        $h2_2 = __('tours.choquequirao.summary_title');
 
-            $h3_2 = 'Aspectos Destacados';
+            $h3_2 = __('tours.choquequirao.highlights_title');
 
-                $h4_4 = 'Geoglifos Milenarios';
-                $p_6 = 'Observe las gigantescas figuras de animales y formas geométricas trazadas por la antigua cultura Nazca.';
+                $h4_4 = __('tours.nazca.highlight1_title');
+                $p_6 = __('tours.nazca.highlight1_desc');
 
-                $h4_5 = 'Vuelo Transandino';
-                $p_7 = 'Disfrute de la transición visual desde los picos nevados de los Andes hasta el vasto desierto costero.';
+                $h4_5 = __('tours.nazca.highlight2_title');
+                $p_7 = __('tours.nazca.highlight2_desc');
 
-                $h4_6 = 'Legado de María Reiche';
-                $p_8 = 'Conozca la historia de la matemática que dedicó su vida a estudiar y proteger estas misteriosas líneas.';
+                $h4_6 = __('tours.nazca.highlight3_title');
+                $p_8 = __('tours.nazca.highlight3_desc');
 
-            $h3_3 = 'Estadísticas del Tour';
+            $h3_3 = __('tours.choquequirao.stats_title');
         
-        $h2_3 = 'Itinerario Detallado';
+        $h2_3 = __('tours.nazca.itinerary_title');
 
-                $h4_7 = 'Horario de salida flexible';
-                $p_9 = 'Entre las 7:00 y 8:30 a. m., según su preferencia y las condiciones climáticas. Iniciamos con el recojo desde su hotel.';
+                $h4_7 = __('tours.nazca.step1_title');
+                $p_9 = __('tours.nazca.step1_desc');
 
-                $h4_8 = 'Traslado privado al Aeropuerto';
-                $p_10 = 'Nuestro equipo lo recogerá en su hotel en un vehículo privado y confortable, equipado con todas las comodidades para su trayecto hacia el aeropuerto de Cusco.';
+                $h4_8 = __('tours.nazca.step2_title');
+                $p_10 = __('tours.nazca.step2_desc');
 
-                $h4_9 = 'Vuelo panorámico sobre los Andes';
-                $p_11 = 'Embarque en su avión ligero privado para un vuelo inolvidable hacia Nazca (aprox. 1 hora y 20 minutos). Disfrute de impresionantes vistas de la cordillera que dan paso al desierto costero.';
+                $h4_9 = __('tours.nazca.step3_title');
+                $p_11 = __('tours.nazca.step3_desc');
 
-                $h4_10 = 'Llegada al Aeródromo María Reiche';
-                $p_12 = 'A su llegada a Nazca, recibirá asistencia en tierra y se preparará para vivir la icónica experiencia del sobrevuelo.';
+                $h4_10 = __('tours.nazca.step4_title');
+                $p_12 = __('tours.nazca.step4_desc');
 
-                $h4_11 = 'Sobrevuelo de las Líneas de Nazca';
-                $p_13 = 'Vuelo de 30 minutos en aeronave especializada para admirar los enigmáticos geoglifos: figuras de animales, plantas y diseños geométricos, una maravilla arqueológica visible solo desde el cielo.';
+                $h4_11 = __('tours.nazca.step5_title');
+                $p_13 = __('tours.nazca.step5_desc');
 
-                $h4_12 = 'Visita al Museo María Reiche';
-                $p_14 = 'Descubra la vida y obra de María Reiche, la matemática y arqueóloga alemana que dedicó su vida al estudio y conservación de las Líneas de Nazca.';
+                $h4_12 = __('tours.nazca.step6_title');
+                $p_14 = __('tours.nazca.step6_desc');
 
-                $h4_12_extra1 = 'Almuerzo en Nazca';
-                $p_14_extra1 = 'Disfrute de una exquisita comida peruana en un restaurante local antes de su vuelo de regreso.';
+                $h4_12_extra1 = __('tours.nazca.step7_title');
+                $p_14_extra1 = __('tours.nazca.step7_desc');
 
-                $h4_12_extra2 = 'Vuelo de retorno';
-                $p_14_extra2 = 'Vuelo privado de retorno a Cusco (aprox. 1h 20m). Opción adicional: Retorno a Lima (aprox. 1h) previa coordinación.';
+                $h4_12_extra2 = __('tours.nazca.step8_title');
+                $p_14_extra2 = __('tours.nazca.step8_desc');
 
-        $h2_4 = 'Inclusiones del Tour';
+        $h2_4 = __('tours.choquequirao.inclusions_title');
 
-            $h3_4 = 'Incluido';
-            $h3_5 = 'No Incluido';
+            $h3_4 = __('tours.choquequirao.included_title');
+            $h3_5 = __('tours.choquequirao.notincluded_title');
 
-                $h4_13 = 'Notas Importantes';
+                $h4_13 = __('tours.choquequirao.notes_title');
 
-        $h2_5 = 'Otros Tours Recomendados';
+        $h2_5 = __('tours.choquequirao.recommended_title');
 
                 $h4_14 = 'Lago Titicaca';
                 $p_17 = 'Sobrevuela el lago navegable más alto del mundo y sus islas flotantes.';
@@ -90,9 +90,9 @@ $seo = [
                 $h4_16 = 'Choquequirao';
                 $p_19 = 'Descubre la hermana sagrada de Machu Picchu en un vuelo exclusivo.';
 
-            $h3_6 = 'Reserva tu Tour';
+            $h3_6 = __('tours.choquequirao.booking_title');
 
-            $p_20 = '* Campos obligatorios. Te contactaremos en 24 horas para confirmar tu reserva.';
+            $p_20 = __('tours.choquequirao.booking_note');
 ?>
 
 <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">

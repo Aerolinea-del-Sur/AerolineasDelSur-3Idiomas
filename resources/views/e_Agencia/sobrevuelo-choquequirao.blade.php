@@ -14,69 +14,69 @@ $seo = [
 @section('content')
 
 <?php
-    $h1_1 = 'Choquequirao';
-    $p_1 = 'El vuelo panorámico que revela la majestuosa "Cuna de Oro" y hermana sagrada de Machu Picchu, oculta entre los Andes.';
+    $h1_1 = __('tours.choquequirao.title');
+    $p_1 = __('tours.choquequirao.subtitle');
 
-        $h2_1 = 'Detalles del Sobrevuelo';
-        $p_2 = 'El sobrevuelo a Choquequirao es una experiencia aérea premium que lo transporta desde Cusco hacia las profundidades del cañón del Apurímac. A bordo de una aeronave ligera privada, el viaje de aproximadamente 1 hora ofrece una perspectiva única y privilegiada de la imponente Cordillera de Vilcabamba, el Valle Sagrado y la misteriosa ciudadela inca de Choquequirao. Desde el aire, se aprecia la complejidad de sus terrazas y templos, revelando una obra maestra del urbanismo inca rodeada de naturaleza exuberante.';
+        $h2_1 = __('tours.choquequirao.details_title');
+        $p_2 = __('tours.choquequirao.details_desc');
 
-                $h4_1 = 'Grupo Máximo';
-                $p_3 = '4 personas'; // Asumiendo capacidad de aeronave ligera común, ajustable
+                $h4_1 = __('tours.max_group');
+                $p_3 = __('tours.choquequirao.max_group');
 
-                $h4_2 = 'Edad Mínima';
-                $p_4 = 'Ninguna';
+                $h4_2 = __('tours.min_age');
+                $p_4 = __('tours.choquequirao.min_age');
 
-                $h4_3 = 'Duración';
-                $p_5 = '1 hora (aprox.)';
+                $h4_3 = __('tours.duration');
+                $p_5 = __('tours.choquequirao.duration');
 
-            $h3_1 = 'Galería de Imágenes';
+            $h3_1 = __('tours.image_gallery');
 
-        $h2_2 = 'Resumen del Viaje';
+        $h2_2 = __('tours.choquequirao.summary_title');
 
-            $h3_2 = 'Aspectos Destacados';
+            $h3_2 = __('tours.choquequirao.highlights_title');
 
-                $h4_4 = 'Choquequirao';
-                $p_6 = 'La hermana sagrada de Machu Picchu, una joya arqueológica oculta en las montañas.';
+                $h4_4 = __('tours.choquequirao.highlight1_title');
+                $p_6 = __('tours.choquequirao.highlight1_desc');
 
-                $h4_5 = 'Valle Sagrado';
-                $p_7 = 'Vistas aéreas de Pisac, Ollantaytambo y los paisajes agrícolas del valle.';
+                $h4_5 = __('tours.choquequirao.highlight2_title');
+                $p_7 = __('tours.choquequirao.highlight2_desc');
 
-                $h4_6 = 'Nevados Sagrados';
-                $p_8 = 'Contempla la majestuosidad de los nevados La Verónica y Salkantay desde las alturas.';
+                $h4_6 = __('tours.choquequirao.highlight3_title');
+                $p_8 = __('tours.choquequirao.highlight3_desc');
 
-            $h3_3 = 'Estadísticas del Tour';
+            $h3_3 = __('tours.choquequirao.stats_title');
         
-        $h2_3 = 'Lugares destacados en este Viaje';
+        $h2_3 = __('tours.choquequirao.places_title');
 
-                $h4_7 = 'Pisac';
-                $p_9 = 'Majestuoso complejo arqueológico que domina el Valle Sagrado. Destaca por sus extensos andenes agrícolas, templos ceremoniales y su famoso Intihuatana. Desde el aire, revela su perfecta integración entre arquitectura y paisaje.';
+                $h4_7 = __('tours.choquequirao.place1_title');
+                $p_9 = __('tours.choquequirao.place1_desc');
 
-                $h4_8 = 'Valle Sagrado de los Incas';
-                $p_10 = 'Extensas tierras fértiles rodeadas de majestuosas montañas y pueblos tradicionales, corazón espiritual y agrícola del antiguo imperio inca.';
+                $h4_8 = __('tours.choquequirao.place2_title');
+                $p_10 = __('tours.choquequirao.place2_desc');
 
-                $h4_9 = 'Salineras de Maras';
-                $p_11 = 'Más de 3,000 pozas blancas escalonadas donde se extrae sal de forma artesanal. Un espectáculo natural y cultural único visto desde el aire.';
+                $h4_9 = __('tours.choquequirao.place3_title');
+                $p_11 = __('tours.choquequirao.place3_desc');
 
-                $h4_10 = 'Moray';
-                $p_12 = 'El antiguo laboratorio agrícola de los incas, con sus impresionantes terrazas circulares que forman un paisaje hipnótico. Desde el aire, se aprecia la perfección de su diseño y los contrastes de color.';
+                $h4_10 = __('tours.choquequirao.place4_title');
+                $p_12 = __('tours.choquequirao.place4_desc');
 
-                $h4_11 = 'Ollantaytambo';
-                $p_13 = 'Imponente fortaleza inca que domina el valle con sus terrazas monumentales y calles de piedra perfectamente conservadas.';
+                $h4_11 = __('tours.choquequirao.place5_title');
+                $p_13 = __('tours.choquequirao.place5_desc');
 
-                $h4_12 = 'Nevados La Verónica y Salkantay';
-                $p_14 = 'Picos sagrados que se elevan majestuosos con sus nieves perpetuas. El Salkantay es uno de los Apus más venerados del Cusco, dominando el horizonte andino.';
+                $h4_12 = __('tours.choquequirao.place6_title');
+                $p_14 = __('tours.choquequirao.place6_desc');
                 
-                $h4_12_extra = 'Choquequirao';
-                $p_14_extra = 'Conocida como “la hermana sagrada de Machu Picchu”, esta joya arqueológica se oculta entre las montañas de Vilcabamba. Su diseño en terrazas y templos se revela como una obra maestra del urbanismo inca.';
+                $h4_12_extra = __('tours.choquequirao.place7_title');
+                $p_14_extra = __('tours.choquequirao.place7_desc');
 
-        $h2_4 = 'Inclusiones del Tour';
+        $h2_4 = __('tours.choquequirao.inclusions_title');
 
-            $h3_4 = 'Incluido';
-            $h3_5 = 'No Incluido';
+            $h3_4 = __('tours.choquequirao.included_title');
+            $h3_5 = __('tours.choquequirao.notincluded_title');
 
-                $h4_13 = 'Notas Importantes';
+                $h4_13 = __('tours.choquequirao.notes_title');
 
-        $h2_5 = 'Otros Tours Recomendados';
+        $h2_5 = __('tours.choquequirao.recommended_title');
 
                 $h4_14 = 'Líneas de Nazca';
                 $p_17 = 'Descubre los misteriosos geoglifos desde el aire en este tour de día completo.';
@@ -87,9 +87,9 @@ $seo = [
                 $h4_16 = 'Costa Peruana';
                 $p_19 = 'Sobrevuela la hermosa costa del Pacífico y las islas Ballestas.';
 
-            $h3_6 = 'Reserva tu Tour';
+            $h3_6 = __('tours.choquequirao.booking_title');
 
-            $p_20 = '* Campos obligatorios. Te contactaremos en 24 horas para confirmar tu reserva.';
+            $p_20 = __('tours.choquequirao.booking_note');
 ?>
 
 <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">

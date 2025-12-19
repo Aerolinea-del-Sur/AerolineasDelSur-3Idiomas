@@ -14,60 +14,60 @@ $seo = [
 @section('content')
 
 <?php
-    $h1_1 = 'Valle Sagrado y Maras';
-    $p_1 = 'Descubre Sacsayhuamán, Tambomachay, Pisac, Valle Sagrado, Maras y Laguna de Huaypo.';
+    $h1_1 = __('tours.valle_maras.title');
+    $p_1 = __('tours.valle_maras.subtitle');
 
-        $h2_1 = 'Detalles del Tour';
-        $p_2 = 'Aerolínea del Sur se complace en presentar una experiencia aérea inigualable: un sobrevuelo escénico en avioneta, ideal para quienes desean descubrir desde el cielo algunos de los sitios arqueológicos y paisajes más emblemáticos del corazón del Valle Sagrado de los Incas, sin necesidad de desplazamientos largos por tierra.';
+        $h2_1 = __('tours.tour_details');
+        $p_2 = __('tours.valle_maras.details_desc');
 
-                $h4_1 = 'Grupo Máximo';
-                $p_3 = '6 personas';
+                $h4_1 = __('tours.max_group');
+                $p_3 = __('tours.valle_maras.max_group');
 
-                $h4_2 = 'Edad Mínima';
-                $p_4 = 'Ninguna';
+                $h4_2 = __('tours.min_age');
+                $p_4 = __('tours.choquequirao.min_age');
 
-                $h4_3 = 'Duración';
-                $p_5 = '1 hora';
+                $h4_3 = __('tours.duration');
+                $p_5 = __('tours.valle_maras.duration');
 
-            $h3_1 = 'Galería de Imágenes';
+            $h3_1 = __('tours.image_gallery');
 
-        $h2_2 = 'Resumen del Viaje';
+        $h2_2 = __('tours.choquequirao.summary_title');
 
-            $h3_2 = 'Aspectos Destacados';
+            $h3_2 = __('tours.choquequirao.highlights_title');
 
-                $h4_4 = 'Vinicunca';
-                $p_6 = 'Conoceras la Montaña de 7 Colores, un lugar colorido con paisajes impresionantes.';
+                $h4_4 = __('tours.valle_maras.highlight1_title');
+                $p_6 = __('tours.valle_maras.highlight1_desc');
 
-                $h4_5 = 'Fotografía Paisajes';
-                $p_7 = 'Captura tomas espectaculares de los pueblos, paisajes y costrucciones milenarias.';
+                $h4_5 = __('tours.valle_maras.highlight2_title');
+                $p_7 = __('tours.valle_maras.highlight2_desc');
 
-                $h4_6 = 'Historia y vistas';
-                $p_8 = 'El guía te narrará la historia del lugar mientras recorres el sendero hasta la montaña.';
+                $h4_6 = __('tours.valle_maras.highlight3_title');
+                $p_8 = __('tours.valle_maras.highlight3_desc');
 
-            $h3_3 = 'Estadísticas del Tour';
+            $h3_3 = __('tours.choquequirao.stats_title');
         
-        $h2_3 = 'Itinerario Detallado';
+        $h2_3 = __('tours.nazca.itinerary_title');
 
-                $h4_7 = '1. El complejo arqueológico de Sacsayhuamán';
+                $h4_7 = __('tours.valle_maras.step1_title');
 
-                $h4_8 = '2. Las fuentes ceremoniales de Tambomachay';
+                $h4_8 = __('tours.valle_maras.step2_title');
 
-                $h4_9 = '3. Las andenerías circulares y terrazas de Pisac';
+                $h4_9 = __('tours.valle_maras.step3_title');
 
-                $h4_10 = '4. Los fértiles campos del Valle Sagrado de los Incas';
+                $h4_10 = __('tours.valle_maras.step4_title');
 
-                $h4_11 = '5. Las misteriosas Salineras de Maras';
+                $h4_11 = __('tours.valle_maras.step5_title');
 
-                $h4_12 = '6. la hermosa laguna de Huaypo, rodeada de campos agrícolas y montañas';
+                $h4_12 = __('tours.valle_maras.step6_title');
 
-        $h2_4 = 'Inclusiones del Tour';
+        $h2_4 = __('tours.choquequirao.inclusions_title');
 
-            $h3_4 = 'Incluido';
-            $h3_5 = 'No Incluido';
+            $h3_4 = __('tours.choquequirao.included_title');
+            $h3_5 = __('tours.choquequirao.notincluded_title');
 
-                $h4_13 = 'Notas Importantes';
+                $h4_13 = __('tours.choquequirao.notes_title');
 
-        $h2_5 = 'Otros Tours Recomendados';
+        $h2_5 = __('tours.choquequirao.recommended_title');
 
                 $h4_14 = 'Líneas de Nazca';
                 $p_17 = 'Descubre los misteriosos geoglifos desde el aire en este tour de 1 hora.';
@@ -78,9 +78,9 @@ $seo = [
                 $h4_16 = 'Costa Peruana';
                 $p_19 = 'Sobrevuela la hermosa costa del Pacífico y las islas Ballestas.';
 
-            $h3_6 = 'Reserva tu Tour';
+            $h3_6 = __('tours.choquequirao.booking_title');
 
-            $p_20 = '* Campos obligatorios. Te contactaremos en 24 horas para confirmar tu reserva.';
+            $p_20 = __('tours.choquequirao.booking_note');
 ?>
 
 <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">

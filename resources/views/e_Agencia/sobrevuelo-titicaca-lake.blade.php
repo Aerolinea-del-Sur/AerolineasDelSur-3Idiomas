@@ -14,66 +14,66 @@ $seo = [
 @section('content')
 
 <?php
-    $h1_1 = 'Lago Titicaca';
-    $p_1 = 'El vuelo panorámico que domina el altiplano y ofrece las mejores vistas sobre el lago sagrado de los incas.';
+    $h1_1 = __('tours.titicaca.title');
+    $p_1 = __('tours.titicaca.subtitle');
 
-        $h2_1 = 'Detalles del Sobrevuelo';
-        $p_2 = 'El sobrevuelo Lago Titicaca y sus Islas es una experiencia aérea premium que lo transporta desde Cusco a la inmensidad del altiplano peruano. A bordo de una aeronave ligera privada, el viaje de aproximadamente una hora y cuarenta minutos ofrece una perspectiva única y privilegiada de la imponente Cordillera de los Andes, el vasto paisaje altiplánico y el legendario Lago Titicaca. Así también, desde el aire, se aprecian con claridad las estructuras únicas de las Islas Flotantes de los Uros, y las joyas culturales de Taquile y Amantaní.';
+        $h2_1 = __('tours.nazca.details_title');
+        $p_2 = __('tours.titicaca.details_desc');
 
-                $h4_1 = 'Grupo Máximo';
-                $p_3 = '8 personas';
+                $h4_1 = __('tours.max_group');
+                $p_3 = __('tours.titicaca.max_group');
 
-                $h4_2 = 'Edad Mínima';
-                $p_4 = 'Ninguna';
+                $h4_2 = __('tours.min_age');
+                $p_4 = __('tours.choquequirao.min_age');
 
-                $h4_3 = 'Duración';
-                $p_5 = '1 hora y 40 minutos';
+                $h4_3 = __('tours.duration');
+                $p_5 = __('tours.titicaca.duration');
 
-            $h3_1 = 'Galería de Imágenes';
+            $h3_1 = __('tours.image_gallery');
 
-        $h2_2 = 'Resumen del Viaje';
+        $h2_2 = __('tours.choquequirao.summary_title');
 
-            $h3_2 = 'Aspectos Destacados';
+            $h3_2 = __('tours.choquequirao.highlights_title');
 
-                $h4_4 = 'Lago Titicaca';
-                $p_6 = 'El lago navegable más alto. Espejo azul sagrado entre Perú y Bolivia.';
+                $h4_4 = __('tours.titicaca.highlight1_title');
+                $p_6 = __('tours.titicaca.highlight1_desc');
 
-                $h4_5 = 'Islas Flotantes';
-                $p_7 = 'Vistas aéreas de las comunidades que viven sobre plataformas de totora ubicadas en el lago.';
+                $h4_5 = __('tours.titicaca.highlight2_title');
+                $p_7 = __('tours.titicaca.highlight2_desc');
 
-                $h4_6 = 'Fotografía y vistas';
-                $p_8 = 'Captura tomas espectaculares, mientras el guía te narrará la historia del lugar.';
+                $h4_6 = __('tours.titicaca.highlight3_title');
+                $p_8 = __('tours.titicaca.highlight3_desc');
 
-            $h3_3 = 'Estadísticas del Tour';
+            $h3_3 = __('tours.choquequirao.stats_title');
         
-        $h2_3 = 'Lugares destacados en este Viaje';
+        $h2_3 = __('tours.choquequirao.places_title');
 
-                $h4_7 = 'Cordillera de los Andes y el Altiplano Peruano';
-                $p_9 = 'La gran cadena montañosa que marca el inicio de esta travesía. Comprende vastas mesetas altiplánicas, donde se observa un entorno natural rodeado de comunidades.';
+                $h4_7 = __('tours.titicaca.place1_title');
+                $p_9 = __('tours.titicaca.place1_desc');
 
-                $h4_8 = 'Lago Titicaca';
-                $p_10 = 'El lago navegable más alto del mundo que se extiende entre Perú y Bolivia, considerado el lago sagrado de los incas, destacando sus intensos tonos.';
+                $h4_8 = __('tours.titicaca.place2_title');
+                $p_10 = __('tours.titicaca.place2_desc');
 
-                $h4_9 = 'Islas Flotantes de los Uros';
-                $p_11 = 'Un conjunto de islas artificiales únicas en el mundo, construidas enteramente con totora. Cada isla tiene su propia historia y cultura.';
+                $h4_9 = __('tours.titicaca.place3_title');
+                $p_11 = __('tours.titicaca.place3_desc');
 
-                $h4_10 = 'Isla Taquile';
-                $p_12 = 'Una joya ovalada en medio del Titicaca, conocida por su impresionante cultura textil (Patrimonio Cultural Inmaterial de la Humanidad). Se aprecian sus terrazas y la organización de la isla desde las alturas.';
+                $h4_10 = __('tours.titicaca.place4_title');
+                $p_12 = __('tours.titicaca.place4_desc');
 
-                $h4_11 = 'Isla Amantaní';
-                $p_13 = 'Reconocida por sus terrazas agrícolas y los templos preincaicos dedicados a Pachamama y Pachatata. Se encuentra rodeada de un entorno natural impresionante.';
+                $h4_11 = __('tours.titicaca.place5_title');
+                $p_13 = __('tours.titicaca.place5_desc');
 
-                $h4_12 = 'Pueblos Ribereños de Puno';
-                $p_14 = 'Una panorámica de las pequeñas comunidades que rodean el borde del lago. Esto brinda una visión de la vida cotidiana que se desarrolla entre la pesca, la agricultura y las costumbres altoandinas.';
+                $h4_12 = __('tours.titicaca.place6_title');
+                $p_14 = __('tours.titicaca.place6_desc');
 
-        $h2_4 = 'Inclusiones del Tour';
+        $h2_4 = __('tours.choquequirao.inclusions_title');
 
-            $h3_4 = 'Incluido';
-            $h3_5 = 'No Incluido';
+            $h3_4 = __('tours.choquequirao.included_title');
+            $h3_5 = __('tours.choquequirao.notincluded_title');
 
-                $h4_13 = 'Notas Importantes';
+                $h4_13 = __('tours.choquequirao.notes_title');
 
-        $h2_5 = 'Otros Tours Recomendados';
+        $h2_5 = __('tours.choquequirao.recommended_title');
 
                 $h4_14 = 'Líneas de Nazca';
                 $p_17 = 'Descubre los misteriosos geoglifos desde el aire en este tour de día completo.';
@@ -84,9 +84,9 @@ $seo = [
                 $h4_16 = 'Costa Peruana';
                 $p_19 = 'Sobrevuela la hermosa costa del Pacífico y las islas Ballestas.';
 
-            $h3_6 = 'Reserva tu Tour';
+            $h3_6 = __('tours.choquequirao.booking_title');
 
-            $p_20 = '* Campos obligatorios. Te contactaremos en 24 horas para confirmar tu reserva.';
+            $p_20 = __('tours.choquequirao.booking_note');
 ?>
 
 <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">
