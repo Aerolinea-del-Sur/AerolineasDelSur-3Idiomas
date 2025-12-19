@@ -162,6 +162,18 @@ return [
     'valle_maras.step5_title' => '5. Las misteriosas Salineras de Maras',
     'valle_maras.step6_title' => '6. La hermosa laguna de Huaypo, rodeada de campos agrícolas y montañas',
     
+    // =============================================================
+    // VINICUNCA ELITE
+    // =============================================================
+    'vinicunca_elite.title' => 'Vinicunca Elite',
+    'vinicunca_elite.subtitle' => 'Experiencia VIP a la Montaña de 7 Colores',
+    'vinicunca_elite.description' => 'Tour exclusivo y privado a Vinicunca con los mejores servicios',
+    'vinicunca_elite.step1_title' => '1. Las Cuatro Lagunas',
+    'vinicunca_elite.step2_title' => '2. El imponente nevado Ausangate',
+    'vinicunca_elite.step3_title' => '3. El místico Valle Rojo',
+    'vinicunca_elite.step4_title' => '4. La famosa Montaña de 7 Colores (Vinicunca)',
+    'vinicunca_elite.step5_title' => '5. enigmática Palcoyo',
+    
     // Inclusiones comunes para Nazca, Titicaca y Valle Maras
     'common.included1' => 'Vuelo privado en avión ligero',
     'common.included2' => 'Traslados privados hotel – aeropuerto – hotel',

@@ -31,41 +31,41 @@ $seo = [
 
             $h3_1 = __('tours.image_gallery');
 
-        $h2_2 = 'Resumen del Viaje';
+        $h2_2 = __('tours.choquequirao.summary_title');
 
-            $h3_2 = 'Aspectos Destacados';
+            $h3_2 = __('tours.choquequirao.highlights_title');
 
-                $h4_4 = 'Vinicunca';
-                $p_6 = 'Conoceras la Montaña de 7 Colores, un lugar colorido con paisajes impresionantes.';
+                $h4_4 = __('tours.valle_maras.highlight1_title');
+                $p_6 = __('tours.valle_maras.highlight1_desc');
 
-                $h4_5 = 'Fotografía Paisajes';
-                $p_7 = 'Captura tomas espectaculares de los pueblos, paisajes y costrucciones milenarias.';
+                $h4_5 = __('tours.valle_maras.highlight2_title');
+                $p_7 = __('tours.valle_maras.highlight2_desc');
 
-                $h4_6 = 'Historia y vistas';
-                $p_8 = 'El guía te narrará la historia del lugar mientras recorres el sendero hasta la montaña.';
+                $h4_6 = __('tours.valle_maras.highlight3_title');
+                $p_8 = __('tours.valle_maras.highlight3_desc');
 
-            $h3_3 = 'Estadísticas del Tour';
+            $h3_3 = __('tours.choquequirao.stats_title');
         
-        $h2_3 = 'Itinerario Detallado';
+        $h2_3 = __('tours.nazca.itinerary_title');
 
-                $h4_7 = '1. Las Cuatro Lagunas';
+                $h4_7 = __('tours.vinicunca_elite.step1_title');
 
-                $h4_8 = '2. El imponente nevado Ausangate';
+                $h4_8 = __('tours.vinicunca_elite.step2_title');
 
-                $h4_9 = '3. El místico Valle Rojo';
+                $h4_9 = __('tours.vinicunca_elite.step3_title');
 
-                $h4_10 = '4. La famosa Montaña de 7 Colores (Vinicunca)';
+                $h4_10 = __('tours.vinicunca_elite.step4_title');
 
-                $h4_11 = '5. enigmática Palcoyo';
+                $h4_11 = __('tours.vinicunca_elite.step5_title');
 
-        $h2_4 = 'Inclusiones del Tour';
+        $h2_4 = __('tours.choquequirao.inclusions_title');
 
-            $h3_4 = 'Incluido';
-            $h3_5 = 'No Incluido';
+            $h3_4 = __('tours.choquequirao.included_title');
+            $h3_5 = __('tours.choquequirao.notincluded_title');
 
-                $h4_13 = 'Notas Importantes';
+                $h4_13 = __('tours.choquequirao.notes_title');
 
-        $h2_5 = 'Otros Tours Recomendados';
+        $h2_5 = __('tours.choquequirao.recommended_title');
 
                 $h4_14 = 'Líneas de Nazca';
                 $p_17 = 'Descubre los misteriosos geoglifos desde el aire en este tour de 1 hora.';
@@ -76,9 +76,9 @@ $seo = [
                 $h4_16 = 'Costa Peruana';
                 $p_19 = 'Sobrevuela la hermosa costa del Pacífico y las islas Ballestas.';
 
-            $h3_6 = 'Reserva tu Tour';
+            $h3_6 = __('tours.choquequirao.booking_title');
 
-            $p_20 = '* Campos obligatorios. Te contactaremos en 24 horas para confirmar tu reserva.';
+            $p_20 = __('tours.choquequirao.booking_note');
 ?>
 
 <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">
@@ -276,27 +276,27 @@ $seo = [
             <div class="included">
                 <h3><i class="fas fa-check-circle"></i><?= $h3_4 ?></h3>
                 <ul>
-                    <li><i class="fas fa-check"></i> Vuelo privado en avioneta (ida y vuelta Cusco – Vinicunca).</li>
-                    <li><i class="fas fa-check"></i> Traslados privados hotel – aeropuerto – hotel.</li>
-                    <li><i class="fas fa-check"></i> Regalo andino (bufanda o chullo).</li>
-                    <li><i class="fas fa-check"></i> Snack bag personalizada.</li>
-                    <li><i class="fas fa-check"></i> Guía profesional. </li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.common.included1') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.common.included2') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.common.included3') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.common.included4') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.common.included6') ?></li>
                 </ul>
             </div>
             <div class="not-included">
                 <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
                 <ul>
-                    <li><i class="fas fa-times"></i> Pasajes aéreos a Cusco</li>
-                    <li><i class="fas fa-times"></i> Seguro de viaje (es recomendado)</li>
-                    <li><i class="fas fa-times"></i> Propinas y consumos personales no mencionados</li>
+                    <li><i class="fas fa-times"></i> <?= __('tours.common.notincluded1') ?></li>
+                    <li><i class="fas fa-times"></i> <?= __('tours.common.notincluded2') ?></li>
+                    <li><i class="fas fa-times"></i> <?= __('tours.common.notincluded3') ?></li>
                 </ul>
             </div>
         </div>
         <div class="important-notes">
             <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
             <ul>
-                <li>Se requiere documento de identidad válido</li>
-                <li>Cancelación hasta 24 horas antes</li>
+                <li><?= __('tours.common.note1') ?></li>
+                <li><?= __('tours.common.note3') ?></li>
             </ul>
         </div>
     </div>

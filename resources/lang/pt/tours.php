@@ -154,6 +154,18 @@ duration' => 'Duração',
     'valle_maras.step5_title' => '5. As misteriosas Salinas de Maras',
     'valle_maras.step6_title' => '6. A bela lagoa de Huaypo, rodeada de campos agrícolas e montanhas',
     
+    // =============================================================
+    // VINICUNCA ELITE
+    // =============================================================
+    'vinicunca_elite.title' => 'Vinicunca Elite',
+    'vinicunca_elite.subtitle' => 'Experiência VIP à Montanha Arco-Íris',
+    'vinicunca_elite.description' => 'Tour exclusivo e privado para Vinicunca com serviços premium',
+    'vinicunca_elite.step1_title' => '1. As Quatro Lagoas',
+    'vinicunca_elite.step2_title' => '2. O imponente pico nevado Ausangate',
+    'vinicunca_elite.step3_title' => '3. O místico Vale Vermelho',
+    'vinicunca_elite.step4_title' => '4. A famosa Montanha das 7 Cores (Vinicunca)',
+    'vinicunca_elite.step5_title' => '5. enigmática Palcoyo',
+    
     // Inclusões específicas de Choquequirao
     'choquequirao.included1' => 'Voo privado em avião leve (Cusco – Choquequirao – Cusco)',
     'choquequirao.included2' => 'Traslados privados hotel – aeroporto – hotel',

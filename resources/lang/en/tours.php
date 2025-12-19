@@ -150,6 +150,18 @@ return [
     'valle_maras.step5_title' => '5. The mysterious Maras Salt Mines',
     'valle_maras.step6_title' => '6. The beautiful Huaypo lagoon, surrounded by agricultural fields and mountains',
     
+    // =============================================================
+    // VINICUNCA ELITE
+    // =============================================================
+    'vinicunca_elite.title' => 'Vinicunca Elite',
+    'vinicunca_elite.subtitle' => 'VIP Experience to the Rainbow Mountain',
+    'vinicunca_elite.description' => 'Exclusive private tour to Vinicunca with premium services',
+    'vinicunca_elite.step1_title' => '1. The Four Lagoons',
+    'vinicunca_elite.step2_title' => '2. The imposing Ausangate snow-capped peak',
+    'vinicunca_elite.step3_title' => '3. The mystical Red Valley',
+    'vinicunca_elite.step4_title' => '4. The famous Rainbow Mountain (Vinicunca)',
+    'vinicunca_elite.step5_title' => '5. enigmatic Palcoyo',
+    
     // Choquequirao specific inclusions
     'choquequirao.included1' => 'Private light aircraft flight (Cusco – Choquequirao – Cusco)',
     'choquequirao.included2' => 'Private hotel – airport transfers',
