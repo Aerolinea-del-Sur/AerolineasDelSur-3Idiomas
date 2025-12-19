@@ -253,25 +253,7 @@ $seo = [
                     </div>
                 </a>
 
-                <!-- Mi 17 -->
-                <a href="{{ url(app()->getLocale() . '/aeronaves/Mi17') }}" class="aircraft-card"  style="text-decoration: none; color: inherit;">
-                    <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/mi17-5.webp')">
-                        <div class="aircraft-overlay">
-                            <div class="aircraft-details">
-                                <p><?= $p_11 ?></p>
-                                <p><?= $p_12 ?></p>
-                                <p><?= $p_13 ?></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="aircraft-info">
-                        <h3 class="aircraft-name"><?= $h3_3 ?></h3>
-                        <div class="aircraft-types">
-                            <span class="aircraft-type transport">Transporte</span>
-                        </div>
-                        <div class="view-details-btn">Ver más información</div>
-                    </div>
-                </a>
+                
 
                 <!-- Fin -->
 
@@ -665,6 +647,26 @@ $seo = [
                     </div>
                     <div class="aircraft-info">
                         <h3 class="aircraft-name"><?= $h3_23 ?></h3>
+                        <div class="aircraft-types">
+                            <span class="aircraft-type transport">Transporte</span>
+                        </div>
+                        <div class="view-details-btn">Ver más información</div>
+                    </div>
+                </a>
+                
+                <!-- Mi 17 -->
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Mi17') }}" class="aircraft-card"  style="text-decoration: none; color: inherit;">
+                    <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/mi17-5.webp')">
+                        <div class="aircraft-overlay">
+                            <div class="aircraft-details">
+                                <p><?= $p_11 ?></p>
+                                <p><?= $p_12 ?></p>
+                                <p><?= $p_13 ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aircraft-info">
+                        <h3 class="aircraft-name"><?= $h3_3 ?></h3>
                         <div class="aircraft-types">
                             <span class="aircraft-type transport">Transporte</span>
                         </div>
