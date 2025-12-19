@@ -318,30 +318,29 @@ $seo = [
             <div class="included">
                 <h3><i class="fas fa-check-circle"></i><?= $h3_4 ?></h3>
                 <ul>
-                    <li><i class="fas fa-check"></i> Vuelo privado (Cusco – Nazca – Lima o Cusco – Nazca – Cusco)</li>
-                    <li><i class="fas fa-check"></i> Sobrevuelo de las Líneas de Nazca en aeronave especializada</li>
-                    <li><i class="fas fa-check"></i> Visita guiada al Museo María Reiche</li>
-                    <li><i class="fas fa-check"></i> Traslados privados (hotel–aeropuerto–hotel)</li>
-                    <li><i class="fas fa-check"></i> Refrigerio ligero a bordo</li>
-                    <li><i class="fas fa-check"></i> Incluye el almuerzo</li>
-                    <li><i class="fas fa-check"></i> Asistencia en inglés y español</li>
+                    <li><i class="fas fa-check"></i> <?= __('common.included1') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('common.included2') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('common.included3') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('common.included4') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('common.included5') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('common.included6') ?></li>
                 </ul>
             </div>
             <div class="not-included">
                 <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
                 <ul>
-                    <li><i class="fas fa-times"></i> Alojamiento en Lima o Cusco</li>
-                    <li><i class="fas fa-times"></i> Seguro de viaje (altamente recomendado)</li>
-                    <li><i class="fas fa-times"></i> Gastos personales no especificados</li>
+                    <li><i class="fas fa-times"></i> <?= __('common.notincluded1') ?></li>
+                    <li><i class="fas fa-times"></i> <?= __('common.notincluded2') ?></li>
+                    <li><i class="fas fa-times"></i> <?= __('common.notincluded3') ?></li>
                 </ul>
             </div>
         </div>
         <div class="important-notes">
             <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
             <ul>
-                <li>Se requiere documento de identidad válido</li>
-                <li>Hora de inicio flexible: Entre las 7:00 y 8:30 a.m.</li>
-                <li>Sujeto a condiciones climáticas</li>
+                <li><?= __('common.note1') ?></li>
+                <li><?= __('common.note2') ?></li>
+                <li><?= __('common.note3') ?></li>
             </ul>
         </div>
     </div>

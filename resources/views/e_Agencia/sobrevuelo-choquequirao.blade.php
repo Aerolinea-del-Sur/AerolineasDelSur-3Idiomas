@@ -308,29 +308,29 @@ $seo = [
             <div class="included">
                 <h3><i class="fas fa-check-circle"></i><?= $h3_4 ?></h3>
                 <ul>
-                    <li><i class="fas fa-check"></i> Vuelo privado en avión ligero (Cusco – Choquequirao – Cusco)</li>
-                    <li><i class="fas fa-check"></i> Traslados privados hotel – aeropuerto – hotel</li>
-                    <li><i class="fas fa-check"></i> Regalo andino</li>
-                    <li><i class="fas fa-check"></i> Catering ligero a bordo</li>
-                    <li><i class="fas fa-check"></i> Incluye el almuerzo</li>
-                    <li><i class="fas fa-check"></i> Guía profesional especializado (inglés/español)</li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.choquequirao.included1') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.choquequirao.included2') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.choquequirao.included3') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.choquequirao.included4') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.choquequirao.included5') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.choquequirao.included6') ?></li>
                 </ul>
             </div>
             <div class="not-included">
                 <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
                 <ul>
-                    <li><i class="fas fa-times"></i> Pasajes aéreos hacia/desde Cusco</li>
-                    <li><i class="fas fa-times"></i> Seguro de viaje (altamente recomendado)</li>
-                    <li><i class="fas fa-times"></i> Consumos personales no especificados</li>
+                    <li><i class="fas fa-times"></i> <?= __('tours.choquequirao.notincluded1') ?></li>
+                    <li><i class="fas fa-times"></i> <?= __('tours.choquequirao.notincluded2') ?></li>
+                    <li><i class="fas fa-times"></i> <?= __('tours.choquequirao.notincluded3') ?></li>
                 </ul>
             </div>
         </div>
         <div class="important-notes">
             <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
             <ul>
-                <li>Se requiere documento de identidad válido</li>
-                <li>Hora de inicio flexible: Entre las 08:00 y 11:00 a.m.</li>
-                <li>Sujeto a condiciones climáticas</li>
+                <li><?= __('tours.choquequirao.note1') ?></li>
+                <li><?= __('tours.choquequirao.note2') ?></li>
+                <li><?= __('tours.choquequirao.note3') ?></li>
             </ul>
         </div>
     </div>

@@ -298,27 +298,27 @@ $seo = [
             <div class="included">
                 <h3><i class="fas fa-check-circle"></i><?= $h3_4 ?></h3>
                 <ul>
-                    <li><i class="fas fa-check"></i> Vuelo privado en avión ligero (Cusco – Lago Titicaca – Cusco).</li>
-                    <li><i class="fas fa-check"></i> Traslados privados hotel – aeropuerto – hotel.</li>
-                    <li><i class="fas fa-check"></i> Regalo andino de cortesía.</li>
-                    <li><i class="fas fa-check"></i> Catering ligero a bordo.</li>
-                    <li><i class="fas fa-check"></i> Guía profesional especializado (inglés/español). </li>
+                    <li><i class="fas fa-check"></i> <?= __('common.included1') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('common.included2') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('common.included3') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('common.included4') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('common.included6') ?></li>
                 </ul>
             </div>
             <div class="not-included">
                 <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
                 <ul>
-                    <li><i class="fas fa-times"></i> Pasajes aéreos a Cusco</li>
-                    <li><i class="fas fa-times"></i> Seguro de viaje (es recomendado)</li>
-                    <li><i class="fas fa-times"></i> Consumos personales no especificados</li>
+                    <li><i class="fas fa-times"></i> <?= __('common.notincluded1') ?></li>
+                    <li><i class="fas fa-times"></i> <?= __('common.notincluded2') ?></li>
+                    <li><i class="fas fa-times"></i> <?= __('common.notincluded3') ?></li>
                 </ul>
             </div>
         </div>
         <div class="important-notes">
             <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
             <ul>
-                <li>Se requiere documento de identidad válido</li>
-                <li>Cancelación hasta 24 horas antes</li>
+                <li><?= __('common.note1') ?></li>
+                <li><?= __('common.note3') ?></li>
             </ul>
         </div>
     </div>
