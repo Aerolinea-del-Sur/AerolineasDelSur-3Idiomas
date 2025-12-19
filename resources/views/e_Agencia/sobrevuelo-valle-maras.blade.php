@@ -287,27 +287,27 @@ $seo = [
             <div class="included">
                 <h3><i class="fas fa-check-circle"></i><?= $h3_4 ?></h3>
                 <ul>
-                    <li><i class="fas fa-check"></i> <?= __('common.included1') ?></li>
-                    <li><i class="fas fa-check"></i> <?= __('common.included2') ?></li>
-                    <li><i class="fas fa-check"></i> <?= __('common.included3') ?></li>
-                    <li><i class="fas fa-check"></i> <?= __('common.included4') ?></li>
-                    <li><i class="fas fa-check"></i> <?= __('common.included6') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.common.included1') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.common.included2') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.common.included3') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.common.included4') ?></li>
+                    <li><i class="fas fa-check"></i> <?= __('tours.common.included6') ?></li>
                 </ul>
             </div>
             <div class="not-included">
                 <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
                 <ul>
-                    <li><i class="fas fa-times"></i> <?= __('common.notincluded1') ?></li>
-                    <li><i class="fas fa-times"></i> <?= __('common.notincluded2') ?></li>
-                    <li><i class="fas fa-times"></i> <?= __('common.notincluded3') ?></li>
+                    <li><i class="fas fa-times"></i> <?= __('tours.common.notincluded1') ?></li>
+                    <li><i class="fas fa-times"></i> <?= __('tours.common.notincluded2') ?></li>
+                    <li><i class="fas fa-times"></i> <?= __('tours.common.notincluded3') ?></li>
                 </ul>
             </div>
         </div>
         <div class="important-notes">
             <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
             <ul>
-                <li><?= __('common.note1') ?></li>
-                <li><?= __('common.note3') ?></li>
+                <li><?= __('tours.common.note1') ?></li>
+                <li><?= __('tours.common.note3') ?></li>
             </ul>
         </div>
     </div>
