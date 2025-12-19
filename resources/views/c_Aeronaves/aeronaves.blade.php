@@ -214,7 +214,7 @@ $seo = [
                 <!-- Inicio -->
 
                 <!-- King Air B350 -->
-                <a href="/aeronaves/KingAirB350" class="aircraft-card"  style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/KingAirB350') }}" class="aircraft-card"  style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/AirKingB350.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -234,7 +234,7 @@ $seo = [
                 </a>
 
                 <!-- Beechcraft 1900D -->
-                <a href="/aeronaves/Beechcraft1900D" class="aircraft-card"  style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Beechcraft1900D') }}" class="aircraft-card"  style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/Beechcraft1900D.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -254,7 +254,7 @@ $seo = [
                 </a>
 
                 <!-- Mi 17 -->
-                <a href="/aeronaves/Mi17" class="aircraft-card"  style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Mi17') }}" class="aircraft-card"  style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/mi17-5.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -277,7 +277,7 @@ $seo = [
 
                 <!-- Fila 2 -->
                 <!-- Gulfstream G100 NOTA: ESTO HACE Q SE HABRA OTRA PESTANA DENTRO DEL a target="_blank"-->
-                <a href="/aeronaves/GulfstreamG100" class="aircraft-card"  style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/GulfstreamG100') }}" class="aircraft-card"  style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/Gulfstream-G100.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -296,7 +296,7 @@ $seo = [
                     </div>
                 </a>
                 <!-- Gulfstream GIV -->
-                <a href="/aeronaves/GulfstreamGIV" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/GulfstreamGIV') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/GulfstreamGiv.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -315,7 +315,7 @@ $seo = [
                     </div>
                 </a>
                 <!-- Honda Jet -->
-                <a href="/aeronaves/HondaJet" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/HondaJet') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/HondaJet.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -334,7 +334,7 @@ $seo = [
                     </div>
                 </a>
                 <!-- Jet Phenom 100 -->
-                <a href="/aeronaves/Phenom100" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Phenom100') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/Phenom100.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -354,7 +354,7 @@ $seo = [
                 </a>
                 <!-- Fila 3 -->
                 <!-- Jet Phenom 300 -->
-                <a href="/aeronaves/Phenom300" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Phenom300') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/Phenom300.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -374,7 +374,7 @@ $seo = [
                 </a>
                 
                 <!-- Challenger 300 -->
-                <a href="/aeronaves/Challenger300" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Challenger300') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/Challenger300.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -394,7 +394,7 @@ $seo = [
                 </a>
                 
                 <!-- Challenger 350 -->
-                <a href="/aeronaves/Challenger350" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Challenger350') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/Challenger350.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -414,7 +414,7 @@ $seo = [
                 </a>
                 
                 <!-- Challenger 601 -->
-                <a href="/aeronaves/Challenger601" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Challenger601') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/Challenger601.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -435,7 +435,7 @@ $seo = [
                 
                 <!-- Fila 4 -->
                 <!-- Challenger 604 -->
-                <a href="/aeronaves/Challenger604" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Challenger604') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/Challenger604.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -455,7 +455,7 @@ $seo = [
                 </a>
                 
                 <!-- Challenger 605 -->
-                <a href="/aeronaves/Challenger605" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Challenger605') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/Challenger605.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -475,7 +475,7 @@ $seo = [
                 </a>
                 
                 <!-- Challenger 650 -->
-                <a href="/aeronaves/Challenger650" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Challenger650') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/Challenger650.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -494,7 +494,7 @@ $seo = [
                     </div>
                 </a>
                 <!-- Challenger 850 -->
-                <a href="/aeronaves/Challenger850" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Challenger850') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/Challenger850.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -514,7 +514,7 @@ $seo = [
                 </a>
                 <!-- Fila 5 -->
                 <!-- Citation 550 Bravo -->
-                <a href="/aeronaves/Citation550Bravo" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Citation550Bravo') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/Citation550-Bravo.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -534,7 +534,7 @@ $seo = [
                 </a>
                 
                 <!-- Citation CJ4 -->
-                <a href="/aeronaves/CitationCj4" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/CitationCj4') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/CitationCj4.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -554,7 +554,7 @@ $seo = [
                 </a>
                 
                 <!-- Citation Encore -->
-                <a href="/aeronaves/CitationEncore" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/CitationEncore') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/CitationEncore.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -574,7 +574,7 @@ $seo = [
                 </a>
                 
                 <!-- Citation XLS -->
-                <a href="/aeronaves/CitationXLS" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/CitationXLS') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/CitationXLS.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -594,7 +594,7 @@ $seo = [
                 </a>
                 <!-- Fila 6 -->
                 <!-- Citation Hemisphere -->
-                <a href="/aeronaves/CitationHemisPhere" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/CitationHemisPhere') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/CitationHemisPhere.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -614,7 +614,7 @@ $seo = [
                 </a>
                 
                 <!-- Citation Latitude -->
-                <a href="/aeronaves/CitationLatitude" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/CitationLatitude') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/CitationLatitude.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -634,7 +634,7 @@ $seo = [
                 </a>
                 <!-- Helicopteros -->
                 <!-- Helicoptero MI 8 MTV 1 -->
-                <a href="/aeronaves/Mi8-mtv1" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Mi8-mtv1') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/Mi8-mtv1.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
@@ -653,7 +653,7 @@ $seo = [
                     </div>
                 </a>
                 <!-- Ecureuil B3 -->
-                <a href="/aeronaves/Ecureuil-b3" class="aircraft-card" style="text-decoration: none; color: inherit;">
+                <a href="{{ url(app()->getLocale() . '/aeronaves/Ecureuil-b3') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                     <div class="aircraft-image" style="background-image: url('/img/aeronaves/aviones/Ecureuil-b3.webp')">
                         <div class="aircraft-overlay">
                             <div class="aircraft-details">
