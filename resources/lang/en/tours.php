@@ -1,30 +1,152 @@
 <?php
 
 return [
-    // Tours generic
+    // Generic tours
     'seo.title_template' => ':tour | Aerolinea del Sur',
     'seo.description_template' => ':description. Book your tour with flight included.',
     
     // Vinicunca
     'vinicunca.title' => 'Vinicunca Tour - Rainbow Mountain',
     'vinicunca.description' => 'Discover the spectacular Rainbow Mountain from the air',
+    'vinicunca.subtitle' => 'Explore the majestic Seven Colors Mountain on an exclusive tour with flight included',
+    'tour_details' => 'Tour Details',
+    'vinicunca.details' => 'Discover the spectacular Rainbow Mountain from the air',
+    'max_group' => 'Maximum Group',
+    'min_age' => 'Minimum Age',
+    'duration' => 'Duration',
+    'image_gallery' => 'Image Gallery',
     
     // Machu Picchu
     'machu_picchu.title' => 'Aerial Machu Picchu Tour',
     'machu_picchu.description' => 'Fly over the Inca citadel of Machu Picchu',
     
-    // Nazca
-    'nazca.title' => 'Nazca Lines',
-    'nazca.description' => 'Fly over the mysterious Nazca Lines',
-    
-    // Titicaca
-    'titicaca.title' => 'Lake Titicaca',
-    'titicaca.description' => 'Aerial view of the highest navigable lake in the world',
-    
-    // Common
-    'duration' => 'Duration',
+    // Common translations for all tours
     'price' => 'Price',
     'includes' => 'Includes',
     'book_now' => 'Book Now',
     'more_info' => 'More Information',
+    
+    // =============================================================
+    // CHOQUEQUIRAO OVERFLIGHT
+    // =============================================================
+    'choquequirao.title' => 'Choquequirao',
+    'choquequirao.subtitle' => 'The panoramic flight that reveals the majestic "Golden Cradle" and sacred sister of Machu Picchu, hidden among the Andes.',
+    'choquequirao.details_title' => 'Overflight Details',
+    'choquequirao.details_desc' => 'The Choquequirao overflight is a premium aerial experience that transports you from Cusco into the depths of the Apurímac canyon. Aboard a private light aircraft, the approximately 1-hour journey offers a unique and privileged perspective of the imposing Vilcabamba Range, the Sacred Valley, and the mysterious Inca citadel of Choquequirao. From the air, the complexity of its terraces and temples is appreciated, revealing a masterpiece of Inca urbanism surrounded by lush nature.',
+    'choquequirao.max_group' => '4 people',
+    'choquequirao.min_age' => 'None',
+    'choquequirao.duration' => '1 hour (approx.)',
+    'choquequirao.summary_title' => 'Trip Summary',
+    'choquequirao.highlights_title' => 'Highlights',
+    'choquequirao.highlight1_title' =>  'Choquequirao',
+    'choquequirao.highlight1_desc' => 'The sacred sister of Machu Picchu, an archaeological jewel hidden in the mountains.',
+    'choquequirao.highlight2_title' => 'Sacred Valley',
+    'choquequirao.highlight2_desc' => 'Aerial views of Pisac, Ollantaytambo, and the agricultural landscapes of the valley.',
+    'choquequirao.highlight3_title' => 'Sacred Peaks',
+    'choquequirao.highlight3_desc' => 'Contemplate the majesty of La Verónica and Salkantay snow-capped peaks from the heights.',
+    'choquequirao.stats_title' => 'Tour Statistics',
+    'choquequirao.places_title' => 'Featured Places on this Journey',
+    'choquequirao.place1_title' => 'Pisac',
+    'choquequirao.place1_desc' => 'Majestic archaeological complex that dominates the Sacred Valley. Notable for its extensive agricultural terraces, ceremonial temples, and famous Intihuatana. From the air, it reveals its perfect integration between architecture and landscape.',
+    'choquequirao.place2_title' => 'Sacred Valley of the Incas',
+    'choquequirao.place2_desc' => 'Extensive fertile lands surrounded by majestic mountains and traditional villages, the spiritual and agricultural heart of the ancient Inca empire.',
+    'choquequirao.place3_title' => 'Maras Salt Mines',
+    'choquequirao.place3_desc' => 'More than 3,000 stepped white pools where salt is extracted artisanally. A unique natural and cultural spectacle seen from the air.',
+    'choquequirao.place4_title' => 'Moray',
+    'choquequirao.place4_desc' => 'The ancient agricultural laboratory of the Incas, with its impressive circular terraces that form a hypnotic landscape. From the air, the perfection of its design and color contrasts are appreciated.',
+    'choquequirao.place5_title' => 'Ollantaytambo',
+    'choquequirao.place5_desc' => 'Imposing Inca fortress that dominates the valley with its monumental terraces and perfectly preserved stone streets.',
+    'choquequirao.place6_title' => 'La Verónica and Salkantay Peaks',
+    'choquequirao.place6_desc' => 'Sacred peaks that rise majestically with their perpetual snows. Salkantay is one of the most venerated Apus of Cusco, dominating the Andean horizon.',
+    'choquequirao.place7_title' => 'Choquequirao',
+    'choquequirao.place7_desc' => 'Known as "the sacred sister of Machu Picchu", this archaeological jewel is hidden among the Vilcabamba mountains. Its design of terraces and temples is revealed as a masterpiece of Inca urbanism.',
+    'choquequirao.inclusions_title' => 'Tour Inclusions',
+    'choquequirao.included_title' => 'Included',
+    'choquequirao.notincluded_title' => 'Not Included',
+    'choquequirao.notes_title' => 'Important Notes',
+    'choquequirao.recommended_title' => 'Other Recommended Tours',
+    'choquequirao.booking_title' => 'Book your Tour',
+    'choquequirao.booking_note' => '* Required fields. We will contact you within 24 hours to confirm your reservation.',
+    
+    // =============================================================
+    // NAZCA LINES OVERFLIGHT
+    // =============================================================
+    'nazca.title' => 'Nazca Lines',
+    'nazca.subtitle' => 'An exclusive aerial journey from Cusco to discover the enigmatic geoglyphs of the Peruvian desert.',
+    'nazca.details_title' => 'Overflight Details',
+    'nazca.details_desc' => 'This unique experience combines a spectacular panoramic flight over the Andes with the archaeological mystery of the Nazca Lines. Departing from Cusco on a private plane, you will cross the mountain range to reach the desert coast, where you will fly over the famous figures drawn on the ground: the Hummingbird, the Monkey, the Spider and many more, visible only from the sky. The tour includes a cultural immersion with a visit to María Reiche\'s legacy.',
+    'nazca.max_group' => '12 people',
+    'nazca.min_age' => '3 years',
+    'nazca.duration' => '1 hour and 20 minutes',
+    'nazca.highlight1_title' => 'Ancient Geoglyphs',
+    'nazca.highlight1_desc' => 'Observe the gigantic figures of animals and geometric shapes drawn by the ancient Nazca culture.',
+    'nazca.highlight2_title' => 'Trans-Andean Flight',
+    'nazca.highlight2_desc' => 'Enjoy the visual transition from the snow-capped peaks of the Andes to the vast coastal desert.',
+    'nazca.highlight3_title' => 'María Reiche Legacy',
+    'nazca.highlight3_desc' => 'Learn about the history of the mathematician who dedicated her life to studying and protecting these mysterious lines.',
+    'nazca.itinerary_title' => 'Detailed Itinerary',
+    'nazca.step1_title' => 'Flexible departure time',
+    'nazca.step1_desc' => 'Between 7:00 and 8:30 a.m., according to your preference and weather conditions. We start with pickup from your hotel.',
+    'nazca.step2_title' => 'Private transfer to the Airport',
+    'nazca.step2_desc' => 'Our team will pick you up at your hotel in a comfortable private vehicle, equipped with all amenities for your journey to Cusco airport.',
+    'nazca.step3_title' => 'Panoramic flight over the Andes',
+    'nazca.step3_desc' => 'Board your private light aircraft for an unforgettable flight to Nazca (approx. 1 hour and 20 minutes). Enjoy impressive views of the mountain range giving way to the coastal desert.',
+    'nazca.step4_title' => 'Arrival at María Reiche Aerodrome',
+    'nazca.step4_desc' => 'Upon arrival in Nazca, you will receive ground assistance and prepare to experience the iconic overflight experience.',
+    'nazca.step5_title' => 'Nazca Lines Overflight',
+    'nazca.step5_desc' => '30-minute flight in a specialized aircraft to admire the enigmatic geoglyphs: figures of animals, plants and geometric designs, an archaeological wonder visible only from the sky.',
+    'nazca.step6_title' => 'Visit to María Reiche Museum',
+    'nazca.step6_desc' => 'Discover the life and work of María Reiche, the German mathematician and archaeologist who dedicated her life to the study and conservation of the Nazca Lines.',
+    'nazca.step7_title' => 'Lunch in Nazca',
+    'nazca.step7_desc' => 'Enjoy exquisite Peruvian cuisine at a local restaurant before your return flight.',
+    'nazca.step8_title' => 'Return flight',
+    'nazca.step8_desc' => 'Private return flight to Cusco (approx. 1h 20m). Additional option: Return to Lima (approx. 1h) upon prior coordination.',
+    
+    // =============================================================
+    // LAKE TITICACA OVERFLIGHT
+    // =============================================================
+    'titicaca.title' => 'Lake Titicaca',
+    'titicaca.subtitle' => 'The panoramic flight that dominates the altiplano and offers the best views over the sacred lake of the Incas.',
+    'titicaca.details_desc' => 'The Lake Titicaca and its Islands overflight is a premium aerial experience that transports you from Cusco to the vastness of the Peruvian altiplano. Aboard a private light aircraft, the approximately one hour and forty minute journey offers a unique and privileged perspective of the imposing Andes Mountain Range, the vast altiplano landscape and the legendary Lake Titicaca. Also, from the air, the unique structures of the Uros Floating Islands and the cultural jewels of Taquile and Amantaní can be clearly appreciated.',
+    'titicaca.max_group' => '8 people',
+    'titicaca.duration' => '1 hour and 40 minutes',
+    'titicaca.highlight1_title' => 'Lake Titicaca',
+    'titicaca.highlight1_desc' => 'The highest navigable lake. Sacred blue mirror between Peru and Bolivia.',
+    'titicaca.highlight2_title' => 'Floating Islands',
+    'titicaca.highlight2_desc' => 'Aerial views of the communities living on reed platforms located on the lake.',
+    'titicaca.highlight3_title' => 'Photography and views',
+    'titicaca.highlight3_desc' => 'Capture spectacular shots while the guide tells you the history of the place.',
+    'titicaca.place1_title' => 'Andes Mountain Range and Peruvian Altiplano',
+    'titicaca.place1_desc' => 'The great mountain chain that marks the beginning of this journey. It comprises vast altiplano plateaus, where a natural environment surrounded by communities is observed.',
+    'titicaca.place2_title' => 'Lake Titicaca',
+    'titicaca.place2_desc' => 'The highest navigable lake in the world that extends between Peru and Bolivia, considered the sacred lake of the Incas, highlighting its intense tones.',
+    'titicaca.place3_title' => 'Uros Floating Islands',
+    'titicaca.place3_desc' => 'A set of artificial islands  unique in the world, built entirely with reeds. Each island has its own history and culture.',
+    'titicaca.place4_title' => 'Taquile Island',
+    'titicaca.place4_desc' => 'An oval jewel in the middle of Titicaca, known for its impressive textile culture (Intangible Cultural Heritage of Humanity). Its terraces and island organization are appreciated from the heights.',
+    'titicaca.place5_title' => 'Amantaní Island',
+    'titicaca.place5_desc' => 'Recognized for its agricultural terraces and pre-Inca temples dedicated to Pachamama and Pachatata. It is surrounded by an impressive natural environment.',
+    'titicaca.place6_title' => 'Riverside Towns of Puno',
+    'titicaca.place6_desc' => 'A panorama of the small communities surrounding the edge of the lake. This provides a vision of daily life that takes place between fishing, agriculture and highland customs.',
+    
+    // =============================================================
+    // SACRED VALLEY AND MARAS OVERFLIGHT
+    // =============================================================
+    'valle_maras.title' => 'Sacred Valley and Maras',
+    'valle_maras.subtitle' => 'Discover Sacsayhuamán, Tambomachay, Pisac, Sacred Valley, Maras and Huaypo Lagoon.',
+    'valle_maras.details_desc' => 'Aerolinea del Sur is pleased to present an unparalleled aerial experience: a scenic overflight in a small plane, ideal for those who wish to discover from the sky some of the archaeological sites and most emblematic landscapes of the heart of the Sacred Valley of the Incas, without the need for long overland journeys.',
+    'valle_maras.max_group' => '6 people',
+    'valle_maras.duration' => '1 hour',
+    'valle_maras.highlight1_title' => 'Vinicunca',
+    'valle_maras.highlight1_desc' => 'You will know the Rainbow Mountain, a colorful place with impressive landscapes.',
+    'valle_maras.highlight2_title' => 'Landscape Photography',
+    'valle_maras.highlight2_desc' => 'Capture spectacular shots of towns, landscapes and ancient constructions.',
+    'valle_maras.highlight3_title' => 'History and views',
+    'valle_maras.highlight3_desc' => 'The guide will tell you the history of the place as you walk the trail to the mountain.',
+    'valle_maras.step1_title' => '1. The archaeological complex of Sacsayhuamán',
+    'valle_maras.step2_title' => '2. The ceremonial fountains of Tambomachay',
+    'valle_maras.step3_title' => '3. The circular terracing and terraces of Pisac',
+    'valle_maras.step4_title' => '4. The fertile fields of the Sacred Valley of the Incas',
+    'valle_maras.step5_title' => '5. The mysterious Maras Salt Mines',
+    'valle_maras.step6_title' => '6. The beautiful Huaypo lagoon, surrounded by agricultural fields and mountains',
 ];
