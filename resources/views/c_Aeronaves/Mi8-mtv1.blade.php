@@ -165,16 +165,16 @@ $seo = [
                         <div class="new-carousel-container">
                             <div class="new-carousel-track">
                                 <div class="new-carousel-slide current-slide">
-                                    <img src="/public/img/aeronaves/aviones/Mi8-mtv1.webp" alt="Helicóptero Mi-8 MTV1 para transporte de carga y pasajeros en zonas remotas de Perú" class="carousel-image">
+                                    <img src="/img/aeronaves/aviones/Mi8-mtv1.webp" alt="Helicóptero Mi-8 MTV1 para transporte de carga y pasajeros en zonas remotas de Perú" class="carousel-image">
                                 </div>
                                 <div class="new-carousel-slide">
-                                    <img src="/public/img/aeronaves/aviones/Mi8-mtv1.webp" alt="Helicóptero Mi-8 MTV1 para transporte de carga y pasajeros en zonas remotas de Perú" class="carousel-image">
+                                    <img src="/img/aeronaves/aviones/Mi8-mtv1.webp" alt="Helicóptero Mi-8 MTV1 para transporte de carga y pasajeros en zonas remotas de Perú" class="carousel-image">
                                 </div>
                                 <div class="new-carousel-slide">
-                                    <img src="/public/img/aeronaves/aviones/Mi8-mtv1.webp" alt="Helicóptero Mi-8 MTV1 para transporte de carga y pasajeros en zonas remotas de Perú" class="carousel-image">
+                                    <img src="/img/aeronaves/aviones/Mi8-mtv1.webp" alt="Helicóptero Mi-8 MTV1 para transporte de carga y pasajeros en zonas remotas de Perú" class="carousel-image">
                                 </div>
                                 <div class="new-carousel-slide">
-                                    <img src="/public/img/aeronaves/aviones/Mi8-mtv1.webp" alt="Helicóptero Mi-8 MTV1 para transporte de carga y pasajeros en zonas remotas de Perú" class="carousel-image">
+                                    <img src="/img/aeronaves/aviones/Mi8-mtv1.webp" alt="Helicóptero Mi-8 MTV1 para transporte de carga y pasajeros en zonas remotas de Perú" class="carousel-image">
                                 </div>
                             </div>
                         </div>
@@ -297,7 +297,7 @@ $seo = [
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="/public/img/aeronaves/aviones/Mi8-mtv1.webp"Imagen de avión" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
+                            <img src="/img/aeronaves/aviones/Mi8-mtv1.webp"Imagen de avión" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
 
                         </div>
                     </div>

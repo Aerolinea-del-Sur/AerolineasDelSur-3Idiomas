@@ -71,4 +71,8 @@ return [
     // Contact
     'contact.phone_label' => 'Teléfono',
     'contact.email_label' => 'Email',
+    
+    // Mi8-MTV1 Specific
+    'mi8.desc1' => 'El Mil Mi 8 MTV 1 es una versión modernizada del Mi-8, introducida en la década de 1980. Está propulsado por dos motores Klimov TV3-117VM, que le permiten un mejor rendimiento en climas cálidos y altitudes elevadas, características muy valoradas en operaciones internacionales. Es utilizado ampliamente en misiones civiles y militares por su confiabilidad y bajo costo operativo en relación con su tamaño y capacidad.',
+    'mi8.desc2' => 'Este helicóptero puede transportar hasta 24 pasajeros en configuración estándar, o ser adaptado para transporte de carga interna y externa, evacuaciones médicas y operaciones de rescate. Su cabina espaciosa y la capacidad de operar en terrenos difíciles lo convirtieron en uno de los helicópteros más producidos y exportados de la historia.',
 ];
