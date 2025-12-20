@@ -290,7 +290,7 @@ $seo = [
         $aeronaves = [
             [
                 'name' => 'King Air B200',
-                'url' => '/aeronaves/KingAirB200',
+                'url' => url(app()->getLocale() . '/aeronaves/KingAirB200'),
                 'img' => 'Air-King-B200.webp',
                 'capacidad' => '8 pax',
                 'velocidad' => '870 km/h',
@@ -298,7 +298,7 @@ $seo = [
             ],
             [
                 'name' => 'King Air B350',
-                'url' => '/aeronaves/KingAirB350',
+                'url' => url(app()->getLocale() . '/aeronaves/KingAirB350'),
                 'img' => 'AirKingB350.webp',
                 'capacidad' => '8 pax',
                 'velocidad' => '870 km/h',
@@ -306,7 +306,7 @@ $seo = [
             ],
             [
                 'name' => 'Beechcraft 1900D',
-                'url' => '/aeronaves/Beechcraft1900D',
+                'url' => url(app()->getLocale() . '/aeronaves/Beechcraft1900D'),
                 'img' => 'Beechcraft1900D.webp',
                 'capacidad' => '19 pax',
                 'velocidad' => '870 km/h',
@@ -314,7 +314,7 @@ $seo = [
             ],
             [
                 'name' => 'Honda Jet',
-                'url' => '/aeronaves/HondaJet',
+                'url' => url(app()->getLocale() . '/aeronaves/HondaJet'),
                 'img' => 'HondaJet.webp',
                 'capacidad' => '6 pax',
                 'velocidad' => '722 km/h',
@@ -322,7 +322,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Phenom 100',
-                'url' => '/aeronaves/Phenom100',
+                'url' => url(app()->getLocale() . '/aeronaves/Phenom100'),
                 'img' => 'Phenom100.webp',
                 'capacidad' => '7 pax',
                 'velocidad' => '839 km/h',
@@ -330,7 +330,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Gulfstream G100',
-                'url' => '/aeronaves/GulfstreamG100',
+                'url' => url(app()->getLocale() . '/aeronaves/GulfstreamG100'),
                 'img' => 'Gulfstream-G100.webp',
                 'capacidad' => '9 pax',
                 'velocidad' => '870 km/h',
@@ -339,7 +339,7 @@ $seo = [
             // Nuevas aeronaves
             [
                 'name' => 'Jet Gulfstream GIV',
-                'url' => '/aeronaves/GulfstreamGiv',
+                'url' => url(app()->getLocale() . '/aeronaves/GulfstreamGiv'),
                 'img' => 'GulfstreamGiv.webp',
                 'capacidad' => '14 pax',
                 'velocidad' => '935 km/h',
@@ -347,7 +347,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Phenom 300',
-                'url' => '/aeronaves/Phenom300',
+                'url' => url(app()->getLocale() . '/aeronaves/Phenom300'),
                 'img' => 'Phenom300.webp',
                 'capacidad' => '8 pax',
                 'velocidad' => '839 km/h',
@@ -355,7 +355,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Challenger 300',
-                'url' => '/aeronaves/Challenger300',
+                'url' => url(app()->getLocale() . '/aeronaves/Challenger300'),
                 'img' => 'Challenger300.webp',
                 'capacidad' => '9 pax',
                 'velocidad' => '870 km/h',
@@ -363,7 +363,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Challenger 350',
-                'url' => '/aeronaves/Challenger350',
+                'url' => url(app()->getLocale() . '/aeronaves/Challenger350'),
                 'img' => 'Challenger350.webp',
                 'capacidad' => '9 pax',
                 'velocidad' => '870 km/h',
@@ -371,7 +371,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Challenger 601',
-                'url' => '/aeronaves/Challenger601',
+                'url' => url(app()->getLocale() . '/aeronaves/Challenger601'),
                 'img' => 'Challenger601.webp',
                 'capacidad' => '12 pax',
                 'velocidad' => '850 km/h',
@@ -379,7 +379,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Challenger 604',
-                'url' => '/aeronaves/Challenger604',
+                'url' => url(app()->getLocale() . '/aeronaves/Challenger604'),
                 'img' => 'Challenger604.webp',
                 'capacidad' => '12 pax',
                 'velocidad' => '870 km/h',
@@ -387,7 +387,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Challenger 605',
-                'url' => '/aeronaves/Challenger605',
+                'url' => url(app()->getLocale() . '/aeronaves/Challenger605'),
                 'img' => 'Challenger605.webp',
                 'capacidad' => '12 pax',
                 'velocidad' => '870 km/h',
@@ -395,7 +395,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Challenger 650',
-                'url' => '/aeronaves/Challenger650',
+                'url' => url(app()->getLocale() . '/aeronaves/Challenger650'),
                 'img' => 'Challenger650.webp',
                 'capacidad' => '12 pax',
                 'velocidad' => '870 km/h',
@@ -403,7 +403,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Challenger 850',
-                'url' => '/aeronaves/Challenger850',
+                'url' => url(app()->getLocale() . '/aeronaves/Challenger850'),
                 'img' => 'Challenger850.webp',
                 'capacidad' => '14 pax',
                 'velocidad' => '850 km/h',
@@ -411,7 +411,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Citation 550 Bravo',
-                'url' => '/aeronaves/Citation550Bravo',
+                'url' => url(app()->getLocale() . '/aeronaves/Citation550Bravo'),
                 'img' => 'Citation550-Bravo.webp',
                 'capacidad' => '7 pax',
                 'velocidad' => '740 km/h',
@@ -419,7 +419,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Citation Cj4',
-                'url' => '/aeronaves/CitationCj4',
+                'url' => url(app()->getLocale() . '/aeronaves/CitationCj4'),
                 'img' => 'CitationCj4.webp',
                 'capacidad' => '8 pax',
                 'velocidad' => '835 km/h',
@@ -427,7 +427,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Citation Encore',
-                'url' => '/aeronaves/CitationEncore',
+                'url' => url(app()->getLocale() . '/aeronaves/CitationEncore'),
                 'img' => 'CitationEncore.webp',
                 'capacidad' => '7 pax',
                 'velocidad' => '790 km/h',
@@ -435,7 +435,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Citation XLS',
-                'url' => '/aeronaves/CitationXLS',
+                'url' => url(app()->getLocale() . '/aeronaves/CitationXLS'),
                 'img' => 'CitationXLS.webp',
                 'capacidad' => '9 pax',
                 'velocidad' => '800 km/h',
@@ -443,7 +443,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Citation HemisPhere',
-                'url' => '/aeronaves/CitationHemisPhere',
+                'url' => url(app()->getLocale() . '/aeronaves/CitationHemisPhere'),
                 'img' => 'CitationHemisPhere.webp',
                 'capacidad' => '12 pax',
                 'velocidad' => '900 km/h',
@@ -451,7 +451,7 @@ $seo = [
             ],
             [
                 'name' => 'Jet Citation Latitude',
-                'url' => '/aeronaves/CitationLatitude',
+                'url' => url(app()->getLocale() . '/aeronaves/CitationLatitude'),
                 'img' => 'CitationLatitude.webp',
                 'capacidad' => '9 pax',
                 'velocidad' => '826 km/h',

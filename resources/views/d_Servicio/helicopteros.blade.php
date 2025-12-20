@@ -295,7 +295,7 @@ $seo = [
     <div class="heli-container">
         <h2 class="heli-section-title">Nuestras Aeronaves</h2>
         <div class="fleet-grid">
-            <a href="/aeronaves/Mi8-mtv1" class="aircraft-card" style="text-decoration: none; color: inherit;">
+            <a href="{{ url(app()->getLocale() . '/aeronaves/Mi8-mtv1') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                 <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/Mi8-mtv1.webp') }}')">
                     <div class="aircraft-overlay">
                         <div class="aircraft-details">
@@ -314,7 +314,7 @@ $seo = [
                 </div>
             </a>
 
-            <a href="/aeronaves/Ecureuil-b3" class="aircraft-card" style="text-decoration: none; color: inherit;">
+            <a href="{{ url(app()->getLocale() . '/aeronaves/Ecureuil-b3') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                 <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/Ecureuil-b3.webp') }}')">
                     <div class="aircraft-overlay">
                         <div class="aircraft-details">
@@ -333,7 +333,7 @@ $seo = [
                 </div>
             </a>
 
-            <a href="/aeronaves/Mi17" class="aircraft-card" style="text-decoration: none; color: inherit;">
+            <a href="{{ url(app()->getLocale() . '/aeronaves/Mi17') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                 <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/mi17-5.webp') }}')">
                     <div class="aircraft-overlay">
                         <div class="aircraft-details">
