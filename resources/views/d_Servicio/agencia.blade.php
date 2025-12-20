@@ -9,6 +9,7 @@ $seo = [
     'canonical' => url(app()->getLocale() . '/agencia'),
 ];
 @endphp
+
 @section('content')
 <?php
     $h1_1_1 = __('services.agency.visit_world');
