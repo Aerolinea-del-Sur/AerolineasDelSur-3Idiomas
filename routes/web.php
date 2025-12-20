@@ -13,84 +13,84 @@ Route::get('/', function () {
 
 // Rutas con prefijo de idioma
 Route::prefix('{locale}')->where(['locale' => 'es|en|pt'])->group(function () {
-    
+
     //----------------------------------  PAGINA PRINCIPAL  ---------------------------------------------------//
     Route::get('/', function () {
         return view('a_EncabezadoFooter.inicio');
     })->name('home');
-    
+
     //----------------------------------  HEADER  ---------------------------------------------------//
     Route::get('/nosotros', function () {
         return view('b_nosotros.nosotros');
     })->name('nosotros');
-    
+
     // Servicios
     Route::get('/vuelos', function () {
         return view('d_Servicio.vuelos');
     })->name('vuelos');
-    
+
     Route::get('/sobrevuelos', function () {
         return view('d_Servicio.sobrevuelos');
     })->name('sobrevuelos');
-    
+
     Route::get('/helicopteros', function () {
         return view('d_Servicio.helicopteros');
     })->name('helicopteros');
-    
+
     Route::get('/aeromedico', function () {
         return view('d_Servicio.medico');
     })->name('aeromedico');
-    
+
     Route::get('/carga', function () {
         return view('d_Servicio.carga');
     })->name('carga');
-    
+
     Route::get('/agencia', function () {
         return view('d_Servicio.agencia');
     })->name('agencia');
-    
+
     Route::get('/blog', function () {
         return view('f_Blog.blog');
     })->name('blog');
-    
+
     // Antiguo
     Route::get('/servicio', function () {
         return view('d_Servicio.servicio');
     })->name('servicio');
-    
+
     Route::get('/aeronaves', function () {
         return view('c_Aeronaves.aeronaves');
     })->name('aeronaves');
-    
+
     Route::get('/contacto', function () {
         return view('g_contactos.contacto');
     })->name('contacto');
-    
+
     //----------------------------------  FOOTER  ---------------------------------------------------//
     Route::get('/esna', function () {
         return view('h_footer.esna');
     })->name('esna');
-    
+
     Route::get('/pagos', function () {
         return view('h_footer.pagos');
     })->name('pagos');
-    
+
     Route::get('/politicas-privacidad', function () {
         return view('h_footer.privaty');
     })->name('privaty');
-    
+
     Route::get('/politica-de-cookies', function () {
         return view('h_footer.cookies');
     })->name('cookies');
-    
+
     Route::get('/terminos-condiciones', function () {
         return view('h_footer.terminos');
     })->name('terminos');
-    
+
     Route::get('/libro-reclamaciones', function () {
         return view('h_footer.libro');
     })->name('libro');
-    
+
     //----------------------------------  AERONAVES  ---------------------------------------------------//
     Route::prefix('aeronaves')->group(function () {
         Route::get('/KingAirB200', fn() => view('c_Aeronaves.KingAirB200'))->name('KingAirB200');
@@ -118,25 +118,29 @@ Route::prefix('{locale}')->where(['locale' => 'es|en|pt'])->group(function () {
         Route::get('/Mi8-mtv1', fn() => view('c_Aeronaves.Mi8-mtv1'))->name('Mi8-mtv1');
         Route::get('/Ecureuil-b3', fn() => view('c_Aeronaves.Ecureuil-b3'))->name('Ecureuil-b3');
     });
-    
+
     //----------------------------------  TOURS Y SOBREVUELOS  ---------------------------------------------------//
     Route::prefix('agencia')->group(function () {
         Route::get('/machu-picchu', fn() => view('e_Agencia.tour-machu-picchu'))->name('tour-machu-picchu');
         Route::get('/tesoros-cusco', fn() => view('e_Agencia.tour-tesoros-cusco'))->name('tour-tesoros-cusco');
         Route::get('/vinicunca', fn() => view('e_Agencia.tour-vinicunca'))->name('tour-vinicunca');
     });
-        Route::prefix('sobrevuelo')->group(function () {
+    Route::prefix('sobrevuelo')->group(function () {
         Route::get('/titicaca-lake', fn() => view('e_Agencia.sobrevuelo-titicaca-lake'))->name('sobrevuelo-titicaca-lake');
         Route::get('/choquequirao', fn() => view('e_Agencia.sobrevuelo-choquequirao'))->name('sobrevuelo-choquequirao');
         Route::get('/nazca-lines', fn() => view('e_Agencia.sobrevuelo-nazca-lines'))->name('sobrevuelo-nazca-lines');
         Route::get('/valle-maras', fn() => view('e_Agencia.sobrevuelo-valle-maras'))->name('sobrevuelo-valle-maras');
         Route::get('/vinicunca-elite', fn() => view('e_Agencia.tour-vinicunca-elite'))->name('sobrevuelo-vinicunca-elite');
     });
-    
+
     //----------------------------------  BLOG  ---------------------------------------------------//
     Route::get('/blog/Aventura-Cusco', function () {
         return view('f_Blog.Consejos.c1_aventuraCusco');
     })->name('blog.aventura-cusco');
+
+    Route::get('/blog/Vuelos-Peru', function () {
+        return view('f_Blog.Consejos.c2_vuelosPeru');
+    })->name('blog.vuelos-peru');
 });
 
 //----------------------------------  FORMULARIOS (SIN PREFIJO DE IDIOMA)  ---------------------------------------------------//

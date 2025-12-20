@@ -1,40 +1,40 @@
 @extends('a_EncabezadoFooter.princi')
 
 @php
-// Custom SEO for Blog
-$seo = [
-    'title' => 'Blog de Aviación | Consejos y Guías de Vuelos en Perú',
-    'description' => 'Blog de Aerolínea del Sur con artículos sobre aviación, consejos de viaje, guías turísticas y novedades de vuelos privados en Perú.',
-    'keywords' => 'blog aviación perú, consejos viaje cusco, guía turística perú, blog vuelos privados',
-    'og_image' => asset('img/blog/aviation-peru.jpg'),
-    'canonical' => url(app()->getLocale() . '/blog'),
-];
+    // Custom SEO for Blog
+    $seo = [
+        'title' => 'Blog de Aviación | Consejos y Guías de Vuelos en Perú',
+        'description' => 'Blog de Aerolínea del Sur con artículos sobre aviación, consejos de viaje, guías turísticas y novedades de vuelos privados en Perú.',
+        'keywords' => 'blog aviación perú, consejos viaje cusco, guía turística perú, blog vuelos privados',
+        'og_image' => asset('img/blog/aviation-peru.jpg'),
+        'canonical' => url(app()->getLocale() . '/blog'),
+    ];
 @endphp
 @section('content')
-<?php
+    <?php
     $h1_1_1 = 'Explora el';
     $h1_1_2 = 'mundo con';
     $h1_1_3 = 'nosotros';
     $p_1 = 'Descubre destinos increíbles, consejos de viaje y las últimas noticias de la aviación en nuestro blog oficial.';
 
-            $h3_1 = '10 consejos para viajar cómodo en vuelos largos';
-            $p_2 = 'Maximiza tu comodidad en vuelos de larga distancia con estos consejos probados por expertos.';
+    $h3_1 = 'Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur';
+    $p_2 = 'Descubre la experiencia de viajar con Aerolínea del Sur en Perú. Un viaje cómodo y seguro.';
 
-            $h3_2 = 'Aerolíneas del Sur incorpora nuevos Boeing 787 Dreamliner';
-            $p_3 = 'Nuestra flota se moderniza con aeronaves de última generación para brindarte mayor comodidad.';
+    $h3_2 = 'Aerolíneas del Sur incorpora nuevos Boeing 787 Dreamliner';
+    $p_3 = 'Nuestra flota se moderniza con aeronaves de última generación para brindarte mayor comodidad.';
 
-            $h3_3 = 'Mi experiencia en Clase Ejecutiva: Lujo en las alturas';
-            $p_4 = 'Descubre cómo es volar en nuestra Clase Ejecutiva a través de la experiencia de nuestros pasajeros.';
+    $h3_3 = 'Mi experiencia en Clase Ejecutiva: Lujo en las alturas';
+    $p_4 = 'Descubre cómo es volar en nuestra Clase Ejecutiva a través de la experiencia de nuestros pasajeros.';
 
-            $h3_4 = 'Machu Picchu: Guía completa para tu visita';
-            $p_5 = 'Todo lo que necesitas saber para planificar tu viaje a una de las maravillas del mundo.';
+    $h3_4 = 'Machu Picchu: Guía completa para tu visita';
+    $p_5 = 'Todo lo que necesitas saber para planificar tu viaje a una de las maravillas del mundo.';
 
-            $h3_5 = 'Cómo hacer la maleta perfecta: Guía paso a paso';
-            $p_6 = 'Aprende a optimizar tu equipaje y viajar con todo lo necesario sin excesos.';
+    $h3_5 = 'Cómo hacer la maleta perfecta: Guía paso a paso';
+    $p_6 = 'Aprende a optimizar tu equipaje y viajar con todo lo necesario sin excesos.';
 
-        $h2_1 = 'Mantente informado';
-        $p_7 = 'Suscríbete a nuestro newsletter y recibe las últimas noticias, ofertas especiales y consejos de viaje directamente en tu correo.';
-?>
+    $h2_1 = 'Mantente informado';
+    $p_7 = 'Suscríbete a nuestro newsletter y recibe las últimas noticias, ofertas especiales y consejos de viaje directamente en tu correo.';
+                    ?>
     <link rel="stylesheet" href="{{ asset('public/css/paginas/blog/blog.css') }}">
 
     <!-- Hero Section -->
@@ -88,23 +88,24 @@ $seo = [
                 <!-- Artículos Regulares -->
                 <article class="article-card" data-category="consejos">
                     <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop" alt="Consejos de viaje">
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop"
+                            alt="Consejos de viaje">
                         <div class="article-category">Consejos</div>
                     </div>
                     <div class="article-content">
                         <div class="article-meta">
                             <span class="article-date">
                                 <i class="fas fa-calendar"></i>
-                                12 Enero 2024
+                                20 Diciembre 2024
                             </span>
                             <span class="article-read-time">
                                 <i class="fas fa-clock"></i>
-                                5 min
+                                10 min
                             </span>
                         </div>
                         <h3 class="article-title"><?= $h3_1 ?></h3>
                         <p class="article-excerpt"><?= $p_2 ?></p>
-                        <a href="#" class="article-link">
+                        <a href="{{ route('blog.vuelos-peru') }}" class="article-link">
                             Leer más
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -113,7 +114,8 @@ $seo = [
 
                 <article class="article-card" data-category="noticias">
                     <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=600&h=400&fit=crop" alt="Nueva flota">
+                        <img src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=600&h=400&fit=crop"
+                            alt="Nueva flota">
                         <div class="article-category">Noticias</div>
                     </div>
                     <div class="article-content">
@@ -138,7 +140,8 @@ $seo = [
 
                 <article class="article-card" data-category="experiencias">
                     <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop" alt="Experiencia de viaje">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop"
+                            alt="Experiencia de viaje">
                         <div class="article-category">Experiencias</div>
                     </div>
                     <div class="article-content">
@@ -163,7 +166,8 @@ $seo = [
 
                 <article class="article-card" data-category="destinos">
                     <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&h=400&fit=crop" alt="Machu Picchu">
+                        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&h=400&fit=crop"
+                            alt="Machu Picchu">
                         <div class="article-category">Destinos</div>
                     </div>
                     <div class="article-content">
@@ -188,7 +192,8 @@ $seo = [
 
                 <article class="article-card" data-category="consejos">
                     <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop" alt="Equipaje">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop"
+                            alt="Equipaje">
                         <div class="article-category">Consejos</div>
                     </div>
                     <div class="article-content">
@@ -213,37 +218,37 @@ $seo = [
             </div>
 
             <!-- Botón Cargar Más 
-            <div class="load-more-section">
-                <button class="btn-primary load-more-btn">
-                    <span>Cargar más artículos</span>
-                </button>
-            </div>-->
+                                <div class="load-more-section">
+                                    <button class="btn-primary load-more-btn">
+                                        <span>Cargar más artículos</span>
+                                    </button>
+                                </div>-->
         </div>
     </section>
 
     <!-- Newsletter Section 
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-content">
-                <div class="newsletter-text">
-                    <h2><?= $h2_1 ?></h2>
-                    <p><?= $p_7 ?></p>
-                </div>
-                <div class="newsletter-form">
-                    <form class="newsletter-form-container">
-                        <input type="email" placeholder="Tu correo electrónico" required>
-                        <button type="submit" class="btn-primary">
-                            <span>Suscribirse</span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section> -->
+                        <section class="newsletter-section">
+                            <div class="container">
+                                <div class="newsletter-content">
+                                    <div class="newsletter-text">
+                                        <h2><?= $h2_1 ?></h2>
+                                        <p><?= $p_7 ?></p>
+                                    </div>
+                                    <div class="newsletter-form">
+                                        <form class="newsletter-form-container">
+                                            <input type="email" placeholder="Tu correo electrónico" required>
+                                            <button type="submit" class="btn-primary">
+                                                <span>Suscribirse</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section> -->
 
     <script>
         // Filtros de categorías
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const filterButtons = document.querySelectorAll('.filter-btn');
             const articles = document.querySelectorAll('.article-card');
 
