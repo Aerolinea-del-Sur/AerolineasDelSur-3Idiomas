@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Mi-17';
+$seo = seo()
+    ->title("$aircraft_model - Helicóptero de Carga Pesada | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un helicóptero de transporte versátil para carga y pasajeros en zonas remotas.")
+    ->keywords(['mi-17 perú', 'helicóptero cargo perú', 'transporte montaña', 'mi17 cusco'])
+    ->image(asset('img/aeronaves/aviones/mi17-5.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/mi-17'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Mi-17',
+        'category' => 'Helicopter'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Mi-17
-$aircraft_model = 'Mi-17';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'transporte de carga y pasajeros'], __('aircraft.seo.description_template')),
-    'keywords' => 'mi-17 perú, helicóptero cargo perú, transporte montaña, mi17 cusco',
-    'og_image' => asset('img/aeronaves/aviones/mi17-5.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/mi-17'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
 $h1_1_1 = 'Mi';

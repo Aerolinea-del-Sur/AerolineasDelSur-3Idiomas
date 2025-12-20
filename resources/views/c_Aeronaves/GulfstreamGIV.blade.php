@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Gulfstream GIV';
+$seo = seo()
+    ->title("$aircraft_model - Largo Alcance Premium | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet de largo alcance premium con capacidad intercontinental.")
+    ->keywords(['gulfstream giv perú', 'jet largo alcance', 'avión ejecutivo internacional', 'gulfstream cusco'])
+    ->image(asset('img/aeronaves/aviones/GulfstreamGiv.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/GulfstreamGIV'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Gulfstream GIV',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Gulfstream GIV
-$aircraft_model = 'Gulfstream GIV';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet de largo alcance premium'], __('aircraft.seo.description_template')),
-    'keywords' => 'gulfstream giv perú, jet largo alcance, avión ejecutivo internacional, gulfstream cusco',
-    'og_image' => asset('img/aeronaves/aviones/GulfstreamGiv.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/GulfstreamGIV'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Gulfstream';

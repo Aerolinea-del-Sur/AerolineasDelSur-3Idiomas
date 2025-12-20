@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Citation XLS';
+$seo = seo()
+    ->title("$aircraft_model - Jet Ejecutivo Capacidad | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet ejecutivo de gran capacidad con excelente desempeño.")
+    ->keywords(['citation xls perú', 'cessna xls', 'jet rápido', 'avión ejecutivo amplio'])
+    ->image(asset('img/aeronaves/aviones/CitationXLS.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/CitationXLS'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Citation XLS',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Citation XLS
-$aircraft_model = 'Citation XLS';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo de gran capacidad'], __('aircraft.seo.description_template')),
-    'keywords' => 'citation xls perú, cessna xls, jet rápido, avión ejecutivo amplio',
-    'og_image' => asset('img/aeronaves/aviones/CitationXLS.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/CitationXLS'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Citation';

@@ -17,7 +17,7 @@
         @stack('seo')
         
         {{-- LEGACY Array SEO (Fallback for backward compatibility) --}}
-        @if(isset($seo) && is_array($seo) && !hasStack('seo'))
+        @if(isset($seo) && is_array($seo))
             <title>{{ $seo['title'] ?? config('app.name') }}</title>
             <meta name="description" content="{{ $seo['description'] ?? '' }}" />
             <meta name="keywords" content="{{ $seo['keywords'] ?? '' }}" />

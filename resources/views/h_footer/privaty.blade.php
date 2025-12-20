@@ -1,15 +1,24 @@
+@php
+$seo = seo()
+    ->title(__('legal.privacy.seo_title'))
+    ->description(__('legal.privacy.seo_description'))
+    ->keywords(['política privacidad perú', 'protección datos', 'privacidad aerolínea'])
+    ->image(asset('img/logo.svg'))
+    ->canonical(url(app()->getLocale() . '/politica-privacidad'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'WebPage',
+        'name' => 'Política de Privacidad',
+        'description' => 'Política de privacidad conforme a la Ley de Protección de Datos de Perú'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Privacy Policy
-$seo = [
-    'title' => __('legal.privacy.seo_title'),
-    'description' => __('legal.privacy.seo_description'),
-    'keywords' => 'política privacidad perú, protección datos, privacidad aerolínea',
-    'og_image' => asset('img/logo.svg'),
-    'canonical' => url(app()->getLocale() . '/politica-privacidad'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
 @section('content')
 <link rel="stylesheet" href="{{ asset('public/css/footer/privaty.css') }}">
 <div class="privacy-container">

@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Challenger 601';
+$seo = seo()
+    ->title("$aircraft_model - Jet Largo Alcance | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet ejecutivo de largo alcance para 13 pasajeros.")
+    ->keywords(['challenger 601 perú', 'bombardier 601', 'jet ejecutivo largo alcance', 'vuelo internacional'])
+    ->image(asset('img/aeronaves/aviones/Challenger601.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/Challenger601'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Challenger 601',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Challenger 601
-$aircraft_model = 'Challenger 601';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo de largo alcance para 13 pasajeros'], __('aircraft.seo.description_template')),
-    'keywords' => 'challenger 601 perú, bombardier 601, jet ejecutivo largo alcance, vuelo internacional',
-    'og_image' => asset('img/aeronaves/aviones/Challenger601.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/Challenger601'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Challenger';

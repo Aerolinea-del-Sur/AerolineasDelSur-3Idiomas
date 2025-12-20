@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Citation Latitude';
+$seo = seo()
+    ->title("$aircraft_model - Jet Mediano Premium | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet mediano premium con cabina espaciosa y tecnología avanzada.")
+    ->keywords(['citation latitude perú', 'cessna latitude', 'jet mediano premium', 'avión tecnología avanzada'])
+    ->image(asset('img/aeronaves/aviones/CitationLatitude.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/CitationLatitude'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Citation Latitude',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Citation Latitude
-$aircraft_model = 'Citation Latitude';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet mediano premium con cabina espaciosa'], __('aircraft.seo.description_template')),
-    'keywords' => 'citation latitude perú, cessna latitude, jet mediano premium, avión tecnología avanzada',
-    'og_image' => asset('img/aeronaves/aviones/CitationLatitude.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/CitationLatitude'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Citation';

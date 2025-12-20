@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'King Air B350';
+$seo = seo()
+    ->title("$aircraft_model - Turbohélice Ejecutivo | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un avión turbohélice ejecutivo ideal para pistas cortas y altitudes elevadas.")
+    ->keywords(['king air b350', 'beechcraft 350 perú', 'avión turbohélice charter', 'vuelo ejecutivo cusco'])
+    ->image(asset('img/aeronaves/aviones/AirKingB350.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/king-air-b350'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'King Air B350',
+        'category' => 'Turboprop Aircraft'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for King Air B350
-$aircraft_model = 'King Air B350';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'avión turbohélice ejecutivo'], __('aircraft.seo.description_template')),
-    'keywords' => 'king air b350, beechcraft 350 perú, avión turbohélice charter, vuelo ejecutivo cusco',
-    'og_image' => asset('img/aeronaves/aviones/AirKingB350.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/king-air-b350'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
 $h1_1_1 = 'King Air';

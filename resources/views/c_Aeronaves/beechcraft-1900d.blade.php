@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Beechcraft 1900D';
+$seo = seo()
+    ->title("$aircraft_model - Avión Regional | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un avión regional robusto ideal para rutas en sierra y selva.")
+    ->keywords(['beechcraft 1900d perú', 'avión regional', 'vuelos comerciales regionales', 'transporte pasajeros perú'])
+    ->image(asset('img/aeronaves/aviones/Beechcraft1900D.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/beechcraft-1900d'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Beechcraft 1900D',
+        'category' => 'Regional Aircraft'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Beechcraft 1900D
-$aircraft_model = 'Beechcraft 1900D';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'avión regional de pasajeros'], __('aircraft.seo.description_template')),
-    'keywords' => 'beechcraft 1900d perú, avión regional, vuelos comerciales regionales, transporte pasajeros perú',
-    'og_image' => asset('img/aeronaves/aviones/Beechcraft1900D.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/beechcraft-1900d'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
 $h1_1_1 = 'Beechcraft';

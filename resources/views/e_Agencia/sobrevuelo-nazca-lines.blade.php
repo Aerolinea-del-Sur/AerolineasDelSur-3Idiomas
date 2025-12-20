@@ -1,16 +1,25 @@
+@php
+$tour_name = 'Líneas de Nazca';
+$seo = seo()
+    ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
+    ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+    ->keywords(['sobrevuelo lineas de nazca', 'tour aéreo cusco nazca', 'vuelo privado nazca', 'maria reiche'])
+    ->image(asset('img/sobrevuelos/nazca-lines-1.webp'))
+    ->canonical(url(app()->getLocale() . '/sobrevuelo-nazca-lines'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'TouristAttraction',
+        'name' => 'Sobrevuelo Líneas de Nazca'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Sobrevuelo Líneas de Nazca
-$tour_name = 'Líneas de Nazca';
-$seo = [
-    'title' => str_replace(':tour', $tour_name, __('tours.seo.title_template')),
-    'description' => str_replace(':tour', $tour_name, __('tours.seo.description_template')),
-    'keywords' => 'sobrevuelo lineas de nazca, tour aéreo cusco nazca, vuelo privado nazca, maria reiche',
-    'og_image' => asset('img/sobrevuelos/nazca-lines-1.webp'),
-    'canonical' => url(app()->getLocale() . '/sobrevuelo-nazca-lines'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 @section('content')
 
 <?php

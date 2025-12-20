@@ -1,16 +1,25 @@
+@php
+$aircraft_model = 'Challenger 300';
+$seo = seo()
+    ->title("$aircraft_model - Jet Privado | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet super mediano de 10 pasajeros, 870 km/h y 6,297 km de autonomía.")
+    ->keywords(['challenger 300 perú', 'bombardier 300', 'jet super mediano', 'vuelo ejecutivo internacional'])
+    ->image(asset('img/aeronaves/aviones/Challenger300.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/Challenger300'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Challenger 300',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Challenger 300
-$aircraft_model = 'Challenger 300';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet super mediano de 10 pasajeros, 870 km/h y 6,297 km de autonomía'], __('aircraft.seo.description_template')),
-    'keywords' => 'challenger 300 perú, bombardier 300, jet super mediano, vuelo ejecutivo internacional',
-    'og_image' => asset('img/aeronaves/aviones/Challenger300.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/Challenger300'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
 
 <?php
     $h1_1_1 = 'Challenger';

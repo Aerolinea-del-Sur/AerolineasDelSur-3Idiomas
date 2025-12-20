@@ -1,16 +1,25 @@
+@php
+$tour_name = 'Machu Picchu';
+$seo = seo()
+    ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
+    ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+    ->keywords(['tour machu picchu', 'excursión machu picchu', 'tour cusco machu picchu', 'viaje machu picchu'])
+    ->image(asset('img/tours/machu-picchu.jpg'))
+    ->canonical(url(app()->getLocale() . '/tour-machu-picchu'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'TouristAttraction',
+        'name' => 'Tour Machu Picchu'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Tour Machu Picchu
-$tour_name = 'Machu Picchu';
-$seo = [
-    'title' => str_replace(':tour', $tour_name, __('tours.seo.title_template')),
-    'description' => str_replace(':tour', $tour_name, __('tours.seo.description_template')),
-    'keywords' => 'tour machu picchu, excursión machu picchu 1 dia, tour cusco machu picchu, viaje machu picchu',
-    'og_image' => asset('img/tours/machu-picchu.jpg'),
-    'canonical' => url(app()->getLocale() . '/tour-machu-picchu'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 @section('content')
 
 <?php

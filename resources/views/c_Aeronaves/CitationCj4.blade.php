@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Citation CJ4';
+$seo = seo()
+    ->title("$aircraft_model - Jet Ejecutivo Ligero | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet ejecutivo ligero para 9 pasajeros con tecnología avanzada.")
+    ->keywords(['citation cj4 perú', 'cessna cj4', 'jet ejecutivo ligero', 'vuelo corporativo'])
+    ->image(asset('img/aeronaves/aviones/CitationCj4.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/CitationCj4'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Citation CJ4',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Citation CJ4
-$aircraft_model = 'Citation CJ4';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo ligero para 9 pasajeros con tecnología avanzada'], __('aircraft.seo.description_template')),
-    'keywords' => 'citation cj4 perú, cessna cj4, jet ejecutivo ligero, vuelo corporat ivo',
-    'og_image' => asset('img/aeronaves/aviones/CitationCj4.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/CitationCj4'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Citation';

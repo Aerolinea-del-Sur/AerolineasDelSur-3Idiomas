@@ -1,15 +1,23 @@
+@php
+$seo = seo()
+    ->title(__('home.seo.title', ['default' => 'Aerolínea del Sur | Vuelos Privados y Charter en Perú']))
+    ->description(__('home.hero.subtitle'))
+    ->keywords(['vuelos privados perú', 'charter cusco', 'helicóptero cusco', 'transporte aéreo médico perú', 'carga aérea', 'sobrevuelos valle sagrado'])
+    ->image(asset('img/portada-home.jpg'))
+    ->canonical(url(app()->getLocale()))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Organization',
+        'name' => 'Aerolínea del Sur',
+        'description' => 'Vuelos privados y charter en Perú'
+    ]);
+@endphp
+
 @extends ('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Inicio page
-$seo = [
-    'title' => __('home.seo.title', ['default' => 'Aerolínea del Sur | Vuelos Privados y Charter en Perú']),
-    'description' => __('home.hero.subtitle'),
-    'keywords' => 'vuelos privados perú, charter cusco, helicóptero cusco, transporte aéreo médico perú, carga aérea, sobrevuelos valle sagrado',
-    'og_image' => asset('img/portada-home.mp4'),
-    'canonical' => url(app()->getLocale()),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
 
 
 @section('content')

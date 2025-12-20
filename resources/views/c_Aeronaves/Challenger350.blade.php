@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Challenger 350';
+$seo = seo()
+    ->title("$aircraft_model - Jet Super Mediano de Lujo | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet super mediano de lujo para hasta 10 pasajeros con alcance intercontinental.")
+    ->keywords(['challenger 350 perú', 'bombardier 350', 'jet ejecutivo', 'vuelo internacional cusco'])
+    ->image(asset('img/aeronaves/aviones/Challenger350.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/Challenger350'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Challenger 350',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Challenger 350
-$aircraft_model = 'Challenger 350';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet super mediano de lujo para hasta 10 pasajeros'], __('aircraft.seo.description_template')),
-    'keywords' => 'challenger 350 perú, bombardier 350, jet ejecutivo, vuelo internacional cusco',
-    'og_image' => asset('img/aeronaves/aviones/Challenger350.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/Challenger350'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Challenger';

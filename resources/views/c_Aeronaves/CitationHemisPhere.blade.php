@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Citation Hemisphere';
+$seo = seo()
+    ->title("$aircraft_model - Nueva Generación | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet ejecutivo de nueva generación con alcance transcontinental.")
+    ->keywords(['citation hemisphere perú', 'cessna hemisphere', 'jet gran alcance', 'avión ejecutivo lujo'])
+    ->image(asset('img/aeronaves/aviones/CitationHemisPhere.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/CitationHemisPhere'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Citation Hemisphere',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Citation Hemisphere
-$aircraft_model = 'Citation Hemisphere';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo de nueva generación'], __('aircraft.seo.description_template')),
-    'keywords' => 'citation hemisphere perú, cessna hemisphere, jet gran alcance, avión ejecutivo lujo',
-    'og_image' => asset('img/aeronaves/aviones/CitationHemisPhere.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/CitationHemisPhere'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Citation';

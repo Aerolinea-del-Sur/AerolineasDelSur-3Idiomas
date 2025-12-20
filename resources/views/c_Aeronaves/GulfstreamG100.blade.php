@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Gulfstream G100';
+$seo = seo()
+    ->title("$aircraft_model - Jet Ejecutivo Lujo | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet ejecutivo de lujo con alcance transcontinental.")
+    ->keywords(['gulfstream g100 perú', 'jet ejecutivo lujo', 'vuelo privado internacional', 'avión corporativo'])
+    ->image(asset('img/aeronaves/aviones/Gulfstream-G100.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/GulfstreamG100'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Gulfstream G100',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Gulfstream G100
-$aircraft_model = 'Gulfstream G100';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo de lujo'], __('aircraft.seo.description_template')),
-    'keywords' => 'gulfstream g100 perú, jet ejecutivo lujo, vuelo privado internacional, avión corporativo',
-    'og_image' => asset('img/aeronaves/aviones/Gulfstream-G100.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/GulfstreamG100'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Gulfstream';

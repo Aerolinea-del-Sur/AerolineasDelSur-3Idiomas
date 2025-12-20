@@ -1,15 +1,24 @@
+@php
+$seo = seo()
+    ->title('Medios de Pago | Aerolínea del Sur - Opciones Seguras')
+    ->description('Métodos de pago seguros para reservar tu vuelo privado: tarjetas de crédito, transferencias bancarias, PayPal y más. Pagos protegidos 100%.')
+    ->keywords(['medios pago aerolínea', 'pago seguro vuelos', 'métodos pago perú'])
+    ->image(asset('img/logo.svg'))
+    ->canonical(url(app()->getLocale() . '/medios-pago'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'WebPage',
+        'name' => 'Métodos de Pago',
+        'description' => 'Opciones seguras de pago para servicios de vuelo privado'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Medios de Pago
-$seo = [
-    'title' => 'Medios de Pago | Aerolínea del Sur - Opciones Seguras',
-    'description' => 'Métodos de pago seguros para reservar tu vuelo privado: tarjetas de crédito, transferencias bancarias, PayPal y más. Pagos protegidos 100%.',
-    'keywords' => 'medios pago aerolínea, pago seguro vuelos, métodos pago perú',
-    'og_image' => asset('img/logo.svg'),
-    'canonical' => url(app()->getLocale() . '/medios-pago'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
 @section('content')
 <link rel="stylesheet" href="{{ asset('public/css/footer/pagos.css') }}">
 

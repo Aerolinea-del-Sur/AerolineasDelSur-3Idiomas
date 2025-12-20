@@ -1,14 +1,24 @@
+@php
+$seo = seo()
+    ->title('Política de Cookies - Aerolínea del Sur')
+    ->description('Conoce cómo utilizamos las cookies en nuestro sitio web para mejorar tu experiencia de navegación y cumplir con GDPR.')
+    ->keywords(['política de cookies', 'cookies', 'privacidad', 'datos', 'GDPR'])
+    ->image(asset('img/logo-aerolinea-del-sur.jpg'))
+    ->canonical(url(app()->getLocale() . '/politica-de-cookies'))
+    ->author('Aerolínea del Sur')
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'WebPage',
+        'name' => 'Política de Cookies',
+        'description' => 'Información sobre el uso de cookies'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-$seo = [
-    'title' => 'Política de Cookies - Aerolínea del Sur',
-    'description' => 'Conoce cómo utilizamos las cookies en nuestro sitio web para mejorar tu experiencia de navegación.',
-    'keywords' => 'política de cookies, cookies, privacidad, datos',
-    'og_image' => asset('img/logo-aerolinea-del-sur.jpg'),
-    'canonical' => url(app()->getLocale() . '/politica-de-cookies'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
 
 @section('content')
 <link rel="stylesheet" href="{{ asset('css/paginas/footer/footer.css') }}">

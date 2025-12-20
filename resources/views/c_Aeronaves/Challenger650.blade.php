@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Challenger 650';
+$seo = seo()
+    ->title("$aircraft_model - Cabina Ampliada | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet ejecutivo premium con cabina ampliada para 12 pasajeros.")
+    ->keywords(['challenger 650 perú', 'bombardier 650', 'jet ejecutivo premium', 'vuelo internacional'])
+    ->image(asset('img/aeronaves/aviones/Challenger650.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/Challenger650'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Challenger 650',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Challenger 650
-$aircraft_model = 'Challenger 650';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo premium con cabina ampliada para 12 pasajeros'], __('aircraft.seo.description_template')),
-    'keywords' => 'challenger 650 perú, bombardier 650, jet ejecutivo premium, vuelo internacional',
-    'og_image' => asset('img/aeronaves/aviones/Challenger650.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/Challenger650'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Challenger';

@@ -1,16 +1,25 @@
+@php
+$tour_name = 'Vinicunca Elite';
+$seo = seo()
+    ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
+    ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+    ->keywords(['tour vinicunca elite', 'rainbow mountain vip', 'tour privado vinicunca', 'excursión premium cusco'])
+    ->image(asset('img/tours/vinicunca-elite.jpg'))
+    ->canonical(url(app()->getLocale() . '/tour-vinicunca-elite'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'TouristAttraction',
+        'name' => 'Tour Vinicunca Elite'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Tour Vinicunca Elite
-$tour_name = 'Vinicunca Elite';
-$seo = [
-    'title' => str_replace(':tour', $tour_name, __('tours.seo.title_template')),
-    'description' => str_replace(':tour', $tour_name, __('tours.seo.description_template')),
-    'keywords' => 'tour vinicunca elite, rainbow mountain vip, tour privado vinicunca, excursión premium cusco',
-    'og_image' => asset('img/tours/vinicunca-elite.jpg'),
-    'canonical' => url(app()->getLocale() . '/tour-vinicunca-elite'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 @section('content')
 
 <?php

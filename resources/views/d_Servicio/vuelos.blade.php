@@ -1,15 +1,17 @@
+@php
+$seo = seo()
+    ->title(__('services.flights.seo.title'))
+    ->description(__('services.flights.seo.description'))
+    ->keywords(['vuelos charter perú', 'vuelos privados cusco', 'alquiler avión privado perú', 'charter ejecutivo', 'vuelos negocios cusco'])
+    ->image(asset('img/vuelos-privados-peru.jpg'))
+    ->canonical(url(app()->getLocale() . '/vuelos'));
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Vuelos page
-$seo = [
-    'title' => __('services.flights.seo.title'),
-    'description' => __('services.flights.seo.description'),
-    'keywords' => 'vuelos charter perú, vuelos privados cusco, alquiler avión privado perú, charter ejecutivo, vuelos negocios cusco',
-    'og_image' => asset('img/vuelos-privados-peru.jpg'),
-    'canonical' => url(app()->getLocale() . '/vuelos'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
 
 <!-- FAQ Schema for Rich Snippets -->
 <script type="application/ld+json">

@@ -1,15 +1,23 @@
+@php
+$seo = seo()
+    ->title(__('about.seo.title'))
+    ->description(__('about.seo.description'))
+    ->keywords(['aerolínea peruana', 'aviación cusco', 'empresa aérea perú', 'vuelos seguros perú', 'historia aerolínea del sur'])
+    ->image(asset('img/nosotros-aerolinea-sur.jpg'))
+    ->canonical(url(app()->getLocale() . '/nosotros'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'AboutPage',
+        'name' => 'Sobre Nosotros',
+        'description' => 'Historia y valores de Aerolínea del Sur'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Nosotros page
-$seo = [
-    'title' => __('about.seo.title'),
-    'description' => __('about.seo.description'),
-    'keywords' => 'aerolínea peruana, aviación cusco, empresa aérea perú, vuelos seguros perú, historia aerolínea del sur',
-    'og_image' => asset('img/nosotros-aerolinea-sur.jpg'),
-    'canonical' => url(app()->getLocale() . '/nosotros'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
 
 @section('content')
     <?php

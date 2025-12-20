@@ -1,16 +1,25 @@
+@php
+$aircraft_model = 'King Air B200';
+$seo = seo()
+    ->title("$aircraft_model - Turbohélice Ejecutivo | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un avión turbohélice ejecutivo de 10 pasajeros.")
+    ->keywords(['king air b200 perú', 'beechcraft b200 cusco', 'avión ejecutivo turbohélice', 'vuelos corporativos perú'])
+    ->image(asset('img/aeronaves/aviones/Air-King-B200.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/KingAirB200'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'King Air B200',
+        'category' => 'Turboprop Aircraft'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for King Air B200
-$aircraft_model = 'King Air B200';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'avión turbohélice ejecutivo de 10 pasajeros'], __('aircraft.seo.description_template')),
-    'keywords' => 'king air b200 perú, beechcraft b200 cusco, avión ejecutivo turbohélice, vuelos corporativos perú',
-    'og_image' => asset('img/aeronaves/aviones/Air-King-B200.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/KingAirB200'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
 
 <?php
     $h1_1_1 = 'KING AIR';

@@ -1,14 +1,17 @@
-@extends('a_EncabezadoFooter.princi')
 @php
-// Custom SEO for Agencia page
-$seo = [
-    'title' => __('services.agency.seo.title'),
-    'description' => __('services.agency.seo.description'),
-    'keywords' => 'tours aéreos cusco, sobrevuelo machu picchu, tour vinicunca, valle sagrado sobrevuelo, agencia tours cusco, tours tradicionales perú',
-    'og_image' => asset('img/tours-aereos-cusco.jpg'),
-    'canonical' => url(app()->getLocale() . '/agencia'),
-];
+$seo = seo()
+    ->title(__('services.agency.seo.title'))
+    ->description(__('services.agency.seo.description'))
+    ->keywords(['tours aéreos cusco', 'sobrevuelo machu picchu', 'tour vinicunca', 'valle sagrado sobrevuelo', 'agencia tours cusco', 'tours tradicionales perú'])
+    ->image(asset('img/tours-aereos-cusco.jpg'))
+    ->canonical(url(app()->getLocale() . '/agencia'));
 @endphp
+
+@extends('a_EncabezadoFooter.princi')
+
+@push('seo')
+    {!! $seo !!}
+@endpush
 
 
 @section('content')

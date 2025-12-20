@@ -1,15 +1,25 @@
+@php
+$seo = seo()
+    ->title('Nuestra Flota de Aeronaves | Jets Privados y Helicópteros en Perú')
+    ->description('Conozca nuestra moderna flota de aeronaves premium: jets privados Citation, Challenger, Gulfstream, King Air y helicópteros certificados para vuelos seguros en Perú.')
+    ->keywords(['flota aeronaves perú', 'jets privados cusco', 'citation perú', 'challenger perú', 'gulfstream cusco', 'king air perú'])
+    ->image(asset('img/flota-aeronaves.jpg'))
+    ->canonical(url('/aeronaves'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'ItemList',
+        'name' => 'Flota de Aeronaves',
+        'description' => 'Jets privados y helicópteros premium'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Aeronaves page
-$seo = [
-    'title' => 'Nuestra Flota de Aeronaves | Jets Privados y Helicópteros en Perú',
-    'description' => 'Conozca nuestra moderna flota de aeronaves premium: jets privados Citation, Challenger, Gulfstream, King Air y helicópteros certificados para vuelos seguros en Perú.',
-    'keywords' => 'flota aeronaves perú, jets privados cusco, citation perú, challenger perú, gulfstream cusco, king air perú',
-    'og_image' => asset('img/flota-aeronaves.jpg'),
-    'canonical' => url('/aeronaves'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 @section('content')
 <?php

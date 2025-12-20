@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Challenger 605';
+$seo = seo()
+    ->title("$aircraft_model - Alto Rendimiento | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet ejecutivo de alto rendimiento para 12 pasajeros.")
+    ->keywords(['challenger 605 perú', 'bombardier 605', 'jet ejecutivo', 'vuelo corporativo'])
+    ->image(asset('img/aeronaves/aviones/Challenger605.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/Challenger605'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Challenger 605',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Challenger 605
-$aircraft_model = 'Challenger 605';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo de alto rendimiento para 12 pasajeros'], __('aircraft.seo.description_template')),
-    'keywords' => 'challenger 605 perú, bombardier 605, jet ejecutivo, vuelo corporativo',
-    'og_image' => asset('img/aeronaves/aviones/Challenger605.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/Challenger605'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Challenger';

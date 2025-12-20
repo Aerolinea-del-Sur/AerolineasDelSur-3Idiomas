@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Citation 550 Bravo';
+$seo = seo()
+    ->title("$aircraft_model - Jet Ejecutivo Ligero | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet ejecutivo ligero para 8 pasajeros con tecnología avanzada.")
+    ->keywords(['citation 550 bravo perú', 'cessna bravo', 'jet ejecutivo ligero', 'vuelo corporativo'])
+    ->image(asset('img/aeronaves/aviones/Citation550Bravo.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/Citation550Bravo'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Citation 550 Bravo',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Citation 550 Bravo
-$aircraft_model = 'Citation 550 Bravo';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo ligero para 8 pasajeros con tecnología avanzada'], __('aircraft.seo.description_template')),
-    'keywords' => 'citation 550 bravo perú, cessna bravo, jet ejecutivo ligero, vuelo corporativo',
-    'og_image' => asset('img/aeronaves/aviones/Citation550Bravo.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/Citation550Bravo'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Citation 550';

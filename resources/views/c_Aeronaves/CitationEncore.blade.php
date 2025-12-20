@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Citation Encore';
+$seo = seo()
+    ->title("$aircraft_model - Jet Ejecutivo Confiable | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet ejecutivo para 8 pasajeros con confiabilidad excepcional.")
+    ->keywords(['citation encore perú', 'cessna encore', 'jet ejecutivo', 'vuelo corporativo'])
+    ->image(asset('img/aeronaves/aviones/CitationEncore.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/CitationEncore'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Citation Encore',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Citation Encore
-$aircraft_model = 'Citation Encore';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo para 8 pasajeros con confiabilidad excepcional'], __('aircraft.seo.description_template')),
-    'keywords' => 'citation encore perú, cessna encore, jet ejecutivo, vuelo corporativo',
-    'og_image' => asset('img/aeronaves/aviones/CitationEncore.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/CitationEncore'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Citation';

@@ -1,15 +1,24 @@
+@php
+$seo = seo()
+    ->title(__('legal.terms.seo_title'))
+    ->description(__('legal.terms.seo_description'))
+    ->keywords(['términos condiciones aerolínea', 'política cancelación', 'condiciones uso'])
+    ->image(asset('img/logo.svg'))
+    ->canonical(url(app()->getLocale() . '/terminos-condiciones'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'WebPage',
+        'name' => 'Términos y Condiciones',
+        'description' => 'Términos y condiciones de servicio de Aerolínea del Sur'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Terms and Conditions
-$seo = [
-    'title' => __('legal.terms.seo_title'),
-    'description' => __('legal.terms.seo_description'),
-    'keywords' => 'términos condiciones aerolínea, política cancelación, condiciones uso',
-    'og_image' => asset('img/logo.svg'),
-    'canonical' => url(app()->getLocale() . '/terminos-condiciones'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
 @section('content')
 <link rel="stylesheet" href="{{ asset('public/css/footer/terminos.css') }}">
 

@@ -1,15 +1,18 @@
+@php
+$seo = seo()
+    ->title(__('services.helicopter.seo.title'))
+    ->description(__('services.helicopter.seo.description'))
+    ->keywords(['helicóptero cusco', 'sobrevuelo valle sagrado', 'transporte helicóptero perú', 'tour helicóptero machu picchu', 'vuelos panorámicos cusco'])
+    ->image(asset('img/helicoptero-cusco.jpg'))
+    ->canonical(url(app()->getLocale() . '/helicopteros'));
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Helicopteros page
-$seo = [
-    'title' => __('services.helicopter.seo.title'),
-    'description' => __('services.helicopter.seo.description'),
-    'keywords' => 'helicóptero cusco, sobrevuelo valle sagrado, transporte helicóptero perú, tour helicóptero machu picchu, vuelos panorámicos cusco',
-    'og_image' => asset('img/helicoptero-cusco.jpg'),
-    'canonical' => url(app()->getLocale() . '/helicopteros'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
 
 <!-- FAQ Schema for Rich Snippets -->
 <script type="application/ld+json">

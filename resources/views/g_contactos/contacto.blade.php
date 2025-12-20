@@ -1,15 +1,19 @@
+@php
+$seo = seo()
+    ->title(__('contact.seo.title'))
+    ->description(__('contact.seo.description'))
+    ->keywords(['contacto aerolínea del sur', 'reservar vuelo privado perú', 'cotización vuelo charter', 'oficina cusco'])
+    ->image(asset('img/contacto/oficina-cusco.jpg'))
+    ->canonical(url(app()->getLocale() . '/contacto'));
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Contact page
-$seo = [
-    'title' => __('contact.seo.title'),
-    'description' => __('contact.seo.description'),
-    'keywords' => 'contacto aerolínea del sur, reservar vuelo privado perú, cotización vuelo charter, oficina cusco',
-    'og_image' => asset('img/contacto/oficina-cusco.jpg'),
-    'canonical' => url(app()->getLocale() . '/contacto'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 @section('content')
 <?php
     // Variables de contenido

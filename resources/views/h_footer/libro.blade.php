@@ -1,15 +1,24 @@
+@php
+$seo = seo()
+    ->title(__('legal.complaints_book.seo_title'))
+    ->description(__('legal.complaints_book.seo_description'))
+    ->keywords(['libro reclamaciones perú', 'reclamos aerolínea', 'quejas servicios aéreos'])
+    ->image(asset('img/logo.svg'))
+    ->canonical(url(app()->getLocale() . '/libro-reclamaciones'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'WebPage',
+        'name' => 'Libro de Reclamaciones',
+        'description' => 'Formulario oficial de libro de reclamaciones conforme a normativa peruana'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Libro de Reclamaciones
-$seo = [
-    'title' => __('legal.complaints_book.seo_title'),
-    'description' => __('legal.complaints_book.seo_description'),
-    'keywords' => 'libro reclamaciones perú, reclamos aerolínea, quejas servicios aéreos',
-    'og_image' => asset('img/logo.svg'),
-    'canonical' => url(app()->getLocale() . '/libro-reclamaciones'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
 @section('content')
     <link rel="stylesheet" href="{{ asset('public/css/footer/libro.css') }}">
 <!-- Agregar jsPDF desde CDN -->

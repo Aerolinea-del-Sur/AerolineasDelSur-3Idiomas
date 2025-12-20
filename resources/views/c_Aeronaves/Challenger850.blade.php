@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Challenger 850';
+$seo = seo()
+    ->title("$aircraft_model - Jet Gran Capacidad | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet de gran capacidad para 16 pasajeros con alcance transcontinental.")
+    ->keywords(['challenger 850 perú', 'bombardier 850', 'jet gran capacidad', 'vuelo corporativo'])
+    ->image(asset('img/aeronaves/aviones/Challenger850.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/Challenger850'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Challenger 850',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Challenger 850
-$aircraft_model = 'Challenger 850';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet de gran capacidad para 16 pasajeros con alcance transcontinental'], __('aircraft.seo.description_template')),
-    'keywords' => 'challenger 850 perú, bombardier 850, jet gran capacidad, vuelo corporativo',
-    'og_image' => asset('img/aeronaves/aviones/Challenger850.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/Challenger850'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Challenger';

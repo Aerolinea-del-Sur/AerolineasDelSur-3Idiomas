@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Phenom 300';
+$seo = seo()
+    ->title("$aircraft_model - Jet Mediano Premium | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet ejecutivo mediano líder en su clase con tecnología avanzada.")
+    ->keywords(['phenom 300 perú', 'embraer 300', 'jet ejecutivo mediano', 'vuelo privado largo alcance'])
+    ->image(asset('img/aeronaves/aviones/Phenom300.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/Phenom300'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Phenom 300',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Phenom 300
-$aircraft_model = 'Phenom 300';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ejecutivo mediano premium'], __('aircraft.seo.description_template')),
-    'keywords' => 'phenom 300 perú, embraer 300, jet ejecutivo mediano, vuelo privado largo alcance',
-    'og_image' => asset('img/aeronaves/aviones/Phenom300.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/Phenom300'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Phenom';

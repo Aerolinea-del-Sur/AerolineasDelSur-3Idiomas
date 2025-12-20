@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Ecureuil B3';
+$seo = seo()
+    ->title("$aircraft_model - Helicóptero Alta Montaña | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un helicóptero ligero especializado en operaciones de alta montaña.")
+    ->keywords(['ecureuil b3 perú', 'helicóptero alta montaña', 'eurocopter cusco', 'sobrevuelos cusco'])
+    ->image(asset('img/aeronaves/aviones/Ecureuil-b3.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/Ecureuil-b3'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Ecureuil B3',
+        'category' => 'Helicopter'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Ecureuil B3
-$aircraft_model = 'Ecureuil B3';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'helicóptero ligero alta montaña'], __('aircraft.seo.description_template')),
-    'keywords' => 'ecureuil b3 perú, helicóptero alta montaña, eurocopter cusco, sobrevuelos cusco',
-    'og_image' => asset('img/aeronaves/aviones/Ecureuil-b3.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/Ecureuil-b3'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Ecureuil';

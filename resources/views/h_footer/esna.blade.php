@@ -1,15 +1,24 @@
+@php
+$seo = seo()
+    ->title('Registro ESNA | Información Fiscal Aerolínea del Sur')
+    ->description('Información de registro ESNA y datos fiscales de Aerolínea del Sur. Transparencia y cumplimiento normativo en Perú.')
+    ->keywords(['registro esna perú', 'datos fiscales aerolínea', 'información tributaria'])
+    ->image(asset('img/logo.svg'))
+    ->canonical(url(app()->getLocale() . '/esna'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'WebPage',
+        'name' => 'Código ESNA',
+        'description' => 'Compromiso contra la explotación sexual de niñas, niños y adolescentes'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for ESNA
-$seo = [
-    'title' => 'Registro ESNA | Información Fiscal Aerolínea del Sur',
-    'description' => 'Información de registro ESNA y datos fiscales de Aerolínea del Sur. Transparencia y cumplimiento normativo en Perú.',
-    'keywords' => 'registro esna perú, datos fiscales aerolínea, información tributaria',
-    'og_image' => asset('img/logo.svg'),
-    'canonical' => url(app()->getLocale() . '/esna'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
 @section('content')
 <link rel="stylesheet" href="{{ asset('public/css/footer/esna.css') }}">
 

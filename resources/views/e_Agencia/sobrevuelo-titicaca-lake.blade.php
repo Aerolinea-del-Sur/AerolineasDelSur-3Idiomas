@@ -1,16 +1,25 @@
+@php
+$tour_name = 'Lago Titicaca';
+$seo = seo()
+    ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
+    ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+    ->keywords(['sobrevuelo lago titicaca', 'tour aéreo cusco', 'vuelo cusco lago titicaca'])
+    ->image(asset('img/sobrevuelos/titicaca-lake-1.webp'))
+    ->canonical(url(app()->getLocale() . '/sobrevuelo-titicaca-lake'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'TouristAttraction',
+        'name' => 'Sobrevuelo Lago Titicaca'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Sobrevuelo Lago Titicaca
-$tour_name = 'Lago Titicaca';
-$seo = [
-    'title' => str_replace(':tour', $tour_name, __('tours.seo.title_template')),
-    'description' => str_replace(':tour', $tour_name, __('tours.seo.description_template')),
-    'keywords' => 'sobrevuelo lago titicaca, tour aéreo cusco, vuelo cusco lago titicaca',
-    'og_image' => asset('img/sobrevuelos/titicaca-lake-1.webp'),
-    'canonical' => url(app()->getLocale() . '/sobrevuelo-titicaca-lake'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 @section('content')
 
 <?php

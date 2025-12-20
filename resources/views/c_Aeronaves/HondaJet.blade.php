@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'HondaJet';
+$seo = seo()
+    ->title("$aircraft_model - Jet Ligero Innovador | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un jet ligero innovador con tecnología de motores sobre el ala.")
+    ->keywords(['hondajet perú', 'jet ligero ejecutivo', 'avión honda', 'vuelo privado eficiente'])
+    ->image(asset('img/aeronaves/aviones/HondaJet.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/HondaJet'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'HondaJet',
+        'category' => 'Business Jet'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for HondaJet
-$aircraft_model = 'HondaJet';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'jet ligero de lujo y tecnología'], __('aircraft.seo.description_template')),
-    'keywords' => 'hondajet perú, jet ligero ejecutivo, avión honda, vuelo privado eficiente',
-    'og_image' => asset('img/aeronaves/aviones/HondaJet.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/HondaJet'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Honda';

@@ -1,15 +1,18 @@
+@php
+$seo = seo()
+    ->title(__('services.cargo.seo.title'))
+    ->description(__('services.cargo.seo.description'))
+    ->keywords(['carga aérea perú', 'transporte urgente aéreo', 'envío helicóptero', 'carga pesada perú', 'logística aérea cusco'])
+    ->image(asset('img/carga-aerea-peru.jpg'))
+    ->canonical(url(app()->getLocale() . '/carga'));
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Carga page
-$seo = [
-    'title' => __('services.cargo.seo.title'),
-    'description' => __('services.cargo.seo.description'),
-    'keywords' => 'carga aérea perú, transporte urgente aéreo, envío helicóptero, carga pesada perú, logística aérea cusco',
-    'og_image' => asset('img/carga-aerea-peru.jpg'),
-    'canonical' => url(app()->getLocale() . '/carga'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
 
 <!-- FAQ Schema for Rich Snippets -->
 <script type="application/ld+json">

@@ -1,15 +1,17 @@
+@php
+$seo = seo()
+    ->title(__('services.aeromedical.seo.title'))
+    ->description(__('services.aeromedical.seo.description'))
+    ->keywords(['ambulancia aérea perú', 'transporte médico aéreo', 'evacuación médica cusco', 'traslado aéreo pacientes', 'servicio aeromédico'])
+    ->image(asset('img/servicio-aeromedico.jpg'))
+    ->canonical(url(app()->getLocale() . '/aeromedico'));
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Medico page
-$seo = [
-    'title' => __('services.aeromedical.seo.title'),
-    'description' => __('services.aeromedical.seo.description'),
-    'keywords' => 'ambulancia aérea perú, transporte médico aéreo, evacuación médica cusco, traslado aéreo pacientes, servicio aeromédico',
-    'og_image' => asset('img/servicio-aeromedico.jpg'),
-    'canonical' => url(app()->getLocale() . '/aeromedico'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
 
 <!-- FAQ Schema for Rich Snippets -->
 <script type="application/ld+json">

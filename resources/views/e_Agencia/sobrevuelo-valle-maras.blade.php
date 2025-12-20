@@ -1,16 +1,25 @@
+@php
+$tour_name = 'Valle Sagrado y Maras';
+$seo = seo()
+    ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
+    ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+    ->keywords(['sobrevuelo valle sagrado', 'tour aéreo maras', 'helicóptero cusco valle sagrado', 'sobrevuelo moray'])
+    ->image(asset('img/tours/sobrevuelo-valle-maras.jpg'))
+    ->canonical(url(app()->getLocale() . '/sobrevuelo-valle-maras'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'TouristAttraction',
+        'name' => 'Sobrevuelo Valle Sagrado y Maras'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Sobrevuelo Valle Maras
-$tour_name = 'Valle Sagrado y Maras';
-$seo = [
-    'title' => str_replace(':tour', $tour_name, __('tours.seo.title_template')),
-    'description' => str_replace(':tour', $tour_name, __('tours.seo.description_template')),
-    'keywords' => 'sobrevuelo valle sagrado, tour aéreo maras, helicóptero cusco valle sagrado, sobrevuelo moray',
-    'og_image' => asset('img/tours/sobrevuelo-valle-maras.jpg'),
-    'canonical' => url(app()->getLocale() . '/sobrevuelo-valle-maras'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 @section('content')
 
 <?php

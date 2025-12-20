@@ -1,15 +1,17 @@
+@php
+$seo = seo()
+    ->title(__('services.main.seo.title'))
+    ->description(__('services.main.seo.description'))
+    ->keywords(['servicios aviación perú', 'vuelos charter cusco', 'transporte aéreo perú', 'servicios helicóptero', 'aviación ejecutiva'])
+    ->image(asset('img/servicios-aviacion.jpg'))
+    ->canonical(url(app()->getLocale() . '/servicio'));
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Servicio page
-$seo = [
-    'title' => __('services.main.seo.title'),
-    'description' => __('services.main.seo.description'),
-    'keywords' => 'servicios aviación perú, vuelos charter cusco, transporte aéreo perú, servicios helicóptero, aviación ejecutiva',
-    'og_image' => asset('img/servicios-aviacion.jpg'),
-    'canonical' => url(app()->getLocale() . '/servicio'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
 
 @section('content')
 <?php

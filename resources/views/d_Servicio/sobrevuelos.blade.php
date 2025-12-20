@@ -1,15 +1,17 @@
+@php
+$seo = seo()
+    ->title(__('services.overflights.seo.title'))
+    ->description(__('services.overflights.seo.description'))
+    ->keywords(['sobrevuelos cusco', 'tour aéreo valle sagrado', 'sobrevuelo vinicunca', 'montaña 7 colores helicóptero', 'machu picchu helicóptero', 'tours aéreos perú'])
+    ->image(asset('img/sobrevuelos-cusco.jpg'))
+    ->canonical(url(app()->getLocale() . '/sobrevuelos'));
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Sobrevuelos page
-$seo = [
-    'title' => __('services.overflights.seo.title'),
-    'description' => __('services.overflights.seo.description'),
-    'keywords' => 'sobrevuelos cusco, tour aéreo valle sagrado, sobrevuelo vinicunca, montaña 7 colores helicóptero, machu picchu helicóptero, tours aéreos perú',
-    'og_image' => asset('img/sobrevuelos-cusco.jpg'),
-    'canonical' => url(app()->getLocale() . '/sobrevuelos'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
 
 @section('content')
 <?php

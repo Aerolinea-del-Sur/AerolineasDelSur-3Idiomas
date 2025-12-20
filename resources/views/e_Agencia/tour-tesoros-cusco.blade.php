@@ -1,16 +1,25 @@
+@php
+$tour_name = 'Tesoros de Cusco';
+$seo = seo()
+    ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
+    ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+    ->keywords(['tour tesoros cusco', 'city tour cusco', 'sacsayhuaman tour', 'ruinas incas cusco', 'tour arqueológico'])
+    ->image(asset('img/tours/tesoros-cusco.jpg'))
+    ->canonical(url(app()->getLocale() . '/tour-tesoros-cusco'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'TouristAttraction',
+        'name' => 'Tour Tesoros de Cusco'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Tour Tesoros de Cusco
-$tour_name = 'Tesoros de Cusco';
-$seo = [
-    'title' => str_replace(':tour', $tour_name, __('tours.seo.title_template')),
-    'description' => str_replace(':tour', $tour_name, __('tours.seo.description_template')),
-    'keywords' => 'tour tesoros cusco, city tour cusco, sacsayhuaman tour, ruinas incas cusco, tour arqueológico',
-    'og_image' => asset('img/tours/tesoros-cusco.jpg'),
-    'canonical' => url(app()->getLocale() . '/tour-tesoros-cusco'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 @section('content')
 
 <?php

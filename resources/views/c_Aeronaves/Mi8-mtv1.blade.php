@@ -1,16 +1,26 @@
+@php
+$aircraft_model = 'Mi-8 MTV-1';
+$seo = seo()
+    ->title("$aircraft_model - Helicóptero de Transporte | Aerolíneas del Sur")
+    ->description("El $aircraft_model es un helicóptero multifunción ideal para transporte pesado y zonas remotas.")
+    ->keywords(['mi-8 mtv-1 perú', 'helicóptero mi8', 'transporte aéreo pesado', 'rescate helicóptero perú'])
+    ->image(asset('img/aeronaves/aviones/Mi8-mtv1.webp'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/Mi8-mtv1'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => 'Mi-8 MTV-1',
+        'category' => 'Helicopter'
+    ]);
+@endphp
+
 @extends('a_EncabezadoFooter.princi')
 
-@php
-// Custom SEO for Mi-8 MTV-1
-$aircraft_model = 'Mi-8 MTV-1';
-$seo = [
-    'title' => str_replace(':model', $aircraft_model, __('aircraft.seo.title_template')),
-    'description' => str_replace([':model', ':description'], [$aircraft_model, 'transporte multifunción'], __('aircraft.seo.description_template')),
-    'keywords' => 'mi-8 mtv-1 perú, helicóptero mi8, transporte aéreo pesado, rescate helicóptero perú',
-    'og_image' => asset('img/aeronaves/aviones/Mi8-mtv1.webp'),
-    'canonical' => url(app()->getLocale() . '/aeronaves/Mi8-mtv1'),
-];
-@endphp
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+
 
 <?php
     $h1_1_1 = 'Mi 8';
