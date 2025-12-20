@@ -46,7 +46,7 @@
 # ====================================================================================================================================
 
 User-agent: *          # Se aplica a TODOS los motores de búsqueda (Google, Bing, etc.)
-Disallow: *            # BLOQUEA todo el sitio web. No permite indexar NINGUNA página
+allow: /           # BLOQUEA todo el sitio web. No permite indexar NINGUNA página
 
 # ====================================================================================================================================
 # 🕒 Crawl control (controla frecuencia de rastreo) - EVITAR SOBRECARGA DEL SERVIDOR EN DESARROLLO
