@@ -34,7 +34,7 @@
 
     $h2_1 = 'Mantente informado';
     $p_7 = 'Suscríbete a nuestro newsletter y recibe las últimas noticias, ofertas especiales y consejos de viaje directamente en tu correo.';
-                    ?>
+                        ?>
     <link rel="stylesheet" href="{{ asset('public/css/paginas/blog/blog.css') }}">
 
     <!-- Hero Section -->
@@ -105,7 +105,7 @@
                         </div>
                         <h3 class="article-title"><?= $h3_1 ?></h3>
                         <p class="article-excerpt"><?= $p_2 ?></p>
-                        <a href="{{ route('blog.vuelos-peru') }}" class="article-link">
+                        <a href="{{ route('blog.vuelos-peru', ['locale' => app()->getLocale()]) }}" class="article-link">
                             Leer más
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -218,33 +218,33 @@
             </div>
 
             <!-- Botón Cargar Más 
-                                <div class="load-more-section">
-                                    <button class="btn-primary load-more-btn">
-                                        <span>Cargar más artículos</span>
-                                    </button>
-                                </div>-->
+                                    <div class="load-more-section">
+                                        <button class="btn-primary load-more-btn">
+                                            <span>Cargar más artículos</span>
+                                        </button>
+                                    </div>-->
         </div>
     </section>
 
     <!-- Newsletter Section 
-                        <section class="newsletter-section">
-                            <div class="container">
-                                <div class="newsletter-content">
-                                    <div class="newsletter-text">
-                                        <h2><?= $h2_1 ?></h2>
-                                        <p><?= $p_7 ?></p>
-                                    </div>
-                                    <div class="newsletter-form">
-                                        <form class="newsletter-form-container">
-                                            <input type="email" placeholder="Tu correo electrónico" required>
-                                            <button type="submit" class="btn-primary">
-                                                <span>Suscribirse</span>
-                                            </button>
-                                        </form>
+                            <section class="newsletter-section">
+                                <div class="container">
+                                    <div class="newsletter-content">
+                                        <div class="newsletter-text">
+                                            <h2><?= $h2_1 ?></h2>
+                                            <p><?= $p_7 ?></p>
+                                        </div>
+                                        <div class="newsletter-form">
+                                            <form class="newsletter-form-container">
+                                                <input type="email" placeholder="Tu correo electrónico" required>
+                                                <button type="submit" class="btn-primary">
+                                                    <span>Suscribirse</span>
+                                                </button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </section> -->
+                            </section> -->
 
     <script>
         // Filtros de categorías

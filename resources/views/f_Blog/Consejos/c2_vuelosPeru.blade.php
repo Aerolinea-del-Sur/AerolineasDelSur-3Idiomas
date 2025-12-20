@@ -7,7 +7,7 @@
         'description' => 'Descubre cómo Aerolínea del Sur transforma el viaje aéreo en Perú con vuelos charter, sobrevuelos turísticos y transporte de carga.',
         'keywords' => 'vuelos peru, aerolinea del sur, charter peru, sobrevuelos nazca, carga aerea peru, ambulancia aerea',
         'og_image' => asset('img/blog/aerolinea-sur-experience.jpg'), // Placeholder
-        'canonical' => url('/blog/consejos/experiencia-aerolinea-sur'),
+        'canonical' => url(app()->getLocale() . '/blog/Vuelos-Peru'),
     ];
 @endphp
 
@@ -15,28 +15,28 @@
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "headline": "Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur",
-          "description": "En el vasto y complejo territorio peruano, Aerolínea del Sur se erige como una opción para surcar los cielos peruanos con exclusividad.",
-          "image": "https://www.aerolineadelsur.com/public/img/blog/aerolinea-sur-experience.jpg",
-          "author": {
-            "@type": "Organization",
-            "name": "Aerolínea del Sur"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Aerolínea del Sur",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://www.aerolineadelsur.com/public/img/logo.webp"
-            }
-          },
-          "datePublished": "2025-12-20",
-          "dateModified": "2025-12-20"
-        }
-        </script>
+                {
+                  "@context": "https://schema.org",
+                  "@type": "Article",
+                  "headline": "Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur",
+                  "description": "En el vasto y complejo territorio peruano, Aerolínea del Sur se erige como una opción para surcar los cielos peruanos con exclusividad.",
+                  "image": "https://www.aerolineadelsur.com/public/img/blog/aerolinea-sur-experience.jpg",
+                  "author": {
+                    "@type": "Organization",
+                    "name": "Aerolínea del Sur"
+                  },
+                  "publisher": {
+                    "@type": "Organization",
+                    "name": "Aerolínea del Sur",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://www.aerolineadelsur.com/public/img/logo.webp"
+                    }
+                  },
+                  "datePublished": "2025-12-20",
+                  "dateModified": "2025-12-20"
+                }
+                </script>
 
     <!-- CSS del blog -->
     <link rel="stylesheet" href="{{ asset('public/css/paginas/blog/blog.css') }}">
@@ -51,9 +51,10 @@
 
     <!-- Breadcrumbs -->
     <nav class="breadcrumbs" aria-label="Breadcrumb" style="max-width:1200px; margin:0 auto; padding:2rem 2rem 0;">
-        <a href="/" style="color:#c9a227; text-decoration:none;">Inicio</a>
+        <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"
+            style="color:#c9a227; text-decoration:none;">Inicio</a>
         <span style="color:#666; margin:0 0.5rem;">/</span>
-        <a href="/destinos" style="color:#c9a227; text-decoration:none;">Blog</a>
+        <a href="{{ url(app()->getLocale() . '/destinos') }}" style="color:#c9a227; text-decoration:none;">Blog</a>
         <span style="color:#666; margin:0 0.5rem;">/</span>
         <strong style="color:#fff;">Experiencia Aerolínea del Sur</strong>
     </nav>
@@ -203,7 +204,8 @@
                     <p style="color: #ddd;">Nuestras aeronaves están configuradas como unidades de cuidados intensivos.
                         Ofrecemos una respuesta inmediata para evacuaciones médicas (MEDEVAC) en todo el territorio
                         nacional.</p>
-                    <a href="/servicios/ambulancia-aerea" class="cta-button">Solicitar Emergencia</a>
+                    <a href="{{ route('aeromedico', ['locale' => app()->getLocale()]) }}" class="cta-button">Solicitar
+                        Emergencia</a>
                 </div>
 
                 <p>Más allá de la emergencia, coordinamos el transporte en ambulancia terrestre tanto en el recojo como en
