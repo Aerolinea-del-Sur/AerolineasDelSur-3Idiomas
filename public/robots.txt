@@ -52,7 +52,7 @@ User-agent: *          # Se aplica a TODOS los motores de búsqueda (Google, Bin
 # ====================================================================================================================================
 # 🕒 Crawl control (controla frecuencia de rastreo) - EVITAR SOBRECARGA DEL SERVIDOR EN DESARROLLO
 # ====================================================================================================================================
-Crawl-delay: 10        # Los bots deben esperar 10 segundos entre cada petición (reducir tráfico)
+Crawl-delay: 1        # Los bots deben esperar 10 segundos entre cada petición (reducir tráfico)
 
 # ====================================================================================================================================
 # BLOQUEAR ARCHIVOS DE SISTEMA CRÍTICOS
