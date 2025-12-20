@@ -16,7 +16,8 @@ class GenerateSitemap extends Command
         $this->info('Generating sitemap...');
         
         $sitemap = Sitemap::create();
-        $baseUrl = config('app.url', 'https://aerolineadelsur.com');
+        // Always use production URL for sitemap
+        $baseUrl = 'https://aerolineadelsur.com';
         $locales = ['es', 'en', 'pt'];
         
         // Páginas principales
