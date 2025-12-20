@@ -22,6 +22,14 @@
             <meta name="author" content="{{ $seo['author'] ?? 'Aerolínea del Sur' }}" />
             <link rel="canonical" href="{{ $seo['canonical'] }}" />
             
+        {{-- Google Tag Manager --}}
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KMWG894K');</script>
+        {{-- End Google Tag Manager --}}
+            
         <!-- Open Graph (Facebook, LinkedIn) -->
             <meta property="og:title" content="{{ $seo['title'] }}">
             <meta property="og:description" content="{{ $seo['description'] }}">
@@ -421,6 +429,11 @@
     </head>
 
     <body>
+        {{-- Google Tag Manager (noscript) --}}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMWG894K"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        {{-- End Google Tag Manager (noscript) --}}
+        
         <!-- Encabezado (Header de base.html integrado) -->
             <header class="header">
                 <!-- Selector de idioma premium tipo dropdown -->
