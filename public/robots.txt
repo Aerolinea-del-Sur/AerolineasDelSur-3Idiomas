@@ -82,7 +82,7 @@ Allow: /js/            # Permitir JavaScript para funcionalidades
 # 🧭 Sitemap XML (muy importante para indexación)
 # ====================================================================================================================================
 
-Sitemap: https://tudominio.com/sitemap.xml
+Sitemap: https://aerolineadelsur.com/sitemap.xml
 
 # ====================================================================================================================================
 # 🚫 Evitar indexar errores o páginas sin valor SEO
