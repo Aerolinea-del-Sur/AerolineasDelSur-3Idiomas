@@ -3,21 +3,21 @@
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
             <div style="flex: 1; min-width: 300px;">
                 <p style="color: #fff; font-size: 14px; line-height: 1.6; margin: 0; font-weight: 500;">
-                    🍪 <strong style="color: #D4AF37;">Usamos cookies</strong> para mejorar tu experiencia. Al aceptar, permites el uso de cookies analíticas.
+                    🍪 <strong style="color: #D4AF37;">{{ __('cookies.message') }}</strong>
                     <br>
                     <span style="font-size: 13px; color: #aaa; margin-top: 5px; display: inline-block;">
-                        Consulta nuestra 
-                        <a href="{{ url(app()->getLocale() . '/politica-de-cookies') }}" style="color: #D4AF37; text-decoration: underline;">Política de Cookies</a> y 
-                        <a href="{{ url(app()->getLocale() . '/politicas-privacidad') }}" style="color: #D4AF37; text-decoration: underline;">Política de Privacidad</a>
+                        {{ __('cookies.learn_more') }} 
+                        <a href="{{ url(app()->getLocale() . '/politica-de-cookies') }}" style="color: #D4AF37; text-decoration: underline;">{{ __('cookies.cookie_policy') }}</a> {{ __('cookies.and') }} 
+                        <a href="{{ url(app()->getLocale() . '/politicas-privacidad') }}" style="color: #D4AF37; text-decoration: underline;">{{ __('cookies.privacy_policy') }}</a>
                     </span>
                 </p>
             </div>
             <div style="display: flex; gap: 12px; flex-shrink: 0;">
                 <button class="js-cookie-consent-agree" style="padding: 12px 28px; background: #D4AF37; color: #000; border: none; border-radius: 6px; font-weight: 600; font-size: 14px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(212,175,55,0.3);">
-                    Aceptar Cookies
+                    {{ __('cookies.accept') }}
                 </button>
                 <button onclick="window.laravelCookieConsent.hideCookieDialog()" style="padding: 12px 24px; background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; font-weight: 500; font-size: 14px; cursor: pointer; transition: all 0.3s ease;">
-                    Rechazar
+                    {{ __('cookies.reject') }}
                 </button>
             </div>
         </div>
