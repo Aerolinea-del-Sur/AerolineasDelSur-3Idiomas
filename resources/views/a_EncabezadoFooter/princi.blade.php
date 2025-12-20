@@ -22,6 +22,12 @@
             <meta name="author" content="{{ $seo['author'] ?? 'Aerolínea del Sur' }}" />
             <link rel="canonical" href="{{ $seo['canonical'] }}" />
             
+        @php
+            $cookieName = config('cookie-consent.cookie_name', 'laravel_cookie_consent');
+            $hasConsent = request()->cookie($cookieName) !== null;
+        @endphp
+        
+        @if($hasConsent)
         {{-- Google Tag Manager --}}
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -39,6 +45,7 @@
             gtag('config', 'G-M5LKHSJ3ES');
         </script>
         {{-- End Google Analytics 4 --}}
+        @endif
             
         <!-- Open Graph (Facebook, LinkedIn) -->
             <meta property="og:title" content="{{ $seo['title'] }}">
@@ -1038,5 +1045,8 @@
             
             <!-- Bootstrap JS - carga diferida -->
             <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            
+            {{-- Cookie Consent Banner --}}
+            @include('cookie-consent::index')
     </body>
 </html>

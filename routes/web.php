@@ -79,6 +79,10 @@ Route::prefix('{locale}')->where(['locale' => 'es|en|pt'])->group(function () {
         return view('h_footer.privaty');
     })->name('privaty');
     
+    Route::get('/politica-de-cookies', function () {
+        return view('h_footer.cookies');
+    })->name('cookies');
+    
     Route::get('/terminos-condiciones', function () {
         return view('h_footer.terminos');
     })->name('terminos');

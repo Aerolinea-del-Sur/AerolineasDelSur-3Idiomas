@@ -37,6 +37,7 @@ class GenerateSitemap extends Command
             'esna'                   => ['priority' => 0.6, 'freq' => 'monthly'],
             'pagos'                  => ['priority' => 0.6, 'freq' => 'monthly'],
             'politicas-privacidad'   => ['priority' => 0.5, 'freq' => 'yearly'],
+            'politica-de-cookies'    => ['priority' => 0.5, 'freq' => 'yearly'],
             'terminos-condiciones'   => ['priority' => 0.5, 'freq' => 'yearly'],
             'libro-reclamaciones'    => ['priority' => 0.5, 'freq' => 'yearly'],
         ];
