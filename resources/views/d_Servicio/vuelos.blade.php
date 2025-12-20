@@ -339,7 +339,7 @@ $seo = [
             // Nuevas aeronaves
             [
                 'name' => 'Jet Gulfstream GIV',
-                'url' => url(app()->getLocale() . '/aeronaves/GulfstreamGiv'),
+                'url' => url(app()->getLocale() . '/aeronaves/GulfstreamGIV'),
                 'img' => 'GulfstreamGiv.webp',
                 'capacidad' => '14 pax',
                 'velocidad' => '935 km/h',
