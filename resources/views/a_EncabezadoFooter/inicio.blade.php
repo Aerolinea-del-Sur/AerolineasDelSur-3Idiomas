@@ -11,6 +11,7 @@ $seo = [
 ];
 @endphp
 
+
 @section('content')
 <?php 
     // Hero Section
