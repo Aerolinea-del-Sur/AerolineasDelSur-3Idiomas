@@ -13,14 +13,38 @@
             ];
         @endphp
         
-        <!-- SEO Essentials -->
-            <title>{{ $seo['title'] }}</title>
-            <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="description" content="{{ $seo['description'] }}" />
-            <meta name="keywords" content="{{ $seo['keywords'] }}" />
+        {{-- NEW SEO Service (Priority) --}}
+        @stack('seo')
+        
+        {{-- LEGACY Array SEO (Fallback for backward compatibility) --}}
+        @if(isset($seo) && is_array($seo) && !hasStack('seo'))
+            <title>{{ $seo['title'] ?? config('app.name') }}</title>
+            <meta name="description" content="{{ $seo['description'] ?? '' }}" />
+            <meta name="keywords" content="{{ $seo['keywords'] ?? '' }}" />
             <meta name="author" content="{{ $seo['author'] ?? 'Aerolínea del Sur' }}" />
-            <link rel="canonical" href="{{ $seo['canonical'] }}" />
+            <link rel="canonical" href="{{ $seo['canonical'] ?? url()->current() }}" />
+            
+            <!-- Open Graph -->
+            <meta property="og:title" content="{{ $seo['title'] ?? '' }}">
+            <meta property="og:description" content="{{ $seo['description'] ?? '' }}">
+            @if(isset($seo['og_image']))
+            <meta property="og:image" content="{{ $seo['og_image'] }}">
+            @endif
+            <meta property="og:url" content="{{ $seo['canonical'] ?? url()->current() }}">
+            <meta property="og:type" content="website">
+            
+            <!-- Twitter Card -->
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="{{ $seo['title'] ?? '' }}">
+            <meta name="twitter:description" content="{{ $seo['description'] ?? '' }}">
+            @if(isset($seo['og_image']))
+            <meta name="twitter:image" content="{{ $seo['og_image'] }}">
+            @endif
+        @endif
+        
+        <!-- Charset & Viewport (always present) -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             
         @php
             $cookieName = config('cookie-consent.cookie_name', 'laravel_cookie_consent');
@@ -47,13 +71,6 @@
         {{-- End Google Analytics 4 --}}
         @endif
             
-        <!-- Open Graph (Facebook, LinkedIn) -->
-            <meta property="og:title" content="{{ $seo['title'] }}">
-            <meta property="og:description" content="{{ $seo['description'] }}">
-            <meta property="og:image" content="{{ $seo['og_image'] }}">
-            <meta property="og:url" content="{{ $seo['canonical'] }}">
-            <meta property="og:type" content="website">
-            
         <!-- Hreflang Tags (SEO Multi-idioma) -->
             <link rel="alternate" hreflang="es" href="{{ url('es' . request()->getPathInfo()) }}" />
             <link rel="alternate" hreflang="en" href="{{ url('en' . request()->getPathInfo()) }}" />
@@ -61,12 +78,6 @@
             <link rel="alternate" hreflang="x-default" href="{{ url('es' . request()->getPathInfo()) }}" />
             <meta property="og:site_name" content="Aerolínea del Sur">
             <meta property="og:locale" content="es_PE">
-            
-        <!-- Twitter Card -->
-            <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:title" content="{{ $seo['title'] }}">
-            <meta name="twitter:description" content="{{ $seo['description'] }}">
-            <meta name="twitter:image" content="{{ $seo['og_image'] }}">
             
         <!-- favicon -->
             <link rel="icon" type="image/x-icon" href="/favicon.ico">
