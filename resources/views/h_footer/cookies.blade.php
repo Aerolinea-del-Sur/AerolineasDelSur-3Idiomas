@@ -5,6 +5,7 @@ $seo = [
     'title' => 'Política de Cookies - Aerolínea del Sur',
     'description' => 'Conoce cómo utilizamos las cookies en nuestro sitio web para mejorar tu experiencia de navegación.',
     'keywords' => 'política de cookies, cookies, privacidad, datos',
+    'og_image' => asset('img/logo-aerolinea-del-sur.jpg'),
     'canonical' => url(app()->getLocale() . '/politica-de-cookies'),
 ];
 @endphp
