@@ -1,15 +1,15 @@
 @php
 $seo = seo()
-    ->title("Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur | Blog")
-    ->description("Descubre cómo Aerolínea del Sur transforma el viaje aéreo en Perú con vuelos charter, sobrevuelos turísticos y transporte de carga.")
+    ->title(__('blog.vuelos_peru.title'))
+    ->description(__('blog.vuelos_peru.description'))
     ->keywords(['vuelos peru', 'aerolinea del sur', 'charter peru', 'sobrevuelos nazca', 'carga aerea peru', 'ambulancia aerea'])
     ->image(asset('img/blog/aerolinea-sur-experience.jpg'))
     ->canonical(url(app()->getLocale() . '/blog/vuelos-peru'))
     ->addSchema([
         '@context' => 'https://schema.org',
         '@type' => 'Article',
-        'headline' => 'Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur',
-        'description' => 'En el vasto y complejo territorio peruano, Aerolínea del Sur se erige como una opción para surcar los cielos peruanos con exclusividad.',
+        'headline' => __('blog.vuelos_peru.headline'),
+        'description' => __('blog.vuelos_peru.intro_p1'),
         'image' => asset('img/blog/aerolinea-sur-experience.jpg'),
         'author' => [
             '@type' => 'Organization',
@@ -63,13 +63,13 @@ $seo = seo()
 
             <!-- Header del Artículo -->
             <header class="article-header">
-                <span class="category-badge">Servicios Exclusivos</span>
-                <h1>Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur</h1>
+                <span class="category-badge">{{ __('blog.vuelos_peru.category') }}</span>
+                <h1>{{ __('blog.vuelos_peru.headline') }}</h1>
                 <div class="article-meta-large">
                     <span><i class="fas fa-calendar-alt"></i> <time datetime="2025-12-20">20 de Diciembre,
                             2025</time></span>
-                    <span><i class="fas fa-clock"></i> 8 min lectura</span>
-                    <span><i class="fas fa-user"></i> Redacción Aerolínea del Sur</span>
+                    <span><i class="fas fa-clock"></i> {{ __('blog.vuelos_peru.read_time') }}</span>
+                    <span><i class="fas fa-user"></i> {{ __('blog.vuelos_peru.author') }}</span>
                 </div>
 
                 <!-- Tabla de contenidos (Sticky Sidebar Widget moved here or inline for specific layout) -->
@@ -85,16 +85,9 @@ $seo = seo()
             <div class="article-main-content">
 
                 <!-- Intro -->
-                <p>En el vasto y complejo territorio peruano, donde la geografía desafía los límites convencionales,
-                    <strong>Aerolínea del Sur</strong> se erige como una opción para surcar los cielos peruanos. Puesto que,
-                    ha sido diseñada para transformar la manera de viajar, combinando la precisión logística con un estándar
-                    de exclusividad.
-                </p>
+                <p>{!! __('blog.vuelos_peru.intro_p1') !!}</p>
 
-                <p>Entendemos que el Perú requiere soluciones aéreas específicas. Por ello, contamos con una flota de
-                    aeronaves modernas adaptadas a la geografía diversa del país. Desde las corrientes de aire de la costa
-                    hasta las altitudes de los Andes y la densa vegetación de la Amazonía, nuestras unidades están bien
-                    equipadas para garantizar vuelos estables, seguros y eficientes en cualquier destino.</p>
+                <p>{{ __('blog.vuelos_peru.intro_p2') }}</p>
 
                 <div class="highlight-box">
                     <p><strong>Más allá del placer de viajar</strong>, destacamos por brindar una buena logística operativa.
@@ -104,17 +97,15 @@ $seo = seo()
                         aeronáutico.</p>
                 </div>
 
-                <h2 id="conoce-servicios">Conoce nuestros servicios</h2>
+                <h2 id="conoce-servicios">{{ __('blog.vuelos_peru.know_services') }}</h2>
                 <p>En Aerolínea del Sur, hemos diversificado nuestra operatividad para cubrir cada necesidad específica,
                     nuestra propuesta de valor se despliega en cuatro pilares:</p>
 
                 <!-- 1. Vuelos Privados -->
-                <h3 id="charter">Servicios de Vuelos Privados (Charter)</h3>
-                <p>En Aerolínea del Sur, elevamos el concepto de viajar a una categoría superior. Nuestro servicio de vuelos
-                    charter en Perú está diseñado para quienes consideran que el tiempo y la comodidad son sus activos más
-                    valiosos.</p>
+                <h3 id="charter">{{ __('blog.vuelos_peru.charter_title') }}</h3>
+                <p>{{ __('blog.vuelos_peru.charter_intro') }}</p>
 
-                <h4>Beneficios destacados:</h4>
+                <h4>{{ __('blog.vuelos_peru.benefits_title') }}</h4>
                 <ul>
                     <li><strong>Exclusividad y Confort a Medida:</strong> Entendemos que cada pasajero es único. Por ello,
                         ofrecemos viajes personalizados que se adaptan a las necesidades específicas de ejecutivos, familias
@@ -143,7 +134,7 @@ $seo = seo()
                 </div>
 
                 <!-- 2. Sobrevuelos -->
-                <h3 id="sobrevuelos">Sobrevuelos: Los Tesoros del Perú desde el Aire</h3>
+                <h3 id="sobrevuelos">{{ __('blog.vuelos_peru.overflights_title') }}</h3>
                 <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&h=400&fit=crop"
                     alt="Vista aérea de Cusco" style="width:100%; border-radius:10px; margin-bottom:1.5rem;">
                 <p>Descubra la riqueza del patrimonio peruano desde una perspectiva que pocos logran experimentar. Con
@@ -169,7 +160,7 @@ $seo = seo()
                 </ul>
 
                 <!-- 3. Carga Aérea -->
-                <h3 id="carga">Servicio de Transporte de Carga Aérea</h3>
+                <h3 id="carga">{{ __('blog.vuelos_peru.cargo_title') }}</h3>
                 <p>En un país de geografía desafiante, la velocidad y la seguridad son determinantes para el éxito de
                     cualquier operación comercial. Aerolínea del Sur ofrece un servicio de logística aérea integral,
                     diseñado para mover el motor productivo del Perú con eficiencia y puntualidad garantizada.</p>
@@ -193,7 +184,7 @@ $seo = seo()
                 </ul>
 
                 <!-- 4. Ambulancia Aérea -->
-                <h3 id="ambulancia">Transporte Médico Aéreo (Ambulancia Aérea)</h3>
+                <h3 id="ambulancia">{{ __('blog.vuelos_peru.ambulance_title') }}</h3>
                 <p>En situaciones donde cada segundo cuenta, Aerolínea del Sur pone a su disposición su servicio de
                     ambulancia aérea en Perú. Somos especialistas en traslados de alta complejidad, garantizando que el
                     paciente reciba atención desde el punto de origen hasta el centro hospitalario de destino.</p>
@@ -203,8 +194,7 @@ $seo = seo()
                     <p style="color: #ddd;">Nuestras aeronaves están configuradas como unidades de cuidados intensivos.
                         Ofrecemos una respuesta inmediata para evacuaciones médicas (MEDEVAC) en todo el territorio
                         nacional.</p>
-                    <a href="{{ route('aeromedico', ['locale' => app()->getLocale()]) }}" class="cta-button">Solicitar
-                        Emergencia</a>
+                    <a href="{{ route('aeromedico', ['locale' => app()->getLocale()]) }}" class="cta-button">{{ __('blog.vuelos_peru.request_emergency') }}</a>
                 </div>
 
                 <p>Más allá de la emergencia, coordinamos el transporte en ambulancia terrestre tanto en el recojo como en
