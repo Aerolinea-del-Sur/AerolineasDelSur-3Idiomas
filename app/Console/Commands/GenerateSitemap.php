@@ -64,7 +64,8 @@ class GenerateSitemap extends Command
         
         // Blog posts
         $blogPosts = [
-            'Aventura-Cusco'
+            'vuelos-peru' => ['priority' => 0.8, 'freq' => 'monthly', 'date' => '2025-12-20'],
+            'Aventura-Cusco' => ['priority' => 0.7, 'freq' => 'monthly', 'date' => '2024-01-01']
         ];
         
         $count = 0;
@@ -137,12 +138,12 @@ class GenerateSitemap extends Command
         // Agregar blog posts
         $blogCount = 0;
         foreach ($locales as $locale) {
-            foreach ($blogPosts as $post) {
+            foreach ($blogPosts as $slug => $config) {
                 $sitemap->add(
-                    Url::create("{$baseUrl}/{$locale}/blog/{$post}")
-                        ->setPriority(0.7)
-                        ->setChangeFrequency('weekly')
-                        ->setLastModificationDate(now())
+                    Url::create("{$baseUrl}/{$locale}/blog/{$slug}")
+                        ->setPriority($config['priority'])
+                        ->setChangeFrequency($config['freq'])
+                        ->setLastModificationDate(\Carbon\Carbon::parse($config['date']))
                 );
                 $blogCount++;
             }

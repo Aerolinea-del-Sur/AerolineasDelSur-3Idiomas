@@ -1,42 +1,40 @@
-@extends('a_EncabezadoFooter.princi')
-
 @php
-    // SEO for Blog Post - Aerolínea del Sur Experience
-    $seo = [
-        'title' => 'Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur | Blog',
-        'description' => 'Descubre cómo Aerolínea del Sur transforma el viaje aéreo en Perú con vuelos charter, sobrevuelos turísticos y transporte de carga.',
-        'keywords' => 'vuelos peru, aerolinea del sur, charter peru, sobrevuelos nazca, carga aerea peru, ambulancia aerea',
-        'og_image' => asset('img/blog/aerolinea-sur-experience.jpg'), // Placeholder
-        'canonical' => url(app()->getLocale() . '/blog/Vuelos-Peru'),
-    ];
+$seo = seo()
+    ->title("Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur | Blog")
+    ->description("Descubre cómo Aerolínea del Sur transforma el viaje aéreo en Perú con vuelos charter, sobrevuelos turísticos y transporte de carga.")
+    ->keywords(['vuelos peru', 'aerolinea del sur', 'charter peru', 'sobrevuelos nazca', 'carga aerea peru', 'ambulancia aerea'])
+    ->image(asset('img/blog/aerolinea-sur-experience.jpg'))
+    ->canonical(url(app()->getLocale() . '/blog/vuelos-peru'))
+    ->addSchema([
+        '@context' => 'https://schema.org',
+        '@type' => 'Article',
+        'headline' => 'Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur',
+        'description' => 'En el vasto y complejo territorio peruano, Aerolínea del Sur se erige como una opción para surcar los cielos peruanos con exclusividad.',
+        'image' => asset('img/blog/aerolinea-sur-experience.jpg'),
+        'author' => [
+            '@type' => 'Organization',
+            'name' => 'Aerolínea del Sur'
+        ],
+        'publisher' => [
+            '@type' => 'Organization',
+            'name' => 'Aerolínea del Sur',
+            'logo' => [
+                '@type' => 'ImageObject',
+                'url' => asset('img/logo.webp')
+            ]
+        ],
+        'datePublished' => '2025-12-20',
+        'dateModified' => '2025-12-20'
+    ]);
 @endphp
 
-@section('content')
+@extends('a_EncabezadoFooter.princi')
 
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-                {
-                  "@context": "https://schema.org",
-                  "@type": "Article",
-                  "headline": "Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur",
-                  "description": "En el vasto y complejo territorio peruano, Aerolínea del Sur se erige como una opción para surcar los cielos peruanos con exclusividad.",
-                  "image": "https://www.aerolineadelsur.com/public/img/blog/aerolinea-sur-experience.jpg",
-                  "author": {
-                    "@type": "Organization",
-                    "name": "Aerolínea del Sur"
-                  },
-                  "publisher": {
-                    "@type": "Organization",
-                    "name": "Aerolínea del Sur",
-                    "logo": {
-                      "@type": "ImageObject",
-                      "url": "https://www.aerolineadelsur.com/public/img/logo.webp"
-                    }
-                  },
-                  "datePublished": "2025-12-20",
-                  "dateModified": "2025-12-20"
-                }
-                </script>
+@push('seo')
+    {!! $seo !!}
+@endpush
+
+@section('content')
 
     <!-- CSS del blog MEJORADO -->
     <link rel="stylesheet" href="{{ asset('public/css/paginas/blog/blog-improved.css') }}">
