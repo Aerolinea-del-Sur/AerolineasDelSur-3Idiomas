@@ -50,7 +50,7 @@
         al contenido</a>
 
     <!-- Breadcrumbs -->
-    <nav class="breadcrumbs" aria-label="Breadcrumb" style="max-width:1200px; margin:0 auto; padding:2rem 2rem 0;">
+    <nav class="breadcrumbs" aria-label="Breadcrumb" style="max-width:1200px; margin:0 auto; padding:150px 2rem 0;">
         <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"
             style="color:#c9a227; text-decoration:none;">Inicio</a>
         <span style="color:#666; margin:0 0.5rem;">/</span>
