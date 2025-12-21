@@ -28,6 +28,7 @@ $seo = seo()
     ]);
 @endphp
 
+
 @extends('a_EncabezadoFooter.princi')
 
 @push('seo')
