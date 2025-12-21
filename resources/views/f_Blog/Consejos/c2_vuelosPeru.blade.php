@@ -38,8 +38,9 @@
                 }
                 </script>
 
-    <!-- CSS del blog -->
-    <link rel="stylesheet" href="{{ asset('public/css/paginas/blog/blog.css') }}">
+    <!-- CSS del blog MEJORADO -->
+    <link rel="stylesheet" href="{{ asset('public/css/paginas/blog/blog-improved.css') }}">
+
 
     <!-- Reading progress bar -->
     <div class="reading-progress" id="reading-progress" role="progressbar" aria-label="Progreso de lectura"></div>

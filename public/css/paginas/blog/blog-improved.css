@@ -1,0 +1,435 @@
+/* ================================================================
+   BLOG MEJORADO - AEROLÍNEA DEL SUR
+   Diseño moderno, premium y profesional
+   ================================================================ */
+
+:root {
+    /* Colores Principales */
+    --primary-navy: #0a1628;
+    --secondary-navy: #152238;
+    --accent-gold: #c9a227;
+    --accent-gold-light: #d4b356;
+    --pearl-white: #e6e6e6;
+    --pure-white: #ffffff;
+    
+    /* Grises */
+    --charcoal: #2b2b2b;
+    --medium-gray: #666;
+    --light-gray: #999;
+    
+    /* Sombras */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+    --shadow-gold: 0 8px 24px rgba(201, 162, 39, 0.25);
+    
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-blur: blur(12px);
+    
+    /* Transiciones */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-quick: all 0.15s ease;
+    
+    /* Spacing */
+    --container-max: 1200px;
+    --article-max: 860px;
+    --header-height: 133px;
+}
+
+/* ================================================================
+   CONTAINER & LAYOUT BASE
+   ================================================================ */
+
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Mejor espaciado en el cuerpo del artículo */
+.article-main-content {
+    max-width: var(--article-max);
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    line-height: 1.8;
+    font-size: 1.0625rem; /* 17px - óptimo para lectura */
+    color: var(--pearl-white);
+}
+
+/* ================================================================
+   BREADCRUMBS - Mejorado
+   ================================================================ */
+
+.breadcrumbs {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 150px 2rem 2rem;
+    font-size: 0.9375rem;
+    opacity: 0;
+    animation: fadeInDown 0.6s ease-out 0.2s forwards;
+}
+
+.breadcrumbs a {
+    color: var(--accent-gold);
+    text-decoration: none;
+    transition: var(--transition-quick);
+    position: relative;
+}
+
+.breadcrumbs a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--accent-gold);
+    transition: width 0.3s ease;
+}
+
+.breadcrumbs a:hover::after {
+    width: 100%;
+}
+
+.breadcrumbs span {
+    color: var(--medium-gray);
+    margin: 0 0.75rem;
+}
+
+.breadcrumbs strong {
+    color: var(--pearl-white);
+    font-weight: 500;
+}
+
+/* ================================================================
+   HEADER DEL ARTÍCULO - Rediseñado
+   ================================================================ */
+
+.article-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 0 1.5rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.4s forwards;
+}
+
+.category-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-light) 100%);
+    color: var(--primary-navy);
+    padding: 0.625rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow-gold);
+}
+
+.article-header h1 {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--pure-white);
+    margin: 0 0 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+.article-meta-large {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.9375rem;
+    color: var(--light-gray);
+    margin-top: 1.5rem;
+}
+
+.article-meta-large span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.article-meta-large i {
+    color: var(--accent-gold);
+    font-size: 1rem;
+}
+
+/* ================================================================
+   IMAGEN DESTACADA - Mejorado
+   ================================================================ */
+
+.featured-image-container {
+    max-width: var(--container-max);
+    margin: 0 auto 4rem;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+}
+
+.featured-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.featured-image-container:hover .featured-image {
+    transform: scale(1.02);
+}
+
+/* ================================================================
+   TIPOGRAFÍA DEL CONTENIDO - Optimizado
+   ================================================================ */
+
+.article-main-content p {
+    margin: 0 0 1.75rem;
+    line-height: 1.8;
+}
+
+.article-main-content h2 {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 700;
+    color: var(--pure-white);
+    margin: 3.5rem 0 1.25rem;
+    line-height: 1.3;
+    scroll-margin-top: calc(var(--header-height) + 2rem);
+}
+
+.article-main-content h3 {
+    font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+    font-weight: 600;
+    color: var(--pearl-white);
+    margin: 2.5rem 0 1rem;
+    line-height: 1.4;
+    scroll-margin-top: calc(var(--header-height) + 2rem);
+}
+
+.article-main-content h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--accent-gold);
+    margin: 2rem 0 0.875rem;
+}
+
+.article-main-content strong {
+    color: var(--pure-white);
+    font-weight: 600;
+}
+
+/* ================================================================
+   LISTAS - Mejorado
+   ================================================================ */
+
+.article-main-content ul,
+.article-main-content ol {
+    margin: 0 0 1.75rem 1.5rem;
+    padding: 0;
+}
+
+.article-main-content li {
+    margin: 0.75rem 0;
+    line-height: 1.75;
+}
+
+.article-main-content li::marker {
+    color: var(--accent-gold);
+}
+
+/* ================================================================
+   HIGHLIGHT BOX - Rediseñado
+   ================================================================ */
+
+.highlight-box {
+    background: linear-gradient(
+        135deg,
+        rgba(201, 162, 39, 0.08) 0%,
+        rgba(201, 162, 39, 0.05) 100%
+    );
+    border-left: 4px solid var(--accent-gold);
+    border-radius: 12px;
+    padding: 1.75rem 2rem;
+    margin: 2.5rem 0;
+    backdrop-filter: var(--glass-blur);
+    box-shadow: var(--shadow-md);
+}
+
+.highlight-box p {
+    margin: 0;
+    color: var(--pearl-white);
+}
+
+.highlight-box strong {
+    color: var(--accent-gold);
+    display: block;
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+}
+
+/* ================================================================
+   CTA BOX - Premium
+   ================================================================ */
+
+.cta-box {
+    background: linear-gradient(
+        135deg,
+        var(--accent-gold) 0%,
+        var(--accent-gold-light) 100%
+    );
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin: 3rem 0;
+    text-align: center;
+    box-shadow: var(--shadow-gold);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.cta-box h3 {
+    color: var(--primary-navy);
+    font-size: 1.75rem;
+    margin: 0 0 1rem;
+    position: relative;
+}
+
+.cta-box p {
+    color: var(--charcoal);
+    margin: 0 0 1.75rem;
+    position: relative;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--primary-navy);
+    color: var(--pure-white);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.0625rem;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+    box-shadow: 0 8px 24px rgba(10, 22, 40, 0.3);
+    position: relative;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(10, 22, 40, 0.4);
+    background: #0d1e35;
+}
+
+/* ================================================================
+   BARRA DE PROGRESO DE LECTURA - Mejorado
+   ================================================================ */
+
+.reading-progress {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        var(--accent-gold) 0%,
+        var(--accent-gold-light) 100%
+    );
+    box-shadow: 0 2px 12px rgba(201, 162, 39, 0.4);
+    z-index: 1000;
+    transition: width 0.1s ease-out;
+}
+
+/* ================================================================
+   ANIMACIONES
+   ================================================================ */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================================================================
+   RESPONSIVE - Mobile First
+   ================================================================ */
+
+@media (max-width: 768px) {
+    .container,
+    .article-main-content {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    
+    .breadcrumbs {
+        padding: 120px 1.25rem 1.5rem;
+        font-size: 0.875rem;
+    }
+    
+    .article-header h1 {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
+    
+    .article-meta-large {
+        gap: 1rem;
+        font-size: 0.875rem;
+    }
+    
+    .article-main-content {
+        font-size: 1rem;
+        padding: 2rem 1.25rem;
+    }
+    
+    .highlight-box,
+    .cta-box {
+        padding: 1.5rem;
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-badge {
+        font-size: 0.75rem;
+        padding: 0.5rem 1.25rem;
+    }
+    
+    .article-meta-large {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+    }
+}
