@@ -1,5 +1,3 @@
-Allow: /
-
 User-agent: Amazonbot
 Disallow: /
 
