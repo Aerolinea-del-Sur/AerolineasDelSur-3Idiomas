@@ -12,6 +12,7 @@ $seo = [
 @endphp
 
 @section('content')
+    <link rel="stylesheet" href="{{ asset('public/css/paginas/blog/blog.css') }}">
 
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
