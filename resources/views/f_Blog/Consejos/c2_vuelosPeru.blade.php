@@ -4,7 +4,7 @@ $seo = seo()
     ->description(__('blog.vuelos_peru.description'))
     ->keywords(['vuelos peru', 'aerolinea del sur', 'charter peru', 'sobrevuelos nazca', 'carga aerea peru', 'ambulancia aerea'])
     ->image(asset('img/blog/aerolinea-sur-experience.jpg'))
-    ->canonical(url(app()->getLocale() . '/blog/vuelos-peru'))
+    ->canonical(url(app()->getLocale() .'/blog/vuelos-peru'))
     ->addSchema([
         '@context' => 'https://schema.org',
         '@type' => 'Article',
@@ -39,23 +39,17 @@ $seo = seo()
     <!-- CSS del blog MEJORADO -->
     <link rel="stylesheet" href="{{ asset('public/css/paginas/blog/blog-improved.css') }}">
 
-
     <!-- Reading progress bar -->
     <div class="reading-progress" id="reading-progress" role="progressbar" aria-label="Progreso de lectura"></div>
-
-    <!-- Skip to content -->
-    <a href="#main-content" class="skip-link"
-        style="position:absolute; top:-40px; left:0; background:#c9a227; color:#000; padding:8px; z-index:100; transition:top 0.3s;">Saltar
-        al contenido</a>
 
     <!-- Breadcrumbs -->
     <nav class="breadcrumbs" aria-label="Breadcrumb" style="max-width:1200px; margin:0 auto; padding:150px 2rem 0;">
         <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"
-            style="color:#c9a227; text-decoration:none;">Inicio</a>
+            style="color:#c9a227; text-decoration:none;">{{ __('blog.vuelos_peru.breadcrumb_home') }}</a>
         <span style="color:#666; margin:0 0.5rem;">/</span>
-        <a href="{{ url(app()->getLocale() . '/destinos') }}" style="color:#c9a227; text-decoration:none;">Blog</a>
+        <a href="{{ url(app()->getLocale() . '/destinos') }}" style="color:#c9a227; text-decoration:none;">{{ __('blog.vuelos_peru.breadcrumb_blog') }}</a>
         <span style="color:#666; margin:0 0.5rem;">/</span>
-        <strong style="color:#fff;">Experiencia Aerolínea del Sur</strong>
+        <strong style="color:#fff;">{{ __('blog.vuelos_peru.breadcrumb_current') }}</strong>
     </nav>
 
     <div class="container" style="padding-top:4rem;">
@@ -66,14 +60,10 @@ $seo = seo()
                 <span class="category-badge">{{ __('blog.vuelos_peru.category') }}</span>
                 <h1>{{ __('blog.vuelos_peru.headline') }}</h1>
                 <div class="article-meta-large">
-                    <span><i class="fas fa-calendar-alt"></i> <time datetime="2025-12-20">20 de Diciembre,
-                            2025</time></span>
+                    <span><i class="fas fa-calendar-alt"></i> <time datetime="2025-12-20">20 de Diciembre, 2025</time></span>
                     <span><i class="fas fa-clock"></i> {{ __('blog.vuelos_peru.read_time') }}</span>
                     <span><i class="fas fa-user"></i> {{ __('blog.vuelos_peru.author') }}</span>
                 </div>
-
-                <!-- Tabla de contenidos (Sticky Sidebar Widget moved here or inline for specific layout) -->
-                <!-- En este diseño centrado, podríamos poner un pequeño índice aquí o dejarlo en el sidebar -->
             </header>
 
             <!-- Imagen Destacada -->
@@ -90,16 +80,11 @@ $seo = seo()
                 <p>{{ __('blog.vuelos_peru.intro_p2') }}</p>
 
                 <div class="highlight-box">
-                    <p><strong>Más allá del placer de viajar</strong>, destacamos por brindar una buena logística operativa.
-                        Ya sea que se trate de una agenda corporativa ajustada o de la coordinación de un traslado crítico,
-                        nuestro equipo de expertos gestiona cada ruta con eficiencia. En Aerolínea del Sur, la puntualidad y
-                        la seguridad no son opcionales; son los pilares que sostienen nuestra reputación en el sector
-                        aeronáutico.</p>
+                    <p><strong>{{ __('blog.vuelos_peru.highlight_intro') }}</strong>, {{ __('blog.vuelos_peru.highlight_text') }}</p>
                 </div>
 
                 <h2 id="conoce-servicios">{{ __('blog.vuelos_peru.know_services') }}</h2>
-                <p>En Aerolínea del Sur, hemos diversificado nuestra operatividad para cubrir cada necesidad específica,
-                    nuestra propuesta de valor se despliega en cuatro pilares:</p>
+                <p>{{ __('blog.vuelos_peru.services_intro') }}</p>
 
                 <!-- 1. Vuelos Privados -->
                 <h3 id="charter">{{ __('blog.vuelos_peru.charter_title') }}</h3>
@@ -107,29 +92,17 @@ $seo = seo()
 
                 <h4>{{ __('blog.vuelos_peru.benefits_title') }}</h4>
                 <ul>
-                    <li><strong>Exclusividad y Confort a Medida:</strong> Entendemos que cada pasajero es único. Por ello,
-                        ofrecemos viajes personalizados que se adaptan a las necesidades específicas de ejecutivos, familias
-                        y grupos. Nuestras cabinas están configuradas para brindar un ambiente de descanso o productividad,
-                        permitiéndole disfrutar de un servicio de lujo con catering y atención a bordo.</li>
-                    <li><strong>Flexibilidad Total de Horarios:</strong> Olvídese de las restricciones de las aerolíneas
-                        comerciales. Con nuestra modalidad de transporte aéreo privado, usted tiene el control absoluto: tú
-                        decides cuándo y desde dónde despegar. Minimizamos los tiempos de espera y optimizamos sus rutas,
-                        permitiendo aterrizar en aeropuertos de difícil acceso gracias a nuestra flota versátil.</li>
-                    <li><strong>Privacidad Total y Seguridad:</strong> La discreción es nuestra prioridad. Contamos con
-                        procesos de embarque rápidos, evitando las aglomeraciones de las terminales públicas. Disfrutará de
-                        una atención personalizada desde el primer contacto, garantizando que su identidad y sus planes de
-                        vuelo se mantengan bajo la más estricta confidencialidad.</li>
+                    <li><strong>{{ __('blog.vuelos_peru.benefit_1_title') }}</strong> {{ __('blog.vuelos_peru.benefit_1_text') }}</li>
+                    <li><strong>{{ __('blog.vuelos_peru.benefit_2_title') }}</strong> {{ __('blog.vuelos_peru.benefit_2_text') }}</li>
+                    <li><strong>{{ __('blog.vuelos_peru.benefit_3_title') }}</strong> {{ __('blog.vuelos_peru.benefit_3_text') }}</li>
                 </ul>
 
                 <div class="highlight-box">
-                    <strong>Datos Clave de nuestro servicio Charter:</strong>
+                    <strong>{{ __('blog.vuelos_peru.charter_data_title') }}</strong>
                     <ul style="margin-top:0.5rem;">
-                        <li><strong>Disponibilidad 24/7:</strong> Coordinación de vuelos de última hora para viajes de
-                            negocios urgentes.</li>
-                        <li><strong>Conectividad Regional:</strong> Acceso a destinos en todo el Perú que no cuentan con
-                            frecuencias comerciales regulares.</li>
-                        <li><strong>Seguridad Certificada:</strong> Protocolos rigurosos de mantenimiento aeronáutico bajo
-                            estándares internacionales.</li>
+                        <li><strong>{{ __('blog.vuelos_peru.charter_data_1_title') }}</strong> {{ __('blog.vuelos_peru.charter_data_1_text') }}</li>
+                        <li><strong>{{ __('blog.vuelos_peru.charter_data_2_title') }}</strong> {{ __('blog.vuelos_peru.charter_data_2_text') }}</li>
+                        <li><strong>{{ __('blog.vuelos_peru.charter_data_3_title') }}</strong> {{ __('blog.vuelos_peru.charter_data_3_text') }}</li>
                     </ul>
                 </div>
 
@@ -137,69 +110,38 @@ $seo = seo()
                 <h3 id="sobrevuelos">{{ __('blog.vuelos_peru.overflights_title') }}</h3>
                 <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&h=400&fit=crop"
                     alt="Vista aérea de Cusco" style="width:100%; border-radius:10px; margin-bottom:1.5rem;">
-                <p>Descubra la riqueza del patrimonio peruano desde una perspectiva que pocos logran experimentar. Con
-                    Aerolínea del Sur, los tours aéreos en Perú se convierten en una aventura de lujo, permitiéndole admirar
-                    la geografía nacional con una claridad y comodidad inigualables.</p>
+                <p>{{ __('blog.vuelos_peru.overflights_intro') }}</p>
 
-                <h4>Destinos Imprescindibles:</h4>
+                <h4>{{ __('blog.vuelos_peru.destinations_title') }}</h4>
                 <ul>
-                    <li><strong>Sobrevuelo a las Líneas de Nazca:</strong> Admire desde lo alto los gigantescos geoglifos
-                        que han desconcertado al mundo por siglos. Nuestro sobrevuelo a las Líneas de Nazca garantiza una
-                        visibilidad óptima de figuras como el colibrí, el mono y el astronauta.</li>
-                    <li><strong>Vista aérea de Choquequirao:</strong> Evite las extenuantes caminatas de varios días y
-                        descubra la majestuosidad de Choquequirao desde el cielo. Este sobrevuelo ofrece una vista
-                        panorámica única de la "cuna de oro", revelando sus terrazas y construcciones incas.</li>
-                    <li><strong>Lago Titicaca y Selva Peruana:</strong> Experimente el contraste de colores entre el azul
-                        profundo del Lago Titicaca, el lago navegable más alto del mundo, y el paisaje de la Selva Peruana.
-                        Volar sobre el Amazonas peruano le permitirá apreciar los serpenteantes ríos y la biodiversidad.
-                    </li>
-                    <li><strong>La Montaña Vinicunca:</strong> La famosa Montaña de Siete Colores se muestra en todo su
-                        esplendor sin el esfuerzo físico de la altura. Nuestra ruta aérea sobre la cordillera de Vilcanota
-                        ofrece una vista privilegiada de las franjas de colores naturales de Vinicunca y los glaciares
-                        circundantes.</li>
+                    <li><strong>{{ __('blog.vuelos_peru.dest_1_title') }}</strong> {{ __('blog.vuelos_peru.dest_1_text') }}</li>
+                    <li><strong>{{ __('blog.vuelos_peru.dest_2_title') }}</strong> {{ __('blog.vuelos_peru.dest_2_text') }}</li>
+                    <li><strong>{{ __('blog.vuelos_peru.dest_3_title') }}</strong> {{ __('blog.vuelos_peru.dest_3_text') }}</li>
+                    <li><strong>{{ __('blog.vuelos_peru.dest_4_title') }}</strong> {{ __('blog.vuelos_peru.dest_4_text') }}</li>
                 </ul>
 
                 <!-- 3. Carga Aérea -->
                 <h3 id="carga">{{ __('blog.vuelos_peru.cargo_title') }}</h3>
-                <p>En un país de geografía desafiante, la velocidad y la seguridad son determinantes para el éxito de
-                    cualquier operación comercial. Aerolínea del Sur ofrece un servicio de logística aérea integral,
-                    diseñado para mover el motor productivo del Perú con eficiencia y puntualidad garantizada.</p>
+                <p>{{ __('blog.vuelos_peru.cargo_intro') }}</p>
 
-                <h4>Fortalezas de nuestra división de carga:</h4>
+                <h4>{{ __('blog.vuelos_peru.cargo_strengths_title') }}</h4>
                 <ul>
-                    <li><strong>Logística Eficiente y Conectividad Regional:</strong> Somos expertos en conectar las
-                        regiones más remotas del país, llegando a donde el transporte terrestre no puede o tarda demasiado.
-                        Optimizamos las cadenas de suministro mediante rutas estratégicas que reducen los tiempos de
-                        tránsito, facilitando el comercio entre la costa, la sierra y la selva peruana.</li>
-                    <li><strong>Manejo Especializado de Cargas Críticas:</strong> Contamos con protocolos rigurosos para el
-                        manejo seguro de mercancías delicadas. Desde equipos tecnológicos de alta precisión y suministros
-                        industriales, hasta paquetería urgente y productos perecederos. Nuestra flota está preparada para
-                        transportar bienes que requieren un cuidado extremo, garantizando que lleguen a su destino en
-                        perfectas condiciones.</li>
-                    <li><strong>Soluciones para el Comercio y la Industria (Cobertura Nacional):</strong> Brindamos
-                        soluciones rápidas y escalables para sectores clave como la minería, el agro y el comercio
-                        electrónico. Nuestra cobertura nacional permite que las empresas mantengan su operatividad sin
-                        interrupciones, ofreciendo un soporte de transporte de carga pesada y ligera con estándares
-                        internacionales de seguridad.</li>
+                    <li><strong>{{ __('blog.vuelos_peru.cargo_1_title') }}</strong> {{ __('blog.vuelos_peru.cargo_1_text') }}</li>
+                    <li><strong>{{ __('blog.vuelos_peru.cargo_2_title') }}</strong> {{ __('blog.vuelos_peru.cargo_2_text') }}</li>
+                    <li><strong>{{ __('blog.vuelos_peru.cargo_3_title') }}</strong> {{ __('blog.vuelos_peru.cargo_3_text') }}</li>
                 </ul>
 
                 <!-- 4. Ambulancia Aérea -->
                 <h3 id="ambulancia">{{ __('blog.vuelos_peru.ambulance_title') }}</h3>
-                <p>En situaciones donde cada segundo cuenta, Aerolínea del Sur pone a su disposición su servicio de
-                    ambulancia aérea en Perú. Somos especialistas en traslados de alta complejidad, garantizando que el
-                    paciente reciba atención desde el punto de origen hasta el centro hospitalario de destino.</p>
+                <p>{{ __('blog.vuelos_peru.ambulance_intro') }}</p>
 
                 <div class="cta-box">
-                    <h3>Compromiso con la Salud y la Vida</h3>
-                    <p style="color: #ddd;">Nuestras aeronaves están configuradas como unidades de cuidados intensivos.
-                        Ofrecemos una respuesta inmediata para evacuaciones médicas (MEDEVAC) en todo el territorio
-                        nacional.</p>
+                    <h3>{{ __('blog.vuelos_peru.ambulance_cta_title') }}</h3>
+                    <p style="color: #ddd;">{{ __('blog.vuelos_peru.ambulance_cta_text') }}</p>
                     <a href="{{ route('aeromedico', ['locale' => app()->getLocale()]) }}" class="cta-button">{{ __('blog.vuelos_peru.request_emergency') }}</a>
                 </div>
 
-                <p>Más allá de la emergencia, coordinamos el transporte en ambulancia terrestre tanto en el recojo como en
-                    la recepción, asegurando una transferencia cama a cama sin interrupciones. Nuestra central de
-                    emergencias está operativa las 24 horas del día, los 365 días del año.</p>
+                <p>{{ __('blog.vuelos_peru.ambulance_outro') }}</p>
 
             </div>
         </article>
