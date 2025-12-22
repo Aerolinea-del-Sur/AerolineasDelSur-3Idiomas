@@ -1,8 +1,152 @@
-User-agent: *
+# ====================================================================
+#                    AEROLÍNEA DEL SUR - ROBOTS.TXT
+# ====================================================================
+# Optimizado para SEO y protección contra scraping de IA
+# Última actualización: 2025-12-21
+# ====================================================================
+
+# ============================================
+# 🚫 BLOQUEO DE BOTS DE IA (Scraping)
+# ============================================
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+# ============================================
+# ✅ MOTORES DE BÚSQUEDA LEGÍTIMOS
+# ============================================
+
+User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+# ============================================
+# 🌐 REGLAS GENERALES (Resto de bots)
+# ============================================
+
+User-agent: *
+Crawl-delay: 1
+
+# ============================================
+# 🔒 CARPETAS Y ARCHIVOS BLOQUEADOS
+# ============================================
+
+# Archivos de sistema Laravel
+Disallow: /storage/
+Disallow: /bootstrap/
+Disallow: /vendor/
+Disallow: /app/
+Disallow: /database/
+Disallow: /config/
+Disallow: /resources/
+Disallow: /routes/
+Disallow: /tests/
+
+# Archivos sensibles
+Disallow: /.env
+Disallow: /composer.*
+Disallow: /package.json
+Disallow: /artisan
+Disallow: /*.log
+Disallow: /*.sql
+
+# URLs administrativas
+Disallow: /admin
+Disallow: /administrator
+Disallow: /login
+Disallow: /logout
+
+# Páginas de error
+Disallow: /404
+Disallow: /500
+Disallow: /503
+
+# URLs con parámetros
+Disallow: /*?*
+Disallow: /*&
+
+# ============================================
+# ✅ CARPETAS PERMITIDAS (Assets públicos)
+# ============================================
 
 Allow: /css/
-Allow: /img/
 Allow: /js/
+Allow: /img/
+Allow: /images/
+Allow: /fonts/
+Allow: /public/css/
+Allow: /public/js/
+Allow: /public/img/
+
+# Permitir archivos específicos importantes
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.webp
+Allow: /*.svg
+Allow: /*.woff
+Allow: /*.woff2
+
+# ============================================
+# 🗺️ SITEMAP
+# ============================================
 
 Sitemap: https://aerolineadelsur.com/sitemap.xml
+
+# ====================================================================
+# Desarrollado por: VictorDev-freelancer & JosAL-22
+# ====================================================================
