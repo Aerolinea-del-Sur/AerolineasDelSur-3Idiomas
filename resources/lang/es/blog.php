@@ -1,5 +1,5 @@
 <?php
-
+// ==================== BLOG: Vuelos en Peru ====================
 return [
     'vuelos_peru' => [
         'title' => 'Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur',
@@ -99,5 +99,58 @@ return [
         'ambulance_cta_text' => 'Confíe en los expertos. Contáctenos para una atención inmediata.',
         'request_emergency' => 'Solicitar Ambulancia',
         'ambulance_outro' => '',
+    ],
+
+    // ==================== BLOG: Experiencias de Viaje ====================
+    'experiencias_viaje' => [
+        'title' => '¿Cómo es la experiencia de un Viaje en Jet Privado?',
+        'description' => 'A diferencia de los vuelos comerciales convencionales, la experiencia de un viaje en jet privado se define por la personalización y exclusividad.',
+        'headline' => '¿Cómo es la experiencia de un Viaje en Jet Privado?',
+        'category' => 'Experiencias de Viaje',
+        'read_time' => '4 min de lectura',
+        'author' => 'Aerolínea del Sur',
+        'breadcrumb_home' => 'Inicio',
+        'breadcrumb_blog' => 'Blog',
+        'breadcrumb_current' => 'Experiencia Jet Privado',
+
+        'intro_p1' => 'A diferencia de los vuelos comerciales convencionales, la experiencia de un viaje en jet privado se define por la personalización, eliminando las esperas en terminales congestionadas y adaptándose a la agenda del pasajero. Este nivel de transporte aéreo exclusivo permite transformar un simple traslado en una extensión del estilo de vida o del espacio de trabajo del viajero.',
+        'intro_p2' => 'Optar por el alquiler de aviones privados ofrece ventajas que van más allá del confort. Desde la posibilidad de despegar desde aeropuertos ejecutivos más cercanos a su destino final, hasta disfrutar de un servicio de catering gourmet diseñado a medida, cada detalle está pensado para maximizar la privacidad y el ahorro de tiempo. En un mundo donde la inmediatez es un valor fundamental, el vuelo privado de lujo se consolida como la opción para ejecutivos y viajeros que buscan una logística impecable y sin fricciones.',
+        'intro_p3' => 'En las siguientes secciones, exploraremos los beneficios operativos, las comodidades a bordo y los factores clave para planificar su próximo vuelo de alto nivel.',
+
+        'section_1_title' => 'El Confort y la Exclusividad a Bordo',
+        'section_1_intro' => 'La experiencia de un vuelo charter de lujo comienza desde el momento en que se ingresa a la aeronave, donde el diseño de la cabina está orientado a ofrecer un entorno privado, imposible de encontrar en las aerolíneas comerciales.',
+        'section_1_list_intro' => 'El confort en un jet privado se manifiesta a través de cada detalle del mobiliario y la tecnología:',
+        'section_1_item_1_title' => 'Cabina VIP:',
+        'section_1_item_1_text' => 'El espacio cuenta con asientos de cuero ergonómicos y totalmente reclinables, permitiendo una configuración que se adapta tanto al descanso como a la productividad.',
+        'section_1_item_2_title' => 'Servicio a bordo exclusivo:',
+        'section_1_item_2_text' => 'El catering gourmet se diseña a medida según las preferencias del pasajero, complementado con iluminación ambiental ajustable que ayuda a reducir la fatiga durante el trayecto.',
+        'section_1_outro' => 'Esta atmósfera, similar a la de un hotel de cinco estrellas a 30,000 pies de altura, convierte el interior del avión en el lugar ideal para mantener reuniones de negocios confidenciales o disfrutar de un descanso antes de aterrizar en su destino.',
+
+        'section_2_title' => 'Eficiencia Logística y Ahorro de Tiempo',
+        'section_2_intro' => 'Para el viajero moderno, el tiempo es el recurso más valioso. La experiencia de viaje en jet privado está diseñada para eliminar todas las fricciones del transporte convencional, permitiendo una eficiencia operativa que las aerolíneas comerciales no pueden igualar.',
+        'section_2_list_intro' => 'Los beneficios logísticos clave incluyen:',
+        'section_2_item_1_title' => 'Check-in Express:',
+        'section_2_item_1_text' => 'Olvide las largas esperas en los mostradores. Al viajar de forma privada, es suficiente llegar apenas 15 minutos antes de la hora programada para el despegue.',
+        'section_2_item_2_title' => 'Terminales Privadas (FBO):',
+        'section_2_item_2_text' => 'El uso de terminales de aviación general (Fixed Base Operators) garantiza un ahorro de tiempo en vuelos significativo. Estas instalaciones permiten un embarque discreto, rápido y alejado de las multitudes de las terminales principales.',
+        'section_2_item_3_title' => 'Rutas Directas:',
+        'section_2_item_3_text' => 'La flexibilidad de un jet privado permite volar directamente a su destino final sin escalas innecesarias. Esto incluye el acceso a aeropuertos secundarios o ejecutivos que están más cerca de su punto de llegada, conectando ciudades de forma inmediata.',
+
+        'section_3_title' => 'Flexibilidad y Destinos Personalizados',
+        'section_3_intro' => 'La verdadera ventaja de la renta de jets privados con Aerolínea del Sur es la capacidad de alcanzar lugares remotos con una flexibilidad total en sus itinerarios. A diferencia de los horarios rígidos de la aviación comercial, los vuelos a medida permiten que el transporte se adapte a su agenda y no al revés.',
+        'section_3_list_intro' => 'Este nivel de personalización ofrece beneficios críticos:',
+        'section_3_item_1_title' => 'Itinerarios personalizados:',
+        'section_3_item_1_text' => '¿Necesita estar en una unidad minera en los Andes por la mañana y en una cena de gala en Lima por la noche? Con nosotros, usted define la hoja de ruta y los tiempos de permanencia en cada punto.',
+        'section_3_item_2_title' => 'Acceso a destinos exclusivos:',
+        'section_3_item_2_text' => 'Nuestras aeronaves modernas tienen la capacidad de aterrizar en aeródromos locales y pistas cortas. Esto nos permite acercarlo mucho más a su destino final, reduciendo drásticamente los tiempos de traslado terrestre que requeriría cualquier vuelo comercial convencional.',
+        'section_3_outro' => 'Al eliminar las restricciones de los centros de conexión (hubs), el viaje privado se convierte en la herramienta logística definitiva para misiones críticas o turismo de alto nivel en geografías complejas.',
+
+        'section_4_title' => 'Privacidad y Seguridad sin Concesiones',
+        'section_4_intro' => 'En cada trayecto, la seguridad aeronáutica es nuestra prioridad absoluta. Entendemos que la tranquilidad del pasajero es la base de un servicio premium, por lo que respaldamos cada operación con protocolos internacionales y una política de discreción total sobre la identidad y movimientos de nuestros clientes.',
+        'section_4_list_intro' => 'Los pilares de nuestro compromiso incluyen:',
+        'section_4_item_1_title' => 'Vuelos privados seguros:',
+        'section_4_item_1_text' => 'Contamos con tripulaciones altamente capacitadas bajo estándares de excelencia y un mantenimiento riguroso y preventivo de toda nuestra flota, asegurando que cada aeronave esté en condiciones óptimas para el despegue.',
+        'section_4_item_2_title' => 'Privacidad en vuelos ejecutivos:',
+        'section_4_item_2_text' => 'Viajar de forma privada garantiza que su información, itinerarios y conversaciones a bordo permanezcan en estricta reserva. Esta confidencialidad le brinda la libertad necesaria para trabajar o descansar con total seguridad.',
     ],
 ];
