@@ -51,9 +51,10 @@
 
 
     # 🚫 BLOQUEAR SCANNERS Y BOTS MALICIOSOS
-    RewriteCond %{HTTP_USER_AGENT} (nikto|wget|python|nikto|curl|scan|acunetix|sqlmap) [NC,OR]
-    RewriteCond %{HTTP_USER_AGENT} (havij|libwww-perl|winhttp|python|clshttp|loader) [NC,OR]
-    RewriteCond %{HTTP_USER_AGENT} (webcrawl|netspider|bot|spider|robot|crawler|fake) [NC]
+    # NOTA: No bloqueamos "bot", "spider", "robot", "crawler" porque bloquearía Google, Bing, etc.
+    RewriteCond %{HTTP_USER_AGENT} (nikto|wget|curl|scan|acunetix|sqlmap) [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} (havij|libwww-perl|winhttp|clshttp|loader) [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} (webcrawl|netspider|fake) [NC]
     RewriteRule ^(.*)$ - [F,L]
 
     # 📁 PROTEGER CARPETAS SENSIBLES DE LARAVEL
@@ -185,7 +186,7 @@ Order deny,allow
 
 
 # Bloquear acceso a todos los archivos (EXCEPTO los esenciales)
-<FilesMatch "^(robots.txt|index.php)$">
+<FilesMatch "^(robots.txt|sitemap.xml|index.php)$">
     # Permitir el acceso a estos archivos específicos
     Order allow,deny
     Allow from all
