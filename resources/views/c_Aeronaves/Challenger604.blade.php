@@ -409,7 +409,7 @@ $seo = seo()
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="img/aeronaves/aviones/Challenger604.webp" alt="Bombardier Challenger 604 jet para vuelos charter empresariales en Perú" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
+                            <img src="/img/aeronaves/aviones/Challenger604.webp" alt="Bombardier Challenger 604 jet para vuelos charter empresariales en Perú" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
                         </div>
                     </div>
                 </section>

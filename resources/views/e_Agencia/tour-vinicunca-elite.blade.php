@@ -5,7 +5,7 @@ $seo = seo()
     ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
     ->keywords(['tour vinicunca elite', 'rainbow mountain vip', 'tour privado vinicunca', 'excursión premium cusco'])
     ->image(asset('img/tours/vinicunca-elite.jpg'))
-    ->canonical(url(app()->getLocale() . '/tour-vinicunca-elite'))
+    ->canonical(url(app()->getLocale() . '/sobrevuelo/vinicunca-elite'))
     ->addSchema([
         '@context' => 'https://schema.org',
         '@type' => 'TouristAttraction',

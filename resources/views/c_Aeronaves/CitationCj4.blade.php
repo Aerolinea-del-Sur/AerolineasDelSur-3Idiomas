@@ -409,7 +409,7 @@ $seo = seo()
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="img/aeronaves/aviones/CitationCj4.webp" alt="Cessna Citation CJ4 jet ligero para vuelos charter rápidos en Perú" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
+                            <img src="/img/aeronaves/aviones/CitationCj4.webp" alt="Cessna Citation CJ4 jet ligero para vuelos charter rápidos en Perú" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
                         </div>
                     </div>
                 </section>

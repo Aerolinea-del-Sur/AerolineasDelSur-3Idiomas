@@ -409,7 +409,7 @@ $seo = seo()
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="img/aeronaves/aviones/CitationHemisPhere.webp" alt="Cessna Citation Hemisphere jet privado para vuelos de larga distancia desde Perú" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
+                            <img src="/img/aeronaves/aviones/CitationHemisPhere.webp" alt="Cessna Citation Hemisphere jet privado para vuelos de larga distancia desde Perú" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
                         </div>
                     </div>
                 </section>

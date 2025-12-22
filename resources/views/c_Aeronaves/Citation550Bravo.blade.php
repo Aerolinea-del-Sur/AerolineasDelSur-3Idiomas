@@ -409,7 +409,7 @@ $seo = seo()
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="img/aeronaves/aviones/Citation550-Bravo.webp" alt="Cessna Citation 550 Bravo jet para vuelos charter ejecutivos en Perú" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
+                            <img src="/img/aeronaves/aviones/Citation550-Bravo.webp" alt="Cessna Citation 550 Bravo jet para vuelos charter ejecutivos en Perú" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
                         </div>
                     </div>
                 </section>

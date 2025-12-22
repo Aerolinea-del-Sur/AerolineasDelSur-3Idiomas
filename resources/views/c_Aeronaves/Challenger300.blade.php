@@ -414,7 +414,7 @@ de las opciones más apreciadas en el segmento de jets ejecutivos supermedianos.
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="img/aeronaves/aviones/Challenger300.webp" alt="Bombardier Challenger 300 jet ejecutivo premium para vuelos charter en Perú"
+                            <img src="/img/aeronaves/aviones/Challenger300.webp" alt="Bombardier Challenger 300 jet ejecutivo premium para vuelos charter en Perú"
                                 style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
                         </div>
                     </div>
