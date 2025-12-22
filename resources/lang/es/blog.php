@@ -15,7 +15,7 @@ return [
         'intro_p1' => 'En el vasto y complejo territorio peruano, donde la geografía desafía los límites convencionales, Aerolínea del Sur se erige como una opción para surcar los cielos peruanos.',
         'intro_p2' => 'Puesto que, ha sido diseñada para transformar la manera de viajar, combinando la precisión logística con un estándar de exclusividad. Entendemos que el Perú requiere soluciones aéreas específicas. Por ello, contamos con una flota de aeronaves modernas adaptadas a la geografía diversa del país. Desde las corrientes de aire de la costa hasta las altitudes de los Andes y la densa vegetación de la Amazonía, nuestras unidades están bien equipadas para garantizar vuelos estables, seguros y eficientes en cualquier destino. Más allá del placer de viajar, destacamos por brindar una buena logística operativa. Ya sea que se trate de una agenda corporativa ajustada o de la coordinación de un traslado crítico, nuestro equipo de expertos gestiona cada ruta con eficiencia.',
         'highlight_intro' => 'En Aerolínea del Sur',
-        'highlight_text' => 'la puntualidad y la seguridad no son opcionales; son los pilares que sostienen nuestra reputación en el sector aeronáutico.',
+        'highlight_text' => 'La puntualidad y la seguridad no son opcionales; son los pilares que sostienen nuestra reputación en el sector aeronáutico.',
 
         'know_services' => 'Conoce nuestros servicios',
         'services_intro' => 'En Aerolínea del Sur, hemos diversificado nuestra operatividad para cubrir cada necesidad específica, nuestra propuesta de valor se despliega en cuatro pilares:',
