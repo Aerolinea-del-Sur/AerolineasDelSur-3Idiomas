@@ -5,7 +5,7 @@ $seo = seo()
     ->description("El $aircraft_model es un avión regional robusto ideal para rutas en sierra y selva.")
     ->keywords(['beechcraft 1900d perú', 'avión regional', 'vuelos comerciales regionales', 'transporte pasajeros perú'])
     ->image(asset('img/aeronaves/aviones/Beechcraft1900D.webp'))
-    ->canonical(url(app()->getLocale() . '/aeronaves/beechcraft-1900d'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/Beechcraft1900D'))
     ->addSchema([
         '@context' => 'https://schema.org',
         '@type' => 'Product',

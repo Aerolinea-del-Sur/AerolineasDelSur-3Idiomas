@@ -5,7 +5,7 @@ $seo = seo()
     ->description("El $aircraft_model es un avión turbohélice ejecutivo ideal para pistas cortas y altitudes elevadas.")
     ->keywords(['king air b350', 'beechcraft 350 perú', 'avión turbohélice charter', 'vuelo ejecutivo cusco'])
     ->image(asset('img/aeronaves/aviones/AirKingB350.webp'))
-    ->canonical(url(app()->getLocale() . '/aeronaves/king-air-b350'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/KingAirB350'))
     ->addSchema([
         '@context' => 'https://schema.org',
         '@type' => 'Product',

@@ -5,7 +5,7 @@ $seo = seo()
     ->description("El $aircraft_model es un helicóptero de transporte versátil para carga y pasajeros en zonas remotas.")
     ->keywords(['mi-17 perú', 'helicóptero cargo perú', 'transporte montaña', 'mi17 cusco'])
     ->image(asset('img/aeronaves/aviones/mi17-5.webp'))
-    ->canonical(url(app()->getLocale() . '/aeronaves/mi-17'))
+    ->canonical(url(app()->getLocale() . '/aeronaves/Mi17'))
     ->addSchema([
         '@context' => 'https://schema.org',
         '@type' => 'Product',
