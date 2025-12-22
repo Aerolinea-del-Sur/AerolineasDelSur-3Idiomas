@@ -1,2 +1,8 @@
 User-agent: *
 Allow: /
+
+Allow: /css/
+Allow: /img/
+Allow: /js/
+
+Sitemap: https://aerolineadelsur.com/sitemap.xml
