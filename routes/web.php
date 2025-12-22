@@ -141,6 +141,10 @@ Route::prefix('{locale}')->where(['locale' => 'es|en|pt'])->group(function () {
     Route::get('/blog/Vuelos-Peru', function () {
         return view('f_Blog.Consejos.c2_vuelosPeru');
     })->name('blog.vuelos-peru');
+    
+    Route::get('/blog/Experiencias-de-Viaje', function () {
+        return view('f_Blog.Experiencias.e1_experiencias-de-viaje');
+    })->name('blog.experiencias-de-viaje');
 });
 
 //----------------------------------  FORMULARIOS (SIN PREFIJO DE IDIOMA)  ---------------------------------------------------//

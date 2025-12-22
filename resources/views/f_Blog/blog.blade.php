@@ -27,8 +27,8 @@ $seo = seo()
     $h3_2 = 'Aerolíneas del Sur incorpora nuevos Boeing 787 Dreamliner';
     $p_3 = 'Nuestra flota se moderniza con aeronaves de última generación para brindarte mayor comodidad.';
 
-    $h3_3 = 'Mi experiencia en Clase Ejecutiva: Lujo en las alturas';
-    $p_4 = 'Descubre cómo es volar en nuestra Clase Ejecutiva a través de la experiencia de nuestros pasajeros.';
+    $h3_3 = '¿Como es la experiencia de un Viaje en Jet Privado?';
+    $p_4 = 'Descubre la emoción de volar en una aeronave privada con Aerolínea del Sur. Un viaje único y memorable.';
 
     $h3_4 = 'Machu Picchu: Guía completa para tu visita';
     $p_5 = 'Todo lo que necesitas saber para planificar tu viaje a una de las maravillas del mundo.';
@@ -152,16 +152,16 @@ $seo = seo()
                         <div class="article-meta">
                             <span class="article-date">
                                 <i class="fas fa-calendar"></i>
-                                8 Enero 2024
+                                22 Diciembre 2025
                             </span>
                             <span class="article-read-time">
                                 <i class="fas fa-clock"></i>
-                                6 min
+                                8 min
                             </span>
                         </div>
                         <h3 class="article-title"><?= $h3_3 ?></h3>
                         <p class="article-excerpt"><?= $p_4 ?></p>
-                        <a href="#" class="article-link">
+                        <a href="{{ route('blog.experiencias-de-viaje', ['locale' => app()->getLocale()]) }}" class="article-link">
                             Leer más
                             <i class="fas fa-arrow-right"></i>
                         </a>
