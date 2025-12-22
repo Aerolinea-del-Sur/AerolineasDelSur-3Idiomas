@@ -5,7 +5,7 @@ $seo = seo()
     ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
     ->keywords(['tour tesoros cusco', 'city tour cusco', 'sacsayhuaman tour', 'ruinas incas cusco', 'tour arqueológico'])
     ->image(asset('img/tours/tesoros-cusco.jpg'))
-    ->canonical(url(app()->getLocale() . '/tour-tesoros-cusco'))
+    ->canonical(url(app()->getLocale() . '/agencia/tesoros-cusco'))
     ->addSchema([
         '@context' => 'https://schema.org',
         '@type' => 'TouristAttraction',

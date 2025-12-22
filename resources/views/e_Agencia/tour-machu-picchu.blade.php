@@ -5,7 +5,7 @@ $seo = seo()
     ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
     ->keywords(['tour machu picchu', 'excursión machu picchu', 'tour cusco machu picchu', 'viaje machu picchu'])
     ->image(asset('img/tours/machu-picchu.jpg'))
-    ->canonical(url(app()->getLocale() . '/tour-machu-picchu'))
+    ->canonical(url(app()->getLocale() . '/agencia/machu-picchu'))
     ->addSchema([
         '@context' => 'https://schema.org',
         '@type' => 'TouristAttraction',

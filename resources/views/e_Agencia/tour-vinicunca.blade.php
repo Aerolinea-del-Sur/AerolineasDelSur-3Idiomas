@@ -5,7 +5,7 @@ $seo = seo()
     ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
     ->keywords(['tour vinicunca', 'montaña 7 colores', 'rainbow mountain peru', 'excursión cusco vinicunca', 'tour rainbow mountain'])
     ->image(asset('img/tours/vinicunca-7-colores.jpg'))
-    ->canonical(url(app()->getLocale() . '/tour-vinicunca'))
+    ->canonical(url(app()->getLocale() . '/agencia/vinicunca'))
     ->addSchema([
         '@context' => 'https://schema.org',
         '@type' => 'TouristAttraction',
