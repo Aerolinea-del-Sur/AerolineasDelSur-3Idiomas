@@ -81,7 +81,7 @@ $seo = seo()
                 <p>{{ __('blog.vuelos_peru.intro_p2') }}</p>
 
                 <div class="highlight-box">
-                    <p><strong>{{ __('blog.vuelos_peru.highlight_intro') }}</strong>, {{ __('blog.vuelos_peru.highlight_text') }}</p>
+                    <p><strong>{{ __('blog.vuelos_peru.highlight_intro') }}</strong>{{ __('blog.vuelos_peru.highlight_text') }}</p>
                 </div>
 
                 <h2 id="conoce-servicios">{{ __('blog.vuelos_peru.know_services') }}</h2>
