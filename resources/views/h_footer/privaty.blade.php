@@ -4,7 +4,7 @@ $seo = seo()
     ->description(__('legal.privacy.seo_description'))
     ->keywords(['política privacidad perú', 'protección datos', 'privacidad aerolínea'])
     ->image(asset('img/logo.svg'))
-    ->canonical(url(app()->getLocale() . '/politica-privacidad'))
+    ->canonical(url(app()->getLocale() . '/politicas-privacidad'))
     ->addSchema([
         '@context' => 'https://schema.org',
         '@type' => 'WebPage',

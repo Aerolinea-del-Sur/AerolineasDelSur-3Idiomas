@@ -4,7 +4,7 @@ $seo = seo()
     ->description('Métodos de pago seguros para reservar tu vuelo privado: tarjetas de crédito, transferencias bancarias, PayPal y más. Pagos protegidos 100%.')
     ->keywords(['medios pago aerolínea', 'pago seguro vuelos', 'métodos pago perú'])
     ->image(asset('img/logo.svg'))
-    ->canonical(url(app()->getLocale() . '/medios-pago'))
+    ->canonical(url(app()->getLocale() . '/pagos'))
     ->addSchema([
         '@context' => 'https://schema.org',
         '@type' => 'WebPage',
