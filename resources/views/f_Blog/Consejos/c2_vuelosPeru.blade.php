@@ -48,7 +48,7 @@ $seo = seo()
         <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"
             style="color:#c9a227; text-decoration:none;">{{ __('blog.vuelos_peru.breadcrumb_home') }}</a>
         <span style="color:#666; margin:0 0.5rem;">/</span>
-        <a href="{{ url(app()->getLocale() . '/destinos') }}" style="color:#c9a227; text-decoration:none;">{{ __('blog.vuelos_peru.breadcrumb_blog') }}</a>
+        <a href="{{ url(app()->getLocale() . '/blog') }}" style="color:#c9a227; text-decoration:none;">{{ __('blog.vuelos_peru.breadcrumb_blog') }}</a>
         <span style="color:#666; margin:0 0.5rem;">/</span>
         <strong style="color:#fff;">{{ __('blog.vuelos_peru.breadcrumb_current') }}</strong>
     </nav>

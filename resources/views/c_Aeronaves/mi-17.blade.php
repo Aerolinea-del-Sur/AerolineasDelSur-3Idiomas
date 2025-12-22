@@ -175,7 +175,7 @@ $h3_14 = __('aircraft.request_info');
                             <div class="new-carousel-track">
                                 <div class="new-carousel-slide current-slide">
                                     <img 
-                                        src="/public/img/aeronaves/aviones/Challenger300-1.webp"
+                                        src="/img/aeronaves/aviones/Challenger300-1.webp"
                                         alt="bombardier challenger 300"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -192,7 +192,7 @@ $h3_14 = __('aircraft.request_info');
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/Challenger300-1.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Challenger300-1.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -204,7 +204,7 @@ $h3_14 = __('aircraft.request_info');
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img 
-                                        src="/public/img/aeronaves/aviones/Challenger300-2.webp"
+                                        src="/img/aeronaves/aviones/Challenger300-2.webp"
                                         alt="bombardier challenger 300 range"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -221,7 +221,7 @@ $h3_14 = __('aircraft.request_info');
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/Challenger300-2.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Challenger300-2.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -233,7 +233,7 @@ $h3_14 = __('aircraft.request_info');
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img 
-                                        src="/public/img/aeronaves/aviones/Challenger300-3.webp"
+                                        src="/img/aeronaves/aviones/Challenger300-3.webp"
                                         alt="bombardier Challenger 300"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -250,7 +250,7 @@ $h3_14 = __('aircraft.request_info');
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/Challenger300-3.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Challenger300-3.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -262,7 +262,7 @@ $h3_14 = __('aircraft.request_info');
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img 
-                                        src="/public/img/aeronaves/aviones/Challenger300-4.webp"
+                                        src="/img/aeronaves/aviones/Challenger300-4.webp"
                                         alt="bombardier challenger 300 jet"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -279,7 +279,7 @@ $h3_14 = __('aircraft.request_info');
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/Challenger300-4.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Challenger300-4.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -410,7 +410,7 @@ $h3_14 = __('aircraft.request_info');
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="/public/img/aeronaves/aviones/mi17-5.webp" alt="Mi 17"
+                            <img src="/img/aeronaves/aviones/mi17-5.webp" alt="Mi 17"
                                 style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
                         </div>
                     </div>

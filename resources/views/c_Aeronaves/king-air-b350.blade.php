@@ -177,7 +177,7 @@ $h3_14 = __('aircraft.request_info');
                             <div class="new-carousel-track">
                                 <div class="new-carousel-slide current-slide">
                                     <img 
-                                        src="/public/img/aeronaves/aviones/AirKingB350-1.webp"
+                                        src="/img/aeronaves/aviones/AirKingB350-1.webp"
                                         alt="king air 350"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -194,7 +194,7 @@ $h3_14 = __('aircraft.request_info');
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/AirKingB350-1.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/AirKingB350-1.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -206,7 +206,7 @@ $h3_14 = __('aircraft.request_info');
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img 
-                                        src="/public/img/aeronaves/aviones/AirKingB350-2.webp"
+                                        src="/img/aeronaves/aviones/AirKingB350-2.webp"
                                         alt="beech king air b350"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -223,7 +223,7 @@ $h3_14 = __('aircraft.request_info');
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/AirKingB350-2.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/AirKingB350-2.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -235,7 +235,7 @@ $h3_14 = __('aircraft.request_info');
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img 
-                                        src="/public/img/aeronaves/aviones/AirKingB350-3.webp"
+                                        src="/img/aeronaves/aviones/AirKingB350-3.webp"
                                         alt="b350 king air"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -252,7 +252,7 @@ $h3_14 = __('aircraft.request_info');
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/AirKingB350-3.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/AirKingB350-3.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -264,7 +264,7 @@ $h3_14 = __('aircraft.request_info');
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img 
-                                        src="/public/img/aeronaves/aviones/AirKingB350-4.webp"
+                                        src="/img/aeronaves/aviones/AirKingB350-4.webp"
                                         alt="beechcraft king air 350i"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -281,7 +281,7 @@ $h3_14 = __('aircraft.request_info');
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/AirKingB350-4.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/AirKingB350-4.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -412,7 +412,7 @@ $h3_14 = __('aircraft.request_info');
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="/public/img/aeronaves/aviones/AirKingB350.webp" alt="Air King B350"
+                            <img src="/img/aeronaves/aviones/AirKingB350.webp" alt="Air King B350"
                                 style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
                         </div>
                     </div>

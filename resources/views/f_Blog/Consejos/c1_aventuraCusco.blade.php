@@ -57,7 +57,7 @@ $seo = [
       "@type": "ListItem",
       "position": 2",
       "name": "Destinos",
-      "item": "https://www.aerolineadelsur.com/destinos"
+      "item": "https://www.aerolineadelsur.com/blog"
     },
     {
       "@type": "ListItem",
@@ -708,7 +708,7 @@ $seo = [
     padding-top: 10px;">
         <a href="/">Inicio</a>
         <span aria-hidden="true">/</span>
-        <a href="/destinos">Destinos</a>
+        <a href="/blog">Destinos</a>
         <span aria-hidden="true">/</span>
         <strong aria-current="page">Los Destinos Más Exclusivos de Perú</strong>
     </nav>
@@ -899,7 +899,7 @@ $seo = [
                 <h3>Explora</h3>
                 <nav aria-label="Categorías del blog">
                     <div class="tags">
-                        <a href="/destinos" class="tag">Destinos</a>
+                        <a href="/blog" class="tag">Destinos</a>
                         <a href="/consejos" class="tag">Consejos</a>
                         <a href="/noticias" class="tag">Noticias</a>
                         <a href="/experiencias" class="tag">Experiencias</a>

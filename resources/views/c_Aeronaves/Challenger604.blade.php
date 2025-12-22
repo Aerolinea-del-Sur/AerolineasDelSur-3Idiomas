@@ -174,7 +174,7 @@ $seo = seo()
                             <div class="new-carousel-track">
                                 <div class="new-carousel-slide current-slide">
                                     <img
-                                        src="/public/img/aeronaves/aviones/Challenger604-1.webp"
+                                        src="/img/aeronaves/aviones/Challenger604-1.webp"
                                         alt="challenger 604"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -191,7 +191,7 @@ $seo = seo()
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/Challenger601-1.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Challenger601-1.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -203,7 +203,7 @@ $seo = seo()
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img
-                                        src="/public/img/aeronaves/aviones/Challenger604-2.webp"
+                                        src="/img/aeronaves/aviones/Challenger604-2.webp"
                                         alt="challenger 604 range"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -220,7 +220,7 @@ $seo = seo()
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/Challenger601-2.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Challenger601-2.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -232,7 +232,7 @@ $seo = seo()
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img
-                                        src="/public/img/aeronaves/aviones/Challenger604-3.webp"
+                                        src="/img/aeronaves/aviones/Challenger604-3.webp"
                                         alt="challenger 604 jet"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -249,7 +249,7 @@ $seo = seo()
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/Challenger601-3.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Challenger601-3.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -261,7 +261,7 @@ $seo = seo()
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img
-                                        src="/public/img/aeronaves/aviones/Challenger604-4.webp"
+                                        src="/img/aeronaves/aviones/Challenger604-4.webp"
                                         alt="bombardier challenger 604"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -278,7 +278,7 @@ $seo = seo()
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/Challenger601-4.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Challenger601-4.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -409,7 +409,7 @@ $seo = seo()
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="public/img/aeronaves/aviones/Challenger604.webp" alt="Bombardier Challenger 604 jet para vuelos charter empresariales en Perú" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
+                            <img src="img/aeronaves/aviones/Challenger604.webp" alt="Bombardier Challenger 604 jet para vuelos charter empresariales en Perú" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
                         </div>
                     </div>
                 </section>

@@ -178,7 +178,7 @@ $h3_14 = __('aircraft.request_info');
                             <div class="new-carousel-track">
                                 <div class="new-carousel-slide current-slide">
                                     <img 
-                                        src="/public/img/aeronaves/aviones/Beechcraft1900D-1.webp"
+                                        src="/img/aeronaves/aviones/Beechcraft1900D-1.webp"
                                         alt="beechcraft 1900 d"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -195,7 +195,7 @@ $h3_14 = __('aircraft.request_info');
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/Beechcraft1900D-1.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Beechcraft1900D-1.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -207,7 +207,7 @@ $h3_14 = __('aircraft.request_info');
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img 
-                                        src="/public/img/aeronaves/aviones/Beechcraft1900D-2.webp"
+                                        src="/img/aeronaves/aviones/Beechcraft1900D-2.webp"
                                         alt="beech 1900 aircraft"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -224,7 +224,7 @@ $h3_14 = __('aircraft.request_info');
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/Beechcraft1900D-2.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Beechcraft1900D-2.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -236,7 +236,7 @@ $h3_14 = __('aircraft.request_info');
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img 
-                                        src="/public/img/aeronaves/aviones/Beechcraft1900D-3.webp"
+                                        src="/img/aeronaves/aviones/Beechcraft1900D-3.webp"
                                         alt="beechcraft 1900d"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -253,7 +253,7 @@ $h3_14 = __('aircraft.request_info');
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/Beechcraft1900D-3.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Beechcraft1900D-3.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -265,7 +265,7 @@ $h3_14 = __('aircraft.request_info');
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img 
-                                        src="/public/img/aeronaves/aviones/Beechcraft1900D-4.webp"
+                                        src="/img/aeronaves/aviones/Beechcraft1900D-4.webp"
                                         alt="Beechcraft 1900D"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -282,7 +282,7 @@ $h3_14 = __('aircraft.request_info');
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/Beechcraft1900D-4.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Beechcraft1900D-4.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -413,7 +413,7 @@ $h3_14 = __('aircraft.request_info');
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="/public/img/aeronaves/aviones/Beechcraft1900D.webp" alt="Beechcraft 1900D"
+                            <img src="/img/aeronaves/aviones/Beechcraft1900D.webp" alt="Beechcraft 1900D"
                                 style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
                         </div>
                     </div>

@@ -174,7 +174,7 @@ $seo = seo()
                             <div class="new-carousel-track">
                                 <div class="new-carousel-slide current-slide">
                                     <img
-                                        src="/public/img/aeronaves/aviones/CitationEncore-1.webp"
+                                        src="/img/aeronaves/aviones/CitationEncore-1.webp"
                                         alt="citation encore"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -191,7 +191,7 @@ $seo = seo()
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/CitationEncore-1.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/CitationEncore-1.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -203,7 +203,7 @@ $seo = seo()
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img
-                                        src="/public/img/aeronaves/aviones/CitationEncore-2.webp"
+                                        src="/img/aeronaves/aviones/CitationEncore-2.webp"
                                         alt="citation encore specs"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -220,7 +220,7 @@ $seo = seo()
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/CitationEncore-2.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/CitationEncore-2.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -232,7 +232,7 @@ $seo = seo()
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img
-                                        src="/public/img/aeronaves/aviones/CitationEncore-3.webp"
+                                        src="/img/aeronaves/aviones/CitationEncore-3.webp"
                                         alt="citation encore interior"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -249,7 +249,7 @@ $seo = seo()
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/CitationEncore-3.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/CitationEncore-3.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -261,7 +261,7 @@ $seo = seo()
                                 </div>
                                 <div class="new-carousel-slide">
                                     <img
-                                        src="/public/img/aeronaves/aviones/CitationEncore-4.webp"
+                                        src="/img/aeronaves/aviones/CitationEncore-4.webp"
                                         alt="cessna citation encore"
                                         class="carousel-image"
                                         sizes="(max-width: 890px) 550px, 
@@ -278,7 +278,7 @@ $seo = seo()
                                     {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/public/img/aeronaves/aviones/CitationEncore-4.webp",
+                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/CitationEncore-4.webp",
                                         "creator": {
                                             "@type": "Organization",
                                         },
@@ -409,7 +409,7 @@ $seo = seo()
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="public/img/aeronaves/aviones/CitationEncore.webp" alt="Cessna Citation Encore jet ligero para vuelos ejecutivos en Perú" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
+                            <img src="img/aeronaves/aviones/CitationEncore.webp" alt="Cessna Citation Encore jet ligero para vuelos ejecutivos en Perú" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
                         </div>
                     </div>
                 </section>
