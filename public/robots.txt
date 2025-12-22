@@ -20,12 +20,12 @@ Disallow: /
 User-agent: meta-externalagent
 Disallow: /
 # ====================================================================================================================================
-#                                               PROYECTO DE AEROLINEA DEL SUR
+#                                               PROYECTO DE AEROLINEA DEL SUR Crawl-delay: 1
 # ====================================================================================================================================
 User-agent: *
 Allow: /
 
-Crawl-delay: 1
+
 
 Disallow: /index.php
 Disallow: /.env
