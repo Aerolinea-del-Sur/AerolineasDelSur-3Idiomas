@@ -75,7 +75,7 @@
     text-decoration: none;
     transition: var(--transition-quick);
     position: relative;
-}
+} 
 
 .breadcrumbs a::after {
     content: '';
