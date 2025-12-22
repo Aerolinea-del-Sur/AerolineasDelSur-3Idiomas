@@ -787,8 +787,8 @@
                                 <div class="footer-column">
                                     <h3 class="footer-title">Legal</h3>
                                     <ul class="footer-list">
-                                        <li><a href="/esna" class="footer-link">Code Esnna</a></li>
-                                        <li><a href="/pagos" class="footer-link">Métodos de Pago</a></li>
+                                        <li><a href="/{{ app()->getLocale() }}/esna" class="footer-link">Code Esnna</a></li>
+                                        <li><a href="/{{ app()->getLocale() }}/pagos" class="footer-link">Métodos de Pago</a></li>
                                         <li><a href="/{{ app()->getLocale() }}/politicas-privacidad" class="footer-link">Políticas de Privacidad</a></li>
                                         <li><a href="/{{ app()->getLocale() }}/terminos-condiciones" class="footer-link">Términos y Condiciones</a></li>
                                     </ul>
