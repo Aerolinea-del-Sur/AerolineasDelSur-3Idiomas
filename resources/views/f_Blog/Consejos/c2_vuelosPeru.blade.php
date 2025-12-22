@@ -121,6 +121,15 @@ $seo = seo()
                     <li><strong>{{ __('blog.vuelos_peru.dest_4_title') }}</strong> {{ __('blog.vuelos_peru.dest_4_text') }}</li>
                 </ul>
 
+                <div class="highlight-box">
+                    <strong>{{ __('blog.vuelos_peru.overflights_data_title') }}</strong>
+                    <ul style="margin-top:0.5rem;">
+                        <li><strong>{{ __('blog.vuelos_peru.overflights_data_1_title') }}</strong> {{ __('blog.vuelos_peru.overflights_data_1_text') }}</li>
+                        <li><strong>{{ __('blog.vuelos_peru.overflights_data_2_title') }}</strong> {{ __('blog.vuelos_peru.overflights_data_2_text') }}</li>
+                        <li><strong>{{ __('blog.vuelos_peru.overflights_data_3_title') }}</strong> {{ __('blog.vuelos_peru.overflights_data_3_text') }}</li>
+                    </ul>
+                </div>
+
                 <!-- 3. Carga Aérea -->
                 <h3 id="carga">{{ __('blog.vuelos_peru.cargo_title') }}</h3>
                 <p>{{ __('blog.vuelos_peru.cargo_intro') }}</p>
@@ -132,17 +141,38 @@ $seo = seo()
                     <li><strong>{{ __('blog.vuelos_peru.cargo_3_title') }}</strong> {{ __('blog.vuelos_peru.cargo_3_text') }}</li>
                 </ul>
 
+                <div class="highlight-box">
+                    <strong>{{ __('blog.vuelos_peru.cargo_data_title') }}</strong>
+                    <ul style="margin-top:0.5rem;">
+                        <li><strong>{{ __('blog.vuelos_peru.cargo_data_1_title') }}</strong> {{ __('blog.vuelos_peru.cargo_data_1_text') }}</li>
+                        <li><strong>{{ __('blog.vuelos_peru.cargo_data_2_title') }}</strong> {{ __('blog.vuelos_peru.cargo_data_2_text') }}</li>
+                        <li><strong>{{ __('blog.vuelos_peru.cargo_data_3_title') }}</strong> {{ __('blog.vuelos_peru.cargo_data_3_text') }}</li>
+                    </ul>
+                </div>
+
                 <!-- 4. Ambulancia Aérea -->
                 <h3 id="ambulancia">{{ __('blog.vuelos_peru.ambulance_title') }}</h3>
                 <p>{{ __('blog.vuelos_peru.ambulance_intro') }}</p>
+
+                <h4>{{ __('blog.vuelos_peru.ambulance_commitment_title') }}</h4>
+                <ul>
+                    <li><strong>{{ __('blog.vuelos_peru.ambulance_commitment_1_title') }}</strong> {{ __('blog.vuelos_peru.ambulance_commitment_1_text') }}</li>
+                    <li><strong>{{ __('blog.vuelos_peru.ambulance_commitment_2_title') }}</strong> {{ __('blog.vuelos_peru.ambulance_commitment_2_text') }}</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>{{ __('blog.vuelos_peru.ambulance_data_title') }}</strong>
+                    <ul style="margin-top:0.5rem;">
+                        <li><strong>{{ __('blog.vuelos_peru.ambulance_data_1_title') }}</strong> {{ __('blog.vuelos_peru.ambulance_data_1_text') }}</li>
+                        <li><strong>{{ __('blog.vuelos_peru.ambulance_data_2_title') }}</strong> {{ __('blog.vuelos_peru.ambulance_data_2_text') }}</li>
+                    </ul>
+                </div>
 
                 <div class="cta-box">
                     <h3>{{ __('blog.vuelos_peru.ambulance_cta_title') }}</h3>
                     <p style="color: #ddd;">{{ __('blog.vuelos_peru.ambulance_cta_text') }}</p>
                     <a href="{{ route('aeromedico', ['locale' => app()->getLocale()]) }}" class="cta-button">{{ __('blog.vuelos_peru.request_emergency') }}</a>
                 </div>
-
-                <p>{{ __('blog.vuelos_peru.ambulance_outro') }}</p>
 
             </div>
         </article>
