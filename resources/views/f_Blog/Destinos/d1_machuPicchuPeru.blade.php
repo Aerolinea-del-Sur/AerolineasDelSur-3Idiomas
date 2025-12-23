@@ -184,7 +184,7 @@
 
             </div>
         </article>
-    </div> 
+    </div>
 
     <!-- Scripts al final -->
     <script>
