@@ -53,7 +53,7 @@
         <span style="color:#666; margin:0 0.5rem;">/</span>
         <strong style="color:#fff;">{{ __('blog.experiencias_viaje.breadcrumb_current') }}</strong>
     </nav>
-
+    
     <div class="container" style="padding-top:4rem;">
         <article id="main-content" role="main">
 
