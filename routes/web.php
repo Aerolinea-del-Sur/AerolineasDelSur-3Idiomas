@@ -139,12 +139,16 @@ Route::prefix('{locale}')->where(['locale' => 'es|en|pt'])->group(function () {
     })->name('blog.aventura-cusco');
 
     Route::get('/blog/Vuelos-Peru', function () {
-        return view('f_Blog.Consejos.c2_vuelosPeru');
+        return view('f_Blog.Consejos.c2_vuelosPeru'); 
     })->name('blog.vuelos-peru');
     
     Route::get('/blog/Experiencias-de-Viaje', function () {
         return view('f_Blog.Experiencias.e1_experiencias-de-viaje');
     })->name('blog.experiencias-de-viaje');
+
+    Route::get('/blog/Machu-Picchu-Peru', function () {
+        return view('f_Blog.Experiencias.d1_machuPicchuPeru');
+    })->name('blog.machu-picchu-peru');
 });
 
 //----------------------------------  FORMULARIOS (SIN PREFIJO DE IDIOMA)  ---------------------------------------------------//

@@ -30,8 +30,8 @@ $seo = seo()
     $h3_3 = '¿Como es la experiencia de un Viaje en Jet Privado?';
     $p_4 = 'Descubre la emoción de volar en una aeronave privada con Aerolínea del Sur. Un viaje único y memorable.';
 
-    $h3_4 = 'Machu Picchu: Guía completa para tu visita';
-    $p_5 = 'Todo lo que necesitas saber para planificar tu viaje a una de las maravillas del mundo.';
+    $h3_4 = 'Descubre la Maravilla del Mundo: Machu Picchu';
+    $p_5 = '¡Haz realidad tu viaje a la ciudadela inca! Descubre los secretos de Machu Picchu y cómo visitar esta maravilla.';
 
     $h3_5 = 'Cómo hacer la maleta perfecta: Guía paso a paso';
     $p_6 = 'Aprende a optimizar tu equipaje y viajar con todo lo necesario sin excesos.';
@@ -178,16 +178,16 @@ $seo = seo()
                         <div class="article-meta">
                             <span class="article-date">
                                 <i class="fas fa-calendar"></i>
-                                5 Enero 2024
+                                22 Diciembre 2025
                             </span>
                             <span class="article-read-time">
                                 <i class="fas fa-clock"></i>
-                                7 min
+                                9 min
                             </span>
                         </div>
                         <h3 class="article-title"><?= $h3_4 ?></h3>
                         <p class="article-excerpt"><?= $p_5 ?></p>
-                        <a href="#" class="article-link">
+                        <a href="{{ route('blog.machu-picchu-peru', ['locale' => app()->getLocale()]) }}" class="article-link">
                             Leer más
                             <i class="fas fa-arrow-right"></i>
                         </a>
