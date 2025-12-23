@@ -167,16 +167,16 @@ $seo = seo()
                         <div class="image-carousel">
                             <div id="carouselContainer" class="carousel-container">
                             <div class="carousel-slide active">
-                                <img src="/public/img/tours/tesoros-del-cusco-1.webp" alt="Vista aérea de Machu Picchu">
+                                <img src="/img/tours/tesoros-del-cusco-1.webp" alt="Vista aérea de Machu Picchu">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/public/img/tours/tesoros-del-cusco-2.webp" alt="Valle Sagrado desde el aire">
+                                <img src="/img/tours/tesoros-del-cusco-2.webp" alt="Valle Sagrado desde el aire">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/public/img/tours/tesoros-del-cusco-3.webp" alt="Montañas andinas y naturaleza">      
+                                <img src="/img/tours/tesoros-del-cusco-3.webp" alt="Montañas andinas y naturaleza">      
                             </div>
                             <div class="carousel-slide">
-                                <img src="/public/img/tours/tesoros-del-cusco-4.webp" alt="Río Urubamba">
+                                <img src="/img/tours/tesoros-del-cusco-4.webp" alt="Río Urubamba">
                             </div>
                             </div>
                         </div>

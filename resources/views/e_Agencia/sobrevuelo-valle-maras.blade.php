@@ -162,16 +162,16 @@ $seo = seo()
                 <div class="image-carousel">
                     <div class="carousel-container" id="carouselContainer">
                         <div class="carousel-slide active">
-                            <img src="/public/img/tours/valle-sagrado-maras-1.webp" alt="Vista aérea del Valle Sagrado">
+                            <img src="/img/tours/valle-sagrado-maras-1.webp" alt="Vista aérea del Valle Sagrado">
                         </div> 
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-2.webp" alt="Valle Sagrado desde el aire">
+                            <img src="/img/tours/valle-sagrado-maras-2.webp" alt="Valle Sagrado desde el aire">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-3.webp" alt="Montañas andinas">
+                            <img src="/img/tours/valle-sagrado-maras-3.webp" alt="Montañas andinas">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/valle-sagrado-maras-4.webp" alt="Río Urubamba">
+                            <img src="/img/tours/valle-sagrado-maras-4.webp" alt="Río Urubamba">
                         </div>
                     </div>
                     <button class="carousel-btn prev" onclick="moveSlide(-1)">

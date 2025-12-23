@@ -167,16 +167,16 @@ $seo = seo()
                 <div class="image-carousel">
                     <div class="carousel-container" id="carouselContainer">
                         <div class="carousel-slide active">
-                            <img src="/public/img/sobrevuelos/titicaca-lake-1.webp" alt="Vista aérea de Lago Titicaca">
+                            <img src="/img/sobrevuelos/titicaca-lake-1.webp" alt="Vista aérea de Lago Titicaca">
                         </div> 
                         <div class="carousel-slide">
-                            <img src="/public/img/sobrevuelos/titicaca-lake-2.webp" alt="Lago Titicaca">
+                            <img src="/img/sobrevuelos/titicaca-lake-2.webp" alt="Lago Titicaca">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/public/img/sobrevuelos/titicaca-lake-3.webp" alt="Lago Titicaca Peru">
+                            <img src="/img/sobrevuelos/titicaca-lake-3.webp" alt="Lago Titicaca Peru">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/public/img/sobrevuelos/titicaca-lake-4.webp" alt="Lago Titicaca  Puno">
+                            <img src="/img/sobrevuelos/titicaca-lake-4.webp" alt="Lago Titicaca  Puno">
                         </div>
                     </div>
                     <button class="carousel-btn prev" onclick="moveSlide(-1)">

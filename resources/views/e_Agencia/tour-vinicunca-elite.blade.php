@@ -160,13 +160,13 @@ $seo = seo()
                 <div class="image-carousel">
                     <div class="carousel-container" id="carouselContainer">
                         <div class="carousel-slide active">
-                            <img src="/public/img/tours/vinicunca-peru-1.webp" alt="Vista aérea de Vinicunca">
+                            <img src="/img/tours/vinicunca-peru-1.webp" alt="Vista aérea de Vinicunca">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/vinicunca-peru-2.webp" alt="Valle Sagrado desde el aire">
+                            <img src="/img/tours/vinicunca-peru-2.webp" alt="Valle Sagrado desde el aire">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/public/img/tours/vinicunca-peru-3.webp" alt="Montañas andinas">
+                            <img src="/img/tours/vinicunca-peru-3.webp" alt="Montañas andinas">
                         </div>
                     </div> 
                     <button class="carousel-btn prev" onclick="moveSlide(-1)">
