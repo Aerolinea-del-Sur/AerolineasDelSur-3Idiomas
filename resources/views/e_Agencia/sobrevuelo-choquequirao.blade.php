@@ -90,15 +90,15 @@
     $h3_6 = __('tours.choquequirao.booking_title');
 
     $p_20 = __('tours.choquequirao.booking_note');
-                        ?>
+                                    ?>
 
     <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">
-    <!-- Sección Hero -->
+    <!-- Sección Hero --> 
     <section class="tour-hero">
         <div class="hero-background">
             <img src="{{ asset('img/sobrevuelos/choquequirao-2.webp') }}" alt="Choquequirao desde el aire">
             <div class="hero-overlay"></div>
-        </div> 
+        </div>
         <div class="hero-content">
             <div class="tour-badges">
                 <span class="badge popular">SOBREVUELO</span>
@@ -355,7 +355,8 @@
                             <span><i class="fas fa-users"></i> <?= __('tours.recomendados.nazca_pers') ?></span>
                         </div>
                         <div class="tour-footer">
-                            <span class="tour-more"><?= __('tours.recomendados.general') ?> >></span>
+                            <span href="/{{ app()->getLocale() }}/sobrevuelo/nazca-lines"
+                                class="tour-more"><?= __('tours.recomendados.general') ?> >></span>
                         </div>
                     </div>
                 </div>
@@ -372,7 +373,8 @@
                             <span><i class="fas fa-users"></i> <?= __('tours.recomendados.vinicunca_pers') ?></span>
                         </div>
                         <div class="tour-footer">
-                            <span class="tour-more"><?= __('tours.recomendados.general') ?> >></span>
+                            <span href="/{{ app()->getLocale() }}/sobrevuelo/vinicunca-elite"
+                                class="tour-more"><?= __('tours.recomendados.general') ?> >></span>
                         </div>
                     </div>
                 </div>
@@ -389,7 +391,8 @@
                             <span><i class="fas fa-users"></i> <?= __('tours.recomendados.titicaca_pers') ?></span>
                         </div>
                         <div class="tour-footer">
-                            <span class="tour-more"><?= __('tours.recomendados.general') ?> >></span>
+                            <span href="/{{ app()->getLocale() }}/sobrevuelo/titicaca-lake"
+                                class="tour-more"><?= __('tours.recomendados.general') ?> >></span>
                         </div>
                     </div>
                 </div>
@@ -561,19 +564,19 @@
             }
 
             messageDiv.innerHTML = `
-                                                    <div class="alert alert-${type}" style="
-                                                        padding: 12px 16px;
-                                                        margin-bottom: 20px;
-                                                        border-radius: 8px;
-                                                        font-weight: 500;
-                                                        ${type === 'success' ?
+                                                                <div class="alert alert-${type}" style="
+                                                                    padding: 12px 16px;
+                                                                    margin-bottom: 20px;
+                                                                    border-radius: 8px;
+                                                                    font-weight: 500;
+                                                                    ${type === 'success' ?
                     'background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724;' :
                     'background-color: #f8d7da; border: 1px solid #f5c6cb; color: #721c24;'
                 }
-                                                    ">
-                                                        ${message}
-                                                    </div>
-                                                `;
+                                                                ">
+                                                                    ${message}
+                                                                </div>
+                                                            `;
             messageDiv.style.display = 'block';
 
             // Auto-ocultar mensajes de éxito
