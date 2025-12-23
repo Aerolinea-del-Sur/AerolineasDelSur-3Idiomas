@@ -48,34 +48,27 @@ Disallow: /
 
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Slurp
 Allow: /
-Crawl-delay: 1
 
 User-agent: DuckDuckBot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Baiduspider
 Allow: /
-Crawl-delay: 2
 
 User-agent: YandexBot
 Allow: /
-Crawl-delay: 2
 
 # ============================================
 # 🌐 REGLAS GENERALES (Resto de bots)
 # ============================================
 
 User-agent: *
-Crawl-delay: 1
 
 # ============================================
 # 🔒 CARPETAS Y ARCHIVOS BLOQUEADOS
