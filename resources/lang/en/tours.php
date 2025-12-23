@@ -4,7 +4,7 @@ return [
     // Generic tours
     'seo.title_template' => ':tour | Aerolinea del Sur',
     'seo.description_template' => ':description. Book your tour with flight included.',
-    
+
     // Vinicunca
     'vinicunca.title' => 'Vinicunca Tour - Rainbow Mountain',
     'vinicunca.description' => 'Discover the spectacular Rainbow Mountain from the air',
@@ -15,17 +15,17 @@ return [
     'min_age' => 'Minimum Age',
     'duration' => 'Duration',
     'image_gallery' => 'Image Gallery',
-    
+
     // Machu Picchu
     'machu_picchu.title' => 'Aerial Machu Picchu Tour',
     'machu_picchu.description' => 'Fly over the Inca citadel of Machu Picchu',
-    
+
     // Common translations for all tours
     'price' => 'Price',
     'includes' => 'Includes',
     'book_now' => 'Book Now',
     'more_info' => 'More Information',
-    
+
     // =============================================================
     // CHOQUEQUIRAO OVERFLIGHT
     // =============================================================
@@ -38,7 +38,7 @@ return [
     'choquequirao.duration' => '1 hour (approx.)',
     'choquequirao.summary_title' => 'Trip Summary',
     'choquequirao.highlights_title' => 'Highlights',
-    'choquequirao.highlight1_title' =>  'Choquequirao',
+    'choquequirao.highlight1_title' => 'Choquequirao',
     'choquequirao.highlight1_desc' => 'The sacred sister of Machu Picchu, an archaeological jewel hidden in the mountains.',
     'choquequirao.highlight2_title' => 'Sacred Valley',
     'choquequirao.highlight2_desc' => 'Aerial views of Pisac, Ollantaytambo, and the agricultural landscapes of the valley.',
@@ -67,7 +67,17 @@ return [
     'choquequirao.recommended_title' => 'Other Recommended Tours',
     'choquequirao.booking_title' => 'Book your Tour',
     'choquequirao.booking_note' => '* Required fields. We will contact you within 24 hours to confirm your reservation.',
-    
+
+    // ==================== OVERFLIGHTS: Recommended ====================
+    'recomendados' => [
+        'nazca_title' => 'Nazca Lines',
+        'nazca_desc' => 'Discover the mysterious geoglyphs from the air on this full-day tour.',
+        'amazon_title' => 'Amazon Flight',
+        'amazon_desc' => 'Explore the Peruvian jungle from above and observe the unique biodiversity.',
+        'costa_title' => 'Peruvian Coast',
+        'costa_desc' => 'Fly over the beautiful Pacific coast and the Ballestas Islands.',
+    ],
+
     // =============================================================
     // NAZCA LINES OVERFLIGHT
     // =============================================================
@@ -101,7 +111,7 @@ return [
     'nazca.step7_desc' => 'Enjoy exquisite Peruvian cuisine at a local restaurant before your return flight.',
     'nazca.step8_title' => 'Return flight',
     'nazca.step8_desc' => 'Private return flight to Cusco (approx. 1h 20m). Additional option: Return to Lima (approx. 1h) upon prior coordination.',
-    
+
     // =============================================================
     // LAKE TITICACA OVERFLIGHT
     // =============================================================
@@ -128,7 +138,7 @@ return [
     'titicaca.place5_desc' => 'Recognized for its agricultural terraces and pre-Inca temples dedicated to Pachamama and Pachatata. It is surrounded by an impressive natural environment.',
     'titicaca.place6_title' => 'Riverside Towns of Puno',
     'titicaca.place6_desc' => 'A panorama of the small communities surrounding the edge of the lake. This provides a vision of daily life that takes place between fishing, agriculture and highland customs.',
-    
+
     // =============================================================
     // SACRED VALLEY AND MARAS OVERFLIGHT
     // =============================================================
@@ -149,7 +159,7 @@ return [
     'valle_maras.step4_title' => '4. The fertile fields of the Sacred Valley of the Incas',
     'valle_maras.step5_title' => '5. The mysterious Maras Salt Mines',
     'valle_maras.step6_title' => '6. The beautiful Huaypo lagoon, surrounded by agricultural fields and mountains',
-    
+
     // =============================================================
     // VINICUNCA ELITE
     // =============================================================
@@ -161,7 +171,7 @@ return [
     'vinicunca_elite.step3_title' => '3. The mystical Red Valley',
     'vinicunca_elite.step4_title' => '4. The famous Rainbow Mountain (Vinicunca)',
     'vinicunca_elite.step5_title' => '5. enigmatic Palcoyo',
-    
+
     // Choquequirao specific inclusions
     'choquequirao.included1' => 'Private light aircraft flight (Cusco – Choquequirao – Cusco)',
     'choquequirao.included2' => 'Private hotel – airport transfers',
@@ -175,7 +185,7 @@ return [
     'choquequirao.note1' => 'Valid ID required',
     'choquequirao.note2' => 'Flexible start time: Between 08:00 and 11:00 a.m.',
     'choquequirao.note3' => 'Subject to weather conditions',
-    
+
     // Common inclusions for Nazca, Titicaca and Valle Maras
     'common.included1' => 'Private light aircraft flight',
     'common.included2' => 'Private hotel – airport transfers',

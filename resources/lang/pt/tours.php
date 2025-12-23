@@ -4,7 +4,7 @@ return [
     // Tours genéricos
     'seo.title_template' => ':tour | Aerolinea del Sur',
     'seo.description_template' => ':description. Reserve seu tour com voo incluído.',
-    
+
     // Vinicunca
     'vinicunca.title' => 'Tour Vinicunca - Montanha Arco-Íris',
     'vinicunca.description' => 'Descubra a espetacular Montanha Arco-Íris do ar',
@@ -17,17 +17,17 @@ return [
 
 duration' => 'Duração',
     'image_gallery' => 'Galeria de Imagens',
-    
+
     // Machu Picchu
     'machu_picchu.title' => 'Tour Aéreo Machu Picchu',
     'machu_picchu.description' => 'Sobrevoe a cidadela inca de Machu Picchu',
-    
+
     // Traduções comuns para todos os tours
     'price' => 'Preço',
     'includes' => 'Inclui',
     'book_now' => 'Reservar Agora',
     'more_info' => 'Mais Informações',
-    
+
     // =============================================================
     // SOBREVOO CHOQUEQUIRAO
     // =============================================================
@@ -69,7 +69,17 @@ duration' => 'Duração',
     'choquequirao.recommended_title' => 'Outros Tours Recomendados',
     'choquequirao.booking_title' => 'Reserve seu Tour',
     'choquequirao.booking_note' => '* Campos obrigatórios. Entraremos em contato em 24 horas para confirmar sua reserva.',
-    
+
+    // ==================== SOBREVOO: Recomendados ====================
+    'recomendados' => [
+        'nazca_title' => 'Linhas de Nazca',
+        'nazca_desc' => 'Descubra os misteriosos geoglifos do ar neste passeio de dia inteiro.',
+        'amazon_title' => 'Voo Amazônico',
+        'amazon_desc' => 'Explore a selva peruana das alturas e observe a biodiversidade única.',
+        'costa_title' => 'Costa Peruana',
+        'costa_desc' => 'Sobrevoe a bela costa do Pacífico e as Ilhas Ballestas.',
+    ],
+
     // =============================================================
     // SOBREVOO LINHAS DE NAZCA
     // =============================================================
@@ -105,7 +115,7 @@ duration' => 'Duração',
     'nazca.step7_desc' => 'Desfrute de uma exquisita comida peruana em um restaurante local antes de seu voo de retorno.',
     'nazca.step8_title' => 'Voo de retorno',
     'nazca.step8_desc' => 'Voo privado de retorno a Cusco (aprox. 1h 20m). Opção adicional: Retorno a Lima (aprox. 1h) mediante coordenação prévia.',
-    
+
     // =============================================================
     // SOBREVOO LAGO TITICACA
     // =============================================================
@@ -132,7 +142,7 @@ duration' => 'Duração',
     'titicaca.place5_desc' => 'Reconhecida por seus terraços agrícolas e os templos pré-incaicos dedicados a Pachamama e Pachatata. Está rodeada de um ambiente natural impressionante.',
     'titicaca.place6_title' => 'Povoados Ribeirinhos de Puno',
     'titicaca.place6_desc' => 'Uma panorâmica das pequenas comunidades que rodeiam a borda do lago. Isso proporciona uma visão da vida cotidiana que se desenvolve entre a pesca, a agricultura e os costumes altoandinos.',
-    
+
     // =============================================================
     // SOBREVOO VALE SAGRADO E MARAS
     // =============================================================
@@ -153,7 +163,7 @@ duration' => 'Duração',
     'valle_maras.step4_title' => '4. Os campos férteis do Vale Sagrado dos Incas',
     'valle_maras.step5_title' => '5. As misteriosas Salinas de Maras',
     'valle_maras.step6_title' => '6. A bela lagoa de Huaypo, rodeada de campos agrícolas e montanhas',
-    
+
     // =============================================================
     // VINICUNCA ELITE
     // =============================================================
@@ -165,7 +175,7 @@ duration' => 'Duração',
     'vinicunca_elite.step3_title' => '3. O místico Vale Vermelho',
     'vinicunca_elite.step4_title' => '4. A famosa Montanha das 7 Cores (Vinicunca)',
     'vinicunca_elite.step5_title' => '5. enigmática Palcoyo',
-    
+
     // Inclusões específicas de Choquequirao
     'choquequirao.included1' => 'Voo privado em avião leve (Cusco – Choquequirao – Cusco)',
     'choquequirao.included2' => 'Traslados privados hotel – aeroporto – hotel',
@@ -179,7 +189,7 @@ duration' => 'Duração',
     'choquequirao.note1' => 'Documento de identidade válido é necessário',
     'choquequirao.note2' => 'Horário de início flexível: Entre 08:00 e 11:00 da manhã',
     'choquequirao.note3' => 'Sujeito às condições climáticas',
-    
+
     // Inclusões comuns para Nazca, Titicaca e Valle Maras
     'common.included1' => 'Voo privado em avião leve',
     'common.included2' => 'Traslados privados hotel – aeroporto – hotel',

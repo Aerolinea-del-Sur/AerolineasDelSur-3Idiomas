@@ -153,6 +153,8 @@ return [
         'section_4_item_2_title' => 'Privacidad en vuelos ejecutivos:',
         'section_4_item_2_text' => 'Viajar de forma privada garantiza que su información, itinerarios y conversaciones a bordo permanezcan en estricta reserva. Esta confidencialidad le brinda la libertad necesaria para trabajar o descansar con total seguridad.',
     ],
+
+    // ==================== BLOG: Machu Picchu Peru ====================
     'machu_picchu' => [
         'title' => 'Descubre la Maravilla del Mundo: Machu Picchu',
         'description' => 'Como una de las Nuevas Siete Maravillas del Mundo, este antiguo recinto no solo es símbolo de la ingeniería y la arquitectura, sino también un centro que sorprende a sus visitantes.',

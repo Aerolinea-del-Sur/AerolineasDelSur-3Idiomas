@@ -4,7 +4,7 @@ return [
     // Tours genéricos
     'seo.title_template' => ':tour | Aerolínea del Sur',
     'seo.description_template' => ':description. Reserva tu tour con vuelo incluido.',
-    
+
     // Vinicunca
     'vinicunca.title' => 'Tour Vinicunca - Montaña de 7 Colores',
     'vinicunca.description' => 'Descubre la espectacular Montaña de 7 Colores desde el aire',
@@ -15,17 +15,17 @@ return [
     'min_age' => 'Edad Mínima',
     'duration' => 'Duración',
     'image_gallery' => 'Galería de Imágenes',
-    
+
     // Machu Picchu
     'machu_picchu.title' => 'Tour Machu Picchu Aéreo',
     'machu_picchu.description' => 'Sobrevuela la ciudadela inca de Machu Picchu',
-    
+
     // Common translations for all tours
     'price' => 'Precio',
     'includes' => 'Incluye',
     'book_now' => 'Reservar Ahora',
     'more_info' => 'Más Información',
-    
+
     // =============================================================
     // SOBREVUELO CHOQUEQUIRAO
     // =============================================================
@@ -79,7 +79,7 @@ return [
     'choquequirao.recommended_title' => 'Otros Tours Recomendados',
     'choquequirao.booking_title' => 'Reserva tu Tour',
     'choquequirao.booking_note' => '* Campos obligatorios. Te contactaremos en 24 horas para confirmar tu reserva.',
-    
+
     // =============================================================
     // SOBREVUELO LÍNEAS DE NAZCA
     // =============================================================
@@ -113,7 +113,7 @@ return [
     'nazca.step7_desc' => 'Disfrute de una exquisita comida peruana en un restaurante local antes de su vuelo de regreso.',
     'nazca.step8_title' => 'Vuelo de retorno',
     'nazca.step8_desc' => 'Vuelo privado de retorno a Cusco (aprox. 1h 20m). Opción adicional: Retorno a Lima (aprox. 1h) previa coordinación.',
-    
+
     // =============================================================
     // SOBREVUELO LAGO TITICACA
     // =============================================================
@@ -140,7 +140,17 @@ return [
     'titicaca.place5_desc' => 'Reconocida por sus terrazas agrícolas y los templos preincaicos dedicados a Pachamama y Pachatata. Se encuentra rodeada de un entorno natural impresionante.',
     'titicaca.place6_title' => 'Pueblos Ribereños de Puno',
     'titicaca.place6_desc' => 'Una panorámica de las pequeñas comunidades que rodean el borde del lago. Esto brinda una visión de la vida cotidiana que se desarrolla entre la pesca, la agricultura y las costumbres altoandinas.',
-    
+
+    // ==================== SOBREVUELO: Recomendados ====================
+    'recomendados' => [
+        'nazca_title' => 'Líneas de Nazca',
+        'nazca_desc' => 'Descubre los misteriosos geoglifos desde el aire en este tour de día completo.',
+        'amazon_title' => 'Vuelo Amazónico',
+        'amazon_desc' => 'Explora la selva peruana desde las alturas y observa la biodiversidad única.',
+        'costa_title' => 'Costa Peruana',
+        'costa_desc' => 'Sobrevuela la hermosa costa del Pacífico y las islas Ballestas.',
+    ],
+
     // =============================================================
     // SOBREVUELO VALLE SAGRADO Y MARAS
     // =============================================================
@@ -161,7 +171,7 @@ return [
     'valle_maras.step4_title' => '4. Los fértiles campos del Valle Sagrado de los Incas',
     'valle_maras.step5_title' => '5. Las misteriosas Salineras de Maras',
     'valle_maras.step6_title' => '6. La hermosa laguna de Huaypo, rodeada de campos agrícolas y montañas',
-    
+
     // =============================================================
     // VINICUNCA ELITE
     // =============================================================
@@ -173,7 +183,7 @@ return [
     'vinicunca_elite.step3_title' => '3. El místico Valle Rojo',
     'vinicunca_elite.step4_title' => '4. La famosa Montaña de 7 Colores (Vinicunca)',
     'vinicunca_elite.step5_title' => '5. enigmática Palcoyo',
-    
+
     // Inclusiones comunes para Nazca, Titicaca y Valle Maras
     'common.included1' => 'Vuelo privado en avión ligero',
     'common.included2' => 'Traslados privados hotel – aeropuerto – hotel',
