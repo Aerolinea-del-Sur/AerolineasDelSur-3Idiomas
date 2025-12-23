@@ -5,6 +5,17 @@
 
     RewriteEngine On
 
+    # =============================================
+    # 🚫 PREVENIR /public/ EN URLS
+    # =============================================
+    # Si alguien accede a /public/algo, redirigir a /algo
+    RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
+    RewriteRule ^ /%1 [L,R=301]
+    
+    # Bloquear acceso directo si la URL contiene /public/
+    RewriteCond %{REQUEST_URI} ^/public/
+    RewriteRule ^public/(.*)$ /$1 [L,R=301]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
