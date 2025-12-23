@@ -144,11 +144,21 @@ return [
     // ==================== SOBREVUELO: Recomendados ====================
     'recomendados' => [
         'nazca_title' => 'Líneas de Nazca',
-        'nazca_desc' => 'Descubre los misteriosos geoglifos desde el aire en este tour de día completo.',
-        'amazon_title' => 'Vuelo Amazónico',
-        'amazon_desc' => 'Explora la selva peruana desde las alturas y observa la biodiversidad única.',
-        'costa_title' => 'Costa Peruana',
-        'costa_desc' => 'Sobrevuela la hermosa costa del Pacífico y las islas Ballestas.',
+        'nazca_desc' => 'Contempla los enigmáticos geoglifos gigantes grabados en el desierto desde una perspectiva aérea.',
+        'nazca_type' => 'Nuevo',
+        'nazca_hrs' => '1h 20m',
+        'nazca_pers' => '4 personas',
+        'choquequirao_title' => 'Choquequirao',
+        'choquequirao_desc' => 'Sobrevuela la Ciudad Hermana de Machu Picchu y admira su inaccesible grandeza desde el aire.',
+        'choquequirao_type' => 'Nuevo',
+        'choquequirao_hrs' => '1h',
+        'choquequirao_pers' => '4 personas',
+        'titicaca_title' => 'Lago Titicaca',
+        'titicaca_desc' => 'Descubre el lago navegable más alto del mundo y sus islas ancestrales en un vuelo panorámico único.',
+        'titicaca_type' => 'Nuevo',
+        'titicaca_hrs' => '1h 40m',
+        'titicaca_pers' => '6 personas',
+        'general' => 'Conoce Más',
     ],
 
     // =============================================================
