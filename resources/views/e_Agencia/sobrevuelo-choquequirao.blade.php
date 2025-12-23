@@ -90,7 +90,7 @@
     $h3_6 = __('tours.choquequirao.booking_title');
 
     $p_20 = __('tours.choquequirao.booking_note');
-                                                                ?>
+                                                                        ?>
 
     <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">
     <!-- Sección Hero -->
@@ -323,7 +323,7 @@
                         <li><i class="fas fa-times"></i> <?= __('tours.choquequirao.notincluded1') ?></li>
                         <li><i class="fas fa-times"></i> <?= __('tours.choquequirao.notincluded2') ?></li>
                         <li><i class="fas fa-times"></i> <?= __('tours.choquequirao.notincluded3') ?></li>
-                    </ul> 
+                    </ul>
                 </div>
             </div>
             <div class="important-notes">
@@ -356,7 +356,7 @@
                         </div>
                         <div class="tour-footer">
                             <a href="/{{ app()->getLocale() }}/sobrevuelo/nazca-lines"
-                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
+                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></a> 
                         </div>
                     </div>
                 </div>
@@ -373,8 +373,8 @@
                             <span><i class="fas fa-users"></i> <?= __('tours.recomendados.vinicunca_pers') ?></span>
                         </div>
                         <div class="tour-footer">
-                            <span href="/{{ app()->getLocale() }}/sobrevuelo/vinicunca-elite"
-                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></span>
+                            <a href="/{{ app()->getLocale() }}/sobrevuelo/vinicunca-elite"
+                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
                         </div>
                     </div>
                 </div>
@@ -391,8 +391,8 @@
                             <span><i class="fas fa-users"></i> <?= __('tours.recomendados.titicaca_pers') ?></span>
                         </div>
                         <div class="tour-footer">
-                            <span href="/{{ app()->getLocale() }}/sobrevuelo/titicaca-lake"
-                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></span>
+                            <a href="/{{ app()->getLocale() }}/sobrevuelo/titicaca-lake"
+                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
                         </div>
                     </div>
                 </div>
@@ -564,19 +564,19 @@
             }
 
             messageDiv.innerHTML = `
-                                                                                            <div class="alert alert-${type}" style="
-                                                                                                padding: 12px 16px;
-                                                                                                margin-bottom: 20px;
-                                                                                                border-radius: 8px;
-                                                                                                font-weight: 500;
-                                                                                                ${type === 'success' ?
+                                                                                                    <div class="alert alert-${type}" style="
+                                                                                                        padding: 12px 16px;
+                                                                                                        margin-bottom: 20px;
+                                                                                                        border-radius: 8px;
+                                                                                                        font-weight: 500;
+                                                                                                        ${type === 'success' ?
                     'background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724;' :
                     'background-color: #f8d7da; border: 1px solid #f5c6cb; color: #721c24;'
                 }
-                                                                                            ">
-                                                                                                ${message}
-                                                                                            </div>
-                                                                                        `;
+                                                                                                    ">
+                                                                                                        ${message}
+                                                                                                    </div>
+                                                                                                `;
             messageDiv.style.display = 'block';
 
             // Auto-ocultar mensajes de éxito
