@@ -147,7 +147,7 @@ Route::prefix('{locale}')->where(['locale' => 'es|en|pt'])->group(function () {
     })->name('blog.experiencias-de-viaje');
 
     Route::get('/blog/Machu-Picchu-Peru', function () {
-        return view('f_Blog.Experiencias.d1_machuPicchuPeru');
+        return view('f_Blog.Destinos.d1_machuPicchuPeru');
     })->name('blog.machu-picchu-peru');
 });
 
