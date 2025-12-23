@@ -76,7 +76,7 @@ return [
     'choquequirao.note1' => 'Se requiere documento de identidad válido',
     'choquequirao.note2' => 'Hora de inicio flexible: Entre las 08:00 y 11:00 a.m.',
     'choquequirao.note3' => 'Sujeto a condiciones climáticas',
-    'choquequirao.recommended_title' => 'Otros Tours Recomendados',
+    'choquequirao.recommended_title' => 'Otros Sobrevuelos Recomendados',
     'choquequirao.booking_title' => 'Reserva tu Tour',
     'choquequirao.booking_note' => '* Campos obligatorios. Te contactaremos en 24 horas para confirmar tu reserva.',
 

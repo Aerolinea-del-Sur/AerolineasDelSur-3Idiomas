@@ -81,8 +81,8 @@
     $h4_14 = __('tours.recomendados.nazca_title');
     $p_17 = __('tours.recomendados.nazca_desc');
 
-    $h4_15 = __('tours.recomendados.choquequirao_title');
-    $p_18 = __('tours.recomendados.choquequirao_desc');
+    $h4_15 = __('tours.recomendados.vinicunca_title');
+    $p_18 = __('tours.recomendados.vinicunca_desc');
 
     $h4_16 = __('tours.recomendados.titicaca_title');
     $p_19 = __('tours.recomendados.titicaca_desc');
@@ -90,15 +90,15 @@
     $h3_6 = __('tours.choquequirao.booking_title');
 
     $p_20 = __('tours.choquequirao.booking_note');
-            ?>
+                        ?>
 
-    <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}"> 
+    <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">
     <!-- Sección Hero -->
     <section class="tour-hero">
         <div class="hero-background">
             <img src="{{ asset('img/sobrevuelos/choquequirao-2.webp') }}" alt="Choquequirao desde el aire">
             <div class="hero-overlay"></div>
-        </div>
+        </div> 
         <div class="hero-content">
             <div class="tour-badges">
                 <span class="badge popular">SOBREVUELO</span>
@@ -344,8 +344,7 @@
             <div class="tours-grid">
                 <div class="tour-card">
                     <div class="tour-image">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Lineas de Nazca">
+                        <img src="{{ asset('img/sobrevuelos/nazca-lines-1.webp') }}" alt="Lineas de Nazca">
                         <div class="tour-badge"><?= __('tours.recomendados.nazca_type') ?></div>
                     </div>
                     <div class="tour-content">
@@ -362,16 +361,15 @@
                 </div>
                 <div class="tour-card">
                     <div class="tour-image">
-                        <img src="https://images.unsplash.com/photo-1583416750470-965b2707b355?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Choquequirao">
-                        <div class="tour-badge"><?= __('tours.recomendados.choquequirao_type') ?></div>
+                        <img src="{{ asset('img/sobrevuelos/vinicunca-mountain-1.webp') }}" alt="Vinicunca">
+                        <div class="tour-badge"><?= __('tours.recomendados.vinicunca_type') ?></div>
                     </div>
                     <div class="tour-content">
                         <h4><?= $h4_15 ?></h4>
                         <p><?= $p_18 ?></p>
                         <div class="tour-details">
-                            <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.choquequirao_hrs') ?></span>
-                            <span><i class="fas fa-users"></i> <?= __('tours.recomendados.choquequirao_pers') ?></span>
+                            <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.vinicunca_hrs') ?></span>
+                            <span><i class="fas fa-users"></i> <?= __('tours.recomendados.vinicunca_pers') ?></span>
                         </div>
                         <div class="tour-footer">
                             <span class="tour-more"><?= __('tours.recomendados.general') ?> >></span>
@@ -380,8 +378,7 @@
                 </div>
                 <div class="tour-card">
                     <div class="tour-image">
-                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Lago Titicaca">
+                        <img src="{{ asset('img/sobrevuelos/titicaca-lake-1.webp') }}" alt="Lago Titicaca">
                         <div class="tour-badge"><?= __('tours.recomendados.titicaca_type') ?></div>
                     </div>
                     <div class="tour-content">
@@ -564,19 +561,19 @@
             }
 
             messageDiv.innerHTML = `
-                                        <div class="alert alert-${type}" style="
-                                            padding: 12px 16px;
-                                            margin-bottom: 20px;
-                                            border-radius: 8px;
-                                            font-weight: 500;
-                                            ${type === 'success' ?
+                                                    <div class="alert alert-${type}" style="
+                                                        padding: 12px 16px;
+                                                        margin-bottom: 20px;
+                                                        border-radius: 8px;
+                                                        font-weight: 500;
+                                                        ${type === 'success' ?
                     'background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724;' :
                     'background-color: #f8d7da; border: 1px solid #f5c6cb; color: #721c24;'
                 }
-                                        ">
-                                            ${message}
-                                        </div>
-                                    `;
+                                                    ">
+                                                        ${message}
+                                                    </div>
+                                                `;
             messageDiv.style.display = 'block';
 
             // Auto-ocultar mensajes de éxito
