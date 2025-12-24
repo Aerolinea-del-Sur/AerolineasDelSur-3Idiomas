@@ -357,7 +357,7 @@
                         <div class="tour-footer">
                             <a href="/{{ app()->getLocale() }}/sobrevuelo/nazca-lines"
                                 class="tour-btn"><?= __('tours.recomendados.general') ?> >></a> 
-                        </div>
+                        </div> 
                     </div> 
                 </div>
                 <div class="tour-card">
