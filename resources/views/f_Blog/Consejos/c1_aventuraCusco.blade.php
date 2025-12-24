@@ -21,7 +21,7 @@ $seo = [
   "@type": "Article",
   "headline": "Título del Artículo - Aerolínea del Sur",
   "description": "Descripción completa del artículo sobre aviación privada, aeronaves y servicios de Aerolínea del Sur.",
-  "image": "https://www.aerolineadelsur.com/public/img/aeronaves/aviones/Air-King-B200.webp",
+  "image": "https://www.aerolineadelsur.com/img/aeronaves/aviones/Air-King-B200.webp",
   "author": {
     "@type": "Organization",
     "name": "Aerolínea del Sur"
@@ -31,7 +31,7 @@ $seo = [
     "name": "Aerolínea del Sur",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.aerolineadelsur.com/public/img/logo.webp"
+      "url": "https://www.aerolineadelsur.com/img/logo.webp"
     }
   },
   "datePublished": "2025-11-15",

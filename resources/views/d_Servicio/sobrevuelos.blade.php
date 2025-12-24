@@ -204,10 +204,10 @@ $seo = seo()
                         'title' => 'Choquequirao',
                         'description' => __('services.overflights.choquequirao.desc'),
                         'images' => [
-                            '/public/img/sobrevuelos/choquequirao-1.webp',
-                            '/public/img/sobrevuelos/choquequirao-2.webp',
-                            '/public/img/sobrevuelos/choquequirao-3.webp',
-                            '/public/img/sobrevuelos/choquequirao-4.webp'
+                            '/img/sobrevuelos/choquequirao-1.webp',
+                            '/img/sobrevuelos/choquequirao-2.webp',
+                            '/img/sobrevuelos/choquequirao-3.webp',
+                            '/img/sobrevuelos/choquequirao-4.webp'
                         ],
                         'duration' => '1h',
                         'pax' => __('common.up_to') . ' 4 ' . __('common.people'),
@@ -221,10 +221,10 @@ $seo = seo()
                         'title' => 'Lago Titicaca',
                         'description' => __('services.overflights.titicaca.desc'),
                         'images' => [
-                            '/public/img/sobrevuelos/titicaca-lake-1.webp',
-                            '/public/img/sobrevuelos/titicaca-lake-2.webp',
-                            '/public/img/sobrevuelos/titicaca-lake-3.webp',
-                            '/public/img/sobrevuelos/titicaca-lake-4.webp'
+                            '/img/sobrevuelos/titicaca-lake-1.webp',
+                            '/img/sobrevuelos/titicaca-lake-2.webp',
+                            '/img/sobrevuelos/titicaca-lake-3.webp',
+                            '/img/sobrevuelos/titicaca-lake-4.webp'
                         ],
                         'duration' => '1h 40m',
                         'pax' => __('common.up_to') . ' 6 ' . __('common.people'),
@@ -238,10 +238,10 @@ $seo = seo()
                         'title' => 'Líneas de Nazca',
                         'description' => __('services.overflights.nazca.desc'),
                         'images' => [
-                            '/public/img/sobrevuelos/nazca-lines-1.webp',
-                            '/public/img/sobrevuelos/nazca-lines-2.webp',
-                            '/public/img/sobrevuelos/nazca-lines-3.webp',
-                            '/public/img/sobrevuelos/nazca-lines-4.webp'
+                            '/img/sobrevuelos/nazca-lines-1.webp',
+                            '/img/sobrevuelos/nazca-lines-2.webp',
+                            '/img/sobrevuelos/nazca-lines-3.webp',
+                            '/img/sobrevuelos/nazca-lines-4.webp'
                         ],
                         'duration' => '1h 20m',
                         'pax' => __('common.up_to') . ' 4 ' . __('common.people'),
@@ -255,10 +255,10 @@ $seo = seo()
                     //    'title' => 'Salar de Uyuni',
                     //    'description' => 'Vuela sobre el espejo natural más grande del planeta, donde el cielo y la tierra se funden en el horizonte.',
                     //    'images' => [
-                    //        '/public/img/tours/andes-magicos-1.jpg',
-                    //        '/public/img/tours/andes-magicos-2.jpg',
-                    //        '/public/img/tours/andes-magicos-3.jpg',
-                    //        '/public/img/tours/andes-magicos-4.jpg'
+                    //        '/img/tours/andes-magicos-1.jpg',
+                    //        '/img/tours/andes-magicos-2.jpg',
+                    //        '/img/tours/andes-magicos-3.jpg',
+                    //        '/img/tours/andes-magicos-4.jpg'
                     //    ],
                     //    'duration' => '3h',
                     //    'pax' => 'Hasta 6 personas',
@@ -291,10 +291,10 @@ $seo = seo()
                         'title' => $h2_4, // Valle Sagrado
                         'description' => $p_5,
                         'images' => [
-                            '/public/img/sobrevuelos/sacred-valley-1.webp',
-                            '/public/img/sobrevuelos/sacred-valley-2.webp',
-                            '/public/img/sobrevuelos/sacred-valley-3.webp',
-                            '/public/img/sobrevuelos/sacred-valley-4.webp'
+                            '/img/sobrevuelos/sacred-valley-1.webp',
+                            '/img/sobrevuelos/sacred-valley-2.webp',
+                            '/img/sobrevuelos/sacred-valley-3.webp',
+                            '/img/sobrevuelos/sacred-valley-4.webp'
                         ],
                         'duration' => '1h',
                         'pax' => 'Hasta 6 personas',
@@ -308,10 +308,10 @@ $seo = seo()
                         'title' => $h2_6, // Vinicunca
                         'description' => $p_7,
                         'images' => [
-                            '/public/img/sobrevuelos/vinicunca-mountain-1.webp',
-                            '/public/img/sobrevuelos/vinicunca-mountain-2.webp',
-                            '/public/img/sobrevuelos/vinicunca-mountain-3.webp',
-                            '/public/img/sobrevuelos/vinicunca-mountain-4.webp'
+                            '/img/sobrevuelos/vinicunca-mountain-1.webp',
+                            '/img/sobrevuelos/vinicunca-mountain-2.webp',
+                            '/img/sobrevuelos/vinicunca-mountain-3.webp',
+                            '/img/sobrevuelos/vinicunca-mountain-4.webp'
                         ],
                         'duration' => '1h',
                         'pax' => 'Hasta 6 personas',

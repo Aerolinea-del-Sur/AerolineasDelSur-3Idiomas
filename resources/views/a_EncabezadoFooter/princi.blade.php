@@ -923,7 +923,7 @@
 <div class="social-sidebar" itemscope itemtype="https://schema.org/Organization">
     <meta itemprop="name" content="Aerolinea del Sur">
     <meta itemprop="url" content="https://www.aerolineadelsur.com">
-    <meta itemprop="logo" content="https://www.aerolineadelsur.com/public/img/logo.webp">
+    <meta itemprop="logo" content="https://www.aerolineadelsur.com/img/logo.webp">
 
     <div class="social-header">
         <span>Síguenos</span>
@@ -987,14 +987,14 @@
   "name": "Aerolinea del Sur - Vuela con Seguridad y Confort",
   "headline": "Aerolinea del Sur - Vuela con Seguridad y Confort",
   "description": "Descubre nuestros servicios de transporte aéreo de calidad y atención personalizada en cada vuelo.",
-  "image": "https://www.aerolineadelsur.com/public/img/aeronaves/aviones/Air-King-B200.webp",
+  "image": "https://www.aerolineadelsur.com/img/aeronaves/aviones/Air-King-B200.webp",
   "publisher": {
     "@type": "Organization",
     "name": "Aerolinea del Sur",
     "url": "https://www.aerolineadelsur.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.aerolineadelsur.com/public/img/logo.webp"
+      "url": "https://www.aerolineadelsur.com/img/logo.webp"
     },
     "sameAs": [
       "https://www.facebook.com/profile.php?id=61575792015865",

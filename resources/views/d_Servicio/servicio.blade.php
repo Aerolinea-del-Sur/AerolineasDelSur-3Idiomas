@@ -62,7 +62,7 @@ $seo = seo()
                     </ul>
                 </div>
                 <div class="service-image">
-                    <img src="/public/img/servicios/Servicios-1.webp" alt="Avión privado en vuelo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    <img src="/img/servicios/Servicios-1.webp" alt="Avión privado en vuelo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
                 </div>
             </a>
             <!-- Servicio 2: IMAGEN | CONTENIDO -->
@@ -80,7 +80,7 @@ $seo = seo()
                     </ul>
                 </div>
                 <div class="service-image">
-                    <img src="/public/img/servicios/Servicios-2.webp" alt="Sobrevuelo panorámico" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    <img src="/img/servicios/Servicios-2.webp" alt="Sobrevuelo panorámico" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
                 </div>
             </a>
             <!-- Servicio 3: CONTENIDO | IMAGEN -->
@@ -98,7 +98,7 @@ $seo = seo()
                     </ul>
                 </div>
                 <div class="service-image">
-                    <img src="/public/img/servicios/Servicios-3.webp" alt="Helicóptero en vuelo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    <img src="/img/servicios/Servicios-3.webp" alt="Helicóptero en vuelo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
                 </div>
             </a>
             <!-- Servicio 4: IMAGEN | CONTENIDO -->
@@ -116,7 +116,7 @@ $seo = seo()
                     </ul>
                 </div>
                 <div class="service-image">
-                    <img src="/public/img/servicios/Servicios-4.webp" alt="Ambulancia aérea médica" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    <img src="/img/servicios/Servicios-4.webp" alt="Ambulancia aérea médica" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
                 </div>
             </a>
             <!-- Servicio 5: CONTENIDO | IMAGEN -->
@@ -134,7 +134,7 @@ $seo = seo()
                     </ul>
                 </div>
                 <div class="service-image">
-                    <img src="/public/img/servicios/Servicios-5.webp" alt="Avión de carga" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    <img src="/img/servicios/Servicios-5.webp" alt="Avión de carga" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
                 </div>
             </a>
         </div>
