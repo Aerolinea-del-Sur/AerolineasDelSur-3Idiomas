@@ -377,7 +377,7 @@
                                 class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
                         </div>
                     </div>
-                </div>
+                </div> 
                 <div class="tour-card">
                     <div class="tour-image">
                         <img src="{{ asset('img/sobrevuelos/titicaca-lake-1.webp') }}" alt="Lago Titicaca">
