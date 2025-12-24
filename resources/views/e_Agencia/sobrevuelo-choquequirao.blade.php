@@ -384,7 +384,7 @@
                         <div class="tour-badge"><?= __('tours.recomendados.titicaca_type') ?></div>
                     </div>
                     <div class="tour-content">
-                        <h4><?= $h4_16 ?></h4>
+                        <h4><?= $h4_16 ?></h4> 
                         <p><?= $p_19 ?></p>
                         <div class="tour-details">
                             <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.titicaca_hrs') ?></span>
