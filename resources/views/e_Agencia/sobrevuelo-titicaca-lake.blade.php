@@ -102,7 +102,7 @@ $seo = seo()
 <!-- Sección Hero -->
 <section class="tour-hero">
     <div class="hero-background">
-        <img src="{{ asset('public/img/sobrevuelos/titicaca-lake-1.webp') }}" alt="Lago Titicaca desde el aire">
+        <img src="{{ asset('img/sobrevuelos/titicaca-lake-1.webp') }}" alt="Lago Titicaca desde el aire">
         <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">

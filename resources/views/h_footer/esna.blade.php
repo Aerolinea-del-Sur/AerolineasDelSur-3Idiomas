@@ -45,7 +45,7 @@ $seo = seo()
 
         <!-- Image Section -->
         <section class="image-section">
-            <img src="{{ asset('public/img/esna.png') }}" alt="Código de Conducta" class="code-image" onclick="openModal()">
+            <img src="{{ asset('img/esna.png') }}" alt="Código de Conducta" class="code-image" onclick="openModal()">
         </section>
 
         <!-- Commitments Section -->
@@ -140,7 +140,7 @@ $seo = seo()
 <div id="imageModal" class="modal" onclick="closeModal()">
     <div class="modal-content">
         <span class="modal-close" onclick="closeModal()">&times;</span>
-        <img src="{{ asset('public/img/esna.png') }}" alt="Código de Conducta" class="modal-image">
+        <img src="{{ asset('img/esna.png') }}" alt="Código de Conducta" class="modal-image">
     </div>
 </div>
 
