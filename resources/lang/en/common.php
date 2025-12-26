@@ -74,4 +74,7 @@ return [
     // Certifications
     'certifications.title' => 'Premium Certifications',
     'certifications.subtitle' => 'Certified excellence on every flight. Our quality and safety standards are backed by the most prestigious international aviation organizations.',
+    
+    // Months
+    'december' => 'December',
 ];

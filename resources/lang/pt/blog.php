@@ -1,6 +1,29 @@
 <?php
 
 return [
+    // ==================== BLOG: Página Principal ====================
+    'page_title' => 'Blog de Aviação | Dicas e Guias de Voos no Peru',
+    'page_description' => 'Blog da Aerolínea del Sur com artigos sobre aviação, dicas de viagem, guias turísticos e novidades de voos privados no Peru.',
+    'hero_badge' => 'Blog Oficial',
+    'hero_title_1' => 'Explore o',
+    'hero_title_2' => 'mundo com',
+    'hero_title_3' => 'a gente',
+    'hero_description' => 'Descubra destinos incríveis, dicas de viagem e as últimas notícias da aviação em nosso blog oficial.',
+    
+    // Filtros
+    'filter_all' => 'Todos',
+    'filter_destinations' => 'Destinos',
+    'filter_tips' => 'Dicas',
+    'filter_news' => 'Notícias',
+    'filter_experiences' => 'Experiências',
+    
+    // Artigos
+    'read_more' => 'Ler mais',
+    'category_tips' => 'Dicas',
+    'category_experiences' => 'Experiências',
+    'category_destinations' => 'Destinos',
+    
+    // ==================== BLOG: Voos no Peru ====================
     'vuelos_peru' => [
         'title' => 'Voos no Peru: Descubra a Experiência da Aerolínea del Sur',
         'description' => 'Descubra a experiência de voar no Peru com a Aerolínea del Sur. Voos charter, sobrevoos, carga e ambulância aérea.',

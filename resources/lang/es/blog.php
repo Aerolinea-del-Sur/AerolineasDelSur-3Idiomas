@@ -1,6 +1,29 @@
 <?php
-// ==================== BLOG: Vuelos en Peru ====================
+
 return [
+    // ==================== BLOG: Página Principal ====================
+    'page_title' => 'Blog de Aviación | Consejos y Guías de Vuelos en Perú',
+    'page_description' => 'Blog de Aerolínea del Sur con artículos sobre aviación, consejos de viaje, guías turísticas y novedades de vuelos privados en Perú.',
+    'hero_badge' => 'Blog Oficial',
+    'hero_title_1' => 'Explora el',
+    'hero_title_2' => 'mundo con',
+    'hero_title_3' => 'nosotros',
+    'hero_description' => 'Descubre destinos increíbles, consejos de viaje y las últimas noticias de la aviación en nuestro blog oficial.',
+    
+    // Filtros
+    'filter_all' => 'Todos',
+    'filter_destinations' => 'Destinos',
+    'filter_tips' => 'Consejos',
+    'filter_news' => 'Noticias',
+    'filter_experiences' => 'Experiencias',
+    
+    // Artículos
+    'read_more' => 'Leer más',
+    'category_tips' => 'Consejos',
+    'category_experiences' => 'Experiencias',
+    'category_destinations' => 'Destinos',
+    
+    // ==================== BLOG: Vuelos en Peru ====================
     'vuelos_peru' => [
         'title' => 'Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur',
         'description' => 'Descubre la experiencia de volar en Perú con Aerolínea del Sur. Vuelos charter, sobrevuelos, carga y ambulancia aérea.',

@@ -1,6 +1,29 @@
 <?php
 
 return [
+    // ==================== BLOG: Main Page ====================
+    'page_title' => 'Aviation Blog | Flight Tips and Guides in Peru',
+    'page_description' => 'Aerolínea del Sur blog with articles about aviation, travel tips, tourist guides and private flight news in Peru.',
+    'hero_badge' => 'Official Blog',
+    'hero_title_1' => 'Explore the',
+    'hero_title_2' => 'world with',
+    'hero_title_3' => 'us',
+    'hero_description' => 'Discover incredible destinations, travel tips and the latest aviation news on our official blog.',
+    
+    // Filters
+    'filter_all' => 'All',
+    'filter_destinations' => 'Destinations',
+    'filter_tips' => 'Tips',
+    'filter_news' => 'News',
+    'filter_experiences' => 'Experiences',
+    
+    // Articles
+    'read_more' => 'Read more',
+    'category_tips' => 'Tips',
+    'category_experiences' => 'Experiences',
+    'category_destinations' => 'Destinations',
+    
+    // ==================== BLOG: Flights in Peru ====================
     'vuelos_peru' => [
         'title' => 'Flights in Peru: Discover the Aerolínea del Sur Experience',
         'description' => 'Discover the experience of flying in Peru with Aerolínea del Sur. Charter flights, overflights, cargo, and air ambulance.',

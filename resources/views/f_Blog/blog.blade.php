@@ -1,7 +1,7 @@
 @php
 $seo = seo()
-    ->title('Blog de Aviación | Consejos y Guías de Vuelos en Perú')
-    ->description('Blog de Aerolínea del Sur con artículos sobre aviación, consejos de viaje, guías turísticas y novedades de vuelos privados en Perú.')
+    ->title(trans('blog.page_title'))
+    ->description(trans('blog.page_description'))
     ->keywords(['blog aviación perú', 'consejos viaje cusco', 'guía turística perú', 'blog vuelos privados'])
     ->image(asset('img/blog/aviation-peru.jpg'))
     ->canonical(url(app()->getLocale() . '/blog'));
@@ -15,30 +15,6 @@ $seo = seo()
 
 
 @section('content')
-    <?php
-    $h1_1_1 = 'Explora el';
-    $h1_1_2 = 'mundo con';
-    $h1_1_3 = 'nosotros';
-    $p_1 = 'Descubre destinos increíbles, consejos de viaje y las últimas noticias de la aviación en nuestro blog oficial.';
-
-    $h3_1 = 'Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur';
-    $p_2 = 'Descubre la experiencia de viajar con Aerolínea del Sur en Perú. Un viaje cómodo y seguro.';
-
-    $h3_2 = 'Aerolíneas del Sur incorpora nuevos Boeing 787 Dreamliner';
-    $p_3 = 'Nuestra flota se moderniza con aeronaves de última generación para brindarte mayor comodidad.';
-
-    $h3_3 = '¿Como es la experiencia de un Viaje en Jet Privado?';
-    $p_4 = 'Descubre la emoción de volar en una aeronave privada con Aerolínea del Sur. Un viaje único y memorable.';
-
-    $h3_4 = 'Descubre la Maravilla del Mundo: Machu Picchu';
-    $p_5 = '¡Haz realidad tu viaje a la ciudadela inca! Descubre los secretos de Machu Picchu y cómo visitar esta maravilla.';
-
-    $h3_5 = 'Cómo hacer la maleta perfecta: Guía paso a paso';
-    $p_6 = 'Aprende a optimizar tu equipaje y viajar con todo lo necesario sin excesos.';
-
-    $h2_1 = 'Mantente informado';
-    $p_7 = 'Suscríbete a nuestro newsletter y recibe las últimas noticias, ofertas especiales y consejos de viaje directamente en tu correo.';
-                        ?>
     <link rel="stylesheet" href="{{ asset('public/css/paginas/blog/blog.css') }}">
 
     <!-- Hero Section -->
@@ -47,13 +23,13 @@ $seo = seo()
         <div class="hero-content">
             <div class="hero-badge">
                 <i class="fas fa-newspaper"></i>
-                <span>Blog Oficial</span>
+                <span>{{ trans('blog.hero_badge') }}</span>
             </div>
             <h1 class="hero-title">
-                <span class="title-line-1"><?= $h1_1_1 ?></span>
-                <span class="title-line-2"><?= $h1_1_2 ?><span class="highlight"><?= $h1_1_3 ?></span></span>
+                <span class="title-line-1">{{ trans('blog.hero_title_1') }}</span>
+                <span class="title-line-2">{{ trans('blog.hero_title_2') }}<span class="highlight">{{ trans('blog.hero_title_3') }}</span></span>
             </h1>
-            <p class="hero-description"><?= $p_1 ?></p>
+            <p class="hero-description">{{ trans('blog.hero_description') }}</p>
         </div>
     </section>
 
@@ -63,23 +39,23 @@ $seo = seo()
             <div class="filter-buttons">
                 <button class="filter-btn active" data-category="all">
                     <i class="fas fa-globe"></i>
-                    Todos
+                    {{ trans('blog.filter_all') }}
                 </button>
                 <button class="filter-btn" data-category="destinos">
                     <i class="fas fa-map-marker-alt"></i>
-                    Destinos
+                    {{ trans('blog.filter_destinations') }}
                 </button>
                 <button class="filter-btn" data-category="consejos">
                     <i class="fas fa-lightbulb"></i>
-                    Consejos
+                    {{ trans('blog.filter_tips') }}
                 </button>
                 <button class="filter-btn" data-category="noticias">
                     <i class="fas fa-newspaper"></i>
-                    Noticias
+                    {{ trans('blog.filter_news') }}
                 </button>
                 <button class="filter-btn" data-category="experiencias">
                     <i class="fas fa-star"></i>
-                    Experiencias
+                    {{ trans('blog.filter_experiences') }}
                 </button>
             </div>
         </div>
@@ -94,23 +70,23 @@ $seo = seo()
                     <div class="article-image">
                         <img src="https://images.unsplash.com/photo-1569629743817-70d8db6c323b?w=600&h=400&fit=crop"
                             alt="Vuelos en Perú - Aerolínea del Sur">
-                        <div class="article-category">Consejos</div>
+                        <div class="article-category">{{ trans('blog.category_tips') }}</div>
                     </div>
                     <div class="article-content">
                         <div class="article-meta">
                             <span class="article-date">
                                 <i class="fas fa-calendar"></i>
-                                20 Diciembre 2025
+                                20 {{ trans('common.december') }} 2025
                             </span>
                             <span class="article-read-time">
                                 <i class="fas fa-clock"></i>
                                 10 min
                             </span>
                         </div>
-                        <h3 class="article-title">Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur</h3>
-                        <p class="article-excerpt">Descubre la experiencia de volar en Perú con Aerolínea del Sur. Vuelos charter, sobrevuelos, carga y ambulancia aérea.</p>
+                        <h3 class="article-title">{{ trans('blog.vuelos_peru.headline') }}</h3>
+                        <p class="article-excerpt">{{ trans('blog.vuelos_peru.description') }}</p>
                         <a href="{{ route('blog.vuelos-peru', ['locale' => app()->getLocale()]) }}" class="article-link">
-                            Leer más
+                            {{ trans('blog.read_more') }}
                             <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -121,23 +97,23 @@ $seo = seo()
                     <div class="article-image">
                         <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop"
                             alt="Experiencia de viaje en jet privado">
-                        <div class="article-category">Experiencias</div>
+                        <div class="article-category">{{ trans('blog.category_experiences') }}</div>
                     </div>
                     <div class="article-content">
                         <div class="article-meta">
                             <span class="article-date">
                                 <i class="fas fa-calendar"></i>
-                                22 Diciembre 2025
+                                22 {{ trans('common.december') }} 2025
                             </span>
                             <span class="article-read-time">
                                 <i class="fas fa-clock"></i>
                                 8 min
                             </span>
                         </div>
-                        <h3 class="article-title">¿Cómo es la experiencia de un Viaje en Jet Privado?</h3>
-                        <p class="article-excerpt">Descubre la emoción de volar en una aeronave privada con Aerolínea del Sur. Un viaje único y memorable.</p>
+                        <h3 class="article-title">{{ trans('blog.experiencias_viaje.headline') }}</h3>
+                        <p class="article-excerpt">{{ trans('blog.experiencias_viaje.description') }}</p>
                         <a href="{{ route('blog.experiencias-de-viaje', ['locale' => app()->getLocale()]) }}" class="article-link">
-                            Leer más
+                            {{ trans('blog.read_more') }}
                             <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -148,23 +124,23 @@ $seo = seo()
                     <div class="article-image">
                         <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=600&h=400&fit=crop"
                             alt="Machu Picchu - Perú">
-                        <div class="article-category">Destinos</div>
+                        <div class="article-category">{{ trans('blog.category_destinations') }}</div>
                     </div>
                     <div class="article-content">
                         <div class="article-meta">
                             <span class="article-date">
                                 <i class="fas fa-calendar"></i>
-                                22 Diciembre 2025
+                                22 {{ trans('common.december') }} 2025
                             </span>
                             <span class="article-read-time">
                                 <i class="fas fa-clock"></i>
                                 9 min
                             </span>
                         </div>
-                        <h3 class="article-title">Descubre la Maravilla del Mundo: Machu Picchu</h3>
-                        <p class="article-excerpt">¡Haz realidad tu viaje a la ciudadela inca! Descubre los secretos de Machu Picchu y cómo visitar esta maravilla.</p>
+                        <h3 class="article-title">{{ trans('blog.machu_picchu.headline') }}</h3>
+                        <p class="article-excerpt">{{ trans('blog.machu_picchu.description') }}</p>
                         <a href="{{ route('blog.machu-picchu-peru', ['locale' => app()->getLocale()]) }}" class="article-link">
-                            Leer más
+                            {{ trans('blog.read_more') }}
                             <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -175,13 +151,13 @@ $seo = seo()
                     <div class="article-image">
                         <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=600&h=400&fit=crop"
                             alt="Aventura en Cusco">
-                        <div class="article-category">Consejos</div>
+                        <div class="article-category">{{ trans('blog.category_tips') }}</div>
                     </div>
                     <div class="article-content">
                         <div class="article-meta">
                             <span class="article-date">
                                 <i class="fas fa-calendar"></i>
-                                26 Diciembre 2025
+                                26 {{ trans('common.december') }} 2025
                             </span>
                             <span class="article-read-time">
                                 <i class="fas fa-clock"></i>
@@ -191,7 +167,7 @@ $seo = seo()
                         <h3 class="article-title">Guía Completa: Cómo Preparar tu Primera Aventura a Cusco</h3>
                         <p class="article-excerpt">Todo lo que necesitas saber para preparar tu aventura en Cusco: clima, equipaje, altitud y actividades imperdibles.</p>
                         <a href="{{ route('blog.aventura-cusco', ['locale' => app()->getLocale()]) }}" class="article-link">
-                            Leer más
+                            {{ trans('blog.read_more') }}
                             <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>

@@ -74,4 +74,7 @@ return [
     // Certifications
     'certifications.title' => 'Certificaciones Premium',
     'certifications.subtitle' => 'Excelencia certificada en cada vuelo. Nuestros estándares de calidad y seguridad están respaldados por las más prestigiosas organizaciones internacionales de aviación.',
+    
+    // Meses
+    'december' => 'Diciembre',
 ];
