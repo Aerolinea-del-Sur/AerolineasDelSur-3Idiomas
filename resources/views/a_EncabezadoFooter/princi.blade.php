@@ -737,7 +737,7 @@
                         <!-- Main Footer Content -->
                         <div class="footer-main">
                             <div class="footer-brand">
-                                <div class="footer-logo">AEROLINEA DEL SUR E.I.R.L</div>
+                                <div class="footer-logo">AEROLINEA DEL SUR E.I.R.L.</div>
                                 <p class="footer-tagline">{{ __('common.footer.tagline', ['default' => 'Tu aerolínea de confianza para volar por el sur del Perú con seguridad y comodidad.']) }}</p>
                                 <div class="footer-social">
                                     <a href="https://www.facebook.com/profile.php?id=61575792015865" target="_blank" rel="nofollow noopener" class="social-link" aria-label="Facebook">
