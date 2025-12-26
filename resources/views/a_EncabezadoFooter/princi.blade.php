@@ -308,8 +308,8 @@
                 {
                     "@type": "Organization",
                     "@id": "https://www.aerolineadelsur.com/#organization",
-                    "name": "Aerolínea del Sur E.I.R.L",
-                    "legalName": "Aerolínea del Sur E.I.R.L",
+                    "name": "Aerolínea del Sur E.I.R.L.",
+                    "legalName": "Aerolínea del Sur E.I.R.L.",
                     "url": "https://www.aerolineadelsur.com",
                     "logo": {
                         "@type": "ImageObject",
