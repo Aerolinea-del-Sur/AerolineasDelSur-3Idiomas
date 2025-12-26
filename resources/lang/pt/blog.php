@@ -269,4 +269,85 @@ return [
         'rec_tours_text' => 'A melhor forma de compreender a magnitude do império é através de guias privados certificados. Esses especialistas narram a história real por trás de cada muro de pedra, adaptando o ritmo do percurso aos seus interesses pessoais.',
 
     ],
+
+    // ==================== BLOG: Aventura em Cusco ====================
+    'aventura_cusco' => [
+        'title' => 'Guia Completo: Como Preparar Sua Primeira Aventura em Cusco',
+        'description' => 'Tudo o que você precisa saber para preparar sua aventura em Cusco: clima, bagagem, altitude e atividades imperdíveis.',
+        'headline' => 'Guia Completo: Como Preparar Sua Primeira Aventura em Cusco',
+        'category' => 'Dicas de Viagem',
+        'read_time' => '12 min de leitura',
+        'author' => 'Aerolínea del Sur',
+        'breadcrumb_home' => 'Início',
+        'breadcrumb_blog' => 'Blog',
+        'breadcrumb_current' => 'Aventura em Cusco',
+
+        'intro_p1' => 'Cusco, a antiga capital do Império Inca, é muito mais do que uma simples parada no caminho para Machu Picchu. Esta cidade situada a 3.400 metros acima do nível do mar combina história milenar, arquitetura colonial e cultura viva em cada canto de suas ruas de paralelepípedos.',
+        'intro_p2' => 'Preparar sua primeira visita a Cusco requer mais do que reservar uma passagem aérea. A altitude, o clima variável e a ampla oferta de atividades tornam essencial um planejamento adequado para aproveitar ao máximo esta experiência única.',
+
+        'highlight_intro' => 'Neste guia completo, ',
+        'highlight_text' => 'fornecemos todas as informações essenciais para que sua aventura em Cusco seja inesquecível: desde como se aclimatar à altitude até o que levar na bagagem e as atividades imperdíveis que você não pode deixar passar.',
+
+        'when_visit_title' => 'Quando é o Melhor Momento para Visitar Cusco?',
+        'when_visit_intro' => 'O clima em Cusco varia significativamente entre as temporadas, e escolher o momento certo pode fazer a diferença na sua experiência.',
+
+        'dry_season_title' => 'Temporada Seca (Maio a Setembro)',
+        'dry_season_text' => 'Este é o período mais popular para visitar Cusco. Os dias são ensolarados com céus limpos, perfeitos para trekking e fotografia. As temperaturas diurnas oscilam entre 18-22°C, mas à noite podem cair até 0°C. É recomendável reservar com antecedência, pois coincide com o maior fluxo turístico.',
+
+        'rain_season_title' => 'Temporada de Chuvas (Novembro a Março)',
+        'rain_season_text' => 'Apesar das chuvas frequentes, a paisagem torna-se exuberante e verde. Há menos turistas, o que permite uma experiência mais tranquila e autêntica. Os preços costumam ser mais baixos. As chuvas geralmente caem à tarde, deixando as manhãs livres para atividades.',
+
+        'what_pack_title' => 'O que levar na Viagem para Cusco?',
+        'what_pack_intro' => 'A variação de temperatura entre o dia e a noite, junto com a possibilidade de chuva, requer uma bagagem versátil.',
+
+        'essential_clothing_title' => 'Roupas Essenciais',
+        'clothing_1_title' => 'Sistema de camadas:',
+        'clothing_1_text' => 'Camisetas térmicas, fleece e jaqueta impermeável com capuz.',
+        'clothing_2_title' => 'Calças:',
+        'clothing_2_text' => 'De trekking conversíveis e jeans para a cidade.',
+        'clothing_3_title' => 'Calçados:',
+        'clothing_3_text' => 'Botas de trekking impermeáveis e tênis confortáveis.',
+        'clothing_4_title' => 'Acessórios:',
+        'clothing_4_text' => 'Gorro, luvas, cachecol e um bom par de óculos de sol com proteção UV.',
+
+        'essential_items_title' => 'Artigos Indispensáveis',
+        'item_1_title' => 'Protetor solar de alto espectro:',
+        'item_1_text' => 'A radiação UV é intensa na altitude.',
+        'item_2_title' =>'Garrafa de água reutilizável:',
+        'item_2_text' => 'A hidratação é fundamental para a aclimatação.',
+        'item_3_title' => 'Medicamentos pessoais:',
+        'item_3_text' => 'Inclua comprimidos para o mal de altitude (sorojchi pills ou acetazolamida).',
+        'item_4_title' => 'Mochila pequena:',
+        'item_4_text' => 'De 20-30 litros para excursões de um dia.',
+
+        'altitude_title' => 'Aclimatação à Altitude: Sua Prioridade ao Chegar',
+        'altitude_intro' => 'O mal de altitude (soroche) é real e pode afetar qualquer pessoa, independentemente da sua condição física. Cusco está a 3.400 msnm, e a redução de oxigênio pode causar dor de cabeça, náuseas, fadiga e tonturas.',
+
+        'first_48h_title' => 'Primeiras 48 Horas em Cusco',
+        'first_48h_text' => 'Vá com calma nos primeiros dois dias. Evite esforços físicos intensos e álcool. Descanse o suficiente e permita que seu corpo se adapte gradualmente. Muitos hotéis oferecem chá de coca, uma infusão tradicional que ajuda a aliviar os sintomas do soroche.',
+
+        'altitude_tips_title' => 'Dicas para uma Melhor Aclimatação:',
+        'tip_1_title' => 'Hidrate-se constantemente:',
+        'tip_1_text' => 'Beba pelo menos 3-4 litros de água por dia.',
+        'tip_2_title' => 'Coma leve:',
+        'tip_2_text' => 'Alimentos de fácil digestão e carboidratos ajudam o corpo a se adaptar.',
+        'tip_3_title' => 'Suba gradualmente:',
+        'tip_3_text' => 'Se possível, visite primeiro cidades em menor altitude como Lima ou o Vale Sagrado antes de chegar a Cusco.',
+
+        'activities_title' => 'Atividades Imperdíveis em Cusco',
+        'activities_intro' => 'Uma vez aclimatado, Cusco oferece uma variedade de experiências que combinam história, cultura e aventura.',
+
+        'activity_1_title' => '1. Explorar o Centro Histórico',
+        'activity_1_text' => 'A Plaza de Armas é o coração de Cusco. Visite a Catedral de Cusco com sua impressionante arquitetura barroca e a Igreja da Companhia de Jesus. Não perca o Bairro de San Blas, conhecido por suas oficinas artesanais e ruas estreitas cheias de charme.',
+
+        'activity_2_title' => '2. Vale Sagrado dos Incas',
+        'activity_2_text' => 'Percorra Pisac com seu mercado tradicional e ruínas incas no topo da montanha. Visite Ollantaytambo, uma fortaleza inca perfeitamente conservada. Explore Moray com seus terraços agrícolas circulares e as Salineiras de Maras, onde a extração de sal é realizada desde os tempos pré-incaicos.',
+
+        'activity_3_title' => '3. Excursão à Montanha de 7 Cores',
+        'activity_3_text' => 'Vinicunca, também conhecida como Montanha Arco-íris, surpreenderá você com suas faixas de cores naturais. Esta caminhada de alta dificuldade alcança os 5.200 msnm, por isso é fundamental estar bem aclimatado antes de tentar.',
+
+        'cta_title' => 'Pronto para Explorar Cusco do Ar?',
+        'cta_text' => 'Descubra a majestade de Cusco e seus arredores com nossos sobrevoos exclusivos. Contemple o Vale Sagrado, a Montanha de 7 Cores e outros destinos incríveis de uma perspectiva única.',
+        'cta_button' => 'Ver Nossos Sobrevoos',
+    ],
 ];
