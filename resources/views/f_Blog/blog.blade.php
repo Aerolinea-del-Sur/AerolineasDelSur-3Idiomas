@@ -188,8 +188,8 @@ $seo = seo()
                                 <div class="container">
                                     <div class="newsletter-content">
                                         <div class="newsletter-text">
-                                            <h2><?= $h2_1 ?></h2>
-                                            <p><?= $p_7 ?></p>
+                                            <h2>Mantente informado</h2>
+                                            <p>Suscríbete a nuestro newsletter y recibe las últimas noticias, ofertas especiales y consejos de viaje directamente en tu correo.</p>
                                         </div>
                                         <div class="newsletter-form">
                                             <form class="newsletter-form-container">
