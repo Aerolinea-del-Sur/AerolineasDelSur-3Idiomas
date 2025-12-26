@@ -89,26 +89,26 @@ $seo = seo()
     <section class="blog-grid">
         <div class="container">
             <div class="articles-grid">
-                <!-- Artículos Regulares -->
+                <!-- Artículo 1: Vuelos en Perú -->
                 <article class="article-card" data-category="consejos">
                     <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop"
-                            alt="Consejos de viaje">
+                        <img src="https://images.unsplash.com/photo-1569629743817-70d8db6c323b?w=600&h=400&fit=crop"
+                            alt="Vuelos en Perú - Aerolínea del Sur">
                         <div class="article-category">Consejos</div>
                     </div>
                     <div class="article-content">
                         <div class="article-meta">
                             <span class="article-date">
                                 <i class="fas fa-calendar"></i>
-                                20 Diciembre 2024
+                                20 Diciembre 2025
                             </span>
                             <span class="article-read-time">
                                 <i class="fas fa-clock"></i>
                                 10 min
                             </span>
                         </div>
-                        <h3 class="article-title"><?= $h3_1 ?></h3>
-                        <p class="article-excerpt"><?= $p_2 ?></p>
+                        <h3 class="article-title">Vuelos en Perú: Descubre la Experiencia Aerolínea del Sur</h3>
+                        <p class="article-excerpt">Descubre la experiencia de volar en Perú con Aerolínea del Sur. Vuelos charter, sobrevuelos, carga y ambulancia aérea.</p>
                         <a href="{{ route('blog.vuelos-peru', ['locale' => app()->getLocale()]) }}" class="article-link">
                             Leer más
                             <i class="fas fa-arrow-right"></i>
@@ -116,36 +116,11 @@ $seo = seo()
                     </div>
                 </article>
 
-                <article class="article-card" data-category="noticias">
-                    <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=600&h=400&fit=crop"
-                            alt="Nueva flota">
-                        <div class="article-category">Noticias</div>
-                    </div>
-                    <div class="article-content">
-                        <div class="article-meta">
-                            <span class="article-date">
-                                <i class="fas fa-calendar"></i>
-                                10 Enero 2024
-                            </span>
-                            <span class="article-read-time">
-                                <i class="fas fa-clock"></i>
-                                3 min
-                            </span>
-                        </div>
-                        <h3 class="article-title"><?= $h3_2 ?></h3>
-                        <p class="article-excerpt"><?= $p_3 ?></p>
-                        <a href="#" class="article-link">
-                            Leer más
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </article>
-
+                <!-- Artículo 2: Experiencias de Viaje en Jet Privado -->
                 <article class="article-card" data-category="experiencias">
                     <div class="article-image">
                         <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop"
-                            alt="Experiencia de viaje">
+                            alt="Experiencia de viaje en jet privado">
                         <div class="article-category">Experiencias</div>
                     </div>
                     <div class="article-content">
@@ -159,8 +134,8 @@ $seo = seo()
                                 8 min
                             </span>
                         </div>
-                        <h3 class="article-title"><?= $h3_3 ?></h3>
-                        <p class="article-excerpt"><?= $p_4 ?></p>
+                        <h3 class="article-title">¿Cómo es la experiencia de un Viaje en Jet Privado?</h3>
+                        <p class="article-excerpt">Descubre la emoción de volar en una aeronave privada con Aerolínea del Sur. Un viaje único y memorable.</p>
                         <a href="{{ route('blog.experiencias-de-viaje', ['locale' => app()->getLocale()]) }}" class="article-link">
                             Leer más
                             <i class="fas fa-arrow-right"></i>
@@ -168,10 +143,11 @@ $seo = seo()
                     </div>
                 </article>
 
+                <!-- Artículo 3: Machu Picchu -->
                 <article class="article-card" data-category="destinos">
                     <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&h=400&fit=crop"
-                            alt="Machu Picchu">
+                        <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=600&h=400&fit=crop"
+                            alt="Machu Picchu - Perú">
                         <div class="article-category">Destinos</div>
                     </div>
                     <div class="article-content">
@@ -185,8 +161,8 @@ $seo = seo()
                                 9 min
                             </span>
                         </div>
-                        <h3 class="article-title"><?= $h3_4 ?></h3>
-                        <p class="article-excerpt"><?= $p_5 ?></p>
+                        <h3 class="article-title">Descubre la Maravilla del Mundo: Machu Picchu</h3>
+                        <p class="article-excerpt">¡Haz realidad tu viaje a la ciudadela inca! Descubre los secretos de Machu Picchu y cómo visitar esta maravilla.</p>
                         <a href="{{ route('blog.machu-picchu-peru', ['locale' => app()->getLocale()]) }}" class="article-link">
                             Leer más
                             <i class="fas fa-arrow-right"></i>
@@ -194,26 +170,27 @@ $seo = seo()
                     </div>
                 </article>
 
+                <!-- Artículo 4: Aventura en Cusco -->
                 <article class="article-card" data-category="consejos">
                     <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop"
-                            alt="Equipaje">
+                        <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=600&h=400&fit=crop"
+                            alt="Aventura en Cusco">
                         <div class="article-category">Consejos</div>
                     </div>
                     <div class="article-content">
                         <div class="article-meta">
                             <span class="article-date">
                                 <i class="fas fa-calendar"></i>
-                                3 Enero 2024
+                                26 Diciembre 2025
                             </span>
                             <span class="article-read-time">
                                 <i class="fas fa-clock"></i>
-                                4 min
+                                12 min
                             </span>
                         </div>
-                        <h3 class="article-title"><?= $h3_5 ?></h3>
-                        <p class="article-excerpt"><?= $p_6 ?></p>
-                        <a href="#" class="article-link">
+                        <h3 class="article-title">Guía Completa: Cómo Preparar tu Primera Aventura a Cusco</h3>
+                        <p class="article-excerpt">Todo lo que necesitas saber para preparar tu aventura en Cusco: clima, equipaje, altitud y actividades imperdibles.</p>
+                        <a href="{{ route('blog.aventura-cusco', ['locale' => app()->getLocale()]) }}" class="article-link">
                             Leer más
                             <i class="fas fa-arrow-right"></i>
                         </a>

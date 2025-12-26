@@ -2,7 +2,7 @@
     $seo = seo()
         ->title(__('blog.experiencias_viaje.title'))
         ->description(__('blog.experiencias_viaje.description'))
-        ->keywords(['jet privado peru', 'vuelos privados', 'charter peru', 'aerolinea del sur', 'viajes de lujo'])
+        ->keywords(['jet privado peru', 'vuelos privados', 'charter peru', 'aerolinea del sur', 'viajes de lujo', 'experiencia jet privado', 'aviacion ejecutiva peru'])
         ->image(asset('img/blog/aerolinea-sur-experience.jpg'))
         ->canonical(url(app()->getLocale() . '/blog/experiencias-de-viaje'))
         ->addSchema([
@@ -10,10 +10,16 @@
             '@type' => 'Article',
             'headline' => __('blog.experiencias_viaje.headline'),
             'description' => __('blog.experiencias_viaje.intro_p1'),
-            'image' => asset('img/blog/aerolinea-sur-experience.jpg'),
+            'image' => [
+                '@type' => 'ImageObject',
+                'url' => asset('img/blog/aerolinea-sur-experience.jpg'),
+                'width' => 1200,
+                'height' => 630
+            ],
             'author' => [
                 '@type' => 'Organization',
-                'name' => 'Aerolínea del Sur'
+                'name' => 'Aerolínea del Sur',
+                'url' => url('/')
             ],
             'publisher' => [
                 '@type' => 'Organization',
@@ -23,8 +29,24 @@
                     'url' => asset('img/logo.webp')
                 ]
             ],
-            'datePublished' => '2025-12-22',
-            'dateModified' => '2025-12-22'
+            'datePublished' => '2025-12-22T11:00:00-05:00',
+            'dateModified' => '2025-12-26T15:00:00-05:00',
+            'mainEntityOfPage' => [
+                '@type' => 'WebPage',
+                '@id' => url(app()->getLocale() . '/blog/experiencias-de-viaje')
+            ],
+            'articleSection' => 'Experiencias',
+            'wordCount' => 900,
+            'inLanguage' => app()->getLocale(),
+            'about' => [
+                '@type' => 'Service',
+                'name' => 'Vuelos Charter Privados',
+                'description' => 'Servicio de vuelos privados ejecutivos en Perú',
+                'provider' => [
+                    '@type' => 'Organization',
+                    'name' => 'Aerolínea del Sur'
+                ]
+            ]
         ]);
 @endphp
 
@@ -133,6 +155,13 @@
                     <li><strong>{{ __('blog.experiencias_viaje.section_4_item_2_title') }}</strong>
                         {{ __('blog.experiencias_viaje.section_4_item_2_text') }}</li>
                 </ul>
+
+                <div class="cta-box">
+                    <h3>¿Listo para tu Experiencia en Jet Privado?</h3>
+                    <p style="color: #ddd;">Solicita una cotización personalizada y descubre cómo podemos hacer realidad tu viaje en jet privado con Aerolínea del Sur.</p>
+                    <a href="{{ route('vuelos', ['locale' => app()->getLocale()]) }}"
+                        class="cta-button">Solicitar Cotización</a>
+                </div>
 
             </div>
         </article>

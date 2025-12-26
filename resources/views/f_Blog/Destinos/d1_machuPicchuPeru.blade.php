@@ -2,7 +2,7 @@
     $seo = seo()
         ->title(__('blog.machu_picchu.title'))
         ->description(__('blog.machu_picchu.description'))
-        ->keywords(['machu picchu', 'viajes peru', 'turismo cusco', 'aerolinea del sur', 'tren a machu picchu'])
+        ->keywords(['machu picchu', 'viajes peru', 'turismo cusco', 'aerolinea del sur', 'tren a machu picchu', 'como visitar machu picchu', 'ciudadela inca', 'circuitos machu picchu'])
         ->image(asset('img/blog/machu-picchu-experience.jpg'))
         ->canonical(url(app()->getLocale() . '/blog/machu-picchu'))
         ->addSchema([
@@ -10,10 +10,16 @@
             '@type' => 'Article',
             'headline' => __('blog.machu_picchu.headline'),
             'description' => __('blog.machu_picchu.intro_p1'),
-            'image' => asset('img/blog/machu-picchu-experience.jpg'),
+            'image' => [
+                '@type' => 'ImageObject',
+                'url' => asset('img/blog/machu-picchu-experience.jpg'),
+                'width' => 1200,
+                'height' => 630
+            ],
             'author' => [
                 '@type' => 'Organization',
-                'name' => 'Aerolínea del Sur'
+                'name' => 'Aerolínea del Sur',
+                'url' => url('/')
             ],
             'publisher' => [
                 '@type' => 'Organization',
@@ -23,8 +29,26 @@
                     'url' => asset('img/logo.webp')
                 ]
             ],
-            'datePublished' => '2025-12-22',
-            'dateModified' => '2025-12-22'
+            'datePublished' => '2025-12-22T09:00:00-05:00',
+            'dateModified' => '2025-12-26T15:00:00-05:00',
+            'mainEntityOfPage' => [
+                '@type' => 'WebPage',
+                '@id' => url(app()->getLocale() . '/blog/machu-picchu')
+            ],
+            'articleSection' => 'Destinos',
+            'wordCount' => 1100,
+            'inLanguage' => app()->getLocale(),
+            'about' => [
+                '@type' => 'TouristAttraction',
+                'name' => 'Machu Picchu',
+                'description' => 'Ciudadela inca del siglo XV, una de las 7 maravillas del mundo moderno',
+                'touristType' => 'Sitio arqueológico',
+                'address' => [
+                    '@type' => 'PostalAddress',
+                    'addressRegion' => 'Cusco',
+                    'addressCountry' => 'PE'
+                ]
+            ]
         ]);
 @endphp
 

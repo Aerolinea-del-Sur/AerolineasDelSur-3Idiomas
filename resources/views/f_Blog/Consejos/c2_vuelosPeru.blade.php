@@ -2,7 +2,7 @@
     $seo = seo()
         ->title(__('blog.vuelos_peru.title'))
         ->description(__('blog.vuelos_peru.description'))
-        ->keywords(['vuelos peru', 'aerolinea del sur', 'charter peru', 'sobrevuelos nazca', 'carga aerea peru', 'ambulancia aerea'])
+        ->keywords(['vuelos peru', 'aerolinea del sur', 'charter peru', 'sobrevuelos nazca', 'carga aerea peru', 'ambulancia aerea', 'vuelos privados peru', 'aviacion peru'])
         ->image(asset('img/blog/aerolinea-sur-experience.jpg'))
         ->canonical(url(app()->getLocale() . '/blog/vuelos-peru'))
         ->addSchema([
@@ -10,10 +10,16 @@
             '@type' => 'Article',
             'headline' => __('blog.vuelos_peru.headline'),
             'description' => __('blog.vuelos_peru.intro_p1'),
-            'image' => asset('img/blog/aerolinea-sur-experience.jpg'),
+            'image' => [
+                '@type' => 'ImageObject',
+                'url' => asset('img/blog/aerolinea-sur-experience.jpg'),
+                'width' => 1200,
+                'height' => 630
+            ],
             'author' => [
                 '@type' => 'Organization',
-                'name' => 'Aerolínea del Sur'
+                'name' => 'Aerolínea del Sur',
+                'url' => url('/')
             ],
             'publisher' => [
                 '@type' => 'Organization',
@@ -23,8 +29,15 @@
                     'url' => asset('img/logo.webp')
                 ]
             ],
-            'datePublished' => '2025-12-20',
-            'dateModified' => '2025-12-20'
+            'datePublished' => '2025-12-20T10:00:00-05:00',
+            'dateModified' => '2025-12-26T15:00:00-05:00',
+            'mainEntityOfPage' => [
+                '@type' => 'WebPage',
+                '@id' => url(app()->getLocale() . '/blog/vuelos-peru')
+            ],
+            'articleSection' => 'Consejos de Viaje',
+            'wordCount' => 1200,
+            'inLanguage' => app()->getLocale()
         ]);
 @endphp
 
