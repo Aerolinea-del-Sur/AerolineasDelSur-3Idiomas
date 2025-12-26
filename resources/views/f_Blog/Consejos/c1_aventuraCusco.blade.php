@@ -4,7 +4,7 @@
         ->description(__('blog.aventura_cusco.description'))
         ->keywords(['aventura cusco', 'trekking cusco', 'actividades cusco', 'guía turismo cusco', 'que hacer en cusco', 'preparar viaje cusco'])
         ->image(asset('img/blog/cusco-aventura.jpg'))
-        ->canonical(url(app()->getLocale() . '/blog/aventura-cusco'))
+        ->canonical(url(app()->getLocale() . '/blog/Aventura-Cusco'))
         ->addSchema([
             '@context' => 'https://schema.org',
             '@type' => 'Article',

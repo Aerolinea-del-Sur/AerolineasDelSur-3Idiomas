@@ -8,7 +8,7 @@
         'description' => str_replace(':tour', $tour_name, __('tours.seo.description_template')),
         'keywords' => 'sobrevuelo choquequirao, tour aéreo cusco, vuelo cusco choquequirao, choquequirao helicóptero',
         'og_image' => asset('img/sobrevuelos/choquequ irao.webp'),
-        'canonical' => url(app()->getLocale() . '/sobrevuelo-choquequirao'),
+        'canonical' => url(app()->getLocale() . '/sobrevuelo/choquequirao'),
     ];
 @endphp
 @section('content')

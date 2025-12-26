@@ -4,7 +4,7 @@
         ->description(__('blog.vuelos_peru.description'))
         ->keywords(['vuelos peru', 'aerolinea del sur', 'charter peru', 'sobrevuelos nazca', 'carga aerea peru', 'ambulancia aerea', 'vuelos privados peru', 'aviacion peru'])
         ->image(asset('img/blog/aerolinea-sur-experience.jpg'))
-        ->canonical(url(app()->getLocale() . '/blog/vuelos-peru'))
+        ->canonical(url(app()->getLocale() . '/blog/Vuelos-Peru'))
         ->addSchema([
             '@context' => 'https://schema.org',
             '@type' => 'Article',
@@ -33,7 +33,7 @@
             'dateModified' => '2025-12-26T15:00:00-05:00',
             'mainEntityOfPage' => [
                 '@type' => 'WebPage',
-                '@id' => url(app()->getLocale() . '/blog/vuelos-peru')
+                '@id' => url(app()->getLocale() . '/blog/Vuelos-Peru')
             ],
             'articleSection' => 'Consejos de Viaje',
             'wordCount' => 1200,

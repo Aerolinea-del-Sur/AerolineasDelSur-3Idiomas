@@ -5,7 +5,7 @@ $seo = seo()
     ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
     ->keywords(['sobrevuelo valle sagrado', 'tour aéreo maras', 'helicóptero cusco valle sagrado', 'sobrevuelo moray'])
     ->image(asset('img/tours/sobrevuelo-valle-maras.jpg'))
-    ->canonical(url(app()->getLocale() . '/sobrevuelo-valle-maras'))
+    ->canonical(url(app()->getLocale() . '/sobrevuelo/valle-maras'))
     ->addSchema([
         '@context' => 'https://schema.org',
         '@type' => 'TouristAttraction',

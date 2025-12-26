@@ -4,7 +4,7 @@
         ->description(__('blog.machu_picchu.description'))
         ->keywords(['machu picchu', 'viajes peru', 'turismo cusco', 'aerolinea del sur', 'tren a machu picchu', 'como visitar machu picchu', 'ciudadela inca', 'circuitos machu picchu'])
         ->image(asset('img/blog/machu-picchu-experience.jpg'))
-        ->canonical(url(app()->getLocale() . '/blog/machu-picchu'))
+        ->canonical(url(app()->getLocale() . '/blog/Machu-Picchu-Peru'))
         ->addSchema([
             '@context' => 'https://schema.org',
             '@type' => 'Article',
@@ -33,7 +33,7 @@
             'dateModified' => '2025-12-26T15:00:00-05:00',
             'mainEntityOfPage' => [
                 '@type' => 'WebPage',
-                '@id' => url(app()->getLocale() . '/blog/machu-picchu')
+                '@id' => url(app()->getLocale() . '/blog/Machu-Picchu-Peru')
             ],
             'articleSection' => 'Destinos',
             'wordCount' => 1100,

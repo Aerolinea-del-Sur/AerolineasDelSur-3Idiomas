@@ -5,7 +5,7 @@
         ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
         ->keywords(['sobrevuelo lineas de nazca', 'tour aéreo cusco nazca', 'vuelo privado nazca', 'maria reiche'])
         ->image(asset('img/sobrevuelos/nazca-lines-1.webp'))
-        ->canonical(url(app()->getLocale() . '/sobrevuelo-nazca-lines'))
+        ->canonical(url(app()->getLocale() . '/sobrevuelo/nazca-lines'))
         ->addSchema([
             '@context' => 'https://schema.org',
             '@type' => 'TouristAttraction',

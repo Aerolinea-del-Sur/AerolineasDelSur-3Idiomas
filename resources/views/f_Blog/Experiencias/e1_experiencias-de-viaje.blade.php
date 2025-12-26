@@ -4,7 +4,7 @@
         ->description(__('blog.experiencias_viaje.description'))
         ->keywords(['jet privado peru', 'vuelos privados', 'charter peru', 'aerolinea del sur', 'viajes de lujo', 'experiencia jet privado', 'aviacion ejecutiva peru'])
         ->image(asset('img/blog/aerolinea-sur-experience.jpg'))
-        ->canonical(url(app()->getLocale() . '/blog/experiencias-de-viaje'))
+        ->canonical(url(app()->getLocale() . '/blog/Experiencias-de-Viaje'))
         ->addSchema([
             '@context' => 'https://schema.org',
             '@type' => 'Article',
@@ -33,7 +33,7 @@
             'dateModified' => '2025-12-26T15:00:00-05:00',
             'mainEntityOfPage' => [
                 '@type' => 'WebPage',
-                '@id' => url(app()->getLocale() . '/blog/experiencias-de-viaje')
+                '@id' => url(app()->getLocale() . '/blog/Experiencias-de-Viaje')
             ],
             'articleSection' => 'Experiencias',
             'wordCount' => 900,
