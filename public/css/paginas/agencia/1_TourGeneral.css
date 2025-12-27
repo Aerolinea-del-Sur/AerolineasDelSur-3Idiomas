@@ -438,6 +438,7 @@ body {
         box-shadow: 0 0 0 3px #C9A227, 0 0 15px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.3);
         transform: scale(1);
     }
+
     100% {
         box-shadow: 0 0 0 3px #C9A227, 0 0 25px rgba(255, 215, 0, 1), 0 0 50px rgba(255, 215, 0, 0.6);
         transform: scale(1.1);
@@ -568,142 +569,327 @@ body {
 /* ===== TOURS RECOMENDADOS ===== */
 .recommended-tours {
     padding: 5rem 0;
-    background-color: #1A1A1A;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1A1A1A 50%, #0a0a0a 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.recommended-tours::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #C9A227, transparent);
+    animation: shimmerLine 3s linear infinite;
+}
+
+@keyframes shimmerLine {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 .tours-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    gap: 2.5rem;
+    margin-top: 1rem;
 }
 
 .tour-card {
-    background: #1C1C1C;
-    border-radius: 15px;
+    background: linear-gradient(145deg, #1c1c1c, #242424);
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease;
-    animation: fadeInGold 0.8s ease-out;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5),
+        0 1px 8px rgba(201, 162, 39, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: fadeInUp 0.8s ease-out;
     opacity: 0;
     animation-fill-mode: forwards;
+    position: relative;
+    border: 1px solid rgba(201, 162, 39, 0.1);
+}
+
+.tour-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top right, rgba(201, 162, 39, 0.05), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.tour-card:hover::before {
+    opacity: 1;
 }
 
 .tour-card:nth-child(1) {
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
 }
 
 .tour-card:nth-child(2) {
-    animation-delay: 0.4s;
+    animation-delay: 0.3s;
 }
 
 .tour-card:nth-child(3) {
-    animation-delay: 0.6s;
+    animation-delay: 0.5s;
 }
 
 .tour-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 20px rgba(201, 162, 39, 0.3);
+    transform: translateY(-15px) scale(1.02);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.7),
+        0 0 40px rgba(201, 162, 39, 0.3),
+        0 0 80px rgba(255, 215, 0, 0.1);
+    border-color: rgba(201, 162, 39, 0.4);
 }
 
 .tour-image {
     position: relative;
-    height: 200px;
+    height: 240px;
     overflow: hidden;
 }
 
+.tour-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg,
+            transparent 0%,
+            transparent 50%,
+            rgba(0, 0, 0, 0.8) 100%);
+    opacity: 0.6;
+    transition: opacity 0.4s ease;
+}
+
+.tour-card:hover .tour-image::after {
+    opacity: 0.3;
+}
+
 .tour-image img {
-    width: 100%;
-    height: 100%;
+    width: 100% height: 100%;
     object-fit: cover;
-    transition: 0.5s ease;
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    filter: brightness(0.9);
 }
 
 .tour-card:hover .tour-image img {
-    transform: scale(1.1);
+    transform: scale(1.15) rotate(2deg);
+    filter: brightness(1.1);
 }
 
 .tour-badge {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    background: linear-gradient(135deg, #C9A227, #FFD700);
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #C9A227 0%, #FFD700 50%, #C9A227 100%);
+    background-size: 200% 200%;
     color: #000000;
-    padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.75rem;
+    font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow:
+        0 4px 15px rgba(201, 162, 39, 0.4),
+        0 0 20px rgba(255, 215, 0, 0.3);
+    animation: badgePulse 2s ease-in-out infinite, gradientShift 3s ease infinite;
+    z-index: 2;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+@keyframes badgePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow:
+            0 4px 15px rgba(201, 162, 39, 0.4),
+            0 0 20px rgba(255, 215, 0, 0.3);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow:
+            0 6px 25px rgba(201, 162, 39, 0.6),
+            0 0 30px rgba(255, 215, 0, 0.5);
+    }
+}
+
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 .tour-content {
-    padding: 1rem;
+    padding: 1.5rem;
+    position: relative;
+    background: linear-gradient(180deg, #1c1c1c 0%, #181818 100%);
+}
+
+.tour-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    right: 1.5rem;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #C9A227, transparent);
 }
 
 .tour-content h4 {
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 700;
     color: #FFFFFF;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    margin-top: 0.5rem;
+    transition: color 0.3s ease;
+    background: linear-gradient(135deg, #FFFFFF, #e0e0e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tour-card:hover .tour-content h4 {
+    background: linear-gradient(135deg, #FFD700, #C9A227);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .tour-content p {
-    color: #666;
+    color: #999;
     font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 0.8rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.tour-card:hover .tour-content p {
+    color: #bbb;
 }
 
 .tour-card .tour-details {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
     padding: 0;
+    background: none;
 }
 
 .tour-details span {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
     font-size: 0.9rem;
-    color: #666;
+    color: #888;
+    transition: all 0.3s ease;
+    padding: 6px 12px;
+    background: rgba(201, 162, 39, 0.05);
+    border-radius: 20px;
+}
+
+.tour-card:hover .tour-details span {
+    color: #aaa;
+    background: rgba(201, 162, 39, 0.1);
 }
 
 .tour-details i {
     color: #C9A227;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.tour-card:hover .tour-details i {
+    transform: scale(1.1);
+    color: #FFD700;
 }
 
 .tour-footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(201, 162, 39, 0.1);
 }
 
-.tour-more {
+.tour-btn {
     color: #C9A227;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
     text-align: center;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 25px;
+    background: rgba(201, 162, 39, 0.1);
+    border: 2px solid rgba(201, 162, 39, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
 }
 
-.tour-more:hover {
-    color: #FFD700;
+.tour-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    height: 0%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #C9A227, #FFD700);
+    border-radius: 25px;
+    transition: all 0.4s ease;
+    z-index: -1;
 }
 
-@keyframes fadeInGold {
+.tour-btn:hover {
+    color: #000000;
+    border-color: #FFD700;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(201, 162, 39, 0.4);
+}
+
+.tour-btn:hover::before {
+    width: 120%;
+    height: 200%;
+}
+
+@keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(30px);
-        box-shadow: 0 0 0 rgba(201, 162, 39, 0);
+        transform: translateY(40px);
     }
-    50% {
-        opacity: 0.7;
-        box-shadow: 0 0 20px rgba(201, 162, 39, 0.3);
-    }
+
     100% {
         opacity: 1;
         transform: translateY(0);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -868,27 +1054,28 @@ body {
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
+
     .details-grid,
     .summary-grid,
     .inclusions-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .booking-sidebar {
         width: 100%;
         right: -100%;
     }
-    
+
     .social-sidebar {
         left: 15px;
     }
-    
+
     .floating-booking {
         right: 15px;
         bottom: 100px;
     }
-    
+
     .whatsapp-float {
         right: 15px;
         bottom: 15px;
@@ -899,50 +1086,50 @@ body {
     .tour-title {
         font-size: 2.5rem;
     }
-    
+
     .tour-subtitle {
         font-size: 1.1rem;
     }
-    
+
     .tour-meta {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .timeline {
         padding-left: 0;
     }
-    
+
     .timeline::before {
         left: 20px;
     }
-    
+
     .timeline-item {
         padding-left: 60px;
     }
-    
+
     .timeline-item::before {
         left: 9px;
     }
-    
+
     .timeline-dot {
         position: absolute;
         left: 9px;
         top: 5px;
     }
-    
+
     .stats-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .tours-grid {
         grid-template-columns: 1fr;
     }
-    
+
 
 }
 
@@ -950,29 +1137,29 @@ body {
     .container {
         padding: 0 15px;
     }
-    
+
     .tour-hero {
         height: 70vh;
         min-height: 500px;
     }
-    
+
     .tour-title {
         font-size: 2rem;
     }
-    
+
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .booking-form-container {
         padding: 1rem;
     }
-    
+
     .floating-booking {
         bottom: 20px;
         right: 20px;
     }
-    
+
     .booking-btn {
         padding: 12px 20px;
         font-size: 0.9rem;
@@ -985,6 +1172,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -992,9 +1180,12 @@ body {
 }
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
