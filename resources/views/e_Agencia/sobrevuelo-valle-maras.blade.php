@@ -365,7 +365,7 @@ $seo = seo()
             </div>
             <div class="tour-card">
                 <div class="tour-image">
-                    <img src="{{ asset('img/tours/machu-picchu-1.webp') }}" alt="Machu Picchu Aéreo">
+                    <img src="{{ asset('img/tours/andes-magicos-1.webp') }}" alt="Machu Picchu Aéreo">
                     <div class="tour-badge"><?= __('tours.recomendados.machu_picchu_type') ?></div>
                 </div>
                 <div class="tour-content">

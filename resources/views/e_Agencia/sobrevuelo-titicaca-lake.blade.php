@@ -376,7 +376,7 @@ $seo = seo()
             </div>
             <div class="tour-card">
                 <div class="tour-image">
-                    <img src="{{ asset('img/tours/tesoros-cusco-1.webp') }}" alt="Tesoros de Cusco">
+                    <img src="{{ asset('img/tours/tesoros-del-cusco-1.webp') }}" alt="Tesoros de Cusco">
                     <div class="tour-badge"><?= __('tours.recomendados.tesoros_cusco_type') ?></div>
                 </div>
                 <div class="tour-content">
