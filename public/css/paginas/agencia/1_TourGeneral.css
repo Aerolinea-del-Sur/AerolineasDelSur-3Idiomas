@@ -845,15 +845,16 @@ body {
     text-decoration: none;
     padding: 10px 24px;
     border-radius: 25px;
-    background: rgba(201, 162, 39, 0.1);
-    border: 2px solid rgba(201, 162, 39, 0.3);
+    background: rgba(201, 162, 39, 0.08);
+    border: 2px solid rgba(201, 162, 39, 0.25);
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-size: 0.95rem;
-    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
     position: relative;
     overflow: hidden;
+    opacity: 0.85;
 }
 
 .tour-btn::before {
@@ -872,9 +873,10 @@ body {
 
 .tour-btn:hover {
     color: #000000;
-    border-color: #FFD700;
+    border-color: #D4AF37;
     transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(201, 162, 39, 0.4);
+    box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
+    opacity: 1;
 }
 
 .tour-btn:hover::before {
