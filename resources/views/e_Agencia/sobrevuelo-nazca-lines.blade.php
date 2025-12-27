@@ -362,55 +362,73 @@
             <div class="tours-grid">
                 <div class="tour-card">
                     <div class="tour-image">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Líneas de Nazca">
-                        <div class="tour-badge">POPULAR</div>
+                        <img src="{{ asset('img/sobrevuelos/choquequirao-1.webp') }}" alt="Choquequirao">
+                        <div class="tour-badge"><?= __('tours.recomendados.choquequirao_type') ?></div>
                     </div>
                     <div class="tour-content">
-                        <h4><?= $h4_14 ?></h4>
-                        <p><?= $p_17 ?></p>
+                        <h4><?= __('tours.recomendados.choquequirao_title') ?></h4>
+                        <p><?= __('tours.recomendados.choquequirao_desc') ?></p>
                         <div class="tour-details">
-                            <span><i class="fas fa-clock"></i> 1.5 horas</span>
-                            <span><i class="fas fa-users"></i> 4 personas</span>
+                            <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.choquequirao_hrs') ?></span>
+                            <span><i class="fas fa-users"></i> <?= __('tours.recomendados.choquequirao_pers') ?></span>
                         </div>
                         <div class="tour-footer">
-                            <span class="tour-more">Conoce más >></span>
+                            <a href="/{{ app()->getLocale() }}/sobrevuelo/choquequirao"
+                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
                         </div>
                     </div>
                 </div>
                 <div class="tour-card">
                     <div class="tour-image">
-                        <img src="https://images.unsplash.com/photo-1583416750470-965b2707b355?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Vuelo Amazónico">
-                        <div class="tour-badge">NUEVO</div>
+                        <img src="{{ asset('img/sobrevuelos/vinicunca-mountain-1.webp') }}" alt="Vinicunca">
+                        <div class="tour-badge"><?= __('tours.recomendados.vinicunca_type') ?></div>
                     </div>
                     <div class="tour-content">
-                        <h4><?= $h4_15 ?></h4>
-                        <p><?= $p_18 ?></p>
+                        <h4><?= __('tours.recomendados.vinicunca_title') ?></h4>
+                        <p><?= __('tours.recomendados.vinicunca_desc') ?></p>
                         <div class="tour-details">
-                            <span><i class="fas fa-clock"></i> 3 horas</span>
-                            <span><i class="fas fa-users"></i> 6 personas</span>
+                            <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.vinicunca_hrs') ?></span>
+                            <span><i class="fas fa-users"></i> <?= __('tours.recomendados.vinicunca_pers') ?></span>
                         </div>
                         <div class="tour-footer">
-                            <span class="tour-more">Conoce más >></span>
+                            <a href="/{{ app()->getLocale() }}/sobrevuelo/vinicunca-elite"
+                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
                         </div>
                     </div>
                 </div>
                 <div class="tour-card">
                     <div class="tour-image">
-                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Costa Peruana">
-                        <div class="tour-badge">EXCLUSIVO</div>
+                        <img src="{{ asset('img/sobrevuelos/titicaca-lake-1.webp') }}" alt="Lago Titicaca">
+                        <div class="tour-badge"><?= __('tours.recomendados.titicaca_type') ?></div>
                     </div>
                     <div class="tour-content">
-                        <h4><?= $h4_16 ?></h4>
-                        <p><?= $p_19 ?></p>
+                        <h4><?= __('tours.recomendados.titicaca_title') ?></h4>
+                        <p><?= __('tours.recomendados.titicaca_desc') ?></p>
                         <div class="tour-details">
-                            <span><i class="fas fa-clock"></i> 2.5 horas</span>
-                            <span><i class="fas fa-users"></i> 5 personas</span>
+                            <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.titicaca_hrs') ?></span>
+                            <span><i class="fas fa-users"></i> <?= __('tours.recomendados.titicaca_pers') ?></span>
                         </div>
                         <div class="tour-footer">
-                            <span class="tour-more">Conoce más >></span>
+                            <a href="/{{ app()->getLocale() }}/sobrevuelo/titicaca-lake"
+                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="{{ asset('img/sobrevuelos/sacred-valley-1.webp') }}" alt="Valle Sagrado y Maras">
+                        <div class="tour-badge"><?= __('tours.recomendados.valle_maras_type') ?></div>
+                    </div>
+                    <div class="tour-content">
+                        <h4><?= __('tours.recomendados.valle_maras_title') ?></h4>
+                        <p><?= __('tours.recomendados.valle_maras_desc') ?></p>
+                        <div class="tour-details">
+                            <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.valle_maras_hrs') ?></span>
+                            <span><i class="fas fa-users"></i> <?= __('tours.recomendados.valle_maras_pers') ?></span>
+                        </div>
+                        <div class="tour-footer">
+                            <a href="/{{ app()->getLocale() }}/sobrevuelo/valle-maras"
+                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
                         </div>
                     </div>
                 </div>
