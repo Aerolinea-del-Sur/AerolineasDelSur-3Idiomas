@@ -71,7 +71,7 @@ return [
     'choquequirao.included_title' => 'Included',
     'choquequirao.notincluded_title' => 'Not Included',
     'choquequirao.notes_title' => 'Important Notes',
-    'choquequirao.recommended_title' => 'Other Recommended Tours',
+    'choquequirao.recommended_title' => 'Other Recommended Overflights',
     'choquequirao.booking_title' => 'Book your Tour',
     'choquequirao.booking_note' => '* Required fields. We will contact you within 24 hours to confirm your reservation.',
 

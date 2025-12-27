@@ -73,7 +73,7 @@ duration' => 'Duração',
     'choquequirao.included_title' => 'Incluído',
     'choquequirao.notincluded_title' => 'Não Incluído',
     'choquequirao.notes_title' => 'Notas Importantes',
-    'choquequirao.recommended_title' => 'Outros Tours Recomendados',
+    'choquequirao.recommended_title' => 'Outros Sobrevoos Recomendados',
     'choquequirao.booking_title' => 'Reserve seu Tour',
     'choquequirao.booking_note' => '* Campos obrigatórios. Entraremos em contato em 24 horas para confirmar sua reserva.',
 
