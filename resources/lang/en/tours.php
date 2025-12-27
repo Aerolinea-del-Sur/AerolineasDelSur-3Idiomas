@@ -77,6 +77,11 @@ return [
 
     // ==================== OVERFLIGHTS: Recommended ====================
     'recomendados' => [
+        'choquequirao_title' => 'Choquequirao',
+        'choquequirao_desc' => 'Discover the sacred sister of Machu Picchu, an archaeological jewel hidden in the mountains.',
+        'choquequirao_type' => 'New',
+        'choquequirao_hrs' => '1h',
+        'choquequirao_pers' => '4 people',
         'nazca_title' => 'Nazca Lines',
         'nazca_desc' => 'Discover the mysterious geoglyphs from the air on this full-day tour.',
         'nazca_type' => 'New',
@@ -92,6 +97,11 @@ return [
         'titicaca_type' => 'New',
         'titicaca_hrs' => '1h 40m',
         'titicaca_pers' => '6 persons',
+        'valle_maras_title' => 'Sacred Valley and Maras',
+        'valle_maras_desc' => 'Fly over Sacsayhuamán, Pisac, Sacred Valley, Maras Salt Mines and Huaypo Lagoon.',
+        'valle_maras_type' => 'New',
+        'valle_maras_hrs' => '1h',
+        'valle_maras_pers' => '6 people',
         'general' => 'Learn More',
     ],
 

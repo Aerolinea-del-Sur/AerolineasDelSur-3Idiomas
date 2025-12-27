@@ -150,6 +150,11 @@ return [
 
     // ==================== SOBREVUELO: Recomendados ====================
     'recomendados' => [
+        'choquequirao_title' => 'Choquequirao',
+        'choquequirao_desc' => 'Descubre la hermana sagrada de Machu Picchu, una joya arqueológica oculta en las montañas.',
+        'choquequirao_type' => 'Nuevo',
+        'choquequirao_hrs' => '1h',
+        'choquequirao_pers' => '4 personas',
         'nazca_title' => 'Líneas de Nazca',
         'nazca_desc' => 'Contempla los enigmáticos geoglifos gigantes grabados en el desierto desde una perspectiva aérea.',
         'nazca_type' => 'Nuevo',
@@ -165,6 +170,11 @@ return [
         'titicaca_type' => 'Nuevo',
         'titicaca_hrs' => '1h 40m',
         'titicaca_pers' => '6 personas',
+        'valle_maras_title' => 'Valle Sagrado y Maras',
+        'valle_maras_desc' => 'Sobrevuela Sacsayhuamán, Pisac, Valle Sagrado, las Salineras de Maras y la Laguna de Huaypo.',
+        'valle_maras_type' => 'Nuevo',
+        'valle_maras_hrs' => '1h',
+        'valle_maras_pers' => '6 personas',
         'general' => 'Conoce Más',
     ],
 

@@ -79,6 +79,11 @@ duration' => 'Duração',
 
     // ==================== SOBREVOO: Recomendados ====================
     'recomendados' => [
+        'choquequirao_title' => 'Choquequirao',
+        'choquequirao_desc' => 'Descubra a irmã sagrada de Machu Picchu, uma joia arqueológica escondida nas montanhas.',
+        'choquequirao_type' => 'Novo',
+        'choquequirao_hrs' => '1h',
+        'choquequirao_pers' => '4 pessoas',
         'nazca_title' => 'Linhas de Nazca',
         'nazca_desc' => 'Descubra os misteriosos geoglifos do ar neste passeio de dia inteiro.',
         'nazca_type' => 'Novo',
@@ -94,6 +99,11 @@ duration' => 'Duração',
         'titicaca_type' => 'Novo',
         'titicaca_hrs' => '1h 40m',
         'titicaca_pers' => '6 pessoas',
+        'valle_maras_title' => 'Vale Sagrado e Maras',
+        'valle_maras_desc' => 'Sobrevoe Sacsayhuamán, Pisac, Vale Sagrado, as Salinas de Maras e a Laguna de Huaypo.',
+        'valle_maras_type' => 'Novo',
+        'valle_maras_hrs' => '1h',
+        'valle_maras_pers' => '6 pessoas',
         'general' => 'Conhecer Mais',
     ],
 
