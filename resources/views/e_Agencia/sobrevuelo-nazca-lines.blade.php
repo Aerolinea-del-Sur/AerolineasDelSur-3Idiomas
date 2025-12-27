@@ -414,24 +414,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="tour-card">
-                    <div class="tour-image">
-                        <img src="{{ asset('img/sobrevuelos/sacred-valley-1.webp') }}" alt="Valle Sagrado y Maras">
-                        <div class="tour-badge"><?= __('tours.recomendados.valle_maras_type') ?></div>
-                    </div>
-                    <div class="tour-content">
-                        <h4><?= __('tours.recomendados.valle_maras_title') ?></h4>
-                        <p><?= __('tours.recomendados.valle_maras_desc') ?></p>
-                        <div class="tour-details">
-                            <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.valle_maras_hrs') ?></span>
-                            <span><i class="fas fa-users"></i> <?= __('tours.recomendados.valle_maras_pers') ?></span>
-                        </div>
-                        <div class="tour-footer">
-                            <a href="/{{ app()->getLocale() }}/sobrevuelo/valle-maras"
-                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

@@ -381,24 +381,6 @@ $seo = seo()
                     </div>
                 </div>
             </div>
-            <div class="tour-card">
-                <div class="tour-image">
-                    <img src="{{ asset('img/sobrevuelos/titicaca-lake-1.webp') }}" alt="Lago Titicaca">
-                    <div class="tour-badge"><?= __('tours.recomendados.titicaca_type') ?></div>
-                </div>
-                <div class="tour-content">
-                    <h4><?= __('tours.recomendados.titicaca_title') ?></h4>
-                    <p><?= __('tours.recomendados.titicaca_desc') ?></p>
-                    <div class="tour-details">
-                        <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.titicaca_hrs') ?></span>
-                        <span><i class="fas fa-users"></i> <?= __('tours.recomendados.titicaca_pers') ?></span>
-                    </div>
-                    <div class="tour-footer">
-                        <a href="/{{ app()->getLocale() }}/sobrevuelo/titicaca-lake"
-                            class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
