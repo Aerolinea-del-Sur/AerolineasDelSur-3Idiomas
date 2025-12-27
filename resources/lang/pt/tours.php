@@ -20,6 +20,16 @@ duration' => 'Duração',
 
     // Machu Picchu
     'machu_picchu.title' => 'Tour Aéreo Machu Picchu',
+    'machu_picchu.subtitle' => 'Sobrevoe a maravilha do mundo das alturas',
+    'machu_picchu.description_1' => 'Experimente uma perspectiva única de Machu Picchu com nosso tour aéreo exclusivo. Sobrevoe a icônica cidadela inca e o Vale Sagrado em uma aventura inesquecível.',
+    'machu_picchu.description_2' => 'Este tour oferece vistas panorâmicas incomparáveis de um dos sítios arqueológicos mais importantes do mundo, combinando história, natureza e a emoção de voar.',
+    'machu_picchu.modern_aircraft' => 'Aeronave Moderna',
+    'machu_picchu.certified_pilot' => 'Piloto Certificado',
+    'machu_picchu.aerial_photography' => 'Fotografia Aérea',
+    'machu_picchu.view_highlight' => 'Vista de Machu Picchu',
+    'machu_picchu.sacred_valley' => 'Vale Sagrado',
+    'machu_picchu.professional_photo' => 'Fotografia Profissional',
+    'machu_picchu.living_history' => 'História Viva',
     'machu_picchu.description' => 'Sobrevoe a cidadela inca de Machu Picchu',
 
     // Traduções comuns para todos os tours
@@ -27,6 +37,7 @@ duration' => 'Duração',
     'includes' => 'Inclui',
     'book_now' => 'Reservar Agora',
     'more_info' => 'Mais Informações',
+    'main_highlights' => 'Destaques Principais',
 
     // =============================================================
     // TOURS RECOMENDADOS

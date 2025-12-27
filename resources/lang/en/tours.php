@@ -18,6 +18,16 @@ return [
 
     // Machu Picchu
     'machu_picchu.title' => 'Aerial Machu Picchu Tour',
+    'machu_picchu.subtitle' => 'Fly over the world wonder from above',
+    'machu_picchu.description_1' => 'Experience a unique perspective of Machu Picchu with our exclusive aerial tour. Fly over the iconic Inca citadel and the Sacred Valley in an unforgettable adventure.',
+    'machu_picchu.description_2' => 'This tour offers unparalleled panoramic views of one of the world\'s most important archaeological sites, combining history, nature and the thrill of flying.',
+    'machu_picchu.modern_aircraft' => 'Modern Aircraft',
+    'machu_picchu.certified_pilot' => 'Certified Pilot',
+    'machu_picchu.aerial_photography' => 'Aerial Photography',
+    'machu_picchu.view_highlight' => 'Machu Picchu View',
+    'machu_picchu.sacred_valley' => 'Sacred Valley',
+    'machu_picchu.professional_photo' => 'Professional Photography',
+    'machu_picchu.living_history' => 'Living History',
     'machu_picchu.description' => 'Fly over the Inca citadel of Machu Picchu',
 
     // Common translations for all tours
@@ -25,6 +35,7 @@ return [
     'includes' => 'Includes',
     'book_now' => 'Book Now',
     'more_info' => 'More Information',
+    'main_highlights' => 'Main Highlights',
 
     // =============================================================
     // RECOMMENDED TOURS
