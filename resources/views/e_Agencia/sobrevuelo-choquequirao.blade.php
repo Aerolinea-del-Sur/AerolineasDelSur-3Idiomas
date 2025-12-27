@@ -380,18 +380,18 @@
                 </div> 
                 <div class="tour-card">
                     <div class="tour-image">
-                        <img src="{{ asset('img/sobrevuelos/titicaca-lake-1.webp') }}" alt="Lago Titicaca">
-                        <div class="tour-badge"><?= __('tours.recomendados.titicaca_type') ?></div>
+                        <img src="{{ asset('img/tours/tesoros-cusco-1.webp') }}" alt="Tesoros de Cusco">
+                        <div class="tour-badge"><?= __('tours.recomendados.tesoros_cusco_type') ?></div>
                     </div>
                     <div class="tour-content">
-                        <h4><?= $h4_16 ?></h4> 
-                        <p><?= $p_19 ?></p>
+                        <h4><?= __('tours.recomendados.tesoros_cusco_title') ?></h4>
+                        <p><?= __('tours.recomendados.tesoros_cusco_desc') ?></p>
                         <div class="tour-details">
-                            <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.titicaca_hrs') ?></span>
-                            <span><i class="fas fa-users"></i> <?= __('tours.recomendados.titicaca_pers') ?></span>
+                            <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.tesoros_cusco_duration') ?></span>
+                            <span><i class="fas fa-users"></i> <?= __('tours.recomendados.tesoros_cusco_pers') ?></span>
                         </div>
                         <div class="tour-footer">
-                            <a href="/{{ app()->getLocale() }}/sobrevuelo/titicaca-lake"
+                            <a href="/{{ app()->getLocale() }}/agencia/tesoros-cusco"
                                 class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
                         </div>
                     </div>

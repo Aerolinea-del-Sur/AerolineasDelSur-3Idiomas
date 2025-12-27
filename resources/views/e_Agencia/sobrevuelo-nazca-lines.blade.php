@@ -398,18 +398,18 @@
                 </div>
                 <div class="tour-card">
                     <div class="tour-image">
-                        <img src="{{ asset('img/sobrevuelos/titicaca-lake-1.webp') }}" alt="Lago Titicaca">
-                        <div class="tour-badge"><?= __('tours.recomendados.titicaca_type') ?></div>
+                        <img src="{{ asset('img/tours/machu-picchu-1.webp') }}" alt="Machu Picchu Aéreo">
+                        <div class="tour-badge"><?= __('tours.recomendados.machu_picchu_type') ?></div>
                     </div>
                     <div class="tour-content">
-                        <h4><?= __('tours.recomendados.titicaca_title') ?></h4>
-                        <p><?= __('tours.recomendados.titicaca_desc') ?></p>
+                        <h4><?= __('tours.recomendados.machu_picchu_title') ?></h4>
+                        <p><?= __('tours.recomendados.machu_picchu_desc') ?></p>
                         <div class="tour-details">
-                            <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.titicaca_hrs') ?></span>
-                            <span><i class="fas fa-users"></i> <?= __('tours.recomendados.titicaca_pers') ?></span>
+                            <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.machu_picchu_duration') ?></span>
+                            <span><i class="fas fa-users"></i> <?= __('tours.recomendados.machu_picchu_pers') ?></span>
                         </div>
                         <div class="tour-footer">
-                            <a href="/{{ app()->getLocale() }}/sobrevuelo/titicaca-lake"
+                            <a href="/{{ app()->getLocale() }}/agencia/machu-picchu"
                                 class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
                         </div>
                     </div>
