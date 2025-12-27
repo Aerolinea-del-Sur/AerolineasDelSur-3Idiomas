@@ -29,6 +29,13 @@ duration' => 'Duração',
     'more_info' => 'Mais Informações',
 
     // =============================================================
+    // TOUR TESOUROS DE CUSCO
+    // =============================================================
+    'tesoros_cusco.title' => 'Tesouros de Cusco',
+    'tesoros_cusco.subtitle' => 'Uma viagem inesquecível de 2 dias explorando o Vale Sagrado e Machu Picchu',
+    'tesoros_cusco.description' => 'Embarque em uma aventura de 2 dias e 1 noite para descobrir os tesouros do Vale Sagrado dos Incas e a majestosa cidadela de Machu Picchu. Este tour combina história, cultura e paisagens espetaculares em uma experiência única.',
+
+    // =============================================================
     // SOBREVOO CHOQUEQUIRAO
     // =============================================================
     'choquequirao.title' => 'Choquequirao',

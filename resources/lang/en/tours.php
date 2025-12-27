@@ -27,6 +27,13 @@ return [
     'more_info' => 'More Information',
 
     // =============================================================
+    // TESOROS DE CUSCO TOUR
+    // =============================================================
+    'tesoros_cusco.title' => 'Treasures of Cusco',
+    'tesoros_cusco.subtitle' => 'An unforgettable 2-day journey exploring the Sacred Valley and Machu Picchu',
+    'tesoros_cusco.description' => 'Embark on a 2-day, 1-night adventure to discover the treasures of the Sacred Valley of the Incas and the majestic citadel of Machu Picchu. This tour combines history, culture, and spectacular landscapes in a unique experience.',
+
+    // =============================================================
     // CHOQUEQUIRAO OVERFLIGHT
     // =============================================================
     'choquequirao.title' => 'Choquequirao',
