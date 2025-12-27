@@ -354,7 +354,7 @@ $seo = seo()
     <!-- Tours Recomendados -->
     <section class="recommended-tours">
         <div class="container">
-            <h2><?= __('choquequirao.recommended_title') ?></h2>
+            <h2><?= __('tours.recomendados_title') ?></h2>
             <div class="tours-grid">
                 <div class="tour-card">
                     <div class="tour-image">

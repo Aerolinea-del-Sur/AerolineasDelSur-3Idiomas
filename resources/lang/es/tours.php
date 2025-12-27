@@ -27,6 +27,11 @@ return [
     'more_info' => 'Más Información',
 
     // =============================================================
+    // TOURS RECOMENDADOS / RECOMMENDED TOURS
+    // =============================================================
+    'recomendados_title' => 'Otros Tours Recomendados',
+
+    // =============================================================
     // TOUR TESOROS DE CUSCO
     // =============================================================
     'tesoros_cusco.title' => 'Tesoros de Cusco',
