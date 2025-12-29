@@ -151,11 +151,11 @@
             </noscript>
         <!-- CSS Separados - carga asíncrona -->
             <link rel="stylesheet" href="{{ asset('css/general.css') }}" media="print" onload="this.media='all'">
-            <link rel="stylesheet" href="{{ asset('css/princi/header.css') }}" media="print" onload="this.media='all'">
+            <link rel="stylesheet" href="{{ asset('css/princi/header.css') }}?v=1.1" media="print" onload="this.media='all'">
             <link rel="stylesheet" href="{{ asset('css/princi/footer.css') }}" media="print" onload="this.media='all'">
             <noscript>
                 <link rel="stylesheet" href="{{ asset('css/general.css') }}">
-                <link rel="stylesheet" href="{{ asset('css/princi/header.css') }}">
+                <link rel="stylesheet" href="{{ asset('css/princi/header.css') }}?v=1.1">
                 <link rel="stylesheet" href="{{ asset('css/princi/footer.css') }}">
             </noscript>
 
