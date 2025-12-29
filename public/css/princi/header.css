@@ -766,7 +766,7 @@
 }
 
 /* Responsive para el header integrado */
-@media (max-width: 1022px) {
+@media (max-width: 1023px) {
     .mobile-top-bar {
         display: flex !important;
     }
@@ -962,7 +962,7 @@
 }
 
 /* Panel central en dos columnas en móviles amplios (481–1022px) */
-@media (min-width: 481px) and (max-width: 1022px) {
+@media (min-width: 481px) and (max-width: 1023px) {
     .header-wrapper {
         width: min(92%, 520px);
         gap: 20px;

@@ -241,7 +241,7 @@
 
             @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1023px) {
                 .close-menu-btn { display: flex !important; }
                 .header-container {
                     position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
