@@ -335,7 +335,7 @@ $seo = seo()
             <div class="tours-grid">
                 <div class="tour-card">
                     <div class="tour-image">
-                        <img src="{{ asset('img/tours/valle-sagrado-maras-1.webp') }}" alt="Valle Maras">
+                        <img src="{{ asset('img/sobrevuelos/valle-maras-1.webp') }}" alt="Valle Maras">
                         <div class="tour-badge"><?= __('tours.recomendados.valle_maras_type') ?></div>
                     </div>
                     <div class="tour-content">
@@ -371,7 +371,7 @@ $seo = seo()
                 </div>
                 <div class="tour-card">
                     <div class="tour-image">
-                        <img src="{{ asset('img/tours/andes-magicos-1.webp') }}" alt="Machu Picchu">
+                        <img src="{{ asset('img/tours/machu-picchu-1.webp') }}" alt="Machu Picchu">
                         <div class="tour-badge"><?= __('tours.recomendados.machu_picchu_type') ?></div>
                     </div>
                     <div class="tour-content">

@@ -273,8 +273,7 @@ $seo = seo()
                     <div class="por-que-icon">
                         <svg width="80" height="80" viewBox="0 0 80 80" role="img" aria-label="<?= $h3_5 ?>" loading="lazy">
                             <circle cx="40" cy="40" r="35" stroke="#c9a227" stroke-width="3" fill="none"/>
-                            <path d="M25 40L35 50L55 30" stroke="#c9a227" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="40" cy="40" r="8" fill="#c9a227" opacity="0.3"/>
+                            <path d="M25 40L35 50L55 30" stroke="#c9a227" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                         </svg>
                     </div>
                     <div class="por-que-content">
