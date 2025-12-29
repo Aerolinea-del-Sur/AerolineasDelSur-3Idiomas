@@ -768,7 +768,7 @@
 /* Responsive para el header integrado */
 @media (max-width: 1022px) {
     .mobile-top-bar {
-        display: flex;
+        display: flex !important;
     }
 
     .close-menu-btn {
