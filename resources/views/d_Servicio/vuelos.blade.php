@@ -263,7 +263,7 @@ $seo = seo()
 <!-- Alcance del Servicioijo -->
 <section class="heli-fleet-section" style="padding-top:40px;">
     <div class="heli-container">
-        <h2 class="heli-section-title">{{ __('services.flights.scope_title') }}</h2>
+        <h2 class="heli-section-title" style="text-align: center;">{{ __('services.flights.scope_title') }}</h2>
         <div style="max-width:900px; margin:0 auto; text-align:center; margin-bottom:30px;">
             <p style="font-size:18px; color:#ccc; line-height:1.8;">
                 {{ __('services.flights.scope_desc') }}
