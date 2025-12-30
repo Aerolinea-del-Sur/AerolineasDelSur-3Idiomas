@@ -11,7 +11,7 @@ class GoogleScriptAeronavesService
 
     public function __construct()
     {
-        $this->scriptUrl = 'https://script.google.com/macros/s/AKfycbwKvYNvSahHb4bQHkVv5793RoAi_8ejdCeGTTfy-AJZb9-L3jY4kuRPiJ_kLsAw4yS8SQ/exec';
+        $this->scriptUrl = 'https://script.google.com/macros/s/AKfycbyP501y9C4OFBXRf9AMv3c1xGi8VPHtU_IoQ_JGA2BE78VNRa1N5mDJyrB9uwlHiEenqw/exec';
 
         if (empty($this->scriptUrl)) {
             throw new \Exception('⚠️ No se ha configurado la URL de Google Script en el archivo .env');
