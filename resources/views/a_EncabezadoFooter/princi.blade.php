@@ -541,12 +541,20 @@
                         z-index: 1001;
                     }
                     @media (min-width: 1025px) and (max-width: 1199px) {
-                    .language-selector-dropdown {
-                        position: absolute;
-                        top: 15px;
-                        right: 20px;
-                        z-index: 1001;
+                        .language-selector-dropdown {
+                            position: absolute;
+                            top: 15px;
+                            right: 20px;
+                            z-index: 1001;
+                        }
                     }
+                    @media (min-width: 769px) and (max-width: 1021px) {
+                        .language-selector-dropdown {
+                            position: absolute;
+                            top: 15px;
+                            right: 20px;
+                            z-index: 1001;
+                        }
                     }
                     .lang-dropdown-btn {
                         display: flex;
