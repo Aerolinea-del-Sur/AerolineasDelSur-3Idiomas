@@ -768,7 +768,7 @@
 /* Responsive para el header integrado */
 @media (max-width: 1023px) {
     .mobile-top-bar {
-        display: flex !important;
+        display: flex ;
     }
 
     .close-menu-btn {
@@ -983,151 +983,105 @@
 
 /* ===== RESPONSIVE HEADER - 800px a 700px ===== */
 @media (max-width: 820px) and (min-width: 701px) {
-    .header-container {
-        padding: 14px 20px;
-        max-width: 100%;
+    
+    .mobile-top-bar {
+        padding: 10px 16px;
     }
 
-    .header.scrolled .header-container {
-        padding: 8px 20px;
+    .mobile-logo img {
+        height: 32px;
     }
 
-    /* Logo ajustado */
-    .logo-img {
-        height: 45px;
+    .hamburger-btn {
+        gap: 5px;
     }
 
-    .header.scrolled .logo-img {
-        height: 35px;
+    .hamburger-btn span {
+        width: 26px;
+        height: 3px;
     }
 
-    /* Navegación compacta */
-    .nav {
-        gap: 4px;
-        padding: 6px;
-        border-radius: 14px;
-    }
-
-    .nav-link {
-        padding: 10px 14px;
-        font-size: 13px;
-        gap: 4px;
-    }
-
-    .header.scrolled .nav-link {
-        padding: 8px 12px;
-        font-size: 12px;
-    }
-
-    .nav-arrow {
-        width: 14px;
-        height: 14px;
-    }
-
-    /* Dropdown más compacto */
-    .dropdown {
-        width: 500px;
-        padding: 20px;
-        border-radius: 20px;
-        top: calc(100% + 15px);
-    }
-
-    .dropdown-grid {
-        gap: 24px;
-        margin-bottom: 20px;
-    }
-
-    .dropdown-title {
-        font-size: 15px;
-        margin-bottom: 16px;
-    }
-
-    .dropdown-link {
-        padding: 12px;
-        gap: 12px;
-        border-radius: 14px;
-    }
-
-    .dropdown-icon {
-        width: 36px;
-        height: 36px;
-        border-radius: 10px;
-    }
-
-    .dropdown-icon svg {
-        width: 16px;
-        height: 16px;
-    }
-
-    .dropdown-content h4 {
-        font-size: 15px;
-    }
-
-    .dropdown-content p {
-        font-size: 13px;
-    }
-
-    /* Featured card más compacta */
-    .featured-card {
-        padding: 20px;
+    .header-wrapper {
+        width: min(92%, 340px);
         gap: 16px;
-        border-radius: 18px;
+        padding: 14px;
     }
 
-    .featured-badge {
-        width: 56px;
-        height: 56px;
-        border-radius: 14px;
-        font-size: 11px;
+    .main-nav-container {
+        gap: 12px;
+        border-radius: 22px;
+        padding: 12px;
     }
 
-    .featured-content h4 {
-        font-size: 15px;
-    }
-
-    .featured-content p {
-        font-size: 13px;
-    }
-
-    /* Botones CTA más pequeños */
-    .header-cta {
+    .main-nav-container>.nav-menu {
         gap: 12px;
     }
 
-    .header-cta .btn {
-        padding: 10px 18px;
-        font-size: 13px;
-        border-radius: 12px;
+    .main-nav-container>.nav-menu li a {
+        font-size: 15px;
+        line-height: 1.2;
+        padding: 10px 12px;
+        color: var(--pearl) !important;
+        -webkit-text-fill-color: var(--pearl) !important;
+        border-radius: 20px;
     }
 
-    /* Mobile menu button ajustado */
-    .mobile-menu-btn {
-        width: 44px;
-        height: 44px;
-        border-radius: 14px;
-    }
-
-    .header.scrolled .mobile-menu-btn {
-        width: 38px;
-        height: 38px;
+    .aero-btn {
+        height: 46px;
+        border-radius: 30px;
+        font-size: 15px;
+        line-height: 1.2;
     }
 }
 
 @media (max-width: 768px) {
-    .header-container {
-        padding: 12px 20px;
+    .mobile-top-bar {
+        padding: 10px 16px;
     }
 
-    .nav {
-        display: none;
+    .mobile-logo img {
+        height: 32px;
     }
 
-    .header-cta {
-        display: none;
+    .hamburger-btn {
+        gap: 5px;
     }
 
-    .mobile-menu-btn {
-        display: flex;
+    .hamburger-btn span {
+        width: 26px;
+        height: 3px;
+    }
+
+    .header-wrapper {
+        width: min(92%, 340px);
+        gap: 16px;
+        padding: 14px;
+    }
+
+    .main-nav-container {
+        gap: 12px;
+        border-radius: 22px;
+        padding: 12px;
+    }
+
+    .main-nav-container>.nav-menu {
+        gap: 12px;
+    }
+
+    .main-nav-container>.nav-menu li a {
+        font-size: 15px;
+        line-height: 1.2;
+        padding: 10px 12px;
+        color: var(--pearl) !important;
+        -webkit-text-fill-color: var(--pearl) !important;
+        border-radius: 20px;
+    }
+
+    .aero-btn {
+        height: 46px;
+        border-radius: 30px;
+        font-size: 15px;
+        line-height: 1.2;
     }
 }
 
