@@ -61,7 +61,7 @@ return [
     'overflights.nazca.desc' => 'Descifra los misterios de las antiguas figuras geoglíficas que solo revelan su verdadera forma desde el cielo.',
     'overflights.sacred_valley.title' => 'Valle Sagrado y Maras',
     'overflights.sacred_valley.desc' => 'Descubre Sacsayhuamán, Tambomachay, Pisac, Valle Sagrado, Maras y Laguna de Huaypo desde las alturas.',
-    'overflights.vinicunca.title' => 'Vinicunca Elite',
+    'overflights.vinicunca.title' => 'Vinicunca Elite - montaña de 7 colores',
     'overflights.vinicunca.desc' => 'Visitamos Vinicunca, Palcoyo, Ausangate, Valle Rojo y Cuatro Lagunas en una experiencia exclusiva desde las alturas.',
     
     // ==================== HELICÓPTEROS ====================
