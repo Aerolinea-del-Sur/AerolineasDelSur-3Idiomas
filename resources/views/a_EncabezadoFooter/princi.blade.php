@@ -544,7 +544,7 @@
                         .language-selector-dropdown {
                             position: absolute;
                             top: 15px;
-                            right: 20px;
+                            right: 70px;
                             z-index: 1001;
                         }
                     }
@@ -552,7 +552,7 @@
                         .language-selector-dropdown {
                             position: absolute;
                             top: 15px;
-                            right: 20px;
+                            right: 70px;
                             z-index: 1001;
                         }
                     }
