@@ -544,8 +544,9 @@
                     .language-selector-dropdown {
                         position: absolute;
                         top: 15px;
-                        right: 70px;
+                        right: 20px;
                         z-index: 1001;
+                    }
                     }
                     .lang-dropdown-btn {
                         display: flex;
