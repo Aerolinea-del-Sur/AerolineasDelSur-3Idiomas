@@ -18,6 +18,7 @@ return [
     'button.call_now' => 'Call Now',
     'button.see_tours' => 'See Tours',
     'button.reserve' => 'Reserve',
+    'read_more' => 'Read more',
     
     // Footer
     'footer.services' => 'Services',

@@ -18,6 +18,7 @@ return [
     'button.call_now' => 'Ligue Agora',
     'button.see_tours' => 'Ver Passeios',
     'button.reserve' => 'Reservar',
+    'read_more' => 'Leia mais',
     
     // Footer
     'footer.services' => 'Serviços',

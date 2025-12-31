@@ -11,13 +11,14 @@ return [
     'nav.agency' => 'Agencia',
     'nav.about' => 'Nosotros',
     
-    // Botones comunes
+    // Bot ones comunes
     'button.book_now' => 'Reservar Ahora',
     'button.learn_more' => 'Conoce Más',
     'button.contact' => 'Contactar',
     'button.call_now' => 'Llamar Ahora',
     'button.see_tours' => 'Ver Tours',
     'button.reserve' => 'Reservar',
+    'read_more' => 'Leer más',
     
     // Footer
     'footer.services' => 'Servicios',

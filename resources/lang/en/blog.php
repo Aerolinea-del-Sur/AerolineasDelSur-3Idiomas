@@ -18,10 +18,29 @@ return [
     'filter_experiences' => 'Experiences',
     
     // Articles
+    'date_published' => 'Published',
     'read_more' => 'Read more',
     'category_tips' => 'Tips',
     'category_experiences' => 'Experiences',
     'category_destinations' => 'Destinations',
+    
+    // Blog cards for service sections
+    'adventure_cusco' => [
+        'title' => 'Complete Guide: How to Prepare Your First Adventure to Cusco',
+        'excerpt' => 'Everything you need to know to prepare your adventure in Cusco: weather, luggage, altitude and must-do activities.',
+    ],
+    'flights_peru' => [
+        'title' => 'Flights in Peru: Discover the Aerolínea del Sur Experience',
+        'excerpt' => 'Discover the experience of flying in Peru with Aerolínea del Sur. Charter flights, scenic flights, cargo and air ambulance.',
+    ],
+    'machu_picchu' => [
+        'title' => 'Discover the Wonder of the World: Machu Picchu',
+        'excerpt' => 'As one of the New Seven Wonders of the World, this ancient site will amaze you with its history and architecture.',
+    ],
+    'travel_experiences' => [
+        'title' => 'What is the Experience of a Private Jet Trip Like?',
+        'excerpt' => 'The private jet travel experience is defined by customization, eliminating waiting times and adapting to your schedule.',
+    ],
     
     // ==================== BLOG: Flights in Peru ====================
     'vuelos_peru' => [

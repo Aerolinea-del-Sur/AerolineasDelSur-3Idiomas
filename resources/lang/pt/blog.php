@@ -18,10 +18,29 @@ return [
     'filter_experiences' => 'Experiências',
     
     // Artigos
-    'read_more' => 'Ler mais',
+    'date_published' => 'Publicado',
+    'read_more' => 'Leia mais',
     'category_tips' => 'Dicas',
     'category_experiences' => 'Experiências',
     'category_destinations' => 'Destinos',
+    
+    // Cartões de blog para seções de serviços
+    'adventure_cusco' => [
+        'title' => 'Guia Completo: Como Preparar Sua Primeira Aventura a Cusco',
+        'excerpt' => 'Tudo o que você precisa saber para preparar sua aventura em Cusco: clima, bagagem, altitude e atividades imperdíveis.',
+    ],
+    'flights_peru' => [
+        'title' => 'Voos no Peru: Descubra a Experiência Aerolínea del Sur',
+        'excerpt' => 'Descubra a experiência de voar no Peru com Aerolínea del Sur. Voos charter, sobrevoos, carga e ambulância aérea.',
+    ],
+    'machu_picchu' => [
+        'title' => 'Descubra a Maravilha do Mundo: Machu Picchu',
+        'excerpt' => 'Como uma das Novas Sete Maravilhas do Mundo, este antigo recinto vai surpreendê-lo com sua história e arquitetura.',
+    ],
+    'travel_experiences' => [
+        'title' => 'Como é a Experiência de uma Viagem em Jato Privado?',
+        'excerpt' => 'A experiência de uma viagem em jato privado é definida pela personalização, eliminando esperas e adaptando-se à sua agenda.',
+    ],
     
     // ==================== BLOG: Voos no Peru ====================
     'vuelos_peru' => [
