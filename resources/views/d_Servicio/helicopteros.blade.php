@@ -363,49 +363,65 @@ $seo = seo()
         <div class="heli-articles-grid">
             <article class="article-card">
                 <div class="article-image">
-                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop" alt="Consejos de viaje">
+                    <img src="{{ asset('img/blog/aventura-cusco.webp') }}" alt="Aventura en Cusco">
                     <div class="article-category">Consejos</div>
                 </div>
                 <div class="article-content">
                     <div class="article-meta">
-                        <span class="article-date"><i class="fas fa-calendar"></i> 12 Enero 2024</span>
+                        <span class="article-date"><i class="fas fa-calendar"></i> {{ __('blog.date_published') }}</span>
                         <span class="article-read-time"><i class="fas fa-clock"></i> 5 min</span>
                     </div>
-                    <h3 class="article-title">10 consejos para viajar cómodo en vuelos largos</h3>
-                    <p class="article-excerpt">Maximiza tu comodidad en vuelos de larga distancia con estos consejos probados por expertos.</p>
-                    <a href="#" class="article-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    <h3 class="article-title">{{ __('blog.adventure_cusco.title') }}</h3>
+                    <p class="article-excerpt">{{ __('blog.adventure_cusco.excerpt') }}</p>
+                    <a href="{{ url(app()->getLocale() . '/blog/Aventura-Cusco') }}" class="article-link">{{ __('common.read_more') }} <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
 
             <article class="article-card">
                 <div class="article-image">
-                    <img src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=600&h=400&fit=crop" alt="Nueva flota">
-                    <div class="article-category">Noticias</div>
+                    <img src="{{ asset('img/blog/vuelos-peru.webp') }}" alt="Vuelos en Perú">
+                    <div class="article-category">Consejos</div>
                 </div>
                 <div class="article-content">
                     <div class="article-meta">
-                        <span class="article-date"><i class="fas fa-calendar"></i> 10 Enero 2024</span>
-                        <span class="article-read-time"><i class="fas fa-clock"></i> 3 min</span>
+                        <span class="article-date"><i class="fas fa-calendar"></i> {{ __('blog.date_published') }}</span>
+                        <span class="article-read-time"><i class="fas fa-clock"></i> 6 min</span>
                     </div>
-                    <h3 class="article-title">Aerolíneas del Sur incorpora nuevos Boeing 787 Dreamliner</h3>
-                    <p class="article-excerpt">Nuestra flota se moderniza con aeronaves de última generación para brindarte mayor comodidad.</p>
-                    <a href="#" class="article-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    <h3 class="article-title">{{ __('blog.flights_peru.title') }}</h3>
+                    <p class="article-excerpt">{{ __('blog.flights_peru.excerpt') }}</p>
+                    <a href="{{ url(app()->getLocale() . '/blog/Vuelos-Peru') }}" class="article-link">{{ __('common.read_more') }} <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
 
             <article class="article-card">
                 <div class="article-image">
-                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop" alt="Experiencia de viaje">
+                    <img src="{{ asset('img/blog/machu-picchu.webp') }}" alt="Machu Picchu">
+                    <div class="article-category">Destinos</div>
+                </div>
+                <div class="article-content">
+                    <div class="article-meta">
+                        <span class="article-date"><i class="fas fa-calendar"></i> {{ __('blog.date_published') }}</span>
+                        <span class="article-read-time"><i class="fas fa-clock"></i> 7 min</span>
+                    </div>
+                    <h3 class="article-title">{{ __('blog.machu_picchu.title') }}</h3>
+                    <p class="article-excerpt">{{ __('blog.machu_picchu.excerpt') }}</p>
+                    <a href="{{ url(app()->getLocale() . '/blog/Machu-Picchu-Peru') }}" class="article-link">{{ __('common.read_more') }} <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div class="article-image">
+                    <img src="{{ asset('img/blog/experiencias-viaje.webp') }}" alt="Experiencias de Viaje">
                     <div class="article-category">Experiencias</div>
                 </div>
                 <div class="article-content">
                     <div class="article-meta">
-                        <span class="article-date"><i class="fas fa-calendar"></i> 8 Enero 2024</span>
-                        <span class="article-read-time"><i class="fas fa-clock"></i> 6 min</span>
+                        <span class="article-date"><i class="fas fa-calendar"></i> {{ __('blog.date_published') }}</span>
+                        <span class="article-read-time"><i class="fas fa-clock"></i> 8 min</span>
                     </div>
-                    <h3 class="article-title">Mi experiencia en Clase Ejecutiva: Lujo en las alturas</h3>
-                    <p class="article-excerpt">Descubre cómo es volar en nuestra Clase Ejecutiva a través de la experiencia de nuestros pasajeros.</p>
-                    <a href="#" class="article-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    <h3 class="article-title">{{ __('blog.travel_experiences.title') }}</h3>
+                    <p class="article-excerpt">{{ __('blog.travel_experiences.excerpt') }}</p>
+                    <a href="{{ url(app()->getLocale() . '/blog/Experiencias-de-Viaje') }}" class="article-link">{{ __('common.read_more') }} <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
         </div>
