@@ -8,9 +8,9 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-    color: #ffffff;
+    color: var(--white);
     line-height: 1.6;
     min-height: 100vh;
 }
@@ -23,8 +23,8 @@ body {
 
 /* ===== HEADER ===== */
 .aircraft-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('publi/img/aeronaves/aviones/Gulfstream-G100.webp') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('publi/img/aeronaves/aviones/Gulfstream-G100.webp') no-repeat center center;
     background-size: cover;
     height: 400px;
     display: flex;
@@ -97,7 +97,7 @@ section {
     left: 0;
     width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, #d4af37 0%, #f4d03f 100%);
+    background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 100%);
     border-radius: 2px;
 }
 
@@ -130,14 +130,16 @@ section {
 
 .new-carousel-track {
     display: flex;
-    width: 400%; /* 4 slides × 100% */
+    width: 400%;
+    /* 4 slides × 100% */
     height: 100%;
     transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .new-carousel-slide {
     position: relative;
-    width: 25%; /* 100% / 4 slides */
+    width: 25%;
+    /* 100% / 4 slides */
     height: 100%;
     flex-shrink: 0;
 }
@@ -231,25 +233,25 @@ section {
         margin: 0 10px;
         border-radius: 15px;
     }
-    
+
     .new-carousel-container {
         height: 400px;
     }
-    
+
     .new-carousel-btn {
         width: 45px;
         height: 45px;
         font-size: 16px;
     }
-    
+
     .new-carousel-btn--left {
         left: 15px;
     }
-    
+
     .new-carousel-btn--right {
         right: 15px;
     }
-    
+
     .image-caption {
         font-size: 14px;
         padding: 20px 15px 15px;
@@ -680,17 +682,17 @@ section {
     .main-wrapper {
         flex-direction: column;
     }
-    
+
     .aircraft-content {
         max-width: 100%;
     }
-    
+
     .sticky-form {
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
     }
-    
+
     .form-container {
         position: static;
     }
@@ -700,39 +702,39 @@ section {
     .aircraft-header {
         height: 300px;
     }
-    
+
     .aircraft-title {
         font-size: 3rem;
     }
-    
+
     .aircraft-subtitle {
         font-size: 1.2rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .main-wrapper {
         padding: 0 15px;
         gap: 30px;
     }
-    
+
     .carousel {
         height: 300px;
     }
-    
+
     .capacity-layout {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .overview-grid,
     .performance-grid,
     .routes-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .form-container {
         padding: 20px;
     }
@@ -742,23 +744,23 @@ section {
     .aircraft-title {
         font-size: 2.5rem;
     }
-    
+
     .carousel {
         height: 250px;
     }
-    
+
     .carousel-btn {
         width: 40px;
         height: 40px;
         font-size: 1rem;
     }
-    
+
     .overview-item,
     .performance-item,
     .route-item {
         padding: 20px;
     }
-    
+
     section {
         margin-bottom: 60px;
     }
@@ -776,8 +778,8 @@ section {
 /* ===== FONDOS ESPECÍFICOS POR AVIÓN ===== */
 /* King Air B200 */
 body.air-king-b200 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Air-King-B200.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Air-King-B200.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -786,8 +788,8 @@ body.air-king-b200 .traditional-header {
 
 /* King Air B350 */
 body.air-king-b350 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/AirKingB350.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/AirKingB350.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -796,8 +798,8 @@ body.air-king-b350 .traditional-header {
 
 /* Beechcraft 1900D */
 body.beechcraft-1900d .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Beechcraft1900D.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Beechcraft1900D.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -806,8 +808,8 @@ body.beechcraft-1900d .traditional-header {
 
 /* Mi 17 */
 body.mi-17 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/mi17-5.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/mi17-5.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -816,8 +818,8 @@ body.mi-17 .traditional-header {
 
 /* Gulfstream G100 */
 body.gulfstream-g100 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Gulfstream-G100.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Gulfstream-G100.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -826,8 +828,8 @@ body.gulfstream-g100 .traditional-header {
 
 /* Gulfstream GIV */
 body.gulfstream-giv .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/GulfstreamGiv.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/GulfstreamGiv.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -836,8 +838,8 @@ body.gulfstream-giv .traditional-header {
 
 /* Honda Jet */
 body.honda-jet .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/HondaJet.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/HondaJet.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -846,8 +848,8 @@ body.honda-jet .traditional-header {
 
 /* Phenom 100 */
 body.phenom-100 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Phenom100.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Phenom100.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -856,8 +858,8 @@ body.phenom-100 .traditional-header {
 
 /* Phenom 300 */
 body.phenom-300 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Phenom300.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Phenom300.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -866,19 +868,19 @@ body.phenom-300 .traditional-header {
 
 /* Challenger 300 */
 body.challenger-300 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Challenger300.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Challenger300.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    
+
 }
 
 /* Challenger 350 */
 body.challenger-350 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Challenger350.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Challenger350.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -887,8 +889,8 @@ body.challenger-350 .traditional-header {
 
 /* Challenger 601 */
 body.challenger-601 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Challenger601.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Challenger601.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -897,8 +899,8 @@ body.challenger-601 .traditional-header {
 
 /* Challenger 604 */
 body.challenger-604 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Challenger604.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Challenger604.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -907,8 +909,8 @@ body.challenger-604 .traditional-header {
 
 /* Challenger 605 */
 body.challenger-605 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Challenger605.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Challenger605.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -917,8 +919,8 @@ body.challenger-605 .traditional-header {
 
 /* Challenger 650 */
 body.challenger-650 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Challenger650.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Challenger650.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -927,8 +929,8 @@ body.challenger-650 .traditional-header {
 
 /* Challenger 850 */
 body.challenger-850 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Challenger850.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Challenger850.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -937,8 +939,8 @@ body.challenger-850 .traditional-header {
 
 /* Citation 550 Bravo */
 body.citation-550-bravo .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Citation550-Bravo.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Citation550-Bravo.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -947,8 +949,8 @@ body.citation-550-bravo .traditional-header {
 
 /* Citation Cj4 */
 body.citation-cj4 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/CitationCj4.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/CitationCj4.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -957,8 +959,8 @@ body.citation-cj4 .traditional-header {
 
 /* Citation Encore */
 body.citation-encore .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/CitationEncore.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/CitationEncore.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -967,8 +969,8 @@ body.citation-encore .traditional-header {
 
 /* Citation XLS */
 body.citation-xls .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/CitationXLS.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/CitationXLS.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -977,8 +979,8 @@ body.citation-xls .traditional-header {
 
 /* Citation HemisPhere */
 body.citation-hemisphere .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/CitationHemisPhere.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/CitationHemisPhere.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -987,8 +989,8 @@ body.citation-hemisphere .traditional-header {
 
 /* Citation Latitude */
 body.citation-latitude .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/CitationLatitude.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/CitationLatitude.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -997,8 +999,8 @@ body.citation-latitude .traditional-header {
 
 /* Mi 8 MTV 1 */
 body.mi8-mtv1 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Mi8-mtv1.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Mi8-mtv1.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1007,8 +1009,8 @@ body.mi8-mtv1 .traditional-header {
 
 /* Ecureuil B3 */
 body.ecureuil-b3 .traditional-header {
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../../../img/aeronaves/aviones/Ecureuil-b3.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../../../img/aeronaves/aviones/Ecureuil-b3.webp') center/cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1019,8 +1021,8 @@ body.ecureuil-b3 .traditional-header {
 .traditional-header {
     position: relative;
     height: 100vh;
-    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)), 
-                url('../Nosotros/imgs/Beechcraft- 1900D.webp') center/cover;
+    background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(26, 26, 46, 0.9)),
+        url('../Nosotros/imgs/Beechcraft- 1900D.webp') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1044,12 +1046,12 @@ body.ecureuil-b3 .traditional-header {
     left: 0;
     right: 0;
     height: 8px;
-    background: linear-gradient(90deg, 
-        transparent 0%, 
-        #d4af37 20%, 
-        #f4d03f 50%, 
-        #d4af37 80%, 
-        transparent 100%);
+    background: linear-gradient(90deg,
+            transparent 0%,
+            #d4af37 20%,
+            #f4d03f 50%,
+            #d4af37 80%,
+            transparent 100%);
     z-index: 3;
 }
 
@@ -1273,7 +1275,7 @@ body.ecureuil-b3 .traditional-header {
     .traditional-header {
         min-height: 100vh;
     }
-    
+
     .header-content {
         flex-direction: column;
         padding: 40px 15px;
@@ -1281,7 +1283,7 @@ body.ecureuil-b3 .traditional-header {
         justify-content: center;
         align-items: center;
     }
-    
+
     .header-left-panel {
         flex-direction: column;
         max-width: 100%;
@@ -1290,31 +1292,31 @@ body.ecureuil-b3 .traditional-header {
         gap: 0.5rem;
         align-items: center;
     }
-    
+
     .header-right-panel {
         display: none;
     }
-    
+
     .aircraft-title-section-enhanced {
         flex: 0 0 auto;
         width: 100%;
         max-width: 350px;
         padding: 1.5rem;
     }
-    
+
     .aircraft-credentials-enhanced {
         width: 100%;
         max-width: 350px;
     }
-    
+
     .aircraft-model-enhanced {
         font-size: 3rem;
     }
-    
+
     .title-prefix {
         font-size: 1rem;
     }
-    
+
     .aircraft-description-enhanced {
         font-size: 1rem;
     }
@@ -1324,37 +1326,37 @@ body.ecureuil-b3 .traditional-header {
     .header-content {
         padding: 20px 10px;
     }
-    
+
     .header-left-panel {
         padding: 15px;
         gap: 0.5rem;
     }
-    
+
     .aircraft-title-section-enhanced {
         flex: 0 0 auto;
         padding: 1rem;
     }
-    
+
     .aircraft-model-enhanced {
         font-size: 2.5rem;
     }
-    
+
     .title-prefix {
         font-size: 0.9rem;
     }
-    
+
     .aircraft-description-enhanced {
         font-size: 0.9rem;
     }
-    
+
     .credentials-frame {
         padding: 1rem;
     }
-    
+
     .credential-item-enhanced {
         padding: 0.8rem;
     }
-    
+
     .credential-icon {
         font-size: 1.2rem;
     }

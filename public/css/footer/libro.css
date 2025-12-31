@@ -10,7 +10,7 @@
     --secondary-pearl: #E6E6E6;
     --secondary-burgundy: #800020;
     --secondary-bottle-green: #0B3D2E;
-    
+
     /* Variables principales */
     --primary: var(--primary-black);
     --accent: var(--primary-gold);
@@ -21,17 +21,17 @@
     --pearl: var(--secondary-pearl);
     --burgundy: var(--secondary-burgundy);
     --bottle-green: var(--secondary-bottle-green);
-    
+
     /* Fondos de cristal con elegancia */
     --glass-bg: rgba(28, 28, 28, 0.9);
     --glass-bg-solid: rgba(0, 0, 0, 0.95);
     --glass-bg-light: rgba(230, 230, 230, 0.9);
-    
+
     /* Sombras elegantes */
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
     --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
     --shadow-gold: 0 8px 25px rgba(201, 162, 39, 0.4);
-    
+
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -42,7 +42,6 @@
     padding: 40px 20px;
     background: linear-gradient(135deg, #1D1D1D, var(--charcoal) 50%, var(--charcoal-alt) 100%);
     min-height: 100vh;
-    font-family: 'Space Grotesk', sans-serif;
 }
 
 /* Encabezado de la página */
@@ -72,7 +71,9 @@
     backdrop-filter: blur(2px);
 }
 
-.success-overlay.active { display: flex; }
+.success-overlay.active {
+    display: flex;
+}
 
 /* Toast de notificaciones */
 .toast-container {
@@ -90,7 +91,7 @@
     background: #1f1f1f;
     color: #fff;
     border: 1px solid rgba(201, 162, 39, 0.45);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
     padding: 12px 16px;
     min-width: 280px;
@@ -98,13 +99,28 @@
     animation: toastIn 250ms ease-out;
 }
 
-.toast.success { border-color: rgba(39, 174, 96, 0.6); }
-.toast.error { border-color: rgba(231, 76, 60, 0.7); }
-.toast.info  { border-color: rgba(201, 162, 39, 0.6); }
+.toast.success {
+    border-color: rgba(39, 174, 96, 0.6);
+}
+
+.toast.error {
+    border-color: rgba(231, 76, 60, 0.7);
+}
+
+.toast.info {
+    border-color: rgba(201, 162, 39, 0.6);
+}
 
 @keyframes toastIn {
-    from { opacity: 0; transform: translate(-50%, -10px); }
-    to   { opacity: 1; transform: translate(-50%, 0); }
+    from {
+        opacity: 0;
+        transform: translate(-50%, -10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
 }
 
 /* Estados de error en campos */
@@ -126,7 +142,7 @@ select.error {
     background: #ffffff;
     color: #111111;
     border: 1px solid rgba(201, 162, 39, 0.35);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.22);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
     border-radius: 16px;
     width: min(640px, 92vw);
     padding: 28px 22px;
@@ -139,15 +155,40 @@ select.error {
     margin-bottom: 8px;
 }
 
-.success-title { font-size: 24px; font-weight: 700; color: #111; }
-.success-subtitle { font-size: 15px; color: #333; opacity: 0.85; }
-.success-code { margin-top: 6px; font-size: 14px; color: #333; }
+.success-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111;
+}
 
-.success-actions { margin-top: 16px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-.success-actions .btn { min-width: 180px; }
+.success-subtitle {
+    font-size: 15px;
+    color: #333;
+    opacity: 0.85;
+}
+
+.success-code {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+.success-actions {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.success-actions .btn {
+    min-width: 180px;
+}
 
 @media print {
-    .success-overlay { display: none !important; }
+    .success-overlay {
+        display: none !important;
+    }
 }
 
 .libro-header__subtitle {
@@ -333,13 +374,15 @@ select.error {
     letter-spacing: 0.5px;
 }
 
-.btn-next, .btn-submit {
+.btn-next,
+.btn-submit {
     background: linear-gradient(135deg, var(--accent), var(--accent-light));
     color: var(--primary);
     box-shadow: var(--shadow-gold);
 }
 
-.btn-next:hover, .btn-submit:hover {
+.btn-next:hover,
+.btn-submit:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 30px rgba(201, 162, 39, 0.5);
 }
@@ -355,14 +398,16 @@ select.error {
     border-color: var(--accent);
 }
 
-.btn-print, .btn-download {
+.btn-print,
+.btn-download {
     background: linear-gradient(135deg, var(--accent), var(--accent-light));
     color: var(--primary);
     margin: 10px;
     box-shadow: var(--shadow-gold);
 }
 
-.btn-print:hover, .btn-download:hover {
+.btn-print:hover,
+.btn-download:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 30px rgba(201, 162, 39, 0.5);
 }
@@ -384,7 +429,6 @@ select.error {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: var(--shadow-gold);
-    font-family: 'Space Grotesk', sans-serif;
 }
 
 .btn-download:hover {
@@ -409,7 +453,7 @@ select.error {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .btn-download,
     .btn-print {
         width: 100%;
@@ -574,52 +618,52 @@ select.error {
     .reclamacion-container {
         padding: 20px 15px;
     }
-    
+
     .progress-bar {
         flex-direction: column;
         gap: 10px;
     }
-    
+
     .progress-step {
         padding: 10px;
     }
-    
+
     .progress-step:not(:last-child):after {
         display: none;
     }
-    
+
     .form-section {
         padding: 25px 20px;
     }
-    
+
     .form-col {
         min-width: 100%;
     }
-    
+
     .btn-group {
         flex-direction: column;
     }
-    
+
     .btn {
         width: 100%;
     }
-    
+
     .action-buttons {
         flex-direction: column;
     }
-    
+
     .confirmation-icon {
         font-size: 50px;
     }
-    
+
     .confirmation-code {
         font-size: 18px;
     }
-    
+
     .data-row {
         flex-direction: column;
     }
-    
+
     .data-row .label {
         min-width: auto;
         margin-right: 0;
@@ -628,14 +672,22 @@ select.error {
 }
 
 @media print {
-    html, body {
+
+    html,
+    body {
         background: #ffffff !important;
         color: #111111 !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
     }
+
     /* Ocultar elementos interactivos que no son útiles en impresión */
-    .btn, .progress-bar, .form-section:not(.active), button, nav, footer {
+    .btn,
+    .progress-bar,
+    .form-section:not(.active),
+    button,
+    nav,
+    footer {
         display: none !important;
     }
 
@@ -654,27 +706,29 @@ select.error {
         background: #ffffff !important;
         color: #111111 !important;
         box-shadow: none !important;
-        border: 1px solid rgba(0,0,0,0.12) !important;
+        border: 1px solid rgba(0, 0, 0, 0.12) !important;
     }
-    
-    .summary-section, .summary-block {
+
+    .summary-section,
+    .summary-block {
         background: #ffffff !important;
         color: #111111 !important;
         box-shadow: none !important;
         border-color: #000 !important;
     }
-    
-    .data-row .label, .data-row .value {
+
+    .data-row .label,
+    .data-row .value {
         color: #111111 !important;
     }
-    
+
     /* Evitar cortes entre páginas */
     .resumen-card,
     .summary-card,
     .form-section,
-    .data-row { 
-        page-break-inside: avoid; 
-        break-inside: avoid; 
+    .data-row {
+        page-break-inside: avoid;
+        break-inside: avoid;
     }
 }
 
@@ -724,7 +778,7 @@ input[type="file"]::file-selector-button {
 
 .progress-step:not(:last-child):after {
     height: 3px;
-    background: linear-gradient(90deg, rgba(201,162,39,0.0), rgba(201,162,39,0.6), rgba(201,162,39,0.0));
+    background: linear-gradient(90deg, rgba(201, 162, 39, 0.0), rgba(201, 162, 39, 0.6), rgba(201, 162, 39, 0.0));
 }
 
 .progress-step .step-number {
@@ -735,7 +789,7 @@ input[type="file"]::file-selector-button {
 
 .form-section {
     border: 1px solid rgba(201, 162, 39, 0.25);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .form-row {
@@ -751,7 +805,7 @@ input[type="file"]::file-selector-button {
 .form-group textarea {
     border-radius: 10px;
     border: 1.6px solid rgba(201, 162, 39, 0.35);
-    background: rgba(255,255,255,0.06);
+    background: rgba(255, 255, 255, 0.06);
 }
 
 .form-group input:focus,
@@ -777,7 +831,10 @@ input[type="file"]::file-selector-button {
     border: 1.6px solid rgba(201, 162, 39, 0.35);
 }
 
-.btn-next, .btn-submit, .btn-download, .btn-print {
+.btn-next,
+.btn-submit,
+.btn-download,
+.btn-print {
     background: linear-gradient(135deg, var(--accent), var(--accent-light));
 }
 
@@ -792,7 +849,7 @@ input[type="file"]::file-selector-button {
 /* Confirmación y Resumen - diseño de tarjetas */
 .summary-section {
     border: 1px solid rgba(201, 162, 39, 0.25);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .summary-block {
@@ -815,26 +872,71 @@ input[type="file"]::file-selector-button {
 }
 
 @media (max-width: 768px) {
-    .reclamacion-container { padding: 28px 14px; }
-    .libro-header__title { font-size: 28px; }
-    .libro-header__subtitle { font-size: 15px; }
-    .progress-bar { gap: 10px; padding: 14px; }
-    .progress-step { font-size: 14px; }
-    .btn { width: 100%; }
-    .company-info { grid-template-columns: 1fr; }
+    .reclamacion-container {
+        padding: 28px 14px;
+    }
+
+    .libro-header__title {
+        font-size: 28px;
+    }
+
+    .libro-header__subtitle {
+        font-size: 15px;
+    }
+
+    .progress-bar {
+        gap: 10px;
+        padding: 14px;
+    }
+
+    .progress-step {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .company-info {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (min-width: 1024px) {
-    .summary-section { padding: 34px; }
-    .summary-block { padding: 22px; }
+    .summary-section {
+        padding: 34px;
+    }
+
+    .summary-block {
+        padding: 22px;
+    }
 }
 
 @media print {
-    html, body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-    .summary-section, .summary-block { border-color: #000; box-shadow: none; background: #fff !important; color: #111 !important; }
-    .company-info { grid-template-columns: 1fr; }
+
+    html,
+    body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .summary-section,
+    .summary-block {
+        border-color: #000;
+        box-shadow: none;
+        background: #fff !important;
+        color: #111 !important;
+    }
+
+    .company-info {
+        grid-template-columns: 1fr;
+    }
+
     .confirmation,
-    .final-summary { overflow: visible !important; max-height: none !important; }
+    .final-summary {
+        overflow: visible !important;
+        max-height: none !important;
+    }
 }
 
 /* Modo exportación de PDF: alto contraste y sin sombras */
@@ -849,15 +951,21 @@ input[type="file"]::file-selector-button {
     background: #ffffff !important;
     color: #111111 !important;
     box-shadow: none !important;
-    border: 1px solid rgba(0,0,0,0.12) !important;
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
 }
 
 /* Exportar todo el formulario: mostrar todas las secciones y ocultar elementos interactivos */
-.pdf-export-mode .form-section { display: block !important; }
+.pdf-export-mode .form-section {
+    display: block !important;
+}
+
 .pdf-export-mode .progress-bar,
 .pdf-export-mode .btn-group,
 .pdf-export-mode .toast-container,
-.pdf-export-mode .success-overlay { display: none !important; }
+.pdf-export-mode .success-overlay {
+    display: none !important;
+}
+
 .pdf-export-mode .libro-header__title,
 .pdf-export-mode .libro-header__subtitle,
 .pdf-export-mode label,
@@ -866,22 +974,35 @@ input[type="file"]::file-selector-button {
 .pdf-export-mode p,
 .pdf-export-mode input,
 .pdf-export-mode select,
-.pdf-export-mode textarea { color: #111111 !important; }
-.pdf-export-mode #confirmation { overflow: visible !important; height: auto !important; max-height: none !important; }
+.pdf-export-mode textarea {
+    color: #111111 !important;
+}
+
+.pdf-export-mode #confirmation {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+}
+
 .pdf-export-mode .confirmation h2,
 .pdf-export-mode .confirmation p,
-.pdf-export-mode .confirmation .confirmation-code { color: #111111 !important; }
+.pdf-export-mode .confirmation .confirmation-code {
+    color: #111111 !important;
+}
+
 .pdf-export-mode .summary-label,
 .pdf-export-mode .accent-gold,
 .pdf-export-mode .text-gold {
     color: #333333 !important;
 }
+
 .pdf-export-mode .attachments-list .attachment {
     border: 1px solid #d0d0d0 !important;
     padding: 6px !important;
     background: #fff !important;
     color: #111 !important;
 }
+
 /* Asegurar captura completa sin recortes en modo exportación */
 .pdf-export-mode .form-section,
 .pdf-export-mode .reclamacion-container,

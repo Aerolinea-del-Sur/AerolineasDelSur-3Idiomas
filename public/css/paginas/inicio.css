@@ -1501,7 +1501,7 @@ p {
     font-size: 3rem;
     color: var(--accent);
     opacity: 0.3;
-    font-family: serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .testimonio-text::after {
@@ -1512,7 +1512,7 @@ p {
     font-size: 3rem;
     color: var(--accent);
     opacity: 0.3;
-    font-family: serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .testimonio-author {
