@@ -231,7 +231,7 @@
             .aero-btn:active { transform: scale(0.98); }
 
             .nav-menu { display: flex; align-items: center; justify-content: center; gap: 24px; list-style: none; }
-            .nav-menu li a { color: var(--pearl); text-decoration: none; font-size: 12px; font-weight: 600; text-transform: uppercase; transition: var(--transition); position: relative; display: inline-block; transform: translateY(5px); }
+            .nav-menu li a { color: var(--pearl); text-decoration: none; font-size: 12px; font-weight: 600; text-transform: uppercase; transition: var(--transition); position: relative; display: inline-block; }
             .nav-menu li a:hover { color: var(--accent); text-shadow: 0 0 8px rgba(201, 162, 39, 0.4); }
             .nav-menu li a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
 
