@@ -156,6 +156,15 @@
                 <link rel="stylesheet" href="{{ asset('css/princi/footer.css') }}">
             </noscript>
 
+        <!-- CSS Crítico Inline - Previene FOUC (Flash of Unstyled Content) -->
+        <style>
+            /* Aplicar inmediatamente para evitar flash de texto negro */
+            body {
+                color: #ffffff;
+                background: linear-gradient(135deg, #1D1D1D, #1c1c1c 50%, #181818 100%);
+            }
+        </style>
+
         <!-- Font Display Optimization para Font Awesome -->
         <style>
             /* Forzar font-display: swap para Font Awesome (Cloudflare CDN) */
