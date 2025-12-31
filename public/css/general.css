@@ -10,7 +10,7 @@
     --secondary-pearl: #E6E6E6;
     --secondary-burgundy: #800020;
     /* --secondary-bottle-green: #0B3D2E;*/
-    
+
     /* Variables principales */
     --primary: var(--primary-black);
     --accent: var(--primary-gold);
@@ -21,17 +21,17 @@
     --pearl: var(--secondary-pearl);
     --burgundy: var(--secondary-burgundy);
     --bottle-green: var(--secondary-bottle-green);
-    
+
     /* Fondos de cristal con elegancia */
     --glass-bg: rgba(28, 28, 28, 0.9);
     --glass-bg-solid: rgba(0, 0, 0, 0.95);
     --glass-bg-light: rgba(230, 230, 230, 0.9);
-    
+
     /* Sombras elegantes */
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
     --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
     --shadow-gold: 0 8px 25px rgba(201, 162, 39, 0.4);
-    
+
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --heading-scroll-margin: calc(var(--header-height) + 16px);
 }
@@ -52,10 +52,24 @@ body {
     padding-top: var(--header-height);
 }
 
+/* ===== ESTILOS DE TÍTULOS ===== */
+h1,
+h2 {
+    color: var(--primary-gold);
+    text-transform: uppercase;
+}
+
 /* ===== ANIMACIONES GLOBALES ===== */
 @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 /* ===== CLASES UTILITARIAS ===== */
@@ -154,10 +168,12 @@ body {
     letter-spacing: 0.5px;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
+
 .detail span {
     color: var(--pearl);
     line-height: 1.5;
 }
+
 .social-line {
     width: 2px;
     background: linear-gradient(180deg, var(--accent) 0%, var(--accent-light) 100%);
@@ -180,6 +196,7 @@ body {
     gap: 20px;
     align-items: center;
 }
+
 .social-btn-minimal img,
 .social-link img {
     border-radius: 2px;
@@ -190,6 +207,7 @@ body {
 .social-link:hover img {
     transform: scale(1.1);
 }
+
 .social-btn-minimal {
     width: 45px;
     height: 45px;
@@ -253,13 +271,16 @@ body {
     box-shadow: 0 8px 25px rgba(0, 175, 135, 0.3);
     border-color: #00af87;
 }
+
 .tripadvisor-icon {
-    max-width: 50%;  /* Ocupa máximo 60% del contenedor */
+    max-width: 50%;
+    /* Ocupa máximo 60% del contenedor */
     max-height: 50%;
     height: auto;
     width: auto;
     filter: brightness(0) invert(1);
 }
+
 /* Animaci��n de entrada para botones sociales */
 .social-btn-minimal {
     animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
@@ -267,10 +288,21 @@ body {
     transform: translateY(20px);
 }
 
-.social-btn-minimal:nth-child(1) { animation-delay: 0.1s; }
-.social-btn-minimal:nth-child(2) { animation-delay: 0.2s; }
-.social-btn-minimal:nth-child(3) { animation-delay: 0.3s; }
-.social-btn-minimal:nth-child(4) { animation-delay: 0.4s; }
+.social-btn-minimal:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.social-btn-minimal:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.social-btn-minimal:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.social-btn-minimal:nth-child(4) {
+    animation-delay: 0.4s;
+}
 
 @keyframes fadeInUp {
     to {
@@ -292,8 +324,17 @@ body {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.social-sidebar.visible { opacity: 1; pointer-events: auto; transform: translateY(-50%) translateY(0); }
-.whatsapp-float.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.social-sidebar.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-50%) translateY(0);
+}
+
+.whatsapp-float.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
 
 .whatsapp-btn {
     display: flex;
@@ -328,9 +369,11 @@ body {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
     }
@@ -339,19 +382,20 @@ body {
 /* ===== RESPONSIVE DESIGN PARA REDES SOCIALES ===== */
 @media (max-width: 768px) {
     .social-sidebar {
-        display: none; /* Ocultar completamente en m��vil */
+        display: none;
+        /* Ocultar completamente en m��vil */
     }
-    
+
     .whatsapp-float {
         bottom: 15px;
         left: 15px;
     }
-    
+
     .whatsapp-btn {
         width: 50px;
         height: 50px;
     }
-    
+
     .whatsapp-btn svg {
         width: 20px;
         height: 20px;
@@ -360,9 +404,10 @@ body {
 
 @media (max-width: 480px) {
     .social-sidebar {
-        display: none; /* Asegurar que permanezca oculto en m��viles peque�0�9os */
+        display: none;
+        /* Asegurar que permanezca oculto en m��viles peque�0�9os */
     }
-    
+
     .whatsapp-float {
         bottom: 10px;
         left: 10px;
