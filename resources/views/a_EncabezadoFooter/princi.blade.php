@@ -144,11 +144,11 @@
             <link rel="manifest" href="{{ asset('site.webmanifest') }}">
             <meta name="theme-color" content="#C9A227">
             
-            <!-- Bootstrap CSS - carga asíncrona -->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
+            {{-- Bootstrap CSS - ELIMINADO (no se usa en el proyecto) --}}
+            {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
             <noscript>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-            </noscript>
+            </noscript> --}}
         <!-- CSS Separados - carga asíncrona -->
             <link rel="stylesheet" href="{{ asset('css/general.css') }}?v=2.0" media="print" onload="this.media='all'">
             <link rel="stylesheet" href="{{ asset('css/princi/header.css') }}?v=1.2" media="print" onload="this.media='all'">
