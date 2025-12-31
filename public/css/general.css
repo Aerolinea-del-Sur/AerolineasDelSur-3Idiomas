@@ -1,0 +1,408 @@
+/* ===== VARIABLES GLOBALES ===== */
+:root {
+    /* Paleta de colores de lujo */
+    --primary-black: #000000;
+    --primary-gold: #C9A227;
+    --primary-gold-alt: #FFD700;
+    --secondary-white: #FFFFFF;
+    --secondary-charcoal: #1C1C1C;
+    --secondary-charcoal-alt: #2B2B2B;
+    --secondary-pearl: #E6E6E6;
+    --secondary-burgundy: #800020;
+    /* --secondary-bottle-green: #0B3D2E;*/
+
+    /* Variables principales */
+    --primary: var(--primary-black);
+    --accent: var(--primary-gold);
+    --accent-light: var(--primary-gold-alt);
+    --white: var(--secondary-white);
+    --charcoal: var(--secondary-charcoal);
+    --charcoal-alt: var(--secondary-charcoal-alt);
+    --pearl: var(--secondary-pearl);
+    --burgundy: var(--secondary-burgundy);
+    --bottle-green: var(--secondary-bottle-green);
+
+    /* Fondos de cristal con elegancia */
+    --glass-bg: rgba(28, 28, 28, 0.9);
+    --glass-bg-solid: rgba(0, 0, 0, 0.95);
+    --glass-bg-light: rgba(230, 230, 230, 0.9);
+
+    /* Sombras elegantes */
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    --shadow-gold: 0 8px 25px rgba(201, 162, 39, 0.4);
+
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --heading-scroll-margin: calc(var(--header-height) + 16px);
+}
+
+/* ===== RESET Y ESTILOS BASE ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(135deg, #1D1D1D, var(--charcoal) 50%, var(--charcoal-alt) 100%);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+    padding-top: var(--header-height);
+}
+
+/* ===== ANIMACIONES GLOBALES ===== */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* ===== CLASES UTILITARIAS ===== */
+.btn-login {
+    color: var(--pearl);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: var(--transition);
+    border: 1px solid var(--accent);
+    background: rgba(28, 28, 28, 0.8);
+}
+
+.btn-login:hover {
+    background: var(--charcoal-alt);
+    color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-gold);
+    border-color: var(--accent-light);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+    color: var(--primary-black);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent) 100%);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.btn-primary:hover::before {
+    opacity: 1;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-gold);
+    border-color: var(--accent-light);
+}
+
+.btn-primary span {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ===== REDES SOCIALES ===== */
+/* Barra lateral de redes sociales */
+.social-sidebar {
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%) translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-header {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background: rgba(28, 28, 28, 0.6);
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    padding: 8px 10px;
+    box-shadow: var(--shadow);
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.detail span {
+    color: var(--pearl);
+    line-height: 1.5;
+}
+
+.social-line {
+    width: 2px;
+    background: linear-gradient(180deg, var(--accent) 0%, var(--accent-light) 100%);
+    opacity: 0.6;
+}
+
+.social-line.top-line {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.social-line.bottom-line {
+    height: 80px;
+    margin-top: 20px;
+}
+
+.social-buttons-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-btn-minimal img,
+.social-link img {
+    border-radius: 2px;
+    transition: transform 0.2s ease;
+}
+
+.social-btn-minimal:hover img,
+.social-link:hover img {
+    transform: scale(1.1);
+}
+
+.social-btn-minimal {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(28, 28, 28, 0.6);
+    border: 2px solid var(--accent);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-btn-minimal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.social-btn-minimal:hover {
+    transform: translateY(-3px) scale(1.1);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.social-btn-minimal:hover::before {
+    opacity: 1;
+}
+
+.social-btn-minimal.facebook:hover {
+    background: #1877f2;
+    box-shadow: 0 8px 25px rgba(24, 119, 242, 0.3);
+    border-color: #1877f2;
+}
+
+.social-btn-minimal.instagram:hover {
+    background: linear-gradient(135deg, #e4405f 0%, #fd1d1d 50%, #fcb045 100%);
+    box-shadow: 0 8px 25px rgba(228, 64, 95, 0.3);
+    border-color: #e4405f;
+}
+
+.social-btn-minimal.tiktok:hover {
+    background: #000000;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border-color: #000000;
+}
+
+.social-btn-minimal.tripadvisor:hover {
+    background: #00af87;
+    box-shadow: 0 8px 25px rgba(0, 175, 135, 0.3);
+    border-color: #00af87;
+}
+
+.tripadvisor-icon {
+    max-width: 50%;
+    /* Ocupa máximo 60% del contenedor */
+    max-height: 50%;
+    height: auto;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+/* Animaci��n de entrada para botones sociales */
+.social-btn-minimal {
+    animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.social-btn-minimal:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.social-btn-minimal:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.social-btn-minimal:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.social-btn-minimal:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bot��n flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    animation: whatsappPulse 2s infinite;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-sidebar.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-50%) translateY(0);
+}
+
+.whatsapp-float.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.whatsapp-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+    background: linear-gradient(135deg, #128C7E, #25D366);
+}
+
+.whatsapp-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover svg {
+    transform: scale(1.1);
+}
+
+@keyframes whatsappPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ===== RESPONSIVE DESIGN PARA REDES SOCIALES ===== */
+@media (max-width: 768px) {
+    .social-sidebar {
+        display: none;
+        /* Ocultar completamente en m��vil */
+    }
+
+    .whatsapp-float {
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-sidebar {
+        display: none;
+        /* Asegurar que permanezca oculto en m��viles peque�0�9os */
+    }
+
+    .whatsapp-float {
+        bottom: 10px;
+        left: 10px;
+    }
+}
