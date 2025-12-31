@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     line-height: 1.6;
     color: var(--white);
     background: linear-gradient(135deg, var(--primary-black) 0%, var(--charcoal) 50%, var(--charcoal-alt) 100%);
@@ -56,7 +56,8 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: var(--primary-black); /* Fallback color */
+    background: var(--primary-black);
+    /* Fallback color */
 }
 
 .hero-background {
@@ -84,12 +85,14 @@ body {
     top: 50%;
     left: 50%;
     width: 100vw;
-    height: 56.25vw; /* 16:9 aspect ratio */
+    height: 56.25vw;
+    /* 16:9 aspect ratio */
     min-height: 100vh;
-    min-width: 177.77vh; /* 16:9 aspect ratio */
+    min-width: 177.77vh;
+    /* 16:9 aspect ratio */
     transform: translate(-50%, -50%);
     border: none;
-    pointer-events: none; 
+    pointer-events: none;
     object-fit: cover;
 }
 
@@ -99,7 +102,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4); /* Overlay más suave para mejor visibilidad del video */
+    background: rgba(0, 0, 0, 0.4);
+    /* Overlay más suave para mejor visibilidad del video */
     z-index: 2;
 }
 
@@ -527,6 +531,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -538,6 +543,7 @@ body {
         opacity: 0;
         transform: translateX(-50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -549,6 +555,7 @@ body {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -560,71 +567,71 @@ body {
     .container {
         padding: 0 15px;
     }
-    
+
     .hero {
         min-height: 80vh;
         padding: 60px 0;
     }
-    
+
     .hero-actions {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .btn {
         width: 100%;
         max-width: 280px;
         justify-content: center;
     }
-    
+
     .tours {
         padding: 60px 0;
     }
-    
+
     .tours-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .filter-buttons {
         gap: 10px;
     }
-    
+
     .filter-btn {
         padding: 10px 16px;
         font-size: 12px;
     }
-    
+
     .tour-details {
         flex-direction: column;
         gap: 10px;
     }
-    
+
     .contact {
         padding: 60px 0;
     }
-    
+
     .contact-content {
         grid-template-columns: 1fr;
         gap: 40px;
         text-align: center;
     }
-    
+
     .contact-text {
         text-align: center;
     }
-    
+
     .contact-text .section-title,
     .contact-text .section-subtitle {
         text-align: center;
     }
-    
+
     .contact-method {
         flex-direction: column;
         text-align: center;
         gap: 15px;
     }
-    
+
     .contact-method:hover {
         transform: translateY(-5px);
     }
@@ -635,20 +642,20 @@ body {
         font-size: 10px;
         padding: 6px 16px;
     }
-    
+
     .section-badge {
         font-size: 10px;
         padding: 6px 16px;
     }
-    
+
     .tour-content {
         padding: 20px;
     }
-    
+
     .tour-features {
         gap: 5px;
     }
-    
+
     .feature {
         font-size: 10px;
         padding: 3px 8px;

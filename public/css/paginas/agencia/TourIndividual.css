@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     line-height: 1.6;
     color: #FFFFFF;
     background-color: #000000;
@@ -438,6 +438,7 @@ body {
         box-shadow: 0 0 0 3px #C9A227, 0 0 15px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.3);
         transform: scale(1);
     }
+
     100% {
         box-shadow: 0 0 0 3px #C9A227, 0 0 25px rgba(255, 215, 0, 1), 0 0 50px rgba(255, 215, 0, 0.6);
         transform: scale(1.1);
@@ -696,10 +697,12 @@ body {
         transform: translateY(30px);
         box-shadow: 0 0 0 rgba(201, 162, 39, 0);
     }
+
     50% {
         opacity: 0.7;
         box-shadow: 0 0 20px rgba(201, 162, 39, 0.3);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -868,27 +871,28 @@ body {
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
+
     .details-grid,
     .summary-grid,
     .inclusions-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .booking-sidebar {
         width: 100%;
         right: -100%;
     }
-    
+
     .social-sidebar {
         left: 15px;
     }
-    
+
     .floating-booking {
         right: 15px;
         bottom: 100px;
     }
-    
+
     .whatsapp-float {
         right: 15px;
         bottom: 15px;
@@ -899,50 +903,50 @@ body {
     .tour-title {
         font-size: 2.5rem;
     }
-    
+
     .tour-subtitle {
         font-size: 1.1rem;
     }
-    
+
     .tour-meta {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .timeline {
         padding-left: 0;
     }
-    
+
     .timeline::before {
         left: 20px;
     }
-    
+
     .timeline-item {
         padding-left: 60px;
     }
-    
+
     .timeline-item::before {
         left: 9px;
     }
-    
+
     .timeline-dot {
         position: absolute;
         left: 9px;
         top: 5px;
     }
-    
+
     .stats-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .tours-grid {
         grid-template-columns: 1fr;
     }
-    
+
 
 }
 
@@ -950,29 +954,29 @@ body {
     .container {
         padding: 0 15px;
     }
-    
+
     .tour-hero {
         height: 70vh;
         min-height: 500px;
     }
-    
+
     .tour-title {
         font-size: 2rem;
     }
-    
+
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .booking-form-container {
         padding: 1rem;
     }
-    
+
     .floating-booking {
         bottom: 20px;
         right: 20px;
     }
-    
+
     .booking-btn {
         padding: 12px 20px;
         font-size: 0.9rem;
@@ -985,6 +989,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -992,9 +997,12 @@ body {
 }
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
