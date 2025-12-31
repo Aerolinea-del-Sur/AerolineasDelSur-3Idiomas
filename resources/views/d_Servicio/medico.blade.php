@@ -882,7 +882,7 @@ $seo = seo()
     </div>
 </section>
 
-<!-- Blog Section White Theme -->
+<!-- Blog Section White Theme 
 <section style="background:#FFFFFF; padding:80px 20px;">
     <div style="max-width:1200px; margin:0 auto;">
         <div style="text-align:center; margin-bottom:48px;">
@@ -1043,7 +1043,7 @@ $seo = seo()
         </div>
     </div>
 </section>
-
+-->
 <?php
     $h1_7 = __('common.faq.title');
     $p_17 = __('common.faq.subtitle');
