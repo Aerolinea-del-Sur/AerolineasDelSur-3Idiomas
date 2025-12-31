@@ -140,10 +140,6 @@ body {
     color: var(--text-primary);
 }
 
-.title-line {
-    display: block;
-}
-
 .title-line.highlight {
     background: var(--gradient-gold);
     -webkit-background-clip: text;
