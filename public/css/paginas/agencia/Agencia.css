@@ -140,12 +140,6 @@ body {
     color: var(--text-primary);
 }
 
-.title-line.highlight {
-    background: var(--gradient-gold);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
 
 .hero-description {
     font-size: 1.2rem;
