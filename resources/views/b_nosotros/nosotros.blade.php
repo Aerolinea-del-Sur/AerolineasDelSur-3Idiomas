@@ -254,7 +254,7 @@ $seo = seo()
             <div class="contact-content">
                 <h2 class="section-title"><?= $h2_5 ?></h2>
                 <p class="section-description"><?= $p_18 ?></p>
-                <a href="#" class="btn-primary"><span>Contáctanos</span></a>
+                <a href="{{ route('contacto.index') }}" class="btn-primary"><span>Contáctanos</span></a>
             </div>
         </div>
     </section>
