@@ -52,19 +52,26 @@ return [
     'natural_wonder' => 'Maravilla Natural',
     'world_heritage' => 'Patrimonio Mundial',
     
+    
     // FAQ Section
     'faq.title' => 'Preguntas Frecuentes',
     'faq.subtitle' => 'Encuentra respuestas a las preguntas más comunes sobre nuestros servicios',
+    
+    // FAQs específicas del HOME (versiones cortas)
     'faq.charter_destinations_q' => '¿Qué destinos cubren nuestros vuelos chárter?',
     'faq.charter_destinations_a' => 'Conectamos cada rincón del Perú, desde la costa hasta la Amazonía, y las principales capitales de Sudamérica. Diseñamos vuelos chárter a medida que se adaptan a tu agenda, garantizando acceso directo a destinos exclusivos de negocios o placer.',
     'faq.how_to_book_q' => '¿Cómo puedo hacer una reserva?',
     'faq.how_to_book_a' => 'Puedes hacer tu reserva a través de nuestro sitio web, llamando a nuestro centro de atención al cliente o visitando una de nuestras oficinas. También puedes enviarnos un correo a contacto@aerolineadelsur.com.pe para obtener ayuda personalizada.',
+    'faq.how_to_book_home_a' => 'Realiza tu reserva a través de nuestro sitio web, por teléfono al +51 932 475 995, o vía correo electrónico a contacto@aerolineadelsur.com.pe. Nuestro equipo te brindará atención personalizada 24/7.',
     'faq.baggage_policy_q' => '¿Cuál es la política de equipaje?',
-    'faq.baggage_policy_a' => 'Aerolinea del Sur permite un máximo de 23 kg de equipaje por pasajero. Este estándar es esencial para mantener la operatividad y eficiencia de nuestros vuelos privados.',
-    'faq.safety_measures_q' => '¿Qué medidas de seguridad aplica Aerolínea del Sur en sus operaciones?',
+    'faq.baggage_policy_a' => 'Cada pasajero tiene permitido hasta 23 kg de equipaje documentado más 8 kg de equipaje de mano. Para cargas especiales, podemos hacer arreglos especiales con notificación previa.',
+    'faq.safety_measures_q' => '¿Qué medidas de seguridad aplica Aerolínea del Sur?',
     'faq.safety_measures_a' => 'Cumplimos con todos los estándares internacionales de seguridad aérea. Nuestras aeronaves reciben mantenimiento regular certificado, nuestros pilotos tienen entrenamiento continuo, y seguimos protocolos estrictos de seguridad en tierra y vuelo.',
     'faq.frequent_flyer_q' => '¿Ofrecen programas de viajero frecuente?',
-    'faq.frequent_flyer_a' => 'Sí, nuestro programa Cielos del Sur ofrece beneficios exclusivos como acumulación de millas, upgrades gratuitos, acceso a salas VIP, y prioridad en check-in. Únete gratis y comienza a disfrutar de privilegios desde tu primer vuelo',
+    'faq.frequent_flyer_a' => 'Sí, nuestro programa Cielos del Sur ofrece beneficios exclusivos como acumulación de millas, upgrades gratuitos, acceso a salas VIP, y prioridad en check-in. Únete gratis y comienza a disfrutar de privilegios desde tu primer vuelo.',
+    'faq.frequent_flyer_home_a' => 'Sí. Nuestro programa Cielos del Sur ofrece beneficios exclusivos: acumulación de millas, upgrades gratuitos, acceso a salas VIP y prioridad en check-in. Únete sin costo y disfruta de privilegios desde tu primer vuelo.',
+    'faq.need_more_info' => '¿Necesitas más información?',
+    'faq.team_available' => 'Nuestro equipo está disponible para ayudarte',
     
     // FAQ Home specific
     'faq.how_to_book_home_a' => 'Realiza tu reserva a través de nuestro sitio web, por teléfono al +51 932 475 995, o vía correo electrónico a contacto@aerolineadelsur.com.pe. Nuestro equipo te brindará atención personalizada 24/7.',

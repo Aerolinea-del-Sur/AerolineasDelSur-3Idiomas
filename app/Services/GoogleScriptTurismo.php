@@ -12,7 +12,7 @@ class GoogleScriptTurismo
 
     public function __construct()
     {
-        $this->scriptUrl = 'https://script.google.com/macros/s/AKfycby-csTBaV6k0LaSpxYpUEhKW9m4b_4Y2uq5PbD-QJ-qE4vnI-THU2YODSPxIHdwOT-cxg/exec';
+        $this->scriptUrl = 'https://script.google.com/macros/s/AKfycbxfsNrR38HWrRAPw2erGsw71L3RpCcURyLyjWRhWL8W0lbtW9g1_RAfafe3sRyUEXBrVg/exec';
     }
 
     public function sendTourData(array $tourData)
