@@ -115,10 +115,7 @@
             <link rel="preload" as="image" href="{{ asset('img/vizq.webp') }}">
             <link rel="preload" as="image" href="{{ asset('img/logo.webp') }}" type="image/svg+xml">
             
-            <!-- Critical CSS -->
-            <link rel="preload" as="style" href="{{ asset('css/general.css') }}">
-            <link rel="preload" as="style" href="{{ asset('css/princi/header.css') }}">
-            <link rel="preload" as="style" href="{{ asset('css/princi/footer.css') }}">
+            {{-- Preload de CSS eliminado - ya se cargan async con media="print" más abajo --}}
             
             <!-- Carga asíncrona de fuentes (no bloqueante) con font-display: swap -->
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
