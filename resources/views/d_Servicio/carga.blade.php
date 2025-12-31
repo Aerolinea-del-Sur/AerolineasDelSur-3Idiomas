@@ -708,7 +708,7 @@ $seo = seo()
         <div class="heli-articles-grid">
             <article class="article-card">
                 <div class="article-image">
-                    <img src="{{ asset('img/blog/aventura-cusco.webp') }}" alt="Aventura en Cusco">
+                    <img src="{{ asset('img/blog/aventura-cusco.png') }}" alt="Aventura en Cusco">
                     <div class="article-category">Consejos</div>
                 </div>
                 <div class="article-content">
@@ -724,7 +724,7 @@ $seo = seo()
 
             <article class="article-card">
                 <div class="article-image">
-                    <img src="{{ asset('img/blog/vuelos-peru.webp') }}" alt="Vuelos en Perú">
+                    <img src="{{ asset('img/blog/vuelos-peru.png') }}" alt="Vuelos en Perú">
                     <div class="article-category">Consejos</div>
                 </div>
                 <div class="article-content">
@@ -740,7 +740,7 @@ $seo = seo()
 
             <article class="article-card">
                 <div class="article-image">
-                    <img src="{{ asset('img/blog/machu-picchu.webp') }}" alt="Machu Picchu">
+                    <img src="{{ asset('img/blog/machu-picchu.png') }}" alt="Machu Picchu">
                     <div class="article-category">Destinos</div>
                 </div>
                 <div class="article-content">
@@ -756,7 +756,7 @@ $seo = seo()
 
             <article class="article-card">
                 <div class="article-image">
-                    <img src="{{ asset('img/blog/experiencias-viaje.webp') }}" alt="Experiencias de Viaje">
+                    <img src="{{ asset('img/blog/experiencias-viaje.png') }}" alt="Experiencias de Viaje">
                     <div class="article-category">Experiencias</div>
                 </div>
                 <div class="article-content">
