@@ -568,7 +568,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section class="heli-blogs-section">
     <div class="heli-container">
-        <h2 class="heli-section-title">{{ __('services.flights.blog_title') }}</h2>
+        <h2 class="heli-section-title" style="text-align:center; font-size:2.5rem; margin-bottom:40px;">{{ __('services.flights.blog_title') }}</h2>
         <div class="heli-articles-grid">
             <article class="article-card">
                 <div class="article-image">
@@ -654,9 +654,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section class="heli-faq-section faq-section">
     <div class="heli-container faq-container">
-        <div class="faq-header">
-            <h3 style="font-size:28px; font-weight:700; margin-bottom:20px;"><?= $h1_7 ?></h3>
-            <p class="p"><?= $p_17 ?></p>
+        <div class="faq-header" style="text-align:center; margin-bottom:50px;">
+            <h3 style="font-size:32px; font-weight:700; margin-bottom:20px; color:#fff;"><?= $h1_7 ?></h3>
+            <p class="p" style="font-size:18px; color:#ccc; max-width:800px; margin:0 auto; line-height:1.6;"><?= $p_17 ?></p>
         </div>
 
         <div class="faq-grid">

@@ -265,9 +265,9 @@ $seo = seo()
 <!-- Servicios y Cobertura de Helicópteros -->
 <section class="heli-fleet-section" style="padding-top:40px;">
     <div class="heli-container">
-        <h2 class="heli-section-title">{{ __('services.helicopter.services_title') }}</h2>
+        <h2 class="heli-section-title" style="text-align:center; font-size:2.5rem; margin-bottom:15px;">{{ __('services.helicopter.services_title') }}</h2>
         <div style="max-width:1000px; margin:0 auto;">
-            <p style="font-size:18px; color:#ccc; line-height:1.8; text-align:center; margin-bottom:40px;">
+            <p style="font-size:18px; color:#ccc; line-height:1.8; text-align:center; margin-bottom:50px; max-width:800px; margin-left:auto; margin-right:auto;">
                 {{ __('services.helicopter.services_subtitle') }}
             </p>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:20px; margin-bottom:40px;">
@@ -296,7 +296,7 @@ $seo = seo()
 
 <section class="heli-fleet-section" style="margin-top: 8px;">
     <div class="heli-container">
-        <h2 class="heli-section-title">Nuestras Aeronaves</h2>
+        <h2 class="heli-section-title" style="text-align:center; font-size:2.5rem; margin-bottom:40px;">Nuestras Aeronaves</h2>
         <div class="fleet-grid">
             <a href="{{ url(app()->getLocale() . '/aeronaves/Mi8-mtv1') }}" class="aircraft-card" style="text-decoration: none; color: inherit;">
                 <div class="aircraft-image" style="background-image: url('{{ asset('img/aeronaves/aviones/Mi8-mtv1.webp') }}')">
@@ -445,9 +445,9 @@ $seo = seo()
 
 <section class="heli-faq-section faq-section">
     <div class="heli-container faq-container">
-        <div class="faq-header">
-            <h2 style="font-size:28px; font-weight:700; margin-bottom:20px;"><?= $h1_7 ?></h2>
-            <p class="p"><?= $p_17 ?></p>
+        <div class="faq-header" style="text-align:center; margin-bottom:50px;">
+            <h2 style="font-size:32px; font-weight:700; margin-bottom:20px; color:#fff;"><?= $h1_7 ?></h2>
+            <p class="p" style="font-size:18px; color:#ccc; max-width:800px; margin:0 auto; line-height:1.6;"><?= $p_17 ?></p>
         </div>
 
         <div class="faq-grid">
