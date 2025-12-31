@@ -76,6 +76,9 @@ $seo = seo()
             height: 100%;
         }
         
+        .carousel-slide.active {
+            display: block;
+        }
         
         .carousel-slide img {
             width: 100%;
