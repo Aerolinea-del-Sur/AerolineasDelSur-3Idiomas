@@ -743,51 +743,64 @@ $seo = seo()
     <!-- FAQ Section -->
     <section class="faq-section">
         <div class="faq-container">
+            <!-- Header -->
+            <div class="faq-header">
+                <h2 style="font-size:32px; font-weight:700; margin-bottom:16px;"><?= $h1_7 ?></h2>
+                <p class="p"><?= $p_17 ?></p>
+            </div>
+
+            <div class="faq-grid">
+
+            <!-- FAQ Ítem 1 -->
             <div class="faq-item">
-                <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq1">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq1">
                     <span class="faq-text"><?= $h3_8 ?></span>
                     <span class="faq-icon">+</span>
-                </div>
+                </button>
                 <div class="faq-answer" id="faq1">
                     <p class="p"><?= $p_18 ?></p>
                 </div>
             </div>
 
+            <!-- FAQ Ítem 2 -->
             <div class="faq-item">
-                <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq2">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq2">
                     <span class="faq-text"><?= $h3_9 ?></span>
                     <span class="faq-icon">+</span>
-                </div>
+                </button>
                 <div class="faq-answer" id="faq2">
                     <p class="p"><?= $p_19 ?></p>
                 </div>
             </div>
 
+            <!-- FAQ Ítem 3 -->
             <div class="faq-item">
-                <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq3">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq3">
                     <span class="faq-text"><?= $h3_10 ?></span>
                     <span class="faq-icon">+</span>
-                </div>
+                </button>
                 <div class="faq-answer" id="faq3">
                     <p class="p"><?= $p_20 ?></p>
                 </div>
             </div>
 
+            <!-- FAQ Ítem 4 -->
             <div class="faq-item">
-                <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq4">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq4">
                     <span class="faq-text"><?= $h3_11 ?></span>
                     <span class="faq-icon">+</span>
-                </div>
+                </button>
                 <div class="faq-answer" id="faq4">
                     <p class="p"><?= $p_21 ?></p>
                 </div>
             </div>
 
+            <!-- FAQ Ítem 5 -->
             <div class="faq-item">
-                <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq5">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq5">
                     <span class="faq-text"><?= $h3_12 ?></span>
                     <span class="faq-icon">+</span>
-                </div>
+                </button>
                 <div class="faq-answer" id="faq5">
                     <p class="p"><?= $p_22 ?></p>
                 </div>
