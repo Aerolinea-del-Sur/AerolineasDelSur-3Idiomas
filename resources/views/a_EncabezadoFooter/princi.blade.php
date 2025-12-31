@@ -158,9 +158,9 @@
 
         <!-- CSS Crítico Inline - Previene FOUC (Flash of Unstyled Content) -->
         <style>
-            /* Aplicar inmediatamente para evitar flash de texto negro */
+            /* Aplicar inmediatamente - texto negro por defecto */
             body {
-                color: #ffffff;
+                color: #000000;
                 background: linear-gradient(135deg, #1D1D1D, #1c1c1c 50%, #181818 100%);
             }
         </style>
