@@ -55,8 +55,8 @@ body {
 /* ===== ESTILOS DE TÍTULOS ===== */
 h1,
 h2 {
-    color: var(--primary-gold);
-    text-transform: uppercase;
+    color: var(--primary-gold) !important;
+    text-transform: uppercase !important;
 }
 
 /* ===== ANIMACIONES GLOBALES ===== */
