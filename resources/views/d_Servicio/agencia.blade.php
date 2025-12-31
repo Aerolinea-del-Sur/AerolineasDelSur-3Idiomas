@@ -76,7 +76,7 @@ $seo = seo()
                 <span>{{ __('services.agency.traditional_tours') }}</span>
             </div>
             <h1 class="hero-title">
-                <span class="title-line"><?= $h1_1_1 ?></span>
+                <span class="title-line" style="color: var(--text-primary)"><?= $h1_1_1 ?></span>
                 <span class="title-line highlight"><?= $h1_1_2 ?></span>
             </h1>
             <p class="hero-description"><?= $p_1 ?></p>
