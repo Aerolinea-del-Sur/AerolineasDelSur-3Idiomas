@@ -700,7 +700,7 @@ $seo = seo()
 <section style="background:#FFFFFF; padding:80px 20px;">
     <div style="max-width:1200px; margin:0 auto;">
         <div style="text-align:center; margin-bottom:48px;">
-            <h2 style="color:var(--medical-black); font-size:36px; font-weight:700; margin:0 0 16px 0;">{{ __('services.aeromedical.aircraft_title') }}</h2>
+            <h2 style="font-size:36px; font-weight:700; margin:0 0 16px 0;">{{ __('services.aeromedical.aircraft_title') }}</h2>
             <p style="color:var(--medical-gray); font-size:18px; margin:0;">{{ __('services.aeromedical.aircraft_subtitle') }}</p>
         </div>
         <div class="fleet-grid">
