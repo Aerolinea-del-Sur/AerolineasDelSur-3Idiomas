@@ -143,11 +143,6 @@ $seo = seo()
         .dot.active {
             background: white;
         }
-        
-        /* Estirar letras del título */
-        .hero-title {
-            letter-spacing: 0.1em !important;
-        }
     </style>
     <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/Agencia.css') }}">
     <!-- Hero Section -->
