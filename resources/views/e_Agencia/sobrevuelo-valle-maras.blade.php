@@ -174,10 +174,10 @@ $seo = seo()
                             <img src="/img/tours/valle-sagrado-maras-4.webp" alt="Río Urubamba">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/img/tours/sobrevuelo-valle-sagrado.webp" alt="Sobrevuelo Valle Sagrado">
+                            <img src="/img/sobrevuelos/sobrevuelo-valle-sagrado.webp" alt="Sobrevuelo Valle Sagrado">
                         </div>
                         <div class="carousel-slide">
-                            <img src="/img/tours/sobrevuelo-valle-sagrado-cusco.webp" alt="Sobrevuelo Valle Sagrado Cusco">
+                            <img src="/img/sobrevuelos/sobrevuelo-valle-sagrado-cusco.webp" alt="Sobrevuelo Valle Sagrado Cusco">
                         </div> 
                     </div>
                     <button class="carousel-btn prev" onclick="moveSlide(-1)">
