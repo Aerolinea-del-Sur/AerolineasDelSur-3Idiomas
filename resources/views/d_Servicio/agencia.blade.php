@@ -186,7 +186,7 @@ $seo = seo()
                     </div>
                 </article>
                 
-                <!-- Tour 06: Machu Picchu -->
+                <!-- Tour 06: Machu Picchu 
                 <article class="tour-card" data-category="tradicional" itemscope itemtype="https://schema.org/TouristAttraction">
                     <div class="tour-image">
                         <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
@@ -222,7 +222,7 @@ $seo = seo()
                             <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
-                </article>
+                </article>-->
             </div>
         </div>
     </section>
