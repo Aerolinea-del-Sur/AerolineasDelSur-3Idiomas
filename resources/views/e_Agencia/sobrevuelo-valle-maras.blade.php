@@ -309,6 +309,7 @@ $seo = seo()
                     <li><i class="fas fa-check"></i> <?= __('tours.common.included6') ?></li>
                 </ul>
             </div>
+            <!-- Inclusiones
             <div class="not-included">
                 <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
                 <ul>
@@ -316,7 +317,7 @@ $seo = seo()
                     <li><i class="fas fa-times"></i> <?= __('tours.common.notincluded2') ?></li>
                     <li><i class="fas fa-times"></i> <?= __('tours.common.notincluded3') ?></li>
                 </ul>
-            </div>
+            </div>-->
         </div>
         <div class="important-notes">
             <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
