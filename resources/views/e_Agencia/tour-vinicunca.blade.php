@@ -29,7 +29,7 @@ $seo = seo()
         $h2_1 = __('tours.tour_details');
         $p_2 = __('tours.vinicunca.description');
                 $h4_1 = __('tours.max_group');
-                $p_3 = '6 personas';
+                $p_3 = '8 personas';
 
                 $h4_2 = __('tours.min_age');
                 $p_4 = 'Ninguna';
@@ -120,7 +120,7 @@ $seo = seo()
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-users"></i>
-                    <span>Hasta 6 personas</span>
+                    <span>Hasta 8 personas</span>
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-star"></i>
