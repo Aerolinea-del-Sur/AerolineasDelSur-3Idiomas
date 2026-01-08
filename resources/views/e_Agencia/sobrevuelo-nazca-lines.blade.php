@@ -126,7 +126,7 @@
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-users"></i>
-                    <span>Hasta 12 personas</span>
+                    <span>Hasta 8 personas</span>
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-star"></i>
