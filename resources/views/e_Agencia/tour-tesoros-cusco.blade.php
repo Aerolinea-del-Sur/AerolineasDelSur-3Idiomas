@@ -30,7 +30,7 @@ $seo = seo()
         $p_2 = __('tours.tesoros_cusco.description');
 
                 $h4_1 = __('tours.max_group');
-                $p_3 = '10 Personas';
+                $p_3 = '8 Personas';
 
                 $h4_2 = __('tours.min_age');
                 $p_4 = 'Ninguna';
@@ -121,7 +121,7 @@ $seo = seo()
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-users"></i>
-                    <span>Hasta 6 personas</span>
+                    <span>Hasta 8 personas</span>
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-star"></i>
