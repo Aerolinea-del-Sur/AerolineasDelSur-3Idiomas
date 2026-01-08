@@ -307,6 +307,7 @@ $seo = seo()
                         <li><i class="fas fa-check"></i> Asistencia permanente durante todo el viaje</li>
                     </ul>
                 </div>
+                <!-- Inclusiones 
                 <div class="not-included">
                     <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
                     <ul>
@@ -316,7 +317,7 @@ $seo = seo()
                         <li><i class="fas fa-times"></i> Propinas</li>
                         <li><i class="fas fa-times"></i> Seguros de viaje (se les recomienda tener uno)</li>
                     </ul>
-                </div>
+                </div>-->
             </div>
             <div class="important-notes">
                 <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_14 ?></h4>

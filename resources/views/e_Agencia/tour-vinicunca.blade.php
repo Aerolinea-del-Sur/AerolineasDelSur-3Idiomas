@@ -313,6 +313,7 @@ $seo = seo()
                         <li><i class="fas fa-check"></i> Servicio en grupo reducido (máx. 19 personas)</li>
                     </ul>
                 </div>
+                <!-- Inclusiones 
                 <div class="not-included">
                     <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
                     <ul>
@@ -321,7 +322,7 @@ $seo = seo()
                         <li><i class="fas fa-times"></i> Seguro de viaje personal</li>
                         <li><i class="fas fa-times"></i> Propinas</li>
                     </ul>
-                </div>
+                </div>-->
             </div>
             <div class="important-notes">
                 <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
