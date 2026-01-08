@@ -238,6 +238,19 @@ $seo = seo()
     </div>
 </section>
 
+<!-- Video del Tour -->
+<section class="video-section">
+    <div class="container">
+        <h2 class="section-title">Video del Tour</h2>
+        <div class="video-wrapper">
+            <video controls width="100%" poster="{{ asset('img/sobrevuelos/vinicunca-mountain-1.webp') }}">
+                <source src="{{ asset('public/video/sobrevuelo-vinicunca.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+
 <!-- Itinerario Detallado -->
 <section class="detailed-itinerary">
     <div class="container">

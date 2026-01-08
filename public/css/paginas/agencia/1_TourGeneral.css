@@ -1054,6 +1054,31 @@ body {
 
 
 
+
+/* ===== VIDEO SECTION ===== */
+.video-section {
+    padding: 5rem 0;
+    background-color: #1C1C1C;
+    text-align: center;
+}
+
+.video-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(201, 162, 39, 0.2);
+    position: relative;
+}
+
+.video-wrapper video {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
 
@@ -1085,6 +1110,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .video-section {
+        padding: 3rem 0;
+    }
+
     .tour-title {
         font-size: 2.5rem;
     }
