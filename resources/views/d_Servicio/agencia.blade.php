@@ -168,7 +168,7 @@ $seo = seo()
                             </div>
                             <div class="detail" itemprop="audience" content="Grupo mediano">
                                 <i class="fas fa-users"></i>
-                                <span>Hasta 6 personas</span>
+                                <span>Hasta 8 personas</span>
                             </div>
                             <div class="detail" itemprop="location" itemscope itemtype="https://schema.org/Place">
                                 <i class="fas fa-map-marker-alt"></i>
@@ -206,7 +206,7 @@ $seo = seo()
                             </div>
                             <div class="detail" itemprop="audience" content="Grupo mediano">
                                 <i class="fas fa-users"></i>
-                                <span>Hasta 6 personas</span>
+                                <span>Hasta 8 personas</span>
                             </div>
                             <div class="detail" itemprop="location" itemscope itemtype="https://schema.org/Place">
                                 <i class="fas fa-map-marker-alt"></i>
