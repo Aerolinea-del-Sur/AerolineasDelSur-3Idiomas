@@ -210,7 +210,7 @@ $seo = seo()
                             '/img/sobrevuelos/choquequirao-4.webp'
                         ],
                         'duration' => '1h',
-                        'pax' => __('common.up_to') . ' 4 ' . __('common.people'),
+                        'pax' => __('common.up_to') . ' 8 ' . __('common.people'),
                         'location' => 'Cusco, Perú',
                         'badge' => __('common.overflight'),
                         'extra_icon' => 'fas fa-mountain',
@@ -227,7 +227,7 @@ $seo = seo()
                             '/img/sobrevuelos/titicaca-lake-4.webp'
                         ],
                         'duration' => '1h 40m',
-                        'pax' => __('common.up_to') . ' 6 ' . __('common.people'),
+                        'pax' => __('common.up_to') . ' 8 ' . __('common.people'),
                         'location' => 'Puno, Perú',
                         'badge' => __('common.overflight'),
                         'extra_icon' => 'fas fa-water',
@@ -244,7 +244,7 @@ $seo = seo()
                             '/img/sobrevuelos/nazca-lines-4.webp'
                         ],
                         'duration' => '1h 20m',
-                        'pax' => __('common.up_to') . ' 4 ' . __('common.people'),
+                        'pax' => __('common.up_to') . ' 8 ' . __('common.people'),
                         'location' => 'Ica, Perú',
                         'badge' => __('common.overflight'),
                         'extra_icon' => 'fas fa-eye',
@@ -297,7 +297,7 @@ $seo = seo()
                             '/img/sobrevuelos/sacred-valley-4.webp'
                         ],
                         'duration' => '1h',
-                        'pax' => 'Hasta 6 personas',
+                        'pax' => 'Hasta 8 personas',
                         'location' => 'Cusco, Perú',
                         'badge' => 'Sobrevuelo',
                         'extra_icon' => 'fas fa-water',
