@@ -314,7 +314,7 @@ $seo = seo()
                             '/img/sobrevuelos/vinicunca-mountain-4.webp'
                         ],
                         'duration' => '1h',
-                        'pax' => 'Hasta 6 personas',
+                        'pax' => 'Hasta 8 personas',
                         'location' => 'Cusco, Perú',
                         'badge' => 'Sobrevuelo',
                         'extra_icon' => 'fas fa-crown',
