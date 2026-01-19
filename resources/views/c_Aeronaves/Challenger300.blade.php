@@ -1,17 +1,17 @@
 @php
-$aircraft_model = 'Challenger 300';
-$seo = seo()
-    ->title("$aircraft_model - Jet Privado | Aerolíneas del Sur")
-    ->description("El $aircraft_model es un jet super mediano de 10 pasajeros, 870 km/h y 6,297 km de autonomía.")
-    ->keywords(['challenger 300 perú', 'bombardier 300', 'jet super mediano', 'vuelo ejecutivo internacional'])
-    ->image(asset('img/aeronaves/aviones/Challenger300.webp'))
-    ->canonical(url(app()->getLocale() . '/aeronaves/Challenger300'))
-    ->addSchema([
-        '@context' => 'https://schema.org',
-        '@type' => 'Product',
-        'name' => 'Challenger 300',
-        'category' => 'Business Jet'
-    ]);
+    $aircraft_model = 'Challenger 300';
+    $seo = seo()
+        ->title("$aircraft_model - Jet Privado | Aerolíneas del Sur")
+        ->description("El $aircraft_model es un jet super mediano de 10 pasajeros, 870 km/h y 6,297 km de autonomía.")
+        ->keywords(['challenger 300 perú', 'bombardier 300', 'jet super mediano', 'vuelo ejecutivo internacional'])
+        ->image(asset('img/aeronaves/aviones/Challenger300.webp'))
+        ->canonical(url(app()->getLocale() . '/aeronaves/Challenger300'))
+        ->addSchema([
+            '@context' => 'https://schema.org',
+            '@type' => 'Product',
+            'name' => 'Challenger 300',
+            'category' => 'Business Jet'
+        ]);
 @endphp
 
 @extends('a_EncabezadoFooter.princi')
@@ -22,77 +22,77 @@ $seo = seo()
 
 
 <?php
-    $h1_1_1 = 'Challenger';
-    $h1_1_2 = '300';
+$h1_1_1 = 'Challenger';
+$h1_1_2 = '300';
 
-    $p_1 = __('aircraft.excellence');
+$p_1 = __('aircraft.excellence');
 
-        $h2_1 = __('aircraft.description');
-        $p_2 = 'El Bombardier Challenger 300 es un jet supermediano presentado en 1999 y puesto en servicio en 2004, Diseñado para cubrir rutas transcontinentales sin escalas. Equipa dos motores Honeywell HTF7000 que le
+$h2_1 = __('aircraft.description');
+$p_2 = 'El Bombardier Challenger 300 es un jet supermediano presentado en 1999 y puesto en servicio en 2004, Diseñado para cubrir rutas transcontinentales sin escalas. Equipa dos motores Honeywell HTF7000 que le
 permiten gran eficiencia, alto rendimiento y excelente fiabilidad operativa. Su cabina fue concebida para brindar
 comodidad superior, con asientos reclinables y un ambiente silencioso.';
 
-        $p_3 = 'Este avión se destaca por su versatilidad: es capaz de despegar desde pistas relativamente cortas, al mismo
+$p_3 = 'Este avión se destaca por su versatilidad: es capaz de despegar desde pistas relativamente cortas, al mismo
 tiempo que ofrece un alcance de más de 5 700 km y techo de crucero de 13 716 m. La aviónica Pro Line 21 de Rockwell
 Collins proporciona una operación segura y moderna. Gracias a su autonomía y espacio interior, el Challenger 300 es una
 de las opciones más apreciadas en el segmento de jets ejecutivos supermedianos.';
 
-        $h2_2 = __('aircraft.gallery');
+$h2_2 = __('aircraft.gallery');
 
-        $h2_3 = __('aircraft.overview');
+$h2_3 = __('aircraft.overview');
 
-            $h3_1 = __('aircraft.model');
-            $p_4 = 'Challenger 300';
+$h3_1 = __('aircraft.model');
+$p_4 = 'Challenger 300';
 
-            $h3_2 = __('aircraft.year');
-            $p_5 = '2014';
+$h3_2 = __('aircraft.year');
+$p_5 = '2014';
 
-            $h3_3 = __('aircraft.manufacturer');
-            $p_6 = 'Bombardier Aerospace';
-        
-        $h2_4 = __('aircraft.performance');
+$h3_3 = __('aircraft.manufacturer');
+$p_6 = 'Bombardier Aerospace';
 
-            $h3_4 = __('aircraft.max_speed_label');
-            $p_7 = '870 km/h';
+$h2_4 = __('aircraft.performance');
 
-            $h3_5 = __('aircraft.max_range');
-            $p_8 = '5,741 km';
+$h3_4 = __('aircraft.max_speed_label');
+$p_7 = '870 km/h';
 
-            $h3_6 = __('aircraft.cruise_altitude');
-            $p_9 = '13,716 metros';
+$h3_5 = __('aircraft.max_range');
+$p_8 = '5,741 km';
 
-            $h3_7 = __('aircraft.fuel_consumption');
-            $p_10 = '277 gal/h';
+$h3_6 = __('aircraft.cruise_altitude');
+$p_9 = '13,716 metros';
 
-        $h2_5 = __('aircraft.capacity');
+$h3_7 = __('aircraft.fuel_consumption');
+$p_10 = '277 gal/h';
 
-            $h3_8 = __('aircraft.max_passengers');
-            $p_11 = '10 pasajeros';
+$h2_5 = __('aircraft.capacity');
 
-            $h3_9 = __('aircraft.autonomy');
-            $p_12 = '5,741 km';
+$h3_8 = __('aircraft.max_passengers');
+$p_11 = '10 pasajeros';
 
-            $h3_10 = __('aircraft.cargo_capacity');
-            $p_13 = '1,350 kg';
+$h3_9 = __('aircraft.autonomy');
+$p_12 = '5,741 km';
 
-            $h3_11 = __('aircraft.length');
-            $p_14 = '0,9 metros';
+$h3_10 = __('aircraft.cargo_capacity');
+$p_13 = '1,350 kg';
 
-        $h2_6 = __('aircraft.operation_places');
-        $p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
-        
-            $h3_12 = __('aircraft.national_routes');
+$h3_11 = __('aircraft.length');
+$p_14 = '0,9 metros';
 
-            $h3_13 = __('aircraft.other_services');
+$h2_6 = __('aircraft.operation_places');
+$p_15 = str_replace(':model', $aircraft_model, __('aircraft.operations_desc'));
 
-            $h3_14 = __('aircraft.request_info');            
+$h3_12 = __('aircraft.national_routes');
+
+$h3_13 = __('aircraft.other_services');
+
+$h3_14 = __('aircraft.request_info');            
 ?>
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('public/css/paginas/aeronaves/FlotaAvion.css') }}">
     <script>
         // Configurar clase body para imagen de portada específica
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             document.body.classList.add('challenger-300');
         });
     </script>
@@ -174,129 +174,101 @@ de las opciones más apreciadas en el segmento de jets ejecutivos supermedianos.
                 <!-- Nueva Galería de Imágenes -->
                 <section class="aircraft-gallery">
                     <h2 class="section-title"><?= $h2_2 ?></h2>
-                    <div class="new-carousel-wrapper"> 
+                    <div class="new-carousel-wrapper">
                         <div class="new-carousel-container">
                             <div class="new-carousel-track">
                                 <div class="new-carousel-slide current-slide">
-                                    <img 
-                                        src="/img/aeronaves/aviones/Challenger300-1.webp"
-                                        alt="bombardier challenger 300"
-                                        class="carousel-image"
-                                        sizes="(max-width: 890px) 550px, 
-                                        (max-width: 310px) 310px, 
-                                        400px"
-                                        title="bombardier challenger 300"
-                                        width="1200"
-                                        height= "800"
-                                        loading="lazy"
-                                        decoding="async"
-                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;"
-                                    > 
-                                    <scripttype="application/ld+json">
-                                    {
+                                    <img src="/img/aeronaves/aviones/Challenger300-1.webp" alt="bombardier challenger 300"
+                                        class="carousel-image" sizes="(max-width: 890px) 550px, 
+                                                (max-width: 310px) 310px, 
+                                                400px" title="bombardier challenger 300" width="1200" height="800"
+                                        loading="lazy" decoding="async"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                                    <scripttype="application /ld+json">
+                                        {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Challenger300-1.webp",
+                                        "contentUrl":
+                                        "https://www.micosina.online/img/aeronaves/aviones/Challenger300-1.webp",
                                         "creator": {
-                                            "@type": "Organization",
+                                        "@type": "Organization",
                                         },
                                         "caption": "bombardier challenger 300",
                                         "representativeOfPage": true,
                                         "datePublished": "2025-11-14"
-                                    }
-                                    </script>
+                                        }
+                                        </script>
                                 </div>
                                 <div class="new-carousel-slide">
-                                    <img 
-                                        src="/img/aeronaves/aviones/Challenger300-2.webp"
-                                        alt="bombardier challenger 300 range"
-                                        class="carousel-image"
-                                        sizes="(max-width: 890px) 550px, 
-                                        (max-width: 310px) 310px, 
-                                        400px"
-                                        title="bombardier challenger 300 range"
-                                        width="1200"
-                                        height= "800"
-                                        loading="lazy"
-                                        decoding="async"
-                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;"
-                                    > 
-                                    <scripttype="application/ld+json">
-                                    {
+                                    <img src="/img/aeronaves/aviones/Challenger300-2.webp"
+                                        alt="bombardier challenger 300 range" class="carousel-image" sizes="(max-width: 890px) 550px, 
+                                                (max-width: 310px) 310px, 
+                                                400px" title="bombardier challenger 300 range" width="1200" height="800"
+                                        loading="lazy" decoding="async"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                                    <scripttype="application /ld+json">
+                                        {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Challenger300-2.webp",
+                                        "contentUrl":
+                                        "https://www.micosina.online/img/aeronaves/aviones/Challenger300-2.webp",
                                         "creator": {
-                                            "@type": "Organization",
+                                        "@type": "Organization",
                                         },
                                         "caption": "bombardier challenger 300 range",
                                         "representativeOfPage": true,
                                         "datePublished": "2025-11-14"
-                                    }
-                                    </script>
+                                        }
+                                        </script>
                                 </div>
                                 <div class="new-carousel-slide">
-                                    <img 
-                                        src="/img/aeronaves/aviones/Challenger300-3.webp"
-                                        alt="bombardier Challenger 300"
-                                        class="carousel-image"
-                                        sizes="(max-width: 890px) 550px, 
-                                        (max-width: 310px) 310px, 
-                                        400px"
-                                        title="bombardier Challenger 300"
-                                        width="1200"
-                                        height= "800"
-                                        loading="lazy"
-                                        decoding="async"
-                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;"
-                                    > 
-                                    <scripttype="application/ld+json">
-                                    {
+                                    <img src="/img/aeronaves/aviones/Challenger300-3.webp" alt="bombardier Challenger 300"
+                                        class="carousel-image" sizes="(max-width: 890px) 550px, 
+                                                (max-width: 310px) 310px, 
+                                                400px" title="bombardier Challenger 300" width="1200" height="800"
+                                        loading="lazy" decoding="async"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                                    <scripttype="application /ld+json">
+                                        {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Challenger300-3.webp",
+                                        "contentUrl":
+                                        "https://www.micosina.online/img/aeronaves/aviones/Challenger300-3.webp",
                                         "creator": {
-                                            "@type": "Organization",
+                                        "@type": "Organization",
                                         },
                                         "caption": "bombardier Challenger 300",
                                         "representativeOfPage": true,
                                         "datePublished": "2025-11-14"
-                                    }
-                                    </script>
+                                        }
+                                        </script>
                                 </div>
                                 <div class="new-carousel-slide">
-                                    <img 
-                                        src="/img/aeronaves/aviones/Challenger300-4.webp"
-                                        alt="bombardier challenger 300 jet"
-                                        class="carousel-image"
-                                        sizes="(max-width: 890px) 550px, 
-                                        (max-width: 310px) 310px, 
-                                        400px"
-                                        title="bombardier challenger 300 jet"
-                                        width="1200"
-                                        height= "800"
-                                        loading="lazy"
-                                        decoding="async"
-                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;"
-                                    > 
-                                    <scripttype="application/ld+json">
-                                    {
+                                    <img src="/img/aeronaves/aviones/Challenger300-4.webp"
+                                        alt="bombardier challenger 300 jet" class="carousel-image" sizes="(max-width: 890px) 550px, 
+                                                (max-width: 310px) 310px, 
+                                                400px" title="bombardier challenger 300 jet" width="1200" height="800"
+                                        loading="lazy" decoding="async"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                                    <scripttype="application /ld+json">
+                                        {
                                         "@context": "https://schema.org/",
                                         "@type": "ImageObject",
-                                        "contentUrl": "https://www.micosina.online/img/aeronaves/aviones/Challenger300-4.webp",
+                                        "contentUrl":
+                                        "https://www.micosina.online/img/aeronaves/aviones/Challenger300-4.webp",
                                         "creator": {
-                                            "@type": "Organization",
+                                        "@type": "Organization",
                                         },
                                         "caption": "bombardier challenger 300 jet",
                                         "representativeOfPage": true,
                                         "datePublished": "2025-11-14"
-                                    }
-                                    </script>
+                                        }
+                                        </script>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
 
-                        <!-- Controles de navegación --> 
+                        <!-- Controles de navegación -->
                         <button class="new-carousel-btn new-carousel-btn--left" id="prevBtn">
                             <i class="fas fa-chevron-left"></i>
                         </button>
@@ -414,7 +386,8 @@ de las opciones más apreciadas en el segmento de jets ejecutivos supermedianos.
                             </div>
                         </div>
                         <div class="seating-diagram">
-                            <img src="/img/aeronaves/aviones/Challenger300.webp" alt="Bombardier Challenger 300 jet ejecutivo premium para vuelos charter en Perú"
+                            <img src="/img/aeronaves/aviones/Challenger300.webp"
+                                alt="Bombardier Challenger 300 jet ejecutivo premium para vuelos charter en Perú"
                                 style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">
                         </div>
                     </div>
@@ -455,176 +428,12 @@ de las opciones más apreciadas en el segmento de jets ejecutivos supermedianos.
         </main>
 
         <!-- Formulario Sticky -->
-        <aside class="sticky-form">
-            <div class="form-container">
-                <h3><?= $h3_14 ?></h3>
-                <form class="contact-form" id="aircraftForm" method="POST"
-                    action="{{ route('aircraft.inquiry.send') }}">
-                    @csrf
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Nombre Completo" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Número de Teléfono" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="aircraft" name="aircraft" value="Challenger 300" readonly required>
-                    </div>
-                    <div class="form-group">
-                        <select id="country" name="country" required>
-                            <option value="">Seleccionar País</option>
-                            <option value="mexico">México</option>
-                            <option value="usa">Estados Unidos</option>
-                            <option value="canada">Canadá</option>
-                            <option value="guatemala">Guatemala</option>
-                            <option value="belize">Belice</option>
-                            <option value="honduras">Honduras</option>
-                            <option value="el-salvador">El Salvador</option>
-                            <option value="nicaragua">Nicaragua</option>
-                            <option value="costa-rica">Costa Rica</option>
-                            <option value="panama">Panamá</option>
-                            <option value="colombia">Colombia</option>
-                            <option value="venezuela">Venezuela</option>
-                            <option value="brazil">Brasil</option>
-                            <option value="argentina">Argentina</option>
-                            <option value="chile">Chile</option>
-                            <option value="peru">Perú</option>
-                            <option value="ecuador">Ecuador</option>
-                            <option value="bolivia">Bolivia</option>
-                            <option value="paraguay">Paraguay</option>
-                            <option value="uruguay">Uruguay</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <input type="date" id="date" name="date" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Mensaje Adicional" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">
-                        <i class="fas fa-paper-plane"></i>
-                        Enviar Solicitud
-                    </button>
-                </form>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+51 932 475 995</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>contacto@aerolineadelsur.com.pe</span>
-                    </div>
-                </div>
-            </div>
-        </aside>
+
     </div>
-    <script>
-        // ===== FUNCIONALIDAD DEL FORMULARIO AERONAVES =====
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('aircraftForm');
 
-            if (!form) {
-                console.error('❌ No se encontró el formulario con id "aircraftForm"');
-                return;
-            }
-
-            // Envío del formulario a Laravel/Google Apps Script
-            form.addEventListener('submit', async function(e) {
-                e.preventDefault();
-
-                // Recolectar datos del formulario
-                const formData = {
-                    name: document.getElementById('name')?.value.trim() || '',
-                    email: document.getElementById('email')?.value.trim() || '',
-                    phone: document.getElementById('phone')?.value.trim() || '',
-                    aircraft: document.getElementById('aircraft')?.value || '',
-                    country: document.getElementById('country')?.value || '',
-                    date: document.getElementById('date')?.value || '',
-                    message: document.getElementById('message')?.value.trim() || ''
-                };
-
-                console.log("📤 Enviando solicitud de aeronave:", formData);
-
-                // Validación básica
-                if (!formData.name || !formData.email || !formData.phone || !formData.country || !
-                    formData.date) {
-                    alert('❌ Por favor completa todos los campos requeridos.');
-                    return;
-                }
-
-                try {
-                    // Mostrar estado de carga
-                    const submitBtn = form.querySelector('.submit-btn');
-                    if (!submitBtn) {
-                        alert('❌ Error: No se encontró el botón de envío');
-                        return;
-                    }
-
-                    const originalText = submitBtn.innerHTML;
-                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-                    submitBtn.disabled = true;
-
-                    // Obtener token CSRF de forma segura
-                    const csrfToken = document.querySelector('input[name="_token"]')?.value ||
-                        document.querySelector('meta[name="csrf-token"]')?.content;
-
-                    if (!csrfToken) {
-                        alert('❌ Error de seguridad: Token CSRF no encontrado');
-                        return;
-                    }
-
-                    // Enviar al backend Laravel
-                    const response = await fetch(form.action, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'X-CSRF-TOKEN': csrfToken
-                        },
-                        body: JSON.stringify(formData)
-                    });
-
-                    // Verificar si la respuesta es JSON
-                    const contentType = response.headers.get('content-type');
-                    if (!contentType || !contentType.includes('application/json')) {
-                        throw new Error('La respuesta del servidor no es JSON');
-                    }
-
-                    const resultado = await response.json();
-
-                    if (resultado.success) {
-                        alert('✅ ¡Solicitud enviada correctamente! Te contactaremos pronto.');
-                        form.reset();
-                    } else {
-                        alert('❌ Error: ' + (resultado.error || 'No se pudo enviar la solicitud'));
-                    }
-
-                } catch (error) {
-                    console.error('Error en el envío:', error);
-
-                    if (error.name === 'TypeError') {
-                        alert('❌ Error de red. Verifica tu conexión e intenta nuevamente.');
-                    } else {
-                        alert('❌ Error: ' + error.message);
-                    }
-                } finally {
-                    // Restaurar botón
-                    const submitBtn = form.querySelector('.submit-btn');
-                    if (submitBtn) {
-                        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar Solicitud';
-                        submitBtn.disabled = false;
-                    }
-                }
-            });
-        });
-    </script>
     <script>
         // ===== FUNCIONALIDAD CARRUSEL DE IMÁGENES =====
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             let currentSlideIndex = 0;
             const slides = document.querySelectorAll('.carousel-slide');
             const indicators = document.querySelectorAll('.indicator');
@@ -734,12 +543,12 @@ de las opciones más apreciadas en el segmento de jets ejecutivos supermedianos.
         });
 
         // ===== SMOOTH SCROLLING PARA ENLACES INTERNOS =====
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Agregar smooth scrolling a todos los enlaces internos
             const links = document.querySelectorAll('a[href^="#"]');
 
             links.forEach(link => {
-                link.addEventListener('click', function(e) {
+                link.addEventListener('click', function (e) {
                     e.preventDefault();
 
                     const targetId = this.getAttribute('href').substring(1);
@@ -904,7 +713,7 @@ de las opciones más apreciadas en el segmento de jets ejecutivos supermedianos.
         });
 
         // ===== EFECTOS DE SCROLL =====
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Observador de intersección para animaciones al hacer scroll
             const observerOptions = {
                 threshold: 0.1,
