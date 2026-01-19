@@ -13,32 +13,38 @@
             ];
         @endphp
         
-        {{-- NEW SEO Service (Priority) --}}
-        @stack('seo')
-        
-        {{-- LEGACY Array SEO (Fallback for backward compatibility) --}}
-        @if(isset($seo) && is_array($seo))
-            <title>{{ $seo['title'] ?? config('app.name') }}</title>
-            <meta name="description" content="{{ $seo['description'] ?? '' }}" />
-            <meta name="keywords" content="{{ $seo['keywords'] ?? '' }}" />
-            <meta name="author" content="{{ $seo['author'] ?? 'Aerolínea del Sur' }}" />
-            <link rel="canonical" href="{{ $seo['canonical'] ?? url()->current() }}" />
-            
-            <!-- Open Graph -->
-            <meta property="og:title" content="{{ $seo['title'] ?? '' }}">
-            <meta property="og:description" content="{{ $seo['description'] ?? '' }}">
-            @if(isset($seo['og_image']))
-            <meta property="og:image" content="{{ $seo['og_image'] }}">
-            @endif
-            <meta property="og:url" content="{{ $seo['canonical'] ?? url()->current() }}">
-            <meta property="og:type" content="website">
-            
-            <!-- Twitter Card -->
-            <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:title" content="{{ $seo['title'] ?? '' }}">
-            <meta name="twitter:description" content="{{ $seo['description'] ?? '' }}">
-            @if(isset($seo['og_image']))
-            <meta name="twitter:image" content="{{ $seo['og_image'] }}">
+        {{-- SEO Logic: Stack (Priority) vs Legacy Array (Fallback) --}}
+        @php
+            $seoContent = trim($__env->yieldPushContent('seo'));
+        @endphp
+
+        @if(!empty($seoContent))
+            {!! $seoContent !!}
+        @else
+            {{-- LEGACY Array SEO (Fallback) --}}
+            @if(isset($seo) && is_array($seo))
+                <title>{{ $seo['title'] ?? config('app.name') }}</title>
+                <meta name="description" content="{{ $seo['description'] ?? '' }}" />
+                <meta name="keywords" content="{{ $seo['keywords'] ?? '' }}" />
+                <meta name="author" content="{{ $seo['author'] ?? 'Aerolínea del Sur' }}" />
+                <link rel="canonical" href="{{ $seo['canonical'] ?? url()->current() }}" />
+                
+                <!-- Open Graph -->
+                <meta property="og:title" content="{{ $seo['title'] ?? '' }}">
+                <meta property="og:description" content="{{ $seo['description'] ?? '' }}">
+                @if(isset($seo['og_image']))
+                <meta property="og:image" content="{{ $seo['og_image'] }}">
+                @endif
+                <meta property="og:url" content="{{ $seo['canonical'] ?? url()->current() }}">
+                <meta property="og:type" content="website">
+                
+                <!-- Twitter Card -->
+                <meta name="twitter:card" content="summary_large_image">
+                <meta name="twitter:title" content="{{ $seo['title'] ?? '' }}">
+                <meta name="twitter:description" content="{{ $seo['description'] ?? '' }}">
+                @if(isset($seo['og_image']))
+                <meta name="twitter:image" content="{{ $seo['og_image'] }}">
+                @endif
             @endif
         @endif
         
