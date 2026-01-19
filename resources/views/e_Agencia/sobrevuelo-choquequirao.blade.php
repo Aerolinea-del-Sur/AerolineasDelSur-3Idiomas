@@ -90,7 +90,7 @@
     $h3_6 = __('tours.choquequirao.booking_title');
 
     $p_20 = __('tours.choquequirao.booking_note');
-                                                                        ?>
+                                                                            ?>
 
     <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">
     <!-- Sección Hero -->
@@ -318,14 +318,14 @@
                     </ul>
                 </div>
                 <!-- Inclusiones 
-                <div class="not-included">
-                    <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
-                    <ul>
-                        <li><i class="fas fa-times"></i> <?= __('tours.choquequirao.notincluded1') ?></li>
-                        <li><i class="fas fa-times"></i> <?= __('tours.choquequirao.notincluded2') ?></li>
-                        <li><i class="fas fa-times"></i> <?= __('tours.choquequirao.notincluded3') ?></li>
-                    </ul>
-                </div>-->
+                    <div class="not-included">
+                        <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
+                        <ul>
+                            <li><i class="fas fa-times"></i> <?= __('tours.choquequirao.notincluded1') ?></li>
+                            <li><i class="fas fa-times"></i> <?= __('tours.choquequirao.notincluded2') ?></li>
+                            <li><i class="fas fa-times"></i> <?= __('tours.choquequirao.notincluded3') ?></li>
+                        </ul>
+                    </div>-->
             </div>
             <div class="important-notes">
                 <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
@@ -357,9 +357,9 @@
                         </div>
                         <div class="tour-footer">
                             <a href="/{{ app()->getLocale() }}/sobrevuelo/nazca-lines"
-                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></a> 
-                        </div> 
-                    </div> 
+                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="tour-card">
                     <div class="tour-image">
@@ -378,7 +378,7 @@
                                 class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="tour-card">
                     <div class="tour-image">
                         <img src="{{ asset('img/tours/tesoros-cusco-1.webp') }}" alt="Tesoros de Cusco">
@@ -494,62 +494,6 @@
             showSlide(currentSlideIndex);
         });
 
-        // ===== FUNCIONALIDAD DEL FORMULARIO DE RESERVA =====
-        function toggleBookingForm() {
-            const bookingSidebar = document.getElementById('bookingSidebar');
-            bookingSidebar.classList.toggle('active');
 
-            if (bookingSidebar.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = 'auto';
-            }
-        }
-
-        // Cerrar formulario con tecla Escape
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                const bookingSidebar = document.getElementById('bookingSidebar');
-                if (bookingSidebar.classList.contains('active')) {
-                    toggleBookingForm();
-                }
-            }
-        });
-
-        // Manejar envío del formulario
-        const bookingForm = document.getElementById('bookingForm');
-        if (bookingForm) {
-            bookingForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-
-                // Validar campos requeridos
-                const requiredFields = bookingForm.querySelectorAll('[required]');
-                let isValid = true;
-
-                requiredFields.forEach(field => {
-                    if (!field.value.trim()) {
-                        isValid = false;
-                        field.style.borderColor = '#e74c3c';
-                    } else {
-                        field.style.borderColor = '#ddd';
-                    }
-                });
-
-                if (isValid) {
-                    alert('¡Gracias por tu solicitud! Te contactaremos en las próximas 24 horas para confirmar tu reserva.');
-                    toggleBookingForm();
-                    bookingForm.reset();
-                } else {
-                    alert('Por favor, completa todos los campos obligatorios.');
-                }
-            });
-        }
-
-        // Establecer fecha mínima como hoy
-        const tourDateInput = document.getElementById('tourDate');
-        if (tourDateInput) {
-            const today = new Date().toISOString().split('T')[0];
-            tourDateInput.min = today;
-        }
     </script>
 @endsection

@@ -1,16 +1,16 @@
 @php
-$tour_name = 'Vinicunca';
-$seo = seo()
-    ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
-    ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
-    ->keywords(['tour vinicunca', 'montaña 7 colores', 'rainbow mountain peru', 'excursión cusco vinicunca', 'tour rainbow mountain'])
-    ->image(asset('img/tours/vinicunca-7-colores.jpg'))
-    ->canonical(url(app()->getLocale() . '/agencia/vinicunca'))
-    ->addSchema([
-        '@context' => 'https://schema.org',
-        '@type' => 'TouristAttraction',
-        'name' => 'Tour Vinicunca'
-    ]);
+    $tour_name = 'Vinicunca';
+    $seo = seo()
+        ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
+        ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+        ->keywords(['tour vinicunca', 'montaña 7 colores', 'rainbow mountain peru', 'excursión cusco vinicunca', 'tour rainbow mountain'])
+        ->image(asset('img/tours/vinicunca-7-colores.jpg'))
+        ->canonical(url(app()->getLocale() . '/agencia/vinicunca'))
+        ->addSchema([
+            '@context' => 'https://schema.org',
+            '@type' => 'TouristAttraction',
+            'name' => 'Tour Vinicunca'
+        ]);
 @endphp
 
 @extends('a_EncabezadoFooter.princi')
@@ -22,80 +22,80 @@ $seo = seo()
 
 @section('content')
 
-<?php
+    <?php
     $h1_1 = __('tours.vinicunca.title');
     $p_1 = __('tours.vinicunca.subtitle');
 
-        $h2_1 = __('tours.tour_details');
-        $p_2 = __('tours.vinicunca.description');
-                $h4_1 = __('tours.max_group');
-                $p_3 = '8 personas';
+    $h2_1 = __('tours.tour_details');
+    $p_2 = __('tours.vinicunca.description');
+    $h4_1 = __('tours.max_group');
+    $p_3 = '8 personas';
 
-                $h4_2 = __('tours.min_age');
-                $p_4 = 'Ninguna';
+    $h4_2 = __('tours.min_age');
+    $p_4 = 'Ninguna';
 
-                $h4_3 = __('tours.duration');
-                $p_5 = '1 día';
+    $h4_3 = __('tours.duration');
+    $p_5 = '1 día';
 
-            $h3_1 = __('tours.image_gallery');
+    $h3_1 = __('tours.image_gallery');
 
-        $h2_2 = 'Resumen del Viaje';
+    $h2_2 = 'Resumen del Viaje';
 
-            $h3_2 = 'Aspectos Destacados';
+    $h3_2 = 'Aspectos Destacados';
 
-                $h4_4 = 'Vinicunca';
-                $p_6 = 'Conoceras la Montaña de 7 Colores, un lugar colorido con paisajes impresionantes.';
+    $h4_4 = 'Vinicunca';
+    $p_6 = 'Conoceras la Montaña de 7 Colores, un lugar colorido con paisajes impresionantes.';
 
-                $h4_5 = 'Fotografía Paisajes';
-                $p_7 = 'Captura tomas espectaculares de los pueblos, paisajes y costrucciones milenarias.';
+    $h4_5 = 'Fotografía Paisajes';
+    $p_7 = 'Captura tomas espectaculares de los pueblos, paisajes y costrucciones milenarias.';
 
-                $h4_6 = 'Historia y vistas';
-                $p_8 = 'El guía te narrará la historia del lugar mientras recorres el sendero hasta la montaña.';
+    $h4_6 = 'Historia y vistas';
+    $p_8 = 'El guía te narrará la historia del lugar mientras recorres el sendero hasta la montaña.';
 
-            $h3_3 = 'Estadísticas del Tour';
-        
-        $h2_3 = 'Itinerario Detallado';
+    $h3_3 = 'Estadísticas del Tour';
 
-                $h4_7 = '1. Recojo y salida temprana';
-                $p_9 = 'Nuestro recorrido inicia muy temprano, entre las 4:00 y 4:30 a.m., con el recojo desde tu alojamiento en Cusco. Partimos hacia el sur de la región, disfrutando del amanecer entre montañas y pintorescos paisajes andinos.';
+    $h2_3 = 'Itinerario Detallado';
 
-                $h4_8 = '2. Desayuno en Cusipata';
-                $p_10 = 'Tras dos horas de viaje, llegamos a la localidad de Cusipata, donde te espera un desayuno nutritivo elaborado con insumos locales, perfecto para cargar energías antes de la caminata.';
+    $h4_7 = '1. Recojo y salida temprana';
+    $p_9 = 'Nuestro recorrido inicia muy temprano, entre las 4:00 y 4:30 a.m., con el recojo desde tu alojamiento en Cusco. Partimos hacia el sur de la región, disfrutando del amanecer entre montañas y pintorescos paisajes andinos.';
 
-                $h4_9 = '3. Inicio de la caminata';
-                $p_11 = 'Continuamos el trayecto en transporte por 40 minutos adicionales hasta llegar al punto de partida, ubicado a unos 4,000 m.s.n.m. Desde aquí comienza la caminata de aproximadamente 2 horas, rodeados de montañas, aire fresco y un entorno tranquilo.';
+    $h4_8 = '2. Desayuno en Cusipata';
+    $p_10 = 'Tras dos horas de viaje, llegamos a la localidad de Cusipata, donde te espera un desayuno nutritivo elaborado con insumos locales, perfecto para cargar energías antes de la caminata.';
 
-                $h4_10 = '4. Llegada a la Montaña Arcoíris';
-                $p_12 = 'Alcanzamos la cima de Vinicunca a 5,036 m.s.n.m., donde serás testigo de un espectáculo natural único: las formaciones geológicas que dan vida a la famosa Montaña de 7 Colores. Tendrás tiempo libre para contemplar el paisaje y tomar fotografías.';
+    $h4_9 = '3. Inicio de la caminata';
+    $p_11 = 'Continuamos el trayecto en transporte por 40 minutos adicionales hasta llegar al punto de partida, ubicado a unos 4,000 m.s.n.m. Desde aquí comienza la caminata de aproximadamente 2 horas, rodeados de montañas, aire fresco y un entorno tranquilo.';
 
-                $h4_11 = '5. Retorno y almuerzo';
-                $p_13 = 'Iniciamos el descenso de 2 horas hasta encontrarnos nuevamente con nuestro transporte. De regreso en Cusipata, disfrutaremos de un almuerzo tradicional andino que pondrá el broche final a la experiencia.';
+    $h4_10 = '4. Llegada a la Montaña Arcoíris';
+    $p_12 = 'Alcanzamos la cima de Vinicunca a 5,036 m.s.n.m., donde serás testigo de un espectáculo natural único: las formaciones geológicas que dan vida a la famosa Montaña de 7 Colores. Tendrás tiempo libre para contemplar el paisaje y tomar fotografías.';
 
-                $h4_12 = '6. Regreso a Cusco';
-                $p_14 = 'Finalmente, retornamos a la ciudad del Cusco con llegada aproximada entre las 4:00 y 4:30 p.m., cerrando una jornada inolvidable.';
+    $h4_11 = '5. Retorno y almuerzo';
+    $p_13 = 'Iniciamos el descenso de 2 horas hasta encontrarnos nuevamente con nuestro transporte. De regreso en Cusipata, disfrutaremos de un almuerzo tradicional andino que pondrá el broche final a la experiencia.';
 
-        $h2_4 = 'Inclusiones del Tour';
+    $h4_12 = '6. Regreso a Cusco';
+    $p_14 = 'Finalmente, retornamos a la ciudad del Cusco con llegada aproximada entre las 4:00 y 4:30 p.m., cerrando una jornada inolvidable.';
 
-            $h3_4 = 'Incluido';
-            $h3_5 = 'No Incluido';
+    $h2_4 = 'Inclusiones del Tour';
 
-                $h4_13 = 'Notas Importantes';
+    $h3_4 = 'Incluido';
+    $h3_5 = 'No Incluido';
 
-        $h2_5 = 'Otros Tours Recomendados';
+    $h4_13 = 'Notas Importantes';
 
-                $h4_14 = 'Líneas de Nazca';
-                $p_17 = 'Descubre los misteriosos geoglifos desde el aire en este tour de día completo.';
+    $h2_5 = 'Otros Tours Recomendados';
 
-                $h4_15 = 'Vuelo Amazónico';
-                $p_18 = 'Explora la selva peruana desde las alturas y observa la biodiversidad única.';
+    $h4_14 = 'Líneas de Nazca';
+    $p_17 = 'Descubre los misteriosos geoglifos desde el aire en este tour de día completo.';
 
-                $h4_16 = 'Costa Peruana';
-                $p_19 = 'Sobrevuela la hermosa costa del Pacífico y las islas Ballestas.';
+    $h4_15 = 'Vuelo Amazónico';
+    $p_18 = 'Explora la selva peruana desde las alturas y observa la biodiversidad única.';
 
-            $h3_6 = 'Reserva tu Tour';
+    $h4_16 = 'Costa Peruana';
+    $p_19 = 'Sobrevuela la hermosa costa del Pacífico y las islas Ballestas.';
 
-            $p_20 = '* Campos obligatorios. Te contactaremos en 24 horas para confirmar tu reserva.';
-?>
+    $h3_6 = 'Reserva tu Tour';
+
+    $p_20 = '* Campos obligatorios. Te contactaremos en 24 horas para confirmar tu reserva.';
+    ?>
 
     <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">
     <!-- Sección Hero -->
@@ -305,24 +305,26 @@ $seo = seo()
                 <div class="included">
                     <h3><i class="fas fa-check-circle"></i><?= $h3_4 ?></h3>
                     <ul>
-                        <li><i class="fas fa-check"></i> Transporte turístico (recojo desde el centro histórico de Cusco)</li>
+                        <li><i class="fas fa-check"></i> Transporte turístico (recojo desde el centro histórico de Cusco)
+                        </li>
                         <li><i class="fas fa-check"></i> Entradas a la Montaña de 7 Colores</li>
                         <li><i class="fas fa-check"></i> Guía profesional bilingüe (español - inglés)</li>
                         <li><i class="fas fa-check"></i> Desayuno y almuerzo en restaurante local</li>
-                        <li><i class="fas fa-check"></i> Seguridad en ruta: oxígeno, botiquín, teléfonos satelitales y radios</li>
+                        <li><i class="fas fa-check"></i> Seguridad en ruta: oxígeno, botiquín, teléfonos satelitales y
+                            radios</li>
                         <li><i class="fas fa-check"></i> Servicio en grupo reducido (máx. 19 personas)</li>
                     </ul>
                 </div>
                 <!-- Inclusiones 
-                <div class="not-included">
-                    <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
-                    <ul>
-                        <li><i class="fas fa-times"></i> Gastos personales, snacks o bebidas adicionales</li>
-                        <li><i class="fas fa-times"></i> Alquiler de bastones o caballos</li>
-                        <li><i class="fas fa-times"></i> Seguro de viaje personal</li>
-                        <li><i class="fas fa-times"></i> Propinas</li>
-                    </ul>
-                </div>-->
+                    <div class="not-included">
+                        <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
+                        <ul>
+                            <li><i class="fas fa-times"></i> Gastos personales, snacks o bebidas adicionales</li>
+                            <li><i class="fas fa-times"></i> Alquiler de bastones o caballos</li>
+                            <li><i class="fas fa-times"></i> Seguro de viaje personal</li>
+                            <li><i class="fas fa-times"></i> Propinas</li>
+                        </ul>
+                    </div>-->
             </div>
             <div class="important-notes">
                 <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
@@ -457,7 +459,7 @@ $seo = seo()
             const container = document.getElementById('carouselContainer');
             const slideWidth = slides[0].offsetWidth;
             container.style.transform = `translateX(-${index * slideWidth}px)`;
-            
+
             // Actualizar indicadores
             indicators.forEach((indicator, i) => {
                 indicator.classList.toggle('active', i === index);
@@ -466,13 +468,13 @@ $seo = seo()
 
         function moveSlide(direction) {
             currentSlideIndex += direction;
-            
+
             if (currentSlideIndex >= totalSlides) {
                 currentSlideIndex = 0;
             } else if (currentSlideIndex < 0) {
                 currentSlideIndex = totalSlides - 1;
             }
-            
+
             showSlide(currentSlideIndex);
         }
 
@@ -491,62 +493,6 @@ $seo = seo()
             showSlide(currentSlideIndex);
         });
 
-        // ===== FUNCIONALIDAD DEL FORMULARIO DE RESERVA =====
-        function toggleBookingForm() {
-            const bookingSidebar = document.getElementById('bookingSidebar');
-            bookingSidebar.classList.toggle('active');
-            
-            if (bookingSidebar.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = 'auto';
-            }
-        }
 
-        // Cerrar formulario con tecla Escape
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                const bookingSidebar = document.getElementById('bookingSidebar');
-                if (bookingSidebar.classList.contains('active')) {
-                    toggleBookingForm();
-                }
-            }
-        });
-
-        // Manejar envío del formulario
-        const bookingForm = document.getElementById('bookingForm');
-        if (bookingForm) {
-            bookingForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                
-                // Validar campos requeridos
-                const requiredFields = bookingForm.querySelectorAll('[required]');
-                let isValid = true;
-                
-                requiredFields.forEach(field => {
-                    if (!field.value.trim()) {
-                        isValid = false;
-                        field.style.borderColor = '#e74c3c';
-                    } else {
-                        field.style.borderColor = '#ddd';
-                    }
-                });
-                
-                if (isValid) {
-                    alert('¡Gracias por tu solicitud! Te contactaremos en las próximas 24 horas para confirmar tu reserva.');
-                    toggleBookingForm();
-                    bookingForm.reset();
-                } else {
-                    alert('Por favor, completa todos los campos obligatorios.');
-                }
-            });
-        }
-
-        // Establecer fecha mínima como hoy
-        const tourDateInput = document.getElementById('tourDate');
-        if (tourDateInput) {
-            const today = new Date().toISOString().split('T')[0];
-            tourDateInput.min = today;
-        }
     </script>
 @endsection

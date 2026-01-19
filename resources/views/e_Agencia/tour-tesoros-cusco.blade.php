@@ -1,16 +1,16 @@
 @php
-$tour_name = 'Tesoros de Cusco';
-$seo = seo()
-    ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
-    ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
-    ->keywords(['tour tesoros cusco', 'city tour cusco', 'sacsayhuaman tour', 'ruinas incas cusco', 'tour arqueológico'])
-    ->image(asset('img/tours/tesoros-cusco.jpg'))
-    ->canonical(url(app()->getLocale() . '/agencia/tesoros-cusco'))
-    ->addSchema([
-        '@context' => 'https://schema.org',
-        '@type' => 'TouristAttraction',
-        'name' => 'Tour Tesoros de Cusco'
-    ]);
+    $tour_name = 'Tesoros de Cusco';
+    $seo = seo()
+        ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
+        ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+        ->keywords(['tour tesoros cusco', 'city tour cusco', 'sacsayhuaman tour', 'ruinas incas cusco', 'tour arqueológico'])
+        ->image(asset('img/tours/tesoros-cusco.jpg'))
+        ->canonical(url(app()->getLocale() . '/agencia/tesoros-cusco'))
+        ->addSchema([
+            '@context' => 'https://schema.org',
+            '@type' => 'TouristAttraction',
+            'name' => 'Tour Tesoros de Cusco'
+        ]);
 @endphp
 
 @extends('a_EncabezadoFooter.princi')
@@ -22,88 +22,89 @@ $seo = seo()
 
 @section('content')
 
-<?php
+    <?php
     $h1_1 = __('tours.tesoros_cusco.title');
     $p_1 = __('tours.tesoros_cusco.subtitle');
 
-        $h2_1 = __('tours.tour_details');
-        $p_2 = __('tours.tesoros_cusco.description');
+    $h2_1 = __('tours.tour_details');
+    $p_2 = __('tours.tesoros_cusco.description');
 
-                $h4_1 = __('tours.max_group');
-                $p_3 = '8 Personas';
+    $h4_1 = __('tours.max_group');
+    $p_3 = '8 Personas';
 
-                $h4_2 = __('tours.min_age');
-                $p_4 = 'Ninguna';
+    $h4_2 = __('tours.min_age');
+    $p_4 = 'Ninguna';
 
-                $h4_3 = __('tours.duration');
-                $p_5 = '2 días y 1 noche';
+    $h4_3 = __('tours.duration');
+    $p_5 = '2 días y 1 noche';
 
-            $h3_1 = __('tours.image_gallery');
+    $h3_1 = __('tours.image_gallery');
 
-        $h2_2 = 'Resumen del Viaje';
+    $h2_2 = 'Resumen del Viaje';
 
-            $h3_2 = 'Aspectos Destacados';
+    $h3_2 = 'Aspectos Destacados';
 
-                $h4_4 = 'Machu Picchu';
-                $p_6 = 'Conoceras la Ciudadela Inca en un recorrido de 2 horas.';
+    $h4_4 = 'Machu Picchu';
+    $p_6 = 'Conoceras la Ciudadela Inca en un recorrido de 2 horas.';
 
-                $h4_5 = 'Valle Sagrado';
-                $p_7 = 'Recorreras varios destinos llenos de historia, tradición y vestigios inca.';
+    $h4_5 = 'Valle Sagrado';
+    $p_7 = 'Recorreras varios destinos llenos de historia, tradición y vestigios inca.';
 
-                $h4_6 = 'Fotografía Paisajes';
-                $p_8 = 'Captura tomas espectaculares de los pueblos, paisajes y costrucciones milenarias.';
+    $h4_6 = 'Fotografía Paisajes';
+    $p_8 = 'Captura tomas espectaculares de los pueblos, paisajes y costrucciones milenarias.';
 
-                $h4_7 = 'Historia en cada rincón';
-                $p_9 = 'El guía te narrará la historia de cada lugar y te mostrará pueblos, mercados y los vestigios de la cultura inca.';
+    $h4_7 = 'Historia en cada rincón';
+    $p_9 = 'El guía te narrará la historia de cada lugar y te mostrará pueblos, mercados y los vestigios de la cultura inca.';
 
-            $h3_3 = 'Estadísticas del Tour';
-        
-        $h2_3 = 'Itinerario Detallado';
+    $h3_3 = 'Estadísticas del Tour';
 
-                $h4_8 = 'Día 1 - Recorrido por el Valle Sagrado';
-                $p_10 = 'Salimos por la mañana desde tu hotel en Cusco rumbo a los paisajes andinos del Valle Sagrado, donde la historia y la naturaleza se entrelazan.';
-                $p_10_1 = '- Comenzamos con una visita del majestuoso Centro Arqueológico de Pisac, ubicado sobre una colina con vistas impresionantes al valle.';
-                $p_10_2 = '- Luego descendemos al colorido mercado artesanal de Pisac, ideal para descubrir textiles, cerámica, platería y productos hechos a mano por las comunidades locales.';
-                $p_10_3 = '- Continuamos el recorrido hacia el corazón del valle para disfrutar de un almuerzo buffet con ingredientes andinos y cocina fusión andina internacional.';
-                $p_10_4 = '- Por la tarde, visitamos la enigmática fortaleza de Ollantaytambo, una joya inca viva rodeada de misterio y arquitectura monumental.';
-                $p_10_5 = '- Pernocte en Ollantaytambo, en un acogedor hotel del pueblo, lo que te permitirá descansar sin prisas y estar listo para la gran experiencia del día siguiente.';
+    $h2_3 = 'Itinerario Detallado';
 
-                $h4_9 = 'Día 2 - Visita a Machu Picchu';
-                $p_11 = 'Despierta temprano para vivir uno de los momentos más esperados de tu viaje.';
-                $p_11_1 = '- Traslado a la estación de Ollantaytambo para abordar el tren con destino a Aguas Calientes, disfrutando de paisajes selváticos y quebradas impresionantes.';
-                $p_11_2 = '- Al llegar, tomamos el bus que nos llevará montaña arriba hasta la ciudadela de Machu Picchu, una de las maravillas más espectaculares del mundo.';
-                $p_11_3 = '- Disfruta de una visita guiada de 2 horas y media, donde recorrerás templos, andenes y miradores junto a un guía experto que te revelará los secretos de esta ciudad sagrada, según el circuito que se obtuvo.';
-                $p_11_4 = '- Luego del recorrido, regresamos en bus a Aguas Calientes, donde tendrás tiempo libre para almorzar a tu ritmo, comprar recuerdos o recorrer sus encantadoras calles.';
-                $p_11_5 = '- Por la tarde, abordarás el tren de retorno a Ollantaytambo y desde allí un transporte turístico te llevará de vuelta a Cusco, con llegada directa al centro de la ciudad. Allí te espera un taxi para llevarte a tu hotel.';
+    $h4_8 = 'Día 1 - Recorrido por el Valle Sagrado';
+    $p_10 = 'Salimos por la mañana desde tu hotel en Cusco rumbo a los paisajes andinos del Valle Sagrado, donde la historia y la naturaleza se entrelazan.';
+    $p_10_1 = '- Comenzamos con una visita del majestuoso Centro Arqueológico de Pisac, ubicado sobre una colina con vistas impresionantes al valle.';
+    $p_10_2 = '- Luego descendemos al colorido mercado artesanal de Pisac, ideal para descubrir textiles, cerámica, platería y productos hechos a mano por las comunidades locales.';
+    $p_10_3 = '- Continuamos el recorrido hacia el corazón del valle para disfrutar de un almuerzo buffet con ingredientes andinos y cocina fusión andina internacional.';
+    $p_10_4 = '- Por la tarde, visitamos la enigmática fortaleza de Ollantaytambo, una joya inca viva rodeada de misterio y arquitectura monumental.';
+    $p_10_5 = '- Pernocte en Ollantaytambo, en un acogedor hotel del pueblo, lo que te permitirá descansar sin prisas y estar listo para la gran experiencia del día siguiente.';
 
-        $h2_4 = 'Inclusiones del Tour';
+    $h4_9 = 'Día 2 - Visita a Machu Picchu';
+    $p_11 = 'Despierta temprano para vivir uno de los momentos más esperados de tu viaje.';
+    $p_11_1 = '- Traslado a la estación de Ollantaytambo para abordar el tren con destino a Aguas Calientes, disfrutando de paisajes selváticos y quebradas impresionantes.';
+    $p_11_2 = '- Al llegar, tomamos el bus que nos llevará montaña arriba hasta la ciudadela de Machu Picchu, una de las maravillas más espectaculares del mundo.';
+    $p_11_3 = '- Disfruta de una visita guiada de 2 horas y media, donde recorrerás templos, andenes y miradores junto a un guía experto que te revelará los secretos de esta ciudad sagrada, según el circuito que se obtuvo.';
+    $p_11_4 = '- Luego del recorrido, regresamos en bus a Aguas Calientes, donde tendrás tiempo libre para almorzar a tu ritmo, comprar recuerdos o recorrer sus encantadoras calles.';
+    $p_11_5 = '- Por la tarde, abordarás el tren de retorno a Ollantaytambo y desde allí un transporte turístico te llevará de vuelta a Cusco, con llegada directa al centro de la ciudad. Allí te espera un taxi para llevarte a tu hotel.';
 
-            $h3_4 = 'Incluido';
-            $h3_5 = 'No Incluido';
+    $h2_4 = 'Inclusiones del Tour';
 
-                $h4_14 = 'Notas Importantes';
+    $h3_4 = 'Incluido';
+    $h3_5 = 'No Incluido';
 
-        $h2_5 = 'Otros Tours Recomendados';
+    $h4_14 = 'Notas Importantes';
 
-                $h4_15 = 'Líneas de Nazca';
-                $p_18 = 'Descubre los misteriosos geoglifos desde el aire en este tour de día completo.';
+    $h2_5 = 'Otros Tours Recomendados';
 
-                $h4_16 = 'Vuelo Amazónico';
-                $p_19 = 'Explora la selva peruana desde las alturas y observa la biodiversidad única.';
+    $h4_15 = 'Líneas de Nazca';
+    $p_18 = 'Descubre los misteriosos geoglifos desde el aire en este tour de día completo.';
 
-                $h4_17 = 'Costa Peruana';
-                $p_20 = 'Sobrevuela la hermosa costa del Pacífico y las islas Ballestas.';
+    $h4_16 = 'Vuelo Amazónico';
+    $p_19 = 'Explora la selva peruana desde las alturas y observa la biodiversidad única.';
 
-            $h3_6 = 'Reserva tu Tour';
+    $h4_17 = 'Costa Peruana';
+    $p_20 = 'Sobrevuela la hermosa costa del Pacífico y las islas Ballestas.';
 
-            $p_21 = '* Campos obligatorios. Te contactaremos en 24 horas para confirmar tu reserva.';
-?>
+    $h3_6 = 'Reserva tu Tour';
+
+    $p_21 = '* Campos obligatorios. Te contactaremos en 24 horas para confirmar tu reserva.';
+    ?>
 
     <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">
     <!-- Sección Hero -->
     <section class="tour-hero">
         <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Machu Picchu desde el aire">
+            <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                alt="Machu Picchu desde el aire">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -164,8 +165,8 @@ $seo = seo()
                 </div>
                 <div class="gallery-section">
                     <h3><?= $h3_1 ?></h3>
-                        <div class="image-carousel">
-                            <div id="carouselContainer" class="carousel-container">
+                    <div class="image-carousel">
+                        <div id="carouselContainer" class="carousel-container">
                             <div class="carousel-slide active">
                                 <img src="/img/tours/tesoros-del-cusco-1.webp" alt="Vista aérea de Machu Picchu">
                             </div>
@@ -173,28 +174,28 @@ $seo = seo()
                                 <img src="/img/tours/tesoros-del-cusco-2.webp" alt="Valle Sagrado desde el aire">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/img/tours/tesoros-del-cusco-3.webp" alt="Montañas andinas y naturaleza">      
+                                <img src="/img/tours/tesoros-del-cusco-3.webp" alt="Montañas andinas y naturaleza">
                             </div>
                             <div class="carousel-slide">
                                 <img src="/img/tours/tesoros-del-cusco-4.webp" alt="Río Urubamba">
                             </div>
-                            </div>
                         </div>
-                        <button class="carousel-btn prev" onclick="moveSlide(-1)">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <button class="carousel-btn next" onclick="moveSlide(1)">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                        <div class="carousel-indicators">
-                            <span class="indicator active" onclick="currentSlide(1)"></span>
-                            <span class="indicator" onclick="currentSlide(2)"></span>
-                            <span class="indicator" onclick="currentSlide(3)"></span>
-                            <span class="indicator" onclick="currentSlide(4)"></span>
-                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-indicators">
+                        <span class="indicator active" onclick="currentSlide(1)"></span>
+                        <span class="indicator" onclick="currentSlide(2)"></span>
+                        <span class="indicator" onclick="currentSlide(3)"></span>
+                        <span class="indicator" onclick="currentSlide(4)"></span>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -264,7 +265,7 @@ $seo = seo()
                         <h4><?= $h4_8 ?></h4>
                         <p><?= $p_10 ?></p>
                         <p>
-                                <br><?= $p_10_1 ?>
+                            <br><?= $p_10_1 ?>
                             <br><br><?= $p_10_2 ?>
                             <br><br><?= $p_10_3 ?>
                             <br><br><?= $p_10_4 ?>
@@ -278,7 +279,7 @@ $seo = seo()
                         <h4><?= $h4_9 ?></h4>
                         <p><?= $p_11 ?></p>
                         <p>
-                                <br><?= $p_11_1 ?>
+                            <br><?= $p_11_1 ?>
                             <br><br><?= $p_11_2 ?>
                             <br><br><?= $p_11_3 ?>
                             <br><br><?= $p_11_4 ?>
@@ -298,8 +299,10 @@ $seo = seo()
                 <div class="included">
                     <h3><i class="fas fa-check-circle"></i><?= $h3_4 ?></h3>
                     <ul>
-                        <li><i class="fas fa-check"></i> Traslados turísticos desde y hacia tu hotel en Cusco (en el centro de la ciudad)</li>
-                        <li><i class="fas fa-check"></i> Tren turístico de ida y vuelta (categoría Expedition o voagager)</li>
+                        <li><i class="fas fa-check"></i> Traslados turísticos desde y hacia tu hotel en Cusco (en el centro
+                            de la ciudad)</li>
+                        <li><i class="fas fa-check"></i> Tren turístico de ida y vuelta (categoría Expedition o voagager)
+                        </li>
                         <li><i class="fas fa-check"></i> Tickets de ingreso a todos los sitios arqueológicos</li>
                         <li><i class="fas fa-check"></i> Almuerzo buffet en el Valle Sagrado</li>
                         <li><i class="fas fa-check"></i> Guía oficial bilingüe durante las visitas</li>
@@ -308,16 +311,16 @@ $seo = seo()
                     </ul>
                 </div>
                 <!-- Inclusiones 
-                <div class="not-included">
-                    <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
-                    <ul>
-                        <li><i class="fas fa-times"></i> Desayuno del primer día</li>
-                        <li><i class="fas fa-times"></i> Almuerzo en Machu Picchu</li>
-                        <li><i class="fas fa-times"></i> Seguro de viaje personal</li>
-                        <li><i class="fas fa-times"></i> Propinas</li>
-                        <li><i class="fas fa-times"></i> Seguros de viaje (se les recomienda tener uno)</li>
-                    </ul>
-                </div>-->
+                    <div class="not-included">
+                        <h3><i class="fas fa-times-circle"></i><?= $h3_5 ?></h3>
+                        <ul>
+                            <li><i class="fas fa-times"></i> Desayuno del primer día</li>
+                            <li><i class="fas fa-times"></i> Almuerzo en Machu Picchu</li>
+                            <li><i class="fas fa-times"></i> Seguro de viaje personal</li>
+                            <li><i class="fas fa-times"></i> Propinas</li>
+                            <li><i class="fas fa-times"></i> Seguros de viaje (se les recomienda tener uno)</li>
+                        </ul>
+                    </div>-->
             </div>
             <div class="important-notes">
                 <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_14 ?></h4>
@@ -452,7 +455,7 @@ $seo = seo()
             const container = document.getElementById('carouselContainer');
             const slideWidth = slides[0].offsetWidth;
             container.style.transform = `translateX(-${index * slideWidth}px)`;
-            
+
             // Actualizar indicadores
             indicators.forEach((indicator, i) => {
                 indicator.classList.toggle('active', i === index);
@@ -461,13 +464,13 @@ $seo = seo()
 
         function moveSlide(direction) {
             currentSlideIndex += direction;
-            
+
             if (currentSlideIndex >= totalSlides) {
                 currentSlideIndex = 0;
             } else if (currentSlideIndex < 0) {
                 currentSlideIndex = totalSlides - 1;
             }
-            
+
             showSlide(currentSlideIndex);
         }
 
@@ -486,62 +489,6 @@ $seo = seo()
             showSlide(currentSlideIndex);
         });
 
-        // ===== FUNCIONALIDAD DEL FORMULARIO DE RESERVA =====
-        function toggleBookingForm() {
-            const bookingSidebar = document.getElementById('bookingSidebar');
-            bookingSidebar.classList.toggle('active');
-            
-            if (bookingSidebar.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = 'auto';
-            }
-        }
 
-        // Cerrar formulario con tecla Escape
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                const bookingSidebar = document.getElementById('bookingSidebar');
-                if (bookingSidebar.classList.contains('active')) {
-                    toggleBookingForm();
-                }
-            }
-        });
-
-        // Manejar envío del formulario
-        const bookingForm = document.getElementById('bookingForm');
-        if (bookingForm) {
-            bookingForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                
-                // Validar campos requeridos
-                const requiredFields = bookingForm.querySelectorAll('[required]');
-                let isValid = true;
-                
-                requiredFields.forEach(field => {
-                    if (!field.value.trim()) {
-                        isValid = false;
-                        field.style.borderColor = '#e74c3c';
-                    } else {
-                        field.style.borderColor = '#ddd';
-                    }
-                });
-                
-                if (isValid) {
-                    alert('¡Gracias por tu solicitud! Te contactaremos en las próximas 24 horas para confirmar tu reserva.');
-                    toggleBookingForm();
-                    bookingForm.reset();
-                } else {
-                    alert('Por favor, completa todos los campos obligatorios.');
-                }
-            });
-        }
-
-        // Establecer fecha mínima como hoy
-        const tourDateInput = document.getElementById('tourDate');
-        if (tourDateInput) {
-            const today = new Date().toISOString().split('T')[0];
-            tourDateInput.min = today;
-        }
     </script>
 @endsection
