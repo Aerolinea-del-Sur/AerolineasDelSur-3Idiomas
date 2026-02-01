@@ -740,7 +740,7 @@ $seo = seo()
     <section class="cert-aero-section" style="padding: 40px 0; background-color: #f9f9f9; text-align: center;">
         <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
             <img 
-                src="{{ asset('public/img/cert-aero.webp') }}" 
+                src="{{ asset('img/cert-aero.webp') }}" 
                 alt="Certificaciones Aerolinea del Sur" 
                 style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
                 loading="lazy"
