@@ -737,12 +737,12 @@ $seo = seo()
     </section>
     
     <!-- Cert Aero Section -->
-    <section class="cert-aero-section" style="padding: 40px 0; background-color: #f9f9f9; text-align: center;">
-        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <section class="cert-aero-section" style="padding: 60px 0; background-color: #ffffff; text-align: center;">
+        <div class="cert-aero-container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: center; align-items: center;">
             <img 
                 src="{{ asset('img/cert-aero.webp') }}" 
                 alt="Certificaciones Aerolinea del Sur" 
-                style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
+                style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);"
                 loading="lazy"
             >
         </div>

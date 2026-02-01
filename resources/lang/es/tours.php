@@ -194,6 +194,27 @@ return [
     ],
 
     // =============================================================
+    // SOBREVUELO MANU
+    // =============================================================
+    'manu.title' => 'Sobrevuelo Manu',
+    'manu.subtitle' => 'Explora la biodiversidad de la Amazonía desde el aire',
+    'manu.details_desc' => 'Descubre la inmensidad del Parque Nacional del Manu desde una perspectiva única. Sobrevuela la selva virgen, observa los ríos serpenteantes y la increíble biodiversidad de una de las reservas naturales más importantes del mundo.',
+    'manu.max_group' => '8 personas',
+    'manu.duration' => '1 hora y 30 minutos',
+    'manu.highlight1_title' => 'Selva Virgen',
+    'manu.highlight1_desc' => 'Vistas panorámicas de la densa vegetación amazónica.',
+    'manu.highlight2_title' => 'Ríos Amazónicos',
+    'manu.highlight2_desc' => 'Observa la confluencia de los ríos y sus formaciones.',
+    'manu.highlight3_title' => 'Biodiversidad',
+    'manu.highlight3_desc' => 'Oportunidad de avistar la riqueza natural desde las alturas.',
+    'manu.step1_title' => '1. Despegue desde Cusco',
+    'manu.step2_title' => '2. Cruce de los Andes hacia la Amazonía',
+    'manu.step3_title' => '3. Ingreso al Parque Nacional del Manu',
+    'manu.step4_title' => '4. Sobrevuelo por la Zona Reservada',
+    'manu.step5_title' => '5. Retorno a Cusco',
+    'manu.step6_title' => '6. Aterrizaje y Traslado',
+
+    // =============================================================
     // SOBREVUELO VALLE SAGRADO Y MARAS
     // =============================================================
     'valle_maras.title' => 'Valle Sagrado y Maras',
