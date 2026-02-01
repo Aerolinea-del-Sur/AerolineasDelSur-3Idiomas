@@ -333,28 +333,25 @@ $seo = seo()
             </div>
         </div>
     </section>
-    
     <!-- JSON-LD comprimido para SEO y rich snippets -->
     <script type="application/ld+json">
-    {
-    "@context":"https://schema.org",
-    "@type":"Service",
-    "name":"<?= $h1_4 ?>",
-    "description":"<?= $p_5 ?>",
-    "provider":{"@type":"Organization","name":"Nombre de tu empresa"},
-    "hasOfferCatalog":{
-        "@type":"OfferCatalog",
-        "name":"Por qué elegirnos",
-        "itemListElement":[
-        {"@type":"Offer","itemOffered":{"@type":"Service","name":"<?= $h3_5 ?>","description":"<?= $p_6 ?>","image":"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><circle cx='40' cy='40' r='35' stroke='%23c9a227' stroke-width='3' fill='none'/><path d='M25 40L35 50L55 30' stroke='%23c9a227' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><circle cx='40' cy='40' r='8' fill='%23c9a227' opacity='0.3'/></svg>","additionalType":["<?= $span_1 ?>","<?= $span_2 ?>","<?= $span_3 ?>"]}},
-        {"@type":"Offer","itemOffered":{"@type":"Service","name":"<?= $h3_6 ?>","description":"<?= $p_7 ?>","image":"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><circle cx='40' cy='40' r='35' stroke='%23c9a227' stroke-width='3' fill='none'/><path d='M30 25H50C52.5 25 55 27.5 55 30V50C55 52.5 52.5 55 50 55H30C27.5 55 25 52.5 25 50V30C25 27.5 27.5 25 30 25Z' stroke='%23c9a227' stroke-width='3' fill='none'/><path d='M35 35H45M35 40H45M35 45H40' stroke='%23c9a227' stroke-width='2' stroke-linecap='round'/><circle cx='40' cy='40' r='12' fill='%23c9a227' opacity='0.1'/></svg>","additionalType":["<?= $span_4 ?>","<?= $span_5 ?>","<?= $span_6 ?>"]}},
-        {"@type":"Offer","itemOffered":{"@type":"Service","name":"<?= $h3_7 ?>","description":"<?= $p_8 ?>","image":"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><circle cx='40' cy='40' r='35' stroke='%23c9a227' stroke-width='3' fill='none'/><path d='M25 45C25 35 32 25 40 25C48 25 55 35 55 45' stroke='%23c9a227' stroke-width='3' fill='none'/><path d='M30 50C30 47 32 45 35 45H45C48 45 50 47 50 50V55H30V50Z' stroke='%23c9a227' stroke-width='3' fill='none'/><circle cx='40' cy='35' r='6' stroke='%23c9a227' stroke-width='2' fill='none'/><circle cx='40' cy='40' r='15' fill='%23c9a227' opacity='0.1'/></svg>","additionalType":["<?= $span_7 ?>","<?= $span_8 ?>","<?= $span_9 ?>"]}}
-        ]
-    }
-    }
+        {
+            "@context":"https://schema.org",
+            "@type":"Service",
+            "name":"<?= $h1_4 ?>",
+            "description":"<?= $p_5 ?>",
+            "provider":{"@type":"Organization","name":"Nombre de tu empresa"},
+            "hasOfferCatalog":{
+                "@type":"OfferCatalog",
+                "name":"Por qué elegirnos",
+                "itemListElement":[
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"<?= $h3_5 ?>","description":"<?= $p_6 ?>","image":"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><circle cx='40' cy='40' r='35' stroke='%23c9a227' stroke-width='3' fill='none'/><path d='M25 40L35 50L55 30' stroke='%23c9a227' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><circle cx='40' cy='40' r='8' fill='%23c9a227' opacity='0.3'/></svg>","additionalType":["<?= $span_1 ?>","<?= $span_2 ?>","<?= $span_3 ?>"]}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"<?= $h3_6 ?>","description":"<?= $p_7 ?>","image":"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><circle cx='40' cy='40' r='35' stroke='%23c9a227' stroke-width='3' fill='none'/><path d='M30 25H50C52.5 25 55 27.5 55 30V50C55 52.5 52.5 55 50 55H30C27.5 55 25 52.5 25 50V30C25 27.5 27.5 25 30 25Z' stroke='%23c9a227' stroke-width='3' fill='none'/><path d='M35 35H45M35 40H45M35 45H40' stroke='%23c9a227' stroke-width='2' stroke-linecap='round'/><circle cx='40' cy='40' r='12' fill='%23c9a227' opacity='0.1'/></svg>","additionalType":["<?= $span_4 ?>","<?= $span_5 ?>","<?= $span_6 ?>"]}},
+                {"@type":"Offer","itemOffered":{"@type":"Service","name":"<?= $h3_7 ?>","description":"<?= $p_8 ?>","image":"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><circle cx='40' cy='40' r='35' stroke='%23c9a227' stroke-width='3' fill='none'/><path d='M25 45C25 35 32 25 40 25C48 25 55 35 55 45' stroke='%23c9a227' stroke-width='3' fill='none'/><path d='M30 50C30 47 32 45 35 45H45C48 45 50 47 50 50V55H30V50Z' stroke='%23c9a227' stroke-width='3' fill='none'/><circle cx='40' cy='35' r='6' stroke='%23c9a227' stroke-width='2' fill='none'/><circle cx='40' cy='40' r='15' fill='%23c9a227' opacity='0.1'/></svg>","additionalType":["<?= $span_7 ?>","<?= $span_8 ?>","<?= $span_9 ?>"]}}
+                ]
+            }
+        }
     </script>
-
-
     <!-- Testimonios Section -->
     <section class="testimonios-section">
         <div class="testimonios-container">
@@ -563,27 +560,26 @@ $seo = seo()
     </section>
     <!-- JSON-LD de todos los testimonios -->
     <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Aerolínea del Sur",
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "bestRating": "5",
-        "reviewCount": "2847"
-    },
-    "review": [
-        {"@type":"Review","author":{"@type":"Person","name":"<?= $h4_1 ?>"},"reviewBody":"<?= $p_10 ?>","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}},
-        {"@type":"Review","author":{"@type":"Person","name":"<?= $h4_2 ?>"},"reviewBody":"<?= $p_11 ?>","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}},
-        {"@type":"Review","author":{"@type":"Person","name":"<?= $h4_3 ?>"},"reviewBody":"<?= $p_12 ?>","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}},
-        {"@type":"Review","author":{"@type":"Person","name":"<?= $h4_4 ?>"},"reviewBody":"<?= $p_13 ?>","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}},
-        {"@type":"Review","author":{"@type":"Person","name":"<?= $h4_5 ?>"},"reviewBody":"<?= $p_14 ?>","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}},
-        {"@type":"Review","author":{"@type":"Person","name":"<?= $h4_6 ?>"},"reviewBody":"<?= $p_15 ?>","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}}
-    ]
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Aerolínea del Sur",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "bestRating": "5",
+                "reviewCount": "2847"
+            },
+            "review": [
+                {"@type":"Review","author":{"@type":"Person","name":"<?= $h4_1 ?>"},"reviewBody":"<?= $p_10 ?>","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}},
+                {"@type":"Review","author":{"@type":"Person","name":"<?= $h4_2 ?>"},"reviewBody":"<?= $p_11 ?>","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}},
+                {"@type":"Review","author":{"@type":"Person","name":"<?= $h4_3 ?>"},"reviewBody":"<?= $p_12 ?>","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}},
+                {"@type":"Review","author":{"@type":"Person","name":"<?= $h4_4 ?>"},"reviewBody":"<?= $p_13 ?>","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}},
+                {"@type":"Review","author":{"@type":"Person","name":"<?= $h4_5 ?>"},"reviewBody":"<?= $p_14 ?>","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}},
+                {"@type":"Review","author":{"@type":"Person","name":"<?= $h4_6 ?>"},"reviewBody":"<?= $p_15 ?>","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}}
+            ]
+        }
     </script>
-
 
     <!-- Certificaciones Section -->
     <section class="certificaciones-section">
@@ -739,7 +735,7 @@ $seo = seo()
             </div>
         </div>
     </section>
-
+    
     <!-- FAQ Section -->
     <section class="faq-section">
         <div class="faq-container">
