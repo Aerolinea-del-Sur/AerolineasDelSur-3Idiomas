@@ -218,8 +218,14 @@ $seo = seo()
                         'url' => '/' . app()->getLocale() . '/sobrevuelo/choquequirao'
                     ],
                     [
-                        'title' => 'Lago Titicaca',
-                        'description' => __('services.overflights.titicaca.desc'),
+                        'title' => 'Lago Titicaca: El Eje de los Andes',
+                        'description' => "Una Travesía de Prestigio del Cusco al Altiplano<br><br>
+                        La integración definitiva de los destinos más emblemáticos del Perú, bajo un estándar de distinción y rigor operativo sin precedentes.<br><br>
+                        <strong>Logística de Alta Precisión:</strong> Una conexión directa que redefine la eficiencia. Diseñamos una operación fluida que se sincroniza con su agenda, garantizando una transición impecable hacia la región del Titicaca.<br>
+                        <strong>Perspectiva de Soberanía:</strong> El Lago Sagrado desde su único ángulo de grandeza. Un sobrevuelo privado que revela la inmensidad del Altiplano, permitiéndole poseer el horizonte con el confort y la claridad que solo la aviación de élite puede otorgar.<br>
+                        <strong>Garantía Institucional RAP 135:</strong> Elevamos la seguridad al nivel de doctrina. Nuestra operación se rige por los estándares más exigentes de la aviación comercial, brindando la solidez técnica y la confianza que respaldan cada uno de nuestros vuelos.<br>
+                        <strong>Visión de Excelencia:</strong> Aerolínea del Sur es el referente de la aviación privada para quienes exigen seriedad, discreción y la certeza de una gestión impecable en cada milla náutica.<br><br>
+                        <em>\"La distinción de unir dos mundos con la seguridad de quienes definen el estándar en el cielo.\"</em>",
                         'images' => [
                             '/img/sobrevuelos/titicaca-lake-1.webp',
                             '/img/sobrevuelos/titicaca-lake-2.webp',
