@@ -147,7 +147,7 @@
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-users"></i>
-                    <span>Privado</span>
+                    <span>hasta 9 pasajeros</span>
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-star"></i>
@@ -170,7 +170,6 @@
                             <div>
                                 <h4><?= $h4_1 ?></h4>
                                 <p><?= $p_3 ?></p>
-
                             </div>
                         </div>
                         <div class="detail-item">
