@@ -264,11 +264,8 @@
                 <div class="included">
                     <h3><i class="fas fa-check-circle"></i><?= $h3_4 ?></h3>
                     <ul>
-                        <li><i class="fas fa-check"></i> <?= __('tours.common.included1') ?></li>
-                        <li><i class="fas fa-check"></i> <?= __('tours.common.included2') ?></li>
-                        <li><i class="fas fa-check"></i> <?= __('tours.common.included3') ?></li>
-                        <li><i class="fas fa-check"></i> <?= __('tours.common.included4') ?></li>
-                        <li><i class="fas fa-check"></i> <?= __('tours.common.included6') ?></li>
+                        <li><i class="fas fa-check"></i> <?= __('SEA (servicios aeroportuarios )') ?></li>
+                        <li><i class="fas fa-check"></i> <?= __('TUA (Tarifa de Uso de Aeropuerto)') ?></li>
                     </ul>
                 </div>
                 <!-- Inclusiones

@@ -248,7 +248,7 @@ return [
     'vinicunca_elite.step5_title' => '5. enigmática Palcoyo',
 
     // Inclusiones comunes para Nazca, Titicaca y Valle Maras
-    'common.included1' => 'Vuelo privado en avión ligero',
+    'common.included1' => 'servicios aeroportuarios',
     'common.included2' => 'Traslados privados hotel – aeropuerto – hotel',
     'common.included3' => 'Regalo andino',
     'common.included4' => 'Catering ligero a bordo',
