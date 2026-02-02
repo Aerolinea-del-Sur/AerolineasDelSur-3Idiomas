@@ -92,6 +92,29 @@
     $h3_6 = __('tours.choquequirao.booking_title');
 
     $p_20 = __('tours.choquequirao.booking_note');
+
+    $benefits = [
+        [
+            'title' => 'Seguridad Certificada',
+            'desc' => 'Operaciones bajo normativa RAP 135, cumpliendo con los estándares de aviación civil más estrictos.'
+        ],
+        [
+            'title' => 'Acceso Directo',
+            'desc' => 'Aterrizamos en la pista de Boca Manu, ahorrándole horas de viaje fluvial y terrestre.'
+        ],
+        [
+            'title' => 'Logística Especializada',
+            'desc' => 'Expertos en el transporte de pasajeros, equipos científicos y carga hacia zonas remotas.'
+        ],
+        [
+            'title' => 'Flexibilidad de Horarios',
+            'desc' => 'Salidas programadas según sus necesidades desde Cusco y otros puntos estratégicos.'
+        ],
+        [
+            'title' => 'Experiencia en la Ruta',
+            'desc' => 'Pilotos con amplia trayectoria en las condiciones geográficas específicas de la selva peruana.'
+        ]
+    ];
     ?>
 
     <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">
@@ -195,6 +218,17 @@
                             <span class="indicator" onclick="currentSlide(3)"></span>
                             <span class="indicator" onclick="currentSlide(4)"></span>
                         </div>
+                    </div>
+                    
+                    <div class="gallery-benefits" style="margin-top: 25px; background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #0056b3;">
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <?php foreach ($benefits as $benefit): ?>
+                            <li style="margin-bottom: 12px; display: flex; align-items: flex-start; color: #444;">
+                                <i class="fas fa-check-circle" style="color: #28a745; margin-right: 12px; margin-top: 4px; font-size: 1.1em;"></i>
+                                <span><strong style="color: #222;"><?= $benefit['title'] ?>:</strong> <?= $benefit['desc'] ?></span>
+                            </li>
+                            <?php endforeach; ?>
+                        </ul>
                     </div>
                 </div>
             </div>
