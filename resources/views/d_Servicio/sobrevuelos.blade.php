@@ -252,7 +252,7 @@ $seo = seo()
                         'url' => '/' . app()->getLocale() . '/sobrevuelo/nazca-lines'
                     ],
                     [
-                        'title' => $h2_4, // Valle Sagrado
+                        'title' => Expedición Sagrada: El Corazón de los Andes, // Valle Sagrado
                         'description' => $p_5,
                         'images' => [
                             '/img/sobrevuelos/sacred-valley-1.webp',
