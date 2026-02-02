@@ -1,5 +1,6 @@
 @php
-    $tour_name = 'Parque Nacional del Manu';
+    /*
+    $tour_name = 'Boca Manu';
     $seo = seo()
         ->title('Sobrevuelo al Parque Nacional del Manu - Aerolíneas del Sur')
         ->description('Explora la selva del Manu desde el aire. Una experiencia única sobrevolando la Amazonía peruana, ríos y biodiversidad.')
@@ -11,6 +12,7 @@
             '@type' => 'TouristAttraction',
             'name' => 'Sobrevuelo Parque Nacional del Manu'
         ]);
+    */
 @endphp
 
 @extends('a_EncabezadoFooter.princi')
