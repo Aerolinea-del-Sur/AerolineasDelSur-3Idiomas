@@ -182,7 +182,7 @@ $seo = seo()
         <!-- Contenido prioritario - se renderiza PRIMERO -->
         <div class="hero-content">
             <h1 class="hero-title"> <?= $h1_1 ?> <span class="highlight"> <?= $h1_2 ?> </span></h1>
-            <p class="hero-subtitle" style="text-align: center; color: #0E0D0A;">
+            <p class="hero-subtitle" style="text-align: center; color: #ffffff;">
                 <?= $p1_1 ?>
             </p>
         </div>
@@ -737,7 +737,7 @@ $seo = seo()
     </section>
     
     <!-- Cert Aero Section -->
-    <section class="cert-aero-section" style="padding: 60px 0; background-color: #ffffff; text-align: center;">
+    <section class="cert-aero-section" style="padding: 60px 0; background-color: #0E0D0A; text-align: center;">
         <div class="cert-aero-container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: center; align-items: center;">
             <img 
                 src="{{ asset('img/cert-aero.webp') }}" 
