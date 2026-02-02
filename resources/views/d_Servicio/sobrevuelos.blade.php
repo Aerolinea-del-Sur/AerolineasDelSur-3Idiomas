@@ -340,10 +340,6 @@ $seo = seo()
                                 <i class="fas fa-map-marker-alt"></i>
                                 <span itemprop="address"><?= $tour['location'] ?></span>
                             </div>
-                            <div class="detail">
-                                <i class="<?= $tour['extra_icon'] ?>"></i>
-                                <span><?= $tour['extra_text'] ?></span>
-                            </div>
                         </div>
                         <a href="<?= $tour['url'] ?>" class="tour-btn" itemprop="url" title="{{ __('common.button.reserve') }} <?= $tour['title'] ?>">
                             <span>{{ __('common.button.learn_more') }}</span>
