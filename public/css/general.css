@@ -46,8 +46,8 @@
 
 body {
     font-family: 'Space Grotesk', sans-serif;
-    background: linear-gradient(135deg, #1D1D1D, var(--charcoal) 50%, var(--charcoal-alt) 100%);
-    color: #C9A227;
+    /*background: linear-gradient(135deg, #1D1D1D, var(--charcoal) 50%, var(--charcoal-alt) 100%);
+    color: #C9A227;*/
     line-height: 1.6;
     overflow-x: hidden;
     padding-top: var(--header-height);
