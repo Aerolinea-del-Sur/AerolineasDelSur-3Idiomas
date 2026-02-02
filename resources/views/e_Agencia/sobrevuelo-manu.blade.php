@@ -115,6 +115,8 @@
             'desc' => 'Pilotos con amplia trayectoria en las condiciones geográficas específicas de la selva peruana.'
         ]
     ];
+
+    $note_operational = "En Aerolínea del Sur, nuestra capacidad operativa va más allá del vuelo. Al tener a nuestro cargo la administración y gestión en Boca Manu, aseguramos a nuestros clientes una experiencia logística fluida y sin contratiempos. Este control directo sobre la infraestructura en la selva nos permite ofrecer una eficiencia superior, facilitando el despliegue inmediato de recursos y garantizando que su llegada al corazón de la Amazonía sea gestionada bajo nuestros propios estándares de excelencia.";
     ?>
 
     <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">
@@ -180,6 +182,15 @@
                                 <p><?= $p_5 ?></p>
                             </div>
                         </div>
+                    </div>
+                    
+                    <div class="operational-note" style="margin-top: 30px; padding: 25px; background-color: #fff8e1; border-left: 5px solid #ffc107; border-radius: 6px; box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
+                        <h4 style="color: #856404; margin-top: 0; margin-bottom: 15px; font-size: 1.1rem; display: flex; align-items: center;">
+                            <i class="fas fa-plane-departure" style="margin-right: 10px;"></i> Excelencia Operativa
+                        </h4>
+                        <p style="margin: 0; color: #555; line-height: 1.7; font-size: 0.95rem;">
+                            <?= $note_operational ?>
+                        </p>
                     </div>
                 </div>
                 <div class="gallery-section">
