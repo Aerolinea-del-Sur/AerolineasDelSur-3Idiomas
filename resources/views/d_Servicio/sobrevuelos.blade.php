@@ -213,8 +213,6 @@ $seo = seo()
                         'pax' => __('common.up_to') . ' 8 ' . __('common.people'),
                         'location' => 'Cusco, Perú',
                         'badge' => __('common.overflight'),
-                        'extra_icon' => 'fas fa-mountain',
-                        'extra_text' => __('common.archaeological_adventure'),
                         'url' => '/' . app()->getLocale() . '/sobrevuelo/choquequirao'
                     ],
                     [
@@ -281,8 +279,7 @@ $seo = seo()
                     ],
                     [
                         'title' => 'Expedición Sagrada: El Corazón de los Andes', // Vinicunca
-                        'description' => "
-                        <strong>Domine el horizonte en un viaje que lo tiene todo:</strong><br>
+                        'description' => "<strong>Domine el horizonte en un viaje que lo tiene todo:</strong><br>
                         <strong>Apu Ausangate:</strong> La majestuosidad del gigante de hielo frente a sus ojos.<br>
                         <strong>4 Lagunas de Cristal:</strong> Un collar de espejos turquesa oculto entre las cumbres.<br>
                         <strong>Valle Rojo:</strong> El paisaje surrealista que desafía la realidad.<br>
