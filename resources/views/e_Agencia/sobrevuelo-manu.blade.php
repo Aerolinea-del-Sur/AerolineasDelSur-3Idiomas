@@ -16,11 +16,11 @@
 @endphp
 
 @extends('a_EncabezadoFooter.princi')
-
+{{-- 
 @push('seo')
-    {!! $seo !!}
+        {!! $seo !!}
 @endpush
-
+--}}
 
 @section('content')
 
