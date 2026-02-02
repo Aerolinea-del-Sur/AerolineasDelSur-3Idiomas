@@ -117,6 +117,11 @@
     ];
 
     $note_operational = "En Aerolínea del Sur, nuestra capacidad operativa va más allá del vuelo. Al tener a nuestro cargo la administración y gestión en Boca Manu, aseguramos a nuestros clientes una experiencia logística fluida y sin contratiempos. Este control directo sobre la infraestructura en la selva nos permite ofrecer una eficiencia superior, facilitando el despliegue inmediato de recursos y garantizando que su llegada al corazón de la Amazonía sea gestionada bajo nuestros propios estándares de excelencia.";
+
+    $h2_exclusive = "El Arte de Dominar la Amazonía: Su Acceso Privado a Boca Manu";
+    $p_exclusive_1 = "Existen destinos que solo unos pocos logran conquistar con verdadera distinción. En Aerolínea del Sur, hemos convertido el acceso a la selva en una experiencia de absoluta precisión. Al ser los administradores exclusivos y gestores estratégicos de la infraestructura en Boca Manu, le otorgamos la llave de un territorio donde el tiempo y la seguridad son el mayor lujo.";
+    $p_exclusive_2 = "Nuestra posición de liderazgo nos permite ofrecerle lo que nadie más posee: la prioridad absoluta sobre el destino. No dependemos de terceros; nosotros definimos el estándar. Al elegirnos, usted se asegura una transición impecable entre el cielo y la tierra, respaldada por autorizaciones oficiales y una logística propia que garantiza un despliegue sin demoras.";
+    $p_exclusive_3 = "Permítase la tranquilidad de volar con quienes custodian y operan la puerta de entrada al Manu. Porque cuando la eficiencia es vital y la exclusividad es la norma, solo existe un camino directo.";
     ?>
 
     <link rel="stylesheet" href="{{ asset('public/css/paginas/agencia/1_TourGeneral.css') }}">
@@ -242,6 +247,18 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Exclusiva -->
+    <section class="exclusive-access" style="padding: 60px 0; background-color: #1a1a1a; color: #fff; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 30px; color: #d4af37; font-family: 'Playfair Display', serif;"><?= $h2_exclusive ?></h2>
+            <div style="max-width: 900px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8; color: #e0e0e0;">
+                <p style="margin-bottom: 20px;"><?= $p_exclusive_1 ?></p>
+                <p style="margin-bottom: 20px;"><?= $p_exclusive_2 ?></p>
+                <p style="margin: 0; font-style: italic; color: #fff;"><?= $p_exclusive_3 ?></p>
             </div>
         </div>
     </section>
