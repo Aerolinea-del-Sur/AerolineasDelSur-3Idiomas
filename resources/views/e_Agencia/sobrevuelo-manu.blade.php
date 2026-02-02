@@ -252,13 +252,13 @@
     </section>
 
     <!-- Sección Exclusiva -->
-    <section class="exclusive-access" style="padding: 60px 0; background-color: #f9f9f9; color: #333; text-align: center;">
+    <section class="exclusive-access" style="padding: 60px 0; background-color: #1a1a1a; color: #fff; text-align: center;">
         <div class="container">
-            <h2 style="font-size: 2.5rem; margin-bottom: 30px; color: #2c3e50; font-family: 'Playfair Display', serif;"><?= $h2_exclusive ?></h2>
-            <div style="max-width: 900px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8; color: #555;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 30px; color: #d4af37; font-family: 'Playfair Display', serif;"><?= $h2_exclusive ?></h2>
+            <div style="max-width: 900px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8; color: #e0e0e0;">
                 <p style="margin-bottom: 20px;"><?= $p_exclusive_1 ?></p>
                 <p style="margin-bottom: 20px;"><?= $p_exclusive_2 ?></p>
-                <p style="margin: 0; font-style: italic; color: #0056b3; font-weight: 600;"><?= $p_exclusive_3 ?></p>
+                <p style="margin: 0; font-style: italic; color: #fff;"><?= $p_exclusive_3 ?></p>
             </div>
         </div>
     </section>
@@ -390,24 +390,6 @@
                     <li><?= __('tours.common.note1') ?></li>
                     <li><?= __('tours.common.note3') ?></li>
                 </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sello de Confianza -->
-    <section class="trust-seal" style="padding: 40px 0; background-color: #fff;">
-        <div class="container">
-            <div class="trust-box" style="background-color: #f8f9fa; padding: 40px; border-radius: 8px; text-align: center; border: 1px solid #e9ecef; max-width: 900px; margin: 0 auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-                <div class="trust-icons" style="margin-bottom: 25px; color: #0056b3; font-size: 2.2rem;">
-                    <i class="fas fa-shield-alt" title="Seguridad" style="margin: 0 20px;"></i>
-                    <i class="fas fa-clock" title="Eficiencia" style="margin: 0 20px;"></i>
-                    <i class="fas fa-medal" title="Calidad" style="margin: 0 20px;"></i>
-                </div>
-                <h3 style="margin-bottom: 20px; color: #2c3e50; font-family: 'Playfair Display', serif; font-size: 1.8rem;">Su confianza es nuestro activo más valioso</h3>
-                <p style="color: #555; line-height: 1.8; font-size: 1.05rem; max-width: 800px; margin: 0 auto;">
-                    En Aerolínea del Sur, nuestra promesa de satisfacción no es solo una palabra, es un estándar de cumplimiento respaldado por la gestión directa de nuestra infraestructura y el rigor de nuestras autorizaciones vigentes.<br><br>
-                    Al confiarnos su viaje, usted adquiere el respaldo de una organización que domina cada variable del trayecto. Nos comprometemos a brindarle una logística de máxima fluidez, seguridad técnica innegociable y una atención personalizada que entiende la importancia de su tiempo y sus objetivos. Vuele con la tranquilidad de saber que cada detalle está bajo el control de los expertos que operan la puerta de entrada a la Amazonía. Su satisfacción es nuestra ruta establecida.
-                </p>
             </div>
         </div>
     </section>
