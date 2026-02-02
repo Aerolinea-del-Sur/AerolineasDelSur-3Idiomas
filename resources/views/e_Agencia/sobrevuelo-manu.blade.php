@@ -1,15 +1,15 @@
 @php
-    $tour_name = 'Valle Sagrado y Maras';
+    $tour_name = 'Parque Nacional del Manu';
     $seo = seo()
-        ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
-        ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
-        ->keywords(['sobrevuelo valle sagrado', 'tour aéreo maras', 'helicóptero cusco valle sagrado', 'sobrevuelo moray'])
-        ->image(asset('img/tours/sobrevuelo-valle-maras.jpg'))
-        ->canonical(url(app()->getLocale() . '/sobrevuelo/valle-maras'))
+        ->title('Sobrevuelo al Parque Nacional del Manu - Aerolíneas del Sur')
+        ->description('Explora la selva del Manu desde el aire. Una experiencia única sobrevolando la Amazonía peruana, ríos y biodiversidad.')
+        ->keywords(['sobrevuelo manu', 'tour aéreo manu', 'selva peruana vuelo', 'parque nacional manu helicoptero'])
+        ->image(asset('img/tours/manu-general.jpg'))
+        ->canonical(url(app()->getLocale() . '/sobrevuelo/manu'))
         ->addSchema([
             '@context' => 'https://schema.org',
             '@type' => 'TouristAttraction',
-            'name' => 'Sobrevuelo Valle Sagrado y Maras'
+            'name' => 'Sobrevuelo Parque Nacional del Manu'
         ]);
 @endphp
 
@@ -23,51 +23,51 @@
 @section('content')
 
     <?php
-    $h1_1 = __('tours.valle_maras.title');
-    $p_1 = __('tours.valle_maras.subtitle');
+    $h1_1 = 'Sobrevuelo al Parque Nacional del Manu';
+    $p_1 = 'Explora la biodiversidad más rica del mundo desde el cielo.';
 
     $h2_1 = __('tours.tour_details');
-    $p_2 = __('tours.valle_maras.details_desc');
+    $p_2 = 'Experimenta la inmensidad de la Amazonía peruana. Vuela sobre ríos serpenteantes, bosques vírgenes y observa la vida silvestre desde una perspectiva única en este tour aéreo exclusivo al Parque Nacional del Manu.';
 
     $h4_1 = __('tours.max_group');
-    $p_3 = __('tours.valle_maras.max_group');
+    $p_3 = 'Privado (Hasta 5 pasajeros)';
 
     $h4_2 = __('tours.min_age');
-    $p_4 = __('tours.choquequirao.min_age');
+    $p_4 = '3 años';
 
     $h4_3 = __('tours.duration');
-    $p_5 = __('tours.valle_maras.duration');
+    $p_5 = '1 Hora y 30 Minutos de Vuelo';
 
     $h3_1 = __('tours.image_gallery');
 
-    $h2_2 = __('tours.choquequirao.summary_title');
+    $h2_2 = 'Resumen de la Experiencia';
 
-    $h3_2 = __('tours.choquequirao.highlights_title');
+    $h3_2 = 'Lo más destacado';
 
-    $h4_4 = __('tours.valle_maras.highlight1_title');
-    $p_6 = __('tours.valle_maras.highlight1_desc');
+    $h4_4 = 'Biodiversidad Única';
+    $p_6 = 'Observa el hogar de miles de especies de flora y fauna desde el aire.';
 
-    $h4_5 = __('tours.valle_maras.highlight2_title');
-    $p_7 = __('tours.valle_maras.highlight2_desc');
+    $h4_5 = 'Ríos Amazónicos';
+    $p_7 = 'Vistas impresionantes del Río Madre de Dios y sus afluentes.';
 
-    $h4_6 = __('tours.valle_maras.highlight3_title');
-    $p_8 = __('tours.valle_maras.highlight3_desc');
+    $h4_6 = 'Bosque Virgen';
+    $p_8 = 'Contempla la densa vegetación de una de las reservas más importantes del mundo.';
 
-    $h3_3 = __('tours.choquequirao.stats_title');
+    $h3_3 = 'Estadísticas del Vuelo';
 
     $h2_3 = __('tours.nazca.itinerary_title');
 
-    $h4_7 = __('tours.valle_maras.step1_title');
+    $h4_7 = 'Despegue desde Cusco';
 
-    $h4_8 = __('tours.valle_maras.step2_title');
+    $h4_8 = 'Cruce de los Andes';
 
-    $h4_9 = __('tours.valle_maras.step3_title');
+    $h4_9 = 'Ingreso a la Cuenca Amazónica';
 
-    $h4_10 = __('tours.valle_maras.step4_title');
+    $h4_10 = 'Sobrevuelo Zona Cultural del Manu';
 
-    $h4_11 = __('tours.valle_maras.step5_title');
+    $h4_11 = 'Avistamiento de Ríos y Selva Baja';
 
-    $h4_12 = __('tours.valle_maras.step6_title');
+    $h4_12 = 'Retorno a Cusco';
 
     $h2_4 = __('tours.choquequirao.inclusions_title');
 
@@ -96,7 +96,7 @@
     <!-- Sección Hero -->
     <section class="tour-hero">
         <div class="hero-background">
-            <img src="{{ asset('img/sobrevuelos/sacred-valley-1.webp') }}" alt="Valle Sagrado desde el aire">
+            <img src="{{ asset('img/sobrevuelos/sacred-valley-1.webp') }}" alt="Parque Nacional del Manu desde el aire">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -111,15 +111,15 @@
             <div class="tour-meta">
                 <div class="meta-item">
                     <i class="fas fa-clock"></i>
-                    <span>1 hora</span>
+                    <span>1 hora 30 min</span>
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-users"></i>
-                    <span>Hasta 8 personas</span>
+                    <span>Privado</span>
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-star"></i>
-                    <span>4.9/5</span>
+                    <span>5.0/5</span>
                 </div>
             </div>
         </div>
@@ -162,23 +162,23 @@
                     <div class="image-carousel">
                         <div class="carousel-container" id="carouselContainer">
                             <div class="carousel-slide active">
-                                <img src="/img/tours/valle-sagrado-maras-1.webp" alt="Vista aérea del Valle Sagrado">
+                                <img src="/img/tours/valle-sagrado-maras-1.webp" alt="Vista aérea del Parque del Manu">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/img/tours/valle-sagrado-maras-2.webp" alt="Valle Sagrado desde el aire">
+                                <img src="/img/tours/valle-sagrado-maras-2.webp" alt="Selva del Manu desde el aire">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/img/tours/valle-sagrado-maras-3.webp" alt="Montañas andinas">
+                                <img src="/img/tours/valle-sagrado-maras-3.webp" alt="Montañas y Selva">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/img/tours/valle-sagrado-maras-4.webp" alt="Río Urubamba">
+                                <img src="/img/tours/valle-sagrado-maras-4.webp" alt="Ríos de la Amazonía">
                             </div>
                             <div class="carousel-slide">
-                                <img src="/img/sobrevuelos/sobrevuelo-valle-sagrado.webp" alt="Sobrevuelo Valle Sagrado">
+                                <img src="/img/sobrevuelos/sobrevuelo-valle-sagrado.webp" alt="Sobrevuelo Manu">
                             </div>
                             <div class="carousel-slide">
                                 <img src="/img/sobrevuelos/sobrevuelo-valle-sagrado-cusco.webp"
-                                    alt="Sobrevuelo Valle Sagrado Cusco">
+                                    alt="Sobrevuelo Manu Cusco">
                             </div>
                         </div>
                         <button class="carousel-btn prev" onclick="moveSlide(-1)">
