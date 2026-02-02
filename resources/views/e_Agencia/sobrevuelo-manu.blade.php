@@ -174,13 +174,6 @@
                             </div>
                         </div>
                         <div class="detail-item">
-                            <i class="fas fa-user-plus"></i>
-                            <div>
-                                <h4><?= $h4_2 ?></h4>
-                                <p><?= $p_4 ?></p>
-                            </div>
-                        </div>
-                        <div class="detail-item">
                             <i class="fas fa-clock"></i>
                             <div>
                                 <h4><?= $h4_3 ?></h4>
@@ -257,6 +250,7 @@
             <h2 style="font-size: 2.5rem; margin-bottom: 30px; color: #d4af37; font-family: 'Playfair Display', serif;"><?= $h2_exclusive ?></h2>
             <div style="max-width: 900px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8; color: #e0e0e0;">
                 <p style="margin-bottom: 20px;"><?= $p_exclusive_1 ?></p>
+                <p style="margin-bottom: 20px;"><?= $p_exclusive_2 ?></p>
                 <p style="margin: 0; font-style: italic; color: #fff;"><?= $p_exclusive_3 ?></p>
             </div>
         </div>
