@@ -236,7 +236,12 @@ $seo = seo()
                     ],
                     [
                         'title' => 'Cusco – Nazca: La Conexión de Élite',
-                        'description' => __('services.overflights.nazca.desc'), // __('services.overflights.nazca.desc'),
+                        'description' => "El único puente aéreo de alta gama que une los dos legados más grandes del Perú con precisión absoluta.<br><br>
+                        <strong>Aterrizaje Directo:</strong> Conectamos Cusco con el Aeropuerto María Reiche. Sin escalas, sin demoras; aterrizamos en el corazón de la historia.<br>
+                        <strong>Seguridad Certificada:</strong> Operamos bajo RAP 135. El estándar de oro que garantiza una operación técnica impecable y blindada.<br>
+                        <strong>Perspectiva Soberana:</strong> Domine el horizonte de Nazca desde una cabina de confort superior. La visión que solo la exclusividad privada puede otorgar.<br>
+                        <strong>Gestión de Prestigio:</strong> Discreción, puntualidad y la seriedad de una compañía líder.<br><br>
+                        <em>\"La excelencia no se explica, se vuela. Aerolínea del Sur: El estándar de quienes dominan el cielo.\"</em>",
                         'images' => [
                             '/img/sobrevuelos/nazca-lines-1.webp',
                             '/img/sobrevuelos/nazca-lines-2.webp',
