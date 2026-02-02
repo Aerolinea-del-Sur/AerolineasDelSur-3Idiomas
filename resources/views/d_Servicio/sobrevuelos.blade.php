@@ -274,8 +274,14 @@ $seo = seo()
                         'url' => '/' . app()->getLocale() . '/sobrevuelo/valle-maras'
                     ],
                     [
-                        'title' => $h2_6, // Vinicunca
-                        'description' => $p_7,
+                        'title' => 'Expedición Sagrada: El Corazón de los Andes', // Vinicunca
+                        'description' => "
+                        <strong>Domine el horizonte en un viaje que lo tiene todo:</strong><br>
+                        <strong>Apu Ausangate:</strong> La majestuosidad del gigante de hielo frente a sus ojos.<br>
+                        <strong>4 Lagunas de Cristal:</strong> Un collar de espejos turquesa oculto entre las cumbres.<br>
+                        <strong>Valle Rojo:</strong> El paisaje surrealista que desafía la realidad.<br>
+                        <strong>Vinicunca:</strong> La Montaña de Colores revelada en su máxima gloria, sin esfuerzo y con total exclusividad.<br><br>
+                        <em>\"No solo vuele. Conquiste la perspectiva que pocos logran conocer.\"</em>",
                         'images' => [
                             '/img/sobrevuelos/vinicunca-mountain-1.webp',
                             '/img/sobrevuelos/vinicunca-mountain-2.webp',
