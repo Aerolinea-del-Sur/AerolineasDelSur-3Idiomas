@@ -28,7 +28,7 @@ $seo = seo()
         $h2_3 = __('services.overflights.treasures.title', ['default' => 'Tesoros del Cusco']);
         $p_4 = __('services.overflights.treasures.desc', ['default' => 'Descubre Valle Sagrado y Machu Picchu en un tour exclusivo por los principales atractivos del Cusco.']);
 
-        $h2_4 = __('services.overflights.sacred_valley.title', ['default' => 'Valle Sagrado']);
+        $h2_4 = __('services.overflights.sacred_valley.title', ['default' => 'Expedición Sagrada: El Corazón de los Andes']);
         $p_5 = __('services.overflights.sacred_valley.desc', ['default' => 'Descubre Sacsayhuamán, Tambomachay, Pisac, Valle Sagrado, Maras y Laguna de Huaypo desde las alturas.']);
 
         $h2_5 = __('services.overflights.rainbow_mountain.title', ['default' => 'Montaña de Siete Colores']);
@@ -251,42 +251,6 @@ $seo = seo()
                         'extra_text' => __('common.world_heritage'),
                         'url' => '/' . app()->getLocale() . '/sobrevuelo/nazca-lines'
                     ],
-                    //[
-                    //    'title' => 'Salar de Uyuni',
-                    //    'description' => 'Vuela sobre el espejo natural más grande del planeta, donde el cielo y la tierra se funden en el horizonte.',
-                    //    'images' => [
-                    //        '/img/tours/andes-magicos-1.jpg',
-                    //        '/img/tours/andes-magicos-2.jpg',
-                    //        '/img/tours/andes-magicos-3.jpg',
-                    //        '/img/tours/andes-magicos-4.jpg'
-                    //    ],
-                    //    'duration' => '3h',
-                    //    'pax' => 'Hasta 6 personas',
-                    //    'location' => 'Uyuni, Bolivia',
-                    //    'badge' => 'Sobrevuelo',
-                    //    'extra_icon' => 'fas fa-globe',
-                    //    'extra_text' => 'Maravilla Infinita',
-                    //    'url' => '/agencia/uyuni'
-                    //],
-
-                    // Tours Existentes
-                    //[
-                    //    'title' => $h2_2, // Andes Mágicos
-                    //    'description' => $p_3,
-                    //    'images' => [
-                    //        'https://upload.wikimedia.org/wikipedia/commons/d/dd/Ausangate.jpg',
-                    //        'https://www.peru.travel/Contenido/Atractivo/Imagen/es/189/1.1/Principal/montana-siete-colores.jpg',
-                    //        'https://media.istockphoto.com/id/1136437406/es/foto/monta%C3%B1a-arcoiris-en-los-andes-per%C3%BA.jpg?s=612x612&w=0&k=20&c=X_X_X_X_X_X_X_X_X_X_X_X_X',
-                    //        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Rainbow_Mountain_Peru.jpg/1200px-Rainbow_Mountain_Peru.jpg'
-                    //    ],
-                    //    'duration' => '1 horas',
-                    //    'pax' => 'Hasta 4 personas',
-                    //    'location' => 'Cusco, Perú',
-                    //    'badge' => 'Sobrevuelo',
-                    //    'extra_icon' => 'fas fa-star',
-                    //    'extra_text' => 'Experiencia única',
-                    //    'url' => '/agencia/andes-magicos'
-                    //],
                     [
                         'title' => $h2_4, // Valle Sagrado
                         'description' => $p_5,
