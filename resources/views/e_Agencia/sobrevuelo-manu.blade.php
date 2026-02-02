@@ -143,7 +143,7 @@
             <div class="tour-meta">
                 <div class="meta-item">
                     <i class="fas fa-clock"></i>
-                    <span>1 hora 30 min</span>
+                    <span>40 minutos</span>
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-users"></i>
@@ -151,7 +151,7 @@
                 </div>
                 <div class="meta-item">
                     <i class="fas fa-star"></i>
-                    <span>5.0/5</span>
+                    <span>5.0/5.0</span>
                 </div>
             </div>
         </div>
