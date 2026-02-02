@@ -394,6 +394,24 @@
         </div>
     </section>
 
+    <!-- Sello de Confianza -->
+    <section class="trust-seal" style="padding: 40px 0; background-color: #fff;">
+        <div class="container">
+            <div class="trust-box" style="background-color: #fcfcfc; padding: 40px; border-radius: 8px; text-align: center; border: 1px solid #e0e0e0; max-width: 900px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+                <div class="trust-icons" style="margin-bottom: 25px; color: #d4af37; font-size: 2.2rem;">
+                    <i class="fas fa-shield-alt" title="Seguridad" style="margin: 0 20px;"></i>
+                    <i class="fas fa-clock" title="Eficiencia" style="margin: 0 20px;"></i>
+                    <i class="fas fa-medal" title="Calidad" style="margin: 0 20px;"></i>
+                </div>
+                <h3 style="margin-bottom: 20px; color: #333; font-family: 'Playfair Display', serif; font-size: 1.8rem;">Su confianza es nuestro activo más valioso</h3>
+                <p style="color: #555; line-height: 1.8; font-size: 1.05rem; max-width: 800px; margin: 0 auto;">
+                    En Aerolínea del Sur, nuestra promesa de satisfacción no es solo una palabra, es un estándar de cumplimiento respaldado por la gestión directa de nuestra infraestructura y el rigor de nuestras autorizaciones vigentes.<br><br>
+                    Al confiarnos su viaje, usted adquiere el respaldo de una organización que domina cada variable del trayecto. Nos comprometemos a brindarle una logística de máxima fluidez, seguridad técnica innegociable y una atención personalizada que entiende la importancia de su tiempo y sus objetivos. Vuele con la tranquilidad de saber que cada detalle está bajo el control de los expertos que operan la puerta de entrada a la Amazonía. Su satisfacción es nuestra ruta establecida.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- Tours Recomendados -->
     <section class="recommended-tours">
         <div class="container">
