@@ -71,7 +71,7 @@
 
     $h4_12 = 'Retorno a Cusco';
 
-    $h2_4 = __('tours.choquequirao.inclusions_title');
+    $h2_4 = __('Información del tour'); //('tours.choquequirao.inclusions_title');
 
     $h3_4 = __('tours.choquequirao.included_title');
     $h3_5 = __('tours.choquequirao.notincluded_title');
