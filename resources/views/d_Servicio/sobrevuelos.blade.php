@@ -234,8 +234,6 @@ $seo = seo()
                         'pax' => __('common.up_to') . ' 8 ' . __('common.people'),
                         'location' => 'Puno, Perú',
                         'badge' => __('common.overflight'),
-                        'extra_icon' => 'fas fa-water',
-                        'extra_text' => __('common.natural_wonder'),
                         'url' => '/' . app()->getLocale() . '/sobrevuelo/titicaca-lake'
                     ],
                     [
@@ -256,8 +254,6 @@ $seo = seo()
                         'pax' => __('common.up_to') . ' 8 ' . __('common.people'),
                         'location' => 'Ica, Perú',
                         'badge' => __('common.overflight'),
-                        'extra_icon' => 'fas fa-eye',
-                        'extra_text' => __('common.world_heritage'),
                         'url' => '/' . app()->getLocale() . '/sobrevuelo/nazca-lines'
                     ],
                     [
@@ -273,8 +269,6 @@ $seo = seo()
                         'pax' => 'Hasta 8 personas',
                         'location' => 'Cusco, Perú',
                         'badge' => 'Sobrevuelo',
-                        'extra_icon' => 'fas fa-water',
-                        'extra_text' => 'Incluye lagunas',
                         'url' => '/' . app()->getLocale() . '/sobrevuelo/valle-maras'
                     ],
                     [
@@ -295,8 +289,6 @@ $seo = seo()
                         'pax' => 'Hasta 8 personas',
                         'location' => 'Cusco, Perú',
                         'badge' => 'Sobrevuelo',
-                        'extra_icon' => 'fas fa-crown',
-                        'extra_text' => 'Experiencia elite',
                         'url' => '/' . app()->getLocale() . '/sobrevuelo/vinicunca-elite'
                     ]
                 ];
