@@ -32,13 +32,13 @@
     $p_2 = 'En Aerolínea del Sur, lideramos la conexión aérea hacia la biósfera del Manu. Contamos con operaciones certificadas bajo la normativa RAP 135, garantizando los más altos estándares de seguridad y eficiencia en cada aterrizaje. Nuestro servicio de vuelos chárter a Boca Manu ofrece una solución logística rápida y confiable para turismo especializado y proyectos estratégicos, uniendo la comodidad con la precisión técnica que solo nuestra flota puede ofrecer. Descubra la Amazonía con la aerolínea que domina las rutas más exigentes del Perú';
 
     $h4_1 = __('tours.max_group');
-    $p_3 = 'Privado (Hasta 5 pasajeros)';
+    $p_3 = 'Privado (Hasta 9 pasajeros)';
 
     $h4_2 = __('tours.min_age');
     $p_4 = '3 años';
 
     $h4_3 = __('tours.duration');
-    $p_5 = '1 Hora y 30 Minutos de Vuelo';
+    $p_5 = '40 minutoss';
 
     $h3_1 = __('tours.image_gallery');
 
