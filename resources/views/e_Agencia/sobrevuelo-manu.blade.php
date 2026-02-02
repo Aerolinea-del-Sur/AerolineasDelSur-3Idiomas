@@ -25,11 +25,11 @@
 @section('content')
 
     <?php
-    $h1_1 = 'Sobrevuelo al Parque Nacional del Manu';
-    $p_1 = 'Explora la biodiversidad más rica del mundo desde el cielo.';
+    $h1_1 = 'Vuelos Chárter y Logística Directa a Boca Manu:';
+    $p_1 = 'El Corazón de la Amazonía.';
 
     $h2_1 = __('tours.tour_details');
-    $p_2 = 'Experimenta la inmensidad de la Amazonía peruana. Vuela sobre ríos serpenteantes, bosques vírgenes y observa la vida silvestre desde una perspectiva única en este tour aéreo exclusivo al Parque Nacional del Manu.';
+    $p_2 = 'En Aerolínea del Sur, lideramos la conexión aérea hacia la biósfera del Manu. Contamos con operaciones certificadas bajo la normativa RAP 135, garantizando los más altos estándares de seguridad y eficiencia en cada aterrizaje. Nuestro servicio de vuelos chárter a Boca Manu ofrece una solución logística rápida y confiable para turismo especializado y proyectos estratégicos, uniendo la comodidad con la precisión técnica que solo nuestra flota puede ofrecer. Descubra la Amazonía con la aerolínea que domina las rutas más exigentes del Perú';
 
     $h4_1 = __('tours.max_group');
     $p_3 = 'Privado (Hasta 5 pasajeros)';
