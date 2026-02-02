@@ -235,8 +235,8 @@ $seo = seo()
                         'url' => '/' . app()->getLocale() . '/sobrevuelo/titicaca-lake'
                     ],
                     [
-                        'title' => 'Líneas de Nazca',
-                        'description' => __('services.overflights.nazca.desc'),
+                        'title' => 'Cusco – Nazca: La Conexión de Élite',
+                        'description' => __('​El único puente aéreo de alta gama que une los dos legados más grandes del Perú con precisión absoluta.​Aterrizaje Directo: Conectamos Cusco con el Aeropuerto María Reiche. Sin escalas, sin demoras; aterrizamos en el corazón de la historia.​Seguridad Certificada: Operamos bajo RAP 135. El estándar de oro que garantiza una operación técnica impecable y blindada.​Perspectiva Soberana: Domine el horizonte de Nazca desde una cabina de confort superior. La visión que solo la exclusividad privada puede otorgar.​Gestión de Prestigio: Discreción, puntualidad y la seriedad de una compañía líder.​"La excelencia no se explica, se vuela. Aerolínea del Sur: El estándar de quienes dominan el cielo."'), // __('services.overflights.nazca.desc'),
                         'images' => [
                             '/img/sobrevuelos/nazca-lines-1.webp',
                             '/img/sobrevuelos/nazca-lines-2.webp',
