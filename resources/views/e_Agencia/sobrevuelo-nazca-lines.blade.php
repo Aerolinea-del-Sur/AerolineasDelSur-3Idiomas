@@ -153,13 +153,6 @@
                                 </div>
                             </div>
                             <div class="detail-item">
-                                <i class="fas fa-user-plus"></i>
-                                <div>
-                                    <h4><?= $h4_2 ?></h4>
-                                    <p><?= $p_4 ?></p>
-                                </div>
-                            </div>
-                            <div class="detail-item">
                                 <i class="fas fa-clock"></i>
                                 <div>
                                     <h4><?= $h4_3 ?></h4>
@@ -215,6 +208,12 @@
                                 <i class="fas fa-mountain"></i>
                                 <h4><?= $h4_4 ?></h4>
                                 <p><?= $p_6 ?></p>
+
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-camera-retro"></i>
+                                <h4><?= $h4_5 ?></h4>
+                                <p><?= $p_7 ?></p>
                             </div>
                             <div class="highlight-item">
                                 <i class="fas fa-history"></i>
