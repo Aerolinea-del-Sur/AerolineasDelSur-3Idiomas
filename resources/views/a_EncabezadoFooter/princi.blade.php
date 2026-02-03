@@ -165,10 +165,10 @@
         <!-- CSS Crítico Inline - Previene FOUC (Flash of Unstyled Content) -->
         <style>
             /* Aplicar inmediatamente - texto claro por defecto para fondo oscuro */
-        body {
-            color: #C9A227;
-            background: linear-gradient(135deg, #1D1D1D, #1c1c1c 50%, #181818 100%);
-        }
+            body {
+                color: #E6E6E6;
+                background: linear-gradient(135deg, #1D1D1D, #1c1c1c 50%, #181818 100%);
+            }
         </style>
 
         <!-- Font Display Optimization para Font Awesome -->

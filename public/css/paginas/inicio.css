@@ -533,13 +533,8 @@ p {
     position: relative;
 }
 
-.certificaciones-header h1,
-.certificaciones-header h2 {
+.certificaciones-header h1 {
     color: var(--accent);
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 700;
     margin-bottom: 20px;
@@ -727,8 +722,7 @@ p {
     position: relative;
 }
 
-.tours-header h1,
-.tours-header h2 {
+.tours-header h1 {
     background: linear-gradient(135deg, var(--accent) 0%, #e6d76a 50%, var(--accent) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -853,7 +847,7 @@ p {
 
 .tour-content {
     padding: 30px;
-    color: var(--accent);
+    color: var(--primary-black);
     position: relative;
 }
 
@@ -871,7 +865,7 @@ p {
     font-size: 1.6rem;
     font-weight: 800;
     margin-bottom: 15px;
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+    background: linear-gradient(135deg, var(--charcoal) 0%, #4a4a4a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -888,13 +882,13 @@ p {
     font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 25px;
-    color: var(--accent);
+    color: #555;
     text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
     transition: color 0.4s ease;
 }
 
 .tour-card:hover .tour-content p {
-    color: var(--accent);
+    color: #333;
 }
 
 .tour-price {
@@ -1372,8 +1366,7 @@ p {
     position: relative;
 }
 
-.testimonios-header h1,
-.testimonios-header h2 {
+.testimonios-header h1 {
     background: linear-gradient(135deg, var(--accent) 0%, #e6d76a 50%, var(--accent) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1488,7 +1481,7 @@ p {
 .testimonio-text {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: var(--accent);
+    color: var(--charcoal);
     margin-bottom: 25px;
     text-align: center;
     font-style: italic;
@@ -1553,18 +1546,18 @@ p {
 .author-info h4 {
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--charcoal);
     margin-bottom: 5px;
     transition: color 0.3s ease;
 }
 
 .testimonio-card:hover .author-info h4 {
-    color: var(--accent);
+    color: var(--burgundy);
 }
 
 .author-info span {
     font-size: 0.9rem;
-    color: var(--accent);
+    color: #666;
     font-weight: 500;
 }
 
@@ -1776,8 +1769,7 @@ p {
     position: relative;
 }
 
-.por-que-header h1,
-.por-que-header h2 {
+.por-que-header h1 {
     background: linear-gradient(135deg, var(--accent) 0%, #e6d76a 50%, var(--accent) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1893,7 +1885,7 @@ p {
 .por-que-card h3 {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--charcoal);
     margin-bottom: 20px;
     transition: all 0.3s ease;
     position: relative;
@@ -1904,14 +1896,14 @@ p {
 }
 
 .por-que-card:hover h3 {
-    color: var(--accent);
+    color: var(--burgundy);
     transform: translateY(-2px);
 }
 
 .por-que-card p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: var(--accent);
+    color: #555;
     margin-bottom: 25px;
     text-align: center;
     transition: color 0.3s ease;
@@ -1922,7 +1914,7 @@ p {
 }
 
 .por-que-card:hover p {
-    color: var(--accent);
+    color: var(--charcoal);
 }
 
 .por-que-features {
@@ -1936,7 +1928,7 @@ p {
 
 .feature-tag {
     background: linear-gradient(135deg, rgba(201, 162, 39, 0.1), rgba(201, 162, 39, 0.05));
-    color: var(--accent);
+    color: var(--charcoal);
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -1950,7 +1942,7 @@ p {
     background: linear-gradient(135deg, rgba(201, 162, 39, 0.2), rgba(201, 162, 39, 0.1));
     border-color: rgba(201, 162, 39, 0.4);
     transform: translateX(5px);
-    color: var(--accent);
+    color: var(--burgundy);
 }
 
 /* acordeon*/
@@ -2453,14 +2445,10 @@ p {
     margin-bottom: 60px;
 }
 
-.faq-header h1,
-.faq-header h2 {
+.faq-header h1 {
     font-size: 3rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--accent) 0%, #e6d76a 50%, var(--accent) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--accent);
     margin-bottom: 20px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }

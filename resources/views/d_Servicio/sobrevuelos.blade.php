@@ -257,6 +257,26 @@ $seo = seo()
                         'url' => '/' . app()->getLocale() . '/sobrevuelo/nazca-lines'
                     ],
                     [
+                        'title' => 'Manu: El Corazón de la Amazonía',
+                        'description' => "La conexión aérea definitiva hacia la biósfera del Manu, donde la selva virgen se encuentra con la precisión aeronáutica.<br><br>
+                        <strong>Acceso Directo:</strong> Vuelo directo a la pista de Boca Manu, eliminando largas horas de tránsito fluvial.<br>
+                        <strong>Seguridad Certificada:</strong> Operamos bajo normativa RAP 135, garantizando los más altos estándares en cada aterrizaje.<br>
+                        <strong>Biodiversidad Infinita:</strong> Contemple la densidad de la Amazonía y la confluencia de ríos desde una perspectiva privilegiada.<br>
+                        <strong>Logística Integral:</strong> Gestionamos su llegada con la eficiencia y exclusividad que su expedición merece.<br><br>
+                        <em>\"Descubra la Amazonía con la aerolínea que domina las rutas más exigentes del Perú.\"</em>",
+                        'images' => [
+                            '/img/sobrevuelos/aerodromo-boca-manu-puerta-entrada-amazonia.webp',
+                            '/img/sobrevuelos/bosque-tropical-reserva-biosfera-manu-peru.webp',
+                            '/img/sobrevuelos/paisaje-aereo-panoramico-parque-nacional-manu.webp',
+                            '/img/sobrevuelos/vista-aerea-boca-manu-confluencia-rios.webp'
+                        ],
+                        'duration' => '40 min',
+                        'pax' => __('common.up_to') . ' 9 ' . __('common.people'),
+                        'location' => 'Manu, Perú',
+                        'badge' => __('common.overflight'),
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/manu'
+                    ],
+                    [
                         'title' => 'Expedición Sagrada: El Corazón de los Andes', // Valle Sagrado
                         'description' => $p_5,
                         'images' => [
