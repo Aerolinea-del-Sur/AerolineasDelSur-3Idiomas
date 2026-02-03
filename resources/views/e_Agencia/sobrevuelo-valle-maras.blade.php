@@ -360,7 +360,7 @@
                         <div class="tour-badge"><?= __('tours.recomendados.nazca_type') ?></div>
                     </div>
                     <div class="tour-content">
-                        <h4><?= __('tours.recomendados.nazca_title') ?></h4>
+                        <h4><?= __('Cusco – Nazca: La Conexión de Élite') ?></h4>
                         <p><?= __('tours.recomendados.nazca_desc') ?></p>
                         <div class="tour-details">
                             <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.nazca_hrs') ?></span>
