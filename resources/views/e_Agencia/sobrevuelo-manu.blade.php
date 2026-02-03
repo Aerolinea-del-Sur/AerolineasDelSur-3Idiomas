@@ -132,7 +132,7 @@
                 <img src="/img/sobrevuelos/vista-aerea-boca-manu-confluencia-rios.webp" 
                     alt="Confluencia de los ríos Manu y Madre de Dios vista desde un sobrevuelo."
                     title="Unión de aguas: Ríos Manu y Madre de Dios"
-                    loading="lazy" width="1200" height="600"
+                    loading="lazy"
                     itemprop="contentUrl">
             </figure>
         </div>
