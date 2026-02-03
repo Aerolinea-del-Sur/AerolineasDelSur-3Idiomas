@@ -847,7 +847,7 @@ p {
 
 .tour-content {
     padding: 30px;
-    color: var(--primary-black);
+    color: var(--accent);
     position: relative;
 }
 
@@ -865,7 +865,7 @@ p {
     font-size: 1.6rem;
     font-weight: 800;
     margin-bottom: 15px;
-    background: linear-gradient(135deg, var(--charcoal) 0%, #4a4a4a 100%);
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -882,13 +882,13 @@ p {
     font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 25px;
-    color: #555;
+    color: var(--accent);
     text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
     transition: color 0.4s ease;
 }
 
 .tour-card:hover .tour-content p {
-    color: #333;
+    color: var(--accent);
 }
 
 .tour-price {
@@ -1481,7 +1481,7 @@ p {
 .testimonio-text {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: var(--charcoal);
+    color: var(--accent);
     margin-bottom: 25px;
     text-align: center;
     font-style: italic;
@@ -1546,18 +1546,18 @@ p {
 .author-info h4 {
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--charcoal);
+    color: var(--accent);
     margin-bottom: 5px;
     transition: color 0.3s ease;
 }
 
 .testimonio-card:hover .author-info h4 {
-    color: var(--burgundy);
+    color: var(--accent);
 }
 
 .author-info span {
     font-size: 0.9rem;
-    color: #666;
+    color: var(--accent);
     font-weight: 500;
 }
 
@@ -1885,7 +1885,7 @@ p {
 .por-que-card h3 {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--charcoal);
+    color: var(--accent);
     margin-bottom: 20px;
     transition: all 0.3s ease;
     position: relative;
@@ -1896,14 +1896,14 @@ p {
 }
 
 .por-que-card:hover h3 {
-    color: var(--burgundy);
+    color: var(--accent);
     transform: translateY(-2px);
 }
 
 .por-que-card p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #555;
+    color: var(--accent);
     margin-bottom: 25px;
     text-align: center;
     transition: color 0.3s ease;
@@ -1914,7 +1914,7 @@ p {
 }
 
 .por-que-card:hover p {
-    color: var(--charcoal);
+    color: var(--accent);
 }
 
 .por-que-features {
@@ -1928,7 +1928,7 @@ p {
 
 .feature-tag {
     background: linear-gradient(135deg, rgba(201, 162, 39, 0.1), rgba(201, 162, 39, 0.05));
-    color: var(--charcoal);
+    color: var(--accent);
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -1942,7 +1942,7 @@ p {
     background: linear-gradient(135deg, rgba(201, 162, 39, 0.2), rgba(201, 162, 39, 0.1));
     border-color: rgba(201, 162, 39, 0.4);
     transform: translateX(5px);
-    color: var(--burgundy);
+    color: var(--accent);
 }
 
 /* acordeon*/
