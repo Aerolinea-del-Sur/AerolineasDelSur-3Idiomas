@@ -323,14 +323,15 @@
                         <li><i class="fas fa-times"></i> <?= __('tours.common.notincluded3') ?></li>
                     </ul>
                 </div>-->
+                <div class="important-notes">
+                    <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
+                    <ul>
+                        <li><?= __('tours.common.note1') ?></li>
+                        <li><?= __('tours.common.note3') ?></li>
+                    </ul>
+                </div>
             </div>
-            <div class="important-notes">
-                <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
-                <ul>
-                    <li><?= __('tours.common.note1') ?></li>
-                    <li><?= __('tours.common.note3') ?></li>
-                </ul>
-            </div>
+            
         </div>
     </section>
 
