@@ -533,8 +533,13 @@ p {
     position: relative;
 }
 
-.certificaciones-header h1 {
+.certificaciones-header h1,
+.certificaciones-header h2 {
     color: var(--accent);
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 700;
     margin-bottom: 20px;
@@ -722,7 +727,8 @@ p {
     position: relative;
 }
 
-.tours-header h1 {
+.tours-header h1,
+.tours-header h2 {
     background: linear-gradient(135deg, var(--accent) 0%, #e6d76a 50%, var(--accent) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1366,7 +1372,8 @@ p {
     position: relative;
 }
 
-.testimonios-header h1 {
+.testimonios-header h1,
+.testimonios-header h2 {
     background: linear-gradient(135deg, var(--accent) 0%, #e6d76a 50%, var(--accent) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1769,7 +1776,8 @@ p {
     position: relative;
 }
 
-.por-que-header h1 {
+.por-que-header h1,
+.por-que-header h2 {
     background: linear-gradient(135deg, var(--accent) 0%, #e6d76a 50%, var(--accent) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2445,10 +2453,14 @@ p {
     margin-bottom: 60px;
 }
 
-.faq-header h1 {
+.faq-header h1,
+.faq-header h2 {
     font-size: 3rem;
     font-weight: 700;
-    color: var(--accent);
+    background: linear-gradient(135deg, var(--accent) 0%, #e6d76a 50%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 20px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
