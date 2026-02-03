@@ -128,9 +128,15 @@
     <!-- Sección Hero -->
     <section class="tour-hero">
         <div class="hero-background">
-            <figure class="carousel-slide" itemscope itemtype="http://schema.org/ImageObject">
+            <figure itemscope itemtype="http://schema.org/ImageObject">
                 <img src="/img/sobrevuelos/vista-aerea-boca-manu-confluencia-rios.webp" 
-                    alt="Confluencia de los ríos Manu y Madre de Dios vista desde un sobrevuelo.">
+                    alt="Confluencia de los ríos Manu y Madre de Dios vista desde un sobrevuelo."
+                    title="Unión de aguas: Ríos Manu y Madre de Dios"
+                    loading="lazy" width="1200" height="600"
+                    itemprop="contentUrl">
+                <figcaption class="caption-overlay">
+                    <span itemprop="caption">Confluencia de los Ríos Manu y Madre de Dios</span>
+                </figcaption>
             </figure>
         </div>
         <div class="hero-content">
