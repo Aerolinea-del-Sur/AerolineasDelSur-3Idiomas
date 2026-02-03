@@ -194,25 +194,49 @@
                     <h3><?= $h3_1 ?></h3>
                     <div class="image-carousel">
                         <div class="carousel-container" id="carouselContainer">
-                            <div class="carousel-slide active">
-                                <img src="/img/tours/valle-sagrado-maras-1.webp" alt="Vista aérea del Parque del Manu">
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="/img/tours/valle-sagrado-maras-2.webp" alt="Selva del Manu desde el aire">
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="/img/tours/valle-sagrado-maras-3.webp" alt="Montañas y Selva">
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="/img/tours/valle-sagrado-maras-4.webp" alt="Ríos de la Amazonía">
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="/img/sobrevuelos/sobrevuelo-valle-sagrado.webp" alt="Sobrevuelo Manu">
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="/img/sobrevuelos/sobrevuelo-valle-sagrado-cusco.webp"
-                                    alt="Sobrevuelo Manu Cusco">
-                            </div>
+                            <figure class="carousel-slide" itemscope itemtype="http://schema.org/ImageObject">
+                                <img src="/img/sobrevuelos/aerodromo-boca-manu-puerta-entrada-amazonia.webp" 
+                                    alt="Pista de aterrizaje del aeródromo de Boca Manu rodeada de selva virgen y el río."
+                                    title="Aeródromo de Boca Manu: Logística aérea en la selva"
+                                    loading="lazy" width="1200" height="600"
+                                    itemprop="contentUrl">
+                                <figcaption class="caption-overlay">
+                                    <span itemprop="caption">Logística de Vuelo: Aeródromo de Boca Manu</span>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="carousel-slide" itemscope itemtype="http://schema.org/ImageObject">
+                                <img src="/img/sobrevuelos/bosque-tropical-reserva-biosfera-manu-peru.webp" 
+                                    alt="Vista aérea de la densa cobertura verde de la Reserva de la Biosfera del Manu."
+                                    title="Biodiversidad intacta: Reserva del Manu desde el aire"
+                                    loading="lazy" width="1200" height="600"
+                                    itemprop="contentUrl">
+                                <figcaption class="caption-overlay">
+                                    <span itemprop="caption">Explora la Reserva de la Biosfera del Manu</span>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="carousel-slide" itemscope itemtype="http://schema.org/ImageObject">
+                                <img src="/img/sobrevuelos/paisaje-aereo-panoramico-parque-nacional-manu.webp" 
+                                    alt="Panorámica cenital mostrando el pueblo de Boca Manu y la curva del río."
+                                    title="Vista Panorámica: La inmensidad del Parque Nacional"
+                                    loading="lazy" width="1200" height="600"
+                                    itemprop="contentUrl">
+                                <figcaption class="caption-overlay">
+                                    <span itemprop="caption">Panorámica Inédita del Parque Nacional</span>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="carousel-slide" itemscope itemtype="http://schema.org/ImageObject">
+                                <img src="/img/sobrevuelos/vista-aerea-boca-manu-confluencia-rios.webp" 
+                                    alt="Confluencia de los ríos Manu y Madre de Dios vista desde un sobrevuelo."
+                                    title="Unión de aguas: Ríos Manu y Madre de Dios"
+                                    loading="lazy" width="1200" height="600"
+                                    itemprop="contentUrl">
+                                <figcaption class="caption-overlay">
+                                    <span itemprop="caption">Confluencia de los Ríos Manu y Madre de Dios</span>
+                                </figcaption>
+                            </figure>
                         </div>
                         <button class="carousel-btn prev" onclick="moveSlide(-1)">
                             <i class="fas fa-chevron-left"></i>
