@@ -128,7 +128,7 @@
     <!-- Sección Hero -->
     <section class="tour-hero">
         <div class="hero-background">
-            <img src="{{ asset('img/sobrevuelos/sacred-valley-1.webp') }}" alt="Parque Nacional del Manu desde el aire">
+            <img src="{{ asset('img/sobrevuelos/vista-aerea-boca-manu-confluencia-rios.webp') }}" alt="Parque Nacional del Manu desde el aire">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
