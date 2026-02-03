@@ -215,12 +215,6 @@
                                 <i class="fas fa-mountain"></i>
                                 <h4><?= $h4_4 ?></h4>
                                 <p><?= $p_6 ?></p>
-
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-camera-retro"></i>
-                                <h4><?= $h4_5 ?></h4>
-                                <p><?= $p_7 ?></p>
                             </div>
                             <div class="highlight-item">
                                 <i class="fas fa-history"></i>
