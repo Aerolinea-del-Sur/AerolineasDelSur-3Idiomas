@@ -134,9 +134,6 @@
                     title="Unión de aguas: Ríos Manu y Madre de Dios"
                     loading="lazy" width="1200" height="600"
                     itemprop="contentUrl">
-                <figcaption class="caption-overlay">
-                    <span itemprop="caption">Confluencia de los Ríos Manu y Madre de Dios</span>
-                </figcaption>
             </figure>
         </div>
         <div class="hero-content">
