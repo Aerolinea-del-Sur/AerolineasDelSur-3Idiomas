@@ -319,13 +319,14 @@
                         <li><i class="fas fa-times"></i> <?= __('tours.common.notincluded3') ?></li>
                     </ul>
                 </div>-->
-            </div>
-            <div class="important-notes">
-                <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
-                <ul>
-                    <li><?= __('tours.common.note1') ?></li>
-                    <li><?= __('tours.common.note3') ?></li>
-                </ul>
+                
+                <div class="important-notes">
+                    <h4><i class="fas fa-exclamation-triangle"></i><?= $h4_13 ?></h4>
+                    <ul>
+                        <li><?= __('tours.common.note1') ?></li>
+                        <li><?= __('tours.common.note3') ?></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -367,24 +368,6 @@
                         </div>
                         <div class="tour-footer">
                             <a href="/{{ app()->getLocale() }}/sobrevuelo/nazca-lines"
-                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="tour-card">
-                    <div class="tour-image">
-                        <img src="{{ asset('img/tours/machu-picchu-1.webp') }}" alt="Machu Picchu Aéreo">
-                        <div class="tour-badge"><?= __('tours.recomendados.machu_picchu_type') ?></div>
-                    </div>
-                    <div class="tour-content">
-                        <h4><?= __('tours.recomendados.machu_picchu_title') ?></h4>
-                        <p><?= __('tours.recomendados.machu_picchu_desc') ?></p>
-                        <div class="tour-details">
-                            <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.machu_picchu_duration') ?></span>
-                            <span><i class="fas fa-users"></i> <?= __('tours.recomendados.machu_picchu_pers') ?></span>
-                        </div>
-                        <div class="tour-footer">
-                            <a href="/{{ app()->getLocale() }}/agencia/machu-picchu"
                                 class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
                         </div>
                     </div>
