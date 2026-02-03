@@ -346,10 +346,10 @@
                 <div class="tour-card">
                     <div class="tour-image">
                         <img src="{{ asset('img/sobrevuelos/nazca-lines-1.webp') }}" alt="Lineas de Nazca">
-                        <div class="tour-badge"><?= __('Cusco – Nazca: La Conexión de Élite') ?></div>
+                        <div class="tour-badge"><?= __('tours.recomendados.nazca_type') ?></div>
                     </div>
                     <div class="tour-content">
-                        <h4><?= $h4_14 ?></h4>
+                        <h4>Cusco – Nazca: La Conexión de Élite</h4>
                         <p><?= $p_17 ?></p>
                         <div class="tour-details">
                             <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.nazca_hrs') ?></span>
