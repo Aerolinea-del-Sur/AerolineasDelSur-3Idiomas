@@ -379,20 +379,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="tour-card">
-                    <div class="tour-content">
-                        <h4><?= __('tours.recomendados.tesoros_cusco_title') ?></h4>
-                        <p><?= __('tours.recomendados.tesoros_cusco_desc') ?></p>
-                        <div class="tour-details">
-                            <span><i class="fas fa-clock"></i> <?= __('tours.recomendados.tesoros_cusco_duration') ?></span>
-                            <span><i class="fas fa-users"></i> <?= __('tours.recomendados.tesoros_cusco_pers') ?></span>
-                        </div>
-                        <div class="tour-footer">
-                            <a href="/{{ app()->getLocale() }}/agencia/tesoros-cusco"
-                                class="tour-btn"><?= __('tours.recomendados.general') ?> >></a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
