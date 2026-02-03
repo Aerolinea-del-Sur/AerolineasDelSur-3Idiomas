@@ -131,7 +131,6 @@
             <figure class="carousel-slide" itemscope itemtype="http://schema.org/ImageObject">
                 <img src="/img/sobrevuelos/vista-aerea-boca-manu-confluencia-rios.webp" 
                     alt="Confluencia de los ríos Manu y Madre de Dios vista desde un sobrevuelo."
-                    title="Unión de aguas: Ríos Manu y Madre de Dios"
                     itemprop="contentUrl">
             </figure>
         </div>
