@@ -130,8 +130,7 @@
         <div class="hero-background">
             <figure class="carousel-slide" itemscope itemtype="http://schema.org/ImageObject">
                 <img src="/img/sobrevuelos/vista-aerea-boca-manu-confluencia-rios.webp" 
-                    alt="Confluencia de los ríos Manu y Madre de Dios vista desde un sobrevuelo."
-                    itemprop="contentUrl">
+                    alt="Confluencia de los ríos Manu y Madre de Dios vista desde un sobrevuelo.">
             </figure>
         </div>
         <div class="hero-content">
