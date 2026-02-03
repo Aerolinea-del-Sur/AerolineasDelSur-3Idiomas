@@ -262,6 +262,18 @@
                         </div>
                     </div>
                     
+                    <div class="cta-wrapper" style="text-align: center; margin-top: 25px; margin-bottom: 10px;">
+                        <style>
+                            .cta-button:hover {
+                                transform: translateY(-3px);
+                                box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5) !important;
+                            }
+                        </style>
+                        <a href="https://wa.me/51932475995?text=Hola,%20deseo%20cotizar%20un%20vuelo%20a%20Boca%20Manu" target="_blank" class="cta-button" style="display: inline-flex; align-items: center; justify-content: center; background: linear-gradient(to right, #d4af37, #f3d056); color: #000; padding: 12px 28px; border-radius: 30px; font-weight: bold; font-size: 1.1rem; text-decoration: none; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); transition: all 0.3s ease;">
+                            <i class="fas fa-plane-departure" style="margin-right: 10px;"></i> Cotizar Vuelo a Boca Manu
+                        </a>
+                    </div>
+                    
                     <div class="gallery-benefits" style="margin-top: 25px; background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #0056b3;">
                         <ul style="list-style: none; padding: 0; margin: 0;">
                             <?php foreach ($benefits as $benefit): ?>
