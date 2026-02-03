@@ -380,10 +380,6 @@
                     </div>
                 </div>
                 <div class="tour-card">
-                    <div class="tour-image">
-                        <img src="{{ asset('img/tours/tesoros-cusco-1.webp') }}" alt="Tesoros de Cusco">
-                        <div class="tour-badge"><?= __('tours.recomendados.tesoros_cusco_type') ?></div>
-                    </div>
                     <div class="tour-content">
                         <h4><?= __('tours.recomendados.tesoros_cusco_title') ?></h4>
                         <p><?= __('tours.recomendados.tesoros_cusco_desc') ?></p>
