@@ -225,7 +225,6 @@ $seo = seo()
             flex-direction: column;
         }
         .tour-card:hover {
-            transform: translateY(-5px);
             border-color: #c9a227;
         }
         .tour-image {
