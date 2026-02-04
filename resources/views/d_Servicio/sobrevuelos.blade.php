@@ -202,19 +202,64 @@ $seo = seo()
                 $tours = [
                     // Nuevos Tours
                     [
-                        'title' => 'Choquequirao',
-                        'description' => __('services.overflights.choquequirao.desc'),
+                        'title' => 'Expedición Sagrada: El Corazón de los Andes', // Vinicunca
+                        'description' => "<strong>Domine el horizonte en un viaje que lo tiene todo:</strong><br>
+                        <strong>Apu Ausangate:</strong> La majestuosidad del gigante de hielo frente a sus ojos.<br>
+                        <strong>4 Lagunas de Cristal:</strong> Un collar de espejos turquesa oculto entre las cumbres.<br>
+                        <strong>Valle Rojo:</strong> El paisaje surrealista que desafía la realidad.<br>
+                        <strong>Vinicunca:</strong> La Montaña de Colores revelada en su máxima gloria, sin esfuerzo y con total exclusividad.<br><br>
+                        <em>\"No solo vuele. Conquiste la perspectiva que pocos logran conocer.\"</em>",
                         'images' => [
-                            '/img/sobrevuelos/choquequirao-1.webp',
-                            '/img/sobrevuelos/choquequirao-2.webp',
-                            '/img/sobrevuelos/choquequirao-3.webp',
-                            '/img/sobrevuelos/choquequirao-4.webp'
+                            '/img/sobrevuelos/vinicunca-mountain-1.webp',
+                            '/img/sobrevuelos/vinicunca-mountain-2.webp',
+                            '/img/sobrevuelos/vinicunca-mountain-3.webp',
+                            '/img/sobrevuelos/vinicunca-mountain-4.webp'
                         ],
                         'duration' => '1h',
-                        'pax' => __('common.up_to') . ' 8 ' . __('common.people'),
+                        'pax' => 'Hasta 8 personas',
                         'location' => 'Cusco, Perú',
+                        'badge' => 'Sobrevuelo',
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/vinicunca-elite'
+                    ],
+                    [
+                        'title' => 'Manu: El Corazón de la Amazonía',
+                        'description' => "La conexión aérea definitiva hacia la biósfera del Manu, donde la selva virgen se encuentra con la precisión aeronáutica.<br><br>
+                        <strong>Acceso Directo:</strong> Vuelo directo a la pista de Boca Manu, eliminando largas horas de tránsito fluvial.<br>
+                        <strong>Seguridad Certificada:</strong> Operamos bajo normativa RAP 135, garantizando los más altos estándares en cada aterrizaje.<br>
+                        <strong>Biodiversidad Infinita:</strong> Contemple la densidad de la Amazonía y la confluencia de ríos desde una perspectiva privilegiada.<br>
+                        <strong>Logística Integral:</strong> Gestionamos su llegada con la eficiencia y exclusividad que su expedición merece.<br><br>
+                        <em>\"Descubra la Amazonía con la aerolínea que domina las rutas más exigentes del Perú.\"</em>",
+                        'images' => [
+                            '/img/sobrevuelos/aerodromo-boca-manu-puerta-entrada-amazonia.webp',
+                            '/img/sobrevuelos/bosque-tropical-reserva-biosfera-manu-peru.webp',
+                            '/img/sobrevuelos/paisaje-aereo-panoramico-parque-nacional-manu.webp',
+                            '/img/sobrevuelos/vista-aerea-boca-manu-confluencia-rios.webp'
+                        ],
+                        'duration' => '40 min',
+                        'pax' => __('common.up_to') . ' 9 ' . __('common.people'),
+                        'location' => 'Manu, Perú',
                         'badge' => __('common.overflight'),
-                        'url' => '/' . app()->getLocale() . '/sobrevuelo/choquequirao'
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/boca-manu'
+                    ],
+                    [
+                        'title' => 'Cusco – Nazca: La Conexión de Élite',
+                        'description' => "El único puente aéreo de alta gama que une los dos legados más grandes del Perú con precisión absoluta.<br><br>
+                        <strong>Aterrizaje Directo:</strong> Conectamos Cusco con el Aeropuerto María Reiche. Sin escalas, sin demoras; aterrizamos en el corazón de la historia.<br>
+                        <strong>Seguridad Certificada:</strong> Operamos bajo RAP 135. El estándar de oro que garantiza una operación técnica impecable y blindada.<br>
+                        <strong>Perspectiva Soberana:</strong> Domine el horizonte de Nazca desde una cabina de confort superior. La visión que solo la exclusividad privada puede otorgar.<br>
+                        <strong>Gestión de Prestigio:</strong> Discreción, puntualidad y la seriedad de una compañía líder.<br><br>
+                        <em>\"La excelencia no se explica, se vuela. Aerolínea del Sur: El estándar de quienes dominan el cielo.\"</em>",
+                        'images' => [
+                            '/img/sobrevuelos/nazca-lines-1.webp',
+                            '/img/sobrevuelos/nazca-lines-2.webp',
+                            '/img/sobrevuelos/nazca-lines-3.webp',
+                            '/img/sobrevuelos/nazca-lines-4.webp'
+                        ],
+                        'duration' => '1h 20m',
+                        'pax' => __('common.up_to') . ' 8 ' . __('common.people'),
+                        'location' => 'Ica, Perú',
+                        'badge' => __('common.overflight'),
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/nazca-lines'
                     ],
                     [
                         'title' => 'Lago Titicaca: El Eje de los Andes',
@@ -238,44 +283,19 @@ $seo = seo()
                         'url' => '/' . app()->getLocale() . '/sobrevuelo/titicaca-lake'
                     ],
                     [
-                        'title' => 'Cusco – Nazca: La Conexión de Élite',
-                        'description' => "El único puente aéreo de alta gama que une los dos legados más grandes del Perú con precisión absoluta.<br><br>
-                        <strong>Aterrizaje Directo:</strong> Conectamos Cusco con el Aeropuerto María Reiche. Sin escalas, sin demoras; aterrizamos en el corazón de la historia.<br>
-                        <strong>Seguridad Certificada:</strong> Operamos bajo RAP 135. El estándar de oro que garantiza una operación técnica impecable y blindada.<br>
-                        <strong>Perspectiva Soberana:</strong> Domine el horizonte de Nazca desde una cabina de confort superior. La visión que solo la exclusividad privada puede otorgar.<br>
-                        <strong>Gestión de Prestigio:</strong> Discreción, puntualidad y la seriedad de una compañía líder.<br><br>
-                        <em>\"La excelencia no se explica, se vuela. Aerolínea del Sur: El estándar de quienes dominan el cielo.\"</em>",
+                        'title' => 'Choquequirao',
+                        'description' => __('services.overflights.choquequirao.desc'),
                         'images' => [
-                            '/img/sobrevuelos/nazca-lines-1.webp',
-                            '/img/sobrevuelos/nazca-lines-2.webp',
-                            '/img/sobrevuelos/nazca-lines-3.webp',
-                            '/img/sobrevuelos/nazca-lines-4.webp'
+                            '/img/sobrevuelos/choquequirao-1.webp',
+                            '/img/sobrevuelos/choquequirao-2.webp',
+                            '/img/sobrevuelos/choquequirao-3.webp',
+                            '/img/sobrevuelos/choquequirao-4.webp'
                         ],
-                        'duration' => '1h 20m',
+                        'duration' => '1h',
                         'pax' => __('common.up_to') . ' 8 ' . __('common.people'),
-                        'location' => 'Ica, Perú',
+                        'location' => 'Cusco, Perú',
                         'badge' => __('common.overflight'),
-                        'url' => '/' . app()->getLocale() . '/sobrevuelo/nazca-lines'
-                    ],
-                    [
-                        'title' => 'Manu: El Corazón de la Amazonía',
-                        'description' => "La conexión aérea definitiva hacia la biósfera del Manu, donde la selva virgen se encuentra con la precisión aeronáutica.<br><br>
-                        <strong>Acceso Directo:</strong> Vuelo directo a la pista de Boca Manu, eliminando largas horas de tránsito fluvial.<br>
-                        <strong>Seguridad Certificada:</strong> Operamos bajo normativa RAP 135, garantizando los más altos estándares en cada aterrizaje.<br>
-                        <strong>Biodiversidad Infinita:</strong> Contemple la densidad de la Amazonía y la confluencia de ríos desde una perspectiva privilegiada.<br>
-                        <strong>Logística Integral:</strong> Gestionamos su llegada con la eficiencia y exclusividad que su expedición merece.<br><br>
-                        <em>\"Descubra la Amazonía con la aerolínea que domina las rutas más exigentes del Perú.\"</em>",
-                        'images' => [
-                            '/img/sobrevuelos/aerodromo-boca-manu-puerta-entrada-amazonia.webp',
-                            '/img/sobrevuelos/bosque-tropical-reserva-biosfera-manu-peru.webp',
-                            '/img/sobrevuelos/paisaje-aereo-panoramico-parque-nacional-manu.webp',
-                            '/img/sobrevuelos/vista-aerea-boca-manu-confluencia-rios.webp'
-                        ],
-                        'duration' => '40 min',
-                        'pax' => __('common.up_to') . ' 9 ' . __('common.people'),
-                        'location' => 'Manu, Perú',
-                        'badge' => __('common.overflight'),
-                        'url' => '/' . app()->getLocale() . '/sobrevuelo/boca-manu'
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/choquequirao'
                     ],
                     [
                         'title' => 'Valle Sagrado y maras', // Valle Sagrado
@@ -291,26 +311,6 @@ $seo = seo()
                         'location' => 'Cusco, Perú',
                         'badge' => 'Sobrevuelo',
                         'url' => '/' . app()->getLocale() . '/sobrevuelo/valle-maras'
-                    ],
-                    [
-                        'title' => 'Expedición Sagrada: El Corazón de los Andes', // Vinicunca
-                        'description' => "<strong>Domine el horizonte en un viaje que lo tiene todo:</strong><br>
-                        <strong>Apu Ausangate:</strong> La majestuosidad del gigante de hielo frente a sus ojos.<br>
-                        <strong>4 Lagunas de Cristal:</strong> Un collar de espejos turquesa oculto entre las cumbres.<br>
-                        <strong>Valle Rojo:</strong> El paisaje surrealista que desafía la realidad.<br>
-                        <strong>Vinicunca:</strong> La Montaña de Colores revelada en su máxima gloria, sin esfuerzo y con total exclusividad.<br><br>
-                        <em>\"No solo vuele. Conquiste la perspectiva que pocos logran conocer.\"</em>",
-                        'images' => [
-                            '/img/sobrevuelos/vinicunca-mountain-1.webp',
-                            '/img/sobrevuelos/vinicunca-mountain-2.webp',
-                            '/img/sobrevuelos/vinicunca-mountain-3.webp',
-                            '/img/sobrevuelos/vinicunca-mountain-4.webp'
-                        ],
-                        'duration' => '1h',
-                        'pax' => 'Hasta 8 personas',
-                        'location' => 'Cusco, Perú',
-                        'badge' => 'Sobrevuelo',
-                        'url' => '/' . app()->getLocale() . '/sobrevuelo/vinicunca-elite'
                     ]
                 ];
 
