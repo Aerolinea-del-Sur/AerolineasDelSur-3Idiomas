@@ -138,10 +138,10 @@ $seo = seo()
                     <i class="fab fa-whatsapp"></i> {{ __('services.form.send_whatsapp') }}
                 </button>
                 <button type="button" class="heli-btn btn-outlook" onclick="enviarOutlook('vuelos')">
-                    <i class="far fa-envelope"></i> {{ __('services.form.send_outlook') }}
+                    <i class="far fa-envelope"></i> {{ __('Enviar por outlook 1') }}
                 </button>
                 <button type="button" class="heli-btn btn-outlook" onclick="enviarGmail('vuelos')">
-                    <i class="far fa-envelope"></i> {{ __('Enviar por outlook ') }} <!-- services.form.send_gmail -->
+                    <i class="far fa-envelope"></i> {{ __('Enviar por outlook 2') }} <!-- services.form.send_gmail -->
                 </button>
             </div>
         </form>
