@@ -278,7 +278,7 @@ $seo = seo()
                         'url' => '/' . app()->getLocale() . '/sobrevuelo/boca-manu'
                     ],
                     [
-                        'title' => 'Expedición Sagrada: El Corazón de los Andes', // Valle Sagrado
+                        'title' => 'Valle Sagrado y maras', // Valle Sagrado
                         'description' => $p_5,
                         'images' => [
                             '/img/sobrevuelos/sacred-valley-1.webp',
