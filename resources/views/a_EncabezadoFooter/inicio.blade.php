@@ -324,7 +324,10 @@ $seo = seo()
             -webkit-box-orient: vertical;
             overflow: hidden;
             flex-grow: 1;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+            text-shadow: none;
+        }
+        .tour-description * {
+            color: #ffffff !important;
         }
         .tour-details {
             display: flex;
