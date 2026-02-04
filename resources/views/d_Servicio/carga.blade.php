@@ -1,7 +1,7 @@
 @php
 $seo = seo()
-    ->title(__('services.cargo.seo.title'))
-    ->description(__('services.cargo.seo.description'))
+    ->title(__('Transporte de Carga Aérea | Aerolínea del Sur'))
+    ->description(__('Servicios de carga aérea especializada. Entregas urgentes, gran volumen y cargas especiales con total seguridad.'))
     ->keywords(['carga aérea perú', 'transporte urgente aéreo', 'envío helicóptero', 'carga pesada perú', 'logística aérea cusco'])
     ->image(asset('img/carga-aerea-peru.jpg'))
     ->canonical(url(app()->getLocale() . '/carga'));

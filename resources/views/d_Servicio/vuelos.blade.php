@@ -1,7 +1,7 @@
 @php
 $seo = seo()
-    ->title(__('services.flights.seo.title'))
-    ->description(__('services.flights.seo.description'))
+    ->title(__('Vuelos Charter Privados en Perú | Aerolínea del Sur'))
+    ->description(__('Vuelos charter privados nacionales e internacionales en Perú. Flota moderna, pilotos certificados y servicio exclusivo.'))
     ->keywords(['vuelos charter perú', 'vuelos privados cusco', 'alquiler avión privado perú', 'charter ejecutivo', 'vuelos negocios cusco'])
     ->image(asset('img/vuelos-privados-peru.jpg'))
     ->canonical(url(app()->getLocale() . '/vuelos'));

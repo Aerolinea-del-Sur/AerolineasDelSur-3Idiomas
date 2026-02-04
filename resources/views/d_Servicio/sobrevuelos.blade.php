@@ -1,7 +1,7 @@
 @php
 $seo = seo()
-    ->title(__('services.overflights.seo.title'))
-    ->description(__('services.overflights.seo.description'))
+    ->title(__('Sobrevuelos Turísticos en Perú | Tours Aéreos sobre Cusco'))
+    ->description(__('Descubre Perú desde las alturas con nuestros sobrevuelos turísticos. Vinicunca, Valle Sagrado, Machu Picchu y más destinos espectaculares.'))
     ->keywords(['sobrevuelos cusco', 'tour aéreo valle sagrado', 'sobrevuelo vinicunca', 'montaña 7 colores helicóptero', 'machu picchu helicóptero', 'tours aéreos perú'])
     ->image(asset('img/sobrevuelos-cusco.jpg'))
     ->canonical(url(app()->getLocale() . '/sobrevuelos'));

@@ -1,8 +1,8 @@
 @php
     $tour_name = 'Vinicunca Elite';
     $seo = seo()
-        ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
-        ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+        ->title(str_replace(':tour', $tour_name, __('Vinicunca Elite: Tour Montaña 7 Colores VIP con Vuelo')))
+        ->description(str_replace(':tour', $tour_name, __('La forma más exclusiva de visitar la Montaña de 7 Colores. Vuelo privado, sin multitudes y con el mejor servicio. Vinicunca Elite.')))
         ->keywords(['tour vinicunca elite', 'rainbow mountain vip', 'tour privado vinicunca', 'excursión premium cusco'])
         ->image(asset('img/tours/vinicunca-elite.jpg'))
         ->canonical(url(app()->getLocale() . '/sobrevuelo/vinicunca-elite'))

@@ -1,8 +1,8 @@
 @php
     $tour_name = 'Tesoros de Cusco';
     $seo = seo()
-        ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
-        ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+        ->title(str_replace(':tour', $tour_name, __('Tour Tesoros de Cusco - Aerolínea del Sur')))
+        ->description(str_replace(':tour', $tour_name, __('tour cusco 2 dias, paquete machu picchu, valle sagrado tour, sobrevuelo machu picchu paquete, turismo de lujo cusco')))
         ->keywords(['tour tesoros cusco', 'city tour cusco', 'sacsayhuaman tour', 'ruinas incas cusco', 'tour arqueológico'])
         ->image(asset('img/tours/tesoros-cusco.jpg'))
         ->canonical(url(app()->getLocale() . '/agencia/tesoros-cusco'))

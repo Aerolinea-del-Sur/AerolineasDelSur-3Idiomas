@@ -1,8 +1,8 @@
 @php
     $tour_name = 'Líneas de Nazca';
     $seo = seo()
-        ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
-        ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+        ->title(str_replace(':tour', $tour_name, __('Líneas de Nazca desde Cusco | Aerolínea del Sur')))
+        ->description(str_replace(':tour', $tour_name, __('Líneas de Nazca saliendo desde Cusco. Descubre los misteriosos geoglifos desde el aire en un día inolvidable. ¡Reserva tu asiento!')))
         ->keywords(['sobrevuelo lineas de nazca', 'tour aéreo cusco nazca', 'vuelo privado nazca', 'maria reiche'])
         ->image(asset('img/sobrevuelos/nazca-lines-1.webp'))
         ->canonical(url(app()->getLocale() . '/sobrevuelo/nazca-lines'))

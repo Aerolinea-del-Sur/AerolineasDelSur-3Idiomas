@@ -1,7 +1,7 @@
 @php
 $seo = seo()
-    ->title(__('services.main.seo.title'))
-    ->description(__('services.main.seo.description'))
+    ->title(__('Servicios de Aviación en Perú | Vuelos, Helicópteros, Médico y Carga'))
+    ->description(__('Servicios completos de aviación en Perú: vuelos chárter, helicópteros, sobrevuelos turísticos, transporte aeromédico y carga aérea especializada desde Cusco.'))
     ->keywords(['servicios aviación perú', 'vuelos charter cusco', 'transporte aéreo perú', 'servicios helicóptero', 'aviación ejecutiva'])
     ->image(asset('img/servicios-aviacion.jpg'))
     ->canonical(url(app()->getLocale() . '/servicio'));

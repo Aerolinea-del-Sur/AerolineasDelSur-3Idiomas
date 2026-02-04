@@ -1,8 +1,8 @@
 @php
     $tour_name = 'Valle Sagrado y Maras';
     $seo = seo()
-        ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
-        ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+        ->title(str_replace(':tour', $tour_name, __('Valle Sagrado y Maras - Aerolínea del Sur')))
+        ->description(str_replace(':tour', $tour_name, __('Vuela sobre las Salineras de Maras, Moray y el Valle Sagrado. La mejor vista de los Andes peruanos en un tour aéreo corto y fascinante.')))
         ->keywords(['sobrevuelo valle sagrado', 'tour aéreo maras', 'helicóptero cusco valle sagrado', 'sobrevuelo moray'])
         ->image(asset('img/tours/sobrevuelo-valle-maras.jpg'))
         ->canonical(url(app()->getLocale() . '/sobrevuelo/valle-maras'))

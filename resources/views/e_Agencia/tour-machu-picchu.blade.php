@@ -1,8 +1,8 @@
 @php
     $tour_name = 'Machu Picchu';
     $seo = seo()
-        ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
-        ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+        ->title(str_replace(':tour', $tour_name, __('Tour Machu Picchu - Aerolínea del Sur')))
+        ->description(str_replace(':tour', $tour_name, __('Descubre la ciudadela inca Machu Picchu en un tour. Explora sus impresionantes vistas panorámicas y relájate en sus impresionantes habitaciones.')))
         ->keywords(['tour machu picchu', 'excursión machu picchu', 'tour cusco machu picchu', 'viaje machu picchu'])
         ->image(asset('img/tours/machu-picchu.jpg'))
         ->canonical(url(app()->getLocale() . '/agencia/machu-picchu'))

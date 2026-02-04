@@ -1,9 +1,8 @@
 @php
-    /*
     $tour_name = 'Boca Manu';
     $seo = seo()
-        ->title('Sobrevuelo al Parque Nacional del Manu - Aerolíneas del Sur')
-        ->description('Explora la selva del Manu desde el aire. Una experiencia única sobrevolando la Amazonía peruana, ríos y biodiversidad.')
+        ->title('Vuelos Chárter y Logística Directa a Boca Manu - Aerolínea del Sur')
+        ->description('Nuestro servicio de vuelos chárter a Boca Manu ofrece una solución logística rápida y confiable para turismo especializado y proyectos estratégicos, uniendo la comodidad con la precisión técnica que solo nuestra flota puede ofrecer. Descubra la Amazonía con la aerolínea que domina las rutas más exigentes del Perú')
         ->keywords(['sobrevuelo manu', 'tour aéreo manu', 'selva peruana vuelo', 'parque nacional manu helicoptero'])
         ->image(asset('img/tours/manu-general.jpg'))
         ->canonical(url(app()->getLocale() . '/sobrevuelo/manu'))
@@ -12,15 +11,14 @@
             '@type' => 'TouristAttraction',
             'name' => 'Sobrevuelo Parque Nacional del Manu'
         ]);
-    */
 @endphp
 
 @extends('a_EncabezadoFooter.princi')
-{{-- 
+
 @push('seo')
         {!! $seo !!}
 @endpush
---}}
+
 
 @section('content')
 

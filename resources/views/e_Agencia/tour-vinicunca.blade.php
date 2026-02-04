@@ -1,8 +1,8 @@
 @php
     $tour_name = 'Vinicunca';
     $seo = seo()
-        ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
-        ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+        ->title(str_replace(':tour', $tour_name, __('Tour Montaña 7 Colores (Vinicunca) - Aerolínea del Sur')))
+        ->description(str_replace(':tour', $tour_name, __('Descubre la espectacular Montaña de 7 Colores desde el aire')))
         ->keywords(['tour vinicunca', 'montaña 7 colores', 'rainbow mountain peru', 'excursión cusco vinicunca', 'tour rainbow mountain'])
         ->image(asset('img/tours/vinicunca-7-colores.jpg'))
         ->canonical(url(app()->getLocale() . '/agencia/vinicunca'))

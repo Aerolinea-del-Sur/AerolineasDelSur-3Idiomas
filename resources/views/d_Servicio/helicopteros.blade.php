@@ -1,7 +1,7 @@
 @php
 $seo = seo()
-    ->title(__('services.helicopter.seo.title'))
-    ->description(__('services.helicopter.seo.description'))
+    ->title(__('Servicios de Helicóptero en Perú | Aerolínea del Sur'))
+    ->description(__('Transporte en helicóptero rápido y seguro. Ideal para ejecutivos, rescates, filmaciones y acceso a zonas remotas.'))
     ->keywords(['helicóptero cusco', 'sobrevuelo valle sagrado', 'transporte helicóptero perú', 'tour helicóptero machu picchu', 'vuelos panorámicos cusco'])
     ->image(asset('img/helicoptero-cusco.jpg'))
     ->canonical(url(app()->getLocale() . '/helicopteros'));

@@ -1,8 +1,8 @@
 @php
     $tour_name = 'Lago Titicaca';
     $seo = seo()
-        ->title(str_replace(':tour', $tour_name, __('tours.seo.title_template')))
-        ->description(str_replace(':tour', $tour_name, __('tours.seo.description_template')))
+        ->title(str_replace(':tour', $tour_name, __('Sobrevuelo Lago Titicaca: Tour Aéreo Panorámico sobre Puno - Aerolínea del Sur')))
+        ->description(str_replace(':tour', $tour_name, __('Contempla la inmensidad del Lago Titicaca desde el cielo. Tour aéreo único sobre Puno y sus islas. Una perspectiva que pocos conocen.')))
         ->keywords(['sobrevuelo lago titicaca', 'tour aéreo cusco', 'vuelo cusco lago titicaca'])
         ->image(asset('img/sobrevuelos/titicaca-lake-1.webp'))
         ->canonical(url(app()->getLocale() . '/sobrevuelo/titicaca-lake'))

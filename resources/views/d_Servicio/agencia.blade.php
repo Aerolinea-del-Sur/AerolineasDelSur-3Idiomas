@@ -1,7 +1,7 @@
 @php
 $seo = seo()
-    ->title(__('services.agency.seo.title'))
-    ->description(__('services.agency.seo.description'))
+    ->title(__('Agencia de Viajes y Tours Aéreos | Aerolínea del Sur'))
+    ->description(__('Tours y paquetes turísticos con vuelos incluidos. Explora Perú con nuestros sobrevuelos y experiencias únicas.'))
     ->keywords(['tours aéreos cusco', 'sobrevuelo machu picchu', 'tour vinicunca', 'valle sagrado sobrevuelo', 'agencia tours cusco', 'tours tradicionales perú'])
     ->image(asset('img/tours-aereos-cusco.jpg'))
     ->canonical(url(app()->getLocale() . '/agencia'));
