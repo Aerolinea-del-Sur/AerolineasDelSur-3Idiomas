@@ -215,7 +215,7 @@ $seo = seo()
             padding: 20px 0;
         }
         .tour-card {
-            background: #fff;
+            background: linear-gradient(135deg,#0a0a0a 0%,var(--charcoal) 25%,var(--primary-black) 75%,#0a0a0a 100%);
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
