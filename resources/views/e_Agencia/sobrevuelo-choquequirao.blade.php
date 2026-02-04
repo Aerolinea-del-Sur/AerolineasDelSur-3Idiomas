@@ -2,13 +2,12 @@
 @php
     // Custom SEO for Sobrevuelo Choquequirao
     $tour_name = 'Choquequirao';
-    $seo = [
-        'title' => str_replace(':tour', $tour_name, __('Choquequirao | Aerolínea del Sur')),
-        'description' => str_replace(':tour', $tour_name, __('El sobrevuelo a Choquequirao es una experiencia aérea premium que lo transporta desde Cusco hacia las profundidades del cañón del Apurímac. A bordo de una aeronave ligera privada, el viaje de aproximadamente 1 hora ofrece una perspectiva única y privilegiada de la imponente Cordillera de Vilcabamba, el Valle Sagrado y la misteriosa ciudadela inca de Choquequirao. Desde el aire, se aprecia la complejidad de sus terrazas y templos, revelando una obra maestra del urbanismo inca rodeada de naturaleza exuberante.')),
-        'keywords' => 'sobrevuelo choquequirao, tour aéreo cusco, vuelo cusco choquequirao, choquequirao helicóptero',
-        'og_image' => asset('img/sobrevuelos/choquequ irao.webp'),
-        'canonical' => url(app()->getLocale() . '/sobrevuelo/choquequirao'),
-    ];
+    $seo = seo()
+        ->title(__('tours.choquequirao.title'))
+        ->description(__('tours.choquequirao.details_desc'))
+        ->keywords('sobrevuelo choquequirao, tour aéreo cusco, vuelo cusco choquequirao, choquequirao helicóptero')
+        ->image(asset('img/sobrevuelos/choquequirao-1.webp'))
+        ->canonical(url(app()->getLocale() . '/sobrevuelo/choquequirao'));
 @endphp
 
 @extends('a_EncabezadoFooter.princi')
