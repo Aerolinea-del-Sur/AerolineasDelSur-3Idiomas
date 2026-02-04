@@ -140,7 +140,7 @@ $seo = seo()
                 <button type="button" class="heli-btn btn-outlook" onclick="enviarOutlook('vuelos')">
                     <i class="far fa-envelope"></i> {{ __('services.form.send_outlook') }}
                 </button>
-                <button type="button" class="heli-btn btn-outlook" onclick="enviarOutlook('vuelos')">
+                <button type="button" class="heli-btn btn-outlook" onclick="enviarGmail('vuelos')">
                     <i class="far fa-envelope"></i> {{ __('services.form.send_outlook ') }} <!-- services.form.send_gmail -->
                 </button>
             </div>
@@ -223,7 +223,7 @@ $seo = seo()
                     `Teléfono: ${telefono}\n\n` +
                     `Saludos cordiales.`;
                 
-                const mailto = `mailto:contacto@aerolineadelsur.com.pe?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+                const mailto = `mailto:paulolivares@aerolineadelsur.com.pe?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
                 window.location.href = mailto;
             }
             
