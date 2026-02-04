@@ -4,7 +4,7 @@
         @php
             // SEO Configuration - Can be overridden by individual pages
             $seo = $seo ?? [
-                'title' => 'Aerolínea del Sur | Vuelos Privados y Charter en Perú',
+                'title' => 'Aerolínea del Sur | Vuelos Privados y Charter en Perú...',
                 'description' => 'Servicios aéreos premium en Perú: vuelos charter, helicópteros, transporte médico certificado y carga especializada. Seguridad garantizada desde Cusco.',
                 'keywords' => 'vuelos privados perú, charter cusco, helicóptero cusco, transporte aéreo médico, carga aérea perú',
                 'og_image' => asset('img/logo.webp'),
