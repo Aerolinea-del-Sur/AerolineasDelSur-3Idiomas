@@ -454,10 +454,10 @@ $seo = seo()
                             <i class="fab fa-whatsapp"></i> WhatsApp
                         </button>
                         <button type="button" class="medical-button btn-secondary" onclick="enviarOutlook('aeromedico')">
-                            <i class="far fa-envelope"></i> Outlook
+                            <i class="far fa-envelope"></i> Outlook 1
                         </button>
-                        <button type="button" class="medical-button btn-secondary" onclick="enviarOutlook('aeromedico')">
-                            <i class="far fa-envelope"></i> Outlook
+                        <button type="button" class="medical-button btn-secondary" onclick="enviarGmail('aeromedico')">
+                            <i class="far fa-envelope"></i> Outlook 2
                         </button>
                     </div>
                 </form>
