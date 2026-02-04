@@ -205,6 +205,355 @@ $seo = seo()
             </div>
         </div>
     </section>
+
+    <!-- Estilos para Tours y Carrusel -->
+    <style>
+        .tours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px 0;
+        }
+        .tour-card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .tour-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        .tour-image {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+        .carousel-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .carousel-slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .carousel-slide.active {
+            display: block;
+        }
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .tour-card:hover .carousel-slide img {
+            transform: scale(1.1);
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .tour-image:hover .carousel-btn {
+            opacity: 1;
+        }
+        .prev-btn { left: 10px; }
+        .next-btn { right: 10px; }
+        .carousel-dots {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 5px;
+            z-index: 2;
+        }
+        .dot {
+            width: 8px;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .dot.active { background: white; }
+        .tour-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #c9a227;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            z-index: 2;
+        }
+        .tour-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .tour-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        .tour-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            flex-grow: 1;
+        }
+        .tour-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            font-size: 13px;
+            color: #888;
+        }
+        .detail { display: flex; align-items: center; gap: 8px; }
+        .detail i { color: #c9a227; }
+        .tour-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .tour-btn:hover {
+            background: #c9a227;
+            transform: translateY(-2px);
+        }
+    </style>
+
+    <!-- Nueva Sección de Sobrevuelos -->
+    <section class="sobrevuelos-section" style="padding: 80px 0; background-color: #f8f9fa;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+                <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 16px;">Sobrevuelos Exclusivos</h2>
+                <p>Descubre los tesoros del Perú desde una perspectiva única</p>
+                <div class="linea" style="width: 60px; height: 3px; background: #c9a227; margin: 10px auto;"></div>
+            </div>
+
+            <div class="tours-grid">
+                <?php
+                $tours_sobrevuelos = [
+                    [
+                        'title' => 'Expedición Sagrada: El Corazón de los Andes',
+                        'description' => "<strong>Domine el horizonte en un viaje que lo tiene todo:</strong><br>Apu Ausangate, 4 Lagunas de Cristal, Valle Rojo y Vinicunca.",
+                        'images' => [
+                            '/img/sobrevuelos/vinicunca-mountain-1.webp',
+                            '/img/sobrevuelos/vinicunca-mountain-2.webp',
+                            '/img/sobrevuelos/vinicunca-mountain-3.webp',
+                            '/img/sobrevuelos/vinicunca-mountain-4.webp'
+                        ],
+                        'duration' => '1h',
+                        'pax' => 'Hasta 8 personas',
+                        'location' => 'Cusco, Perú',
+                        'badge' => 'Sobrevuelo',
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/vinicunca-elite'
+                    ],
+                    [
+                        'title' => 'Manu: El Corazón de la Amazonía',
+                        'description' => "La conexión aérea definitiva hacia la biósfera del Manu, donde la selva virgen se encuentra con la precisión aeronáutica.",
+                        'images' => [
+                            '/img/sobrevuelos/aerodromo-boca-manu-puerta-entrada-amazonia.webp',
+                            '/img/sobrevuelos/bosque-tropical-reserva-biosfera-manu-peru.webp',
+                            '/img/sobrevuelos/paisaje-aereo-panoramico-parque-nacional-manu.webp',
+                            '/img/sobrevuelos/vista-aerea-boca-manu-confluencia-rios.webp'
+                        ],
+                        'duration' => '40 min',
+                        'pax' => __('common.up_to') . ' 9 ' . __('common.people'),
+                        'location' => 'Manu, Perú',
+                        'badge' => __('common.overflight'),
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/boca-manu'
+                    ],
+                    [
+                        'title' => 'Cusco – Nazca: La Conexión de Élite',
+                        'description' => "El único puente aéreo de alta gama que une los dos legados más grandes del Perú con precisión absoluta.",
+                        'images' => [
+                            '/img/sobrevuelos/nazca-lines-1.webp',
+                            '/img/sobrevuelos/nazca-lines-2.webp',
+                            '/img/sobrevuelos/nazca-lines-3.webp',
+                            '/img/sobrevuelos/nazca-lines-4.webp'
+                        ],
+                        'duration' => '1h 20m',
+                        'pax' => __('common.up_to') . ' 8 ' . __('common.people'),
+                        'location' => 'Ica, Perú',
+                        'badge' => __('common.overflight'),
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/nazca-lines'
+                    ],
+                    [
+                        'title' => 'Lago Titicaca: El Eje de los Andes',
+                        'description' => "Una Travesía de Prestigio del Cusco al Altiplano. La integración definitiva de los destinos más emblemáticos.",
+                        'images' => [
+                            '/img/sobrevuelos/titicaca-lake-1.webp',
+                            '/img/sobrevuelos/titicaca-lake-2.webp',
+                            '/img/sobrevuelos/titicaca-lake-3.webp',
+                            '/img/sobrevuelos/titicaca-lake-4.webp'
+                        ],
+                        'duration' => '1h 40m',
+                        'pax' => __('common.up_to') . ' 8 ' . __('common.people'),
+                        'location' => 'Puno, Perú',
+                        'badge' => __('common.overflight'),
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/titicaca-lake'
+                    ],
+                    [
+                        'title' => 'Choquequirao',
+                        'description' => __('services.overflights.choquequirao.desc'),
+                        'images' => [
+                            '/img/sobrevuelos/choquequirao-1.webp',
+                            '/img/sobrevuelos/choquequirao-2.webp',
+                            '/img/sobrevuelos/choquequirao-3.webp',
+                            '/img/sobrevuelos/choquequirao-4.webp'
+                        ],
+                        'duration' => '1h',
+                        'pax' => __('common.up_to') . ' 8 ' . __('common.people'),
+                        'location' => 'Cusco, Perú',
+                        'badge' => __('common.overflight'),
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/choquequirao'
+                    ],
+                    [
+                        'title' => 'Valle Sagrado y maras',
+                        'description' => __('services.overflights.sacred_valley.desc', ['default' => 'Descubre Sacsayhuamán, Tambomachay, Pisac, Valle Sagrado, Maras y Laguna de Huaypo desde las alturas.']),
+                        'images' => [
+                            '/img/sobrevuelos/sacred-valley-1.webp',
+                            '/img/sobrevuelos/sacred-valley-2.webp',
+                            '/img/sobrevuelos/sacred-valley-3.webp',
+                            '/img/sobrevuelos/sacred-valley-4.webp'
+                        ],
+                        'duration' => '1h',
+                        'pax' => 'Hasta 8 personas',
+                        'location' => 'Cusco, Perú',
+                        'badge' => 'Sobrevuelo',
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/valle-maras'
+                    ]
+                ];
+
+                foreach ($tours_sobrevuelos as $index => $tour): 
+                ?>
+                <article class="tour-card" data-category="sobrevuelo">
+                    <div class="tour-image">
+                        <div class="carousel-container" id="home-carousel-<?= $index ?>">
+                            <?php foreach ($tour['images'] as $imgIndex => $imgSrc): ?>
+                            <div class="carousel-slide <?= $imgIndex === 0 ? 'active' : '' ?>">
+                                <img src="<?= $imgSrc ?>" alt="<?= $tour['title'] ?>" loading="lazy">
+                            </div>
+                            <?php endforeach; ?>
+                            
+                            <button class="carousel-btn prev-btn" onclick="moveHomeSlide(<?= $index ?>, -1, event)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next-btn" onclick="moveHomeSlide(<?= $index ?>, 1, event)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            
+                            <div class="carousel-dots">
+                                <?php foreach ($tour['images'] as $imgIndex => $imgSrc): ?>
+                                <span class="dot <?= $imgIndex === 0 ? 'active' : '' ?>" onclick="setHomeSlide(<?= $index ?>, <?= $imgIndex ?>, event)"></span>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                        <div class="tour-overlay">
+                            <div class="tour-badge"><?= $tour['badge'] ?></div>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <h2 class="tour-title"><?= $tour['title'] ?></h2>
+                        <p class="tour-description"><?= $tour['description'] ?></p>
+                        <div class="tour-details">
+                            <div class="detail"><i class="fas fa-clock"></i> <span><?= $tour['duration'] ?></span></div>
+                            <div class="detail"><i class="fas fa-users"></i> <span><?= $tour['pax'] ?></span></div>
+                        </div>
+                        <a href="<?= $tour['url'] ?>" class="tour-btn">
+                            <span>{{ __('common.button.learn_more') }}</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts del Carrusel Home -->
+    <script>
+        function moveHomeSlide(tourIndex, step, event) {
+            if(event) event.preventDefault();
+            const container = document.getElementById(`home-carousel-${tourIndex}`);
+            const slides = container.getElementsByClassName('carousel-slide');
+            const dots = container.getElementsByClassName('dot');
+            let activeIndex = 0;
+            
+            for(let i=0; i<slides.length; i++) {
+                if(slides[i].classList.contains('active')) {
+                    activeIndex = i;
+                    break;
+                }
+            }
+            
+            let newIndex = (activeIndex + step + slides.length) % slides.length;
+            
+            slides[activeIndex].classList.remove('active');
+            dots[activeIndex].classList.remove('active');
+            
+            slides[newIndex].classList.add('active');
+            dots[newIndex].classList.add('active');
+        }
+
+        function setHomeSlide(tourIndex, slideIndex, event) {
+            if(event) event.preventDefault();
+            const container = document.getElementById(`home-carousel-${tourIndex}`);
+            const slides = container.getElementsByClassName('carousel-slide');
+            const dots = container.getElementsByClassName('dot');
+            
+            for(let i=0; i<slides.length; i++) {
+                slides[i].classList.remove('active');
+                dots[i].classList.remove('active');
+            }
+            
+            slides[slideIndex].classList.add('active');
+            dots[slideIndex].classList.add('active');
+        }
+    </script>
+
     
     <!-- Tours Section -->
     <section class="tours-section">
