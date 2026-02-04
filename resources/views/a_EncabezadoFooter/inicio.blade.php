@@ -374,7 +374,7 @@ $seo = seo()
                 $tours_sobrevuelos = [
                     [
                         'title' => 'Expedición Sagrada: El Corazón de los Andes',
-                        'description' => "<p>Domine el horizonte en un viaje que lo tiene todo:</p><br>Apu Ausangate, 4 Lagunas de Cristal, Valle Rojo y Vinicunca.",
+                        'description' => "Domine el horizonte en un viaje que lo tiene todo: Apu Ausangate, 4 Lagunas de Cristal, Valle Rojo y Vinicunca.",
                         'images' => [
                             '/img/sobrevuelos/vinicunca-mountain-1.webp',
                             '/img/sobrevuelos/vinicunca-mountain-2.webp',
@@ -494,7 +494,7 @@ $seo = seo()
                     </div>
                     <div class="tour-content">
                         <h2 class="tour-title"><?= $tour['title'] ?></h2>
-                        <p class="tour-description"><?= $tour['description'] ?></p>
+                        <p class="tour-description"><?= strip_tags($tour['description']) ?></p>
                         <div class="tour-details">
                             <div class="detail"><i class="fas fa-clock"></i> <span><?= $tour['duration'] ?></span></div>
                             <div class="detail"><i class="fas fa-users"></i> <span><?= $tour['pax'] ?></span></div>
