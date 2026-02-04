@@ -206,8 +206,8 @@
                         <div class="carousel-container" id="carouselContainer">
                             <figure class="carousel-slide" itemscope itemtype="http://schema.org/ImageObject">
                                 <img src="/img/sobrevuelos/aerodromo-boca-manu-puerta-entrada-amazonia.webp" 
-                                    alt="Pista de aterrizaje del aeródromo de Boca Manu rodeada de selva virgen y el río."
-                                    title="Aeródromo de Boca Manu: Logística aérea en la selva"
+                                    alt="Vuelos privados a Boca Manu"
+                                    title="Vuelos privados a Boca Manu"
                                     loading="lazy" width="1200" height="600"
                                     itemprop="contentUrl">
                                 <figcaption class="caption-overlay">
@@ -217,8 +217,8 @@
 
                             <figure class="carousel-slide" itemscope itemtype="http://schema.org/ImageObject">
                                 <img src="/img/sobrevuelos/bosque-tropical-reserva-biosfera-manu-peru.webp" 
-                                    alt="Vista aérea de la densa cobertura verde de la Reserva de la Biosfera del Manu."
-                                    title="Biodiversidad intacta: Reserva del Manu desde el aire"
+                                    alt="Transporte aéreo selva peruana"
+                                    title="Transporte aéreo selva peruana"
                                     loading="lazy" width="1200" height="600"
                                     itemprop="contentUrl">
                                 <figcaption class="caption-overlay">
@@ -228,8 +228,8 @@
 
                             <figure class="carousel-slide" itemscope itemtype="http://schema.org/ImageObject">
                                 <img src="/img/sobrevuelos/paisaje-aereo-panoramico-parque-nacional-manu.webp" 
-                                    alt="Panorámica cenital mostrando el pueblo de Boca Manu y la curva del río."
-                                    title="Vista Panorámica: La inmensidad del Parque Nacional"
+                                    alt="Chárter certificado RAP 135"
+                                    title="Chárter certificado RAP 135"
                                     loading="lazy" width="1200" height="600"
                                     itemprop="contentUrl">
                                 <figcaption class="caption-overlay">
@@ -239,8 +239,8 @@
 
                             <figure class="carousel-slide" itemscope itemtype="http://schema.org/ImageObject">
                                 <img src="/img/sobrevuelos/vista-aerea-boca-manu-confluencia-rios.webp" 
-                                    alt="Confluencia de los ríos Manu y Madre de Dios vista desde un sobrevuelo."
-                                    title="Unión de aguas: Ríos Manu y Madre de Dios"
+                                    alt="Aerolínea del Sur Boca Manu"
+                                    title="Aerolínea del Sur Boca Manu"
                                     loading="lazy" width="1200" height="600"
                                     itemprop="contentUrl">
                                 <figcaption class="caption-overlay">
@@ -292,6 +292,17 @@
     <!-- Sección Exclusiva -->
     <section class="exclusive-access" style="padding: 60px 0; background-color: #1a1a1a; color: #fff; text-align: center;">
         <div class="container">
+            <div class="video-container" style="margin-bottom: 35px; max-width: 900px; margin-left: auto; margin-right: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border-radius: 8px; overflow: hidden; border: 1px solid #333;" itemscope itemtype="http://schema.org/VideoObject">
+                <meta itemprop="name" content="Vuelos Privados a Boca Manu - Aerolínea del Sur">
+                <meta itemprop="description" content="Operaciones de vuelos chárter y logística en Boca Manu, selva peruana. Certificación RAP 135.">
+                <meta itemprop="uploadDate" content="2024-01-01">
+                <meta itemprop="thumbnailUrl" content="{{ asset('img/sobrevuelos/vista-aerea-boca-manu-confluencia-rios.webp') }}">
+                <meta itemprop="keywords" content="Boca Manu, Vuelos Privados Cusco, Aerolínea del Sur, Charter Selva, RAP 135">
+                <video width="100%" height="auto" controls autoplay loop muted playsinline style="display: block;" itemprop="contentUrl">
+                    <source src="{{ asset('img/sobrevuelos/vuelo-seguro-boca-manu.webm') }}" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <h2 style="font-size: 2.5rem; margin-bottom: 30px; color: #d4af37; font-family: 'Playfair Display', serif;"><?= $h2_exclusive ?></h2>
             <div style="max-width: 900px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8; color: #e0e0e0;">
                 <p style="margin-bottom: 20px;"><?= $p_exclusive_1 ?></p>

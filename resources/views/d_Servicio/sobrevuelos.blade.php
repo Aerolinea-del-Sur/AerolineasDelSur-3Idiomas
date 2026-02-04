@@ -274,7 +274,7 @@ $seo = seo()
                         'pax' => __('common.up_to') . ' 9 ' . __('common.people'),
                         'location' => 'Manu, Perú',
                         'badge' => __('common.overflight'),
-                        'url' => '/' . app()->getLocale() . '/sobrevuelo/manu'
+                        'url' => '/' . app()->getLocale() . '/sobrevuelo/boca-manu'
                     ],
                     [
                         'title' => 'Expedición Sagrada: El Corazón de los Andes', // Valle Sagrado
