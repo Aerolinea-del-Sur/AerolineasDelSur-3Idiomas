@@ -456,8 +456,8 @@ $seo = seo()
                         <button type="button" class="medical-button btn-secondary" onclick="enviarOutlook('aeromedico')">
                             <i class="far fa-envelope"></i> Outlook
                         </button>
-                        <button type="button" class="medical-button btn-secondary" onclick="enviarGmail('aeromedico')">
-                            <i class="far fa-envelope"></i> Gmail
+                        <button type="button" class="medical-button btn-secondary" onclick="enviarOutlook('aeromedico')">
+                            <i class="far fa-envelope"></i> Outlook
                         </button>
                     </div>
                 </form>
