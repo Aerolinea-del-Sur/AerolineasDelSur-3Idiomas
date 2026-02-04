@@ -123,7 +123,7 @@ $seo = seo()
     $p_23 = __('common.faq.team_available');
 ?>
     <!-- presentacion -->
-    <link rel="stylesheet" href="{{ asset('public/css/paginas/inicio.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/paginas/inicio.css') }}">
     
     <!-- Preload del contenido crítico del hero -->
     <style>
