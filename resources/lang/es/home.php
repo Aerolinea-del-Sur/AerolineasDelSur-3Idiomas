@@ -2,7 +2,7 @@
 
 return [
     // SEO
-    'seo.title' => 'Aerolínea del Sur | Vuelos Privados y Charter en Perú',
+    'seo.title' => 'Aerolínea del Sur | Vuelos Privados y Charter en Perú.',
     
     // Hero Section
     'hero.title_1' => 'Tú eliges el destino',
