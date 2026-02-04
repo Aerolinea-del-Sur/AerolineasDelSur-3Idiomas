@@ -52,6 +52,7 @@ $seo = seo()
 
                 $h4_2 = __('common.contact.email', ['default' => 'Email']);
                 $p_12 = 'contacto@aerolineadelsur.com.pe';
+                $p_14 = 'paulolivares@aerolineadelsur.com.pe';
 
                 $h4_3 = __('common.contact.location', ['default' => 'Ubicación']);
                 $p_13 = 'Cusco, Perú';        
@@ -387,7 +388,7 @@ $seo = seo()
                     <p class="section-subtitle"><?= $p_10 ?></p>
                 </div>
                 <div class="contact-methods">
-                    <div class="contact-method">
+                    <a href="https://wa.me/51932475995?text=Hola,%20deseo%20más%20información" target="_blank" class="contact-method" style="text-decoration: none; color: inherit;">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
                         </div>
@@ -395,8 +396,8 @@ $seo = seo()
                             <h3><?= $h4_1 ?></h3>
                             <p><?= $p_11 ?></p>
                         </div>
-                    </div>
-                    <div class="contact-method">
+                    </a>
+                    <a href="mailto:<?= $p_12 ?>" class="contact-method" style="text-decoration: none; color: inherit;">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
@@ -404,8 +405,17 @@ $seo = seo()
                             <h3><?= $h4_2 ?></h3>
                             <p><?= $p_12 ?></p>
                         </div>
-                    </div>
-                    <div class="contact-method">
+                    </a>
+                    <a href="mailto:<?= $p_14 ?>" class="contact-method" style="text-decoration: none; color: inherit;">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3><?= $h4_2 ?></h3>
+                            <p><?= $p_14 ?></p>
+                        </div>
+                    </a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Cusco,+Perú" target="_blank" class="contact-method" style="text-decoration: none; color: inherit;">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
@@ -413,7 +423,7 @@ $seo = seo()
                             <h3><?= $h4_3 ?></h3>
                             <p><?= $p_13 ?></p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

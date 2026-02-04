@@ -864,6 +864,7 @@
                                             <div class="contact-details">
                                                 <span class="contact-label">Email</span>
                                                 <a href="mailto:contacto@aerolineadelsur.com.pe" class="contact-value contact-link">contacto@aerolineadelsur.com.pe</a>
+                                                <a href="mailto:paulolivares@aerolineadelsur.com.pe" class="contact-value contact-link">paulolivares@aerolineadelsur.com.pe</a>
                                             </div>
                                         </div>
                                         <div class="contact-info-item">
