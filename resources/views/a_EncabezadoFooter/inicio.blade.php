@@ -374,7 +374,7 @@ $seo = seo()
                 $tours_sobrevuelos = [
                     [
                         'title' => 'Expedición Sagrada: El Corazón de los Andes',
-                        'description' => "<strong>Domine el horizonte en un viaje que lo tiene todo:</strong><br>Apu Ausangate, 4 Lagunas de Cristal, Valle Rojo y Vinicunca.",
+                        'description' => "<p>Domine el horizonte en un viaje que lo tiene todo:</p><br>Apu Ausangate, 4 Lagunas de Cristal, Valle Rojo y Vinicunca.",
                         'images' => [
                             '/img/sobrevuelos/vinicunca-mountain-1.webp',
                             '/img/sobrevuelos/vinicunca-mountain-2.webp',
