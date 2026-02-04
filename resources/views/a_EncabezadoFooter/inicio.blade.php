@@ -1,7 +1,7 @@
 @php
 $seo = seo()
     ->title(__('home.seo.title', ['default' => 'Aerolínea del Sur | Vuelos Privados y Charter en Perú..']))
-    ->description(__('home.hero.subtitle', ['default' => '']))
+    ->description(__('home.hero.subtitle', ['default' => 'Vuelos privados y charter en Perú. Experiencias exclusivas, seguridad certificada y destinos únicos desde Cusco.']))
     ->keywords(['vuelos privados perú', 'charter cusco', 'helicóptero cusco', 'transporte aéreo médico perú', 'carga aérea', 'sobrevuelos valle sagrado'])
     ->image(asset('img/portada-home.jpg'))
     ->canonical(url(app()->getLocale()))
