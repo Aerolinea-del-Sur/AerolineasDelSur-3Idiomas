@@ -215,17 +215,19 @@ $seo = seo()
             padding: 20px 0;
         }
         .tour-card {
-            background: linear-gradient(135deg,#0a0a0a 0%,var(--charcoal) 25%,var(--primary-black) 75%,#0a0a0a 100%);
+            background: #1a1a1a;
+            border: 1px solid #333;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             flex-direction: column;
         }
         .tour-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+            box-shadow: 0 15px 40px rgba(255,255,255,0.05);
+            border-color: #c9a227;
         }
         .tour-image {
             position: relative;
@@ -318,13 +320,13 @@ $seo = seo()
         .tour-title {
             font-size: 20px;
             font-weight: 700;
-            color: #1a1a1a;
+            color: #ffffff;
             margin-bottom: 10px;
             line-height: 1.3;
         }
         .tour-description {
             font-size: 14px;
-            color: #666;
+            color: #cccccc;
             margin-bottom: 20px;
             line-height: 1.6;
             display: -webkit-box;
@@ -338,9 +340,9 @@ $seo = seo()
             justify-content: space-between;
             margin-bottom: 20px;
             padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #333;
             font-size: 13px;
-            color: #888;
+            color: #999;
         }
         .detail { display: flex; align-items: center; gap: 8px; }
         .detail i { color: #c9a227; }
@@ -349,8 +351,9 @@ $seo = seo()
             align-items: center;
             justify-content: center;
             gap: 10px;
-            background: #1a1a1a;
-            color: #fff;
+            background: transparent;
+            color: #c9a227;
+            border: 1px solid #c9a227;
             padding: 12px 25px;
             border-radius: 8px;
             text-decoration: none;
@@ -359,16 +362,17 @@ $seo = seo()
         }
         .tour-btn:hover {
             background: #c9a227;
+            color: #000;
             transform: translateY(-2px);
         }
     </style>
 
     <!-- Nueva Sección de Sobrevuelos -->
-    <section class="sobrevuelos-section" style="padding: 80px 0; background-color: #f8f9fa;">
+    <section class="sobrevuelos-section" style="padding: 80px 0; background-color: #0E0D0A;">
         <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
             <div class="section-header" style="text-align: center; margin-bottom: 50px;">
-                <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 16px;">Sobrevuelos Exclusivos</h2>
-                <p>Descubre los tesoros del Perú desde una perspectiva única</p>
+                <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 16px; color: #ffffff;">Sobrevuelos Exclusivos</h2>
+                <p style="color: #cccccc;">Descubre los tesoros del Perú desde una perspectiva única</p>
                 <div class="linea" style="width: 60px; height: 3px; background: #c9a227; margin: 10px auto;"></div>
             </div>
 
