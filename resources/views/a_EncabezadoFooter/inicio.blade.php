@@ -219,14 +219,13 @@ $seo = seo()
             border: 1px solid #333;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: none;
+            transition: transform 0.3s ease;
             display: flex;
             flex-direction: column;
         }
         .tour-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(255,255,255,0.05);
             border-color: #c9a227;
         }
         .tour-image {
@@ -300,16 +299,7 @@ $seo = seo()
         }
         .dot.active { background: white; }
         .tour-badge {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: #c9a227;
-            color: #fff;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            z-index: 2;
+            display: none;
         }
         .tour-content {
             padding: 25px;
@@ -326,7 +316,7 @@ $seo = seo()
         }
         .tour-description {
             font-size: 14px;
-            color: #cccccc;
+            color: #ffffff;
             margin-bottom: 20px;
             line-height: 1.6;
             display: -webkit-box;
@@ -334,6 +324,7 @@ $seo = seo()
             -webkit-box-orient: vertical;
             overflow: hidden;
             flex-grow: 1;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
         }
         .tour-details {
             display: flex;
@@ -496,7 +487,7 @@ $seo = seo()
                             </div>
                         </div>
                         <div class="tour-overlay">
-                            <div class="tour-badge"><?= $tour['badge'] ?></div>
+                            <!-- Badge eliminado -->
                         </div>
                     </div>
                     <div class="tour-content">
