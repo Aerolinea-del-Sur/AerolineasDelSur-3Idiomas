@@ -202,6 +202,18 @@
                             <span class="indicator" onclick="currentSlide(4)"></span>
                         </div>
                     </div>
+                    
+                    <div class="cta-wrapper" style="text-align: center; margin-top: 25px; margin-bottom: 10px;">
+                        <style>
+                            .cta-button:hover {
+                                transform: translateY(-3px);
+                                box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5) !important;
+                            }
+                        </style>
+                        <a href="https://wa.me/51932475995?text=Hola,%20deseo%20cotizar%20el%20Tour%20a%20Machu%20Picchu" target="_blank" class="cta-button" style="display: inline-flex; align-items: center; justify-content: center; background: linear-gradient(to right, #d4af37, #f3d056); color: #000; padding: 12px 28px; border-radius: 30px; font-weight: bold; font-size: 1.1rem; text-decoration: none; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); transition: all 0.3s ease;">
+                            <i class="fas fa-plane-departure" style="margin-right: 10px;"></i> Cotizar Tour Machu Picchu
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
