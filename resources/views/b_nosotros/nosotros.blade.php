@@ -1,7 +1,7 @@
 @php
 $seo = seo()
-    ->title(__('about.seo.title'))
-    ->description(__('about.seo.description'))
+    ->title(__('about.seo.title', ['default' => 'Aerolínea del Sur | Sobre Nosotros']))
+    ->description(__('about.seo.description', ['default' => 'Descubre la historia, misión, visión y valores de Aerolínea del Sur. Conoce nuestro equipo y nuestro compromiso con la seguridad y la satisfacción del cliente.']))
     ->keywords(['aerolínea peruana', 'aviación cusco', 'empresa aérea perú', 'vuelos seguros perú', 'historia aerolínea del sur'])
     ->image(asset('img/nosotros-aerolinea-sur.jpg'))
     ->canonical(url(app()->getLocale() . '/nosotros'))
