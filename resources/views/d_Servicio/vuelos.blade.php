@@ -141,7 +141,7 @@ $seo = seo()
                     <i class="far fa-envelope"></i> {{ __('services.form.send_outlook') }}
                 </button>
                 <button type="button" class="heli-btn btn-outlook" onclick="enviarOutlook('vuelos')">
-                    <i class="far fa-envelope"></i> {{ __('services.form.send_gmail ') }} <!-- services.form.send_gmail -->
+                    <i class="far fa-envelope"></i> {{ __('services.form.send_outlook ') }} <!-- services.form.send_gmail -->
                 </button>
             </div>
         </form>
