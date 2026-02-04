@@ -1,8 +1,8 @@
 @php
     $tour_name = 'Boca Manu';
     $seo = seo()
-        ->title(__('tours.manu.seo_title'))
-        ->description(__('tours.manu.seo_desc'))
+        ->title(__('Vuelos Chárter y Logística Directa a Boca Manu'))
+        ->description(__('Boca Manu ofrece una solución logística rápida y confiable para turismo especializado y proyectos estratégicos, uniendo la comodidad con la precisión técnica que solo nuestra flota puede ofrecer.'))
         ->keywords(['sobrevuelo manu', 'tour aéreo manu', 'selva peruana vuelo', 'parque nacional manu helicoptero'])
         ->image(asset('img/tours/manu-general.jpg'))
         ->canonical(url(app()->getLocale() . '/sobrevuelo/manu'))

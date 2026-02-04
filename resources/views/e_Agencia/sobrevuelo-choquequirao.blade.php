@@ -3,8 +3,8 @@
     // Custom SEO for Sobrevuelo Choquequirao
     $tour_name = 'Choquequirao';
     $seo = seo()
-        ->title(__('tours.choquequirao.title'))
-        ->description(__('tours.choquequirao.details_desc'))
+        ->title(__('Sobrevuelo a Choquequirao - Aerolínea del Sur'))
+        ->description(__('Descubre la ciudadela perdida de los Incas en un tour aéreo de lujo. Salidas diarias desde Cusco.'))
         ->keywords('sobrevuelo choquequirao, tour aéreo cusco, vuelo cusco choquequirao, choquequirao helicóptero')
         ->image(asset('img/sobrevuelos/choquequirao-1.webp'))
         ->canonical(url(app()->getLocale() . '/sobrevuelo/choquequirao'));
