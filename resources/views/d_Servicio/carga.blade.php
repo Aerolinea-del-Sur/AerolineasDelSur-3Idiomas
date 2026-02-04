@@ -270,17 +270,20 @@ $seo = seo()
                 </div>
             </div>
             
-            <div class="heli-actions">
-                <button type="button" class="heli-btn btn-whatsapp" onclick="enviarWhatsApp('carga')">
-                    <i class="fab fa-whatsapp"></i> {{ __('services.form.send_whatsapp') }}
-                </button>
-                <button type="button" class="heli-btn btn-outlook" onclick="enviarOutlook('carga')">
-                    <i class="far fa-envelope"></i> {{ __('services.form.send_outlook') }}
-                </button>
-                <button type="button" class="heli-btn btn-gmail" onclick="enviarGmail('carga')">
-                    <i class="far fa-envelope"></i> {{ __('services.form.send_gmail') }}
-                </button>
-            </div>
+            <div class="form-buttons">
+                        <button type="button" class="medical-button btn-emergency" onclick="llamarDirecto()">
+                            <i class="fas fa-phone-alt"></i> {{ __('services.aeromedical.call') }}: +51 932 475 995
+                        </button>
+                        <button type="button" class="medical-button btn-success" onclick="enviarWhatsApp('aeromedico')">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </button>
+                        <button type="button" class="medical-button btn-secondary" onclick="enviarOutlook('aeromedico')">
+                            <i class="far fa-envelope"></i> Outlook 1
+                        </button>
+                        <button type="button" class="medical-button btn-secondary" onclick="enviarGmail('aeromedico')">
+                            <i class="far fa-envelope"></i> Outlook 2
+                        </button>
+                    </div>
         </form>
         
         <style>
