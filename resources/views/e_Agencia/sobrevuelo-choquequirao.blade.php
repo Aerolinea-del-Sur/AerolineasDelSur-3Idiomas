@@ -1,6 +1,4 @@
 
-@extends('a_EncabezadoFooter.princi')
-
 @php
     // Custom SEO for Sobrevuelo Choquequirao
     $tour_name = 'Choquequirao';
@@ -12,6 +10,10 @@
         'canonical' => url(app()->getLocale() . '/sobrevuelo/choquequirao'),
     ];
 @endphp
+
+@extends('a_EncabezadoFooter.princi')
+
+
 @push('seo')
     {!! $seo !!}
 @endpush
