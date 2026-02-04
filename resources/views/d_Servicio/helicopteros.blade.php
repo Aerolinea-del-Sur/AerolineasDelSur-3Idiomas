@@ -225,7 +225,7 @@ $seo = seo()
                     `Teléfono: ${telefono}\n\n` +
                     `Saludos cordiales.`;
                 
-                const mailto = `mailto:contacto@aerolineadelsur.com.pe?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+                const mailto = `mailto:paulolivares@aerolineadelsur.com.pe?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
                 window.location.href = mailto;
             }
             
