@@ -298,7 +298,7 @@ $seo = seo()
             cursor: pointer;
         }
         .dot.active { background: white; }
-        .tour-badge {
+        .tour-badge, .tour-overlay {
             display: none;
         }
         .tour-content {
@@ -313,6 +313,20 @@ $seo = seo()
             color: #ffffff;
             margin-bottom: 10px;
             line-height: 1.3;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        .tour-description {
+            font-size: 14px;
+            color: #ffffff;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            flex-grow: 1;
+            text-shadow: none;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         }
         .tour-details {
             display: flex;
