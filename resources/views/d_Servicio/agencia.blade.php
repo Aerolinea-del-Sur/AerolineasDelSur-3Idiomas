@@ -242,7 +242,7 @@ $seo = seo()
                     <p class="section-subtitle"><?= $p_10 ?></p>
                 </div>
                 <div class="contact-methods">
-                    <div class="contact-method">
+                    <a href="tel:<?= str_replace(' ', '', $p_11) ?>" class="contact-method" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 15px;">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
                         </div>
@@ -250,8 +250,17 @@ $seo = seo()
                             <h3><?= $h4_1 ?></h3>
                             <p><?= $p_11 ?></p>
                         </div>
-                    </div>
-                    <div class="contact-method">
+                    </a>
+                    <a href="mailto:paulolivares@aerolineadelsur.com.pe" class="contact-method" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 15px;">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3><?= $h4_2 ?></h3>
+                            <p>paulolivares@aerolineadelsur.com.pe</p>
+                        </div>
+                    </a>
+                    <a href="mailto:<?= $p_12 ?>" class="contact-method" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 15px;">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
@@ -259,16 +268,7 @@ $seo = seo()
                             <h3><?= $h4_2 ?></h3>
                             <p><?= $p_12 ?></p>
                         </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-info">
-                            <h3><?= $h4_3 ?></h3>
-                            <p><?= $p_13 ?></p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
