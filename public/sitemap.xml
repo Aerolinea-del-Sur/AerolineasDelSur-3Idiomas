@@ -841,6 +841,12 @@
     <priority>0.8</priority>
             </url>
     <url>
+    <loc>https://aerolineadelsur.com/es/sobrevuelo/boca-manu</loc>
+    <lastmod>2026-02-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
     <loc>https://aerolineadelsur.com/en/sobrevuelo/titicaca-lake</loc>
     <lastmod>2025-12-22T05:57:06+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -871,6 +877,12 @@
     <priority>0.8</priority>
             </url>
     <url>
+    <loc>https://aerolineadelsur.com/en/sobrevuelo/boca-manu</loc>
+    <lastmod>2026-02-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
     <loc>https://aerolineadelsur.com/pt/sobrevuelo/titicaca-lake</loc>
     <lastmod>2025-12-22T05:57:06+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -897,6 +909,12 @@
     <url>
     <loc>https://aerolineadelsur.com/pt/sobrevuelo/vinicunca-elite</loc>
     <lastmod>2025-12-22T05:57:06+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+            </url>
+    <url>
+    <loc>https://aerolineadelsur.com/pt/sobrevuelo/boca-manu</loc>
+    <lastmod>2026-02-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
             </url>
