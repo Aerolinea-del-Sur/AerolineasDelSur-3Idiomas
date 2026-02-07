@@ -107,66 +107,6 @@ $seo = seo()
                     <h2><?= $h2_1 ?></h2>
                     <p><?= $p_2 ?></p>
                 </div>
-                
-                <!-- Contenedor de alertas -->
-                <div id="alertContainer"></div>
-                
-                <form class="contact-form" id="contactForm" method="POST" action="{{ route('contact.send') }}">
-                    @csrf
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">Nombre</label>
-                            <input type="text" id="firstName" name="firstName" required>
-                            <span class="form-error" id="firstNameError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Apellido</label>
-                            <input type="text" id="lastName" name="lastName" required>
-                            <span class="form-error" id="lastNameError"></span>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Correo Electrónico</label>
-                            <input type="email" id="email" name="email" required>
-                            <span class="form-error" id="emailError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Teléfono</label>
-                            <input type="tel" id="phone" name="phone">
-                            <span class="form-error" id="phoneError"></span>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Asunto</label>
-                        <select id="subject" name="subject" required>
-                            <option value="">Selecciona un asunto</option>
-                            <option value="reserva">Nueva Reserva</option>
-                            <option value="modificacion">Modificar Reserva</option>
-                            <option value="cancelacion">Cancelación</option>
-                            <option value="equipaje">Consulta de Equipaje</option>
-                            <option value="reembolso">Reembolso</option>
-                            <option value="otro">Otro</option>
-                        </select> 
-                        <span class="form-error" id="subjectError"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Describe tu consulta o solicitud..." required></textarea>
-                        <span class="form-error" id="messageError"></span>
-                    </div>
-                    
-                    <button type="submit" class="btn-submit">
-                        <span class="btn-text">Enviar Mensaje</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-            </div>
-            
             <!-- Información de Contacto -->
             <div class="contact-info-section">
                 <div class="info-header">
