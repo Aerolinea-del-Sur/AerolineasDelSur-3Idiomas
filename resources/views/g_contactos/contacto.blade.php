@@ -107,48 +107,48 @@ $seo = seo()
                 <p><?= $p_3 ?></p>
             </div>
             
-            <div class="contact-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-                    <div class="contact-card">
-                        <div class="card-icon">
+            <div class="contact-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+                    <div class="contact-card" style="padding: 2rem;">
+                        <div class="card-icon" style="font-size: 2.5rem; margin-bottom: 1.5rem;">
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="card-content">
-                            <h3><?= $h3_1 ?></h3>
-                            <p><?= $p_4 ?></p>
-                            <span class="card-note">Lun - Dom: 24 horas</span>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;"><?= $h3_1 ?></h3>
+                            <p style="font-size: 1.2rem; margin-bottom: 0.5rem;"><?= $p_4 ?></p>
+                            <span class="card-note" style="font-size: 1rem;">Lun - Dom: 24 horas</span>
                         </div>
                     </div>
                     
-                    <div class="contact-card">
-                        <div class="card-icon">
+                    <div class="contact-card" style="padding: 2rem;">
+                        <div class="card-icon" style="font-size: 2.5rem; margin-bottom: 1.5rem;">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="card-content">
-                            <h3><?= $h3_2 ?></h3>
-                            <p><?= $p_5 ?></p>
-                            <span class="card-note">Respuesta en 24h</span>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;"><?= $h3_2 ?></h3>
+                            <p style="font-size: 1.2rem; margin-bottom: 0.5rem; word-break: break-word;"><?= $p_5 ?></p>
+                            <span class="card-note" style="font-size: 1rem;">Respuesta en 24h</span>
                         </div>
                     </div>
                     
-                    <div class="contact-card">
-                        <div class="card-icon">
+                    <div class="contact-card" style="padding: 2rem;">
+                        <div class="card-icon" style="font-size: 2.5rem; margin-bottom: 1.5rem;">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="card-content">
-                            <h3><?= $h3_3 ?></h3>
-                            <p><?= $p_6 ?></p>
-                            <span class="card-note">Lun - Vie: 8:00 - 18:00</span>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;"><?= $h3_3 ?></h3>
+                            <p style="font-size: 1.2rem; margin-bottom: 0.5rem;"><?= $p_6 ?></p>
+                            <span class="card-note" style="font-size: 1rem;">Lun - Vie: 8:00 - 18:00</span>
                         </div>
                     </div>
                     
-                    <div class="contact-card">
-                        <div class="card-icon">
+                    <div class="contact-card" style="padding: 2rem;">
+                        <div class="card-icon" style="font-size: 2.5rem; margin-bottom: 1.5rem;">
                             <i class="fab fa-whatsapp"></i>
                         </div>
                         <div class="card-content">
-                            <h3><?= $h3_4 ?></h3>
-                            <p><?= $p_7 ?></p>
-                            <span class="card-note">Respuesta inmediata</span>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;"><?= $h3_4 ?></h3>
+                            <p style="font-size: 1.2rem; margin-bottom: 0.5rem;"><?= $p_7 ?></p>
+                            <span class="card-note" style="font-size: 1rem;">Respuesta inmediata</span>
                         </div>
                     </div>
             </div>
