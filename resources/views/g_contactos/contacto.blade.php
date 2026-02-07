@@ -100,21 +100,14 @@ $seo = seo()
 <!-- Sección Principal de Contacto -->
 <section class="contact-main">
     <div class="contact-container">
-        <div class="contact-grid">
-            <!-- Formulario de Contacto -->
-            <div class="contact-form-section">
-                <div class="form-header">
-                    <h2><?= $h2_1 ?></h2>
-                    <p><?= $p_2 ?></p>
-                </div>
-            <!-- Información de Contacto -->
-            <div class="contact-info-section">
-                <div class="info-header">
-                    <h2><?= $h2_2 ?></h2>
-                    <p><?= $p_3 ?></p>
-                </div>
-                
-                <div class="contact-cards">
+        <!-- Información de Contacto Centrada -->
+        <div class="contact-info-section" style="width: 100%; max-width: 1200px; margin: 0 auto;">
+            <div class="info-header" style="text-align: center; margin-bottom: 3rem;">
+                <h2><?= $h2_2 ?></h2>
+                <p><?= $p_3 ?></p>
+            </div>
+            
+            <div class="contact-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
                     <div class="contact-card">
                         <div class="card-icon">
                             <i class="fas fa-phone"></i>
@@ -158,7 +151,6 @@ $seo = seo()
                             <span class="card-note">Respuesta inmediata</span>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
